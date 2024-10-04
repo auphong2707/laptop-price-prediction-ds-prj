@@ -15,9 +15,9 @@ class BaseLaptopshopSpider(scrapy.Spider):
         """
         return [response.follow(url) for url in response.css(self.product_site_css).getall()]
     
-    # [GET FEATURES SECTION: START]
+    # [PARSE FEATURES SECTION: START]
     # Brand
-    def get_brand(self, response: Response): 
+    def parse_brand(self, response: Response): 
         """
         Extracts the brand of the laptop from the response.
         Example: Dell, HP, etc.
@@ -25,27 +25,27 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # CPU
-    def get_cpu(self, response: Response):
+    def parse_cpu(self, response: Response):
         """
         Extracts the CPU name of the laptop from the response.
         """
         return "N/A"
     
     # VGA
-    def get_vga(self, response: Response):
+    def parse_vga(self, response: Response):
         """
         Extracts the VGA name of the laptop from the response.
         """
         return "N/A"
     
     # RAM
-    def get_ram_amount(self, response: Response): 
+    def parse_ram_amount(self, response: Response): 
         """
         Extracts the amount of RAM in GB from the response.
         """
         return "N/A"
     
-    def get_ram_type(self, response: Response): 
+    def parse_ram_type(self, response: Response): 
         """
         Extracts the type of RAM from the response.
         Example: DDR3, DDR4, etc.
@@ -53,13 +53,13 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Storage
-    def get_storage_amount(self, response: Response): 
+    def parse_storage_amount(self, response: Response): 
         """
         Extracts the amount of storage in GB from the response.
         """
         return "N/A"
     
-    def get_storage_type(self, response: Response): 
+    def parse_storage_type(self, response: Response): 
         """
         Extracts the type of storage from the response.
         Example: HDD, SSD, SSHD.
@@ -67,7 +67,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Webcam
-    def get_webcam_resolution(self, response: Response): 
+    def parse_webcam_resolution(self, response: Response): 
         """
         Extracts the webcam resolution from the response.
         Example: HD, FHD, 4K.
@@ -75,91 +75,91 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Screen
-    def get_screen_size(self, response: Response): 
+    def parse_screen_size(self, response: Response): 
         """
         Extracts the screen size in inches from the response.
         """
         return "N/A"
     
-    def get_screen_resolution(self, response: Response): 
+    def parse_screen_resolution(self, response: Response): 
         """
         Extracts the screen resolution from the response.
         Example: HD, FHD, 4K.
         """
         return "N/A"
     
-    def get_screen_ratio(self, response: Response): 
+    def parse_screen_ratio(self, response: Response): 
         """
         Extracts the screen ratio from the response.
         Example: 16:9, 16:10, 4:3.
         """
         return "N/A"
     
-    def get_screen_refresh_rate(self, response: Response): 
+    def parse_screen_refresh_rate(self, response: Response): 
         """
         Extracts the screen refresh rate in Hz from the response.
         """
         return "N/A"
     
-    def get_screen_color_gamut(self, response: Response): 
+    def parse_screen_color_gamut(self, response: Response): 
         """
         Extracts the screen color gamut in sRGB from the response.
         """
         return "N/A"
     
-    def get_screen_brightness(self, response: Response): 
+    def parse_screen_brightness(self, response: Response): 
         """
         Extracts the screen brightness in nits from the response.
         """
         return "N/A"
     
     # Battery
-    def get_battery_capacity(self, response: Response): 
+    def parse_battery_capacity(self, response: Response): 
         """
         Extracts the battery capacity in Wh from the response.
         """
         return "N/A"
     
     # Weight
-    def get_weight(self, response: Response): 
+    def parse_weight(self, response: Response): 
         """
         Extracts the weight of the laptop in kg from the response.
         """
         return "N/A"
     
     # Connectivity
-    def get_number_usb_a_ports(self, response: Response):
+    def parse_number_usb_a_ports(self, response: Response):
         """
         Extracts the number of USB-A ports from the response.
         """
         return "N/A"
     
-    def get_number_usb_c_ports(self, response: Response):
+    def parse_number_usb_c_ports(self, response: Response):
         """
         Extracts the number of USB-C ports from the response.
         """
         return "N/A"
     
-    def get_number_hdmi_ports(self, response: Response):
+    def parse_number_hdmi_ports(self, response: Response):
         """
         Extracts the number of HDMI ports from the response.
         """
         return "N/A"
     
-    def get_number_ethernet_ports(self, response: Response):
+    def parse_number_ethernet_ports(self, response: Response):
         """
         Extracts the number of Ethernet ports from the response.
         """
         return "N/A"
     
-    def get_number_audio_jacks(self, response: Response):
+    def parse_number_audio_jacks(self, response: Response):
         """
         Extracts the number of audio jacks from the response.
         """
         return "N/A"
     
     # Operating System
-    def get_default_os(self, response: Response): 
+    def parse_default_os(self, response: Response): 
         """
         Extracts the default operating system of the laptop from the response.
         Example: Windows, Linux, etc.
@@ -167,7 +167,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Color
-    def get_color(self, response: Response): 
+    def parse_color(self, response: Response): 
         """
         Extracts the color of the laptop from the response.
         Example: Black, White, etc.
@@ -175,7 +175,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Material
-    def get_material(self, response: Response): 
+    def parse_material(self, response: Response): 
         """
         Extracts the material of the laptop from the response.
         Example: Plastic, Metal, etc.
@@ -183,7 +183,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Origin
-    def get_origin(self, response: Response): 
+    def parse_origin(self, response: Response): 
         """
         Extracts the origin of the laptop from the response.
         Example: China, Taiwan, USA, etc.
@@ -191,14 +191,14 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Warranty
-    def get_warranty(self, response: Response): 
+    def parse_warranty(self, response: Response): 
         """
         Extracts the warranty period in months from the response.
         """
         return "N/A"
     
     # Release Date
-    def get_release_date(self, response: Response): 
+    def parse_release_date(self, response: Response): 
         """
         Extracts the release date of the laptop from the response.
         Format: dd/mm/yyyy.
@@ -206,45 +206,45 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Price
-    def get_price(self, response: Response): 
+    def parse_price(self, response: Response): 
         """
         Extracts the price of the laptop from the response.
         Example: in VND.
         """
         return "N/A"
     
-    # [GET FEATURES SECTION: END]
+    # [PARSE FEATURES SECTION: END]
     
-    def get_one_observation(self, response: Response):
+    def parse_one_observation(self, response: Response):
         return {
-            'brand': self.get_brand(response),
-            'cpu': self.get_cpu(response),
-            'vga': self.get_vga(response),
-            'ram_amount': self.get_ram_amount(response),
-            'ram_type': self.get_ram_type(response),
-            'storage_amount': self.get_storage_amount(response),
-            'storage_type': self.get_storage_type(response),
-            'webcam_resolution': self.get_webcam_resolution(response),
-            'screen_size': self.get_screen_size(response),
-            'screen_resolution': self.get_screen_resolution(response),
-            'screen_ratio': self.get_screen_ratio(response),
-            'screen_refresh_rate': self.get_screen_refresh_rate(response),
-            'screen_color_gamut': self.get_screen_color_gamut(response),
-            'screen_brightness': self.get_screen_brightness(response),
-            'battery_capacity': self.get_battery_capacity(response),
-            'weight': self.get_weight(response),
-            'number_usb_a_ports': self.get_number_usb_a_ports(response),
-            'number_usb_c_ports': self.get_number_usb_c_ports(response),
-            'number_hdmi_ports': self.get_number_hdmi_ports(response),
-            'number_ethernet_ports': self.get_number_ethernet_ports(response),
-            'number_audio_jacks': self.get_number_audio_jacks(response),
-            'default_os': self.get_default_os(response),
-            'color': self.get_color(response),
-            'material': self.get_material(response),
-            'origin': self.get_origin(response),
-            'warranty': self.get_warranty(response),
-            'release_date': self.get_release_date(response),
-            'price': self.get_price(response)
+            'brand': self.parse_brand(response),
+            'cpu': self.parse_cpu(response),
+            'vga': self.parse_vga(response),
+            'ram_amount': self.parse_ram_amount(response),
+            'ram_type': self.parse_ram_type(response),
+            'storage_amount': self.parse_storage_amount(response),
+            'storage_type': self.parse_storage_type(response),
+            'webcam_resolution': self.parse_webcam_resolution(response),
+            'screen_size': self.parse_screen_size(response),
+            'screen_resolution': self.parse_screen_resolution(response),
+            'screen_ratio': self.parse_screen_ratio(response),
+            'screen_refresh_rate': self.parse_screen_refresh_rate(response),
+            'screen_color_gamut': self.parse_screen_color_gamut(response),
+            'screen_brightness': self.parse_screen_brightness(response),
+            'battery_capacity': self.parse_battery_capacity(response),
+            'weight': self.parse_weight(response),
+            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
+            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
+            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
+            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
+            'number_audio_jacks': self.parse_number_audio_jacks(response),
+            'default_os': self.parse_default_os(response),
+            'color': self.parse_color(response),
+            'material': self.parse_material(response),
+            'origin': self.parse_origin(response),
+            'warranty': self.parse_warranty(response),
+            'release_date': self.parse_release_date(response),
+            'price': self.parse_price(response)
         }
 
 class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
@@ -257,7 +257,7 @@ class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
         
         # Extracting the feature from a product website
         for site in product_sites:
-            yield self.get_one_observation(site)
+            yield self.parse_one_observation(site)
         
         next_page = response.css(self.next_page_css).get()
         if next_page is not None:
@@ -303,4 +303,4 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
         
         # Extracting the feature from a product website
         for site in product_sites:
-            yield self.get_one_observation(site)
+            yield self.parse_one_observation(site)
