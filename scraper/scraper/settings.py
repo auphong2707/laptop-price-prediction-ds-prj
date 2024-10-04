@@ -91,3 +91,13 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+from shutil import which
+
+SELENIUM_DRIVER_NAME = 'chrome'  # Or 'firefox', depending on the browser
+SELENIUM_DRIVER_EXECUTABLE_PATH = which('chromedriver')  # Update with the path to your driver
+SELENIUM_DRIVER_ARGUMENTS=['--headless']  # '--headless' for non-GUI mode
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_selenium.SeleniumMiddleware': 800
+}
