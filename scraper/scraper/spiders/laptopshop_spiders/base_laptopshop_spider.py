@@ -13,7 +13,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
         """
         Extracts the product sites from the response.
         """
-        return [response.follow(url) for url in response.css(self.product_site_css).getall()]
+        return [response.follow(url=url, callback=self.parse_one_observation) for url in response.css(self.product_site_css).getall()]
     
     # [PARSE FEATURES SECTION: START]
     # Brand
@@ -253,11 +253,11 @@ class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
 
     def parse(self, response: Response):
         # Get all the products links
-        product_sites = self.get_product_sites(response)
+        product_site_requests = self.get_product_sites(response)
         
         # Extracting the feature from a product website
-        for site in product_sites:
-            yield self.parse_one_observation(site)
+        for site_request in product_site_requests:
+            yield site_request
         
         next_page = response.css(self.next_page_css).get()
         if next_page is not None:
@@ -299,8 +299,8 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
                 break
             
         # Get all the products links
-        product_sites = self.get_product_sites(driver.page_source)
+        product_site_requests = self.get_product_sites(driver.page_source)
         
         # Extracting the feature from a product website
-        for site in product_sites:
-            yield self.parse_one_observation(site)
+        for site_request in product_site_requests:
+            yield site_request
