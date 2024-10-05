@@ -33,7 +33,7 @@ class CpuSpider(scrapy.Spider):
             return 'N/A'
 
     def parse_performance_clockspeed(self, response):
-        """Extracts and returns the clock speed of the CPU in GHz."""
+        """Extracts the clock speed of the performance cores of the CPU in GHz from the response."""
         try:
             if response.css('p:contains("Performance Cores:")::text').get():
                 return float(response.css('p:contains("Performance Cores:")::text').get().strip().split(", ")[2].split()[0])
@@ -45,7 +45,7 @@ class CpuSpider(scrapy.Spider):
             return 'N/A'
     
     def parse_performance_turbospeed(self, response):
-        """Extracts and returns the turbo speed of the CPU in GHz."""
+        """Extracts the turbo speed of the performance cores of the CPU in GHz from the response."""
         try:
             if response.css('p:contains("Performance Cores:")::text').get():
                 return float(response.css('p:contains("Performance Cores:")::text').get().strip().split(", ")[3].split()[0])
@@ -57,7 +57,7 @@ class CpuSpider(scrapy.Spider):
             return 'N/A'
         
     def parse_efficient_cores(self, response):
-        """Extracts and returns the number of efficient cores of the CPU."""
+        """Extracts the number of efficient cores of the CPU from the response."""
         try:
             if response.css('p:contains("Efficient Cores:")::text').get():
                 return int(response.css('p:contains("Efficient Cores:")::text').get().strip().split(": ")[0].split()[0])
@@ -69,7 +69,7 @@ class CpuSpider(scrapy.Spider):
             return 'N/A'
         
     def parse_efficient_threads(self, response):
-        """Extracts and returns the number of efficient threads of the CPU."""
+        """Extracts the number of efficient threads of the CPU from the response."""
         try:
             if response.css('p:contains("Efficient Cores:")::text').get():
                 return int(response.css('p:contains("Efficient Cores:")::text').get().strip().split(", ")[1].split()[0])
@@ -81,7 +81,7 @@ class CpuSpider(scrapy.Spider):
             return 'N/A'
         
     def parse_efficient_clockspeed(self, response):
-        """Extracts and returns the efficient clock speed of the CPU in GHz."""
+        """Extracts the clock speed of the efficient cores of the CPU in GHz from the response."""
         try:
             if response.css('p:contains("Efficient Cores:")::text').get():
                 return float(response.css('p:contains("Efficient Cores:")::text').get().strip().split(", ")[2].split()[0])
@@ -93,7 +93,7 @@ class CpuSpider(scrapy.Spider):
             return 'N/A'
 
     def parse_efficient_turbospeed(self, response):
-        """Extracts and returns the efficient turbo speed of the CPU in GHz."""
+        """Extracts the turbo speed of the efficient cores of the CPU in GHz from the response."""
         try:
             if response.css('p:contains("Efficient Cores:")::text').get():
                 return float(response.css('p:contains("Efficient Cores:")::text').get().strip().split(", ")[3].split()[0])
@@ -152,7 +152,28 @@ class CpuSpider(scrapy.Spider):
             return response.css('p:contains("Package")::text').getall()[3].strip().split(": ")[1]
         except Exception:
             return 'N/A'
-    
+        
+    def parse_eff_L1_instruction_cache(self, response):
+        """Extracts and returns the size of the efficient L1 instruction cache."""
+        try:
+            return response.css('p:contains("Package")::text').getall()[4].strip().split(": ")[1]
+        except Exception:
+            return 'N/A'
+
+    def parse_eff_L1_data_cache(self, response):
+        """Extracts and returns the size of the efficient L1 data cache."""
+        try:
+            return response.css('p:contains("Package")::text').getall()[5].strip().split(": ")[1]
+        except Exception:
+            return 'N/A'
+        
+    def parse_eff_L2_cache(self, response):
+        """Extracts and returns the size of the efficient L2 cache."""
+        try:
+            return response.css('p:contains("Package")::text').getall()[6].strip().split(": ")[1]
+        except Exception:
+            return 'N/A'
+            
     def parse_integer_math(self, response):
         """Extracts and returns the integer math performance in MOps/Sec."""
         try:
@@ -240,6 +261,9 @@ class CpuSpider(scrapy.Spider):
                 'L1_data_cache': self.parse_L1_data_cache(response),
                 'L2_cache': self.parse_L2_cache(response),
                 'L3_cache': self.parse_L3_cache(response),
+                'eff_L1_instruction_cache': self.parse_eff_L1_instruction_cache(response),
+                'eff_L1_data_cache': self.parse_eff_L1_data_cache(response),
+                'eff_L2_cache': self.parse_eff_L2_cache(response),
                 'integer_math': self.parse_integer_math(response),
                 'floating_point_math': self.parse_floating_point_math(response),
                 'find_prime_numbers': self.parse_find_prime_numbers(response),
