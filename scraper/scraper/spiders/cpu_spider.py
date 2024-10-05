@@ -7,32 +7,100 @@ class CpuSpider(scrapy.Spider):
     def parse_cpu_name(self, response):
         """Extract the CPU name using the CSS selector"""
         return response.css('span.cpuname::text').get()
-
-    def parse_clockspeed(self, response):
-        """Extracts and returns the clock speed of the CPU in GHz."""
-        try:
-            return float(response.css('p:contains("Clockspeed")::text').get().strip().split()[0])
-        except Exception:
-            return 'N/A'
     
-    def parse_turbospeed(self, response):
-        """Extracts and returns the turbo speed of the CPU in GHz."""
-        try:
-            return float(response.css('p:contains("Turbo Speed")::text').get().strip().split()[0])
-        except Exception:
-            return 'N/A'
-    
-    def parse_cores(self, response):
+    def parse_performance_cores(self, response):
         """Extracts and returns the number of cores of the CPU."""
         try:
-            return int(response.css('p.mobile-column::text').getall()[0].strip())
+            if response.css('p:contains("Performance Cores:")::text').get():
+                return int(response.css('p:contains("Performance Cores:")::text').get().strip().split(", ")[0].split()[0])
+            elif response.css('p:contains("Primary Cores:")::text').get():
+                return int(response.css('p:contains("Primary Cores:")::text').get().strip().split(", ")[0].split()[0])
+            else:
+                return int(response.css('p.mobile-column::text').getall()[0].strip())
         except Exception:
             return 'N/A'
 
-    def parse_threads(self, response):
+    def parse_performance_threads(self, response):
         """Extracts and returns the number of threads of the CPU."""
         try:
-            return int(response.css('p.mobile-column::text').getall()[1].strip())
+            if response.css('p:contains("Performance Cores:")::text').get():
+                return int(response.css('p:contains("Performance Cores:")::text').get().strip().split(", ")[1].split()[0])
+            elif response.css('p:contains("Primary Cores:")::text').get():
+                return int(response.css('p:contains("Primary Cores:")::text').get().strip().split(", ")[1].split()[0])
+            else:
+                return int(response.css('p.mobile-column::text').getall()[1].strip())
+        except Exception:
+            return 'N/A'
+
+    def parse_performance_clockspeed(self, response):
+        """Extracts and returns the clock speed of the CPU in GHz."""
+        try:
+            if response.css('p:contains("Performance Cores:")::text').get():
+                return float(response.css('p:contains("Performance Cores:")::text').get().strip().split(", ")[2].split()[0])
+            elif response.css('p:contains("Primary Cores:")::text').get():
+                return int(response.css('p:contains("Primary Cores:")::text').get().strip().split(", ")[2].split()[0])
+            else:
+                return float(response.css('p:contains("Clockspeed")::text').get().strip().split()[0])
+        except Exception:
+            return 'N/A'
+    
+    def parse_performance_turbospeed(self, response):
+        """Extracts and returns the turbo speed of the CPU in GHz."""
+        try:
+            if response.css('p:contains("Performance Cores:")::text').get():
+                return float(response.css('p:contains("Performance Cores:")::text').get().strip().split(", ")[3].split()[0])
+            elif response.css('p:contains("Primary Cores:")::text').get():
+                return int(response.css('p:contains("Primary Cores:")::text').get().strip().split(", ")[3].split()[0])
+            else:
+                return float(response.css('p:contains("Turbo Speed")::text').get().strip().split()[0])
+        except Exception:
+            return 'N/A'
+        
+    def parse_efficient_cores(self, response):
+        """Extracts and returns the number of efficient cores of the CPU."""
+        try:
+            if response.css('p:contains("Efficient Cores:")::text').get():
+                return int(response.css('p:contains("Efficient Cores:")::text').get().strip().split(": ")[0].split()[0])
+            elif response.css('p:contains("Secondary Cores:")::text').get():
+                return int(response.css('p:contains("Secondary Cores:")::text').get().strip().split(", ")[0].split()[0])
+            else:
+                return 'N/A'
+        except Exception:
+            return 'N/A'
+        
+    def parse_efficient_threads(self, response):
+        """Extracts and returns the number of efficient threads of the CPU."""
+        try:
+            if response.css('p:contains("Efficient Cores:")::text').get():
+                return int(response.css('p:contains("Efficient Cores:")::text').get().strip().split(", ")[1].split()[0])
+            elif response.css('p:contains("Secondary Cores:")::text').get():
+                return int(response.css('p:contains("Secondary Cores:")::text').get().strip().split(", ")[1].split()[0])
+            else:
+                return 'N/A'
+        except Exception:
+            return 'N/A'
+        
+    def parse_efficient_clockspeed(self, response):
+        """Extracts and returns the efficient clock speed of the CPU in GHz."""
+        try:
+            if response.css('p:contains("Efficient Cores:")::text').get():
+                return float(response.css('p:contains("Efficient Cores:")::text').get().strip().split(", ")[2].split()[0])
+            elif response.css('p:contains("Secondary Cores:")::text').get():
+                return int(response.css('p:contains("Secondary Cores:")::text').get().strip().split(", ")[2].split()[0])
+            else:
+                return 'N/A'
+        except Exception:
+            return 'N/A'
+
+    def parse_efficient_turbospeed(self, response):
+        """Extracts and returns the efficient turbo speed of the CPU in GHz."""
+        try:
+            if response.css('p:contains("Efficient Cores:")::text').get():
+                return float(response.css('p:contains("Efficient Cores:")::text').get().strip().split(", ")[3].split()[0])
+            elif response.css('p:contains("Secondary Cores:")::text').get():
+                return int(response.css('p:contains("Secondary Cores:")::text').get().strip().split(", ")[3].split()[0])
+            else:
+                return 'N/A'
         except Exception:
             return 'N/A'
     
@@ -154,26 +222,33 @@ class CpuSpider(scrapy.Spider):
             yield cpu_request
             
     def parse_cpu(self, response):
-        yield {
-            'name': self.parse_cpu_name(response),
-            'clockspeed': self.parse_clockspeed(response),
-            'turbospeed': self.parse_turbospeed(response),
-            'cores': self.parse_cores(response),
-            'threads': self.parse_threads(response),
-            'tdp': self.parse_tdp(response),
-            'multithread_rating': self.parse_multithread_rating(response),
-            'single_thread_rating': self.parse_single_thread_rating(response),
-            'L1_instruction_cache': self.parse_L1_instruction_cache(response),
-            'L1_data_cache': self.parse_L1_data_cache(response),
-            'L2_cache': self.parse_L2_cache(response),
-            'L3_cache': self.parse_L3_cache(response),
-            'integer_math': self.parse_integer_math(response),
-            'floating_point_math': self.parse_floating_point_math(response),
-            'find_prime_numbers': self.parse_find_prime_numbers(response),
-            'random_string_sorting': self.parse_random_string_sorting(response),
-            'data_encryption': self.parse_data_encryption(response),
-            'data_compression': self.parse_data_compression(response),
-            'physics': self.parse_physics(response),
-            'extended_instructions': self.parse_extended_instructions(response),
-            'single_thread': self.parse_single_thread(response)
-        }
+        if "laptop" in response.css('div.left-desc-cpu p::text').get().strip().lower():
+            yield {
+                'name': self.parse_cpu_name(response),
+                'performance_clockspeed': self.parse_performance_clockspeed(response),
+                'performance_turbospeed': self.parse_performance_turbospeed(response),
+                'performance_cores': self.parse_performance_cores(response),
+                'performance_threads': self.parse_performance_threads(response),
+                'efficient_clockspeed': self.parse_efficient_clockspeed(response),
+                'efficient_turbospeed': self.parse_efficient_turbospeed(response),
+                'efficient_cores': self.parse_efficient_cores(response),
+                'efficient_threads': self.parse_efficient_threads(response),
+                'tdp': self.parse_tdp(response),
+                'multithread_rating': self.parse_multithread_rating(response),
+                'single_thread_rating': self.parse_single_thread_rating(response),
+                'L1_instruction_cache': self.parse_L1_instruction_cache(response),
+                'L1_data_cache': self.parse_L1_data_cache(response),
+                'L2_cache': self.parse_L2_cache(response),
+                'L3_cache': self.parse_L3_cache(response),
+                'integer_math': self.parse_integer_math(response),
+                'floating_point_math': self.parse_floating_point_math(response),
+                'find_prime_numbers': self.parse_find_prime_numbers(response),
+                'random_string_sorting': self.parse_random_string_sorting(response),
+                'data_encryption': self.parse_data_encryption(response),
+                'data_compression': self.parse_data_compression(response),
+                'physics': self.parse_physics(response),
+                'extended_instructions': self.parse_extended_instructions(response),
+                'single_thread': self.parse_single_thread(response)
+            }
+        else:
+            pass
