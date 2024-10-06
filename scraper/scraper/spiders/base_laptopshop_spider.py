@@ -197,14 +197,6 @@ class BaseLaptopshopSpider(scrapy.Spider):
         """
         return "N/A"
     
-    # Material
-    def parse_material(self, response: Response): 
-        """
-        Extracts the material of the laptop from the response.
-        Example: Plastic, Metal, etc.
-        """
-        return "N/A"
-    
     # Origin
     def parse_origin(self, response: Response): 
         """
@@ -267,7 +259,6 @@ class BaseLaptopshopSpider(scrapy.Spider):
             'number_audio_jacks': self.parse_number_audio_jacks(response),
             'default_os': self.parse_default_os(response),
             'color': self.parse_color(response),
-            'material': self.parse_material(response),
             'origin': self.parse_origin(response),
             'warranty': self.parse_warranty(response),
             'release_date': self.parse_release_date(response),
