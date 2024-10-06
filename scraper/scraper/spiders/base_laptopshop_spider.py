@@ -1,19 +1,17 @@
 import scrapy
-from scrapy.http import Response
+from scrapy.http import Response, Request
 from scrapy_selenium import SeleniumRequest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium import webdriver
+from scrapy.selector import Selector
+import time
+
 
 class BaseLaptopshopSpider(scrapy.Spider):
     
     product_site_css = None
-    
-    def get_product_sites(self, response: Response):
-        """
-        Extracts the product sites from the response.
-        """
-        return [response.follow(url=url, callback=self.parse_one_observation) for url in response.css(self.product_site_css).getall()]
     
     # [PARSE FEATURES SECTION: START]
     # Brand
@@ -279,6 +277,13 @@ class BaseLaptopshopSpider(scrapy.Spider):
 class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
     
     next_page_css = None
+    
+    def get_product_sites(self, response: Response):
+        """
+        Extracts the product sites from the response.
+        """
+        return [response.follow(url=url, callback=self.parse_one_observation) for url in response.css(self.product_site_css).getall()]
+    
 
     def parse(self, response: Response):
         # Get all the products links
@@ -296,40 +301,49 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
     
     loadmore_button_css = None
     
+    def get_product_sites(self, response: Response, body: Selector):
+        """
+        Extracts the product sites from the response.
+        """
+        return [
+            response.follow(url, callback=self.parse_one_observation) 
+            for url in body.css(self.product_site_css).getall()
+        ]
+    
+    
     def start_requests(self):
         # Using SeleniumRequest instead of Scrapy's normal request
         for url in self.start_urls:
             yield SeleniumRequest(
                 url=url,
-                callable=self.parse,
+                callback=self.parse,
                 wait_time=10, # Wait for 10 seconds
             )
         
     def parse(self, response):
-        driver = response.meta['driver']
-        wait = WebDriverWait(driver, 10) # Wait to allow the button to appear
+        driver = webdriver.Edge()
+        driver.get(response.url)
+        wait = WebDriverWait(driver, 5) # Wait to allow the button to appear
         
         # Scroll and click "Load More" until all the content is loaded
         while True:
             try:
-                # Find the "Load more" button using its XPath
                 load_more_button = wait.until(
                     EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
                 )
                 load_more_button.click()
                 
                 # Wait for new content to load (if needed)
-                wait.until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, self.product_site_css))
-                )
+                time.sleep(2)
             except Exception as e:
                 # Break the loop if there's no more "Load More" button or something goes wrong
-                print(e)
+                print("No more 'Load More' button")
                 break
-            
-        # Get all the products links
-        product_site_requests = self.get_product_sites(driver.page_source)
+
         
+        # Get all the products links
+        product_site_requests = self.get_product_sites(response, Selector(text=driver.page_source))
+        assert type(product_site_requests[0]) is Request
         # Extracting the feature from a product website
         for site_request in product_site_requests:
             yield site_request
