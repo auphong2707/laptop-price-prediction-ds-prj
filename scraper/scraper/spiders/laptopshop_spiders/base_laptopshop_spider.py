@@ -24,6 +24,12 @@ class BaseLaptopshopSpider(scrapy.Spider):
         """
         return "N/A"
     
+    def parse_name(self, response: Response):
+        """
+        Extracts the name of the laptop from the response.
+        """
+        return "N/A"
+    
     # CPU
     def parse_cpu(self, response: Response):
         """
@@ -117,6 +123,25 @@ class BaseLaptopshopSpider(scrapy.Spider):
     def parse_battery_capacity(self, response: Response): 
         """
         Extracts the battery capacity in Wh from the response.
+        """
+        return "N/A"
+    
+    # Size
+    def parse_length(self, response: Response):
+        """
+        Extracts the length of the laptop in cm from the response.
+        """
+        return "N/A"
+    
+    def parse_width(self, response: Response):
+        """
+        Extracts the width of the laptop in cm from the response.
+        """
+        return "N/A"
+    
+    def parse_height(self, response: Response):
+        """
+        Extracts the height of the laptop in cm from the response.
         """
         return "N/A"
     
@@ -218,6 +243,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
     def parse_one_observation(self, response: Response):
         return {
             'brand': self.parse_brand(response),
+            'name': self.parse_name(response),
             'cpu': self.parse_cpu(response),
             'vga': self.parse_vga(response),
             'ram_amount': self.parse_ram_amount(response),
@@ -232,6 +258,9 @@ class BaseLaptopshopSpider(scrapy.Spider):
             'screen_color_gamut': self.parse_screen_color_gamut(response),
             'screen_brightness': self.parse_screen_brightness(response),
             'battery_capacity': self.parse_battery_capacity(response),
+            'length': self.parse_length(response),
+            'width': self.parse_width(response),
+            'height': self.parse_height(response),
             'weight': self.parse_weight(response),
             'number_usb_a_ports': self.parse_number_usb_a_ports(response),
             'number_usb_c_ports': self.parse_number_usb_c_ports(response),
