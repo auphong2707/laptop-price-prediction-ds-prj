@@ -231,7 +231,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # [PARSE FEATURES SECTION: END]
     
     def parse_one_observation(self, response: Response):
-        return {
+        yield {
             'brand': self.parse_brand(response),
             'name': self.parse_name(response),
             'cpu': self.parse_cpu(response),
