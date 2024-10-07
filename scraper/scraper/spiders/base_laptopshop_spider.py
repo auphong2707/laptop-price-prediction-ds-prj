@@ -267,7 +267,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
 
 class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
     
-    def get_next_page(self):
+    def get_next_page(self, response: Response):
         return None
     
     def get_product_sites(self, response: Response):
