@@ -266,8 +266,6 @@ class BaseLaptopshopSpider(scrapy.Spider):
         }
 
 class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
-    
-    site_index = 1
     page_css = None
     
     def start_requests(self):
