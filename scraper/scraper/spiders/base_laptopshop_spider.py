@@ -285,7 +285,7 @@ class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
         for site_request in product_site_requests:
             yield site_request
         
-        next_page = self.get_next_page()
+        next_page = self.get_next_page(response)
         if next_page is not None:
             yield response.follow(next_page, callback=self.parse)
             
