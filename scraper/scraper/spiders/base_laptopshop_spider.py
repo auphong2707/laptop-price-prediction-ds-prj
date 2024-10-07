@@ -267,7 +267,8 @@ class BaseLaptopshopSpider(scrapy.Spider):
 
 class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
     
-    next_page_css = None
+    def get_next_page():
+        return None
     
     def get_product_sites(self, response: Response):
         """
@@ -284,7 +285,7 @@ class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
         for site_request in product_site_requests:
             yield site_request
         
-        next_page = response.css(self.next_page_css).get()
+        next_page = self.get_next_page()
         if next_page is not None:
             yield response.follow(next_page, callback=self.parse)
             
