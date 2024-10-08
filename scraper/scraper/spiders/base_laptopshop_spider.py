@@ -265,10 +265,15 @@ class BaseLaptopshopSpider(scrapy.Spider):
             'price': self.parse_price(response)
         }
 
-class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
+class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
+    page_css = None
     
-    def get_next_page(self, response: Response):
-        return None
+    def start_requests(self):
+        for url in self.start_urls:
+            yield Request(
+                url=url,
+                callback=self.parse
+            )
     
     def get_product_sites(self, response: Response):
         """
@@ -285,9 +290,13 @@ class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
         for site_request in product_site_requests:
             yield site_request
         
-        next_page = self.get_next_page(response)
-        if next_page is not None:
-            yield response.follow(next_page, callback=self.parse)
+        pages = response.css(self.page_css).getall()
+        for page in pages:
+            
+            yield response.follow(
+                url=page,
+                callback=self.parse
+            )
             
 class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
     
@@ -315,7 +324,7 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
     def parse(self, response):
         driver = webdriver.Edge()
         driver.get(response.url)
-        wait = WebDriverWait(driver, 5) # Wait to allow the button to appear
+        wait = WebDriverWait(driver, 10) # Wait to allow the button to appear
         
         # Scroll and click "Load More" until all the content is loaded
         while True:
@@ -326,8 +335,8 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
                 load_more_button.click()
                 
                 # Wait for new content to load (if needed)
-                time.sleep(2)
-            except Exception as e:
+                time.sleep(5)
+            except Exception:
                 # Break the loop if there's no more "Load More" button or something goes wrong
                 print("No more 'Load More' button")
                 break
@@ -335,7 +344,7 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
         
         # Get all the products links
         product_site_requests = self.get_product_sites(response, Selector(text=driver.page_source))
-        assert type(product_site_requests[0]) is Request
+        
         # Extracting the feature from a product website
         for site_request in product_site_requests:
             yield site_request

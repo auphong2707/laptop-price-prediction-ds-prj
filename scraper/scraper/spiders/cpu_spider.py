@@ -6,7 +6,7 @@ class CpuSpider(scrapy.Spider):
     
     def parse_cpu_name(self, response):
         """Extract the CPU name using the CSS selector"""
-        return response.css('span.cpuname::text').get()
+        return response.css('span.cpuname::text').get().split(' @')[0]
     
     def parse_performance_cores(self, response):
         """Extracts and returns the number of cores of the CPU."""

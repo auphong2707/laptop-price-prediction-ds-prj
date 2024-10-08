@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = "scraper.spiders"
 #USER_AGENT = "scraper (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -92,11 +92,7 @@ REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
-from shutil import which
-
-SELENIUM_DRIVER_NAME = 'chrome'  # Or 'firefox', depending on the browser
-SELENIUM_DRIVER_EXECUTABLE_PATH = which('chromedriver')  # Update with the path to your driver
-SELENIUM_DRIVER_ARGUMENTS=['--headless']  # '--headless' for non-GUI mode
+USER_AGENT = 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
 
 DOWNLOADER_MIDDLEWARES = {
     'scrapy_selenium.SeleniumMiddleware': 800
