@@ -125,15 +125,15 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Size
-    def parse_length(self, response: Response):
-        """
-        Extracts the length of the laptop in cm from the response.
-        """
-        return "N/A"
-    
     def parse_width(self, response: Response):
         """
         Extracts the width of the laptop in cm from the response.
+        """
+        return "N/A"
+    
+    def parse_depth(self, response: Response):
+        """
+        Extracts the depth of the laptop in cm from the response.
         """
         return "N/A"
     
@@ -248,8 +248,8 @@ class BaseLaptopshopSpider(scrapy.Spider):
             'screen_brightness': self.parse_screen_brightness(response),
             'battery_capacity': self.parse_battery_capacity(response),
             'battery_cells': self.parse_battery_cells(response),
-            'length': self.parse_length(response),
             'width': self.parse_width(response),
+            'depth': self.parse_depth(response),
             'height': self.parse_height(response),
             'weight': self.parse_weight(response),
             'number_usb_a_ports': self.parse_number_usb_a_ports(response),
