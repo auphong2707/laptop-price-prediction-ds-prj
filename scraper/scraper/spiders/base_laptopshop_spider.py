@@ -114,7 +114,13 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # Battery
     def parse_battery_capacity(self, response: Response): 
         """
-        Extracts the battery capacity in Wh from the response.
+        Extracts the battery capacity in Whr from the response.
+        """
+        return "N/A"
+    
+    def parse_battery_cells(self, response: Response):
+        """
+        Extracts the number of battery cells from the response.
         """
         return "N/A"
     
@@ -241,6 +247,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
             'screen_refresh_rate': self.parse_screen_refresh_rate(response),
             'screen_brightness': self.parse_screen_brightness(response),
             'battery_capacity': self.parse_battery_capacity(response),
+            'battery_cells': self.parse_battery_cells(response),
             'length': self.parse_length(response),
             'width': self.parse_width(response),
             'height': self.parse_height(response),
