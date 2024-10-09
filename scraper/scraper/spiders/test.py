@@ -298,12 +298,6 @@ class Test(scrapy.Spider):
         except:
             return "N/A"
     
-    def parse_screen_color_gamut(self, response: Response): 
-        """
-        Extracts the screen color gamut in sRGB from the response.
-        """
-        return "N/A"
-    
     def parse_screen_brightness(self, response: Response): 
         """
         Extracts the screen brightness in nits from the response.
@@ -325,16 +319,50 @@ class Test(scrapy.Spider):
     # Battery
     def parse_battery_capacity(self, response: Response): 
         """
-        Extracts the battery capacity in Wh from the response.
+        Extracts the battery capacity in Whr from the response.
         """
-        return "N/A"
+        try:
+            res = self.get_scoped_value(response, ['Pin'])
+            res = res.lower()
+            
+            search_value = re.search(r'\d+\s*whr', res)
+            if search_value:
+                res = search_value.group()
+                res = int(res.split('whr')[0])
+            else:
+                res = "N/A"
+            
+            return res
+        except:
+            return "N/A"
+    
+    def parse_battery_cells(self, response: Response):
+        """
+        Extracts the number of battery cells from the response.
+        """
+        try:
+            res = self.get_scoped_value(response, ['Pin'])
+            res = res.lower()
+            search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells', res)
+            
+            if search_value:
+                res = int(search_value.group()[0])
+            else:
+                res = "N/A"
+            
+            return res
+        except:
+            return "N/A"
     
     # Size
     def parse_length(self, response: Response):
         """
         Extracts the length of the laptop in cm from the response.
         """
-        return "N/A"
+        try:
+            
+        except:
+            return "N/A"
     
     def parse_width(self, response: Response):
         """
@@ -453,6 +481,7 @@ class Test(scrapy.Spider):
             # 'screen_color_gamut': self.parse_screen_color_gamut(response),
             # 'screen_brightness': self.parse_screen_brightness(response),
             'battery_capacity': self.parse_battery_capacity(response),
+            'battery_cells': self.parse_battery_cells(response),
             # 'length': self.parse_length(response),
             # 'width': self.parse_width(response),
             # 'height': self.parse_height(response),
