@@ -11,6 +11,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
     
     product_site_css = 'h3.proloop-name a::attr(href)'
     loadmore_button_css = 'button#load_more'
+    close_button_xpaths = ["//button[@class='close']"]
     
     
     def get_scoped_value(self, response, names):
