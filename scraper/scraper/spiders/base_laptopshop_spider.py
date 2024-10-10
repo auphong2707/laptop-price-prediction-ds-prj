@@ -91,14 +91,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
         Example: HD, FHD, 4K.
         """
         return "N/A"
-    
-    def parse_screen_ratio(self, response: Response): 
-        """
-        Extracts the screen ratio from the response.
-        Example: 16:9, 16:10, 4:3.
-        """
-        return "N/A"
-    
+
     def parse_screen_refresh_rate(self, response: Response): 
         """
         Extracts the screen refresh rate in Hz from the response.
@@ -243,7 +236,6 @@ class BaseLaptopshopSpider(scrapy.Spider):
             'webcam_resolution': self.parse_webcam_resolution(response),
             'screen_size': self.parse_screen_size(response),
             'screen_resolution': self.parse_screen_resolution(response),
-            'screen_ratio': self.parse_screen_ratio(response),
             'screen_refresh_rate': self.parse_screen_refresh_rate(response),
             'screen_brightness': self.parse_screen_brightness(response),
             'battery_capacity': self.parse_battery_capacity(response),
