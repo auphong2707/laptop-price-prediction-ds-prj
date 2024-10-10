@@ -13,6 +13,7 @@ class Test(scrapy.Spider):
         "https://gearvn.com/products/laptop-gaming-hp-victus-16-s0142ax-9q989pa",
         "https://gearvn.com/products/laptop-gaming-asus-rog-zephyrus-g16-ga605wi-qr090ws",
         "https://gearvn.com/products/laptop-asus-vivobook-s-14-flip-tn3402ya-lz192w",
+        "https://gearvn.com/products/macbook-air-m2-8gpu-16gb-256gb-midnight",
     ]
             
     def get_scoped_value(self, response, names):
@@ -26,7 +27,7 @@ class Test(scrapy.Spider):
         for value in possibile_values:
             scope = response.xpath(value).getall()
             if scope:
-                return ''.join(scope)
+                return '\n'.join(scope)
             
         return None
                 
@@ -355,64 +356,146 @@ class Test(scrapy.Spider):
             return "N/A"
     
     # Size
-    def parse_length(self, response: Response):
-        """
-        Extracts the length of the laptop in cm from the response.
-        """
-        try:
-            
-        except:
-            return "N/A"
-    
     def parse_width(self, response: Response):
         """
         Extracts the width of the laptop in cm from the response.
         """
-        return "N/A"
+        try:
+            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước'])
+
+            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
+            values = sorted(values, reverse=True)
+            
+            res = values[0] if values[0] < 100 else values[0] / 10
+            
+            return round(res, 2)
+        except:
+            return "N/A"
+    
+    def parse_depth(self, response: Response):
+        """
+        Extracts the depth of the laptop in cm from the response.
+        """
+        try:
+            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước'])
+            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
+            values = sorted(values, reverse=True)
+
+            res = values[1] if values[1] < 100 else values[0] / 10
+                
+            return round(res, 2)
+        except:
+            return "N/A"
     
     def parse_height(self, response: Response):
         """
         Extracts the height of the laptop in cm from the response.
         """
-        return "N/A"
+        try:
+            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước'])
+            
+            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
+            values = sorted(values, reverse=True)
+            
+            res = values[2] if values[2] < 100 else values[0] / 10
+                
+            return round(res, 2)
+        except:
+            return "N/A"
     
     # Weight
     def parse_weight(self, response: Response): 
         """
         Extracts the weight of the laptop in kg from the response.
         """
-        return "N/A"
+        try:
+            res = self.get_scoped_value(response, ['Trọng lượng', 'Trọng lượng'])
+            res = re.search(r'(\d+(\.\d+)?)\s*(kg|Kg|KG)', res)
+            
+            if res:
+                res = float(res.group(1))
+            else:
+                res = "N/A"
+                
+            return res
+        except:
+            return "N/A"
     
     # Connectivity
+    def parse_number_usb(self, response: Response, pattern):
+        try:
+            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'])
+            res = res.lower()
+            if re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE) != '':
+                res = re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE)
+            
+            
+            while '(' in res and ')' in res:
+                res = re.sub(r'\([^()]*\)', '', res)
+                
+            print(res)
+            
+            res = re.split(r'[\n,]', res)
+            count = 0
+            for line in res:
+                if re.search(pattern, line):
+                    line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
+                    val = line.split()[0]
+                    if val[-1] == 'x': val = val[:-1]
+            
+                    if val.isnumeric():
+                        count += int(val)
+                    else:
+                        count += 1
+            
+            return count
+        except Exception as e:
+            print("ERROR", e)
+            return "N/A"
+    
     def parse_number_usb_a_ports(self, response: Response):
         """
         Extracts the number of USB-A ports from the response.
         """
-        return "N/A"
+        return self.parse_number_usb(response, r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a)\b')
     
     def parse_number_usb_c_ports(self, response: Response):
         """
         Extracts the number of USB-C ports from the response.
         """
-        return "N/A"
+        return self.parse_number_usb(response, r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b')
+    
+    def parse_has_port(self, response: Response, pattern):
+        try:
+            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'])
+            res = res.lower()
+            
+            if res:
+                port_search = re.search(pattern, res)
+                return 1 if port_search else 0
+            else:
+                return "N/A"
+            
+        except:
+            return "N/A"
     
     def parse_number_hdmi_ports(self, response: Response):
         """
         Extracts the number of HDMI ports from the response.
         """
-        return "N/A"
+        return self.parse_has_port(response, r'\bhdmi\b')
     
     def parse_number_ethernet_ports(self, response: Response):
         """
         Extracts the number of Ethernet ports from the response.
         """
-        return "N/A"
+        return self.parse_has_port(response, r'\brj-45|ethernet\b')
     
     def parse_number_audio_jacks(self, response: Response):
         """
         Extracts the number of audio jacks from the response.
         """
-        return "N/A"
+        return self.parse_has_port(response, r'\bheadphone|3.5mm\b')
     
     # Operating System
     def parse_default_os(self, response: Response): 
@@ -420,7 +503,16 @@ class Test(scrapy.Spider):
         Extracts the default operating system of the laptop from the response.
         Example: Windows, Linux, etc.
         """
-        return "N/A"
+        try:
+            res = self.get_scoped_value(response, ['Hệ điều hành'])
+            
+            res = res.split('+')[0]
+            for removal in ['Single Language']:
+                res = res.replace(removal, '')
+            
+            return res.strip()
+        except:
+            return "N/A"
     
     # Color
     def parse_color(self, response: Response): 
@@ -428,9 +520,17 @@ class Test(scrapy.Spider):
         Extracts the color of the laptop from the response.
         Example: Black, White, etc.
         """
-        return "N/A"
+        try:
+            res = self.get_scoped_value(response, ['Màu sắc'])
+            
+            if res:
+                return res.strip()
+            else:
+                return "N/A"
+        except:
+            return "N/A"
     
-    # Origin
+    # Origin: Not available
     def parse_origin(self, response: Response): 
         """
         Extracts the origin of the laptop from the response.
@@ -443,9 +543,25 @@ class Test(scrapy.Spider):
         """
         Extracts the warranty period in months from the response.
         """
-        return "N/A"
+        try:
+            res = self.get_scoped_value(response, ['Bảo hành'])
+            if res is None:
+                res = response.xpath("//strong[contains(text(), 'Bảo hành')]/following-sibling::text()").get()
+            if res is None:
+                res = response.xpath('//span[contains(text(), "Bảo hành")]/text()').get()
+                
+            search_value = re.search(r'(\d+)\s*tháng', res)
+            if search_value:
+                res = int(search_value.group(1))
+            else:
+                res = "N/A"
+            
+            return res
+            
+        except:
+            return "N/A"
     
-    # Release Date
+    # Release Date: Not available
     def parse_release_date(self, response: Response): 
         """
         Extracts the release date of the laptop from the response.
@@ -459,7 +575,16 @@ class Test(scrapy.Spider):
         Extracts the price of the laptop from the response.
         Example: in VND.
         """
-        return "N/A"
+        try:
+            price = response.xpath('//span[@class="pro-price a"]/text()').get()
+            
+            if price:
+                price = price.replace('₫', '').replace('.', '').strip()
+                return int(price)
+            else:
+                return "N/A"
+        except:
+            return "N/A"
     
     # [PARSE FEATURES SECTION: END]
     
@@ -478,19 +603,18 @@ class Test(scrapy.Spider):
             # 'screen_resolution': self.parse_screen_resolution(response),
             # 'screen_ratio': self.parse_screen_ratio(response),
             # 'screen_refresh_rate': self.parse_screen_refresh_rate(response),
-            # 'screen_color_gamut': self.parse_screen_color_gamut(response),
             # 'screen_brightness': self.parse_screen_brightness(response),
-            'battery_capacity': self.parse_battery_capacity(response),
-            'battery_cells': self.parse_battery_cells(response),
-            # 'length': self.parse_length(response),
+            # 'battery_capacity': self.parse_battery_capacity(response),
+            # 'battery_cells': self.parse_battery_cells(response),
             # 'width': self.parse_width(response),
+            # 'depth': self.parse_depth(response),
             # 'height': self.parse_height(response),
             # 'weight': self.parse_weight(response),
             # 'number_usb_a_ports': self.parse_number_usb_a_ports(response),
             # 'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-            # 'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-            # 'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-            # 'number_audio_jacks': self.parse_number_audio_jacks(response),
+            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
+            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
+            'number_audio_jacks': self.parse_number_audio_jacks(response),
             # 'default_os': self.parse_default_os(response),
             # 'color': self.parse_color(response),
             # 'origin': self.parse_origin(response),
