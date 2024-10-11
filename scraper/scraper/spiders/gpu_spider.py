@@ -51,12 +51,18 @@ class GPUSpider(scrapy.Spider):
     
     def parse_gpu_max_tdp(self, response):
         """Extract the GPU max TDP using the CSS selector"""
-        return response.css('p:contains("Max TDP")::text').get().strip()
-    
-    def parse_directx_9(self, response):
-        """Extract the test results of DirectX 9 using CSS selector"""
         try:
-            if response.css('tr:has(th:contains("DirectX 9")) td::text').get():
+            return response.css('p:contains("Max TDP")::text').get().strip()
+        except:
+            return 'N/A'
+        
+    # def parse_directx_9(self, response):
+    #     """Extract the test results of DirectX 9 using CSS selector"""
+    #     try:
+    #         if response.css('tr:has(th:contains("DirectX 9")) td::text').get():
+    #             return response.css('tr:has(th:contains("DirectX 9")) td::text').get().strip()
+    #     except:
+    #         return "N/A"
     
     def parse(self, response):
         gpu_requests = [response.follow(url=url, callback=self.parse_gpu) for url in response.css("ul.chartlist li a::attr(href)").getall()]
@@ -64,8 +70,7 @@ class GPUSpider(scrapy.Spider):
             yield gpu_request
 
     def parse_gpu(self, response):
-        if "laptop" in response.css('div.left-desc-cpu p::text').get().strip().lower():
-            yield {
+        yield {
                 'name': self.parse_gpu_name(response),
                 'bus_interface': self.parse_gpu_bus_interface(response),
                 'max_memory_size': self.parse_gpu_max_memory_size(response),
@@ -74,5 +79,4 @@ class GPUSpider(scrapy.Spider):
                 'open_gl': self.parse_gpu_open_gl(response),
                 'max_tdp': self.parse_gpu_max_tdp(response)
             }
-        else:
-            pass
+
