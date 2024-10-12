@@ -122,14 +122,24 @@ class ThegioididongSpider(scrapy.Spider):
         """
         Extracts the amount of storage in GB from the response.
         """
-        return "N/A"
+        try:
+            storage = self.get_scoped_value(response, ["Ổ cứng:"]).split(" ")
+            if storage[1] == "TB":
+                return int(storage[0]) * 1024
+            else:
+                return int(storage[0])
+        except:
+            return "N/A"
     
     def parse_storage_type(self, response: Response): 
         """
         Extracts the type of storage from the response.
         Example: HDD, SSD, SSHD.
         """
-        return "N/A"
+        try:
+            return self.get_scoped_value(response, ["Ổ cứng:"]).split(" ")[2]
+        except:
+            return "N/A"
     
     # Webcam
     def parse_webcam_resolution(self, response: Response): 
@@ -292,8 +302,8 @@ class ThegioididongSpider(scrapy.Spider):
             # 'vga': self.parse_vga(response),  # Done
             # 'ram_amount': self.parse_ram_amount(response), # Done
             # 'ram_type': self.parse_ram_type(response), # Done
-            'storage_amount': self.parse_storage_amount(response),
-            'storage_type': self.parse_storage_type(response),
+            # 'storage_amount': self.parse_storage_amount(response), # Done
+            # 'storage_type': self.parse_storage_type(response), # Done
             # 'webcam_resolution': self.parse_webcam_resolution(response),
             # 'screen_size': self.parse_screen_size(response),
             # 'screen_resolution': self.parse_screen_resolution(response),
