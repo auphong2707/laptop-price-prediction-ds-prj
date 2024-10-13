@@ -147,40 +147,93 @@ class ThegioididongSpider(scrapy.Spider):
         Extracts the webcam resolution from the response.
         Example: HD, FHD, 4K.
         """
-        return "N/A"
+        try:
+            webcams = (self.get_scoped_value(response, ['Webcam'])).split("\n")
+            if len(webcams) == 1:
+                webcam = webcams[0].lower()
+            else:
+                for _ in webcams:
+                    if "Camera trước:" in _:
+                        webcam = _.lower()
+
+            if any(term in webcam for term in ['qhd', '2k', '1440p', '2560x1440']):
+                return 'QHD'
+            elif any(term in webcam for term in ['fhd', '1080p', '1920x1080']):
+                return 'FHD'
+            elif any(term in webcam for term in ['hd', '720p', '1280x720']):
+                return 'HD'
+            else:
+                return "N/A"
+        except:
+            return "N/A"
     
     # Screen
     def parse_screen_size(self, response: Response): 
         """
         Extracts the screen size in inches from the response.
         """
-        return "N/A"
+        try:
+            return float(self.get_scoped_value(response, ["Màn hình:"]).replace('"', ''))
+        except:
+            return "N/A"
     
     def parse_screen_resolution(self, response: Response): 
         """
         Extracts the screen resolution from the response.
         Example: HD, FHD, 4K.
         """
-        return "N/A"
+        try:
+            screen_res = self.get_scoped_value(response, ["Độ phân giải:"])
+            search = re.search(r'(\d{3,4})\s*[x×]\s*(\d{3,4})', screen_res)
+            if search:
+                return search.group()
+            else:
+                return "N/A"
+        except:
+            return "N/A"
 
     def parse_screen_refresh_rate(self, response: Response): 
         """
         Extracts the screen refresh rate in Hz from the response.
         """
-        return "N/A"
+        try:
+            refresh_rate = self.get_scoped_value(response, ["Tần số quét:"])
+            search = re.search(r'\d+\s*Hz', refresh_rate)
+            if search:
+                return int(search.group()[:-2])
+            else:
+                return "N/A"
+        except:
+            return "N/A"
     
     def parse_screen_brightness(self, response: Response): 
         """
         Extracts the screen brightness in nits from the response.
         """
-        return "N/A"
+        try:
+            brightness = self.get_scoped_value(response, ["Công nghệ màn hình:"])
+            search = re.findall(r'\d+\s*nits', brightness)
+            if search:
+                return max(int(nit.split()[0]) for nit in search)
+            else:
+                return "N/A"
+        except:
+            return "N/A"
     
     # Battery
     def parse_battery_capacity(self, response: Response): 
         """
         Extracts the battery capacity in Whr from the response.
-        """
-        return "N/A"
+        """ 
+        try:
+            battery = self.get_scoped_value(response, ["Thông tin Pin:"])
+            search = re.search(r'(\d+(\.\d+)?)+\s*Wh', battery)
+            if search:
+                return float(search.group().replace("Wh", "").strip())
+            else:
+                return "N/A"
+        except:
+            return "N/A"
     
     def parse_battery_cells(self, response: Response):
         """
@@ -355,13 +408,13 @@ class ThegioididongSpider(scrapy.Spider):
             # 'ram_type': self.parse_ram_type(response), # Done
             # 'storage_amount': self.parse_storage_amount(response), # Done
             # 'storage_type': self.parse_storage_type(response), # Done
-            # 'webcam_resolution': self.parse_webcam_resolution(response),
-            # 'screen_size': self.parse_screen_size(response),
-            # 'screen_resolution': self.parse_screen_resolution(response),
-            # 'screen_refresh_rate': self.parse_screen_refresh_rate(response),
-            # 'screen_brightness': self.parse_screen_brightness(response),
-            # 'battery_capacity': self.parse_battery_capacity(response),
-            # 'battery_cells': self.parse_battery_cells(response),
+            'webcam_resolution': self.parse_webcam_resolution(response),
+            'screen_size': self.parse_screen_size(response),
+            'screen_resolution': self.parse_screen_resolution(response),
+            'screen_refresh_rate': self.parse_screen_refresh_rate(response),
+            'screen_brightness': self.parse_screen_brightness(response),
+            'battery_capacity': self.parse_battery_capacity(response),
+            'battery_cells': self.parse_battery_cells(response),
             # 'width': self.parse_width(response), # Done
             # 'depth': self.parse_depth(response), # Done
             # 'height': self.parse_height(response), # Done
@@ -375,7 +428,7 @@ class ThegioididongSpider(scrapy.Spider):
             # 'color': self.parse_color(response),
             # 'origin': self.parse_origin(response), # Unavailable
             # 'warranty': self.parse_warranty(response), # Done
-            'release_date': self.parse_release_date(response),
-            'price': self.parse_price(response)
+            # 'release_date': self.parse_release_date(response), # Done
+            # 'price': self.parse_price(response) # Need checking
         }
         
