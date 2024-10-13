@@ -15,7 +15,6 @@ class ThegioididongSpider(scrapy.Spider):
         "https://www.thegioididong.com/laptop/acer-aspire-a515-58gm-53pz-i5-nxkq4sv008?utm_recommendation=1",
     ]
     
-    
     def get_scoped_value(self, response, names):
         possibile_values = [
                 "//ul/li[contains(., '{}')]//aside[2]//text()".format(name)
@@ -239,7 +238,15 @@ class ThegioididongSpider(scrapy.Spider):
         """
         Extracts the number of battery cells from the response.
         """
-        return "N/A"
+        try:
+            battery = self.get_scoped_value(response, ["Thông tin Pin:"])
+            search = re.search(r'(\d+)-?\s*cell', battery)
+            if search:
+                return int(search.group().split("-")[0].strip())
+            else:
+                return "N/A"
+        except:
+            return "N/A"
     
     # Size
     def parse_width(self, response: Response):
@@ -299,7 +306,10 @@ class ThegioididongSpider(scrapy.Spider):
         """
         Extracts the number of USB-A ports from the response.
         """
-        return "N/A"
+        try:
+            return self.get_scoped_value(response, ["Cổng giao tiếp:"])
+        except:
+            return "N/A"
     
     def parse_number_usb_c_ports(self, response: Response):
         """
@@ -311,19 +321,31 @@ class ThegioididongSpider(scrapy.Spider):
         """
         Extracts the number of HDMI ports from the response.
         """
-        return "N/A"
+        try:
+            search = re.search(r'HDMI', self.get_scoped_value(response, ["Cổng giao tiếp:"]))
+            return 1 if search else 0
+        except:
+            return "N/A"
     
     def parse_number_ethernet_ports(self, response: Response):
         """
         Extracts the number of Ethernet ports from the response.
         """
-        return "N/A"
+        try:
+            search = re.search(r'RJ-?45|Ethernet', self.get_scoped_value(response, ["Cổng giao tiếp:"]))
+            return 1 if search else 0
+        except:
+            return "N/A"
     
     def parse_number_audio_jacks(self, response: Response):
         """
         Extracts the number of audio jacks from the response.
         """
-        return "N/A"
+        try:
+            search = re.search(r'Jack tai nghe', self.get_scoped_value(response, ["Cổng giao tiếp:"]))
+            return 1 if search else 0
+        except:
+            return "N/A"
     
     # Operating System
     def parse_default_os(self, response: Response): 
@@ -331,7 +353,18 @@ class ThegioididongSpider(scrapy.Spider):
         Extracts the default operating system of the laptop from the response.
         Example: Windows, Linux, etc.
         """
-        return "N/A"
+        try:
+            os = self.get_scoped_value(response, ["Hệ điều hành:"]).split(" ")
+            if os[0].lower() == "windows":
+                return " ".join(os[:3])
+            elif os[0].lower() == "macos":
+                return "macOS"
+            elif "linux" in os or "Linux" in os:
+                return "Linux"
+            else:
+                return "N/A"
+        except:
+            return "N/A"
     
     # Color
     def parse_color(self, response: Response): 
@@ -339,7 +372,11 @@ class ThegioididongSpider(scrapy.Spider):
         Extracts the color of the laptop from the response.
         Example: Black, White, etc.
         """
-        return "N/A"
+        try:
+            colors = response.xpath('//div[@class="box03 color group desk"]/a/text()').getall()
+            return [color.strip() for color in colors]
+        except:
+            return "N/A"
     
     # Origin: Unavailable
     def parse_origin(self, response: Response): 
@@ -401,31 +438,31 @@ class ThegioididongSpider(scrapy.Spider):
     def parse(self, response: Response):
         yield {
             # 'brand': self.parse_brand(response), # Done
-            # 'name': self.parse_name(response),    # Done
+            'name': self.parse_name(response),    # Done
             # 'cpu': self.parse_cpu(response),    # Done
             # 'vga': self.parse_vga(response),  # Done
             # 'ram_amount': self.parse_ram_amount(response), # Done
             # 'ram_type': self.parse_ram_type(response), # Done
             # 'storage_amount': self.parse_storage_amount(response), # Done
             # 'storage_type': self.parse_storage_type(response), # Done
-            'webcam_resolution': self.parse_webcam_resolution(response),
-            'screen_size': self.parse_screen_size(response),
-            'screen_resolution': self.parse_screen_resolution(response),
-            'screen_refresh_rate': self.parse_screen_refresh_rate(response),
-            'screen_brightness': self.parse_screen_brightness(response),
-            'battery_capacity': self.parse_battery_capacity(response),
-            'battery_cells': self.parse_battery_cells(response),
+            # 'webcam_resolution': self.parse_webcam_resolution(response), # Done
+            # 'screen_size': self.parse_screen_size(response), # Done
+            # 'screen_resolution': self.parse_screen_resolution(response), # Done
+            # 'screen_refresh_rate': self.parse_screen_refresh_rate(response), # Done
+            # 'screen_brightness': self.parse_screen_brightness(response), # Done
+            # 'battery_capacity': self.parse_battery_capacity(response), # Done
+            # 'battery_cells': self.parse_battery_cells(response), # Done
             # 'width': self.parse_width(response), # Done
             # 'depth': self.parse_depth(response), # Done
             # 'height': self.parse_height(response), # Done
             # 'weight': self.parse_weight(response), # Done
-            # 'number_usb_a_ports': self.parse_number_usb_a_ports(response),
-            # 'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-            # 'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-            # 'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-            # 'number_audio_jacks': self.parse_number_audio_jacks(response),
-            # 'default_os': self.parse_default_os(response),
-            # 'color': self.parse_color(response),
+            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
+            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
+            # 'number_hdmi_ports': self.parse_number_hdmi_ports(response), # Done
+            # 'number_ethernet_ports': self.parse_number_ethernet_ports(response), # Done
+            # 'number_audio_jacks': self.parse_number_audio_jacks(response), # Done
+            # 'default_os': self.parse_default_os(response), # Done
+            # 'color': self.parse_color(response),  # Done
             # 'origin': self.parse_origin(response), # Unavailable
             # 'warranty': self.parse_warranty(response), # Done
             # 'release_date': self.parse_release_date(response), # Done
