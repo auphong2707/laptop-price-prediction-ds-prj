@@ -193,26 +193,53 @@ class ThegioididongSpider(scrapy.Spider):
         """
         Extracts the width of the laptop in cm from the response.
         """
-        return "N/A"
+        try:
+            size = self.get_scoped_value(response, ["Kích thước:"]).split(" - ")
+            width = size[0].split(" ")
+            if width[2] == "mm":
+                return round(float(width[1]) / 10, 4)
+            else:
+                return float(width[1])
+        except:
+            return "N/A"
     
     def parse_depth(self, response: Response):
         """
         Extracts the depth of the laptop in cm from the response.
         """
-        return "N/A"
+        try:
+            size = self.get_scoped_value(response, ["Kích thước:"]).split(" - ")
+            depth = size[1].split(" ")
+            if depth[2] == "mm":
+                return round(float(depth[1]) / 10, 4)
+            else:
+                return float(depth[1])
+        except:
+            return "N/A"
     
     def parse_height(self, response: Response):
         """
         Extracts the height of the laptop in cm from the response.
         """
-        return "N/A"
+        try:
+            size = self.get_scoped_value(response, ["Kích thước:"]).split(" - ")
+            height = size[2].split(" ")
+            if height[2] == "mm":
+                return round(float(height[1]) / 10, 4)
+            else:
+                return float(height[1])
+        except:
+            return "N/A"
     
     # Weight
     def parse_weight(self, response: Response): 
         """
         Extracts the weight of the laptop in kg from the response.
         """
-        return "N/A"
+        try:
+            return float(self.get_scoped_value(response, ["Khối lượng tịnh:"]).split(" ")[0])
+        except:
+            return "N/A"
     
     # Connectivity
     def parse_number_usb_a_ports(self, response: Response):
@@ -261,7 +288,7 @@ class ThegioididongSpider(scrapy.Spider):
         """
         return "N/A"
     
-    # Origin
+    # Origin: Unavailable
     def parse_origin(self, response: Response): 
         """
         Extracts the origin of the laptop from the response.
@@ -274,7 +301,15 @@ class ThegioididongSpider(scrapy.Spider):
         """
         Extracts the warranty period in months from the response.
         """
-        return "N/A"
+        try:
+            warranty = response.xpath('//ul[@class="policy__list"]/li[2]/p//text()').getall()
+            warranty = warranty[1].split(" ")[-2:]
+            if warranty[1] == "tháng":
+                return int(warranty[0])
+            else:
+                return int(warranty[0]) * 12
+        except:
+            return "N/A"
     
     # Release Date
     def parse_release_date(self, response: Response): 
@@ -282,7 +317,14 @@ class ThegioididongSpider(scrapy.Spider):
         Extracts the release date of the laptop from the response.
         Format: dd/mm/yyyy.
         """
-        return "N/A"
+        try:
+            year = self.get_scoped_value(response, ["Thời điểm ra mắt:"])
+            if year == "Hãng không công bố":
+                return "N/A"
+            else:
+                return "**/**/" + year
+        except:
+            return "N/A"
     
     # Price
     def parse_price(self, response: Response): 
@@ -290,7 +332,16 @@ class ThegioididongSpider(scrapy.Spider):
         Extracts the price of the laptop from the response.
         Example: in VND.
         """
-        return "N/A"
+        try:
+            prices = [
+                response.xpath('//div[@class="bs_price"]/em/text()').get(), 
+                response.xpath('//p[@class="box-price-present"]/text()').get()
+            ]
+            for price in prices:
+                if price:
+                    return int(price.replace(".", "").split("₫")[0])
+        except:
+            return "N/A"
     
     # [PARSE FEATURES SECTION: END]
     
@@ -307,15 +358,14 @@ class ThegioididongSpider(scrapy.Spider):
             # 'webcam_resolution': self.parse_webcam_resolution(response),
             # 'screen_size': self.parse_screen_size(response),
             # 'screen_resolution': self.parse_screen_resolution(response),
-            # 'screen_ratio': self.parse_screen_ratio(response),
             # 'screen_refresh_rate': self.parse_screen_refresh_rate(response),
             # 'screen_brightness': self.parse_screen_brightness(response),
             # 'battery_capacity': self.parse_battery_capacity(response),
             # 'battery_cells': self.parse_battery_cells(response),
-            # 'width': self.parse_width(response),
-            # 'depth': self.parse_depth(response),
-            # 'height': self.parse_height(response),
-            # 'weight': self.parse_weight(response),
+            # 'width': self.parse_width(response), # Done
+            # 'depth': self.parse_depth(response), # Done
+            # 'height': self.parse_height(response), # Done
+            # 'weight': self.parse_weight(response), # Done
             # 'number_usb_a_ports': self.parse_number_usb_a_ports(response),
             # 'number_usb_c_ports': self.parse_number_usb_c_ports(response),
             # 'number_hdmi_ports': self.parse_number_hdmi_ports(response),
@@ -323,9 +373,9 @@ class ThegioididongSpider(scrapy.Spider):
             # 'number_audio_jacks': self.parse_number_audio_jacks(response),
             # 'default_os': self.parse_default_os(response),
             # 'color': self.parse_color(response),
-            # 'origin': self.parse_origin(response),
-            # 'warranty': self.parse_warranty(response),
-            # 'release_date': self.parse_release_date(response),
-            # 'price': self.parse_price(response)
+            # 'origin': self.parse_origin(response), # Unavailable
+            # 'warranty': self.parse_warranty(response), # Done
+            'release_date': self.parse_release_date(response),
+            'price': self.parse_price(response)
         }
         
