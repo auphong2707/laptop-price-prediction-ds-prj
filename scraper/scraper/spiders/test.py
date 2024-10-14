@@ -7,12 +7,21 @@ class ThegioididongSpider(scrapy.Spider):
     name = "test_spider"
     
     start_urls = [
-        'https://www.thegioididong.com/laptop/dell-inspiron-15-3520-i5-n5i5052w1',
-        "https://www.thegioididong.com/laptop/apple-macbook-air-2020-mgn63saa",
-        "https://www.thegioididong.com/laptop/asus-vivobook-go-15-e1504fa-r5-nj776w?utm_flashsale=1",
-        "https://www.thegioididong.com/laptop/surface-pro-9-i7-512",
+        "https://www.thegioididong.com/laptop/apple-macbook-pro-16-inch-m3-max-96gb-1tb?utm_flashsale=1",
+        "https://www.thegioididong.com/laptop/apple-macbook-pro-16-inch-m3-pro-2023-12-core?utm_flashsale=1",
+        "https://www.thegioididong.com/laptop/apple-macbook-pro-14-inch-m3-pro-2023",
         "https://www.thegioididong.com/laptop/macbook-pro-14-inch-m3-2023",
-        "https://www.thegioididong.com/laptop/acer-aspire-a515-58gm-53pz-i5-nxkq4sv008?utm_recommendation=1",
+        "https://www.thegioididong.com/laptop/macbook-air-15-inch-m3-2024-16gb-256gb",
+        "https://www.thegioididong.com/laptop/apple-macbook-air-m2-2022-16gb-256gb-10gpu",
+        "https://www.thegioididong.com/laptop/apple-macbook-air-m2-2023",
+        "https://www.thegioididong.com/laptop/macbook-air-13-inch-m3-2024",
+        "https://www.thegioididong.com/laptop/apple-macbook-air-m2-2022",
+        "https://www.thegioididong.com/laptop/apple-macbook-air-2020-mgn63saa",
+        "https://www.thegioididong.com/laptop/dell-inspiron-16-5640-core-7-n6i7512w1",
+        "https://www.thegioididong.com/laptop/dell-inspiron-7440-core-5-n4i5006w1",
+        "https://www.thegioididong.com/laptop/dell-inspiron-14-5440-core-7-7fn5j",
+        "https://www.thegioididong.com/laptop/acer-aspire-3-a315-510p-32ef-i3-nxkdhsv001",
+        "https://www.thegioididong.com/laptop/asus-zenbook-14-oled-ux3405ma-ultra-5-pp151w",
     ]
     
     def get_scoped_value(self, response, names):
@@ -39,6 +48,8 @@ class ThegioididongSpider(scrapy.Spider):
             brand =  response.xpath('//ul[@class="breadcrumb"]/li[2]/a/text()').get().split(" ")[1]
             if brand == "Surface":
                 return "Microsoft"
+            if brand == "MacBook":
+                return "Apple"
             return brand
         except:
             return "N/A"
@@ -56,12 +67,14 @@ class ThegioididongSpider(scrapy.Spider):
             else:
                 id = ""
             
-            for _ in ["i3", "i5", "i7", "i9", "R3", "R5", "R7", "R9"]:
+            for _ in ["i3", "i5", "i7", "i9", "R3", "R5", "R7", "R9", "Ultra", "Core"]:
                 if _ in fullname:
                     fullname = fullname.split(_)[0].strip()
                     break
             name = fullname.replace("Laptop", "").strip()
             name = re.sub(r'\d+(\.\d+)? inch.*', '', name).strip()
+            name = re.sub(r'\S*\/\S*', '', name).strip()
+            
             
             return name + " " + id
         except:
@@ -74,14 +87,50 @@ class ThegioididongSpider(scrapy.Spider):
         """
         try:
             cpu = self.get_scoped_value(response, ["Công nghệ CPU:"])
-            patterns = [
-                r"(Intel Core (i\d)) [A-Za-z ]+- (\d{4,5}[A-Z])",
-                ]
-            for pattern in patterns:
-                match = re.search(pattern, cpu)
-                if match:
-                    return f"{match.group(1)}-{match.group(3)}"
+            
+            if "Celeron" in cpu:
+                return "Intel Celeron N4500"
+            
+            elif "Ryzen AI 9" in cpu:
+                return "AMD Ryzen AI 9 HX 370"
+            
+            elif "Snapdragon" in cpu:
+                return "Qualcomm Snapdragon X Elite - X1E-78-100"
+            
+            elif "Intel" in cpu:
+                patterns = [
+                    r"(Intel Core (i\d)) [A-Za-z ]+- (\d{4,5}[A-Z])",
+                    r"(Intel Core Ultra \d+).*?-\s*(\w+)",
+                    r'(Intel Core \d+)\s+Raptor Lake\s*-\s*(\w+)',
+                    r'(Intel Core (i\d+))\s+Alder Lake.*?-\s*(N\d+)',
+                    ]
+                for pattern in patterns:
+                    match = re.search(pattern, cpu, re.IGNORECASE)
+                    if match:
+                        if "Ultra" in match.group():
+                            return f"{match.group(1)} {match.group(2)}"
+                        elif "Raptor Lake" in match.group():
+                            return f"{match.group(1)} {match.group(2)}"
+                        elif "Alder Lake" in match.group():
+                            return f"{match.group(1)}-{match.group(3)}"
+                        else:
+                            return f"{match.group(1)}-{match.group(3)}"
+                        
+            elif "AMD" in cpu:
+                patterns = [
+                    r"(AMD Ryzen \d+(?: Pro)?)(?:\s*-\s*)(\w+)",
+                    ]
+                for pattern in patterns:
+                    match = re.search(pattern, cpu, re.IGNORECASE)
+                    if match:
+                        return f"{match.group(1)} {match.group(2)}"
+                    
+            elif "Apple" in cpu:
+                number_of_cores = self.get_scoped_value(response, ["Số nhân:"])
+                return cpu.split(" - Hãng không công bố")[0] + " {} Core".format(number_of_cores)
+                
             return cpu.split(" - Hãng không công bố")[0].replace(" - ", "-")
+        
         except:
             return "N/A"
     
@@ -382,7 +431,7 @@ class ThegioididongSpider(scrapy.Spider):
         """
         try:
             colors = response.xpath('//div[@class="box03 color group desk"]/a/text()').getall()
-            return [color.strip() for color in colors]
+            return ", ".join([color.strip() for color in colors]) if len(colors) > 1 else "N/A"
         except:
             return "N/A"
     
@@ -470,7 +519,7 @@ class ThegioididongSpider(scrapy.Spider):
             # 'number_ethernet_ports': self.parse_number_ethernet_ports(response), # Done
             # 'number_audio_jacks': self.parse_number_audio_jacks(response), # Done
             # 'default_os': self.parse_default_os(response), # Done
-            # 'color': self.parse_color(response),  # Done
+            'color': self.parse_color(response),  # Done
             # 'origin': self.parse_origin(response), # Unavailable
             # 'warranty': self.parse_warranty(response), # Done
             # 'release_date': self.parse_release_date(response), # Done
