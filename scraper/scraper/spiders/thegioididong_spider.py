@@ -69,6 +69,8 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
             brand =  response.xpath('//ul[@class="breadcrumb"]/li[2]/a/text()').get().split(" ")[1]
             if brand == "Surface":
                 return "Microsoft"
+            if brand == "MacBook":
+                return "Apple"
             return brand
         except:
             return "N/A"
@@ -86,12 +88,14 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
             else:
                 id = ""
             
-            for _ in ["i3", "i5", "i7", "i9", "R3", "R5", "R7", "R9"]:
+            for _ in ["i3", "i5", "i7", "i9", "R3", "R5", "R7", "R9", "Ultra", "Core"]:
                 if _ in fullname:
                     fullname = fullname.split(_)[0].strip()
                     break
             name = fullname.replace("Laptop", "").strip()
             name = re.sub(r'\d+(\.\d+)? inch.*', '', name).strip()
+            name = re.sub(r'\S*\/\S*', '', name).strip()
+            
             
             return name + " " + id
         except:
@@ -103,7 +107,51 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the CPU name of the laptop from the response.
         """
         try:
-            return self.get_scoped_value(response, ["Công nghệ CPU:"]).split(" - Hãng không công bố")[0].replace(" - ", "-")
+            cpu = self.get_scoped_value(response, ["Công nghệ CPU:"])
+            
+            if "Celeron" in cpu:
+                return "Intel Celeron N4500"
+            
+            elif "Ryzen AI 9" in cpu:
+                return "AMD Ryzen AI 9 HX 370"
+            
+            elif "Snapdragon" in cpu:
+                return "Qualcomm Snapdragon X Elite - X1E-78-100"
+            
+            elif "Intel" in cpu:
+                patterns = [
+                    r"(Intel Core (i\d)) [A-Za-z ]+- (\d{4,5}[A-Z])",
+                    r"(Intel Core Ultra \d+).*?-\s*(\w+)",
+                    r'(Intel Core \d+)\s+Raptor Lake\s*-\s*(\w+)',
+                    r'(Intel Core (i\d+))\s+Alder Lake.*?-\s*(N\d+)',
+                    ]
+                for pattern in patterns:
+                    match = re.search(pattern, cpu, re.IGNORECASE)
+                    if match:
+                        if "Ultra" in match.group():
+                            return f"{match.group(1)} {match.group(2)}"
+                        elif "Raptor Lake" in match.group():
+                            return f"{match.group(1)} {match.group(2)}"
+                        elif "Alder Lake" in match.group():
+                            return f"{match.group(1)}-{match.group(3)}"
+                        else:
+                            return f"{match.group(1)}-{match.group(3)}"
+                        
+            elif "AMD" in cpu:
+                patterns = [
+                    r"(AMD Ryzen \d+(?: Pro)?)(?:\s*-\s*)(\w+)",
+                    ]
+                for pattern in patterns:
+                    match = re.search(pattern, cpu, re.IGNORECASE)
+                    if match:
+                        return f"{match.group(1)} {match.group(2)}"
+                    
+            elif "Apple" in cpu:
+                number_of_cores = self.get_scoped_value(response, ["Số nhân:"])
+                return cpu.split(" - Hãng không công bố")[0] + " {} Core".format(number_of_cores)
+                
+            return cpu.split(" - Hãng không công bố")[0].replace(" - ", "-")
+        
         except:
             return "N/A"
     
@@ -142,7 +190,7 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
             if ram_type == "Hãng không công bố":
                 return "N/A"
             else:
-                return ram_type.split()[0].replace("LP", "")
+                return ram_type.split()[0].replace("LP", "").replace("X", "")
         except:
             return "N/A"
     
@@ -166,7 +214,11 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: HDD, SSD, SSHD.
         """
         try:
-            return self.get_scoped_value(response, ["Ổ cứng:"]).split(" ")[2]
+            storage_type = self.get_scoped_value(response, ["Ổ cứng:"]).split(" ")[2]
+            if storage_type in ["SSD", "HDD"]:
+                return storage_type
+            else:
+                return "N/A"
         except:
             return "N/A"
     
@@ -394,6 +446,8 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
                 return "macOS"
             elif "linux" in os or "Linux" in os:
                 return "Linux"
+            elif "chrome" in os or "Chrome" in os:
+                return "Chrome OS"
             else:
                 return "N/A"
         except:
@@ -407,7 +461,7 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             colors = response.xpath('//div[@class="box03 color group desk"]/a/text()').getall()
-            return [color.strip() for color in colors]
+            return ", ".join([color.strip() for color in colors]) if len(colors) > 1 else "N/A"
         except:
             return "N/A"
     
@@ -441,11 +495,15 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
         Format: dd/mm/yyyy.
         """
         try:
-            year = self.get_scoped_value(response, ["Thời điểm ra mắt:"])
-            if year == "Hãng không công bố":
-                return "N/A"
+            date = self.get_scoped_value(response, ["Thời điểm ra mắt:"]).split("/")
+            if len(date) == 1:
+                return f"**/**/{date[0]}" if len(date[0]) == 4 else "N/A"
+            elif len(date) == 2:
+                return f"**/{int(date[0]):02}/{date[1]}" if len(date[1]) == 4 else "N/A"
+            elif len(date) == 3:
+                return f"{int(date[0]):02}/{int(date[1]):02}/{date[2]}" if len(date[2]) == 4 else "N/A"
             else:
-                return "**/**/" + year
+                return "N/A"
         except:
             return "N/A"
     
