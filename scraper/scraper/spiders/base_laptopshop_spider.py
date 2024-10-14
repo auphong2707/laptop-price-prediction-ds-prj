@@ -91,14 +91,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
         Example: HD, FHD, 4K.
         """
         return "N/A"
-    
-    def parse_screen_ratio(self, response: Response): 
-        """
-        Extracts the screen ratio from the response.
-        Example: 16:9, 16:10, 4:3.
-        """
-        return "N/A"
-    
+
     def parse_screen_refresh_rate(self, response: Response): 
         """
         Extracts the screen refresh rate in Hz from the response.
@@ -243,7 +236,6 @@ class BaseLaptopshopSpider(scrapy.Spider):
             'webcam_resolution': self.parse_webcam_resolution(response),
             'screen_size': self.parse_screen_size(response),
             'screen_resolution': self.parse_screen_resolution(response),
-            'screen_ratio': self.parse_screen_ratio(response),
             'screen_refresh_rate': self.parse_screen_refresh_rate(response),
             'screen_brightness': self.parse_screen_brightness(response),
             'battery_capacity': self.parse_battery_capacity(response),
@@ -301,6 +293,7 @@ class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
 class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
     
     loadmore_button_css = None
+    close_button_xpaths = []
     
     def get_product_sites(self, response: Response, body: Selector):
         """
@@ -325,6 +318,28 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
         driver = webdriver.Edge()
         driver.get(response.url)
         wait = WebDriverWait(driver, 10) # Wait to allow the button to appear
+        
+        time.sleep(5)
+        # Try to find and click the close button from the list of XPaths
+        close_button_found = False
+        for xpath in self.close_button_xpaths:
+            try:
+                buttons = driver.find_elements(By.XPATH, xpath)  # Get all buttons with class 'close'
+                
+                for button in buttons:
+                    # Here you can add more specific checks, like checking text or SVG
+                    if button.is_displayed() and button.is_enabled():  # Ensure the button is visible and clickable
+                        button.click()
+                        print("Closed the modal successfully.")
+                        break
+                else:
+                    print("No clickable close button found.")
+            except Exception as e:
+                print("Failed to close the modal:", e)
+
+        if not close_button_found:
+            print("No close button found from the provided list.")
+        
         
         # Scroll and click "Load More" until all the content is loaded
         while True:
