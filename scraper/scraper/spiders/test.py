@@ -73,7 +73,15 @@ class ThegioididongSpider(scrapy.Spider):
         Extracts the CPU name of the laptop from the response.
         """
         try:
-            return self.get_scoped_value(response, ["Công nghệ CPU:"]).split(" - Hãng không công bố")[0].replace(" - ", "-")
+            cpu = self.get_scoped_value(response, ["Công nghệ CPU:"])
+            patterns = [
+                r"(Intel Core (i\d)) [A-Za-z ]+- (\d{4,5}[A-Z])",
+                ]
+            for pattern in patterns:
+                match = re.search(pattern, cpu)
+                if match:
+                    return f"{match.group(1)}-{match.group(3)}"
+            return cpu.split(" - Hãng không công bố")[0].replace(" - ", "-")
         except:
             return "N/A"
     
@@ -439,7 +447,7 @@ class ThegioididongSpider(scrapy.Spider):
         yield {
             # 'brand': self.parse_brand(response), # Done
             'name': self.parse_name(response),    # Done
-            # 'cpu': self.parse_cpu(response),    # Done
+            'cpu': self.parse_cpu(response),    # Done
             # 'vga': self.parse_vga(response),  # Done
             # 'ram_amount': self.parse_ram_amount(response), # Done
             # 'ram_type': self.parse_ram_type(response), # Done
@@ -456,8 +464,8 @@ class ThegioididongSpider(scrapy.Spider):
             # 'depth': self.parse_depth(response), # Done
             # 'height': self.parse_height(response), # Done
             # 'weight': self.parse_weight(response), # Done
-            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
-            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
+            # 'number_usb_a_ports': self.parse_number_usb_a_ports(response),
+            # 'number_usb_c_ports': self.parse_number_usb_c_ports(response),
             # 'number_hdmi_ports': self.parse_number_hdmi_ports(response), # Done
             # 'number_ethernet_ports': self.parse_number_ethernet_ports(response), # Done
             # 'number_audio_jacks': self.parse_number_audio_jacks(response), # Done
