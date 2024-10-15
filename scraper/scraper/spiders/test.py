@@ -6,14 +6,9 @@ class Test(scrapy.Spider):
     name = "test"
     
     start_urls = [
-        "https://gearvn.com/products/laptop-gaming-acer-predator-helios-neo-16-phn16-72-78dq",
-        "https://gearvn.com/products/laptop-acer-swift-x14-sfx14-72g-77f9",
-        "https://gearvn.com/products/macbook-pro-14-m2-pro-10cpu-16gpu-16gb-512gb-silver-mphh3sa-a",
-        "https://gearvn.com/products/laptop-acer-swift-go-14-sfg14-73-57fz",
-        "https://gearvn.com/products/laptop-gaming-hp-victus-16-s0142ax-9q989pa",
-        "https://gearvn.com/products/laptop-gaming-asus-rog-zephyrus-g16-ga605wi-qr090ws",
-        "https://gearvn.com/products/laptop-asus-vivobook-s-14-flip-tn3402ya-lz192w",
-        "https://gearvn.com/products/macbook-air-m2-8gpu-16gb-256gb-midnight",
+        "https://gearvn.com/products/laptop-gaming-gigabyte-a5-k1-avn1030sb",
+        "https://gearvn.com/products/laptop-acer-aspire-5-a515-58p-71ej",
+        "https://gearvn.com/products/laptop-gaming-msi-thin-a15-b7ucx-020vn",
     ]
             
     def get_scoped_value(self, response, names):
@@ -23,6 +18,9 @@ class Test(scrapy.Spider):
             ] + [
                 "//li/div[contains(., '{}')]/following-sibling::div/text()".format(name)
                 for name in names
+            ] + [
+                "//tr/td[contains(., '{}')]/following-sibling::td/text()".format(name)
+                for name in names
             ]
         for value in possibile_values:
             scope = response.xpath(value).getall()
@@ -31,8 +29,7 @@ class Test(scrapy.Spider):
             
         return None
                 
-    
-    # [PARSE FEATURES SECTION: START]
+    #  [PARSE FEATURES SECTION: START]
     # Brand
     def parse_brand(self, response: Response): 
         """
@@ -81,16 +78,27 @@ class Test(scrapy.Spider):
                 res = re.sub(r'\s?\d+GPU', '', res)
                 res = "Apple " + res
             else:
-                res = res.split(' (')[0]
-                
-                for removal in ['®', '™', ' processor', ' Processor', 'Mobile']:
+                for removal in ['®', '™', ' processor', ' Processor', 'Mobile', 'with Intel AI Boost', 'Processors', '(TM)', '(R)']:
                     res = res.replace(removal, '')
+
+                res = re.sub(r'\s*(\d{1,2}th Gen|Gen \d{1,2}th)\s*', ' ', res)
                 
-                if 'GHz' in res:
-                    res = ' '.join(res.split(' ')[:-1])
+                special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+GHz|\d+\.\d+\s?GHz|\d+\s?GB|dGB)\b', res)
+                if special_sep:
+                    res = res.split(special_sep.group())[0]
+                    
+                for sep in ['(', 'up to', 'Up to', 'upto', ',']:
+                    res = res.split(sep)[0]
+                    
+                if res.startswith(('i', 'Ultra')):
+                    res = 'Intel Core ' + res
+                    
+                if res.startswith('Ryzen'):
+                    res = 'AMD ' + res
             
-            return res.strip()
-        except:
+            return ' '.join(res.split())
+        except Exception as e:
+            print(e)
             return "N/A"
         
     # VGA
@@ -101,19 +109,47 @@ class Test(scrapy.Spider):
         try:
             res = self.get_scoped_value(response, ['VGA', 'Card đồ họa'])
             
-            if res in ["Intel® ARC™ Graphics", "AMD Radeon™ Graphics", None]:
+            res = re.sub(r'[^\x20-\x7E]|®|™|integrated|gpu', ' ', res, flags=re.IGNORECASE)              
+            res = re.sub(r'\([^()]*\)', '', res)
+            res = ' '.join(res.split())
+            print(res)
+
+            if res.lower() in [
+                    "intel arc graphics", 
+                    "amd radeon graphics", 
+                    "intel iris xe graphics",
+                    "intel uhd graphics",
+                    "intel iris xe graphics intel uhd graphics",
+                    "on board on board",
+                    "amd radeon graphics amd radeon graphics",
+                    "intel graphics",
+                    "intel arcintel arc",
+                    "onboardonboard",
+                    None
+                ]:
                 res = "N/A"
             else:
-                for spliter in [' with ', ' Laptop ']:
+                special_sep = re.search(r'\d+\s?GB|GDDR\d+', res)
+                if special_sep:
+                    res = res.split(special_sep.group())[0]
+
+                for spliter in [' with ', ' Laptop ', '+', ',',  'Up', 'upto', 'Upto', 'up to', 'ROG']:
                     res = res.split(spliter)[0]
-
-                for removal in ['®', '™']:
-                    res = res.replace(removal, '')
-
-                if res.startswith('GeForce RTX'):
+                    
+                if res.lower().split()[0] == 'nvidia':
+                    res = 'NVIDIA ' + ' '.join(res.split()[1:])
+                    
+                if res.startswith('GeForce'):
                     res = 'NVIDIA ' + res
                     
-                res = re.sub(r'\d+GB|GDDR\d+', '', res)
+                res = re.sub(r'(\s\d{3,4})Ti', r'\1 Ti', res)
+                res = re.sub(r'(TX)(\d{4})', r'\1 \2', res)
+                
+                if "Gefore" in res:
+                    res = res.replace("Gefore", "Geforce")
+                
+                if "NVIDIA" in res:
+                    res = res[res.index("NVIDIA"):]
                 
             return res.strip()
         except:
@@ -125,9 +161,9 @@ class Test(scrapy.Spider):
         Extracts the amount of RAM in GB from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['RAM'])
+            res = self.get_scoped_value(response, ['RAM', 'Ram', 'ĐẬP'])
             
-            search_value = re.search(r'\d+GB', res)
+            search_value = re.search(r'\d+\s?GB', res)
             if search_value:
                 res = search_value.group()
                 res = int(res.split('GB')[0])
@@ -142,7 +178,7 @@ class Test(scrapy.Spider):
         Example: DDR3, DDR4, etc.
         """
         try:
-            res = self.get_scoped_value(response, ['RAM'])
+            res = self.get_scoped_value(response, ['RAM', 'Ram'])
             
             search_value = re.search(r'DDR+\d', res)
             if search_value:
@@ -160,7 +196,8 @@ class Test(scrapy.Spider):
         Extracts the amount of storage in GB from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ'])
+            res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD', 'Ổ Cứng'])
+            res = ''.join(res.split())
         
             search_value = re.search(r'\d+GB|\d+TB', res)
             if search_value:
@@ -182,7 +219,7 @@ class Test(scrapy.Spider):
         Example: HDD, SSD, SSHD.
         """
         try:
-            res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ'])
+            res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD', 'Ổ Cứng'])
         
             if "SSD" in res and "HDD" in res:
                 if res.index("SSD") < res.index("HDD"):
@@ -226,8 +263,8 @@ class Test(scrapy.Spider):
         Extracts the screen size in inches from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Màn hình'])
-            res = re.search(r'(\d+(\.\d+)?)\s*(["\']|(-)?\s*inch)', res)
+            res = self.get_scoped_value(response, ['Màn hình']).lower()
+            res = re.search(r'(\d+(\.\d+)?)\s*(["\']|(-)?\s*inch|”)', res)
             
             if res:
                 res = float(res.group(1))
@@ -244,11 +281,10 @@ class Test(scrapy.Spider):
         Example: 1920x1080, 2560x1600, etc.
         """
         try:
-            res = self.get_scoped_value(response, ['Màn hình'])
+            res = ''.join(self.get_scoped_value(response, ['Màn hình']).lower().split())
             
-            res = ''.join(res.split())
-            
-            search_value = re.search(r'\d+x\d+', res)
+            search_value = re.search(r'\b(\d{3,4}x\d{3,4}|(\d{4}\*\d{4}))\b', res)
+
             if search_value:
                 res = search_value.group()
             else:
@@ -258,40 +294,17 @@ class Test(scrapy.Spider):
         except:
             return "N/A"
     
-    def parse_screen_ratio(self, response: Response): 
-        """
-        Extracts the screen ratio from the response.
-        Example: 16:9, 16:10, 4:3.
-        """
-        
-        value = self.parse_screen_resolution(response)
-        if value != "N/A":
-            value = value.split('x')
-            
-            if int(value[0]) / 16 == int(value[1]) / 9:
-                res = "16:9"
-            elif int(value[0]) / 16 == int(value[1]) / 10:
-                res = "16:10"
-            elif int(value[0]) / 4 == int(value[1]) / 3:
-                res = "4:3"
-            else:
-                res = "N/A"
-            
-            return res
-        else:
-            return "N/A"
-    
     def parse_screen_refresh_rate(self, response: Response): 
         """
         Extracts the screen refresh rate in Hz from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Màn hình'])
+            res = self.get_scoped_value(response, ['Màn hình']).lower()
             
-            search_value = re.search(r'\d+\s*Hz', res)
+            search_value = re.search(r'\d+\s*hz', res)
             if search_value:
                 res = search_value.group()
-                res = int(res.split('Hz')[0])
+                res = int(res.split('hz')[0])
             else:
                 res = "N/A"
 
@@ -304,7 +317,7 @@ class Test(scrapy.Spider):
         Extracts the screen brightness in nits from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Màn hình'])
+            res = self.get_scoped_value(response, ['Màn hình']).lower()
             
             search_value = re.search(r'\d+\s*nits', res)
             if search_value:
@@ -323,13 +336,11 @@ class Test(scrapy.Spider):
         Extracts the battery capacity in Whr from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Pin'])
-            res = res.lower()
-            
-            search_value = re.search(r'\d+\s*whr', res)
+            res = self.get_scoped_value(response, ['Pin']).lower()
+        
+            search_value = re.search(r'(\d+(?:\.\d+)?)\s*wh', res)
             if search_value:
-                res = search_value.group()
-                res = int(res.split('whr')[0])
+                res = float(search_value.group().split('wh')[0])
             else:
                 res = "N/A"
             
@@ -361,7 +372,7 @@ class Test(scrapy.Spider):
         Extracts the width of the laptop in cm from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước'])
+            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
 
             values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
             values = sorted(values, reverse=True)
@@ -377,7 +388,7 @@ class Test(scrapy.Spider):
         Extracts the depth of the laptop in cm from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước'])
+            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
             values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
             values = sorted(values, reverse=True)
 
@@ -392,7 +403,7 @@ class Test(scrapy.Spider):
         Extracts the height of the laptop in cm from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước'])
+            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
             
             values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
             values = sorted(values, reverse=True)
@@ -409,11 +420,14 @@ class Test(scrapy.Spider):
         Extracts the weight of the laptop in kg from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Trọng lượng', 'Trọng lượng'])
-            res = re.search(r'(\d+(\.\d+)?)\s*(kg|Kg|KG)', res)
+            res = self.get_scoped_value(response, ['Trọng lượng', 'Trọng lượng']).lower()
+            value = re.search(r'(\d+(?:[,.]\d+)?)\s*(kg|gram)', res)
             
-            if res:
-                res = float(res.group(1))
+            if value:
+                if 'gram' in res:
+                    res = float(value.group(1)) / 1000
+                else:
+                    res = float(value.group(1))
             else:
                 res = "N/A"
                 
@@ -422,52 +436,66 @@ class Test(scrapy.Spider):
             return "N/A"
     
     # Connectivity
-    def parse_number_usb(self, response: Response, pattern):
+    def parse_number_usb(self, response: Response, pattern_a: str, pattern_c: str, get_a=True):
         try:
-            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'])
+            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp', 'Port next', 'Cổng tiếp theo', 'Cổng tiếp theo'])
             res = res.lower()
             if re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE) != '':
                 res = re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE)
             
-            
             while '(' in res and ')' in res:
                 res = re.sub(r'\([^()]*\)', '', res)
-                
-            print(res)
             
             res = re.split(r'[\n,]', res)
             count = 0
             for line in res:
-                if re.search(pattern, line):
-                    line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
-                    val = line.split()[0]
-                    if val[-1] == 'x': val = val[:-1]
-            
-                    if val.isnumeric():
-                        count += int(val)
-                    else:
-                        count += 1
+                if get_a:
+                    if re.search(pattern_a, line) and not re.search(pattern_c, line):
+                        line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
+                        val = line.split()[0]
+                        if val[-1] == 'x': val = val[:-1]
+                
+                        if val.isnumeric():
+                            count += int(val)
+                        else:
+                            count += 1
+                else:
+                    if re.search(pattern_c, line):
+                        line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
+                        val = line.split()[0]
+                        if val[-1] == 'x': val = val[:-1]
+                
+                        if val.isnumeric():
+                            count += int(val)
+                        else:
+                            count += 1
             
             return count
-        except Exception as e:
-            print("ERROR", e)
+        except:
             return "N/A"
     
     def parse_number_usb_a_ports(self, response: Response):
         """
         Extracts the number of USB-A ports from the response.
         """
-        return self.parse_number_usb(response, r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a)\b')
+        return self.parse_number_usb(response, 
+                                     r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b',  
+                                     r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b',
+                                     get_a=True)
+
     
     def parse_number_usb_c_ports(self, response: Response):
         """
         Extracts the number of USB-C ports from the response.
         """
-        return self.parse_number_usb(response, r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b')
+        return self.parse_number_usb(response, 
+                                     r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b',  
+                                     r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b',
+                                     get_a=False)
     
     def parse_has_port(self, response: Response, pattern):
         try:
-            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'])
+            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp', 'Port next', 'Cổng tiếp theo', 'Cổng tiếp theo'])
             res = res.lower()
             
             if res:
@@ -505,10 +533,11 @@ class Test(scrapy.Spider):
         """
         try:
             res = self.get_scoped_value(response, ['Hệ điều hành'])
+            res = re.sub(r'[^\x20-\x7E]|Single Language|SL', ' ', res, flags=re.IGNORECASE)
+            res = ' '.join(res.split())
             
-            res = res.split('+')[0]
-            for removal in ['Single Language']:
-                res = res.replace(removal, '')
+            for sep in ['+', ',', '-']:
+                res = res.split(sep)[0]
             
             return res.strip()
         except:
@@ -550,7 +579,9 @@ class Test(scrapy.Spider):
             if res is None:
                 res = response.xpath('//span[contains(text(), "Bảo hành")]/text()').get()
                 
+            res = ' '.join(res.split()).lower()
             search_value = re.search(r'(\d+)\s*tháng', res)
+    
             if search_value:
                 res = int(search_value.group(1))
             else:
@@ -604,7 +635,7 @@ class Test(scrapy.Spider):
             # 'screen_ratio': self.parse_screen_ratio(response),
             # 'screen_refresh_rate': self.parse_screen_refresh_rate(response),
             # 'screen_brightness': self.parse_screen_brightness(response),
-            # 'battery_capacity': self.parse_battery_capacity(response),
+            'battery_capacity': self.parse_battery_capacity(response),
             # 'battery_cells': self.parse_battery_cells(response),
             # 'width': self.parse_width(response),
             # 'depth': self.parse_depth(response),
@@ -612,9 +643,9 @@ class Test(scrapy.Spider):
             # 'weight': self.parse_weight(response),
             # 'number_usb_a_ports': self.parse_number_usb_a_ports(response),
             # 'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-            'number_audio_jacks': self.parse_number_audio_jacks(response),
+            # 'number_hdmi_ports': self.parse_number_hdmi_ports(response),
+            # 'number_ethernet_ports': self.parse_number_ethernet_ports(response),
+            # 'number_audio_jacks': self.parse_number_audio_jacks(response),
             # 'default_os': self.parse_default_os(response),
             # 'color': self.parse_color(response),
             # 'origin': self.parse_origin(response),
