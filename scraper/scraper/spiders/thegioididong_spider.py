@@ -365,11 +365,11 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             size = self.get_scoped_value(response, ["Kích thước:"]).split(" - ")
-            height = size[2].split(" ")
-            if height[2] == "mm":
-                return round(float(height[1]) / 10, 4)
+            height = size[2]
+            if '~' in height:
+                return round(float(height.split("~")[1].split(" ")[1]) / 10, 4)
             else:
-                return float(height[1])
+                return round(float(height[1]) / 10, 4)
         except:
             return "N/A"
     
