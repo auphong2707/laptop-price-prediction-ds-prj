@@ -58,13 +58,16 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             res = response.css('.product-name h1::text').get()
-            for removal in ['Laptop gaming ', 'Laptop Gaming ', 'Laptop ', 'Gray', 'Black']:
+            for removal in ['Laptop gaming ', 'Laptop Gaming ', 'Laptop ', 'Gray', 'Black', 'Silver', 'IceBlue']:
                 res = res.replace(removal, '')
 
             res = re.sub(r'\([^()]*\)', '', res)
             
             if "Macbook" in res:
                 res = "Apple " + ' '.join(res.split()[:2] + res.split()[-1:])
+            
+            if not res[-1].isalnum():
+                res = res[:-1]
             
             return res.strip()
         except:
@@ -183,7 +186,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: DDR3, DDR4, etc.
         """
         try:
-            res = self.get_scoped_value(response, ['RAM', 'Ram'])
+            res = self.get_scoped_value(response, ['RAM', 'Ram', 'ĐẬP'])
             
             search_value = re.search(r'DDR+\d', res)
             if search_value:
@@ -269,6 +272,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             res = self.get_scoped_value(response, ['Màn hình']).lower()
+            res = res.replace(',', '.')
             res = re.search(r'(\d+(\.\d+)?)\s*(["\']|(-)?\s*inch|”)', res)
             
             if res:
@@ -287,11 +291,18 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             res = ''.join(self.get_scoped_value(response, ['Màn hình']).lower().split())
+            res = res.replace('*', 'x')
             
-            search_value = re.search(r'\b(\d{3,4}x\d{3,4}|(\d{4}\*\d{4}))\b', res)
+            search_value = re.search(r'\b\d{3,4}x\d{3,4}\b', res)
 
             if search_value:
                 res = search_value.group()
+            elif 'fhd+' in res:
+                res = '1920x1080'
+            elif 'fhd' in res:
+                res = '1920x1080'
+            elif '2k' in res or 'qhd' in res:
+                res = '2560x1440'
             else:
                 res = "N/A"
             
@@ -341,11 +352,12 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the battery capacity in Whr from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Pin']).lower()
+            res = self.get_scoped_value(response, ['Pin', 'Ghim']).lower()
+            res = re.sub(r'[()]', '', res)
         
             search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery)', res)
             if search_value:
-                res = float(search_value.group().split('wh')[0])
+                res = float(search_value.group().split('wh')[0].split('battery')[0])
             else:
                 res = "N/A"
             
@@ -358,9 +370,9 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the number of battery cells from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Pin'])
+            res = self.get_scoped_value(response, ['Pin', 'Ghim'])
             res = res.lower()
-            search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells', res)
+            search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells|Chân\s*(\d+)', res)
             
             if search_value:
                 res = int(search_value.group()[0])
@@ -428,13 +440,13 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
             res = self.get_scoped_value(response, ['Trọng lượng', 'Trọng lượng', 'Cân nặng']).lower()
             res = res.replace(',', '.')
         
-            value = re.search(r'(\d+(\.\d+)?)\s*(kg|gram)', res)
+            value_kg = re.search(r'(\d+(\.\d+)?)\s*(kg)', res)
+            value_g = re.search(r'(\d+(\.\d+)?)\s*(gram|g)', res)
             
-            if value:
-                if 'gram' in res:
-                    res = float(value.group(1)) / 1000
-                else:
-                    res = float(value.group(1))
+            if value_kg:
+                res = float(value_kg.group(1))
+            elif value_g:
+                res = float(value_g.group(1)) / 1000
             else:
                 res = "N/A"
                 
@@ -540,11 +552,15 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             res = self.get_scoped_value(response, ['Hệ điều hành', 'Hệ thống điều chỉnh'])
-            res = re.sub(r'[^\x20-\x7E]|Single Language|SL|64', ' ', res, flags=re.IGNORECASE)
+            res = re.sub(r'Bản Quyền|[^\x20-\x7E]|Single Language|SL|64', ' ', res, flags=re.IGNORECASE)
             res = ' '.join(res.split())
             
             for sep in ['+', ',', '-', ';']:
                 res = res.split(sep)[0]
+                
+            if 'Windows' in res:
+                res = res[res.index('Windows'):]
+            
             
             return res.strip()
         except:
