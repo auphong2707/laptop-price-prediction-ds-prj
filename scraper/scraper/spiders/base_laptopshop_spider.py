@@ -7,11 +7,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from scrapy.selector import Selector
 import time
+import logging
 
 
 class BaseLaptopshopSpider(scrapy.Spider):
     
     product_site_css = None
+    custom_settings = {
+        'LOG_LEVEL': 'INFO',
+    }
+    _num_product = 0
     
     # [PARSE FEATURES SECTION: START]
     # Brand
@@ -224,6 +229,10 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # [PARSE FEATURES SECTION: END]
     
     def parse_one_observation(self, response: Response):
+        
+        self.log(f'Found item: {self._num_product}', level=logging.INFO)
+        self._num_product += 1
+        
         yield {
             'brand': self.parse_brand(response),
             'name': self.parse_name(response),
@@ -315,34 +324,30 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
             )
         
     def parse(self, response):
-        driver = webdriver.Edge()
+        driver = webdriver.Firefox()
         driver.get(response.url)
         wait = WebDriverWait(driver, 10) # Wait to allow the button to appear
         
-        time.sleep(5)
-        # Try to find and click the close button from the list of XPaths
-        close_button_found = False
-        for xpath in self.close_button_xpaths:
-            try:
-                buttons = driver.find_elements(By.XPATH, xpath)  # Get all buttons with class 'close'
-                
-                for button in buttons:
-                    # Here you can add more specific checks, like checking text or SVG
-                    if button.is_displayed() and button.is_enabled():  # Ensure the button is visible and clickable
-                        button.click()
-                        print("Closed the modal successfully.")
-                        break
-                else:
-                    print("No clickable close button found.")
-            except Exception as e:
-                print("Failed to close the modal:", e)
-
-        if not close_button_found:
-            print("No close button found from the provided list.")
-        
-        
         # Scroll and click "Load More" until all the content is loaded
         while True:
+            time.sleep(5)
+            # Try to find and click the close button from the list of XPaths
+            close_button_found = False
+            for xpath in self.close_button_xpaths:
+                try:
+                    buttons = driver.find_elements(By.XPATH, xpath)  # Get all buttons with class 'close'
+                    
+                    for button in buttons:
+                        # Here you can add more specific checks, like checking text or SVG
+                        if button.is_displayed() and button.is_enabled():  # Ensure the button is visible and clickable
+                            button.click()
+                            print("Closed the modal successfully.")
+                            break
+                    else:
+                        print("No clickable close button found.")
+                except Exception as e:
+                    print("Failed to close the modal:", e)
+            
             try:
                 load_more_button = wait.until(
                     EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
@@ -363,3 +368,5 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
         # Extracting the feature from a product website
         for site_request in product_site_requests:
             yield site_request
+            
+        driver.quit()
