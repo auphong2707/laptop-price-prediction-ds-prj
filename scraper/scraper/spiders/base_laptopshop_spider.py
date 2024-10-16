@@ -18,6 +18,12 @@ class BaseLaptopshopSpider(scrapy.Spider):
     }
     _num_product = 0
     
+    def yield_condition(self, response: Response):
+        """
+        Returns True if the response is valid to be scraped.
+        """
+        return True
+    
     # [PARSE FEATURES SECTION: START]
     # Brand
     def parse_brand(self, response: Response): 
@@ -230,41 +236,42 @@ class BaseLaptopshopSpider(scrapy.Spider):
     
     def parse_one_observation(self, response: Response):
         
-        self.log(f'Found item: {self._num_product}', level=logging.INFO)
-        self._num_product += 1
-        
-        yield {
-            'brand': self.parse_brand(response),
-            'name': self.parse_name(response),
-            'cpu': self.parse_cpu(response),
-            'vga': self.parse_vga(response),
-            'ram_amount': self.parse_ram_amount(response),
-            'ram_type': self.parse_ram_type(response),
-            'storage_amount': self.parse_storage_amount(response),
-            'storage_type': self.parse_storage_type(response),
-            'webcam_resolution': self.parse_webcam_resolution(response),
-            'screen_size': self.parse_screen_size(response),
-            'screen_resolution': self.parse_screen_resolution(response),
-            'screen_refresh_rate': self.parse_screen_refresh_rate(response),
-            'screen_brightness': self.parse_screen_brightness(response),
-            'battery_capacity': self.parse_battery_capacity(response),
-            'battery_cells': self.parse_battery_cells(response),
-            'width': self.parse_width(response),
-            'depth': self.parse_depth(response),
-            'height': self.parse_height(response),
-            'weight': self.parse_weight(response),
-            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
-            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-            'number_audio_jacks': self.parse_number_audio_jacks(response),
-            'default_os': self.parse_default_os(response),
-            'color': self.parse_color(response),
-            'origin': self.parse_origin(response),
-            'warranty': self.parse_warranty(response),
-            'release_date': self.parse_release_date(response),
-            'price': self.parse_price(response)
-        }
+        if self.yield_condition(response):
+            self.log(f'Found item: {self._num_product}', level=logging.INFO)
+            self._num_product += 1
+
+            yield {
+                'brand': self.parse_brand(response),
+                'name': self.parse_name(response),
+                'cpu': self.parse_cpu(response),
+                'vga': self.parse_vga(response),
+                'ram_amount': self.parse_ram_amount(response),
+                'ram_type': self.parse_ram_type(response),
+                'storage_amount': self.parse_storage_amount(response),
+                'storage_type': self.parse_storage_type(response),
+                'webcam_resolution': self.parse_webcam_resolution(response),
+                'screen_size': self.parse_screen_size(response),
+                'screen_resolution': self.parse_screen_resolution(response),
+                'screen_refresh_rate': self.parse_screen_refresh_rate(response),
+                'screen_brightness': self.parse_screen_brightness(response),
+                'battery_capacity': self.parse_battery_capacity(response),
+                'battery_cells': self.parse_battery_cells(response),
+                'width': self.parse_width(response),
+                'depth': self.parse_depth(response),
+                'height': self.parse_height(response),
+                'weight': self.parse_weight(response),
+                'number_usb_a_ports': self.parse_number_usb_a_ports(response),
+                'number_usb_c_ports': self.parse_number_usb_c_ports(response),
+                'number_hdmi_ports': self.parse_number_hdmi_ports(response),
+                'number_ethernet_ports': self.parse_number_ethernet_ports(response),
+                'number_audio_jacks': self.parse_number_audio_jacks(response),
+                'default_os': self.parse_default_os(response),
+                'color': self.parse_color(response),
+                'origin': self.parse_origin(response),
+                'warranty': self.parse_warranty(response),
+                'release_date': self.parse_release_date(response),
+                'price': self.parse_price(response)
+            }
 
 class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
     page_css = None
