@@ -2,11 +2,14 @@ import scrapy
 
 class CpuSpider(scrapy.Spider):
     name = 'cpu_spider'
-    start_urls = ['https://www.cpubenchmark.net/high_end_cpus.html']
+    start_urls = ['https://www.cpubenchmark.net/high_end_cpus.html',
+                  'https://www.cpubenchmark.net/mid_range_cpus.html',
+                  'https://www.cpubenchmark.net/midlow_range_cpus.html',
+                  'https://www.cpubenchmark.net/low_end_cpus.html']
     
     def parse_cpu_name(self, response):
         """Extract the CPU name using the CSS selector"""
-        return response.css('span.cpuname::text').get()
+        return response.css('span.cpuname::text').get().split(' @')[0]
     
     def parse_performance_cores(self, response):
         """Extracts and returns the number of cores of the CPU."""

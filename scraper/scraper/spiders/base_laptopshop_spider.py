@@ -7,11 +7,22 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from scrapy.selector import Selector
 import time
+import logging
 
 
 class BaseLaptopshopSpider(scrapy.Spider):
     
     product_site_css = None
+    custom_settings = {
+        'LOG_LEVEL': 'INFO',
+    }
+    _num_product = 0
+    
+    def yield_condition(self, response: Response):
+        """
+        Returns True if the response is valid to be scraped.
+        """
+        return True
     
     # [PARSE FEATURES SECTION: START]
     # Brand
@@ -91,23 +102,10 @@ class BaseLaptopshopSpider(scrapy.Spider):
         Example: HD, FHD, 4K.
         """
         return "N/A"
-    
-    def parse_screen_ratio(self, response: Response): 
-        """
-        Extracts the screen ratio from the response.
-        Example: 16:9, 16:10, 4:3.
-        """
-        return "N/A"
-    
+
     def parse_screen_refresh_rate(self, response: Response): 
         """
         Extracts the screen refresh rate in Hz from the response.
-        """
-        return "N/A"
-    
-    def parse_screen_color_gamut(self, response: Response): 
-        """
-        Extracts the screen color gamut in sRGB from the response.
         """
         return "N/A"
     
@@ -120,20 +118,26 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # Battery
     def parse_battery_capacity(self, response: Response): 
         """
-        Extracts the battery capacity in Wh from the response.
+        Extracts the battery capacity in Whr from the response.
+        """
+        return "N/A"
+    
+    def parse_battery_cells(self, response: Response):
+        """
+        Extracts the number of battery cells from the response.
         """
         return "N/A"
     
     # Size
-    def parse_length(self, response: Response):
-        """
-        Extracts the length of the laptop in cm from the response.
-        """
-        return "N/A"
-    
     def parse_width(self, response: Response):
         """
         Extracts the width of the laptop in cm from the response.
+        """
+        return "N/A"
+    
+    def parse_depth(self, response: Response):
+        """
+        Extracts the depth of the laptop in cm from the response.
         """
         return "N/A"
     
@@ -231,44 +235,53 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # [PARSE FEATURES SECTION: END]
     
     def parse_one_observation(self, response: Response):
-        yield {
-            'brand': self.parse_brand(response),
-            'name': self.parse_name(response),
-            'cpu': self.parse_cpu(response),
-            'vga': self.parse_vga(response),
-            'ram_amount': self.parse_ram_amount(response),
-            'ram_type': self.parse_ram_type(response),
-            'storage_amount': self.parse_storage_amount(response),
-            'storage_type': self.parse_storage_type(response),
-            'webcam_resolution': self.parse_webcam_resolution(response),
-            'screen_size': self.parse_screen_size(response),
-            'screen_resolution': self.parse_screen_resolution(response),
-            'screen_ratio': self.parse_screen_ratio(response),
-            'screen_refresh_rate': self.parse_screen_refresh_rate(response),
-            'screen_color_gamut': self.parse_screen_color_gamut(response),
-            'screen_brightness': self.parse_screen_brightness(response),
-            'battery_capacity': self.parse_battery_capacity(response),
-            'length': self.parse_length(response),
-            'width': self.parse_width(response),
-            'height': self.parse_height(response),
-            'weight': self.parse_weight(response),
-            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
-            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-            'number_audio_jacks': self.parse_number_audio_jacks(response),
-            'default_os': self.parse_default_os(response),
-            'color': self.parse_color(response),
-            'origin': self.parse_origin(response),
-            'warranty': self.parse_warranty(response),
-            'release_date': self.parse_release_date(response),
-            'price': self.parse_price(response)
-        }
+        
+        if self.yield_condition(response):
+            self.log(f'Found item: {self._num_product}', level=logging.INFO)
+            self._num_product += 1
 
-class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
+            yield {
+                'brand': self.parse_brand(response),
+                'name': self.parse_name(response),
+                'cpu': self.parse_cpu(response),
+                'vga': self.parse_vga(response),
+                'ram_amount': self.parse_ram_amount(response),
+                'ram_type': self.parse_ram_type(response),
+                'storage_amount': self.parse_storage_amount(response),
+                'storage_type': self.parse_storage_type(response),
+                'webcam_resolution': self.parse_webcam_resolution(response),
+                'screen_size': self.parse_screen_size(response),
+                'screen_resolution': self.parse_screen_resolution(response),
+                'screen_refresh_rate': self.parse_screen_refresh_rate(response),
+                'screen_brightness': self.parse_screen_brightness(response),
+                'battery_capacity': self.parse_battery_capacity(response),
+                'battery_cells': self.parse_battery_cells(response),
+                'width': self.parse_width(response),
+                'depth': self.parse_depth(response),
+                'height': self.parse_height(response),
+                'weight': self.parse_weight(response),
+                'number_usb_a_ports': self.parse_number_usb_a_ports(response),
+                'number_usb_c_ports': self.parse_number_usb_c_ports(response),
+                'number_hdmi_ports': self.parse_number_hdmi_ports(response),
+                'number_ethernet_ports': self.parse_number_ethernet_ports(response),
+                'number_audio_jacks': self.parse_number_audio_jacks(response),
+                'default_os': self.parse_default_os(response),
+                'color': self.parse_color(response),
+                'origin': self.parse_origin(response),
+                'warranty': self.parse_warranty(response),
+                'release_date': self.parse_release_date(response),
+                'price': self.parse_price(response)
+            }
+
+class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
+    page_css = None
     
-    def get_next_page(self, response: Response):
-        return None
+    def start_requests(self):
+        for url in self.start_urls:
+            yield Request(
+                url=url,
+                callback=self.parse
+            )
     
     def get_product_sites(self, response: Response):
         """
@@ -285,13 +298,18 @@ class BaseLaptopshopNextPageSpider(BaseLaptopshopSpider):
         for site_request in product_site_requests:
             yield site_request
         
-        next_page = self.get_next_page(response)
-        if next_page is not None:
-            yield response.follow(next_page, callback=self.parse)
+        pages = response.css(self.page_css).getall()
+        for page in pages:
+            
+            yield response.follow(
+                url=page,
+                callback=self.parse
+            )
             
 class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
     
     loadmore_button_css = None
+    close_button_xpaths = []
     
     def get_product_sites(self, response: Response, body: Selector):
         """
@@ -313,12 +331,30 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
             )
         
     def parse(self, response):
-        driver = webdriver.Edge()
+        driver = webdriver.Firefox()
         driver.get(response.url)
-        wait = WebDriverWait(driver, 5) # Wait to allow the button to appear
+        wait = WebDriverWait(driver, 10) # Wait to allow the button to appear
         
         # Scroll and click "Load More" until all the content is loaded
         while True:
+            time.sleep(5)
+            # Try to find and click the close button from the list of XPaths
+            close_button_found = False
+            for xpath in self.close_button_xpaths:
+                try:
+                    buttons = driver.find_elements(By.XPATH, xpath)  # Get all buttons with class 'close'
+                    
+                    for button in buttons:
+                        # Here you can add more specific checks, like checking text or SVG
+                        if button.is_displayed() and button.is_enabled():  # Ensure the button is visible and clickable
+                            button.click()
+                            print("Closed the modal successfully.")
+                            break
+                    else:
+                        print("No clickable close button found.")
+                except Exception as e:
+                    print("Failed to close the modal:", e)
+            
             try:
                 load_more_button = wait.until(
                     EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
@@ -326,8 +362,8 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
                 load_more_button.click()
                 
                 # Wait for new content to load (if needed)
-                time.sleep(2)
-            except Exception as e:
+                time.sleep(5)
+            except Exception:
                 # Break the loop if there's no more "Load More" button or something goes wrong
                 print("No more 'Load More' button")
                 break
@@ -335,7 +371,9 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
         
         # Get all the products links
         product_site_requests = self.get_product_sites(response, Selector(text=driver.page_source))
-        assert type(product_site_requests[0]) is Request
+        
         # Extracting the feature from a product website
         for site_request in product_site_requests:
             yield site_request
+            
+        driver.quit()
