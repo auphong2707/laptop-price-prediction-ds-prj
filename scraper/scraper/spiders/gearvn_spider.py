@@ -105,8 +105,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
                     res = 'AMD ' + res
             
             return ' '.join(res.split())
-        except Exception as e:
-            print(e)
+        except:
             return "N/A"
         
     # VGA
@@ -120,7 +119,6 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
             res = re.sub(r'[^\x20-\x7E]|®|™|integrated|gpu', ' ', res, flags=re.IGNORECASE)              
             res = re.sub(r'\([^()]*\)', '', res)
             res = ' '.join(res.split())
-            print(res)
 
             if res.lower() in [
                     "intel arc graphics", 

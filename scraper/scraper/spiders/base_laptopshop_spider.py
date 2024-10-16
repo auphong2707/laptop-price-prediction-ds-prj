@@ -7,11 +7,22 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from scrapy.selector import Selector
 import time
+import logging
 
 
 class BaseLaptopshopSpider(scrapy.Spider):
     
     product_site_css = None
+    custom_settings = {
+        'LOG_LEVEL': 'INFO',
+    }
+    _num_product = 0
+    
+    def yield_condition(self, response: Response):
+        """
+        Returns True if the response is valid to be scraped.
+        """
+        return True
     
     # [PARSE FEATURES SECTION: START]
     # Brand
@@ -224,38 +235,43 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # [PARSE FEATURES SECTION: END]
     
     def parse_one_observation(self, response: Response):
-        yield {
-            'brand': self.parse_brand(response),
-            'name': self.parse_name(response),
-            'cpu': self.parse_cpu(response),
-            'vga': self.parse_vga(response),
-            'ram_amount': self.parse_ram_amount(response),
-            'ram_type': self.parse_ram_type(response),
-            'storage_amount': self.parse_storage_amount(response),
-            'storage_type': self.parse_storage_type(response),
-            'webcam_resolution': self.parse_webcam_resolution(response),
-            'screen_size': self.parse_screen_size(response),
-            'screen_resolution': self.parse_screen_resolution(response),
-            'screen_refresh_rate': self.parse_screen_refresh_rate(response),
-            'screen_brightness': self.parse_screen_brightness(response),
-            'battery_capacity': self.parse_battery_capacity(response),
-            'battery_cells': self.parse_battery_cells(response),
-            'width': self.parse_width(response),
-            'depth': self.parse_depth(response),
-            'height': self.parse_height(response),
-            'weight': self.parse_weight(response),
-            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
-            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-            'number_audio_jacks': self.parse_number_audio_jacks(response),
-            'default_os': self.parse_default_os(response),
-            'color': self.parse_color(response),
-            'origin': self.parse_origin(response),
-            'warranty': self.parse_warranty(response),
-            'release_date': self.parse_release_date(response),
-            'price': self.parse_price(response)
-        }
+        
+        if self.yield_condition(response):
+            self.log(f'Found item: {self._num_product}', level=logging.INFO)
+            self._num_product += 1
+
+            yield {
+                'brand': self.parse_brand(response),
+                'name': self.parse_name(response),
+                'cpu': self.parse_cpu(response),
+                'vga': self.parse_vga(response),
+                'ram_amount': self.parse_ram_amount(response),
+                'ram_type': self.parse_ram_type(response),
+                'storage_amount': self.parse_storage_amount(response),
+                'storage_type': self.parse_storage_type(response),
+                'webcam_resolution': self.parse_webcam_resolution(response),
+                'screen_size': self.parse_screen_size(response),
+                'screen_resolution': self.parse_screen_resolution(response),
+                'screen_refresh_rate': self.parse_screen_refresh_rate(response),
+                'screen_brightness': self.parse_screen_brightness(response),
+                'battery_capacity': self.parse_battery_capacity(response),
+                'battery_cells': self.parse_battery_cells(response),
+                'width': self.parse_width(response),
+                'depth': self.parse_depth(response),
+                'height': self.parse_height(response),
+                'weight': self.parse_weight(response),
+                'number_usb_a_ports': self.parse_number_usb_a_ports(response),
+                'number_usb_c_ports': self.parse_number_usb_c_ports(response),
+                'number_hdmi_ports': self.parse_number_hdmi_ports(response),
+                'number_ethernet_ports': self.parse_number_ethernet_ports(response),
+                'number_audio_jacks': self.parse_number_audio_jacks(response),
+                'default_os': self.parse_default_os(response),
+                'color': self.parse_color(response),
+                'origin': self.parse_origin(response),
+                'warranty': self.parse_warranty(response),
+                'release_date': self.parse_release_date(response),
+                'price': self.parse_price(response)
+            }
 
 class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
     page_css = None
@@ -315,34 +331,30 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
             )
         
     def parse(self, response):
-        driver = webdriver.Edge()
+        driver = webdriver.Firefox()
         driver.get(response.url)
         wait = WebDriverWait(driver, 10) # Wait to allow the button to appear
         
-        time.sleep(5)
-        # Try to find and click the close button from the list of XPaths
-        close_button_found = False
-        for xpath in self.close_button_xpaths:
-            try:
-                buttons = driver.find_elements(By.XPATH, xpath)  # Get all buttons with class 'close'
-                
-                for button in buttons:
-                    # Here you can add more specific checks, like checking text or SVG
-                    if button.is_displayed() and button.is_enabled():  # Ensure the button is visible and clickable
-                        button.click()
-                        print("Closed the modal successfully.")
-                        break
-                else:
-                    print("No clickable close button found.")
-            except Exception as e:
-                print("Failed to close the modal:", e)
-
-        if not close_button_found:
-            print("No close button found from the provided list.")
-        
-        
         # Scroll and click "Load More" until all the content is loaded
         while True:
+            time.sleep(5)
+            # Try to find and click the close button from the list of XPaths
+            close_button_found = False
+            for xpath in self.close_button_xpaths:
+                try:
+                    buttons = driver.find_elements(By.XPATH, xpath)  # Get all buttons with class 'close'
+                    
+                    for button in buttons:
+                        # Here you can add more specific checks, like checking text or SVG
+                        if button.is_displayed() and button.is_enabled():  # Ensure the button is visible and clickable
+                            button.click()
+                            print("Closed the modal successfully.")
+                            break
+                    else:
+                        print("No clickable close button found.")
+                except Exception as e:
+                    print("Failed to close the modal:", e)
+            
             try:
                 load_more_button = wait.until(
                     EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
@@ -363,3 +375,5 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
         # Extracting the feature from a product website
         for site_request in product_site_requests:
             yield site_request
+            
+        driver.quit()
