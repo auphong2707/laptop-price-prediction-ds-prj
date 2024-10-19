@@ -389,10 +389,16 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         try:
             res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
 
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values, reverse=True)
+            numbers = re.findall(r'\d+\.?\d*', res)
             
-            res = values[0] if values[0] < 100 else values[0] / 10
+            extracted_numbers = numbers[:3]
+            hyphenated_number = re.search(r'-(\d+\.?\d*)', res)
+            if hyphenated_number:
+                extracted_numbers[-1] = hyphenated_number.group(1)
+            
+            extracted_numbers = [float(num) for num in extracted_numbers]
+            res = sorted(extracted_numbers, reverse=True)[0]
+            res = res if res < 100 else res / 10
             
             return round(res, 2)
         except:
@@ -404,11 +410,19 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values, reverse=True)
-
-            res = values[1] if values[1] < 100 else values[0] / 10
-                
+            
+            numbers = re.findall(r'\d+\.?\d*', res)
+            
+            # Collect the first three numbers and any number after a hyphen
+            extracted_numbers = numbers[:3]
+            hyphenated_number = re.search(r'-(\d+\.?\d*)', res)
+            if hyphenated_number:
+                extracted_numbers[-1] = hyphenated_number.group(1)
+            
+            extracted_numbers = [float(num) for num in extracted_numbers]
+            res = sorted(extracted_numbers, reverse=True)[1]
+            res = res if res < 100 else res / 10
+            
             return round(res, 2)
         except:
             return "N/A"
@@ -420,11 +434,18 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         try:
             res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
             
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values, reverse=True)
+            numbers = re.findall(r'\d+\.?\d*', res)
             
-            res = values[2] if values[2] < 100 else values[0] / 10
-                
+            # Collect the first three numbers and any number after a hyphen
+            extracted_numbers = numbers[:3]
+            hyphenated_number = re.search(r'-(\d+\.?\d*)', res)
+            if hyphenated_number:
+                extracted_numbers[-1] = hyphenated_number.group(1)
+            
+            extracted_numbers = [float(num) for num in extracted_numbers]
+            res = sorted(extracted_numbers, reverse=True)[2]
+            res = res if res < 5 else res / 10
+            
             return round(res, 2)
         except:
             return "N/A"

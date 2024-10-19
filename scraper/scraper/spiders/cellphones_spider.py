@@ -392,10 +392,8 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         try:
             res = self.get_scoped_value(response, ['Kích thước']).replace(',', '.')
 
-             # Use regex to find all numbers, including those after a hyphen
             numbers = re.findall(r'\d+\.?\d*', res)
             
-            # Collect the first three numbers and any number after a hyphen
             extracted_numbers = numbers[:3]
             hyphenated_number = re.search(r'-(\d+\.?\d*)', res)
             if hyphenated_number:
@@ -416,7 +414,6 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         try:
             res = self.get_scoped_value(response, ['Kích thước']).replace(',', '.')
 
-             # Use regex to find all numbers, including those after a hyphen
             numbers = re.findall(r'\d+\.?\d*', res)
             
             # Collect the first three numbers and any number after a hyphen
@@ -439,6 +436,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             res = self.get_scoped_value(response, ['Kích thước']).replace(',', '.')
+            
             numbers = re.findall(r'\d+\.?\d*', res)
             
             # Collect the first three numbers and any number after a hyphen
