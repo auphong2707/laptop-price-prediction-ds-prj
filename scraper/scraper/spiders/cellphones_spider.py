@@ -1,14 +1,6 @@
 import re
-import time
-
 from requests import Response
-from scrapy import Selector
 from .base_laptopshop_spider import BaseLaptopshopLoadmoreButtonSpider
-
-from fake_useragent import UserAgent
-from selenium import webdriver
-from scrapy_selenium import SeleniumRequest
-from selenium.webdriver.common.by import By
 
 
 class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
@@ -21,25 +13,8 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
     product_site_css = 'div.product-info a::attr(href)'
     loadmore_button_css = '.btn-show-more'
     close_button_xpaths = ["//button[@class='cancel-button-top']"]
-    
-    def get_product_sites(self, response: Response, body: Selector):
-        """
-        Extracts the product sites from the response.
-        """
-        return [
-            response.follow(url, callback=self.parse_one_observation, dont_filter=True) 
-            for url in body.css(self.product_site_css).getall()
-        ]
-    
-    def start_requests(self):
-        # Using SeleniumRequest instead of Scrapy's normal request
-        for url in self.start_urls:
-            yield SeleniumRequest(
-                url=url,
-                callback=self.parse,
-                wait_time=10, # Wait for 10 seconds
-                dont_filter=True
-            )
+    show_technical_spec_button_xpath = "//button[contains(@class, 'button__show-modal-technical')]"
+    selenium_product_request = True
     
     def get_scoped_value(self, response: Response, names):
         possibile_values = [
@@ -691,88 +666,3 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
             return "N/A"
     
     # [PARSE FEATURES SECTION: END]
-    
-    def parse_one_observation(self, response: Response):
-        ua = UserAgent()
-        USER_AGENT = ua.random 
-        
-        option = webdriver.FirefoxOptions()
-        option.add_argument('--headless')
-        option.set_preference("general.useragent.override", USER_AGENT)
-        
-        driver = webdriver.Firefox(options=option)
-        driver.get(response.url)
-        
-        # Scroll down the page slowly
-        scroll_pause_time = 0.05 # Time to wait between scrolls
-        scroll_height = driver.execute_script("return document.body.scrollHeight")
-
-        for i in range(1, scroll_height, 100):
-            driver.execute_script(f"window.scrollTo(0, {i});")
-            time.sleep(scroll_pause_time)
-            
-            for xpath in self.close_button_xpaths:
-                try:
-                    buttons = driver.find_elements(By.XPATH, xpath)
-                    
-                    for button in buttons:
-                        if button.is_displayed() and button.is_enabled():
-                            button.click()
-                            print("Closed the modal successfully.")
-                            break
-                except Exception as e:
-                    print("Failed to close the modal:", e)
-            
-            opened_modal = False
-            try:
-                buttons = driver.find_elements(By.CSS_SELECTOR, '.button__show-modal-technical')
-                
-                for button in buttons:
-                    driver.execute_script("arguments[0].click();", button)
-                    print("Opened the modal successfully.")
-                    opened_modal = True
-                    break
-            except:
-                pass
-                
-            if opened_modal:
-                break
-            
-        if not opened_modal:
-            print("Failed to open the modal.")
-        
-        response = Selector(text=driver.page_source)
-        driver.quit()
-
-        yield {
-            'brand': self.parse_brand(response),
-            'name': self.parse_name(response),
-            'cpu': self.parse_cpu(response),
-            'vga': self.parse_vga(response),
-            'ram_amount': self.parse_ram_amount(response),
-            'ram_type': self.parse_ram_type(response),
-            'storage_amount': self.parse_storage_amount(response),
-            'storage_type': self.parse_storage_type(response),
-            'webcam_resolution': self.parse_webcam_resolution(response),
-            'screen_size': self.parse_screen_size(response),
-            'screen_resolution': self.parse_screen_resolution(response),
-            'screen_refresh_rate': self.parse_screen_refresh_rate(response),
-            'screen_brightness': self.parse_screen_brightness(response),
-            'battery_capacity': self.parse_battery_capacity(response),
-            'battery_cells': self.parse_battery_cells(response),
-            'width': self.parse_width(response),
-            'depth': self.parse_depth(response),
-            'height': self.parse_height(response),
-            'weight': self.parse_weight(response),
-            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
-            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-            'number_audio_jacks': self.parse_number_audio_jacks(response),
-            'default_os': self.parse_default_os(response),
-            'color': self.parse_color(response),
-            'origin': self.parse_origin(response),
-            'warranty': self.parse_warranty(response),
-            'release_date': self.parse_release_date(response),
-            'price': self.parse_price(response)
-        }
