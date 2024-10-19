@@ -1,6 +1,5 @@
 import scrapy
 from scrapy.http import Response, Request
-from scrapy_selenium import SeleniumRequest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -8,15 +7,22 @@ from selenium import webdriver
 from scrapy.selector import Selector
 import time
 import logging
+from fake_useragent import UserAgent
 
+logging.disable()
 
 class BaseLaptopshopSpider(scrapy.Spider):
-    
+
     product_site_css = None
-    custom_settings = {
-        'LOG_LEVEL': 'INFO',
-    }
+    show_technical_spec_button_xpath = None
+    close_button_xpaths = []
+    selenium_product_request = False
+
     _num_product = 0
+    
+    def __init__(self, name = None, **kwargs):
+        super().__init__(name, **kwargs)
+        self.ua = UserAgent()
     
     def yield_condition(self, response: Response):
         """
@@ -235,10 +241,12 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # [PARSE FEATURES SECTION: END]
     
     def parse_one_observation(self, response: Response):
-        
         if self.yield_condition(response):
-            self.log(f'Found item: {self._num_product}', level=logging.INFO)
             self._num_product += 1
+            print(f'Found item: {self._num_product}')
+            
+            if self.selenium_product_request:
+                response = self.get_source_selenium(response.url)
 
             yield {
                 'brand': self.parse_brand(response),
@@ -272,6 +280,62 @@ class BaseLaptopshopSpider(scrapy.Spider):
                 'release_date': self.parse_release_date(response),
                 'price': self.parse_price(response)
             }
+            
+    def get_source_selenium(self, url: str):
+        ua = UserAgent()
+        USER_AGENT = ua.random 
+        
+        option = webdriver.FirefoxOptions()
+        option.add_argument('--headless')
+        option.set_preference("general.useragent.override", USER_AGENT)
+        
+        driver = webdriver.Firefox(options=option)
+        driver.get(url)
+        
+        # Scroll down the page slowly
+        scroll_pause_time = 0.01 # Time to wait between scrolls
+        scroll_height = driver.execute_script("return document.body.scrollHeight")
+
+        driver.execute_script("document.body.style.zoom='10%'")
+
+        for i in range(1, scroll_height, 30):
+            driver.execute_script(f"window.scrollTo(0, {i});")
+            time.sleep(scroll_pause_time)
+            
+            for xpath in self.close_button_xpaths:
+                try:
+                    buttons = driver.find_elements(By.XPATH, xpath)
+                    
+                    for button in buttons:
+                        if button.is_displayed() and button.is_enabled():
+                            button.click()
+                            print("Closed the modal successfully.")
+                            break
+                except Exception as e:
+                    print("Failed to close the modal:", e)
+            
+            opened_modal = False
+            try:
+                buttons = driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
+                
+                for button in buttons:
+                    driver.execute_script("arguments[0].click();", button)
+                    print("Opened the modal successfully.")
+                    opened_modal = True
+                    break
+            except:
+                pass
+                
+            if opened_modal:
+                break
+            
+        if not opened_modal:
+            print("Failed to open the modal.")
+        
+        response = Selector(text=driver.page_source)
+        driver.quit()
+        
+        return response
 
 class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
     page_css = None
@@ -283,97 +347,73 @@ class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
                 callback=self.parse
             )
     
-    def get_product_sites(self, response: Response):
-        """
-        Extracts the product sites from the response.
-        """
-        return [response.follow(url=url, callback=self.parse_one_observation) for url in response.css(self.product_site_css).getall()]
-    
 
     def parse(self, response: Response):
-        # Get all the products links
-        product_site_requests = self.get_product_sites(response)
-        
-        # Extracting the feature from a product website
-        for site_request in product_site_requests:
-            yield site_request
+        for url in response.css(self.product_site_css).getall():
+            yield response.follow(
+                url=url,
+                callback=self.parse_one_observation,
+                headers={'User-Agent': self.ua.random}
+            )
         
         pages = response.css(self.page_css).getall()
         for page in pages:
-            
             yield response.follow(
                 url=page,
-                callback=self.parse
+                callback=self.parse,
+                headers={'User-Agent': self.ua.random}
             )
             
 class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
     
     loadmore_button_css = None
-    close_button_xpaths = []
-    
-    def get_product_sites(self, response: Response, body: Selector):
-        """
-        Extracts the product sites from the response.
-        """
-        return [
-            response.follow(url, callback=self.parse_one_observation) 
-            for url in body.css(self.product_site_css).getall()
-        ]
-    
     
     def start_requests(self):
-        # Using SeleniumRequest instead of Scrapy's normal request
-        for url in self.start_urls:
-            yield SeleniumRequest(
-                url=url,
-                callback=self.parse,
-                wait_time=10, # Wait for 10 seconds
-            )
         
-    def parse(self, response):
-        driver = webdriver.Firefox()
-        driver.get(response.url)
-        wait = WebDriverWait(driver, 10) # Wait to allow the button to appear
-        
-        # Scroll and click "Load More" until all the content is loaded
-        while True:
-            time.sleep(5)
-            # Try to find and click the close button from the list of XPaths
-            close_button_found = False
-            for xpath in self.close_button_xpaths:
-                try:
-                    buttons = driver.find_elements(By.XPATH, xpath)  # Get all buttons with class 'close'
-                    
-                    for button in buttons:
-                        # Here you can add more specific checks, like checking text or SVG
-                        if button.is_displayed() and button.is_enabled():  # Ensure the button is visible and clickable
-                            button.click()
-                            print("Closed the modal successfully.")
-                            break
-                    else:
-                        print("No clickable close button found.")
-                except Exception as e:
-                    print("Failed to close the modal:", e)
+        for url in self.start_urls:        
+            options = webdriver.FirefoxOptions()
+            #option.add_argument('--headless')
+            options.set_preference("general.useragent.override", self.ua.random)
             
-            try:
-                load_more_button = wait.until(
-                    EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
-                )
-                load_more_button.click()
+            driver = webdriver.Firefox(options=options)
+            driver.get(url)
+            wait = WebDriverWait(driver, 10)
+            
+            # Scroll and click "Load More" until all the content is loaded
+            while True:
+                time.sleep(1)
+                for xpath in self.close_button_xpaths:
+                    try:
+                        buttons = driver.find_elements(By.XPATH, xpath)
+                        
+                        for button in buttons:
+                            if button.is_displayed() and button.is_enabled(): 
+                                button.click()
+                                print("Closed the modal successfully.")
+                                break
+                    except Exception as e:
+                        print("Failed to close the modal:", e)
                 
-                # Wait for new content to load (if needed)
-                time.sleep(5)
-            except Exception:
-                # Break the loop if there's no more "Load More" button or something goes wrong
-                print("No more 'Load More' button")
-                break
-
-        
-        # Get all the products links
-        product_site_requests = self.get_product_sites(response, Selector(text=driver.page_source))
-        
-        # Extracting the feature from a product website
-        for site_request in product_site_requests:
-            yield site_request
+                try:
+                    load_more_button = wait.until(
+                        EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
+                    )
+                    driver.execute_script("arguments[0].click();", load_more_button)
+                    time.sleep(3)
+                    load_more_button = wait.until(
+                        EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
+                    )
+                except Exception:
+                    print("No more 'Load More' button")
+                    break
+                
+            # Get all the products links
+            page_source = Selector(text=driver.page_source)
+            driver.quit()
             
-        driver.quit()
+            # Extracting the feature from a product website
+            for product_url in page_source.css(self.product_site_css).getall():
+                yield Response(url=url).follow(
+                    url=product_url,
+                    callback=self.parse_one_observation
+                )
