@@ -585,30 +585,6 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         except:
             return "N/A"
     
-    # Color
-    def parse_color(self, response: Response): 
-        """
-        Extracts the color of the laptop from the response.
-        Example: Black, White, etc.
-        """
-        try:
-            res = self.get_scoped_value(response, ['Màu sắc'])
-            
-            if res:
-                return res.strip()
-            else:
-                return "N/A"
-        except:
-            return "N/A"
-    
-    # Origin: Not available
-    def parse_origin(self, response: Response): 
-        """
-        Extracts the origin of the laptop from the response.
-        Example: China, Taiwan, USA, etc.
-        """
-        return "N/A"
-    
     # Warranty
     def parse_warranty(self, response: Response): 
         """
@@ -633,14 +609,6 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
             
         except:
             return "N/A"
-    
-    # Release Date: Not available
-    def parse_release_date(self, response: Response): 
-        """
-        Extracts the release date of the laptop from the response.
-        Format: dd/mm/yyyy.
-        """
-        return "N/A"
     
     # Price
     def parse_price(self, response: Response): 
