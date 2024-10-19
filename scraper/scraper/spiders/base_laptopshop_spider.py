@@ -9,7 +9,7 @@ import time
 import logging
 from fake_useragent import UserAgent
 
-logging.disable()
+#logging.disable()
 
 class BaseLaptopshopSpider(scrapy.Spider):
 
@@ -17,12 +17,20 @@ class BaseLaptopshopSpider(scrapy.Spider):
     show_technical_spec_button_xpath = None
     close_button_xpaths = []
     selenium_product_request = False
+    
+    options = webdriver.FirefoxOptions()
+    options.page_load_strategy = 'none'
+    #options.add_argument('--headless')
+    driver = webdriver.Firefox(options=options)
 
     _num_product = 0
     
     def __init__(self, name = None, **kwargs):
         super().__init__(name, **kwargs)
         self.ua = UserAgent()
+        
+    def __del__(self):
+        self.driver.quit()
     
     def yield_condition(self, response: Response):
         """
@@ -280,31 +288,39 @@ class BaseLaptopshopSpider(scrapy.Spider):
                 'release_date': self.parse_release_date(response),
                 'price': self.parse_price(response)
             }
-            
+
     def get_source_selenium(self, url: str):
-        ua = UserAgent()
-        USER_AGENT = ua.random 
+        time.sleep(1)
+        self.driver.execute_script("window.open('');")
+        self.driver.switch_to.window(self.driver.window_handles[-1])
         
-        option = webdriver.FirefoxOptions()
-        option.add_argument('--headless')
-        option.set_preference("general.useragent.override", USER_AGENT)
-        
-        driver = webdriver.Firefox(options=option)
-        driver.get(url)
-        
-        # Scroll down the page slowly
-        scroll_pause_time = 0.01 # Time to wait between scrolls
-        scroll_height = driver.execute_script("return document.body.scrollHeight")
-
-        driver.execute_script("document.body.style.zoom='10%'")
-
-        for i in range(1, scroll_height, 30):
-            driver.execute_script(f"window.scrollTo(0, {i});")
-            time.sleep(scroll_pause_time)
-            
+        self.driver.execute_script(f"Object.defineProperty(navigator, 'userAgent', {{get: () => '{self.ua.random}'}});")
+        self.driver.get(url)
+        self.driver.switch_to.window(self.driver.window_handles[-1])
+        time.sleep(4)
+        if self.show_technical_spec_button_xpath:
+            retries = 5
+            while retries > 0:
+                self.driver.execute_script("document.body.style.zoom='1%'")
+                time.sleep(3)
+                try:
+                    buttons = self.driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
+                    if buttons:
+                        break
+                    else:
+                        print("Technical spec button not found, reloading the page.")
+                        self.driver.refresh()
+                        time.sleep(2)
+                        retries -= 1
+                except Exception as e:
+                    print("Error while trying to find the technical spec button:", e)
+                    self.driver.refresh()
+                    time.sleep(2)
+                    retries -= 1
+                
             for xpath in self.close_button_xpaths:
                 try:
-                    buttons = driver.find_elements(By.XPATH, xpath)
+                    buttons = self.driver.find_elements(By.XPATH, xpath)
                     
                     for button in buttons:
                         if button.is_displayed() and button.is_enabled():
@@ -316,24 +332,27 @@ class BaseLaptopshopSpider(scrapy.Spider):
             
             opened_modal = False
             try:
-                buttons = driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
+                buttons = self.driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
                 
                 for button in buttons:
-                    driver.execute_script("arguments[0].click();", button)
+                    self.driver.execute_script("arguments[0].click();", button)
                     print("Opened the modal successfully.")
                     opened_modal = True
                     break
             except:
                 pass
                 
-            if opened_modal:
-                break
-            
-        if not opened_modal:
-            print("Failed to open the modal.")
+            if not opened_modal:
+                print("Failed to open the modal.")
+        else:
+            time.sleep(2)
+            self.driver.execute_script("document.body.style.zoom='1%'")
+            time.sleep(3)
         
-        response = Selector(text=driver.page_source)
-        driver.quit()
+        response = Selector(text=self.driver.page_source)
+        
+        self.driver.close()
+        self.driver.switch_to.window(self.driver.window_handles[0])
         
         return response
 
@@ -369,22 +388,21 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
     loadmore_button_css = None
     
     def start_requests(self):
+        self.driver.execute_script("window.open('');")
+        self.driver.switch_to.window(self.driver.window_handles[-1])
         
-        for url in self.start_urls:        
-            options = webdriver.FirefoxOptions()
-            #option.add_argument('--headless')
-            options.set_preference("general.useragent.override", self.ua.random)
-            
-            driver = webdriver.Firefox(options=options)
-            driver.get(url)
-            wait = WebDriverWait(driver, 10)
+        for url in self.start_urls:
+            self.driver.execute_script(f"Object.defineProperty(navigator, 'userAgent', {{get: () => '{self.ua.random}'}});")
+            self.driver.get(url)
+            self.driver.switch_to.window(self.driver.window_handles[-1])
+            wait = WebDriverWait(self.driver, 10)
             
             # Scroll and click "Load More" until all the content is loaded
             while True:
                 time.sleep(1)
                 for xpath in self.close_button_xpaths:
                     try:
-                        buttons = driver.find_elements(By.XPATH, xpath)
+                        buttons = self.driver.find_elements(By.XPATH, xpath)
                         
                         for button in buttons:
                             if button.is_displayed() and button.is_enabled(): 
@@ -398,7 +416,8 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
                     load_more_button = wait.until(
                         EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
                     )
-                    driver.execute_script("arguments[0].click();", load_more_button)
+                    self.driver.execute_script("arguments[0].click();", load_more_button)
+                    print("'Load More' button clicked sucessfully.")
                     time.sleep(3)
                     load_more_button = wait.until(
                         EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
@@ -408,8 +427,10 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
                     break
                 
             # Get all the products links
-            page_source = Selector(text=driver.page_source)
-            driver.quit()
+            page_source = Selector(text=self.driver.page_source)
+            
+            self.driver.close()
+            self.driver.switch_to.window(self.driver.window_handles[0])
             
             # Extracting the feature from a product website
             for product_url in page_source.css(self.product_site_css).getall():
