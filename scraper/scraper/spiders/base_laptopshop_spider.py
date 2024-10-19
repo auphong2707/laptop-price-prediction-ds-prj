@@ -9,7 +9,7 @@ import time
 import logging
 from fake_useragent import UserAgent
 
-#logging.disable()
+logging.disable()
 
 class BaseLaptopshopSpider(scrapy.Spider):
 
@@ -207,34 +207,10 @@ class BaseLaptopshopSpider(scrapy.Spider):
         """
         return "N/A"
     
-    # Color
-    def parse_color(self, response: Response): 
-        """
-        Extracts the color of the laptop from the response.
-        Example: Black, White, etc.
-        """
-        return "N/A"
-    
-    # Origin
-    def parse_origin(self, response: Response): 
-        """
-        Extracts the origin of the laptop from the response.
-        Example: China, Taiwan, USA, etc.
-        """
-        return "N/A"
-    
     # Warranty
     def parse_warranty(self, response: Response): 
         """
         Extracts the warranty period in months from the response.
-        """
-        return "N/A"
-    
-    # Release Date
-    def parse_release_date(self, response: Response): 
-        """
-        Extracts the release date of the laptop from the response.
-        Format: dd/mm/yyyy.
         """
         return "N/A"
     
@@ -282,10 +258,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
                 'number_ethernet_ports': self.parse_number_ethernet_ports(response),
                 'number_audio_jacks': self.parse_number_audio_jacks(response),
                 'default_os': self.parse_default_os(response),
-                'color': self.parse_color(response),
-                'origin': self.parse_origin(response),
                 'warranty': self.parse_warranty(response),
-                'release_date': self.parse_release_date(response),
                 'price': self.parse_price(response)
             }
 
