@@ -10,6 +10,25 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
     product_site_css = "div.p-entry a.p-name::attr(href)"
     #next_page_css = "a.page-link::attr(href)"
 
+    def get_scoped_value(self, response, names):
+        possibile_values = [
+                "//tr/td[contains(., '{}')]/following-sibling::td//span//text()".format(name)
+                for name in names
+            ] + [
+                "//li/div[contains(., '{}')]/following-sibling::div/text()".format(name)
+                for name in names
+            ] + [
+                "//tr/td[contains(., '{}')]/following-sibling::td/text()".format(name)
+                for name in names
+            ]
+        for value in possibile_values:
+            scope = response.xpath(value).getall()
+            if scope:
+                return '\n'.join(scope)
+            
+        return None
+    
+
     # [PARSE FEATURES SECTION: START]
     # Name
     def parse_name(self, response):
@@ -23,9 +42,4 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
         except Exception:
             return "N/A"
     
-     # CPU
-    def parse_cpu(self, response: Response):
-        """
-        Extracts the CPU name of the laptop from the response.
-        """
     
