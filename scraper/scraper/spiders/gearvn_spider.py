@@ -40,12 +40,12 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Dell, HP, etc.
         """
         try:
-            res = response.css('.product-name h1::text').get()
+            res = response.css('.product-name h1::text').get().lower()
             
-            if "Macbook" in res or "MacBook" in res:
-                return "Apple"
+            if "macbook" in res or "macBook" in res:
+                return "apple"
             
-            for removal in ['Laptop gaming ', 'Laptop Gaming ', 'Laptop ']:
+            for removal in ['laptop gaming ', 'laptop ']:
                 res = res.replace(removal, '')
             
             return res.split()[0]
@@ -57,14 +57,14 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the name of the laptop from the response.
         """
         try:
-            res = response.css('.product-name h1::text').get()
-            for removal in ['Laptop gaming ', 'Laptop Gaming ', 'Laptop ', 'Gray', 'Black', 'Silver', 'IceBlue']:
+            res = response.css('.product-name h1::text').get().lower()
+            for removal in ['laptop gaming ', 'laptop ', 'gray', 'black', 'silver', 'iceblue']:
                 res = res.replace(removal, '')
 
             res = re.sub(r'\([^()]*\)', '', res)
             
-            if "Macbook" in res:
-                res = "Apple " + ' '.join(res.split()[:2] + res.split()[-1:])
+            if "macbook" in res:
+                res = "apple " + ' '.join(res.split()[:2] + res.split()[-1:])
             
             if not res[-1].isalnum():
                 res = res[:-1]
@@ -79,30 +79,30 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the CPU name of the laptop from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['CPU'])
+            res = self.get_scoped_value(response, ['CPU']).lower()
             
-            if self.parse_brand(response) == "Apple":
-                res = re.sub(r'(\d+)CPU', r'\1 cores', res)
-                res = re.sub(r'\s?\d+GPU', '', res)
-                res = "Apple " + res
+            if self.parse_brand(response) == "apple":
+                res = re.sub(r'(\d+)cpu', r'\1 core', res)
+                res = re.sub(r'\s?\d+gpu', '', res)
+                res = "apple " + res
             else:
-                for removal in ['®', '™', ' processor', ' Processor', 'Mobile', 'with Intel AI Boost', 'Processors', '(TM)', '(R)']:
+                for removal in ['®', '™', 'processors', ' processor', 'mobile', 'with intel ai boost', '(tm)', '(r)']:
                     res = res.replace(removal, '')
 
-                res = re.sub(r'\s*(\d{1,2}th Gen|Gen \d{1,2}th)\s*', ' ', res)
+                res = re.sub(r'\s*(\d{1,2}th gen|gen \d{1,2}th)\s*', ' ', res)
                 
-                special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+GHz|\d+\.\d+\s?GHz|\d+\s?GB|dGB)\b', res)
+                special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+\.\d+\s?ghz|\d+\s?gb|dgb)\b', res)
                 if special_sep:
                     res = res.split(special_sep.group())[0]
                     
-                for sep in ['(', 'up to', 'Up to', 'upto', ',']:
+                for sep in ['(', 'up to', 'upto', ',']:
                     res = res.split(sep)[0]
                     
-                if res.startswith(('i', 'Ultra')):
-                    res = 'Intel Core ' + res
+                if res.startswith(('i', 'ultra')):
+                    res = 'intel core ' + res
                     
-                if res.startswith('Ryzen'):
-                    res = 'AMD ' + res
+                if res.startswith('ryzen'):
+                    res = 'amd ' + res
             
             return ' '.join(res.split())
         except:
@@ -114,49 +114,48 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the VGA name of the laptop from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['VGA', 'Card đồ họa'])
+            res = self.get_scoped_value(response, ['VGA', 'Card đồ họa']).lower()
             
             res = re.sub(r'[^\x20-\x7E]|®|™|integrated|gpu', ' ', res, flags=re.IGNORECASE)              
             res = re.sub(r'\([^()]*\)', '', res)
+
+            special_sep = re.search(r'\d+\s?gb|gddr\d+', res)
+            if special_sep:
+                res = res.split(special_sep.group())[0]
+            
+            for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
+                res = res.split(spliter)[0]
+                
             res = ' '.join(res.split())
-
-            if res.lower() in [
-                    "intel arc graphics", 
-                    "amd radeon graphics", 
-                    "intel iris xe graphics",
-                    "intel uhd graphics",
-                    "intel iris xe graphics intel uhd graphics",
-                    "on board on board",
-                    "amd radeon graphics amd radeon graphics",
-                    "intel graphics",
-                    "intel arcintel arc",
-                    "onboardonboard",
-                    None
-                ]:
-                res = "N/A"
+    
+            if self.parse_brand(response) == "apple":
+                res = 'N/A'
             else:
-                special_sep = re.search(r'\d+\s?GB|GDDR\d+', res)
-                if special_sep:
-                    res = res.split(special_sep.group())[0]
-
-                for spliter in [' with ', ' Laptop ', '+', ',',  'Up', 'upto', 'Upto', 'up to', 'ROG']:
-                    res = res.split(spliter)[0]
+                if any([keyword in res.lower() for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
+                    for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia', 'intel iris xe', 'graphics']:
+                        res = res.replace(removal, '')
+                        res = ' '.join(res.split())
                     
-                if res.lower().split()[0] == 'nvidia':
-                    res = 'NVIDIA ' + ' '.join(res.split()[1:])
+                    if (res.startswith('rtx') and 'ada' not in res) or res.startswith('gtx'):
+                        res = 'geforce ' + res
+                        
+                    res = re.sub(r'(\s\d{3,4})ti', r'\1 ti', res)
+                    res = re.sub(r'(ti)(\d{4})', r'\1 \2', res)
                     
-                if res.startswith('GeForce'):
-                    res = 'NVIDIA ' + res
-                    
-                res = re.sub(r'(\s\d{3,4})Ti', r'\1 Ti', res)
-                res = re.sub(r'(TX)(\d{4})', r'\1 \2', res)
-                
-                if "Gefore" in res:
-                    res = res.replace("Gefore", "Geforce")
-                
-                if "NVIDIA" in res:
-                    res = res[res.index("NVIDIA"):]
-                
+                    if res.startswith('mx'):
+                        res = 'geforce ' + res
+                    if 'geforce' in res:
+                        res = res[res.index('geforce'):]
+                elif any([keyword in res for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
+                                                         'intel arc', 'onboard', 'on board', 'qualcomm']]):
+                    res = "N/A"
+                elif any([keyword in res for keyword in ['amd', 'radeon']]):
+                    res = res.replace('amd', '')
+                    if 'vega' in res:
+                        res = "N/A"
+                    elif not 'rx' in res:
+                        res = "N/A"
+                        
             return res.strip()
         except:
             return "N/A"
@@ -184,9 +183,9 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: DDR3, DDR4, etc.
         """
         try:
-            res = self.get_scoped_value(response, ['RAM', 'Ram', 'ĐẬP'])
+            res = self.get_scoped_value(response, ['RAM', 'Ram', 'ĐẬP']).lower()
             
-            search_value = re.search(r'DDR+\d', res)
+            search_value = re.search(r'ddr+\d', res)
             if search_value:
                 res = search_value.group()
             else:
@@ -225,17 +224,17 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: HDD, SSD, SSHD.
         """
         try:
-            res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD', 'Ổ Cứng'])
+            res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD', 'Ổ Cứng']).lower()
         
-            if "SSD" in res and "HDD" in res:
-                if res.index("SSD") < res.index("HDD"):
-                    res = "SSD"
+            if "ssd" in res and "hdd" in res:
+                if res.index("ssd") < res.index("hdd"):
+                    res = "ssd"
                 else:
-                    res = "HDD"
-            elif "SSD" in res:
-                res = "SSD"
-            elif "HDD" in res:
-                res = "HDD"
+                    res = "hdd"
+            elif "ssd" in res:
+                res = "ssd"
+            elif "hdd" in res:
+                res = "hdd"
             else:
                 res = "N/A"
             
@@ -250,14 +249,14 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: HD, FHD, 4K.
         """
         try:
-            res = ''.join(self.get_scoped_value(response, ['Webcam', 'Camera']).lower().split())
+            res = ''.join(self.get_scoped_value(response, ['Webcam', 'Camera']).split()).lower()
 
             if any(term in res for term in ['qhd', '2k', '1440p', '2560x1440']):
-                return 'QHD'
+                return 'qhd'
             elif any(term in res for term in ['fhd', '1080p', '1920x1080']):
-                return 'FHD'
+                return 'fhd'
             elif any(term in res for term in ['hd', '720p', '1280x720']):
-                return 'HD'
+                return 'hd'
             else:
                 return "N/A"
         except:
@@ -288,7 +287,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: 1920x1080, 2560x1600, etc.
         """
         try:
-            res = ''.join(self.get_scoped_value(response, ['Màn hình']).lower().split())
+            res = ''.join(self.get_scoped_value(response, ['Màn hình']).split()).lower()
             res = res.replace('*', 'x')
             
             search_value = re.search(r'\b\d{3,4}x\d{3,4}\b', res)
@@ -570,16 +569,15 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Windows, Linux, etc.
         """
         try:
-            res = self.get_scoped_value(response, ['Hệ điều hành', 'Hệ thống điều chỉnh'])
-            res = re.sub(r'Bản Quyền|[^\x20-\x7E]|Single Language|SL|64', ' ', res, flags=re.IGNORECASE)
+            res = self.get_scoped_value(response, ['Hệ điều hành', 'Hệ thống điều chỉnh']).lower()
+            res = re.sub(r'bản quyền|[^\x20-\x7E]|single language|sl|64', ' ', res)
             res = ' '.join(res.split())
             
             for sep in ['+', ',', '-', ';']:
                 res = res.split(sep)[0]
                 
-            if 'Windows' in res:
-                res = res[res.index('Windows'):]
-            
+            if 'windows' in res:
+                res = res[res.index('windows'):]
             
             return res.strip()
         except:
