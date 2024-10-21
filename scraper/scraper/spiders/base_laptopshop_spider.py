@@ -225,42 +225,46 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # [PARSE FEATURES SECTION: END]
     
     def parse_one_observation(self, response: Response):
-        if self.yield_condition(response):
-            self._num_product += 1
-            print(f'Found item: {self._num_product}')
-            
-            if self.selenium_product_request:
-                response = self.get_source_selenium(response.url)
+        if not self.yield_condition(response):
+            return
+        
+        if self.selenium_product_request:
+            response = self.get_source_selenium(response.url)
+            if not self.yield_condition(response):
+                return
 
-            yield {
-                'brand': self.parse_brand(response),
-                'name': self.parse_name(response),
-                'cpu': self.parse_cpu(response),
-                'vga': self.parse_vga(response),
-                'ram_amount': self.parse_ram_amount(response),
-                'ram_type': self.parse_ram_type(response),
-                'storage_amount': self.parse_storage_amount(response),
-                'storage_type': self.parse_storage_type(response),
-                'webcam_resolution': self.parse_webcam_resolution(response),
-                'screen_size': self.parse_screen_size(response),
-                'screen_resolution': self.parse_screen_resolution(response),
-                'screen_refresh_rate': self.parse_screen_refresh_rate(response),
-                'screen_brightness': self.parse_screen_brightness(response),
-                'battery_capacity': self.parse_battery_capacity(response),
-                'battery_cells': self.parse_battery_cells(response),
-                'width': self.parse_width(response),
-                'depth': self.parse_depth(response),
-                'height': self.parse_height(response),
-                'weight': self.parse_weight(response),
-                'number_usb_a_ports': self.parse_number_usb_a_ports(response),
-                'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-                'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-                'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-                'number_audio_jacks': self.parse_number_audio_jacks(response),
-                'default_os': self.parse_default_os(response),
-                'warranty': self.parse_warranty(response),
-                'price': self.parse_price(response)
-            }
+        self._num_product += 1
+        print(f'Found item: {self._num_product}')
+        
+        yield {
+            'brand': self.parse_brand(response),
+            'name': self.parse_name(response),
+            'cpu': self.parse_cpu(response),
+            'vga': self.parse_vga(response),
+            'ram_amount': self.parse_ram_amount(response),
+            'ram_type': self.parse_ram_type(response),
+            'storage_amount': self.parse_storage_amount(response),
+            'storage_type': self.parse_storage_type(response),
+            'webcam_resolution': self.parse_webcam_resolution(response),
+            'screen_size': self.parse_screen_size(response),
+            'screen_resolution': self.parse_screen_resolution(response),
+            'screen_refresh_rate': self.parse_screen_refresh_rate(response),
+            'screen_brightness': self.parse_screen_brightness(response),
+            'battery_capacity': self.parse_battery_capacity(response),
+            'battery_cells': self.parse_battery_cells(response),
+            'width': self.parse_width(response),
+            'depth': self.parse_depth(response),
+            'height': self.parse_height(response),
+            'weight': self.parse_weight(response),
+            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
+            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
+            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
+            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
+            'number_audio_jacks': self.parse_number_audio_jacks(response),
+            'default_os': self.parse_default_os(response),
+            'warranty': self.parse_warranty(response),
+            'price': self.parse_price(response)
+        }
 
     def get_source_selenium(self, url: str):
         time.sleep(1)
