@@ -17,6 +17,9 @@ class BaseLaptopshopSpider(scrapy.Spider):
     show_technical_spec_button_xpath = None
     close_button_xpaths = []
     selenium_product_request = False
+    require_specific_transform = False
+    
+    source = None
     
     options = webdriver.FirefoxOptions()
     options.page_load_strategy = 'none'
@@ -143,21 +146,9 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Size
-    def parse_width(self, response: Response):
+    def parse_size(self, response: Response):
         """
-        Extracts the width of the laptop in cm from the response.
-        """
-        return "N/A"
-    
-    def parse_depth(self, response: Response):
-        """
-        Extracts the depth of the laptop in cm from the response.
-        """
-        return "N/A"
-    
-    def parse_height(self, response: Response):
-        """
-        Extracts the height of the laptop in cm from the response.
+        Extracts the size of the laptop in cm from the response.
         """
         return "N/A"
     
@@ -169,33 +160,9 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Connectivity
-    def parse_number_usb_a_ports(self, response: Response):
+    def parse_connectivity(self, response: Response):
         """
-        Extracts the number of USB-A ports from the response.
-        """
-        return "N/A"
-    
-    def parse_number_usb_c_ports(self, response: Response):
-        """
-        Extracts the number of USB-C ports from the response.
-        """
-        return "N/A"
-    
-    def parse_number_hdmi_ports(self, response: Response):
-        """
-        Extracts the number of HDMI ports from the response.
-        """
-        return "N/A"
-    
-    def parse_number_ethernet_ports(self, response: Response):
-        """
-        Extracts the number of Ethernet ports from the response.
-        """
-        return "N/A"
-    
-    def parse_number_audio_jacks(self, response: Response):
-        """
-        Extracts the number of audio jacks from the response.
+        Extracts the connectivity options of the laptop from the response.
         """
         return "N/A"
     
@@ -237,6 +204,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
         print(f'Found item: {self._num_product}')
         
         yield {
+            'source': self.source,
             'brand': self.parse_brand(response),
             'name': self.parse_name(response),
             'cpu': self.parse_cpu(response),
@@ -252,15 +220,9 @@ class BaseLaptopshopSpider(scrapy.Spider):
             'screen_brightness': self.parse_screen_brightness(response),
             'battery_capacity': self.parse_battery_capacity(response),
             'battery_cells': self.parse_battery_cells(response),
-            'width': self.parse_width(response),
-            'depth': self.parse_depth(response),
-            'height': self.parse_height(response),
+            'size': self.parse_size(response),
             'weight': self.parse_weight(response),
-            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
-            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-            'number_audio_jacks': self.parse_number_audio_jacks(response),
+            'connectivity': self.parse_connectivity(response),
             'default_os': self.parse_default_os(response),
             'warranty': self.parse_warranty(response),
             'price': self.parse_price(response)
