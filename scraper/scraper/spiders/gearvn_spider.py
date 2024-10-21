@@ -570,7 +570,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             res = self.get_scoped_value(response, ['Hệ điều hành', 'Hệ thống điều chỉnh']).lower()
-            res = re.sub(r'bản quyền|[^\x20-\x7E]|single language|sl|64', ' ', res)
+            res = re.sub(r'bản quyền|[^\x20-\x7E]|single language|sl|64|sea', ' ', res)
             res = ' '.join(res.split())
             
             for sep in ['+', ',', '-', ';']:

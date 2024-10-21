@@ -18,10 +18,10 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
     
     def get_scoped_value(self, response: Response, names):
         possibile_values = [
-                "//li[contains(@class, 'technical-content-modal-item')]//p[text()='{}']/following-sibling::div[1]/text()".format(name)
+                "//li[contains(@class, 'technical-content-modal-item')]//p[text()='{}']/following-sibling::div[1]//text()".format(name)
                 for name in names
             ] + [
-                "//li[contains(@class, 'technical-content-modal-item')]//p[a[text()='{}']]/following-sibling::div[1]/text()".format(name)
+                "//li[contains(@class, 'technical-content-modal-item')]//p[a[text()='{}']]/following-sibling::div[1]//text()".format(name)
                 for name in names
             ]
         for value in possibile_values:
@@ -31,6 +31,17 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
             
         return None
     
+    def yield_condition(self, response):
+        name = response.css('.box-product-name h1::text').get().lower()
+        price = response.css('.product__price--show::text').get()
+        if 'cũ' in name \
+            or ('mac' in name and 'macbook' not in name) \
+            or 'đã kích hoạt' in name \
+            or (price is not None and 'Giá Liên Hệ' in price):
+            print(f"Skipped: {name}")
+            return False
+        return True
+    
     # [PARSE FEATURES SECTION: START]
     # Brand
     def parse_brand(self, response: Response): 
@@ -39,15 +50,15 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Dell, HP, etc.
         """
         try:
-            res = response.css('.box-product-name h1::text').get()
+            res = response.css('.box-product-name h1::text').get().lower()
             
-            if "Macbook" in res or "MacBook" in res:
-                return "Apple"
+            if "mac" in res:
+                return "apple"
             
-            for removal in ['Laptop gaming ', 'Laptop Gaming ', 'Laptop ']:
+            for removal in ['laptop gaming ', 'laptop Gaming ', 'laptop ']:
                 res = res.replace(removal, '')
             
-            return res.split()[0]
+            return res.split()[0].lower()
         except:
             return "N/A"
     
@@ -56,20 +67,14 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the name of the laptop from the response.
         """
         try:
-            res = response.css('.box-product-name h1::text').get()
-            for removal in ['Laptop gaming ', 'Laptop Gaming ', 'Laptop ', '- Chỉ có tại CellphoneS']:
+            res = response.css('.box-product-name h1::text').get().lower()
+            for removal in ['laptop gaming ', 'laptop ', '- chỉ có tại cellphones', 'i chính hãng apple việt nam', ' - nhập khẩu chính hãng']:
                 res = res.replace(removal, '')
 
             res = re.sub(r'\([^()]*\)', '', res)
-            search_value = re.search('(?<!\w)(\d+)GB(?!\w)', res)
+            search_value = re.search('(?<!\w)(\d+)gb(?!\w)', res)
             if search_value:
                 res = res.split(search_value.group())[0]
-            
-            if "Macbook" in res:
-                res = "Apple " + ' '.join(res.split()[:2] + res.split()[-1:])
-            
-            if not res[-1].isalnum():
-                res = res[:-1]
             
             return res.strip()
         except:
@@ -81,32 +86,76 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the CPU name of the laptop from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Loại CPU'])
+            res = self.get_scoped_value(response, ['Loại CPU']).lower()
             
-            if self.parse_brand(response) == "Apple":
-                res = res.replace('nhân', 'cores')
-            else:
-                for removal in ['®', '™', ' processor', ' Processor', 'Mobile', 'with Intel AI Boost', 'Processors', '(TM)', '(R)']:
-                    res = res.replace(removal, '')
-
-                res = re.sub(r'\s*(\d{1,2}th Gen|Gen \d{1,2}th)\s*', ' ', res)
+            for removal in ['®', '™', ' processors', ' processor', 'mobile', 'with intel ai boost', '', '(tm)', '(r)', 
+                            'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 'comet lake', 'kabylake refresh', 'kabylake']:
+                    res = res.replace(removal.lower(), '')
+            
+            special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+(\.\d+)?\s*ghz|\d+\s?gb|dgb)\b', res)
+            if special_sep:
+                res = res.split(special_sep.group())[0]
+            
+            for spliter in [',',  'up',]:
+                res = res.split(spliter)[0]
+            
+            res = ' '.join(res.split())
+            if self.parse_brand(response) == "apple":
+                cpu_name = re.search(r'm\d+(\s+pro|\s+max)?', res, re.IGNORECASE)
+                if cpu_name:
+                    # Update the pattern to be more general for core counting and fix the encoding issue
+                    pattern = re.compile(r'(\d+)\s*(lõi|nhân|core|-core)', re.IGNORECASE)
+                    num_cores = pattern.search(res)
+                    if num_cores:
+                        num_cores = num_cores.group(1)  # The number of cores will be in the first group
+                        res = f"apple {cpu_name.group(0)} {num_cores}-core"
+                    else:
+                        res = f"apple {cpu_name.group(0)}"
                 
-                special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+GHz|\d+\.\d+\s?GHz|\d+\s?GB|dGB)\b', res)
-                if special_sep:
-                    res = res.split(special_sep.group())[0]
+            else:
+                res = re.sub(r'\([^()]*\)', '', res)
+                
+                # Intel solving
+                if any(keyword in res.lower() for keyword in ['i5', 'i7', 'i9', 'i3']):
                     
-                for sep in ['(', 'up to', 'Up to', 'upto', ',']:
-                    res = res.split(sep)[0]
+                    pattern = re.compile(r'(i\d)\s*[- ]?\s*(\d{4,5})([a-z]{0,2})')
+                    match = pattern.search(res)
+                
+                    if match:
+                        # Format the matched processor name as "iX-XXXXXH"
+                        res = 'intel core ' + f"{match.group(1)}-{match.group(2)}{match.group(3)}"
+                elif "ultra" in res.lower():
+                    pattern = re.compile(r'(?:ultra\s*)?(u?\d)\s*[- ]?\s*(\d{3})([a-z]?)')
+                    match = pattern.search(res)
                     
-                if res.startswith(('i', 'Ultra')):
-                    res = 'Intel Core ' + res
+                    if match:
+                        model_number = match.group(1).replace('u', '')
+                        res = 'intel core ' + f"ultra {model_number} {match.group(2)}{match.group(3)}"
+                
+                # AMD solving
+                elif "ryzen" in res.lower():
+                    pattern = re.compile(r'(?:ryzen\s*)?(\d)\s*[- ]?\s*(\d{4})([a-z]{0,2})')
                     
-                if res.startswith('Ryzen'):
-                    res = 'AMD ' + res
-            
-            return ' '.join(res.split())
-        except Exception as e:
-            print("ERROR", e)
+                    match = pattern.search(res)
+                    
+                    if match:
+                        res = 'amd ' f"ryzen {match.group(1)} {match.group(2)}{match.group(3)}"
+                        
+                # Snapdragon solving
+                elif "snapdragon" in res.lower():
+                    pattern = r'([A-Za-z]+\s+\d+\s+\d+)'
+                    
+                    # Define a function to replace spaces with hyphens in the matched string
+                    def replace_with_hyphens(match):
+                        # Split the matched string into components and join with hyphens
+                        components = match.group(0).split()
+                        return '-'.join(components)
+                    
+                    # Substitute the pattern in the input string using re.sub
+                    res = re.sub(pattern, replace_with_hyphens, res)
+                    
+            return res.strip()
+        except:
             return "N/A"
     
     # VGA
@@ -115,51 +164,42 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the VGA name of the laptop from the response.
         """
         try:
-            res = self.get_scoped_value(response, ['Loại card đồ họa'])
+            res = self.get_scoped_value(response, ['Loại card đồ họa']).lower()
             
             res = re.sub(r'[^\x20-\x7E]|®|™|integrated|gpu', ' ', res, flags=re.IGNORECASE)              
             res = re.sub(r'\([^()]*\)', '', res)
+            
+            special_sep = re.search(r'\d+\s?gb|gddr\d+|\d+g', res)
+            if special_sep:
+                res = res.split(special_sep.group())[0]
+            
+            for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
+                res = res.split(spliter)[0]
+            
             res = ' '.join(res.split())
-
-            if self.parse_brand(response) == "Apple":
+    
+            if self.parse_brand(response) == "apple":
                 res = 'N/A'
             else:
-                if res.lower() in [
-                        "intel arc graphics", 
-                        "amd radeon graphics", 
-                        "intel iris xe graphics",
-                        "intel uhd graphics",
-                        "intel iris xe graphics intel uhd graphics",
-                        "on board on board",
-                        "amd radeon graphics amd radeon graphics",
-                        "intel graphics",
-                        "intel arcintel arc",
-                        "onboardonboard",
-                        None
-                    ]:
+                if any([keyword in res.lower() for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
+                    for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia', 'intel iris xe']:
+                        res = res.replace(removal, '')
+                        res = ' '.join(res.split())
+                    
+                    if res.startswith('rtx') or res.startswith('gtx'):
+                        res = 'geforce ' + res
+                        
+                    res = re.sub(r'(\s\d{3,4})ti', r'\1 ti', res)
+                    res = re.sub(r'(tx)(\d{4})', r'\1 \2', res)
+                elif any([keyword in res for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 'intel arc', 'adreno']]):
                     res = "N/A"
-                else:
-                    special_sep = re.search(r'\d+\s?GB|GDDR\d+', res)
-                    if special_sep:
-                        res = res.split(special_sep.group())[0]
-
-                    for spliter in [' with ', ' Laptop ', '+', ',',  'Up', 'upto', 'Upto', 'up to', 'ROG']:
-                        res = res.split(spliter)[0]
-                        
-                    if res.lower().split()[0] == 'nvidia':
-                        res = 'NVIDIA ' + ' '.join(res.split()[1:])
-                        
-                    if res.startswith('GeForce'):
-                        res = 'NVIDIA ' + res
-                        
-                    res = re.sub(r'(\s\d{3,4})Ti', r'\1 Ti', res)
-                    res = re.sub(r'(TX)(\d{4})', r'\1 \2', res)
+                elif any([keyword in res for keyword in ['amd', 'radeon']]):
+                    res = res.replace('amd', '')
                     
-                    if "Gefore" in res:
-                        res = res.replace("Gefore", "Geforce")
-                    
-                    if "NVIDIA" in res:
-                        res = res[res.index("NVIDIA"):]
+                    if 'vega' in res:
+                        res = "N/A"
+                    elif not 'rx' in res:
+                        res = "N/A"
                     
             return res.strip()
         except:
@@ -196,7 +236,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
             else:
                 res = "N/A"
             
-            return res.strip()
+            return res.strip().lower()
         except:
             return "N/A"
     
@@ -248,7 +288,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
                 if res != "N/A":
                     break
             
-            return res.strip()
+            return res.strip().lower()
         except:      
             return "N/A"
     
@@ -262,11 +302,11 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
             res = ''.join(self.get_scoped_value(response, ['Webcam']).lower().split())
 
             if any(term in res for term in ['qhd', '2k', '1440p', '2560x1440']):
-                return 'QHD'
+                return 'qhd'
             elif any(term in res for term in ['fhd', '1080p', '1920x1080']):
-                return 'FHD'
+                return 'fhd'
             elif any(term in res for term in ['hd', '720p', '1280x720']):
-                return 'HD'
+                return 'hd'
             else:
                 return "N/A"
         except:
@@ -303,7 +343,8 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
             
             search_value = re.search(r'(\d{3,4})x(\d{3,4})', res)
             if search_value:
-                res = search_value.group()
+                width, height = sorted(map(int, search_value.groups()), reverse=True)
+                res = f"{width}x{height}"
             else:
                 res = "N/A"
             
@@ -574,16 +615,21 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Windows, Linux, etc.
         """
         try:
-            res = self.get_scoped_value(response, ['Hệ điều hành'])
-            res = re.sub(r'Bản Quyền|[^\x20-\x7E]|Single Language|SL|64', ' ', res, flags=re.IGNORECASE)
+            res = self.get_scoped_value(response, ['Hệ điều hành']).lower()
+            
+            for removal in ['single language', 'sl', '64', 'bit', 'sea', 'microsoft', 'office']:
+                res = res.replace(removal, '')
             res = ' '.join(res.split())
             
-            for sep in ['+', ',', '-', ';']:
-                res = res.split(sep)[0]
-                
-            if 'Windows' in res:
-                res = res[res.index('Windows'):]
+            res.replace('win ', 'windows ')
             
+            search_value = re.search(r"windows\s+\d{1,2}(\.\d+)?(\s+\w+)?(\s+\w+)?", res)
+            if search_value:
+                res = search_value.group()
+            elif self.parse_brand(response) == "apple":
+                res = "macos"
+            elif res == 'không hệ điều hành':
+                res = "N/A"
             
             return res.strip()
         except:
@@ -618,8 +664,10 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: in VND.
         """
         try:
-            price = response.xpath("//div[@id='trade-price-tabs']//div[contains(@class, 'tpt-box') \
-                and contains(@class, 'active')]//p[contains(@class, 'tpt---sale-price')]/text()").get()
+            if response.css('.tpt---sale-price::text').get():
+                price = response.css('.tpt---sale-price::text').get()
+            elif response.css('.product__price--show::text').get():
+                price = response.css('.product__price--show::text').get()
             
             if price:
                 price = price.replace('đ', '').replace('.', '').strip()
