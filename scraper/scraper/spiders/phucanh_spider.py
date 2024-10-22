@@ -3,42 +3,15 @@ from scrapy.http import Response
 import re
 from .base_laptopshop_spider import BaseLaptopshopPageSpider
 
-def _extract_dimensions(response: Response):  # Helper function to extract dimensions and unit
-    for dimension_text in response.css('td:contains("Kích thước") + td.spec-value::text').getall():
-        if dimension_text:
-            dimension_text = dimension_text.strip()
-            
-            # Improved regex to capture potential extra text or units before and after dimensions
-            match = re.search(r"(\d+(\.\d+)?)\s*x\s*(\d+(\.\d+)?)\s*x\s*(\d+(\.\d+)?)\s*(cm|mm)", dimension_text, re.IGNORECASE)
-            if match:
-                length, _, width, _, height, _, unit = match.groups()
-                try:
-                    length = float(length)
-                    width = float(width)
-                    height = float(height)
-                    
-                    # Convert cm to mm if necessary
-                    if unit.lower() == 'cm':
-                        length *= 10
-                        width *= 10
-                        height *= 10
-                        
-                    return length, width, height  # Return dimensions in millimeters
-                
-                except ValueError:
-                    # Log or raise an error in real use case; print for now
-                    print(f"Error converting dimension to float: {dimension_text}")
-                    
-    # Return None if extraction fails
-    return None, None, None
-
 # create scraper
 class PhucanhShopSpider(BaseLaptopshopPageSpider): 
     name = "phucanh_spider"
     start_urls = ['https://www.phucanh.vn/laptop.html']  
     product_site_css = '.p-img::attr(href)'  # Example CSS selector to extract links to products
     page_css = 'div.paging a::attr(href)'
+    allowed_domains = ['phucanh.vn']
     
+    source = 'phucanh'
     def start_requests(self):
         for url in self.start_urls:
             yield scrapy.Request(
@@ -57,6 +30,21 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         
         # Generate requests only for valid URLs
         return [response.follow(url=url, callback=self.parse_one_observation) for url in valid_urls]
+    
+    def get_scoped_value(self, response, names):
+        possibile_values = [
+               "//table[contains(@class, 'tb-product-spec')]//tr//td[text()='{}']/following-sibling::td//text()".format(name)
+               for name in names
+            ] + [
+                "//div[@id='fancybox-spec']//table[contains(@class, 'tb-product-spec')]//tr//td[text()='{}']/following-sibling::td//text()".format(name)
+                for name in names
+            ]
+        for value in possibile_values:
+            scope = response.xpath(value).getall()
+            if len(scope) > 0:
+                return '\n'.join(scope)
+            
+        return None
 
     def parse_brand(self, response:Response):
         # Extract the full product title
@@ -85,8 +73,14 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
 
     def parse_price(self, response:Response):
         # Extract the price with the currency symbol
-        price_text = response.css('span.detail-product-old-price::text').get()
-        return price_text
+        try:
+            price_text = response.css('span.detail-product-old-price::text').get()
+            if not price_text:
+                price_text = response.css('span.detail-product-best-price::text').get()
+            return price_text if price_text else 'n/a'
+        except Exception as e:
+            print('Error while trying to find the price:', e)
+            return 'n/a'
         
         # if price_text:
         #     # Remove dots and currency unit (like "đ")
@@ -96,8 +90,8 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         
         return price
     def parse_cpu(self, response: Response):
-        cpu_text = response.css('td:contains("Bộ VXL") + td.spec-value::text').get()
-        return cpu_text
+        cpu_text = self.get_scoped_value(response, ['Bộ VXL'])
+        return cpu_text if cpu_text else 'n/a'
         # if cpu_text: 
         #     if ': ' in cpu_text: 
         #         cpu_text = cpu_text.replace(': ', '').lower()
@@ -115,8 +109,8 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
 
         # return 'N/A'
     def parse_vga(self, response):
-        vga_text = response.css('td:contains("Card màn hình") + td.spec-value::text').get()
-        return vga_text
+        vga_text = self.get_scoped_value(response, ['Card màn hình'])
+        return vga_text if vga_text else 'n/a'
         # if vga_text:
         #     vga_text_lower = vga_text.strip().lower() # Normalize for easier comparison
         #     if "intel" in vga_text_lower and ("graphics" in vga_text_lower or "hd graphics" in vga_text_lower): # Check for common integrated graphics patterns
@@ -138,15 +132,15 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         # else:
         #     return "N/A" # Value not found
     def parse_ram_amount(self, response):
-        ram_text = response.css('td:contains("Bộ nhớ RAM") + td::text').get()
-        return ram_text
+        ram_text = self.get_scoped_value(response, ['Dung lượng RAM'])
+        return ram_text if ram_text else 'n/a'
         # if ram_text: 
         #     return ram_text.split()[1]
         # return 'N/A'
     
     def parse_ram_type(self, response):
-        ram_text = response.css('td:contains("Bộ nhớ RAM") + td::text').get()
-        return ram_text
+        ram_text = self.get_scoped_value(response, ['Loại RAM'])
+        return ram_text if ram_text else 'n/a'
         # if ram_text:
         #     # Capture the "ddr" followed by a digit
         #     match = re.search(r"(ddr\d+)", ram_text.lower())
@@ -155,9 +149,8 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         # return 'N/A'
     
     def parse_storage_amount(self, response):
-        # Select all <td> elements and look for the one containing 'Ổ cứng', then get the following <td>
-        storage_text = response.css('td:contains("Ổ cứng") + td::text').get()
-        return storage_text
+        storage_text = self.get_scoped_value(response, ['Dung lượng ổ cứng'])
+        return storage_text if storage_text else 'n/a'
 
         # if storage_text:
         #     # Clean up the storage text by removing ' SSD', ' HDD', and ': ' if they exist
@@ -168,17 +161,12 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         # return 'N/A'
 
     def parse_storage_type(self, response): 
-        for storage_text in response.css('td.spec-value::text').getall(): 
-            if any(storage_type in storage_text for storage_type in ['SSD', 'HDD']): 
-                if 'SSD' in storage_text: 
-                    return 'SSD'
-                else: 
-                    return 'HDD'
-        return 'N/A'
+        storage_text = self.get_scoped_value(response, ['Loại ổ cứng'])
+        return storage_text if storage_text else 'n/a' 
     
     def parse_screen_resolution(self, response):
-        screen_text = response.css('a[href*="do-phan-giai-man-hinh"]::text').get()
-        return screen_text
+        screen_text = self.get_scoped_value(response, ['Độ phân giải'])
+        return screen_text if screen_text else 'n/a'
 
         # if screen_text:
         #     match = re.search(r"\((\d+x\d+)\)", screen_text)
@@ -187,8 +175,8 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         # return 'N/A'
     
     def parse_screen_size(self, response):
-        screen_text = response.css('td:contains("Kích thước màn hình") + td::text').get()
-        return screen_text
+        screen_text = self.get_scoped_value(response, ['Kích thước màn hình'])
+        return screen_text if screen_text else 'n/a'
 
         # if screen_text:
         #     # Extract just the resolution part (e.g., "Full HD")
@@ -201,11 +189,17 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         #         return size 
         # return 'N/A'
 
-    def parse_size(self, response: Response):  # Helper function to extract dimensions and unit
-        for dimension_text in response.css('td:contains("Kích thước") + td.spec-value::text').getall():
-            if dimension_text:
-                dimension_text = dimension_text.strip()
-                return dimension_text
+    def parse_screen_refresh_rate(self, response):
+        screen_text = self.get_scoped_value(response, ['TTần số quét'])
+        return screen_text if screen_text else 'n/a'
+    
+    def parse_size(self, response: Response):  
+        size_text = self.get_scoped_value(response, ['Kích thước'])
+        return size_text if size_text else 'n/a'
+        # for dimension_text in response.css('td:contains("Kích thước") + td.spec-value::text').getall():
+        #     if dimension_text:
+        #         dimension_text = dimension_text.strip()
+        #         return dimension_text
                 
                 # # Improved regex to capture potential extra text or units before and after dimensions
                 # match = re.search(r"(\d+(\.\d+)?)\s*x\s*(\d+(\.\d+)?)\s*x\s*(\d+(\.\d+)?)\s*(cm|mm)", dimension_text, re.IGNORECASE)
@@ -229,149 +223,64 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
                 #         print(f"Error converting dimension to float: {dimension_text}")
                         
         # Return None if extraction fails
-        return None, None, None
+        # return None, None, None
     
     def parse_weight(self, response):
-        weight_text = response.css('td:contains("Trọng lượng") + td::text').get() 
-        if weight_text:
-            return weight_text
-            # if ': ' in weight_text: 
-            #     weight_text = weight_text.replace(': ', '') 
-            # return weight_text
-        
-        return 'N/A'
+        weight_text = self.get_scoped_value(response, ['Trọng lượng'])
+        return weight_text if weight_text else 'n/a'
     
     def parse_default_os(self, response):
-        default_os_text = response.css('td:contains("Hệ điều hành") + td::text').get() 
-        if default_os_text: 
-            return default_os_text
-            # return default_os_text.replace(': ', '')
+        os_text = self.get_scoped_value(response, ['Hệ điều hành'])
+        return os_text if os_text else 'n/a'
+        # default_os_text = response.css('td:contains("Hệ điều hành") + td::text').get() 
+        # if default_os_text: 
+        #     return default_os_text
+        #     # return default_os_text.replace(': ', '')
 
-        return 'N/A'
+        # return 'N/A'
     
     def parse_color(self, response):
-        color_text = response.css('td:contains("Màu sắc") + td::text').get() 
-        if color_text: 
-            return color_text
-            # return color_text.lower().replace(': ', '')
+        color_text = self.get_scoped_value(response, ['Màu sắc'])
+        return color_text if color_text else 'n/a'
+        # color_text = response.css('td:contains("Màu sắc") + td::text').get() 
+        # if color_text: 
+        #     return color_text
+        #     # return color_text.lower().replace(': ', '')
         
-        return 'N/A'
+        # return 'N/A'
     
-    def parse_screen_refresh_rate(self, response):
-        # Use the CSS selector to target the <a> tag containing the refresh rate, and extract its text
-        refresh_rate = response.css('a[href*="tan-so-quet-cua-man-hinh"]::text').get()
-        if refresh_rate:
-            return refresh_rate
-            # return refresh_rate.strip().replace(': ', '')  # Clean up any extra spaces
-
-        return 'N/A'  # Return 'N/A' if not found
-    
-    def parse_number_usb_a_ports(self, response):
-        ports_texts = response.css('td.spec-key:contains("Cổng giao tiếp") + td.spec-value::text').getall()
-        count = 0
-        for ports_text in ports_texts:
-            if ports_text:
-                ports_text = ports_text.replace('<br>', ' ').replace(': ', '').strip().lower()
-                if 'type-a' in ports_text or 'usb-a' in ports_text:
-                    match = re.search(r"(\d+)x", ports_text)
-                    if match:
-                        count += int(match.group(1))
-                    else:
-                        count += 1  # Count 1 if no explicit number
-        return count
-
-
-    def parse_number_usb_c_ports(self, response):
-        ports_texts = response.css('td.spec-key:contains("Cổng giao tiếp") + td.spec-value::text').getall()
-        count = 0
-        for ports_text in ports_texts:
-            if ports_text:
-                ports_text = ports_text.replace('<br>', ' ').replace(': ', '').strip().lower()
-                if 'type-c' in ports_text or 'usb-c' in ports_text:
-                    match = re.search(r"(\d+)x", ports_text)
-                    if match:
-                        count += int(match.group(1))
-                    else:
-                        count += 1
-        return count
-
-    def parse_number_hdmi_ports(self, response):
-        ports_texts = response.css('td.spec-key:contains("Cổng giao tiếp") + td.spec-value::text').getall()
-        count = 0
-        for ports_text in ports_texts:
-            if ports_text:
-                ports_text = ports_text.replace('<br>', ' ').replace(': ', '').strip().lower()
-                if 'hdmi' in ports_text:
-                    match = re.search(r"(\d+)x", ports_text)
-                    if match:
-                        count += int(match.group(1))
-                    else:
-                        count += 1
-        return count
-
-
-    def parse_number_ethernet_ports(self, response):
-        ports_texts = response.css('td.spec-key:contains("Cổng giao tiếp") + td.spec-value::text').getall()
-        count = 0
-        for ports_text in ports_texts:
-            if ports_text:
-                ports_text = ports_text.replace('<br>', ' ').replace(': ', '').strip().lower()
-                if 'ethernet' in ports_text or 'rj45' in ports_text:
-                    match = re.search(r"(\d+)x", ports_text)
-                    if match:
-                        count += int(match.group(1))
-                    else:
-                        count += 1
-        return count
-
-
-    def parse_number_audio_jacks(self, response):
-        ports_texts = response.css('td.spec-key:contains("Cổng giao tiếp") + td.spec-value::text').getall()
-        count = 0
-        for ports_text in ports_texts:
-            if ports_text:
-                ports_text = ports_text.replace('<br>', ' ').replace(': ', '').strip().lower()
-                if 'jack' in ports_text or 'headphone' in ports_text or 'microphone' in ports_text:
-                    match = re.search(r"(\d+)x", ports_text)
-                    if match:
-                        count += int(match.group(1))
-                    else:
-                        count += 1
-        return count
+    def parse_connectivity(self, response):
+        connectivity_text = self.get_scoped_value(response, ['Cổng giao tiếp'])
+        return connectivity_text if connectivity_text else 'n/a'
 
     def parse_battery_capacity(self, response):
         """
         Extracts the battery capacity in Whr from the response.
         """
-        for battery_text in response.css('td:contains("Thông số pin") + td::text').getall(): 
-            if battery_text: 
-                battery_text = battery_text.lower().strip()
-                match = re.search(r'(\d+\.?\d*)\s*(wh|whr|whrs|watt)', battery_text.lower())
-
-                if match:
-                    capacity = float(match.group(1))  # Extract the capacity value
-                    return f"{capacity} whr"
-                    
-            return 'N/A'
+        battery_text = self.get_scoped_value(response, ['Thông số pin'])
+        return battery_text if battery_text else 'n/a'
     
     def parse_battery_cells(self, response):
-        for battery_text in response.css('td:contains("Thông số pin") + td::text').getall(): 
-            if battery_text: 
-                battery_text = battery_text.lower().strip()
-                match = re.search(r'(\d+\.?\d*)\s*(cell|cells)', battery_text.lower())
+        battery_text = self.get_scoped_value(response, ['Thông số pin'])
+        return battery_text if battery_text else 'n/a'
+        # for battery_text in response.css('td:contains("Thông số pin") + td::text').getall(): 
+        #     if battery_text: 
+        #         battery_text = battery_text.lower().strip()
+        #         match = re.search(r'(\d+\.?\d*)\s*(cell|cells)', battery_text.lower())
 
-                if match:
-                    capacity = float(match.group(1))  # Extract the capacity value
-                    return f"{capacity} cell"
+        #         if match:
+        #             capacity = float(match.group(1))  # Extract the capacity value
+        #             return f"{capacity} cell"
                     
-            return 'N/A'
+        #     return 'N/A'
     
     def parse_warranty(self, response):
-        warranty_text = response.css('td:contains("Bảo hành") + td::text').get()
-        if warranty_text:
-            # Match one or more digits in the text (e.g., "2 Year", "12 Months")
-            match = re.search(r"(\d+)", warranty_text)
-            if match:
-                return float(match.group(1))  # Return the number as a float or int
-        return 'N/A'
-
+        warranty_text = self.get_scoped_value(response, ['Bảo hành'])
+        return warranty_text if warranty_text else 'n/a'
+        # warranty_text = response.css('td:contains("Bảo hành") + td::text').get()
+        # if warranty_text:
+        #     # Match one or more digits in the text (e.g., "2 Year", "12 Months")
+        #     match = re.search(r"(\d+)", warranty_text)
+        #     if match:
+        #         return float(match.group(1))  # Return the number as a float or int
+        # return 'N/A'

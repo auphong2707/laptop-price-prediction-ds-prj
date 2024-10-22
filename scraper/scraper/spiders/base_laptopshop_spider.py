@@ -2,6 +2,7 @@ import scrapy
 from scrapy.http import Response, Request
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from scrapy.selector import Selector
@@ -30,7 +31,8 @@ class BaseLaptopshopSpider(scrapy.Spider):
     options = webdriver.FirefoxOptions()
     options.page_load_strategy = 'none'
     options.add_argument('--headless')
-    driver = webdriver.Firefox(options=options)
+    service = Service('/snap/bin/geckodriver')
+    driver = webdriver.Firefox(options=options, service=service)
 
     _num_product = 0
     
