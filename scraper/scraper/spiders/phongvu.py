@@ -47,7 +47,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Dell, HP, etc.
         """
         try:
-            return self.get_scoped_value(response, ['Thương hiệu:'])
+            return self.get_scoped_value(response, ['Thương hiệu'])
         except Exception:
             return "N/A"
 
@@ -57,8 +57,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the CPU name of the laptop from the response.
         """
         try:
-            full_text = self.get_scoped_value(response, ['CPU:'])
-            return re.sub(r'\s*\(.*?\)', '', full_text).strip()
+            return self.get_scoped_value(response, ['CPU'])
         except Exception:
             return "N/A"
 
@@ -68,7 +67,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the VGA name of the laptop from the response.
         """
         try:
-            return self.get_scoped_value(response, ['Chip đồ họa:'])
+            return self.get_scoped_value(response, ['Chip đồ họa'])
         except Exception:
             return "N/A"
 
@@ -78,9 +77,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the amount of RAM in GB from the response.
         """
         try:
-            ram = self.get_scoped_value(response, ["RAM:", "Dung lượng RAM:"])
-            index = ram.find("GB")
-            return ram[:index].strip()
+            return self.get_scoped_value(response, ["RAM", "Dung lượng RAM"])
         except Exception:
             return "N/A"
     
@@ -90,20 +87,20 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: DDR3, DDR4, etc.
         """
         try:
-            ram_type = self.get_scoped_value(response, ["RAM:"])
-            if ram_type.split().includes("Onboard"):
-                index = ram_type.split().index("Onboard")
-                return ram_type.split()[index + 1]
-            elif ram_type.split().includes("Onbard"):
-                index = ram_type.split().index("Onbard")
-                return  ram_type.split()[index + 1]
-            else:
-                index = -1
-                for i, word in enumerate(ram_type.split()):
-                    if "GB" in word:
-                        index = i
-                    break
-                return ram_type.split()[index + 1]
+            return self.get_scoped_value(response, ["RAM"])
+            # if ram_type.split().includes("Onboard"):
+            #     index = ram_type.split().index("Onboard")
+            #     return ram_type.split()[index + 1]
+            # elif ram_type.split().includes("Onbard"):
+            #     index = ram_type.split().index("Onbard")
+            #     return  ram_type.split()[index + 1]
+            # else:
+            #     index = -1
+            #     for i, word in enumerate(ram_type.split()):
+            #         if "GB" in word:
+            #             index = i
+            #         break
+            #     return ram_type.split()[index + 1]
         except Exception:
             return "N/A"
     
@@ -113,7 +110,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the amount of storage in GB from the response.
         """
         try:
-            storage = self.get_scoped_value(response, ["Dung lượng SSD:", "Lưu trữ"]).split(" ")
+            storage = self.get_scoped_value(response, ["Dung lượng SSD", "Lưu trữ"]).split(" ")
             if "TB" in storage[0]:
                 return int(storage[0].strip('TB')) * 1024
             else:
@@ -127,7 +124,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: HDD, SSD, SSHD.
         """
         try:
-            return self.get_scoped_value(response, ["Dung lượng SSD:", "Lưu trữ"]).split(" ")[1]
+            return self.get_scoped_value(response, ["Dung lượng SSD", "Lưu trữ"])
         except Exception:
             return "N/A"
     
@@ -138,10 +135,10 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: HD, FHD, 4K.
         """
         try:
-            if self.get_scoped_value(response, ["Thương hiệu:"]) == "APPLE":
-                return self.get_scoped_value(response, ["Màn hình:"]).split()[-2]
+            if self.get_scoped_value(response, ["Thương hiệu"]) == "APPLE":
+                return self.get_scoped_value(response, ["Màn hình"]).split()[-2]
             else:
-                return self.get_scoped_value(response, ["Webcam:"]).strip("Webcam")  
+                return self.get_scoped_value(response, ["Webcam"]).strip("Webcam")
         except Exception:
             return "N/A"
     
@@ -151,7 +148,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the screen size in inches from the response.
         """
         try:
-            return self.get_scoped_value(response, ["Màn hình:"]).split()[0]
+            return self.get_scoped_value(response, ["Màn hình"]).split()[0]
         except Exception:
             return "N/A"
         
@@ -173,15 +170,10 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
     # Battery
     def parse_battery_capacity(self, response: Response):
         """
-        Extracts the battery capacity in Whr from the response.
+        Extracts the battery capacity from the response.
         """
         try:
-            battery = self.get_scoped_value(response, ["Công suất pin:", "Pin:"])
-            search = re.search(r'(\d+(\.\d+)?)+\s*Wh', battery)
-            if search:
-                return float(search.group().replace("Wh", "").strip())
-            else:
-                return "N/A"
+            return self.get_scoped_value(response, ["Công suất pin"])
         except Exception:
             return "N/A"
     
@@ -190,105 +182,62 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the number of battery cells from the response.
         """
         try:
-            battery = self.get_scoped_value(response, ["Công suất pin:", "Pin:"])
-            search = re.search(r'(\d+)-?\s*cell', battery)
-            if search:
-                return int(search.group().split(" ")[0].strip())
-            else:
-                return "N/A"
+            return self.get_scoped_value(response, ["Pin"])
         except Exception:
             return "N/A"
     
     # Size
     def parse_width(self, response: Response):
         """
-        Extracts the width of the laptop in cm from the response.
+        Extracts the width of the laptop from the response.
         """
         try:
-            size = self.get_scoped_value(response, ["Kích thước:"]).split(" - ")
-            width = size[0].split(" ")
-            if width[2] == "mm":
-                return round(float(width[1]) / 10, 4)
-            else:
-                return float(width[1])
-        except:
+            size = self.get_scoped_value(response, ["Kích thước", "Kích thước, khối lượng"]).split(" | ")[-1].strip()
+            size = size.split("x")
+            return size[1]
+        except Exception:
             return "N/A"
     
     def parse_depth(self, response: Response):
         """
-        Extracts the depth of the laptop in cm from the response.
+        Extracts the depth of the laptop from the response.
         """
         try:
-            size = self.get_scoped_value(response, ["Kích thước:"]).split(" - ")
-            depth = size[1].split(" ")
-            if depth[2] == "mm":
-                return round(float(depth[1]) / 10, 4)
-            else:
-                return float(depth[1])
-        except:
+            size = self.get_scoped_value(response, ["Kích thước", "Kích thước, khối lượng"]).split(" | ")[-1].strip()
+            size = size.split("x")
+            return size[2]
+        except Exception:
             return "N/A"
     
     def parse_height(self, response: Response):
         """
-        Extracts the height of the laptop in cm from the response.
+        Extracts the height of the laptop from the response.
         """
         try:
-            size = self.get_scoped_value(response, ["Kích thước:"]).split(" - ")
-            height = size[2]
-            if '~' in height:
-                return round(float(height.split("~")[1].split(" ")[1]) / 10, 4)
-            else:
-                return round(float(height[1]) / 10, 4)
-        except:
+            size = self.get_scoped_value(response, ["Kích thước", "Kích thước, khối lượng"]).split(" | ")[-1].strip()
+            size = size.split("x")
+            return size[0]
+        except Exception:
             return "N/A"
     
     # Weight
-    def parse_weight(self, response: Response): 
+    def parse_weight(self, response: Response):
         """
         Extracts the weight of the laptop in kg from the response.
         """
         try:
-            return float(self.get_scoped_value(response, ["Khối lượng tịnh:"]).split(" ")[0])
-        except:
+            return float(self.get_scoped_value(response, ["Kích thước, khối lượng tịnh:", "Khối lượng:"]).split(" ")[0])
+        except Exception:
             return "N/A"
     
     # Connectivity
-    def parse_number_usb_a_ports(self, response: Response):
+    def parse_number_orts(self, response: Response):
         """
         Extracts the number of USB-A ports from the response.
         """
         try:
-            return self.parse_number_usb(response, r'\b(usb 2\.0|usb 3\.2)\b')
-        except:
-            return "N/A"
-    
-    def parse_number_usb_c_ports(self, response: Response):
-        """
-        Extracts the number of USB-C ports from the response.
-        """
-        try:
-            return self.parse_number_usb(response, r'\b(usb-c|thunderbolt|usb 4|type-c)\b')
-        except:
-            return "N/A"
-    
-    def parse_number_hdmi_ports(self, response: Response):
-        """
-        Extracts the number of HDMI ports from the response.
-        """
-        try:
-            search = re.search(r'HDMI', self.get_scoped_value(response, ["Cổng giao tiếp:"]))
-            return 1 if search else 0
-        except:
-            return "N/A"
-    
-    def parse_number_ethernet_ports(self, response: Response):
-        """
-        Extracts the number of Ethernet ports from the response.
-        """
-        try:
-            search = re.search(r'RJ-?45|Ethernet', self.get_scoped_value(response, ["Cổng giao tiếp:"]))
-            return 1 if search else 0
-        except:
+            return self.get_scoped_value(response, ["Cổng kết nối"])
+        except Exception:
             return "N/A"
     
     def parse_number_audio_jacks(self, response: Response):
@@ -298,7 +247,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         try:
             search = re.search(r'Jack tai nghe', self.get_scoped_value(response, ["Cổng giao tiếp:"]))
             return 1 if search else 0
-        except:
+        except Exception:
             return "N/A"
     
     # Operating System
@@ -308,18 +257,8 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Windows, Linux, etc.
         """
         try:
-            os = self.get_scoped_value(response, ["Hệ điều hành:"]).split(" ")
-            if os[0].lower() == "windows":
-                return " ".join(os[:3])
-            elif os[0].lower() == "macos":
-                return "macOS"
-            elif "linux" in os or "Linux" in os:
-                return "Linux"
-            elif "chrome" in os or "Chrome" in os:
-                return "Chrome OS"
-            else:
-                return "N/A"
-        except:
+            return self.get_scoped_value(response, ["Hệ điều hành"])
+        except Exception:
             return "N/A"
     
     # Color
@@ -329,13 +268,12 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Black, White, etc.
         """
         try:
-            colors = response.xpath('//div[@class="box03 color group desk"]/a/text()').getall()
-            return ", ".join([color.strip() for color in colors]) if len(colors) > 1 else "N/A"
+            return self.get_scoped_value(response, ["Màu sắc"])
         except:
             return "N/A"
     
     # Origin: Unavailable
-    def parse_origin(self, response: Response): 
+    def parse_origin(self, response: Response):
         """
         Extracts the origin of the laptop from the response.
         Example: China, Taiwan, USA, etc.
@@ -348,32 +286,8 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the warranty period in months from the response.
         """
         try:
-            warranty = response.xpath('//ul[@class="policy__list"]/li[2]/p//text()').getall()
-            warranty = warranty[1].split(" ")[-2:]
-            if warranty[1] == "tháng":
-                return int(warranty[0])
-            else:
-                return int(warranty[0]) * 12
-        except:
-            return "N/A"
-    
-    # Release Date
-    def parse_release_date(self, response: Response): 
-        """
-        Extracts the release date of the laptop from the response.
-        Format: dd/mm/yyyy.
-        """
-        try:
-            date = self.get_scoped_value(response, ["Thời điểm ra mắt:"]).split("/")
-            if len(date) == 1:
-                return f"**/**/{date[0]}" if len(date[0]) == 4 else "N/A"
-            elif len(date) == 2:
-                return f"**/{int(date[0]):02}/{date[1]}" if len(date[1]) == 4 else "N/A"
-            elif len(date) == 3:
-                return f"{int(date[0]):02}/{int(date[1]):02}/{date[2]}" if len(date[2]) == 4 else "N/A"
-            else:
-                return "N/A"
-        except:
+            return self.get_scoped_value(response, ["Bảo hành"])
+        except Exception:
             return "N/A"
     
     # Price
@@ -390,7 +304,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
             for price in prices:
                 if price:
                     return int(price.replace(".", "").split("₫")[0])
-        except:
+        except Exception:
             return "N/A"
     
     # [PARSE FEATURES SECTION: END]
