@@ -1,17 +1,51 @@
 import scrapy
 from scrapy.http import Response, Request
-from scrapy_selenium import SeleniumRequest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from scrapy.selector import Selector
 import time
+import logging
+from fake_useragent import UserAgent
 
+logging.disable()
 
 class BaseLaptopshopSpider(scrapy.Spider):
-    
+
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'scraper.pipelines.TransformPipeline': 300
+        }
+    }
+
     product_site_css = None
+    show_technical_spec_button_xpath = None
+    close_button_xpaths = []
+    selenium_product_request = False
+    require_specific_transform = False
+    
+    source = None
+    
+    options = webdriver.FirefoxOptions()
+    options.page_load_strategy = 'none'
+    options.add_argument('--headless')
+    driver = webdriver.Firefox(options=options)
+
+    _num_product = 0
+    
+    def __init__(self, name = None, **kwargs):
+        super().__init__(name, **kwargs)
+        self.ua = UserAgent()
+        
+    def __del__(self):
+        self.driver.quit()
+    
+    def yield_condition(self, response: Response):
+        """
+        Returns True if the response is valid to be scraped.
+        """
+        return True
     
     # [PARSE FEATURES SECTION: START]
     # Brand
@@ -91,23 +125,10 @@ class BaseLaptopshopSpider(scrapy.Spider):
         Example: HD, FHD, 4K.
         """
         return "N/A"
-    
-    def parse_screen_ratio(self, response: Response): 
-        """
-        Extracts the screen ratio from the response.
-        Example: 16:9, 16:10, 4:3.
-        """
-        return "N/A"
-    
+
     def parse_screen_refresh_rate(self, response: Response): 
         """
         Extracts the screen refresh rate in Hz from the response.
-        """
-        return "N/A"
-    
-    def parse_screen_color_gamut(self, response: Response): 
-        """
-        Extracts the screen color gamut in sRGB from the response.
         """
         return "N/A"
     
@@ -120,26 +141,20 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # Battery
     def parse_battery_capacity(self, response: Response): 
         """
-        Extracts the battery capacity in Wh from the response.
+        Extracts the battery capacity in Whr from the response.
+        """
+        return "N/A"
+    
+    def parse_battery_cells(self, response: Response):
+        """
+        Extracts the number of battery cells from the response.
         """
         return "N/A"
     
     # Size
-    def parse_length(self, response: Response):
+    def parse_size(self, response: Response):
         """
-        Extracts the length of the laptop in cm from the response.
-        """
-        return "N/A"
-    
-    def parse_width(self, response: Response):
-        """
-        Extracts the width of the laptop in cm from the response.
-        """
-        return "N/A"
-    
-    def parse_height(self, response: Response):
-        """
-        Extracts the height of the laptop in cm from the response.
+        Extracts the size of the laptop in cm from the response.
         """
         return "N/A"
     
@@ -151,33 +166,9 @@ class BaseLaptopshopSpider(scrapy.Spider):
         return "N/A"
     
     # Connectivity
-    def parse_number_usb_a_ports(self, response: Response):
+    def parse_connectivity(self, response: Response):
         """
-        Extracts the number of USB-A ports from the response.
-        """
-        return "N/A"
-    
-    def parse_number_usb_c_ports(self, response: Response):
-        """
-        Extracts the number of USB-C ports from the response.
-        """
-        return "N/A"
-    
-    def parse_number_hdmi_ports(self, response: Response):
-        """
-        Extracts the number of HDMI ports from the response.
-        """
-        return "N/A"
-    
-    def parse_number_ethernet_ports(self, response: Response):
-        """
-        Extracts the number of Ethernet ports from the response.
-        """
-        return "N/A"
-    
-    def parse_number_audio_jacks(self, response: Response):
-        """
-        Extracts the number of audio jacks from the response.
+        Extracts the connectivity options of the laptop from the response.
         """
         return "N/A"
     
@@ -189,34 +180,10 @@ class BaseLaptopshopSpider(scrapy.Spider):
         """
         return "N/A"
     
-    # Color
-    def parse_color(self, response: Response): 
-        """
-        Extracts the color of the laptop from the response.
-        Example: Black, White, etc.
-        """
-        return "N/A"
-    
-    # Origin
-    def parse_origin(self, response: Response): 
-        """
-        Extracts the origin of the laptop from the response.
-        Example: China, Taiwan, USA, etc.
-        """
-        return "N/A"
-    
     # Warranty
     def parse_warranty(self, response: Response): 
         """
         Extracts the warranty period in months from the response.
-        """
-        return "N/A"
-    
-    # Release Date
-    def parse_release_date(self, response: Response): 
-        """
-        Extracts the release date of the laptop from the response.
-        Format: dd/mm/yyyy.
         """
         return "N/A"
     
@@ -231,7 +198,19 @@ class BaseLaptopshopSpider(scrapy.Spider):
     # [PARSE FEATURES SECTION: END]
     
     def parse_one_observation(self, response: Response):
+        if not self.yield_condition(response):
+            return
+        
+        if self.selenium_product_request:
+            response = self.get_source_selenium(response.url)
+            if not self.yield_condition(response):
+                return
+
+        self._num_product += 1
+        print(f'Found item: {self._num_product}')
+        
         yield {
+            'source': self.source,
             'brand': self.parse_brand(response),
             'name': self.parse_name(response),
             'cpu': self.parse_cpu(response),
@@ -243,27 +222,84 @@ class BaseLaptopshopSpider(scrapy.Spider):
             'webcam_resolution': self.parse_webcam_resolution(response),
             'screen_size': self.parse_screen_size(response),
             'screen_resolution': self.parse_screen_resolution(response),
-            'screen_ratio': self.parse_screen_ratio(response),
             'screen_refresh_rate': self.parse_screen_refresh_rate(response),
-            'screen_color_gamut': self.parse_screen_color_gamut(response),
             'screen_brightness': self.parse_screen_brightness(response),
             'battery_capacity': self.parse_battery_capacity(response),
-            'length': self.parse_length(response),
-            'width': self.parse_width(response),
-            'height': self.parse_height(response),
+            'battery_cells': self.parse_battery_cells(response),
+            'size': self.parse_size(response),
             'weight': self.parse_weight(response),
-            'number_usb_a_ports': self.parse_number_usb_a_ports(response),
-            'number_usb_c_ports': self.parse_number_usb_c_ports(response),
-            'number_hdmi_ports': self.parse_number_hdmi_ports(response),
-            'number_ethernet_ports': self.parse_number_ethernet_ports(response),
-            'number_audio_jacks': self.parse_number_audio_jacks(response),
+            'connectivity': self.parse_connectivity(response),
             'default_os': self.parse_default_os(response),
-            'color': self.parse_color(response),
-            'origin': self.parse_origin(response),
             'warranty': self.parse_warranty(response),
-            'release_date': self.parse_release_date(response),
             'price': self.parse_price(response)
         }
+
+    def get_source_selenium(self, url: str):
+        time.sleep(1)
+        self.driver.execute_script("window.open('');")
+        self.driver.switch_to.window(self.driver.window_handles[-1])
+        
+        self.driver.execute_script(f"Object.defineProperty(navigator, 'userAgent', {{get: () => '{self.ua.random}'}});")
+        self.driver.get(url)
+        self.driver.switch_to.window(self.driver.window_handles[-1])
+        time.sleep(4)
+        if self.show_technical_spec_button_xpath:
+            retries = 5
+            while retries > 0:
+                self.driver.execute_script("document.body.style.zoom='1%'")
+                time.sleep(3)
+                try:
+                    buttons = self.driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
+                    if buttons:
+                        break
+                    else:
+                        print("Technical spec button not found, reloading the page.")
+                        self.driver.refresh()
+                        time.sleep(2)
+                        retries -= 1
+                except Exception as e:
+                    print("Error while trying to find the technical spec button:", e)
+                    self.driver.refresh()
+                    time.sleep(2)
+                    retries -= 1
+                
+            for xpath in self.close_button_xpaths:
+                try:
+                    buttons = self.driver.find_elements(By.XPATH, xpath)
+                    
+                    for button in buttons:
+                        if button.is_displayed() and button.is_enabled():
+                            button.click()
+                            print("Closed the modal successfully.")
+                            break
+                except Exception as e:
+                    print("Failed to close the modal:", e)
+            
+            opened_modal = False
+            try:
+                buttons = self.driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
+                
+                for button in buttons:
+                    self.driver.execute_script("arguments[0].click();", button)
+                    print("Opened the modal successfully.")
+                    opened_modal = True
+                    break
+            except:
+                pass
+                
+            if not opened_modal:
+                print("Failed to open the modal.")
+        else:
+            time.sleep(2)
+            self.driver.execute_script("document.body.style.zoom='1%'")
+            time.sleep(3)
+        
+        response = Selector(text=self.driver.page_source)
+        
+        self.driver.close()
+        self.driver.switch_to.window(self.driver.window_handles[0])
+        
+        return response
 
 class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
     page_css = None
@@ -275,76 +311,75 @@ class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
                 callback=self.parse
             )
     
-    def get_product_sites(self, response: Response):
-        """
-        Extracts the product sites from the response.
-        """
-        return [response.follow(url=url, callback=self.parse_one_observation) for url in response.css(self.product_site_css).getall()]
-    
 
     def parse(self, response: Response):
-        # Get all the products links
-        product_site_requests = self.get_product_sites(response)
-        
-        # Extracting the feature from a product website
-        for site_request in product_site_requests:
-            yield site_request
+        for url in response.css(self.product_site_css).getall():
+            yield response.follow(
+                url=url,
+                callback=self.parse_one_observation,
+                headers={'User-Agent': self.ua.random}
+            )
         
         pages = response.css(self.page_css).getall()
         for page in pages:
-            
             yield response.follow(
                 url=page,
-                callback=self.parse
+                callback=self.parse,
+                headers={'User-Agent': self.ua.random}
             )
             
 class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
     
     loadmore_button_css = None
     
-    def get_product_sites(self, response: Response, body: Selector):
-        """
-        Extracts the product sites from the response.
-        """
-        return [
-            response.follow(url, callback=self.parse_one_observation) 
-            for url in body.css(self.product_site_css).getall()
-        ]
-    
-    
     def start_requests(self):
-        # Using SeleniumRequest instead of Scrapy's normal request
+        self.driver.execute_script("window.open('');")
+        self.driver.switch_to.window(self.driver.window_handles[-1])
+        
         for url in self.start_urls:
-            yield SeleniumRequest(
-                url=url,
-                callback=self.parse,
-                wait_time=10, # Wait for 10 seconds
-            )
-        
-    def parse(self, response):
-        driver = webdriver.Edge()
-        driver.get(response.url)
-        wait = WebDriverWait(driver, 10) # Wait to allow the button to appear
-        
-        # Scroll and click "Load More" until all the content is loaded
-        while True:
-            try:
-                load_more_button = wait.until(
-                    EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
-                )
-                load_more_button.click()
+            self.driver.execute_script(f"Object.defineProperty(navigator, 'userAgent', {{get: () => '{self.ua.random}'}});")
+            self.driver.get(url)
+            self.driver.switch_to.window(self.driver.window_handles[-1])
+            wait = WebDriverWait(self.driver, 10)
+            
+            # Scroll and click "Load More" until all the content is loaded
+            while True:
+                time.sleep(1)
+                for xpath in self.close_button_xpaths:
+                    try:
+                        buttons = self.driver.find_elements(By.XPATH, xpath)
+                        
+                        for button in buttons:
+                            if button.is_displayed() and button.is_enabled(): 
+                                button.click()
+                                print("Closed the modal successfully.")
+                                break
+                    except Exception as e:
+                        print("Failed to close the modal:", e)
                 
-                # Wait for new content to load (if needed)
-                time.sleep(5)
-            except Exception:
-                # Break the loop if there's no more "Load More" button or something goes wrong
-                print("No more 'Load More' button")
-                break
-
-        
-        # Get all the products links
-        product_site_requests = self.get_product_sites(response, Selector(text=driver.page_source))
-        
-        # Extracting the feature from a product website
-        for site_request in product_site_requests:
-            yield site_request
+                try:
+                    load_more_button = wait.until(
+                        EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
+                    )
+                    self.driver.execute_script("arguments[0].click();", load_more_button)
+                    print("'Load More' button clicked sucessfully.")
+                    time.sleep(3)
+                    load_more_button = wait.until(
+                        EC.element_to_be_clickable((By.CSS_SELECTOR, self.loadmore_button_css))
+                    )
+                except Exception:
+                    print("No more 'Load More' button")
+                    break
+                
+            # Get all the products links
+            page_source = Selector(text=self.driver.page_source)
+            
+            self.driver.close()
+            self.driver.switch_to.window(self.driver.window_handles[0])
+            
+            # Extracting the feature from a product website
+            for product_url in page_source.css(self.product_site_css).getall():
+                yield Response(url=url).follow(
+                    url=product_url,
+                    callback=self.parse_one_observation
+                )
