@@ -94,6 +94,6 @@ FEED_EXPORT_ENCODING = "utf-8"
 
 USER_AGENT = 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
 
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy_selenium.SeleniumMiddleware': 800
+ITEM_PIPELINES = {
+    "scraper.pipelines.TransformPipeline": 300,
 }
