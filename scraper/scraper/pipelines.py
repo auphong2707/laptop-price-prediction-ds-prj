@@ -56,7 +56,7 @@ class TransformPipeline:
                 if special_sep:
                     value = value.split(special_sep.group())[0]
                 
-                for spliter in [',',  'up',]:
+                for spliter in [',',  'up']:
                     value = value.split(spliter)[0]
                 
                 value = ' '.join(value.split())
@@ -115,9 +115,12 @@ class TransformPipeline:
                         # Substitute the pattern in the input string using re.sub
                         value = re.sub(pattern, replace_with_hyphens, value)
                         
+                    value = value.split('(')[0].strip()
+                    
                 self.adapter['cpu'] = value
             except Exception as e:
                 print("Error in CPU transformation:", e)
+                print("Error at:", self.adapter.get('name'))
             
         def transform_vga(self):
             try:
@@ -144,16 +147,22 @@ class TransformPipeline:
                     value = 'n/a'
                 else:
                     if any([keyword in value for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
-                        for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia', 'intel iris xe']:
+                        for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia', 'intel iris xe', 'graphics']:
                             value = value.replace(removal, '')
                             value = ' '.join(value.split())
                         
-                        if value.startswith('rtx') or value.startswith('gtx'):
+                        if (value.startswith('rtx') and 'ada' not in value) \
+                           or value.startswith('gtx'):
                             value = 'geforce ' + value
                             
                         value = re.sub(r'(\s\d{3,4})ti', r'\1 ti', value)
                         value = re.sub(r'(tx)(\d{4})', r'\1 \2', value)
-                    elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 'intel arc', 'adreno']]):
+                        
+                        if 'geforce' in value:
+                            value = value[value.index('geforce'):]
+                        
+                    elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
+                                                               'intel arc', 'adreno', 'onboard', 'on board', 'uma',]]):
                         value = "n/a"
                     elif any([keyword in value for keyword in ['amd', 'radeon']]):
                         value = value.replace('amd', '')
@@ -162,10 +171,13 @@ class TransformPipeline:
                             value = "n/a"
                         elif not 'rx' in value:
                             value = "n/a"
-                        
+                    
+                value = value.strip()
+                
                 self.adapter['vga'] = value
             except Exception as e:
                 print("Error in VGA transformation:", e)
+                print("Error at:", self.adapter.get('name'))
             
         def transform_ram_amount(self):
             """Transforms the RAM amount field to a standardized format."""
@@ -183,6 +195,7 @@ class TransformPipeline:
                 self.adapter['ram_amount'] = value
             except Exception as e:
                 print("Error in RAM amount transformation:", e)
+                print("Error at:", self.adapter.get('name'))
             
         def transform_ram_type(self):
             """Transforms the RAM type field to a standardized format."""
@@ -201,6 +214,7 @@ class TransformPipeline:
                 self.adapter['ram_type'] = value
             except Exception as e:
                 print("Error in RAM type transformation:", e)
+                print("Error at:", self.adapter.get('name'))
             
         def transform_storage_amount(self):
             """Transforms the storage amount field to a standardized format."""
@@ -225,6 +239,7 @@ class TransformPipeline:
                 self.adapter['storage_amount'] = value
             except Exception as e:
                 print("Error in storage amount transformation:", e)
+                print("Error at:", self.adapter.get('name'))
             
         def transform_storage_type(self):
             """Transforms the storage type field to a standardized format."""
@@ -250,6 +265,7 @@ class TransformPipeline:
                 self.adapter['storage_type'] = value
             except Exception as e:
                 print("Error in storage type transformation:", e)
+                print("Error at:", self.adapter.get('name'))
             
         def transform_webcam_resolution(self):
             """Transforms the webcam resolution field to a standardized format."""
@@ -273,6 +289,7 @@ class TransformPipeline:
                 self.adapter['webcam_resolution'] = value
             except Exception as e:
                 print("Error in webcam resolution transformation:", e)
+                print("Error at:", self.adapter.get('name'))
             
         def transform_screen_size(self):
             """Transforms the screen size field to a standardized format."""
@@ -294,6 +311,7 @@ class TransformPipeline:
                 self.adapter['screen_size'] = value
             except Exception as e:
                 print("Error in screen size transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_screen_resolution(self):
             """Transforms the screen resolution field to a standardized format."""
@@ -304,6 +322,7 @@ class TransformPipeline:
                     return
                 
                 value = ''.join(value.split())
+                value = value.replace('*', 'x')
                 
                 search_value = re.search(r'(\d{3,4})x(\d{3,4})', value)
                 if search_value:
@@ -343,6 +362,7 @@ class TransformPipeline:
                 self.adapter['screen_resolution'] = value
             except Exception as e:
                 print("Error in screen resolution transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_screen_refresh_rate(self):
             """Transforms the screen refresh rate field to a standardized format."""
@@ -362,6 +382,7 @@ class TransformPipeline:
                 self.adapter['screen_refresh_rate'] = value
             except Exception as e:
                 print("Error in screen refresh rate transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_screen_brightness(self):
             """Transforms the screen brightness field to a standardized format."""
@@ -381,6 +402,7 @@ class TransformPipeline:
                 self.adapter['screen_brightness'] = value
             except Exception as e:
                 print("Error in screen brightness transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_battery_capacity(self):
             """Transforms the battery capacity field to a standardized format."""
@@ -402,6 +424,7 @@ class TransformPipeline:
                 self.adapter['battery_capacity'] = value
             except Exception as e:
                 print("Error in battery capacity transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_battery_cells(self):
             """Transforms the number of battery cells field to a standardized format."""
@@ -414,29 +437,37 @@ class TransformPipeline:
                 search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells|chân\s*(\d+)', value)
                 
                 if search_value:
-                    value = int(search_value.group()[0])
+                    value = int(next(g for g in search_value.groups() if g is not None))
                 else:
                     value = "n/a"
                 
                 self.adapter['battery_cells'] = value
             except Exception as e:
                 print("Error in battery cells transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_size(self):
             """Transforms the size field to a standardized format."""
+            def na_exit():
+                self.adapter['width'] = "n/a"
+                self.adapter['depth'] = "n/a"
+                self.adapter['height'] = "n/a"
+                
+                del self.adapter['size']
+            
+            
             try:
                 value = self.adapter.get('size')
                 if value == "n/a":
-                    self.adapter['width'] = "n/a"
-                    self.adapter['depth'] = "n/a"
-                    self.adapter['height'] = "n/a"
-                    
-                    del self.adapter['size']
+                    na_exit()
                     return
                 
                 value = value.replace(',', '.')
 
                 numbers = re.findall(r'\d+\.?\d*', value)
+                if len(numbers) < 3:
+                    na_exit()
+                    return
                 
                 extracted_numbers = numbers[:3]
                 hyphenated_number = re.search(r'-(\d+\.?\d*)', value)
@@ -453,6 +484,7 @@ class TransformPipeline:
                 del self.adapter['size']
             except Exception as e:
                 print("Error in size transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_weight(self):
             """Transforms the weight field to a standardized format."""
@@ -476,6 +508,7 @@ class TransformPipeline:
                 self.adapter['weight'] = value
             except Exception as e:
                 print("Error in weight transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         
         def transform_connectivity(self):
@@ -545,6 +578,7 @@ class TransformPipeline:
                 del self.adapter['connectivity']
             except Exception as e:
                 print("Error in connectivity transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_default_os(self):
             """Transforms the default OS field to a standardized format."""
@@ -567,10 +601,19 @@ class TransformPipeline:
                     
                     if search_value:
                         value = search_value.group()
+                        
+                    value = re.sub(r'[^\x20-\x7E]', '', value)
+                    for end in ['home', 'pro', 'enterprise', 'education', 's', 'ltsc', 'ltsc', 'n']:
+                        if end in value:
+                            value = value[:value.index(end) + len(end)]
+                            break
+                    if 'windows' in value:
+                        value = value[value.index('windows'):]
                 
                 self.adapter['default_os'] = value
             except Exception as e:
                 print("Error in default OS transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_warranty(self):
             """Transforms the warranty field to a standardized format."""
@@ -589,6 +632,7 @@ class TransformPipeline:
                 self.adapter['warranty'] = value
             except Exception as e:
                 print("Error in warranty transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_price(self):
             """Transforms the price field to a standardized format."""
@@ -603,6 +647,7 @@ class TransformPipeline:
                 self.adapter['price'] = value
             except Exception as e:
                 print("Error in price transformation:", e)
+                print("Error at:", self.adapter.get('name'))
                 
         def transform_all(self):
             """Transforms all fields."""
