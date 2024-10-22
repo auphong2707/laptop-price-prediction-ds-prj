@@ -8,6 +8,7 @@ from scrapy.selector import Selector
 import time
 import logging
 from fake_useragent import UserAgent
+from selenium.webdriver.firefox.service import Service
 
 logging.disable()
 
@@ -30,7 +31,9 @@ class BaseLaptopshopSpider(scrapy.Spider):
     options = webdriver.FirefoxOptions()
     options.page_load_strategy = 'none'
     options.add_argument('--headless')
-    driver = webdriver.Firefox(options=options)
+    # add service to avoid "WebDriverException: Message: Service geckodriver unexpectedly exited. Status code was: 0"
+    service = Service('/snap/bin/geckodriver')
+    driver = webdriver.Firefox(options=options, service=service)
 
     _num_product = 0
     
@@ -373,7 +376,7 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
                 
             # Get all the products links
             page_source = Selector(text=self.driver.page_source)
-            
+                
             self.driver.close()
             self.driver.switch_to.window(self.driver.window_handles[0])
             
