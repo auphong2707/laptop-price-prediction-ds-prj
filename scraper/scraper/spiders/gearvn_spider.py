@@ -3,7 +3,7 @@ from scrapy.http import Response
 import re
 
 class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
-    name = "gearvn"
+    name = "gearvn_spider"
     allowed_domains = ["gearvn.com"]
     start_urls = [
         'https://gearvn.com/collections/laptop',
@@ -12,6 +12,8 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
     product_site_css = 'h3.proloop-name a::attr(href)'
     loadmore_button_css = 'button#load_more'
     close_button_xpaths = ["//button[@class='close']"]
+    
+    source = 'gearvn'
     
     
     def get_scoped_value(self, response, names):
@@ -27,10 +29,16 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
             ]
         for value in possibile_values:
             scope = response.xpath(value).getall()
-            if scope:
+            if len(scope) > 0:
                 return '\n'.join(scope)
             
         return None
+    
+    def yield_condition(self, response):
+        if response.xpath("//button[@id='buy-now']/span[@class='maintext']/text()").get() == 'HẾT HÀNG':
+            print(f"Skipped: {response.url}")
+            return False
+        return True
     
     #  [PARSE FEATURES SECTION: START]
     # Brand
@@ -40,208 +48,163 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Dell, HP, etc.
         """
         try:
-            res = response.css('.product-name h1::text').get()
+            res = response.css('.product-name h1::text').get().lower()
             
-            if "Macbook" in res or "MacBook" in res:
-                return "Apple"
+            if "macbook" in res or "macBook" in res:
+                return "apple"
             
-            for removal in ['Laptop gaming ', 'Laptop Gaming ', 'Laptop ']:
+            for removal in ['laptop gaming ', 'laptop ']:
                 res = res.replace(removal, '')
             
             return res.split()[0]
         except:
-            return "N/A"
+            return "n/a"
     
     def parse_name(self, response):
         """
         Extracts the name of the laptop from the response.
         """
         try:
-            res = response.css('.product-name h1::text').get()
-            for removal in ['Laptop gaming ', 'Laptop Gaming ', 'Laptop ', 'Gray', 'Black', 'Silver', 'IceBlue']:
+            res = response.css('.product-name h1::text').get().lower()
+            for removal in ['laptop gaming ', 'laptop ', 'gray', 'black', 'silver', 'iceblue']:
                 res = res.replace(removal, '')
 
             res = re.sub(r'\([^()]*\)', '', res)
             
-            if "Macbook" in res:
-                res = "Apple " + ' '.join(res.split()[:2] + res.split()[-1:])
+            if "macbook" in res:
+                res = "apple " + ' '.join(res.split()[:2] + res.split()[-1:])
             
             if not res[-1].isalnum():
                 res = res[:-1]
             
             return res.strip()
         except:
-            return "N/A"
+            return "n/a"
     
     # CPU
     def parse_cpu(self, response: Response):
         """
         Extracts the CPU name of the laptop from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['CPU'])
+        res = self.get_scoped_value(response, ['CPU'])
+        return res if res else "n/a"
+    
+        # try:
+        #     res = self.get_scoped_value(response, ['CPU']).lower()
             
-            if self.parse_brand(response) == "Apple":
-                res = re.sub(r'(\d+)CPU', r'\1 cores', res)
-                res = re.sub(r'\s?\d+GPU', '', res)
-                res = "Apple " + res
-            else:
-                for removal in ['®', '™', ' processor', ' Processor', 'Mobile', 'with Intel AI Boost', 'Processors', '(TM)', '(R)']:
-                    res = res.replace(removal, '')
+        #     if self.parse_brand(response) == "apple":
+        #         res = re.sub(r'(\d+)cpu', r'\1 core', res)
+        #         res = re.sub(r'\s?\d+gpu', '', res)
+        #         res = "apple " + res
+        #     else:
+        #         for removal in ['®', '™', 'processors', ' processor', 'mobile', 'with intel ai boost', '(tm)', '(r)']:
+        #             res = res.replace(removal, '')
 
-                res = re.sub(r'\s*(\d{1,2}th Gen|Gen \d{1,2}th)\s*', ' ', res)
+        #         res = re.sub(r'\s*(\d{1,2}th gen|gen \d{1,2}th)\s*', ' ', res)
                 
-                special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+GHz|\d+\.\d+\s?GHz|\d+\s?GB|dGB)\b', res)
-                if special_sep:
-                    res = res.split(special_sep.group())[0]
+        #         special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+\.\d+\s?ghz|\d+\s?gb|dgb)\b', res)
+        #         if special_sep:
+        #             res = res.split(special_sep.group())[0]
                     
-                for sep in ['(', 'up to', 'Up to', 'upto', ',']:
-                    res = res.split(sep)[0]
+        #         for sep in ['(', 'up to', 'upto', ',']:
+        #             res = res.split(sep)[0]
                     
-                if res.startswith(('i', 'Ultra')):
-                    res = 'Intel Core ' + res
+        #         if res.startswith(('i', 'ultra')):
+        #             res = 'intel core ' + res
                     
-                if res.startswith('Ryzen'):
-                    res = 'AMD ' + res
+        #         if res.startswith('ryzen'):
+        #             res = 'amd ' + res
             
-            return ' '.join(res.split())
-        except:
-            return "N/A"
+        #     return ' '.join(res.split())
+        # except:
+        #     return "n/a"
         
     # VGA
     def parse_vga(self, response: Response):
         """
         Extracts the VGA name of the laptop from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['VGA', 'Card đồ họa'])
+        res = self.get_scoped_value(response, ['VGA', 'Card đồ họa'])
+        return res if res else "n/a"
+        
+        # try:
+        #     res = self.get_scoped_value(response, ['VGA', 'Card đồ họa']).lower()
             
-            res = re.sub(r'[^\x20-\x7E]|®|™|integrated|gpu', ' ', res, flags=re.IGNORECASE)              
-            res = re.sub(r'\([^()]*\)', '', res)
-            res = ' '.join(res.split())
+        #     res = re.sub(r'[^\x20-\x7E]|®|™|integrated|gpu', ' ', res, flags=re.IGNORECASE)              
+        #     res = re.sub(r'\([^()]*\)', '', res)
 
-            if res.lower() in [
-                    "intel arc graphics", 
-                    "amd radeon graphics", 
-                    "intel iris xe graphics",
-                    "intel uhd graphics",
-                    "intel iris xe graphics intel uhd graphics",
-                    "on board on board",
-                    "amd radeon graphics amd radeon graphics",
-                    "intel graphics",
-                    "intel arcintel arc",
-                    "onboardonboard",
-                    None
-                ]:
-                res = "N/A"
-            else:
-                special_sep = re.search(r'\d+\s?GB|GDDR\d+', res)
-                if special_sep:
-                    res = res.split(special_sep.group())[0]
-
-                for spliter in [' with ', ' Laptop ', '+', ',',  'Up', 'upto', 'Upto', 'up to', 'ROG']:
-                    res = res.split(spliter)[0]
-                    
-                if res.lower().split()[0] == 'nvidia':
-                    res = 'NVIDIA ' + ' '.join(res.split()[1:])
-                    
-                if res.startswith('GeForce'):
-                    res = 'NVIDIA ' + res
-                    
-                res = re.sub(r'(\s\d{3,4})Ti', r'\1 Ti', res)
-                res = re.sub(r'(TX)(\d{4})', r'\1 \2', res)
+        #     special_sep = re.search(r'\d+\s?gb|gddr\d+', res)
+        #     if special_sep:
+        #         res = res.split(special_sep.group())[0]
+            
+        #     for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
+        #         res = res.split(spliter)[0]
                 
-                if "Gefore" in res:
-                    res = res.replace("Gefore", "Geforce")
-                
-                if "NVIDIA" in res:
-                    res = res[res.index("NVIDIA"):]
-                
-            return res.strip()
-        except:
-            return "N/A"
+        #     res = ' '.join(res.split())
+    
+        #     if self.parse_brand(response) == "apple":
+        #         res = "n/a"
+        #     else:
+        #         if any([keyword in res.lower() for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
+        #             for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia', 'intel iris xe', 'graphics']:
+        #                 res = res.replace(removal, '')
+        #                 res = ' '.join(res.split())
+                    
+        #             if (res.startswith('rtx') and 'ada' not in res) or res.startswith('gtx'):
+        #                 res = 'geforce ' + res
+                        
+        #             res = re.sub(r'(\s\d{3,4})ti', r'\1 ti', res)
+        #             res = re.sub(r'(ti)(\d{4})', r'\1 \2', res)
+                    
+        #             if res.startswith('mx'):
+        #                 res = 'geforce ' + res
+        #             if 'geforce' in res:
+        #                 res = res[res.index('geforce'):]
+        #         elif any([keyword in res for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
+        #                                                  'intel arc', 'onboard', 'on board', 'qualcomm']]):
+        #             res = "n/a"
+        #         elif any([keyword in res for keyword in ['amd', 'radeon']]):
+        #             res = res.replace('amd', '')
+        #             if 'vega' in res:
+        #                 res = "n/a"
+        #             elif not 'rx' in res:
+        #                 res = "n/a"
+                        
+        #     return res.strip()
+        # except:
+        #     return "n/a"
     
     # RAM
     def parse_ram_amount(self, response: Response): 
         """
         Extracts the amount of RAM in GB from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['RAM', 'Ram', 'ĐẬP'])
-            
-            search_value = re.search(r'\d+\s?GB', res)
-            if search_value:
-                res = search_value.group()
-                res = int(res.split('GB')[0])
-            
-            return res
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['RAM', 'Ram', 'ĐẬP'])
+        return res if res else "n/a"
     
     def parse_ram_type(self, response: Response): 
         """
         Extracts the type of RAM from the response.
         Example: DDR3, DDR4, etc.
         """
-        try:
-            res = self.get_scoped_value(response, ['RAM', 'Ram', 'ĐẬP'])
-            
-            search_value = re.search(r'DDR+\d', res)
-            if search_value:
-                res = search_value.group()
-            else:
-                res = "N/A"
-            
-            return res.strip()
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['RAM', 'Ram', 'ĐẬP'])
+        return res if res else "n/a"
     
     # Storage
     def parse_storage_amount(self, response: Response): 
         """
         Extracts the amount of storage in GB from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD', 'Ổ Cứng'])
-            res = ''.join(res.split())
-        
-            search_value = re.search(r'\d+GB|\d+TB', res)
-            if search_value:
-                res = search_value.group()
-                if 'TB' in res:
-                    res = int(res.split('TB')[0]) * 1024
-                else:
-                    res = int(res.split('GB')[0])
-            else:
-                res = "N/A"
-                
-            return res
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD', 'Ổ Cứng'])
+        return res if res else "n/a"
     
     def parse_storage_type(self, response: Response): 
         """
         Extracts the type of storage from the response.
         Example: HDD, SSD, SSHD.
         """
-        try:
-            res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD', 'Ổ Cứng'])
-        
-            if "SSD" in res and "HDD" in res:
-                if res.index("SSD") < res.index("HDD"):
-                    res = "SSD"
-                else:
-                    res = "HDD"
-            elif "SSD" in res:
-                res = "SSD"
-            elif "HDD" in res:
-                res = "HDD"
-            else:
-                res = "N/A"
-            
-            return res.strip()
-        except:      
-            return "N/A"
+        res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD', 'Ổ Cứng'])
+        return res if res else "n/a"
     
     # Webcam
     def parse_webcam_resolution(self, response: Response): 
@@ -249,298 +212,78 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the webcam resolution from the response.
         Example: HD, FHD, 4K.
         """
-        try:
-            res = ''.join(self.get_scoped_value(response, ['Webcam', 'Camera']).lower().split())
-
-            if any(term in res for term in ['qhd', '2k', '1440p', '2560x1440']):
-                return 'QHD'
-            elif any(term in res for term in ['fhd', '1080p', '1920x1080']):
-                return 'FHD'
-            elif any(term in res for term in ['hd', '720p', '1280x720']):
-                return 'HD'
-            else:
-                return "N/A"
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Webcam', 'Camera'])
+        return res if res else "n/a"
     
     # Screen
     def parse_screen_size(self, response: Response): 
         """
         Extracts the screen size in inches from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['Màn hình']).lower()
-            res = res.replace(',', '.')
-            res = re.search(r'(\d+(\.\d+)?)\s*(["\']|(-)?\s*inch|”)', res)
-            
-            if res:
-                res = float(res.group(1))
-            else:
-                res = "N/A"
-                
-            return res
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Màn hình'])
+        return res if res else "n/a"
     
     def parse_screen_resolution(self, response: Response): 
         """
         Extracts the screen resolution from the response.
         Example: 1920x1080, 2560x1600, etc.
         """
-        try:
-            res = ''.join(self.get_scoped_value(response, ['Màn hình']).lower().split())
-            res = res.replace('*', 'x')
-            
-            search_value = re.search(r'\b\d{3,4}x\d{3,4}\b', res)
-
-            if search_value:
-                res = search_value.group()
-            elif 'fhd+' in res:
-                res = '1920x1080'
-            elif 'fhd' in res:
-                res = '1920x1080'
-            elif '2k' in res or 'qhd' in res:
-                res = '2560x1440'
-            else:
-                res = "N/A"
-            
-            return res
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Màn hình'])
+        return res if res else "n/a"
     
     def parse_screen_refresh_rate(self, response: Response): 
         """
         Extracts the screen refresh rate in Hz from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['Màn hình']).lower()
-            
-            search_value = re.search(r'\d+\s*hz', res)
-            if search_value:
-                res = search_value.group()
-                res = int(res.split('hz')[0])
-            else:
-                res = "N/A"
-
-            return res
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Màn hình'])
+        return res if res else "n/a"
     
     def parse_screen_brightness(self, response: Response): 
         """
         Extracts the screen brightness in nits from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['Màn hình']).lower()
-            
-            search_value = re.search(r'\d+\s*nits', res)
-            if search_value:
-                res = search_value.group()
-                res = int(res.split('nits')[0])
-            else:
-                res = "N/A"
-                
-            return res
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Màn hình'])
+        return res if res else "n/a"
     
     # Battery
     def parse_battery_capacity(self, response: Response): 
         """
         Extracts the battery capacity in Whr from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['Pin', 'Ghim']).lower()
-            res = re.sub(r'[()]', '', res)
-        
-            search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery)', res)
-            if search_value:
-                res = float(search_value.group().split('wh')[0].split('battery')[0])
-            else:
-                res = "N/A"
-            
-            return res
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Pin', 'Ghim'])
+        return res if res else "n/a"
     
     def parse_battery_cells(self, response: Response):
         """
         Extracts the number of battery cells from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['Pin', 'Ghim'])
-            res = res.lower()
-            search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells|Chân\s*(\d+)', res)
-            
-            if search_value:
-                res = int(search_value.group()[0])
-            else:
-                res = "N/A"
-            
-            return res
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Pin', 'Ghim'])
+        return res if res else "n/a"
     
     # Size
-    def parse_width(self, response: Response):
+    def parse_size(self, response: Response):
         """
         Extracts the width of the laptop in cm from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
-
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values, reverse=True)
-            
-            res = values[0] if values[0] < 100 else values[0] / 10
-            
-            return round(res, 2)
-        except:
-            return "N/A"
-    
-    def parse_depth(self, response: Response):
-        """
-        Extracts the depth of the laptop in cm from the response.
-        """
-        try:
-            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values, reverse=True)
-
-            res = values[1] if values[1] < 100 else values[0] / 10
-                
-            return round(res, 2)
-        except:
-            return "N/A"
-    
-    def parse_height(self, response: Response):
-        """
-        Extracts the height of the laptop in cm from the response.
-        """
-        try:
-            res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
-            
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values, reverse=True)
-            
-            res = values[2] if values[2] < 100 else values[0] / 10
-                
-            return round(res, 2)
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Kích thước', 'Kích thước', 'Kích cỡ'])
+        return res if res else "n/a"
     
     # Weight
     def parse_weight(self, response: Response): 
         """
         Extracts the weight of the laptop in kg from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['Trọng lượng', 'Trọng lượng', 'Cân nặng']).lower()
-            res = res.replace(',', '.')
-        
-            value_kg = re.search(r'(\d+(\.\d+)?)\s*(kg)', res)
-            value_g = re.search(r'(\d+(\.\d+)?)\s*(gram|g)', res)
-            
-            if value_kg:
-                res = float(value_kg.group(1))
-            elif value_g:
-                res = float(value_g.group(1)) / 1000
-            else:
-                res = "N/A"
-                
-            return res
-        except:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Trọng lượng', 'Trọng lượng', 'Cân nặng'])
+        return res if res else "n/a"
     
     # Connectivity
-    def parse_number_usb(self, response: Response, pattern_a: str, pattern_c: str, get_a=True):
-        try:
-            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp', 'Port next', 'Cổng tiếp theo', 'Cổng tiếp theo'])
-            res = res.lower()
-            if re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE) != '':
-                res = re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE)
-            
-            while '(' in res and ')' in res:
-                res = re.sub(r'\([^()]*\)', '', res)
-            
-            res = re.split(r'[\n,]', res)
-            count = 0
-            for line in res:
-                if get_a:
-                    if re.search(pattern_a, line) and not re.search(pattern_c, line):
-                        line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
-                        val = line.split()[0]
-                        if val[-1] == 'x': val = val[:-1]
-                
-                        if val.isnumeric():
-                            count += int(val)
-                        else:
-                            count += 1
-                else:
-                    if re.search(pattern_c, line):
-                        line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
-                        val = line.split()[0]
-                        if val[-1] == 'x': val = val[:-1]
-                
-                        if val.isnumeric():
-                            count += int(val)
-                        else:
-                            count += 1
-            
-            return count
-        except:
-            return "N/A"
-    
-    def parse_number_usb_a_ports(self, response: Response):
+    def parse_connectivity(self, response: Response):
         """
-        Extracts the number of USB-A ports from the response.
+        Extracts the connectivity features of the laptop from the response.
+        Example: Wi-Fi, Bluetooth, etc.
         """
-        return self.parse_number_usb(response, 
-                                     r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b',  
-                                     r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b',
-                                     get_a=True)
-
-    
-    def parse_number_usb_c_ports(self, response: Response):
-        """
-        Extracts the number of USB-C ports from the response.
-        """
-        return self.parse_number_usb(response, 
-                                     r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b',  
-                                     r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b',
-                                     get_a=False)
-    
-    def parse_has_port(self, response: Response, pattern):
-        try:
-            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp', 'Port next', 'Cổng tiếp theo', 'Cổng tiếp theo'])
-            res = res.lower()
-            
-            if res:
-                port_search = re.search(pattern, res)
-                return 1 if port_search else 0
-            else:
-                return "N/A"
-            
-        except:
-            return "N/A"
-    
-    def parse_number_hdmi_ports(self, response: Response):
-        """
-        Extracts the number of HDMI ports from the response.
-        """
-        return self.parse_has_port(response, r'\bhdmi\b')
-    
-    def parse_number_ethernet_ports(self, response: Response):
-        """
-        Extracts the number of Ethernet ports from the response.
-        """
-        return self.parse_has_port(response, r'\brj-45|ethernet\b')
-    
-    def parse_number_audio_jacks(self, response: Response):
-        """
-        Extracts the number of audio jacks from the response.
-        """
-        return self.parse_has_port(response, r'\bheadphone|3.5mm\b')
+        res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp', 'Port next', 'Cổng tiếp theo', 'Cổng tiếp theo'])
+        return res if res else "n/a"
     
     # Operating System
     def parse_default_os(self, response: Response): 
@@ -548,78 +291,35 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the default operating system of the laptop from the response.
         Example: Windows, Linux, etc.
         """
-        try:
-            res = self.get_scoped_value(response, ['Hệ điều hành', 'Hệ thống điều chỉnh'])
-            res = re.sub(r'Bản Quyền|[^\x20-\x7E]|Single Language|SL|64', ' ', res, flags=re.IGNORECASE)
-            res = ' '.join(res.split())
+        res = self.get_scoped_value(response, ['Hệ điều hành', 'Hệ thống điều chỉnh'])
+        return res if res else "n/a"
+        # try:
+        #     res = self.get_scoped_value(response, ['Hệ điều hành', 'Hệ thống điều chỉnh']).lower()
+        #     res = re.sub(r'bản quyền|[^\x20-\x7E]|single language|sl|64|sea', ' ', res)
+        #     res = ' '.join(res.split())
             
-            for sep in ['+', ',', '-', ';']:
-                res = res.split(sep)[0]
+        #     for sep in ['+', ',', '-', ';']:
+        #         res = res.split(sep)[0]
                 
-            if 'Windows' in res:
-                res = res[res.index('Windows'):]
+        #     if 'windows' in res:
+        #         res = res[res.index('windows'):]
             
-            
-            return res.strip()
-        except:
-            return "N/A"
-    
-    # Color
-    def parse_color(self, response: Response): 
-        """
-        Extracts the color of the laptop from the response.
-        Example: Black, White, etc.
-        """
-        try:
-            res = self.get_scoped_value(response, ['Màu sắc'])
-            
-            if res:
-                return res.strip()
-            else:
-                return "N/A"
-        except:
-            return "N/A"
-    
-    # Origin: Not available
-    def parse_origin(self, response: Response): 
-        """
-        Extracts the origin of the laptop from the response.
-        Example: China, Taiwan, USA, etc.
-        """
-        return "N/A"
+        #     return res.strip()
+        # except:
+        #     return "n/a"
     
     # Warranty
     def parse_warranty(self, response: Response): 
         """
         Extracts the warranty period in months from the response.
         """
-        try:
-            res = self.get_scoped_value(response, ['Bảo hành'])
-            if res is None:
-                res = response.xpath("//strong[contains(text(), 'Bảo hành')]/following-sibling::text()").get()
-            if res is None:
-                res = response.xpath('//span[contains(text(), "Bảo hành")]/text()').get()
-                
-            res = ' '.join(res.split()).lower()
-            search_value = re.search(r'(\d+)\s*tháng', res)
-    
-            if search_value:
-                res = int(search_value.group(1))
-            else:
-                res = "N/A"
+        res = self.get_scoped_value(response, ['Bảo hành'])
+        if res is None:
+            res = response.xpath("//strong[contains(text(), 'Bảo hành')]/following-sibling::text()").get()
+        if res is None:
+            res = response.xpath('//span[contains(text(), "Bảo hành")]/text()').get()
             
-            return res
-            
-        except:
-            return "N/A"
-    
-    # Release Date: Not available
-    def parse_release_date(self, response: Response): 
-        """
-        Extracts the release date of the laptop from the response.
-        Format: dd/mm/yyyy.
-        """
-        return "N/A"
+        return res if res else "n/a"
     
     # Price
     def parse_price(self, response: Response): 
@@ -627,15 +327,7 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the price of the laptop from the response.
         Example: in VND.
         """
-        try:
-            price = response.xpath('//span[@class="pro-price a"]/text()').get()
-            
-            if price:
-                price = price.replace('₫', '').replace('.', '').strip()
-                return int(price)
-            else:
-                return "N/A"
-        except:
-            return "N/A"
+        res = response.xpath('//span[@class="pro-price a"]/text()').get()
+        return res if res else "n/a"
     
     # [PARSE FEATURES SECTION: END]
