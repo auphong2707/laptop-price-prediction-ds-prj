@@ -2,10 +2,10 @@ from scrapy.http import Response
 from .base_laptopshop_spider import BaseLaptopshopLoadmoreButtonSpider
 import re
 
-class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
+class PhongvuSpider(BaseLaptopshopLoadmoreButtonSpider):
     selenium_product_request = True
     
-    name = "phongvu"
+    name = "phongvu_spider"
     allowed_domains = ["phongvu.vn"]
     start_urls = [
         'https://phongvu.vn/c/laptop',
@@ -19,7 +19,17 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         possibile_values = [
             "//div[@class='css-1lchwqw' and text()='{}']/following-sibling::div[@class='css-1lchwqw']".format(name)
             for name in names
-        ]
+            ] + [
+                "//div[text()='{}'/following-sibling::div/text()".format(name)
+                for name in names
+            ] + [
+                "//div[text()='{}']/following-sibling::div/text()".format(name)
+                for name in names
+            ] + [
+                "//div[contains(text(), '{}')]/following-sibling::div[1]/text()".format(name)
+                for name in names
+            ]
+            
         for value in possibile_values:
             scope = response.xpath(value).getall()
             if scope:
@@ -47,7 +57,8 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Dell, HP, etc.
         """
         try:
-            return self.get_scoped_value(response, ['Thương hiệu'])
+            text = self.get_scoped_value(response, ['Thương hiệu'])
+            return re.search(r'>(.*?)<', text).group(1)
         except Exception:
             return "N/A"
 
@@ -72,12 +83,13 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
             return "N/A"
 
         # RAM
-    def parse_ram_amount(self, response: Response): 
+    def parse_ram_amount(self, response: Response):
         """
         Extracts the amount of RAM in GB from the response.
         """
         try:
-            return self.get_scoped_value(response, ["RAM", "Dung lượng RAM"])
+            return self.get_scoped_value(response, ["RAM"]) + ' '\
+                + self.get_scoped_value(response, ["Dung lượng RAM"])
         except Exception:
             return "N/A"
     
@@ -291,19 +303,13 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
             return "N/A"
     
     # Price
-    def parse_price(self, response: Response): 
+    def parse_price(self, response: Response):
         """
         Extracts the price of the laptop from the response.
         Example: in VND.
         """
         try:
-            prices = [
-                response.xpath('//div[@class="bs_price"]/em/text()').get(), 
-                response.xpath('//p[@class="box-price-present"]/text()').get()
-            ]
-            for price in prices:
-                if price:
-                    return int(price.replace(".", "").split("₫")[0])
+            return response.xpath("//div[contains(@class, 'att-product-detail-latest-price')]/text()").get()
         except Exception:
             return "N/A"
     
