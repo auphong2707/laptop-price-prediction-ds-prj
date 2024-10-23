@@ -3,7 +3,7 @@ from scrapy.http import Response
 import re
 
 class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
-    name = "thegioididong"
+    name = "tgdd_spider"
     allowed_domains = ["thegioididong.com"]
     start_urls = [
         "https://www.thegioididong.com/laptop"
@@ -12,6 +12,7 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
     product_site_css = 'a.main-contain::attr(href)'
     loadmore_button_css = 'div.view-more a'
     
+    source = 'thegioididong'
     
     # Support functions
     def get_scoped_value(self, response, names):
