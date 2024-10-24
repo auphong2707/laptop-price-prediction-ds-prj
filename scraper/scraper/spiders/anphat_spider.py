@@ -379,7 +379,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
             return "n/a"
     
     # Connectivity
-    def parse_connectivity(self, response: Response, pattern):
+    def parse_connectivity(self, response: Response):
         return self.get_scoped_value(response, ['Kết nối USB']) + self.get_scoped_value(response, ['Kết nối HDMI/VGA']) + self.get_scoped_value(response, ["Tai nghe"])
         try:
             res = self.get_scoped_value(response, ['Kết nối HDMI/VGA'])
