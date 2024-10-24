@@ -12,6 +12,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
     product_site_css = ".p-img::attr(href)"   
     #page_css = "div.paging a[href]:not(:has(i))::attr(href)"
     page_css = None
+    source = 'anphat'
 
     def get_scoped_value(self, response: Response, list_names):
         possible_values = [
@@ -341,40 +342,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
             return "n/a"
     
     # Size
-    def parse_width(self, response: Response):
-        """
-        Extracts the width of the laptop in cm from the response.
-        """
-        return self.get_scoped_value(response, ['Kích thước (Dài x Rộng x Cao)'])
-        try:
-            res = self.get_scoped_value(response, ['Kích thước (Dài x Rộng x Cao)'])
-
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values[:3], reverse=True)
-            
-            res = values[0] if values[0] < 100 else values[0] / 10
-            
-            return round(res, 2)
-        except:
-            return "n/a"
-    
-    def parse_depth(self, response: Response):
-        """
-        Extracts the depth of the laptop in cm from the response.
-        """
-        return self.get_scoped_value(response, ['Kích thước (Dài x Rộng x Cao)'])
-        try:
-            res = self.get_scoped_value(response, ['Kích thước (Dài x Rộng x Cao)'])
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values[:3], reverse=True)
-
-            res = values[1] if values[1] < 100 else values[0] / 10
-                
-            return round(res, 2)
-        except:
-            return "n/a"
-    
-    def parse_height(self, response: Response):
+    def parse_size(self, response: Response):
         """
         Extracts the height of the laptop in cm from the response.
         """
@@ -411,49 +379,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
             return "n/a"
     
     # Connectivity
-    def parse_number_usb(self, response: Response, pattern):
-        return self.get_scoped_value(response, ['Kết nối USB'])
-        try:
-            res = self.get_scoped_value(response, ['Kết nối USB'])
-            res = res.lower()
-            if re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE) != '':
-                res = re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE)
-            
-            
-            while '(' in res and ')' in res:
-                res = re.sub(r'\([^()]*\)', '', res)
-
-            res = re.split(r'[\n,]', res)
-            count = 0
-            for line in res:
-                if re.search(pattern, line):
-                    line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
-                    val = line.split()[0]
-                    if val[-1] == 'x': val = val[:-1]
-            
-                    if val.isnumeric():
-                        count += int(val)
-                    else:
-                        count += 1
-            
-            return count
-        except:
-            return "n/a"
-    
-    def parse_number_usb_a_ports(self, response: Response):
-        """
-        Extracts the number of USB-A ports from the response.
-        """
-        return self.parse_number_usb(response, r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a)\b')
-    
-    def parse_number_usb_c_ports(self, response: Response):
-        """
-        Extracts the number of USB-C ports from the response.
-        """
-        return self.parse_number_usb(response, r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b')
-    
-    def parse_has_port(self, response: Response, pattern):
-        return self.get_scoped_value(response, ['Kết nối HDMI/VGA']) + self.get_scoped_value(response, ["Tai nghe"])
+    def parse_connectivity(self, response: Response, pattern):
+        return self.get_scoped_value(response, ['Kết nối USB']) + self.get_scoped_value(response, ['Kết nối HDMI/VGA']) + self.get_scoped_value(response, ["Tai nghe"])
         try:
             res = self.get_scoped_value(response, ['Kết nối HDMI/VGA'])
             res = res.lower()
@@ -466,24 +393,6 @@ class AnphatSpider(BaseLaptopshopPageSpider):
             
         except:
             return "n/a"
-    
-    def parse_number_hdmi_ports(self, response: Response):
-        """
-        Extracts the number of HDMI ports from the response.
-        """
-        return self.parse_has_port(response, r'\bhdmi\b')
-    
-    def parse_number_ethernet_ports(self, response: Response):
-        """
-        Extracts the number of Ethernet ports from the response.
-        """
-        return self.parse_has_port(response, r'\brj-45|ethernet\b')
-    
-    def parse_number_audio_jacks(self, response: Response):
-        """
-        Extracts the number of audio jacks from the response.
-        """
-        return self.parse_has_port(response, r'\bheadphone|3.5mm\b')
     
     # Operating System
     def parse_default_os(self, response: Response): 
