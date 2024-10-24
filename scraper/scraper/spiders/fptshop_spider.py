@@ -8,27 +8,29 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
     product_site_css = "h3.ProductCard_cardTitle__HlwIo a::attr(href)"
     allowed_domains = ['fptshop.com.vn']
     loadmore_button_css = ".Button_root__LQsbl.Button_btnSmall__aXxTy.Button_whitePrimary__nkoMI.Button_btnIconRight__4VSUO.border.border-iconDividerOnWhite.px-4.py-2"
-    close_button_xpaths = ["//button[@class='close']"]
+    # close_button_xpaths = ["//button[@class='close']"]
     
-    show_technical_spec_button_xpath = "//button[contains(@class, 'flex items-center text-blue-blue-7 b2-medium')]//span[text()='Tất cả thông số']/parent::button"
+    show_technical_spec_button_xpath = "//button[span[text()='Tất cả thông số']]"
     source = 'fpt'
     selenium_product_request = True
 
 
     def get_scoped_value(self, response, names):
         possibile_values = [
-            "//div[@class='px-5 pb-15']//span[text()='{}']/following-sibling::span/text()".format(name)
+            "//div[span[contains(text(), '{}')]]/following-sibling::span/text()".format(name)
             for name in names
         ] + [
-            "//div[@class='px-5 pb-15 pt-15']//span[text()='{}']/following-sibling::span/text()".format(name)
+            "//div[div/span[contains(text(), '{}')]]//div/p/text()".format(name)
             for name in names
         ]
+    
         for value in possibile_values:
             scope = response.xpath(value).getall()
-            print(scope)
-            if scope:
+
+            if len(scope) > 0:
                 return '\n'.join(scope)
-         
+                
+        print(f"Value {names} not found")
         return None
     
 
@@ -95,8 +97,7 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
             #     return cpu_details.strip()
             # else: 
             #     return 'N/A'
-            print(f"{cpu_brand} {cpu_technology} {cpu_type}")
-            return f"{cpu_brand} {cpu_technology} {cpu_type}" if cpu_brand and cpu_technology and cpu_type else 'n/a'
+            return f"{cpu_brand} {cpu_technology} {cpu_type}" if cpu_brand or cpu_technology or cpu_type else 'n/a'
 
         except Exception as e:
             print("Error:", e)
@@ -108,7 +109,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try:
             vga_text = self.get_scoped_value(response, ['Tên đầy đủ (Card rời)'])
-            print(vga_text)
             return vga_text if vga_text else 'n/a'
             # if vga_text: 
             #     vga_text = vga_text.strip().split('\n')
@@ -125,7 +125,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             ram_text = self.get_scoped_value(response, ['Dung lượng RAM'])
-            print(ram_text)
             return ram_text if ram_text else 'n/a'
             # if ram_text: 
             #     # extract the number and GB
@@ -147,7 +146,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             ram_text = self.get_scoped_value(response, ['Loại RAM'])
-            print(ram_text)
             return ram_text if ram_text else 'n/a'
             # if ram_text: 
             #     # extract the number and GB
@@ -167,7 +165,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             storage_text = self.get_scoped_value(response, ['Dung lượng'])
-            print(storage_text)
             return storage_text if storage_text else 'n/a'
             # if storage_text: 
             #     # extract the number and GB
@@ -188,7 +185,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             storage_text = self.get_scoped_value(response, ['Lưu trữ'])
-            print(storage_text)
             return storage_text if storage_text else 'n/a'
             # if storage_text: 
             #     # extract the number and GB
@@ -207,7 +203,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             size_text = self.get_scoped_value(response, ['Kích thước'])
-            print(size_text)    
             return size_text if size_text else 'n/a'
 
         except Exception as e: 
@@ -220,7 +215,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             weight_text = self.get_scoped_value(response, ['Trọng lượng sản phẩm'])
-            print(weight_text)  
             return weight_text if weight_text else 'n/a'
 
         except Exception as e: 
@@ -233,7 +227,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             battery_text = self.get_scoped_value(response, ['Dung lượng pin'])
-            print(battery_text)
             return battery_text if battery_text else 'n/a'
 
         except Exception as e: 
@@ -246,7 +239,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             battery_text = self.get_scoped_value(response, ['Dung lượng pin'])
-            print(battery_text)
             return battery_text if battery_text else 'n/a'
 
         except Exception as e: 
@@ -259,7 +251,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             screen_text = self.get_scoped_value(response, ['Kích thước màn hình'])
-            print(screen_text)
             return screen_text if screen_text else 'n/a'
         except Exception as e: 
             print("Error: ", e) 
@@ -272,7 +263,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             screen_text = self.get_scoped_value(response, ['Độ phân giải'])
-            print(screen_text)
             return screen_text if screen_text else 'n/a'
         except Exception as e:
             print("Error: ", e)
@@ -284,7 +274,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             screen_text = self.get_scoped_value(response, ['Tần số quét'])
-            print(screen_text)  
             return screen_text if screen_text else 'n/a'
         except Exception as e:
             print("Error: ", e)
@@ -296,7 +285,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             screen_text = self.get_scoped_value(response, ['Độ sáng'])
-            print(screen_text)
             return screen_text if screen_text else 'n/a'
         except Exception as e:
             print("Error: ", e)
@@ -308,7 +296,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             webcam_text = self.get_scoped_value(response, ['Webcam'])
-            print(webcam_text)
             return webcam_text if webcam_text else 'n/a'
         except Exception as e:
             print("Error: ", e)
@@ -320,7 +307,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             connectivity_text = self.get_scoped_value(response, ['Cổng giao tiếp'])
-            print(connectivity_text)
             return connectivity_text if connectivity_text else 'n/a'
         except Exception as e:
             print("Error: ", e)
@@ -333,7 +319,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             os_text = self.get_scoped_value(response, ['Version', 'OS'])
-            print(os_text)
             return os_text if os_text else 'n/a'
         except Exception as e:
             print("Error: ", e)
@@ -346,7 +331,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             price_text = response.css('span.text-neutral-gray-5 line-through::text').get()
-            print(price_text)
             return price_text if price_text else 'n/a'
         except Exception as e:
             print("Error: ", e)
@@ -358,7 +342,6 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         try: 
             warranty_text = self.get_scoped_value(response, ['Thời gian bảo hành'])
-            print(warranty_text)
             return warranty_text if warranty_text else 'n/a'
         except Exception as e:
             print("Error: ", e)
