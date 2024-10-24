@@ -44,7 +44,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         return None
 
     def parse_brand(self, response: Response):
-        return self.get_scoped_value(response, ["Hãng sản xuất"])
+        brand = self.get_scoped_value(response, ["Hãng sản xuất"])
+        return brand if brand else 'n/a'
         try:
             brand = self.get_scoped_value(response, ["Hãng sản xuất"]).split()
             if brand[0] == "laptop":
@@ -56,7 +57,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         
     
     def parse_name(self, response: Response):
-        return self.get_scoped_value(response, ["Tên sản phẩm"])
+        name = self.get_scoped_value(response, ["Tên sản phẩm"])
+        return name if name else 'n/a'
         try:
             name = self.get_scoped_value(response, ["Tên sản phẩm"])
             if 'laptop' in name:
@@ -71,7 +73,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the CPU name of the laptop from the response.
         """
-        return self.get_scoped_value(response, ['Công nghệ CPU', 'Bộ vi xử lý'])
+        cpu = self.get_scoped_value(response, ['Công nghệ CPU', 'Bộ vi xử lý'])
+        return cpu if cpu else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Công nghệ CPU'])
             
@@ -96,7 +99,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the VGA name of the laptop from the response.
         """
-        return self.get_scoped_value(response, ['Card màn hình'])
+        vga = self.get_scoped_value(response, ['Card màn hình'])
+        return vga if vga else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Card màn hình'])
             
@@ -126,7 +130,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the amount of RAM in GB from the response.
         """
-        return self.get_scoped_value(response, ['RAM'], ['Bộ nhớ trong (RAM)'])
+        ram = self.get_scoped_value(response, ['RAM'], ['Bộ nhớ trong (RAM)'])
+        return ram if ram else 'n/a'
         try:
             res = self.get_scoped_value(response, ['RAM'])
             
@@ -144,7 +149,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         Extracts the type of RAM from the response.
         Example: DDR3, DDR4, etc.
         """
-        return self.get_scoped_value(response, ['Loại RAM'])
+        ram = self.get_scoped_value(response, ['Loại RAM'])
+        return ram if ram else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Loại RAM'])
             
@@ -163,7 +169,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the amount of storage in GB from the response.
         """
-        return self.get_scoped_value(response, ['Dung lượng'], ["Ổ cứng"])
+        storage = self.get_scoped_value(response, ['Dung lượng'], ["Ổ cứng"])
+        return storage if storage else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Dung lượng'])
             res = re.sub(r'\s', '', res)
@@ -186,7 +193,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         Extracts the type of storage from the response.
         Example: HDD, SSD, SSHD.
         """
-        return self.get_scoped_value(response, ['Dung lượng'])
+        storage = self.get_scoped_value(response, ['Dung lượng'])
+        return storage if storage else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Dung lượng'])
         
@@ -212,7 +220,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         Extracts the webcam resolution from the response.
         Example: HD, FHD, 4K.
         """
-        return self.get_scoped_value(response, ['Webcam', 'Camera'])
+        webcam = self.get_scoped_value(response, ['Webcam', 'Camera'])
+        return webcam if webcam else 'n/a'
         try:
             res = ''.join(self.get_scoped_value(response, ['Webcam', 'Camera']))
 
@@ -232,7 +241,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the screen size in inches from the response.
         """
-        return self.get_scoped_value(response, ['Kích thước màn hình', 'Màn hình'])
+        scr = self.get_scoped_value(response, ['Kích thước màn hình', 'Màn hình'])
+        return scr if scr else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Kích thước màn hình'])
             res = re.search(r'(\d+(\.\d+)?)\s*(["\']|(-)?\s*inch)', res)
@@ -251,7 +261,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         Extracts the screen resolution from the response.
         Example: 1920x1080, 2560x1600, etc.
         """
-        return self.get_scoped_value(response, ['Độ phân giải', 'Màn hình'])
+        scr = self.get_scoped_value(response, ['Độ phân giải', 'Màn hình'])
+        return scr if scr else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Độ phân giải'])
             
@@ -271,7 +282,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the screen refresh rate in Hz from the response.
         """
-        return self.get_scoped_value(response, ['Tần số quét', 'Màn hình'])
+        scr = self.get_scoped_value(response, ['Tần số quét', 'Màn hình'])
+        return scr if scr else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Tần số quét'])
             search_value = re.search(r'\d+(\s)?Hz', res)
@@ -289,7 +301,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the screen brightness in nits from the response.
         """
-        return self.get_scoped_value(response, ['Công nghệ màn hình', 'Màn hình'])
+        scr = self.get_scoped_value(response, ['Công nghệ màn hình', 'Màn hình'])
+        return scr if scr else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Công nghệ màn hình'])
             
@@ -309,7 +322,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the battery capacity in Whr from the response.
         """
-        return self.get_scoped_value(response, ['Pin', 'Kiểu Pin'])
+        battery = self.get_scoped_value(response, ['Pin', 'Kiểu Pin'])
+        return battery if battery else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Pin', 'Kiểu Pin'])
             res = res.lower()
@@ -329,7 +343,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the number of battery cells from the response.
         """
-        return self.get_scoped_value(response, ['Pin', 'Kiểu Pin'])
+        battery = self.get_scoped_value(response, ['Pin', 'Kiểu Pin'])
+        return battery if battery else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Pin', 'Kiểu Pin'])
             res = res.lower()
@@ -349,7 +364,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the height of the laptop in cm from the response.
         """
-        return self.get_scoped_value(response, ['Kích thước (Dài x Rộng x Cao)'])
+        size = self.get_scoped_value(response, ['Kích thước (Dài x Rộng x Cao)'])
+        return size if size else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Kích thước (Dài x Rộng x Cao)'])
             
@@ -367,7 +383,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the weight of the laptop in kg from the response.
         """
-        return self.get_scoped_value(response, ['Trọng Lượng'])
+        weight = self.get_scoped_value(response, ['Trọng Lượng'])
+        return weight if weight else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Trọng Lượng'])
             res = re.search(r'(\d+(\.\d+)?)\s*(kg|Kg|KG)', res)
@@ -383,7 +400,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
     
     # Connectivity
     def parse_connectivity(self, response: Response):
-        return self.get_scoped_value(response, ['Kết nối USB']) + self.get_scoped_value(response, ['Kết nối HDMI/VGA']) + self.get_scoped_value(response, ["Tai nghe"])
+        ketnoi = self.get_scoped_value(response, ['Kết nối USB']) + self.get_scoped_value(response, ['Kết nối HDMI/VGA']) + self.get_scoped_value(response, ["Tai nghe"])
+        return ketnoi if ketnoi else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Kết nối HDMI/VGA'])
             res = res.lower()
@@ -403,7 +421,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         Extracts the default operating system of the laptop from the response.
         Example: Windows, Linux, etc.
         """
-        return self.get_scoped_value(response, ['Hệ điều hành', "OS"])
+        os = self.get_scoped_value(response, ['Hệ điều hành', "OS"])
+        return os if os else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Hệ điều hành', "OS"])
             
@@ -421,7 +440,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         Extracts the color of the laptop from the response.
         Example: Black, White, etc.
         """
-        return self.get_scoped_value(response, ['Màu sắc', "Mầu sắc"])
+        color = self.get_scoped_value(response, ['Màu sắc', "Mầu sắc"])
+        return color if color else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màu sắc', "Mầu sắc"])
             
@@ -432,23 +452,15 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         except:
             return "n/a"
     
-    # Origin: Not available
-    def parse_origin(self, response: Response): 
-        """
-        Extracts the origin of the laptop from the response.
-        Example: China, Taiwan, USA, etc.
-        """
-        return self.get_scoped_value(response, ['Xuất xứ'])
-    
     # Warranty
     def parse_warranty(self, response: Response): 
         """
         Extracts the warranty period in months from the response.
         """
+        warranty = response.xpath("//b[contains(., 'Bảo hành')]/text()").get()
+        return warranty if warranty else 'n/a'
+    
         try:
-            
-            return response.xpath("//b[contains(., 'Bảo hành')]/text()").get().strip()
-                
             search_value = re.search(r'(\d+)\s*tháng', res)
             if search_value:
                 res = int(search_value.group(1))
@@ -477,6 +489,8 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         Extracts the price of the laptop from the response.
         Example: in VND.
         """
+        price = response.xpath("//tr//td[contains(., 'Giá khuyến mại:')]/following-sibling::td//b/text()").get()
+        return price if price else 'n/a'
         try:
             return response.xpath("//tr//td[contains(., 'Giá khuyến mại:')]/following-sibling::td//b/text()").get()
 
