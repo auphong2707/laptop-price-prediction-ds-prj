@@ -10,8 +10,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         "https://www.anphatpc.com.vn/may-tinh-xach-tay-laptop.html",
     ]
     product_site_css = ".p-img::attr(href)"   
-    #page_css = "div.paging a[href]:not(:has(i))::attr(href)"
-    page_css = None
+    page_css = "div.paging a[href]:not(:has(i))::attr(href)"
     source = 'anphat'
 
     def get_scoped_value(self, response: Response, list_names, category_names = []):
