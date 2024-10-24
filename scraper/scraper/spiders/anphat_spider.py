@@ -14,8 +14,11 @@ class AnphatSpider(BaseLaptopshopPageSpider):
     page_css = None
     source = 'anphat'
 
-    def get_scoped_value(self, response: Response, list_names):
+    def get_scoped_value(self, response: Response, list_names, category_names = []):
         possible_values = [
+            "//p[normalize-space()='{}']/ancestor::tr/following-sibling::tr[1]//td[2]//p".format(name)
+            for name in category_names
+        ] + [
             "//td[.//strong/span[contains(text(), '{}')]]/following-sibling::td//a/text()".format(name)
             for name in list_names
         ] + [
@@ -68,7 +71,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the CPU name of the laptop from the response.
         """
-        return self.get_scoped_value(response, ['Công nghệ CPU'])
+        return self.get_scoped_value(response, ['Công nghệ CPU', 'Bộ vi xử lý'])
         try:
             res = self.get_scoped_value(response, ['Công nghệ CPU'])
             
@@ -123,7 +126,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the amount of RAM in GB from the response.
         """
-        return self.get_scoped_value(response, ['RAM'])
+        return self.get_scoped_value(response, ['RAM'], ['Bộ nhớ trong (RAM)'])
         try:
             res = self.get_scoped_value(response, ['RAM'])
             
@@ -160,7 +163,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the amount of storage in GB from the response.
         """
-        return self.get_scoped_value(response, ['Dung lượng'])
+        return self.get_scoped_value(response, ['Dung lượng'], ["Ổ cứng"])
         try:
             res = self.get_scoped_value(response, ['Dung lượng'])
             res = re.sub(r'\s', '', res)
@@ -229,7 +232,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the screen size in inches from the response.
         """
-        return self.get_scoped_value(response, ['Kích thước màn hình'])
+        return self.get_scoped_value(response, ['Kích thước màn hình', 'Màn hình'])
         try:
             res = self.get_scoped_value(response, ['Kích thước màn hình'])
             res = re.search(r'(\d+(\.\d+)?)\s*(["\']|(-)?\s*inch)', res)
@@ -248,7 +251,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         Extracts the screen resolution from the response.
         Example: 1920x1080, 2560x1600, etc.
         """
-        return self.get_scoped_value(response, ['Độ phân giải'])
+        return self.get_scoped_value(response, ['Độ phân giải', 'Màn hình'])
         try:
             res = self.get_scoped_value(response, ['Độ phân giải'])
             
@@ -268,7 +271,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the screen refresh rate in Hz from the response.
         """
-        return self.get_scoped_value(response, ['Tần số quét'])
+        return self.get_scoped_value(response, ['Tần số quét', 'Màn hình'])
         try:
             res = self.get_scoped_value(response, ['Tần số quét'])
             search_value = re.search(r'\d+(\s)?Hz', res)
@@ -286,7 +289,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         Extracts the screen brightness in nits from the response.
         """
-        return self.get_scoped_value(response, ['Công nghệ màn hình'])
+        return self.get_scoped_value(response, ['Công nghệ màn hình', 'Màn hình'])
         try:
             res = self.get_scoped_value(response, ['Công nghệ màn hình'])
             
@@ -393,7 +396,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
             
         except:
             return "n/a"
-    
+        
     # Operating System
     def parse_default_os(self, response: Response): 
         """
@@ -444,7 +447,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         """
         try:
             
-            return response.xpath("//b[contains(., 'Bảo hành')]/text()").get()
+            return response.xpath("//b[contains(., 'Bảo hành')]/text()").get().strip()
                 
             search_value = re.search(r'(\d+)\s*tháng', res)
             if search_value:
@@ -475,7 +478,7 @@ class AnphatSpider(BaseLaptopshopPageSpider):
         Example: in VND.
         """
         try:
-            return response.xpath("//td[contains(., 'Giá khuyến mại:')]/following-sibling::td//b/text()").get()
+            return response.xpath("//tr//td[contains(., 'Giá khuyến mại:')]/following-sibling::td//b/text()").get()
 
             for path in paths:
                 price = response.xpath(path).get()
