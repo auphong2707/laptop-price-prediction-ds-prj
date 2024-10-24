@@ -14,26 +14,19 @@ class PhongvuSpider(BaseLaptopshopLoadmoreButtonSpider):
     product_site_css = "a.css-pxdb0j::attr(href)"
     loadmore_button_css = '.css-b0m1yo'
     close_button_xpaths = ["//div[@class='css-73p2ms']/span"]
+    show_technical_spec_button_xpath = "//div[contains(text(), 'Xem thêm nội dung')]"
+    source = 'phongvu'
 
     def get_scoped_value(self, response, names):
         possibile_values = [
-            "//div[@class='css-1lchwqw' and text()='{}']/following-sibling::div[@class='css-1lchwqw']".format(name)
-            for name in names
-            ] + [
-                "//div[text()='{}'/following-sibling::div/text()".format(name)
-                for name in names
-            ] + [
-                "//div[text()='{}']/following-sibling::div/text()".format(name)
-                for name in names
-            ] + [
-                "//div[contains(text(), '{}')]/following-sibling::div[1]/text()".format(name)
+                "//div[@class='css-9s7q9u']//div[contains(text(), '{}')]/following-sibling::div//text()".format(name)
                 for name in names
             ]
             
         for value in possibile_values:
             scope = response.xpath(value).getall()
-            if scope:
-                return "".join(scope).strip()
+            if len(scope) > 0:
+                return " ".join(scope)
         
         return None
 
@@ -49,7 +42,7 @@ class PhongvuSpider(BaseLaptopshopLoadmoreButtonSpider):
             return re.sub(r'\s*\(.*?\)', '', full_text).strip()
         except Exception:
             return "N/A"
-
+    
     # Brand
     def parse_brand(self, response: Response): 
         """
@@ -67,78 +60,48 @@ class PhongvuSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the CPU name of the laptop from the response.
         """
-        try:
-            return self.get_scoped_value(response, ['CPU'])
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ['CPU'])
+        return res if res else "n/a"
 
     # VGA
     def parse_vga(self, response: Response):
         """
         Extracts the VGA name of the laptop from the response.
         """
-        try:
-            return self.get_scoped_value(response, ['Chip đồ họa'])
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ['Chip đồ họa'])
+        return res if res else "n/a"
 
         # RAM
     def parse_ram_amount(self, response: Response):
         """
         Extracts the amount of RAM in GB from the response.
         """
-        try:
-            return self.get_scoped_value(response, ["RAM"]) + ' '\
-                + self.get_scoped_value(response, ["Dung lượng RAM"])
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Ram", "Dung lượng RAM"])
+        return res if res else "n/a"
     
-    def parse_ram_type(self, response: Response): 
+    def parse_ram_type(self, response: Response):
         """
         Extracts the type of RAM from the response.
         Example: DDR3, DDR4, etc.
         """
-        try:
-            return self.get_scoped_value(response, ["RAM"])
-            # if ram_type.split().includes("Onboard"):
-            #     index = ram_type.split().index("Onboard")
-            #     return ram_type.split()[index + 1]
-            # elif ram_type.split().includes("Onbard"):
-            #     index = ram_type.split().index("Onbard")
-            #     return  ram_type.split()[index + 1]
-            # else:
-            #     index = -1
-            #     for i, word in enumerate(ram_type.split()):
-            #         if "GB" in word:
-            #             index = i
-            #         break
-            #     return ram_type.split()[index + 1]
-        except Exception:
-            return "N/A"
+        res =  self.get_scoped_value(response, ["Ram"])
+        return res if res else "n/a"
     
     # Storage
     def parse_storage_amount(self, response: Response):
         """
         Extracts the amount of storage in GB from the response.
         """
-        try:
-            storage = self.get_scoped_value(response, ["Dung lượng SSD", "Lưu trữ"]).split(" ")
-            if "TB" in storage[0]:
-                return int(storage[0].strip('TB')) * 1024
-            else:
-                return int(storage[0].strip('GB'))
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Dung lượng SSD", "Lưu trữ"])
+        return res if res else "n/a"
     
     def parse_storage_type(self, response: Response):
         """
         Extracts the type of storage from the response.
         Example: HDD, SSD, SSHD.
         """
-        try:
-            return self.get_scoped_value(response, ["Dung lượng SSD", "Lưu trữ"])
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Dung lượng SSD", "Lưu trữ"])
+        return res if res else "n/a"
     
     # Webcam
     def parse_webcam_resolution(self, response: Response): 
@@ -146,161 +109,94 @@ class PhongvuSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the webcam resolution from the response.
         Example: HD, FHD, 4K.
         """
-        try:
-            if self.get_scoped_value(response, ["Thương hiệu"]) == "APPLE":
-                return self.get_scoped_value(response, ["Màn hình"]).split()[-2]
-            else:
-                return self.get_scoped_value(response, ["Webcam"]).strip("Webcam")
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Webcam", "Màn hình"])
+        return res if res else "n/a"
     
     # Screen
     def parse_screen_size(self, response: Response): 
         """
         Extracts the screen size in inches from the response.
         """
-        try:
-            return self.get_scoped_value(response, ["Màn hình"]).split()[0]
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Màn hình"])
+        return res if res else "n/a"
         
     def parse_screen_resolution(self, response: Response):
         """
         Extracts the screen resolution from the response.
         Example: HD, FHD, 4K.
         """
-        try:
-            screen_res = self.get_scoped_value(response, ["Màn hình"])
-            pattern = r"\d+\s*x\s*\d+"
-            match = re.search(pattern, screen_res)
-            if match:
-                resolution = match.group()
-            return resolution
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Màn hình"])
+        return res if res else "n/a"
+    
+    def parse_screen_refresh_rate(self, response: Response): 
+        """
+        Extracts the screen refresh rate in Hz from the response.
+        """
+        res = self.get_scoped_value(response, ['Màn hình'])
+        return res if res else "n/a"
+    
+    def parse_screen_brightness(self, response: Response): 
+        """
+        Extracts the screen brightness in nits from the response.
+        """
+        res = self.get_scoped_value(response, ['Màn hình'])
+        return res if res else "n/a"
     
     # Battery
     def parse_battery_capacity(self, response: Response):
         """
         Extracts the battery capacity from the response.
         """
-        try:
-            return self.get_scoped_value(response, ["Công suất pin"])
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Công suất pin", "Pin"])
+        return res if res else "n/a"
     
     def parse_battery_cells(self, response: Response):
         """
         Extracts the number of battery cells from the response.
         """
-        try:
-            return self.get_scoped_value(response, ["Pin"])
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Pin"])
+        return res if res else "n/a"
     
     # Size
-    def parse_width(self, response: Response):
+    def parse_size(self, response: Response):
         """
-        Extracts the width of the laptop from the response.
+        Extracts the size of the laptop from the response.
         """
-        try:
-            size = self.get_scoped_value(response, ["Kích thước", "Kích thước, khối lượng"]).split(" | ")[-1].strip()
-            size = size.split("x")
-            return size[1]
-        except Exception:
-            return "N/A"
-    
-    def parse_depth(self, response: Response):
-        """
-        Extracts the depth of the laptop from the response.
-        """
-        try:
-            size = self.get_scoped_value(response, ["Kích thước", "Kích thước, khối lượng"]).split(" | ")[-1].strip()
-            size = size.split("x")
-            return size[2]
-        except Exception:
-            return "N/A"
-    
-    def parse_height(self, response: Response):
-        """
-        Extracts the height of the laptop from the response.
-        """
-        try:
-            size = self.get_scoped_value(response, ["Kích thước", "Kích thước, khối lượng"]).split(" | ")[-1].strip()
-            size = size.split("x")
-            return size[0]
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Kích thước, khối lượng", "Kích thước"])
+        return res if res else "n/a"
     
     # Weight
     def parse_weight(self, response: Response):
         """
         Extracts the weight of the laptop in kg from the response.
         """
-        try:
-            return float(self.get_scoped_value(response, ["Kích thước, khối lượng tịnh:", "Khối lượng:"]).split(" ")[0])
-        except Exception:
-            return "N/A"
-    
+        res = self.get_scoped_value(response, ["Kích thước, khối lượng", "Khối lượng"])
+        return res if res else "n/a"
+
     # Connectivity
-    def parse_number_orts(self, response: Response):
+    def parse_connectivity(self, response: Response):
         """
         Extracts the number of USB-A ports from the response.
         """
-        try:
-            return self.get_scoped_value(response, ["Cổng kết nối"])
-        except Exception:
-            return "N/A"
-    
-    def parse_number_audio_jacks(self, response: Response):
-        """
-        Extracts the number of audio jacks from the response.
-        """
-        try:
-            search = re.search(r'Jack tai nghe', self.get_scoped_value(response, ["Cổng giao tiếp:"]))
-            return 1 if search else 0
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Cổng kết nối"])
+        return res if res else "n/a"
     
     # Operating System
-    def parse_default_os(self, response: Response): 
+    def parse_default_os(self, response: Response):
         """
         Extracts the default operating system of the laptop from the response.
         Example: Windows, Linux, etc.
         """
-        try:
-            return self.get_scoped_value(response, ["Hệ điều hành"])
-        except Exception:
-            return "N/A"
-    
-    # Color
-    def parse_color(self, response: Response): 
-        """
-        Extracts the color of the laptop from the response.
-        Example: Black, White, etc.
-        """
-        try:
-            return self.get_scoped_value(response, ["Màu sắc"])
-        except:
-            return "N/A"
-    
-    # Origin: Unavailable
-    def parse_origin(self, response: Response):
-        """
-        Extracts the origin of the laptop from the response.
-        Example: China, Taiwan, USA, etc.
-        """
-        return "N/A"
+        res = self.get_scoped_value(response, ["Hệ điều hành"])
+        return res if res else "n/a"
     
     # Warranty
     def parse_warranty(self, response: Response): 
         """
         Extracts the warranty period in months from the response.
         """
-        try:
-            return self.get_scoped_value(response, ["Bảo hành"])
-        except Exception:
-            return "N/A"
+        res = self.get_scoped_value(response, ["Bảo hành"])
+        return res if res else "n/a"
     
     # Price
     def parse_price(self, response: Response):
@@ -308,9 +204,7 @@ class PhongvuSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the price of the laptop from the response.
         Example: in VND.
         """
-        try:
-            return response.xpath("//div[contains(@class, 'att-product-detail-latest-price')]/text()").get()
-        except Exception:
-            return "N/A"
+        res = response.xpath("//div[contains(@class, 'att-product-detail-latest-price')]/text()").get()
+        return res if res else "n/a"
     
     # [PARSE FEATURES SECTION: END]

@@ -29,7 +29,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
     
     options = webdriver.FirefoxOptions()
     options.page_load_strategy = 'none'
-    #options.add_argument('--headless')
+    options.add_argument('--headless')
     driver = webdriver.Firefox(options=options)
 
     _num_product = 0

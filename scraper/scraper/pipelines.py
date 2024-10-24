@@ -37,7 +37,7 @@ class TransformPipeline:
     class GeneralTransformer:
         def __init__(self, adapter: ItemAdapter):
             self.adapter = adapter
-            self.debug_mode = True
+            self.debug_mode = False
 
         def transform_cpu(self):
             """Transforms the CPU field to a standardized format."""
