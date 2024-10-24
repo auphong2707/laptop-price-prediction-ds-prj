@@ -50,8 +50,7 @@ class PhongvuSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: Dell, HP, etc.
         """
         try:
-            text = self.get_scoped_value(response, ['Thương hiệu'])
-            return re.search(r'>(.*?)<', text).group(1)
+            return response.xpath("//div[text()='Thương hiệu']/following-sibling::div/text()").get()
         except Exception:
             return "N/A"
 
