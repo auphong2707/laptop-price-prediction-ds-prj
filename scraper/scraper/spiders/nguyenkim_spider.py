@@ -1,9 +1,9 @@
 import scrapy
 from scrapy.http import Response, Request
 import re
-import logging 
 from .base_laptopshop_spider import BaseLaptopshopPageSpider
-from scrapy_selenium import SeleniumRequest
+
+from selenium import webdriver
 
 # create scraper
 class NguyenkimScraper(BaseLaptopshopPageSpider):
@@ -14,6 +14,7 @@ class NguyenkimScraper(BaseLaptopshopPageSpider):
     page_css = "a.page.cm-history.ty-pagination__item::attr(href)"
     show_technical_spec_button_xpath = '//*[@id="productSpecification_viewFull"]'
     source = "nguyenkim"
+    
     
     def get_scoped_value(self, response, names):
         possibile_values = [
