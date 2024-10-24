@@ -8,7 +8,8 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
     start_urls = ['https://laptopaz.vn/laptop-moi.html']
 
     product_site_css = ".p-img a::attr(href)"
-    page_css = ".page-item:not(.disabled) .page-link"
+    page_css = ".page-item:not(.disabled) .page-link::attr(href)"
+    #page_css = None
     source = "laptopaz"
 
     def get_scoped_value(self, response, names, trash = []):
@@ -32,15 +33,20 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
         return None
 
     def parse_brand(self, response: Response):
-        res = response.css('h1.title::text').get().split(']')[-1].split()[0].lower()
+        res = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get()
+        if res:
+            res = res.split(']')[-1].split('laptop')[-1]
         return res if res else 'n/a'
     
     def parse_name(self, response: Response):
-        res = ' '.join(response.css('h1.title::text').get().split(']')[-1].split()).lower().split('(')[0].strip()
-        if 'Gaming' in res:
-            return res.split('Gaming ')[1]
-        else:
-            return res if res else 'n/a'
+        res = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get()
+        if res:
+            res = ' '.join(res.split(']')[-1].split()).lower().split('(')[0].strip()
+            if 'Gaming' in res:
+                return res.split('Gaming ')[1]
+            else:
+                return res
+        return 'n/a'
     
     def parse_cpu(self, response: Response):
         """
