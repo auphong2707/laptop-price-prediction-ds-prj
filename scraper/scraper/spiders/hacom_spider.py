@@ -12,6 +12,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
     ]
     product_site_css = ".p-name a::attr(href)"
     loadmore_button_css = ".btn-view-more"
+    source = 'hacom'
 
     def get_scoped_value(self, response: Response, list_names, category_names=[]):
         possible_values = [
@@ -30,16 +31,16 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             "//div[@class='item' and contains(text(), '{}')]/text()".format(name)
             for name in list_names
         ] + [
-            "//td[p/strong[text(), '{}']]/following-sibling::td/p/text()".format(name) 
+            "//td[p/strong[contains(text(),'{}')]]/following-sibling::td/p/text()".format(name) 
             for name in list_names
         ] + [
-            "//td[p[text(), '{}']]/following-sibling::td/p/text()".format(name)
+            "//td[p[contains(text(),'{}')]]/following-sibling::td/p/text()".format(name)
             for name in list_names
         ]
         for value in possible_values:
             scope = response.xpath(value).getall()
             if len(scope) != 0:
-                return ' '.join(re.sub(r'[^\x20-\x7E\u00C0-\u024F\u1E00-\u1EFF]', ' ', ' '.join(scope)).split()).encode('latin1').decode('utf-8')
+                return ' '.join(re.sub(r'[^\x20-\x7E\u00C0-\u024F\u1E00-\u1EFF]', ' ', ' '.join(scope)).split()).encode('utf-8').decode('latin1').encode('latin1').decode('utf-8').lower()
             
         return None
 
@@ -51,7 +52,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             else:
                 return brand[0]
         except:
-            return "N/A"
+            return "n/a"
     
     def parse_name(self, response: Response):
         try:
@@ -61,12 +62,15 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             else:
                 return name.split('Laptop ')[0]
         except:
-            return "N/A"
+            return "n/a"
     
     def parse_cpu(self, response: Response):
         """
         Extracts the CPU name of the laptop from the response.
         """
+        res = self.get_scoped_value(response, ['CPU', 'Bộ vi xử lý', 'Tên bộ vi xử lý'], 
+                                        [("Bộ vi xử lý (CPU)", "Tên bộ vi xử lý")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['CPU', 'Bộ vi xử lý', 'Tên bộ vi xử lý'], 
                                         [("Bộ vi xử lý (CPU)", "Tên bộ vi xử lý")])
@@ -92,6 +96,9 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the VGA name of the laptop from the response.
         """
+        res = self.get_scoped_value(response, ['VGA', 'Card đồ họa', 'Bộ xử lý'],
+                                        [("Đồ Họa (VGA)", "Bộ xử lý")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['VGA', 'Card đồ họa', 'Bộ xử lý'],
                                         [("Đồ Họa (VGA)", "Bộ xử lý")])
@@ -122,6 +129,9 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the amount of RAM in GB from the response.
         """
+        res = self.get_scoped_value(response, ['RAM', "Bộ nhớ trong", "Ram"], 
+                                        [("Bộ nhớ trong (RAM Laptop)", "Dung lượng")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['RAM', "Bộ nhớ trong", "Ram"], 
                                         [("Bộ nhớ trong (RAM Laptop)", "Dung lượng")])
@@ -140,6 +150,9 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the type of RAM from the response.
         Example: DDR3, DDR4, etc.
         """
+        res = self.get_scoped_value(response, ['RAM', "Bộ nhớ trong", "Ram", "Dung lượng"],
+                                        [("Bộ nhớ trong (RAM Laptop)", "Dung lượng")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['RAM', "Bộ nhớ trong", "Ram", "Dung lượng"],
                                         [("Bộ nhớ trong (RAM Laptop)", "Dung lượng")])
@@ -159,6 +172,9 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the amount of storage in GB from the response.
         """
+        res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', "SSD"],
+                                        [('Ổ cứng', 'Dung lượng')])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', "SSD"],
                                         [('Ổ cứng', 'Dung lượng')])
@@ -182,6 +198,9 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the type of storage from the response.
         Example: HDD, SSD, SSHD.
         """
+        res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD'],
+                                        [("Ổ cứng", "Dung lượng")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', 'SSD'],
                                         [("Ổ cứng", "Dung lượng")])
@@ -208,6 +227,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the webcam resolution from the response.
         Example: HD, FHD, 4K.
         """
+        res = self.get_scoped_value(response, ['Webcam', 'Camera'], [("tiếp mở", "Camera")])
+        return ''.join(res.lower().split()) if res else 'n/a'
         try:
             res = ''.join(self.get_scoped_value(response, ['Webcam', 'Camera'], [("tiếp mở", "Camera")])
                           .lower().split())
@@ -228,6 +249,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the screen size in inches from the response.
         """
+        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
             res = re.search(r'(\d+(\.\d+)?)\s*(["\']|(-)?\s*inch)', res)
@@ -246,6 +269,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the screen resolution from the response.
         Example: 1920x1080, 2560x1600, etc.
         """
+        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Độ phân giải")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Độ phân giải")])
             
@@ -265,6 +290,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the screen refresh rate in Hz from the response.
         """
+        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
             search_value = re.search(r'\d+(\s)?Hz', res)
@@ -282,6 +309,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the screen brightness in nits from the response.
         """
+        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
             
@@ -301,6 +330,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the battery capacity in Whr from the response.
         """
+        res = self.get_scoped_value(response, ['Pin'], [("Pin Laptop", "Dung lượng pin")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Pin'], [("Pin Laptop", "Dung lượng pin")])
             res = res.lower()
@@ -320,6 +351,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the number of battery cells from the response.
         """
+        res = self.get_scoped_value(response, ['Pin'], [("Pin Laptop", "Dung lượng pin")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Pin'], [("Pin Laptop", "Dung lượng pin")])
             res = res.lower()
@@ -335,41 +368,12 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             return "N/A"
     
     # Size
-    def parse_width(self, response: Response):
-        """
-        Extracts the width of the laptop in cm from the response.
-        """
-        try:
-            res = self.get_scoped_value(response, ['Kích thước (rộng x dài x cao)', 'Thiết kế (rộng x dài x cao)'], [("Thông tin khác", "Thiết kế")])
-
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values[:3], reverse=True)
-            
-            res = values[0] if values[0] < 100 else values[0] / 10
-            
-            return round(res, 2)
-        except:
-            return "N/A"
-    
-    def parse_depth(self, response: Response):
-        """
-        Extracts the depth of the laptop in cm from the response.
-        """
-        try:
-            res = self.get_scoped_value(response, ['Kích thước (rộng x dài x cao)', 'Thiết kế (rộng x dài x cao)'], [("Thông tin khác", "Thiết kế")])
-            values = [float(num) for num in re.findall(r'-?\d+\.\d+|-?\d+', res)]
-            values = sorted(values[:3], reverse=True)
-
-            res = values[1] if values[1] < 100 else values[0] / 10
-                
-            return round(res, 2)
-        except:
-            return "N/A"
-    
-    def parse_height(self, response: Response):
+    def parse_size(self, response: Response):
         """
         Extracts the height of the laptop in cm from the response.
         """
+        res = self.get_scoped_value(response, ['Kích thước (rộng x dài x cao)', 'Thiết kế (rộng x dài x cao)'], [("Thông tin khác", "Thiết kế")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Kích thước (rộng x dài x cao)', 'Thiết kế (rộng x dài x cao)'], [("Thông tin khác", "Thiết kế")])
             
@@ -387,6 +391,9 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the weight of the laptop in kg from the response.
         """
+        res = self.get_scoped_value(response, ['Trọng lượng', 'Cân nặng', "Khối lượng"],
+                                        [("Thông tin khác", "Trọng Lượng")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Trọng lượng', 'Cân nặng', "Khối lượng"],
                                         [("Thông tin khác", "Trọng Lượng")])
@@ -402,10 +409,13 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             return "N/A"
     
     # Connectivity
-    def parse_number_usb(self, response: Response, pattern):
+    def parse_connectivity(self, response: Response):
+        res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'],
+                                        [("Giao tiếp mở rộng", "Kết nối USB"), ("Giao tiếp mở rộng", "Kết nối HDMI/ VGA"), ("Giao tiếp mở rộng", "Jack tai nghe"), ("Kết nối", "Cổng giao tiếp")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'],
-                                        [("Giao tiếp mở rộng", "Kết nối USB")])
+                                        [("Giao tiếp mở rộng", "Kết nối USB"), ("Giao tiếp mở rộng", "Kết nối HDMI/ VGA"), ("Giao tiếp mở rộng", "Jack tai nghe")])
             res = res.lower()
             if re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE) != '':
                 res = re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE)
@@ -431,57 +441,15 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         except:
             return "N/A"
     
-    def parse_number_usb_a_ports(self, response: Response):
-        """
-        Extracts the number of USB-A ports from the response.
-        """
-        return self.parse_number_usb(response, r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a)\b')
-    
-    def parse_number_usb_c_ports(self, response: Response):
-        """
-        Extracts the number of USB-C ports from the response.
-        """
-        return self.parse_number_usb(response, r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b')
-    
-    def parse_has_port(self, response: Response, pattern):
-        try:
-            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'],
-                                        [("Giao tiếp mở rộng", "Kết nối HDMI/ VGA"), ("Giao tiếp mở rộng", "Jack tai nghe")])
-            res = res.lower()
-            
-            if res:
-                port_search = re.search(pattern, res)
-                return 1 if port_search else 0
-            else:
-                return "N/A"
-            
-        except:
-            return "N/A"
-    
-    def parse_number_hdmi_ports(self, response: Response):
-        """
-        Extracts the number of HDMI ports from the response.
-        """
-        return self.parse_has_port(response, r'\bhdmi\b')
-    
-    def parse_number_ethernet_ports(self, response: Response):
-        """
-        Extracts the number of Ethernet ports from the response.
-        """
-        return self.parse_has_port(response, r'\brj-45|ethernet\b')
-    
-    def parse_number_audio_jacks(self, response: Response):
-        """
-        Extracts the number of audio jacks from the response.
-        """
-        return self.parse_has_port(response, r'\bheadphone|3.5mm\b')
-    
     # Operating System
     def parse_default_os(self, response: Response): 
         """
         Extracts the default operating system of the laptop from the response.
         Example: Windows, Linux, etc.
         """
+        res = self.get_scoped_value(response, ['Hệ điều hành', "OS"],
+                                        [("Hệ điều hành (Operating System)", "Hệ điều hành đi kèm")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Hệ điều hành', "OS"],
                                         [("Hệ điều hành (Operating System)", "Hệ điều hành đi kèm")])
@@ -500,6 +468,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the color of the laptop from the response.
         Example: Black, White, etc.
         """
+        res = self.get_scoped_value(response, ['Màu sắc', "Mầu sắc"], [("Thông tin khác", "Màu sắc")])
+        return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màu sắc', "Mầu sắc"], [("Thông tin khác", "Màu sắc")])
             
@@ -510,20 +480,18 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         except:
             return "N/A"
     
-    # Origin: Not available
-    def parse_origin(self, response: Response): 
-        """
-        Extracts the origin of the laptop from the response.
-        Example: China, Taiwan, USA, etc.
-        """
-        return "N/A"
-    
     # Warranty
     def parse_warranty(self, response: Response): 
         """
         Extracts the warranty period in months from the response.
         """
-        try:
+        res = response.xpath("//div[contains(@class, 'pd-warranty-group')]//p[contains(text(), 'Bảo hành')]/text()").get()
+        if res is None:
+            res = response.xpath("//strong[contains(text(), 'Bảo hành')]/following-sibling::text()").get()
+        if res is None:
+            res = response.xpath('//span[contains(text(), "Bảo hành")]/text()').get()
+        return res if res else 'n/a'
+        '''try:
             res = response.xpath("//div[contains(@class, 'pd-warranty-group')]//p[contains(text(), 'Bảo hành')]/text()").get()
             if res is None:
                 res = response.xpath("//strong[contains(text(), 'Bảo hành')]/following-sibling::text()").get()
@@ -542,15 +510,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             return res
             
         except:
-            return "N/A"
-    
-    # Release Date: Not available
-    def parse_release_date(self, response: Response): 
-        """
-        Extracts the release date of the laptop from the response.
-        Format: dd/mm/yyyy.
-        """
-        return "N/A"
+            return "N/A"'''
     
     # Price
     def parse_price(self, response: Response): 
@@ -558,15 +518,9 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the price of the laptop from the response.
         Example: in VND.
         """
-        try:
-            paths = ["//p[@class='pd-price']/@data-price", '//span[@class="pro-price a"]/text()']
+        paths = ["//p[@class='pd-price']/@data-price", '//span[@class="pro-price a"]/text()']
 
-            for path in paths:
-                price = response.xpath(path).get()
-                
-                if price:
-                    price = price.replace('₫', '').replace('.', '').strip()
-                    return int(price)
-            return "N/A"
-        except:
-            return "N/A"
+        for path in paths:
+            res = response.xpath(path).get()
+            return res if res else 'n/a'
+        
