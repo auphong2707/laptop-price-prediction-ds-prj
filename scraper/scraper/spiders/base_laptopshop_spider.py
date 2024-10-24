@@ -13,6 +13,12 @@ logging.disable()
 
 class BaseLaptopshopSpider(scrapy.Spider):
 
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'scraper.pipelines.TransformPipeline': 300
+        }
+    }
+
     product_site_css = None
     show_technical_spec_button_xpath = None
     close_button_xpaths = []
