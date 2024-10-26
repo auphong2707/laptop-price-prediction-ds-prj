@@ -15,27 +15,37 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
     source = 'laptop88'
     
 
-    def get_scoped_values(self, response, names):
+    def get_scoped_values(self, response, list_names, category_names=[]):
         possible_values = [
-            "//td[strong[text()='{}']]/following-sibling::td/text()".format(name)
-            for name in names
+            "//div[@class='thongsokythuat']//tr[td[normalize-space(.) = '{}']]/following-sibling::tr[1][td[normalize-space(.) = '{}']]/td[2]//text()".format(name[0], name[1])
+            for name in category_names
         ] + [
-            "//tr[td//strong[contains(text(), '{}')]]//text()".format(name)
-            for name in names
+            "//div[@class='thongsokythuat']//tr[td[normalize-space(.) = '{}']]/following-sibling::tr[td[normalize-space(.) = '{}']]/td[2]//text()".format(name[0], name[1])
+            for name in category_names
         ] + [
-            "//tr[td[contains(text(),'{}')]]/td[@class='alignleft']/div[@class='rightValue']/text()".format(name)
-            for name in names
+            "//div[@class='thongsokythuat']//tr[td//strong[normalize-space(text()) = '{}']]//text()".format(name)
+            for name in list_names
         ] + [
-            "//tr[td[1][contains(text(), '{}')]]/td[2]//span[@class='configuration-content fl']".format(name)
-            for name in names
+            "//h4[normalize-space(text()) = '{}']/following-sibling::table[1]//td[contains(normalize-space(text()), '{}')]/following-sibling::td/p/text()".format(name[0], name[1])
+            for name in category_names
         ] + [
-            "//tr[th[contains(text(), '{}')]]/td//text()".format(name)
-            for name in names
+            "//div[@class='thongsokythuat']//tr[th[normalize-space(text()) = '{}']]/td//text()".format(name)
+            for name in list_names
         ] + [
-            "//tr[td[1][contains(., '{}')]]/td[2]//text()".format(name)
-            for name in names
+            "//div[@class='thongsokythuat']//tr[td[1][normalize-space(text()) = '{}']]/td[2]//text()".format(name)
+            for name in list_names
         ] + [
-            
+            "//div[@class='thongsokythuat']//tr[td[contains(normalize-space(text()), '{}')]]/td[2]//text()".format(name)
+            for name in list_names
+        ] + [
+            "//div[@class='thongsokythuat']//tr[th[contains(normalize-space(text()), '{}')]]/td//text()".format(name)
+            for name in list_names
+        ] + [
+            "//div[@class='thongsokythuat']//td[normalize-space(text()) = '{}']/following-sibling::th/strong/text()".format(name)
+            for name in list_names
+        ] + [
+            "//div[@class='thongsokythuat']//li[contains(normalize-space(), '{}')]/text()".format(name)
+            for name in list_names
         ]
         
         for value in possible_values:
@@ -49,8 +59,11 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Returns True if the response is valid to be scraped.
         """
+        number_of_stores = response.xpath("//div[@class='product_store']//span[@id='total-store']/text()").get()
+        if number_of_stores and int(number_of_stores) == 0:
+            return False
         product_name = response.xpath("//h2[@class='name-product']/text()").get().lower()
-        for _ in ["ipad", "tablet", "cũ"]:
+        for _ in ["ipad", "tablet", "cũ", "new outlet"]:
             if _ in product_name:
                 return False
         
@@ -110,7 +123,11 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the amount of RAM in GB from the response.
         """
-        ram_amount = self.get_scoped_values(response, ['Memory', 'Dung lượng', 'RAM', 'Ram:', 'Bộ nhớ trong - Ram', "Bộ nhớ", ])
+        ram_amount = self.get_scoped_values(response, ['Bộ nhớ trong', 'RAM', 'Ram', 'Ram:', 'Bộ nhớ trong - Ram', 
+                                                       'Dung lượng RAM', 'Memory', 'Dung lượng', 'Bộ nhớ'], 
+                                                    [['Bộ nhớ trong', 'Dung lượng'], ['Bộ nhớ trong', 'RAM'],
+                                                     ['Bộ nhớ trong (RAM)', 'RAM'], ['Bộ vi xử lý', 'RAM'], ['BỘ NHỚ RAM', 'Dung lượng RAM'],
+                                                     ['BỘ NHỚ MÁY (RAM)', 'Dung lượng'], ['Bộ nhớ trong (RAM)', 'Dung lượng']])
         return ram_amount if ram_amount else 'n/a'
     
     def parse_ram_type(self, response: Response): 
@@ -118,7 +135,8 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the type of RAM from the response.
         Example: DDR3, DDR4, etc.
         """
-        ram = self.get_scoped_values(response, ['Memory', 'Dung lượng', 'RAM', 'Ram:'])
+        ram = self.get_scoped_values(response, ['Bộ nhớ trong', 'RAM', 'Ram', 'Ram:', 'Bộ nhớ trong - Ram', 'Memory', 'Dung lượng', 'Bộ nhớ'],
+                                     [['BỘ NHỚ MÁY (RAM)', 'Công nghệ'] ])
         return ram if ram else 'n/a'
     
     # Storage
@@ -126,7 +144,10 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the amount of storage in GB from the response.
         """
-        storage = self.get_scoped_values(response, ['Ổ cứng', 'Storage', 'Dung lượng ổ cứng', 'Ổ cứng:'])
+        storage = self.get_scoped_values(response, ['Ổ cứng', 'Ổ Cứng', 'Ổ cứng:', 'SSD', 'Storage',
+                                                    'Dung lượng ổ cứng', 'Ổ đĩa cứng - HDD', 'Dung lượng']) \
+                + self.get_scoped_values(response, [ 'Dung lượng', 'Ổ cứng', 'Ổ Cứng', 'Ổ cứng:', 'SSD', 'Storage',
+                                                    'Dung lượng ổ cứng', 'Ổ đĩa cứng - HDD',])
         return storage if storage else 'n/a'
     
     def parse_storage_type(self, response: Response): 
@@ -134,7 +155,8 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the type of storage from the response.
         Example: HDD, SSD, SSHD.
         """
-        storage = self.get_scoped_values(response, ['Ổ cứng', 'Storage', 'Dung lượng ổ cứng', 'Ổ cứng:'])
+        storage = self.get_scoped_values(response, ['Ổ cứng', 'Ổ Cứng', 'Ổ cứng:', 'SSD', 'Storage',
+                                                    'Dung lượng ổ cứng', 'Ổ đĩa cứng - HDD', 'Dung lượng'])
         return storage if storage else 'n/a'
     
     # Webcam
@@ -197,7 +219,7 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the size of the laptop in cm from the response.
         """
         size = self.get_scoped_values(response, ['Kích thước', 'Dimensions'])
-        return "N/A"
+        return size if size else "n/a"
     
     # Weight
     def parse_weight(self, response: Response): 
