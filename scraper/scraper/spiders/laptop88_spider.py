@@ -173,7 +173,9 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the screen size in inches from the response.
         """
-        screen = self.get_scoped_values(response, ['Display', 'Độ phân giải:', 'Màn hình'])
+        screen = self.get_scoped_values(response, ['Display', 'Độ phân giải:', 'Màn hình', 'Kích cỡ màn hình',
+                                                   'Kích thước màn hình', 'MÀN HÌNH HIỂN THỊ ', 'Màn hình - Monitor', 
+                                                   'Hiển thị'])
         return screen if screen else 'n/a'
     
     def parse_screen_resolution(self, response: Response): 
