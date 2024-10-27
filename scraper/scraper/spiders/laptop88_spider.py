@@ -174,8 +174,8 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the screen size in inches from the response.
         """
         screen = self.get_scoped_values(response, ['Display', 'Độ phân giải:', 'Màn hình', 'Kích cỡ màn hình',
-                                                   'Kích thước màn hình', 'MÀN HÌNH HIỂN THỊ ', 'Màn hình - Monitor', 
-                                                   'Hiển thị'])
+                                                   'Kích thước màn hình', 'MÀN HÌNH HIỂN THỊ', 'Màn hình - Monitor', 
+                                                   'Hiển thị', 'Screen size', 'Size màn hình', 'Màn Hình', 'Màn hình:'])
         return screen if screen else 'n/a'
     
     def parse_screen_resolution(self, response: Response): 
@@ -183,7 +183,9 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the screen resolution from the response.
         Example: HD, FHD, 4K.
         """
-        screen = self.get_scoped_values(response, ['Display', 'Độ phân giải:', 'Màn hình'])
+        screen = self.get_scoped_values(response, ['Display', 'Độ phân giải:', 'Màn hình', 'Kích cỡ màn hình',
+                                                   'Kích thước màn hình', 'MÀN HÌNH HIỂN THỊ', 'Màn hình - Monitor', 
+                                                   'Hiển thị', 'Screen size', 'Size màn hình', 'Màn Hình', 'Màn hình:'])
         return screen if screen else 'n/a'
 
     def parse_screen_refresh_rate(self, response: Response): 
