@@ -12,6 +12,15 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
     #page_css = None
     source = "laptopaz"
 
+    def yield_condition(self, response: Response):
+        paths = ["//span[@class='box-text-update2021']/span[@class='show-shadow']/text()"]
+
+        for path in paths:
+            res = response.xpath(path).get()
+            if res:
+                return True
+        return False
+
     def get_scoped_value(self, response, names, trash = []):
         possible_values = [
                 "//td[span/strong[text() = '{}']]/following-sibling::td/span/text()".format(name)
