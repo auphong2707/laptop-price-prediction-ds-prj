@@ -37,17 +37,25 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             "//td[p[contains(text(),'{}')]]/following-sibling::td/p/text()".format(name)
             for name in list_names
         ]
+        scope = []
         for value in possible_values:
-            scope = response.xpath(value).getall()
-            if len(scope) != 0:
-                return ' '.join(re.sub(r'[^\x20-\x7E\u00C0-\u024F\u1E00-\u1EFF]', ' ', ' '.join(scope)).split()).encode('utf-8').decode('latin1').encode('latin1').decode('utf-8').lower()
+            scope += response.xpath(value).getall()
+        if len(scope) != 0:    
+            return ' '.join(re.sub(r'[^\x20-\x7E\u00C0-\u024F\u1E00-\u1EFF]', ' ', ' '.join(scope)).split()).encode('utf-8').decode('latin1').encode('latin1').decode('utf-8').lower()
             
         return None
 
     def parse_brand(self, response: Response):
         try:
-            brand = response.css('div.pd-info-right h1.sptitle2024::text').get().split()
-            if brand[0] == "Laptop":
+            brand = response.css('div.pd-info-right h1.sptitle2024::text').get().lower().split()
+            for _ in ['lenovo', 'dell', 'lg']:
+                if _ in brand:
+                    return _
+            if 'surface' in brand:
+                return 'microsoft'
+            if 'macbook' in brand:
+                return 'apple'
+            if brand[0] == "laptop":
                 return brand[1]
             else:
                 return brand[0]
@@ -57,10 +65,12 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
     def parse_name(self, response: Response):
         try:
             name = response.css('div.pd-info-right h1.sptitle2024::text').get().split('(')[0]
-            if 'Laptop' in name:
-                return name.split('Laptop ')[1]
-            else:
-                return name.split('Laptop ')[0]
+            # if 'Laptop' in name:
+            #     return name.split('Laptop ')[1]
+            # else:
+            #     return name.split('Laptop ')[0]
+            name = name.replace('Laptop ', '')
+            return name
         except:
             return "n/a"
     
@@ -129,8 +139,9 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the amount of RAM in GB from the response.
         """
-        res = self.get_scoped_value(response, ['RAM', "Bộ nhớ trong", "Ram"], 
-                                        [("Bộ nhớ trong (RAM Laptop)", "Dung lượng")])
+        res = self.get_scoped_value(response, ['RAM', "Số khe cắm", "Ram", "Bộ nhớ trong"], 
+                                        [("Bộ nhớ trong", "Dung lượng"), ("Bộ nhớ RAM", "Dung lượng RAM"), 
+                                         ("Bộ nhớ trong", "RAM")])
         return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['RAM', "Bộ nhớ trong", "Ram"], 
@@ -151,7 +162,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         Example: DDR3, DDR4, etc.
         """
         res = self.get_scoped_value(response, ['RAM', "Bộ nhớ trong", "Ram", "Dung lượng"],
-                                        [("Bộ nhớ trong (RAM Laptop)", "Dung lượng")])
+                                        [("Bộ nhớ trong", "Dung lượng"), ("Bộ nhớ RAM", "Loại RAM"), 
+                                         ("Bộ nhớ trong", "Loại RAM")])
         return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['RAM', "Bộ nhớ trong", "Ram", "Dung lượng"],
@@ -172,7 +184,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the amount of storage in GB from the response.
         """
-        res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', "SSD"],
+        res = self.get_scoped_value(response, ['Ổ cứng', 'Ổ lưu trữ', 'Bộ nhớ', "SSD", "Ổ cứng:"],
                                         [('Ổ cứng', 'Dung lượng')])
         return res if res else 'n/a'
         try:
@@ -372,7 +384,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the height of the laptop in cm from the response.
         """
-        res = self.get_scoped_value(response, ['Kích thước (rộng x dài x cao)', 'Thiết kế (rộng x dài x cao)'], [("Thông tin khác", "Thiết kế")])
+        res = self.get_scoped_value(response, ['Kích thước', 'Kích thước (rộng x dài x cao)', 'Thiết kế (rộng x dài x cao)'], [("Thông tin khác", "Thiết kế")])
         return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Kích thước (rộng x dài x cao)', 'Thiết kế (rộng x dài x cao)'], [("Thông tin khác", "Thiết kế")])
@@ -413,33 +425,33 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'],
                                         [("Giao tiếp mở rộng", "Kết nối USB"), ("Giao tiếp mở rộng", "Kết nối HDMI/ VGA"), ("Giao tiếp mở rộng", "Jack tai nghe"), ("Kết nối", "Cổng giao tiếp")])
         return res if res else 'n/a'
-        try:
-            res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'],
-                                        [("Giao tiếp mở rộng", "Kết nối USB"), ("Giao tiếp mở rộng", "Kết nối HDMI/ VGA"), ("Giao tiếp mở rộng", "Jack tai nghe")])
-            res = res.lower()
-            if re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE) != '':
-                res = re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE)
+        # try:
+        #     res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp'],
+        #                                 [("Giao tiếp mở rộng", "Kết nối USB"), ("Giao tiếp mở rộng", "Kết nối HDMI/ VGA"), ("Giao tiếp mở rộng", "Jack tai nghe")])
+        #     res = res.lower()
+        #     if re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE) != '':
+        #         res = re.sub(r'^\s*[•-].*\n?', '', res, flags=re.MULTILINE)
             
             
-            while '(' in res and ')' in res:
-                res = re.sub(r'\([^()]*\)', '', res)
+        #     while '(' in res and ')' in res:
+        #         res = re.sub(r'\([^()]*\)', '', res)
 
-            res = re.split(r'[\n,]', res)
-            count = 0
-            for line in res:
-                if re.search(pattern, line):
-                    line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
-                    val = line.split()[0]
-                    if val[-1] == 'x': val = val[:-1]
+        #     res = re.split(r'[\n,]', res)
+        #     count = 0
+        #     for line in res:
+        #         if re.search(pattern, line):
+        #             line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
+        #             val = line.split()[0]
+        #             if val[-1] == 'x': val = val[:-1]
             
-                    if val.isnumeric():
-                        count += int(val)
-                    else:
-                        count += 1
+        #             if val.isnumeric():
+        #                 count += int(val)
+        #             else:
+        #                 count += 1
             
-            return count
-        except:
-            return "N/A"
+        #     return count
+        # except:
+        #     return "N/A"
     
     # Operating System
     def parse_default_os(self, response: Response): 
@@ -488,8 +500,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         res = response.xpath("//div[contains(@class, 'pd-warranty-group')]//p[contains(text(), 'Bảo hành')]/text()").get()
         if res is None:
             res = response.xpath("//strong[contains(text(), 'Bảo hành')]/following-sibling::text()").get()
-        if res is None:
-            res = response.xpath('//span[contains(text(), "Bảo hành")]/text()').get()
+        # if res is None:
+        #     res = response.xpath('//span[contains(text(), "Bảo hành")]/text()').get()
         return res if res else 'n/a'
         '''try:
             res = response.xpath("//div[contains(@class, 'pd-warranty-group')]//p[contains(text(), 'Bảo hành')]/text()").get()
