@@ -181,7 +181,7 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
     
     # Connectivity
     def parse_connectivity(self, response: Response):
-        res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp', 'Cổng kết nôi'],
+        res = self.get_scoped_value(response, ['Cổng kết nối', 'Cổng giao tiếp', 'Cổng kết nôi', 'Kết nối'],
                                         [("Giao tiếp mở rộng", "Kết nối USB"), ("Giao tiếp mở rộng", "Kết nối HDMI/ VGA"), ("Giao tiếp mở rộng", "Jack tai nghe"), ("Kết nối", "Cổng giao tiếp")])
         return res if res else 'n/a'
        
