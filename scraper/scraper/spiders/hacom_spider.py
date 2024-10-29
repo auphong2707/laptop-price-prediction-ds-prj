@@ -78,7 +78,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the CPU name of the laptop from the response.
         """
-        res = self.get_scoped_value(response, ['CPU', 'Bộ vi xử lý', 'Tên bộ vi xử lý'], 
+        res = self.get_scoped_value(response, ['CPU', 'Bộ vi xử lý', 'Tên bộ vi xử lý', 'Bộ vi xử lý'], 
                                         [("Bộ vi xử lý (CPU)", "Tên bộ vi xử lý")])
         return res if res else 'n/a'
         try:
@@ -500,8 +500,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         res = response.xpath("//div[contains(@class, 'pd-warranty-group')]//p[contains(text(), 'Bảo hành')]/text()").get()
         if res is None:
             res = response.xpath("//strong[contains(text(), 'Bảo hành')]/following-sibling::text()").get()
-        # if res is None:
-        #     res = response.xpath('//span[contains(text(), "Bảo hành")]/text()').get()
+        if res is None:
+            res = response.xpath('//span[contains(text(), "Bảo hành")]/text()').get()
         return res if res else 'n/a'
         '''try:
             res = response.xpath("//div[contains(@class, 'pd-warranty-group')]//p[contains(text(), 'Bảo hành')]/text()").get()
