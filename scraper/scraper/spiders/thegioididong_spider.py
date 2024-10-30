@@ -3,7 +3,7 @@ from scrapy.http import Response
 import re
 
 class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
-    name = "tgdd_spider"
+    name = "tgdd"
     allowed_domains = ["thegioididong.com"]
     start_urls = [
         "https://www.thegioididong.com/laptop"
