@@ -1,6 +1,5 @@
 import scrapy
 from scrapy.http import Response
-import re
 from .base_laptopshop_spider import BaseLaptopshopPageSpider
 
 # create scraper
@@ -12,24 +11,6 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
     allowed_domains = ['phucanh.vn']
     
     source = 'phucanh'
-    def start_requests(self):
-        for url in self.start_urls:
-            yield scrapy.Request(
-                url=url,
-                callback=self.parse
-            )
-    def get_product_sites(self, response: Response):
-        """
-        Extracts the product links from the current page and generates requests to follow them.
-        Filters out invalid URLs like 'javascript:void(0)'.
-        """
-        product_urls = response.css(self.product_site_css).getall()
-        
-        # Filter out invalid URLs
-        valid_urls = [url for url in product_urls if url.startswith("http") or url.startswith("/")]
-        
-        # Generate requests only for valid URLs
-        return [response.follow(url=url, callback=self.parse_one_observation) for url in valid_urls]
     
     def get_scoped_value(self, response, names):
         possibile_values = [
@@ -189,9 +170,7 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         #         return size 
         # return 'N/A'
 
-    def parse_screen_refresh_rate(self, response):
-        screen_text = self.get_scoped_value(response, ['TTần số quét'])
-        return screen_text if screen_text else 'n/a'
+    
     
     def parse_size(self, response: Response):  
         size_text = self.get_scoped_value(response, ['Kích thước'])
@@ -284,3 +263,12 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         #     if match:
         #         return float(match.group(1))  # Return the number as a float or int
         # return 'N/A'
+
+    def parse_screen_brightness(self, response):
+        screen_text = self.get_scoped_value(response, ['Công nghệ màn hình'])
+        return screen_text if screen_text else 'n/a'
+    
+    def parse_screen_refresh_rate(self, response):
+        screen_text = self.get_scoped_value(response, ['Tần số quét', 'Công nghệ màn hình'])
+        print(screen_text)
+        return screen_text if screen_text else 'n/a'
