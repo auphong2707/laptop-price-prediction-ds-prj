@@ -20,6 +20,7 @@ class TransformPipeline:
         adapter = ItemAdapter(item)
         
         self.convert_to_lowercase(adapter)
+        self.strip_whitespace(adapter)
         
         if getattr(spider, 'require_specific_transform', True):
             pass
@@ -33,6 +34,12 @@ class TransformPipeline:
         for field_name, value in adapter.items():
             if isinstance(value, str):
                 adapter[field_name] = value.lower()
+                
+    def strip_whitespace(self, adapter: ItemAdapter):
+        """Strips leading and trailing whitespace from all fields."""
+        for field_name, value in adapter.items():
+            if isinstance(value, str):
+                adapter[field_name] = value.strip()
                 
     class GeneralTransformer:
         def __init__(self, adapter: ItemAdapter):
@@ -191,6 +198,8 @@ class TransformPipeline:
                 if search_value:
                     value = search_value.group()
                     value = int(value.split('gb')[0])
+                else:
+                    value = "unk"
                     
                 self.adapter['ram_amount'] = value
             except Exception as e:
@@ -209,7 +218,7 @@ class TransformPipeline:
                 if search_value:
                     value = search_value.group()
                 else:
-                    value = "n/a"
+                    value = "unk"
                 
                 self.adapter['ram_type'] = value
             except Exception as e:
@@ -234,7 +243,7 @@ class TransformPipeline:
                     else:
                         value = int(value.split('gb')[0])
                 else:
-                    value = "n/a"
+                    value = "unk"
                 
                 self.adapter['storage_amount'] = value
             except Exception as e:
@@ -259,8 +268,7 @@ class TransformPipeline:
                 elif "hdd" in value:
                     value = "hdd"
                 else:
-                    value = "n/a"
-
+                    value = "unk"
                 
                 self.adapter['storage_type'] = value
             except Exception as e:
@@ -284,7 +292,7 @@ class TransformPipeline:
                 elif any(term in value for term in ['hd', '720p', '1280x720']):
                     value = 'hd'
                 else:
-                    value = "n/a"
+                    value = "unk"
                 
                 self.adapter['webcam_resolution'] = value
             except Exception as e:
@@ -306,7 +314,7 @@ class TransformPipeline:
                 if value:
                     value = float(value.group(1))
                 else:
-                    value = "n/a"
+                    value = "unk"
                 
                 self.adapter['screen_size'] = value
             except Exception as e:
@@ -356,8 +364,10 @@ class TransformPipeline:
                             height = (width * height_ratio) // width_ratio
                             
                             value = f"{width}x{height}"
+                        else:
+                            value = "unk"
                     else:
-                        value = "n/a"
+                        value = "unk"
                 
                 self.adapter['screen_resolution'] = value
             except Exception as e:
@@ -377,7 +387,7 @@ class TransformPipeline:
                     value = search_value.group()
                     value = int(value.split('hz')[0])
                 else:
-                    value = "n/a"
+                    value = "unk"
                 
                 self.adapter['screen_refresh_rate'] = value
             except Exception as e:
@@ -397,7 +407,7 @@ class TransformPipeline:
                     value = search_value.group()
                     value = int(value.split('nits')[0])
                 else:
-                    value = "n/a"
+                    value = "unk"
                 
                 self.adapter['screen_brightness'] = value
             except Exception as e:
@@ -419,7 +429,7 @@ class TransformPipeline:
                 if search_value:
                     value = float(search_value.group().split('wh')[0].split('battery')[0])
                 else:
-                    value = "n/a"
+                    value = "unk"
                 
                 self.adapter['battery_capacity'] = value
             except Exception as e:
@@ -439,7 +449,7 @@ class TransformPipeline:
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
                 else:
-                    value = "n/a"
+                    value = "unk"
                 
                 self.adapter['battery_cells'] = value
             except Exception as e:
@@ -454,7 +464,6 @@ class TransformPipeline:
                 self.adapter['height'] = "n/a"
                 
                 del self.adapter['size']
-            
             
             try:
                 value = self.adapter.get('size')
@@ -503,7 +512,7 @@ class TransformPipeline:
                 elif value_g:
                     value = float(value_g.group(1)) / 1000
                 else:
-                    value = "n/a"
+                    value = "unk"
                     
                 self.adapter['weight'] = value
             except Exception as e:
@@ -627,7 +636,7 @@ class TransformPipeline:
                 if res:
                     value = int(res.group(1))
                 else:
-                    value = "n/a"
+                    value = "unk"
                 
                 self.adapter['warranty'] = value
             except Exception as e:
