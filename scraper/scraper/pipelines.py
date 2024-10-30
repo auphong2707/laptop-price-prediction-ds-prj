@@ -364,6 +364,8 @@ class TransformPipeline:
                             height = (width * height_ratio) // width_ratio
                             
                             value = f"{width}x{height}"
+                        else:
+                            value = "unk"
                     else:
                         value = "unk"
                 
