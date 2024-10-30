@@ -40,7 +40,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         scope = []
         for value in possible_values:
             scope += response.xpath(value).getall()
-        if len(scope) != 0:    
+        if len(scope) > 0:    
             return ' '.join(re.sub(r'[^\x20-\x7E\u00C0-\u024F\u1E00-\u1EFF]', ' ', ' '.join(scope)).split()).encode('utf-8').decode('latin1').encode('latin1').decode('utf-8').lower()
             
         return None
@@ -281,7 +281,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the screen resolution from the response.
         Example: 1920x1080, 2560x1600, etc.
         """
-        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Độ phân giải")])
+        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Độ phân giải"), ("MÀN HÌNH HIỂN THỊ (LCD)", "Độ phân giải"),
+                                                             ])
         return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Độ phân giải")])
@@ -302,7 +303,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the screen refresh rate in Hz from the response.
         """
-        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
+        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình"), ("MÀN HÌNH HIỂN THỊ (LCD)", "Tần số quét")])
         return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
