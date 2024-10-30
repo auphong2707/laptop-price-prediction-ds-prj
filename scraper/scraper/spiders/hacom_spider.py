@@ -22,6 +22,9 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             "//tr[td/p/strong[contains(text(),'{}')]]/following-sibling::tr[td/p[contains(text(),'{}')]][1]/td[2]/p/text()".format(name[0], name[1])
             for name in category_names
         ] + [
+            "//h4[text()='{}']/following-sibling::table[1]//tr[td[p[text()='{}']]]/td[2]/p/text()".format(name[0], name[1])
+            for name in category_names   
+        ] + [
             "//td[p/strong[text()='{}']]/following-sibling::td/p/text()".format(name) 
             for name in list_names
         ] + [
@@ -261,7 +264,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the screen size in inches from the response.
         """
-        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
+        res = self.get_scoped_value(response, ['Màn hình', 'Kích thước màn hình:'], [("Hiển thị", "Màn hình")])
         return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Màn hình")])
@@ -281,8 +284,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the screen resolution from the response.
         Example: 1920x1080, 2560x1600, etc.
         """
-        res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Độ phân giải"), ("MÀN HÌNH HIỂN THỊ (LCD)", "Độ phân giải"),
-                                                             ])
+        res = self.get_scoped_value(response, ['Độ phân giải', 'Màn hình', 'Kích thước màn hình:'], 
+                                    [("Hiển thị", "Độ phân giải"), ("MÀN HÌNH HIỂN THỊ (LCD)", "Độ phân giải")])
         return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['Màn hình'], [("Hiển thị", "Độ phân giải")])
