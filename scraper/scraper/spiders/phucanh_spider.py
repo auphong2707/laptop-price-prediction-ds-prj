@@ -1,4 +1,3 @@
-import scrapy
 from scrapy.http import Response
 from .base_laptopshop_spider import BaseLaptopshopPageSpider
 
