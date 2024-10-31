@@ -610,7 +610,7 @@ class TransformPipeline:
                 
                 if re.search(r'(\d+)\s*tháng', value):
                     value = int(re.search(r'(\d+)\s*tháng', value).group(1))
-                elif re.search(r'(\d+)\s*năm', value):
+                elif re.search(r'(\d+)\s*(năm|years?)', value):
                     value = int(re.search(r'(\d+)\s*năm', value).group(1)) * 12
                 
                 self.adapter['warranty'] = value
