@@ -71,7 +71,6 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         # else:
         #     price = 'N/A'
         
-        return price
     def parse_cpu(self, response: Response):
         cpu_text = self.get_scoped_value(response, ['Bộ VXL'])
         return cpu_text if cpu_text else 'n/a'
