@@ -366,6 +366,9 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
+                if "đang cập nhật" in value:
+                    value = "n/a"
+                
                 search_value = re.search(r'\d+\s*hz', value)
                 if search_value:
                     value = search_value.group()
@@ -426,6 +429,8 @@ class TransformPipeline:
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
+                elif "integrated" in value:
+                    value = "n/a"
                 
                 self.adapter['battery_cells'] = value
             except Exception as e:
@@ -610,7 +615,7 @@ class TransformPipeline:
                 
                 if re.search(r'(\d+)\s*tháng', value):
                     value = int(re.search(r'(\d+)\s*tháng', value).group(1))
-                elif re.search(r'(\d+)\s*năm', value):
+                elif re.search(r'(\d+)\s*(năm|years?)', value):
                     value = int(re.search(r'(\d+)\s*năm', value).group(1)) * 12
                 
                 self.adapter['warranty'] = value
