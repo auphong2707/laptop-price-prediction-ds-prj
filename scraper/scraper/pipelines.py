@@ -575,11 +575,10 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                if "noos" in value.lower():
-                    value = "n/a"
-                
                 if self.adapter.get('brand') == 'apple':
                     value = 'macos'
+                elif 'noos' in value:
+                    value = 'n/a'
                 else:
                     for removal in ['single language', 'sl', '64', 'bit', 'sea', 'microsoft', 'office']:
                         value = value.replace(removal, '')
@@ -616,7 +615,7 @@ class TransformPipeline:
                 if re.search(r'(\d+)\s*tháng', value):
                     value = int(re.search(r'(\d+)\s*tháng', value).group(1))
                 elif re.search(r'(\d+)\s*(năm|years?)', value):
-                    value = int(re.search(r'(\d+)\s*năm', value).group(1)) * 12
+                    value = int(re.search(r'(\d+)\s*(năm|years?)', value).group(1)) * 12
                 
                 self.adapter['warranty'] = value
             except Exception as e:
