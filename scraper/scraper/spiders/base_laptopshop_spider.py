@@ -31,8 +31,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
     options = webdriver.FirefoxOptions()
     options.page_load_strategy = 'none'
     options.add_argument('--headless')
-    service = Service('/snap/bin/geckodriver')
-    driver = webdriver.Firefox(options=options, service=service)
+    driver = webdriver.Firefox(options=options)
 
     _num_product = 0
     
