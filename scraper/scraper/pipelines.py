@@ -324,6 +324,8 @@ class TransformPipeline:
                 if search_value:
                     width, height = sorted(map(int, search_value.groups()), reverse=True)
                     value = f"{width}x{height}"
+                elif "hãng không công bố" in value:
+                    value = "n/a"
                 else:
                     resolution_widths = {
                         'fhd': 1920,    # Full HD
@@ -387,10 +389,10 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                search_value = re.search(r'\d+\s*nits', value)
+                search_value = re.search(r'\d+\s*nits?', value)
                 if search_value:
                     value = search_value.group()
-                    value = int(value.split('nits')[0])
+                    value = int(value.split('nit')[0])
                 
                 self.adapter['screen_brightness'] = value
             except Exception as e:
@@ -425,7 +427,7 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells|chân\s*(\d+)', value)
+                search_value = re.search(r'(\d+)(?:[ -]?cell(?:s)?|\s+cells|chân\s*)', value)
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
