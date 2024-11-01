@@ -4,10 +4,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
+from selenium.webdriver.firefox.service import Service as FirefoxService
 from scrapy.selector import Selector
 import time
 import logging
 from fake_useragent import UserAgent
+
 
 logging.disable()
 
@@ -30,7 +32,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
     options = webdriver.FirefoxOptions()
     options.page_load_strategy = 'none'
     options.add_argument('--headless')
-    driver = webdriver.Firefox(options=options)
+    driver = webdriver.Firefox(options=options, service=FirefoxService(executable_path='/app/scraper/geckodriver'))
 
     _num_product = 0
     

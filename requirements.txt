@@ -1,4 +1,4 @@
 scrapy==2.11.2
 selenium==4.25.0
 fake_useragent==1.5.1
-apache-airflow==2.10.2 --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.10.2/constraints-3.11.txt
+apache-airflow-providers-postgres==5.13.1
