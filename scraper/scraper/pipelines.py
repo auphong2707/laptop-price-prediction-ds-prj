@@ -408,7 +408,7 @@ class TransformPipeline:
                 value = value.replace(',', '.')
                 value = re.sub(r'[()]', '', value)
                 
-                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery)', value)
+                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(w|wh|battery)', value)
                 if search_value:
                     value = float(search_value.group().split('wh')[0].split('battery')[0])
                 
