@@ -55,7 +55,7 @@ class TransformPipeline:
                     return
                 
                 # Basic cleaning steps
-                for removal in ['®', '™', ' processors', ' processor', 'mobile', 'with intel ai boost', '', '(tm)', '(r)', 
+                for removal in ['®', '™', ' processors', ' processor', 'mobile', 'with intel ai boost', '', '(tm)', '(r)',
                                     'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 'comet lake', 'kabylake refresh', 'kabylake']:
                             value = value.replace(removal, '')
                     
@@ -66,7 +66,7 @@ class TransformPipeline:
                 for spliter in [',',  'up']:
                     value = value.split(spliter)[0]
                 
-                value = ' '.join(value.split())
+                value = ' '.join(value.split()).strip()
                 
                 # Apple solving
                 if self.adapter.get('brand') == "apple":
@@ -92,6 +92,17 @@ class TransformPipeline:
                         if match:
                             # Format the matched processor name as "iX-XXXXXH"
                             value = 'intel core ' + f"{match.group(1)}-{match.group(2)}{match.group(3)}"
+                            
+                    elif re.match(r"^core \d \d{3}[a-zA-Z]$", value):
+                        # match = re.match(r"^core \d \d{3}[a-zA-Z]$", value)
+                        # digit_part = match.group(1)
+                        # code_part = match.group(2)
+                                
+                        # # Format the output
+                        # transformed_string = f"intel core ultra {digit_part} {code_part}"
+                        # return transformed_string
+                        return "gay"
+            
                     elif "ultra" in value:
                         pattern = re.compile(r'(?:ultra\s*)?(u?\d)\s*[- ]?\s*(\d{3})([a-z]?)')
                         match = pattern.search(value)
@@ -320,12 +331,13 @@ class TransformPipeline:
                 value = ''.join(value.split())
                 value = value.replace('*', 'x')
                 
+                if "không công bố" in value:
+                    return "n/a"
+                
                 search_value = re.search(r'(\d{3,4})x(\d{3,4})', value)
                 if search_value:
                     width, height = sorted(map(int, search_value.groups()), reverse=True)
                     value = f"{width}x{height}"
-                elif "hãng không công bố" in value:
-                    value = "n/a"
                 else:
                     resolution_widths = {
                         'fhd': 1920,    # Full HD
@@ -412,7 +424,8 @@ class TransformPipeline:
                 
                 search_value = re.search(r'(\d+(?:\.\d+)?)\s*(w|wh|battery)', value)
                 if search_value:
-                    value = float(search_value.group().split('wh')[0].split('battery')[0])
+                    # value = float(search_value.group().split('wh')[0].split('battery')[0])
+                    value = float(search_value.group(1))
                 
                 self.adapter['battery_capacity'] = value
             except Exception as e:
