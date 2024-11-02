@@ -22,6 +22,9 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         ] + [
             "//div[div/span[contains(text(), '{}')]]//div/p/text()".format(name)
             for name in names
+        ] + [
+            "//div[contains(@id, 'spec-item')]//div[span[contains(text(), '{}')]]/following-sibling::span/text()".format(name)
+            for name in names
         ]
     
         for value in possibile_values:
