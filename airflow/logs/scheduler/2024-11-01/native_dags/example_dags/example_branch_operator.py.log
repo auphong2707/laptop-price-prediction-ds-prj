@@ -1,5 +1,0 @@
-[2024-11-01T06:27:53.411+0000] {processor.py:186} INFO - Started process (PID=6018) to work on /usr/local/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
-[2024-11-01T06:27:53.411+0000] {processor.py:914} INFO - Processing file /usr/local/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
-[2024-11-01T06:27:53.413+0000] {logging_mixin.py:190} INFO - [2024-11-01T06:27:53.413+0000] {dagbag.py:588} INFO - Filling up the DagBag from /usr/local/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
-[2024-11-01T06:27:53.417+0000] {processor.py:927} WARNING - No viable dags retrieved from /usr/local/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
-[2024-11-01T06:27:53.434+0000] {processor.py:208} INFO - Processing /usr/local/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.028 seconds

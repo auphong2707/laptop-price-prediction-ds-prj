@@ -1,0 +1,85 @@
+[2024-11-02T17:49:58.103+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-02T17:49:58.129+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.create_laptop_specs_table manual__2024-11-02T17:49:57.080500+00:00 [queued]>
+[2024-11-02T17:49:58.137+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.create_laptop_specs_table manual__2024-11-02T17:49:57.080500+00:00 [queued]>
+[2024-11-02T17:49:58.138+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-02T17:49:58.152+0000] {taskinstance.py:2888} INFO - Executing <Task(PostgresOperator): create_laptop_specs_table> on 2024-11-02 17:49:57.080500+00:00
+[2024-11-02T17:49:58.156+0000] {standard_task_runner.py:72} INFO - Started process 2117 to run task
+[2024-11-02T17:49:58.159+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'create_laptop_specs_table', 'manual__2024-11-02T17:49:57.080500+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpb2az6uly']
+[2024-11-02T17:49:58.161+0000] {standard_task_runner.py:105} INFO - Job 2: Subtask create_laptop_specs_table
+[2024-11-02T17:49:58.224+0000] {task_command.py:467} INFO - Running <TaskInstance: main_dag.create_laptop_specs_table manual__2024-11-02T17:49:57.080500+00:00 [running]> on host 80c9365b8fdf
+[2024-11-02T17:49:58.302+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='veil' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='create_laptop_specs_table' AIRFLOW_CTX_EXECUTION_DATE='2024-11-02T17:49:57.080500+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-02T17:49:57.080500+00:00'
+[2024-11-02T17:49:58.303+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-02T17:49:58.311+0000] {sql.py:278} INFO - Executing: 
+        CREATE TABLE laptop_specs_11_2024 (
+            source VARCHAR(255) NOT NULL,
+            brand VARCHAR(255),
+            name VARCHAR(255) NOT NULL,
+            cpu VARCHAR(255),
+            vga VARCHAR(255),
+            ram_amount INTEGER,
+            ram_type VARCHAR(50),
+            storage_amount INTEGER,
+            storage_type VARCHAR(50),
+            webcam_resolution VARCHAR(50),
+            screen_size FLOAT,
+            screen_resolution VARCHAR(50),
+            screen_refresh_rate INTEGER,
+            screen_brightness VARCHAR(50),
+            battery_capacity FLOAT,
+            battery_cells INTEGER,
+            weight FLOAT,
+            default_os VARCHAR(255),
+            warranty INTEGER,
+            price DECIMAL(15, 2) NOT NULL,
+            width FLOAT,
+            depth FLOAT,
+            height FLOAT,
+            number_usb_a_ports INTEGER,
+            number_usb_c_ports INTEGER,
+            number_hdmi_ports INTEGER,
+            number_ethernet_ports INTEGER,
+            number_audio_jacks INTEGER,
+            PRIMARY KEY (source, name)
+        );
+        
+[2024-11-02T17:49:58.323+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-02T17:49:58.335+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-02T17:49:58.345+0000] {sql.py:544} INFO - Running statement: 
+        CREATE TABLE laptop_specs_11_2024 (
+            source VARCHAR(255) NOT NULL,
+            brand VARCHAR(255),
+            name VARCHAR(255) NOT NULL,
+            cpu VARCHAR(255),
+            vga VARCHAR(255),
+            ram_amount INTEGER,
+            ram_type VARCHAR(50),
+            storage_amount INTEGER,
+            storage_type VARCHAR(50),
+            webcam_resolution VARCHAR(50),
+            screen_size FLOAT,
+            screen_resolution VARCHAR(50),
+            screen_refresh_rate INTEGER,
+            screen_brightness VARCHAR(50),
+            battery_capacity FLOAT,
+            battery_cells INTEGER,
+            weight FLOAT,
+            default_os VARCHAR(255),
+            warranty INTEGER,
+            price DECIMAL(15, 2) NOT NULL,
+            width FLOAT,
+            depth FLOAT,
+            height FLOAT,
+            number_usb_a_ports INTEGER,
+            number_usb_c_ports INTEGER,
+            number_hdmi_ports INTEGER,
+            number_ethernet_ports INTEGER,
+            number_audio_jacks INTEGER,
+            PRIMARY KEY (source, name)
+        );
+        , parameters: None
+[2024-11-02T17:49:58.368+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-02T17:49:58.368+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=create_laptop_specs_table, run_id=manual__2024-11-02T17:49:57.080500+00:00, execution_date=20241102T174957, start_date=20241102T174958, end_date=20241102T174958
+[2024-11-02T17:49:58.421+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-02T17:49:58.438+0000] {logging_mixin.py:190} WARNING - /usr/local/lib/python3.11/site-packages/***/models/baseoperator.py:1378 AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+[2024-11-02T17:49:58.449+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-02T17:49:58.451+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

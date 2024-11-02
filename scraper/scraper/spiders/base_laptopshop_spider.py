@@ -32,7 +32,20 @@ class BaseLaptopshopSpider(scrapy.Spider):
     options = webdriver.FirefoxOptions()
     options.page_load_strategy = 'none'
     options.add_argument('--headless')
-    driver = webdriver.Firefox(options=options, service=FirefoxService(executable_path='/app/scraper/geckodriver'))
+    
+    options.set_preference('dom.webnotifications.enabled', False)  # Disable notifications
+    options.set_preference('security.cert_pinning.enforcement_level', 0)  # Ignore certificate errors
+    options.set_preference('browser.safebrowsing.malware.enabled', False)  # Disable safe browsing (optional)
+
+    # To reduce GPU load (Firefox doesn’t have a direct equivalent to --disable-gpu):
+    options.set_preference('layers.acceleration.disabled', True)
+
+    # You can also set other preferences as needed
+    options.set_preference('permissions.default.image', 2)  # Disable image loading to speed up browsing
+
+
+    
+    driver = webdriver.Firefox(options=options, service=FirefoxService(executable_path='/usr/local/bin/geckodriver'))
 
     _num_product = 0
     
