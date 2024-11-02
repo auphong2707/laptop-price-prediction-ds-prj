@@ -263,6 +263,8 @@ class TransformPipeline:
                     value = "ssd"
                 elif "hdd" in value:
                     value = "hdd"
+                elif "emmc" in value:
+                    value = "emmc"
                 
                 self.adapter['storage_type'] = value
             except Exception as e:
@@ -322,41 +324,42 @@ class TransformPipeline:
                 value = ''.join(value.split())
                 value = value.replace('*', 'x')
                 
-                search_value = re.search(r'(\d{3,4})x(\d{3,4})', value)
+                search_value = re.search(r'(\d{3,4})\s*x\s*(\d{3,4})', value)
                 if search_value:
                     width, height = sorted(map(int, search_value.groups()), reverse=True)
                     value = f"{width}x{height}"
                 else:
                     resolution_widths = {
-                        'fullhd+': 1600, # Full HD+
-                        'fhd': 1920,    # Full HD
-                        '2k': 2048,     # 2K (Cinemascope)
-                        'qhd': 2560,    # Quad HD (1440p)
-                        '3k': 3072,     # 3K (Example)
-                        '4k': 3840,     # Ultra HD 4K
-                        '5k': 5120,     # 5K Resolution
-                        '8k': 7680,      # 8K Ultra HD
-                        'wuxga': 1920,  # WUXGA
-
+                        'fhd': 1920,       # Full HD
+                        '2k': 2048,        # 2K (Cinemascope)
+                        'qhd': 2560,       # Quad HD (1440p)
+                        '2.5k': 2560,      # 2.5K Resolution
+                        '3k': 3072,        # 3K (Example)
+                        '4k': 3840,        # Ultra HD 4K
+                        '5k': 5120,        # 5K Resolution
+                        '8k': 7680,        # 8K Ultra HD
+                        'fullhd+': 1920,   # Full HD+ with 16:10 ratio
+                        'wuxga': 1920,     # WUXGA with 16:10 ratio
                     }
 
-                    res_match = re.search(r'(\b2K\b|\b3K\b|\bQHD\b|\bFHD\b|\b4K\b|\b5K\b|\b8K\b)', value, re.IGNORECASE)
                     ratio_match = re.search(r'(\d+):(\d+)', value)
 
-                    if res_match:
-                        abbreviation = res_match.group(0).upper()
+                    for resolution, width in resolution_widths.items():
+                        if resolution in value:
+                            if ratio_match:
+                                width_ratio = int(ratio_match.group(1))
+                                height_ratio = int(ratio_match.group(2))
+                            else:
+                                if resolution in ['fullhd+', 'wuxga']:
+                                    width_ratio, height_ratio = 16, 10  # 16:10 aspect ratio
+                                else:
+                                    width_ratio, height_ratio = 16, 9   # Default to 16:9
 
-                        if ratio_match:
-                            width_ratio = int(ratio_match.group(1))
-                            height_ratio = int(ratio_match.group(2))
-                        else:
-                            width_ratio, height_ratio = 16, 9  # Default to 16:9
-
-                        if abbreviation in resolution_widths:
-                            width = resolution_widths[abbreviation]
                             height = (width * height_ratio) // width_ratio
                             
                             value = f"{width}x{height}"
+                            break  # Exit loop after finding the first matching resolution
+
                 
                 self.adapter['screen_resolution'] = value
             except Exception as e:
@@ -478,7 +481,7 @@ class TransformPipeline:
                 
                 self.adapter['width'] = round(extracted_numbers[0] if extracted_numbers[0] < 100 else extracted_numbers[0] / 10, 2)
                 self.adapter['depth'] = round(extracted_numbers[1] if extracted_numbers[1] < 100 else extracted_numbers[1] / 10, 2)
-                self.adapter['height'] = round(extracted_numbers[2] if extracted_numbers[2] < 5 else extracted_numbers[2] / 10, 2)
+                self.adapter['height'] = round(extracted_numbers[2] if extracted_numbers[2] < 3  else extracted_numbers[2] / 10, 2)
                 
                 del self.adapter['size']
             except Exception as e:
@@ -619,13 +622,22 @@ class TransformPipeline:
             """Transforms the warranty field to a standardized format."""
             try:
                 value = self.adapter.get('warranty')
+                if type(value) == list:
+                    value = " ".join([i.replace('\n', '').strip() for i in value])
+                    
                 if value == "n/a":
                     return
                 
-                if re.search(r'(\d+)\s*tháng', value):
-                    value = int(re.search(r'(\d+)\s*tháng', value).group(1))
-                elif re.search(r'(\d+)\s*(năm|years?)', value):
-                    value = int(re.search(r'(\d+)\s*năm', value).group(1)) * 12
+                match = re.search(r'(\d+)\s*(tháng|năm|years?)', value)
+                if match:
+                    number = int(match.group(1))
+                    unit = match.group(2)
+                    if unit == 'tháng':
+                        value = number
+                    else:  # 'năm' or 'year(s)'
+                        value = number * 12
+                else:
+                    value = "aaaaaaaaaaa"
                 
                 self.adapter['warranty'] = value
             except Exception as e:
@@ -640,6 +652,7 @@ class TransformPipeline:
                     return
                 
                 value = value.replace('.', '')
+                value = value.replace('*', '')
                 value = re.sub(r'[đ₫]', '', value).strip()
                 
                 self.adapter['price'] = value
