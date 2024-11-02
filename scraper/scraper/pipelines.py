@@ -198,8 +198,6 @@ class TransformPipeline:
                 if search_value:
                     value = search_value.group()
                     value = int(value.split('gb')[0])
-                else:
-                    value = "unk"
                     
                 self.adapter['ram_amount'] = value
             except Exception as e:
@@ -213,12 +211,12 @@ class TransformPipeline:
                 value = self.adapter.get('ram_type')
                 if value == "n/a":
                     return
-                
                 search_value = re.search(r'ddr+\d', value)
                 if search_value:
                     value = search_value.group()
-                else:
-                    value = "unk"
+                
+                else: 
+                    value = "n/a"
                 
                 self.adapter['ram_type'] = value
             except Exception as e:
@@ -242,8 +240,6 @@ class TransformPipeline:
                         value = int(value.split('tb')[0]) * 1024
                     else:
                         value = int(value.split('gb')[0])
-                else:
-                    value = "unk"
                 
                 self.adapter['storage_amount'] = value
             except Exception as e:
@@ -267,8 +263,6 @@ class TransformPipeline:
                     value = "ssd"
                 elif "hdd" in value:
                     value = "hdd"
-                else:
-                    value = "unk"
                 
                 self.adapter['storage_type'] = value
             except Exception as e:
@@ -291,8 +285,6 @@ class TransformPipeline:
                     value = 'fhd'
                 elif any(term in value for term in ['hd', '720p', '1280x720']):
                     value = 'hd'
-                else:
-                    value = "unk"
                 
                 self.adapter['webcam_resolution'] = value
             except Exception as e:
@@ -313,8 +305,6 @@ class TransformPipeline:
                 
                 if value:
                     value = float(value.group(1))
-                else:
-                    value = "unk"
                 
                 self.adapter['screen_size'] = value
             except Exception as e:
@@ -338,13 +328,16 @@ class TransformPipeline:
                     value = f"{width}x{height}"
                 else:
                     resolution_widths = {
+                        'fullhd+': 1600, # Full HD+
                         'fhd': 1920,    # Full HD
                         '2k': 2048,     # 2K (Cinemascope)
                         'qhd': 2560,    # Quad HD (1440p)
                         '3k': 3072,     # 3K (Example)
                         '4k': 3840,     # Ultra HD 4K
                         '5k': 5120,     # 5K Resolution
-                        '8k': 7680      # 8K Ultra HD
+                        '8k': 7680,      # 8K Ultra HD
+                        'wuxga': 1920,  # WUXGA
+
                     }
 
                     res_match = re.search(r'(\b2K\b|\b3K\b|\bQHD\b|\bFHD\b|\b4K\b|\b5K\b|\b8K\b)', value, re.IGNORECASE)
@@ -364,10 +357,6 @@ class TransformPipeline:
                             height = (width * height_ratio) // width_ratio
                             
                             value = f"{width}x{height}"
-                        else:
-                            value = "unk"
-                    else:
-                        value = "unk"
                 
                 self.adapter['screen_resolution'] = value
             except Exception as e:
@@ -382,12 +371,14 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
+                invalid_vals = ["đang cập nhật", "hãng không công bố"]
+                if any(invalid_val in value for invalid_val in invalid_vals):
+                    value = "n/a"
+                
                 search_value = re.search(r'\d+\s*hz', value)
                 if search_value:
                     value = search_value.group()
                     value = int(value.split('hz')[0])
-                else:
-                    value = "unk"
                 
                 self.adapter['screen_refresh_rate'] = value
             except Exception as e:
@@ -406,8 +397,9 @@ class TransformPipeline:
                 if search_value:
                     value = search_value.group()
                     value = int(value.split('nits')[0])
-                else:
-                    value = "unk"
+                
+                else: 
+                    value = "n/a"
                 
                 self.adapter['screen_brightness'] = value
             except Exception as e:
@@ -428,8 +420,6 @@ class TransformPipeline:
                 search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery)', value)
                 if search_value:
                     value = float(search_value.group().split('wh')[0].split('battery')[0])
-                else:
-                    value = "unk"
                 
                 self.adapter['battery_capacity'] = value
             except Exception as e:
@@ -448,8 +438,8 @@ class TransformPipeline:
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
-                else:
-                    value = "unk"
+                elif "integrated" in value:
+                    value = "n/a"
                 
                 self.adapter['battery_cells'] = value
             except Exception as e:
@@ -511,8 +501,6 @@ class TransformPipeline:
                     value = float(value_kg.group(1))
                 elif value_g:
                     value = float(value_g.group(1)) / 1000
-                else:
-                    value = "unk"
                     
                 self.adapter['weight'] = value
             except Exception as e:
@@ -596,6 +584,9 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
+                if "noos" in value.lower():
+                    value = "n/a"
+                
                 if self.adapter.get('brand') == 'apple':
                     value = 'macos'
                 else:
@@ -631,12 +622,10 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                res = re.search(r'(\d+)\s*tháng', value)
-                
-                if res:
-                    value = int(res.group(1))
-                else:
-                    value = "unk"
+                if re.search(r'(\d+)\s*tháng', value):
+                    value = int(re.search(r'(\d+)\s*tháng', value).group(1))
+                elif re.search(r'(\d+)\s*(năm|years?)', value):
+                    value = int(re.search(r'(\d+)\s*năm', value).group(1)) * 12
                 
                 self.adapter['warranty'] = value
             except Exception as e:
