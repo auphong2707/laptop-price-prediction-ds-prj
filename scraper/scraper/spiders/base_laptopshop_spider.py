@@ -306,16 +306,39 @@ class BaseLaptopshopSpider(scrapy.Spider):
 
 class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
     page_css = None
+    selenium_page_request = False
     
     def start_requests(self):
         for url in self.start_urls:
             yield Request(
                 url=url,
-                callback=self.parse
+                callback=self.parse,
+                headers={'User-Agent': self.ua.random},
+                dont_filter=True
             )
-    
 
     def parse(self, response: Response):
+        if self.selenium_page_request and response.status == 200:
+            self.driver.execute_script("window.open('');")
+            self.driver.switch_to.window(self.driver.window_handles[-1])
+            
+            self.driver.execute_script(f"Object.defineProperty(navigator, 'userAgent', {{get: () => '{self.ua.random}'}});")
+            self.driver.get(response.url)
+            self.driver.switch_to.window(self.driver.window_handles[-1])
+            
+            wait = WebDriverWait(self.driver, 20)
+            
+            wait.until(lambda driver: driver.execute_script('return document.readyState') == 'complete')
+            self.driver.execute_script("document.body.style.zoom='1%'")
+            
+            wait.until(lambda driver: driver.execute_script('return document.readyState') == 'complete')
+            response = response.replace(body=self.driver.page_source)
+            
+            self.driver.close()
+            self.driver.switch_to.window(self.driver.window_handles[0])
+        
+        print('Reached page:', response.url)
+        
         for url in response.css(self.product_site_css).getall():
             yield response.follow(
                 url=url,
@@ -325,6 +348,9 @@ class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
         
         pages = response.css(self.page_css).getall()
         for page in pages:
+            if response.urljoin(page) in self.start_urls:
+                continue
+            
             yield response.follow(
                 url=page,
                 callback=self.parse,
