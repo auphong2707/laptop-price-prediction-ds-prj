@@ -19,7 +19,7 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
 
     def get_scoped_value(self, response: Response, names):
         possibile_values = [
-                "//td[.//span[contains(text(),'{}')]]/following-sibling::td//span".format(name)
+                "//td[.//span[contains(text(),'{}')]]/following-sibling::td//span/text()".format(name)
                 for name in names
             ] + [
                 "//div[@class='content-text nd']//tr[td//strong[contains(text(), '{}')]]/td[2]//text()".format(name)
@@ -70,7 +70,7 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
         """
         Extracts the CPU name of the laptop from the response.
         """
-        res = self.get_scoped_value(response, ['Bộ Vi Xử Lý:', 'CPU', 'Bộ xử lý'])
+        res = self.get_scoped_value(response, ['CPU','Bộ Vi Xử Lý:','Bộ xử lý'])
         return res if res else "n/a"
     
     # VGA   
@@ -78,7 +78,7 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
         """
         Extracts the VGA name of the laptop from the response.
         """
-        res = self.get_scoped_value(response, ['Card đồ hoạ', 'Video'])
+        res = self.get_scoped_value(response, ['Video','Card đồ hoạ'])
         return res if res else "n/a"    
     
     # RAM
