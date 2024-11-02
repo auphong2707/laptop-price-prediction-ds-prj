@@ -53,7 +53,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
     
     # [PARSE FEATURES SECTION: START]
     # Brand
-    def parse_brand(self, response: Response): 
+    def parse_brand(self, response: Response):
         """
         Extracts the brand of the laptop from the response.
         Example: Dell, HP, etc.
