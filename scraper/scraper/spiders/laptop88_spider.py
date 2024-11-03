@@ -107,7 +107,8 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the CPU name of the laptop from the response.
         """
-        cpu = self.get_scoped_values(response, ['CPU', 'Processor', 'Tên bộ vi xử lý', 'CPU:'])
+        cpu = self.get_scoped_values(response, ['CPU', 'Processor', 'Tên bộ vi xử lý', 'CPU:', 
+                                                'Bộ vi xử lý', ])
         return cpu if cpu else 'n/a'
     
     # VGA
@@ -124,7 +125,8 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the amount of RAM in GB from the response.
         """
         ram_amount = self.get_scoped_values(response, ['Bộ nhớ trong', 'RAM', 'Ram', 'Ram:', 'Bộ nhớ trong - Ram', 
-                                                       'Dung lượng RAM', 'Memory', 'Dung lượng', 'Bộ nhớ'], 
+                                                       'Bộ nhớ trong (RAM)', 'Dung lượng RAM', 'Memory', 'Dung lượng',
+                                                       'Bộ nhớ'], 
                                                     [['Bộ nhớ trong', 'Dung lượng'], ['Bộ nhớ trong', 'RAM'],
                                                      ['Bộ nhớ trong (RAM)', 'RAM'], ['Bộ vi xử lý', 'RAM'], ['BỘ NHỚ RAM', 'Dung lượng RAM'],
                                                      ['BỘ NHỚ MÁY (RAM)', 'Dung lượng'], ['Bộ nhớ trong (RAM)', 'Dung lượng']])
@@ -183,9 +185,10 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the screen resolution from the response.
         Example: HD, FHD, 4K.
         """
-        screen = self.get_scoped_values(response, ['Display', 'Độ phân giải:', 'Màn hình', 'Kích cỡ màn hình',
-                                                   'Kích thước màn hình', 'MÀN HÌNH HIỂN THỊ', 'Màn hình - Monitor', 
-                                                   'Hiển thị', 'Screen size', 'Size màn hình', 'Màn Hình', 'Màn hình:'])
+        screen = self.get_scoped_values(response, ['Display', 'Độ phân giải:', 'Màn hình', 'Hiển thị', 
+                                                   'Kích cỡ màn hình', 'Kích thước màn hình', 'MÀN HÌNH HIỂN THỊ',
+                                                   'Màn hình - Monitor', 'Screen size', 'Size màn hình',
+                                                   'Màn Hình', 'Màn hình:'])
         return screen if screen else 'n/a'
 
     def parse_screen_refresh_rate(self, response: Response): 
@@ -222,7 +225,7 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the size of the laptop in cm from the response.
         """
-        size = self.get_scoped_values(response, ['Kích thước', 'Dimensions'])
+        size = self.get_scoped_values(response, ['Kích thước', 'Dimensions', 'Trọng lượng'])
         return size if size else "n/a"
     
     # Weight
@@ -238,7 +241,7 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the connectivity options of the laptop from the response.
         """
-        res = self.get_scoped_values(response, ['Cổng kết nối'])
+        res = self.get_scoped_values(response, ['Cổng kết nối', 'Kết nối'])
         return res if res else "n/a"
         
     # Operating System
