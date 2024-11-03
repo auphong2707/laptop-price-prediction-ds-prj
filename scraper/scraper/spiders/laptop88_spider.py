@@ -12,6 +12,7 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         ]
     
     product_site_css = 'h2.product-title a::attr(href)'
+    selenium_product_request = True
     source = 'laptop88'
     
 
