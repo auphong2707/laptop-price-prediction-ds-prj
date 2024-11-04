@@ -31,20 +31,10 @@ class BaseLaptopshopSpider(scrapy.Spider):
     
     options = webdriver.FirefoxOptions()
     options.page_load_strategy = 'none'
-    # options.add_argument('--headless')
-    
-    options.set_preference('dom.webnotifications.enabled', False)  # Disable notifications
-    options.set_preference('security.cert_pinning.enforcement_level', 0)  # Ignore certificate errors
-    options.set_preference('browser.safebrowsing.malware.enabled', False)  # Disable safe browsing (optional)
-
-    # To reduce GPU load (Firefox doesn’t have a direct equivalent to --disable-gpu):
-    options.set_preference('layers.acceleration.disabled', True)
-
-    # You can also set other preferences as needed
-    options.set_preference('permissions.default.image', 2)  # Disable image loading to speed up browsing
-    
-
-    driver = webdriver.Firefox(options=options)
+    options.add_argument('--headless')
+    # add service to avoid "WebDriverException: Message: Service geckodriver unexpectedly exited. Status code was: 0"
+    service = Service('/snap/bin/geckodriver')
+    driver = webdriver.Firefox(options=options, service=service)
 
     _num_product = 0
     
@@ -216,7 +206,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
             return
         
         if self.selenium_product_request:
-            response = response.replace(body=self.get_source_selenium(response.url))
+            response = self.get_source_selenium(response.url)
             if not self.yield_condition(response):
                 return
 
@@ -296,7 +286,6 @@ class BaseLaptopshopSpider(scrapy.Spider):
                 for button in buttons:
                     self.driver.execute_script("arguments[0].click();", button)
                     print("Opened the modal successfully.")
-                    time.sleep(1)
                     opened_modal = True
                     break
             except:
@@ -309,13 +298,12 @@ class BaseLaptopshopSpider(scrapy.Spider):
             self.driver.execute_script("document.body.style.zoom='1%'")
             time.sleep(3)
         
-        html = self.driver.page_source
-
+        response = Selector(text=self.driver.page_source)
+        
         self.driver.close()
         self.driver.switch_to.window(self.driver.window_handles[0])
-
-        return html
-
+        
+        return response
 
 class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
     page_css = None
