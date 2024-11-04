@@ -1,0 +1,299 @@
+source,brand,name,cpu,vga,ram_amount,ram_type,storage_amount,storage_type,webcam_resolution,screen_size,screen_resolution,screen_refresh_rate,screen_brightness,battery_capacity,battery_cells,weight,default_os,warranty,price,width,depth,height,number_usb_a_ports,number_usb_c_ports,number_hdmi_ports,number_ethernet_ports,number_audio_jacks
+thegioididong,hp,hp 15 fd0234tu 9q969pa,intel core i5-1334u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.59,windows 11 home,12,16790000,35.98,23.6,1.86,2,1,1,0,0
+thegioididong,dell,dell inspiron 15 3520 n5i5052w1,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,16990000,35.85,23.56,1.7,2,0,1,0,0
+thegioididong,asus,asus vivobook go 15 e1504fa nj776w,amd ryzen 5 7520u,n/a,16,ddr5,512,ssd,hd,15.6,1920x1080,60,250,42.0,3,1.63,windows 11 home,24,14490000,36.03,23.25,1.79,1,1,1,0,0
+thegioididong,lenovo,lenovo ideapad slim 3 15iah8 83er000evn,intel core i5-12450h,n/a,16,ddr5,512,ssd,hd,15.6,1920x1080,60,300,47.0,47 wh,1.62,windows 11 home,24,14490000,35.93,23.5,1.79,2,1,1,0,0
+thegioididong,acer,acer aspire 3 a315 44p r9w8 nx.ksjsv.002,amd ryzen 7 5700u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,10690000,36.29,24.13,1.99,3,1,1,0,0
+thegioididong,hp,hp 15 fc0085au a6vv8pa,amd ryzen 5 7430u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.59,windows 11 home,12,13590000,35.98,23.6,1.86,2,1,1,0,1
+thegioididong,asus,asus vivobook 15 oled a1505za ma415w,intel core i5-12500h,n/a,16,ddr4,512,ssd,hd,15.6,2880x1620,120,600,50.0,3,1.7,windows 11 home,24,17490000,35.68,22.76,1.99,2,1,1,0,0
+thegioididong,apple,apple macbook air mgn63sa/a,apple m1,n/a,8,n/a,256,ssd,hd,13.3,2560x1600,n/a,400,lên đến 18 giờ,lên đến 18 giờ,1.29,macos,12,19790000,30.41,21.24,0.41,0,2,0,0,0
+thegioididong,acer,acer aspire lite 14 51m 59bn nx.ktxsv.001,intel core i5-1235u,n/a,16,ddr5,512,ssd,hd,14.0,1920x1200,60,300,58.0,3,1.5,windows 11 home,12,13490000,31.33,21.8,1.69,0,1,1,0,0
+thegioididong,lenovo,lenovo ideapad slim 3 15amn8 82xq00j0vn,amd ryzen 5 7520u,n/a,16,ddr5,512,ssd,hd,15.6,1920x1080,60,300,47.0,47 wh,1.62,windows 11 home,24,12490000,35.93,23.5,1.79,2,1,1,0,0
+thegioididong,hp,hp 15 fd0303tu a2nl4pa,intel core i3-1315u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.59,windows 11 home,12,11290000,35.98,23.6,1.86,2,1,1,0,1
+thegioididong,asus,asus vivobook 15 x1504za nj102w,intel core i3-1215u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,42.0,3,1.7,windows 11 home,24,12290000,35.97,23.25,1.79,2,1,1,0,0
+thegioididong,acer,acer aspire 3 a314 42p nx.ksfsv.001,amd ryzen 7 5700u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1200,60,n/a,50.0,3,1.4,windows 11 home,12,11990000,31.82,22.55,1.78,2,1,1,0,0
+thegioididong,asus,asus vivobook x1404za nk376w,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1080,60,250,42.0,3,1.4,windows 11 home,24,16490000,32.49,21.39,1.79,2,1,1,0,0
+thegioididong,dell,dell inspiron 15 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.9,windows 11 home,12,16490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,hp,hp 240 g9 ag2j7at,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1080,60,250,41.0,3,1.47,windows 11 home,12,15990000,32.4,22.59,1.99,2,1,1,0,1
+thegioididong,apple,apple macbook air mly33sa/a,apple m2,n/a,8,n/a,256,ssd,fhd,13.6,2560x1664,n/a,500,lên đến 18 giờ,lên đến 18 giờ,1.24,macos,12,23990000,30.41,21.5,1.13,0,2,0,0,0
+thegioididong,acer,acer aspire 3 a315 58 529v nx.addsv.00n,intel core i5-1135g,n/a,8,ddr4,256,ssd,hd,15.6,1920x1080,60,220,36.7,2,1.7,windows 11 home,12,9990000,36.34,23.84,1.99,2,0,1,0,0
+thegioididong,lenovo,lenovo gaming loq 15iax9 83gs000jvn,intel core i5-12450hx,geforce rtx 3050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,300,60.0,60 wh,2.38,windows 11 home,24,22490000,35.99,25.87,2.39,3,1,1,0,0
+thegioididong,hp,hp 245 g10 a20tdpt,amd ryzen 5 7530u,n/a,8,ddr4,512,ssd,hd,14.0,1920x1080,60,250,41.0,3,1.36,windows 11 home,12,12490000,32.4,21.5,1.79,2,1,1,0,1
+thegioididong,asus,asus gaming vivobook k3605zf rp745w,intel core i5-12500h,geforce rtx 2050,16,ddr4,512,ssd,hd,16.0,1920x1200,144,300,50.0,3,1.8,windows 11 home,24,16990000,35.86,24.91,1.89,2,1,1,0,0
+thegioididong,lenovo,lenovo gaming loq 15iax9 83gs00d9vn,intel core i5-12450hx,geforce rtx 3050,24,ddr5,512,ssd,hd,15.6,1920x1080,144,300,60.0,60 wh,2.38,windows 11 home,24,23490000,35.99,25.87,2.39,3,1,1,0,0
+thegioididong,acer,acer aspire lite 14 51m 36mh nx.ktvsv.001,intel core i3-1215u,n/a,8,ddr5,256,ssd,hd,14.0,1920x1200,60,300,58.0,3,1.5,windows 11 home,12,9190000,31.33,21.8,1.69,0,1,1,0,0
+thegioididong,msi,msi modern 15 b12mo 628vn,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,39.3,3,1.7,windows 11 home,24,12490000,35.9,24.1,1.99,1,1,1,0,0
+thegioididong,asus,asus vivobook x1404za nk246w,intel core i3-1215u,n/a,8,ddr4,512,ssd,hd,14.0,1920x1080,60,250,42.0,3,1.4,windows 11 home,24,11990000,32.49,21.39,1.79,2,1,1,0,0
+thegioididong,lenovo,lenovo ideapad 1 15alc7 82r400c1vn,amd ryzen 7 5700u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,42.0,42 wh,1.61,windows 11 home,24,12990000,36.02,23.6,1.79,1,1,1,0,0
+thegioididong,acer,acer aspire lite 14 51m 36pn nx.ktwsv.001,intel core i3-1215u,n/a,8,ddr5,512,ssd,hd,14.0,1920x1200,60,300,58.0,3,1.5,windows 11 home,12,9690000,31.33,21.8,1.69,0,1,1,0,0
+thegioididong,dell,dell latitude 3440 l3440-i51235u-16g512g,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1080,60,250,41.0,3,1.54,windows 11 home,12,16990000,32.22,21.94,1.94,3,1,1,0,0
+thegioididong,hp,hp gaming victus 15 fa1139tx 8y6w3pa,intel core i5-12450h,geforce rtx 2050,16,ddr4,512,ssd,hd,15.6,1920x1080,144,250,52.5,3,2.29,windows 11 home,12,18990000,35.79,25.5,2.35,2,1,1,0,0
+thegioididong,hp,hp pavilion 15 eg3093tu 8c5l4pa,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.69,windows 11 home,12,18990000,36.02,23.4,1.8,2,1,1,0,0
+thegioididong,msi,msi gaming gf63 thin 12ve 460vn,intel core i5-12450h,geforce rtx 4050,16,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,12,18990000,35.9,25.4,2.17,3,1,1,0,0
+thegioididong,hp,hp 15 fd0015tu a19c5pa,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.59,windows 11 home,12,19890000,35.98,23.6,1.86,2,1,1,0,0
+thegioididong,lenovo,lenovo ideapad slim 3 15irh8 83em003fvn,intel core i7-13620h,n/a,16,ddr5,1024,ssd,hd,15.6,1920x1080,60,300,47.0,47 wh,1.62,windows 11 home,24,18990000,35.93,23.5,1.79,2,1,1,0,0
+thegioididong,asus,asus tuf gaming a15 fa506nf hn012w,amd ryzen 5 7535hs,geforce rtx 2050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,16990000,35.9,25.6,2.45,3,1,1,0,0
+thegioididong,acer,acer gaming aspire 5 a515 58gm 51lb nx.kq4sv.002,intel core i5-13420h,geforce rtx 2050,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,16490000,36.1,23.7,1.79,2,1,1,0,0
+thegioididong,acer,acer aspire 5 a515 58m 56yx nx.kq8sv.005,intel core i5-13420h,n/a,16,ddr5,512,ssd,hd,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,14690000,36.29,23.75,1.79,2,1,1,0,0
+thegioididong,msi,msi gaming thin 15 b12ucx 2046vn,intel core i5-12450h,geforce rtx 2050,16,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,16490000,35.9,25.4,2.17,3,1,1,0,1
+thegioididong,dell,dell inspiron 15 3530 p16wd,intel core i7-1355u,n/a,16,ddr4,1024,ssd,hd,15.6,1920x1080,120,n/a,54.0,4,1.65,windows 11 home,12,22490000,35.85,23.56,1.9,1,1,1,0,0
+thegioididong,asus,asus tuf gaming f15 fx507zc4 hn330w,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,hd,15.6,1920x1080,144,250,56.0,4,2.2,windows 11 home,24,19990000,35.4,25.1,2.49,2,2,1,0,0
+thegioididong,hp,hp 240 g9 ag2j5at,intel core i3-1215u,n/a,8,ddr4,512,ssd,hd,14.0,1920x1080,60,250,41.0,3,1.42,windows 11 home,12,10990000,32.4,22.59,1.99,2,1,1,0,1
+thegioididong,asus,asus vivobook 16 x1605va mb360w,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,16.0,1920x1200,60,300,42.0,3,1.88,windows 11 home,24,15990000,35.87,24.95,1.99,2,1,1,0,0
+thegioididong,lenovo,lenovo ideapad slim 5 14iah8 83bf003wvn,intel core i5-12450h,n/a,16,ddr5,1024,ssd,hd,14.0,1920x1200,60,300,56.6,56.6wh,1.46,windows 11 home,36,16790000,31.2,22.1,1.79,2,2,1,0,0
+thegioididong,hp,hp 240 g10 9h2e4pt,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1080,60,250,41.0,3,1.36,windows 11 home,12,16790000,32.4,21.5,1.79,2,1,1,0,0
+thegioididong,acer,acer gaming aspire 5 a515 58gm 53pz nx.kq4sv.008,intel core i5-13420h,geforce rtx 2050,8,ddr4,512,ssd,hd,15.6,1920x1080,60,250,50.0,50 wh,1.7,windows 11 home,12,15490000,36.1,23.7,1.79,2,1,1,0,0
+thegioididong,msi,msi gaming thin 15 b12uc 2045vn,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,hd,15.6,1920x1080,144,250,52.4,3,1.86,windows 11 home,24,17490000,35.9,25.4,2.17,3,1,1,0,0
+thegioididong,hp,hp 240 g8 6l1a2pa,intel core i3-1115g,n/a,8,ddr4,512,ssd,hd,14.0,1920x1080,60,n/a,41.0,3,1.4,windows 11 home,12,9990000,32.4,22.59,1.99,0,1,1,0,0
+thegioididong,msi,msi modern 15 b12mo 487vn,intel core i7-1255u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,39.3,3,1.7,windows 11 home,24,14990000,35.9,24.1,1.99,1,1,1,0,0
+thegioididong,asus,asus vivobook 14 x1404va nk050w,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1080,60,n/a,42.0,3,1.4,windows 11 home,24,18490000,32.49,21.39,1.79,2,1,1,0,0
+thegioididong,hp,hp gaming victus 15 fb1022ax 94f19pa,amd ryzen 5 7535hs,geforce rtx 2050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,52.5,3,2.29,windows 11 home,12,18790000,35.79,25.5,2.35,2,1,1,0,0
+thegioididong,hp,hp pavilion x360 14 ek2024tu 9z2v6pa,intel core 5 - 120u,n/a,16,ddr4,512,ssd,hptruevision5mp,14.0,1920x1080,60,300,43.0,3,1.51,windows 11 home,12,23490000,32.2,21.0,1.89,2,1,1,0,1
+thegioididong,dell,dell vostro 3530 80gg93,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,41.0,3,1.66,windows 11 home,12,19990000,35.85,23.56,1.9,1,1,1,0,1
+thegioididong,lenovo,lenovo gaming loq 15arp9 83jc0040vn,amd ryzen 7 7435hs,geforce rtx 4050,24,ddr5,512,ssd,hd,15.6,1920x1080,144,300,60.0,60 wh,2.38,windows 11 home,24,26990000,35.99,25.87,2.39,3,1,1,0,0
+thegioididong,dell,dell inspiron 15 3530 71043888,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,54.0,4,1.66,windows 11 home,12,21490000,35.85,23.56,1.9,2,0,1,0,1
+thegioididong,asus,asus vivobook 15 x1504za nj1608w,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,14990000,35.97,23.25,1.79,2,1,1,0,0
+thegioididong,asus,asus vivobook 15 x1504za nj1546w,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,42.0,3,1.7,windows 11 home,24,14690000,35.97,23.25,1.79,2,1,1,0,0
+thegioididong,dell,dell inspiron 15 3530 n3530-i5u165w11slu,intel core i5-1334u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,18490000,35.85,23.56,1.9,1,1,1,0,0
+thegioididong,acer,acer gaming nitro an515 58 773y nh.qfksv.001.16g,intel core i7-12700h,geforce rtx 3050 ti,16,ddr4,512,ssd,hd,15.6,1920x1080,144,250,57.5,4,2.5,windows 11 home,12,22990000,36.04,27.11,2.59,3,1,1,0,0
+thegioididong,hp,hp pavilion 15 eg3091tu 8c5l2pa,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.69,windows 11 home,12,22790000,36.02,23.4,1.8,2,1,1,0,0
+thegioididong,hp,hp pavilion 15 eg2081tu 7c0q4pa,intel core i5-1240p,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,41.0,3,1.72,windows 11 home,12,17190000,36.02,23.4,1.79,2,1,1,0,0
+thegioididong,lenovo,lenovo ideapad slim 5 15iru9 83d0000evn,intel core 5 - 120u,n/a,16,ddr5,512,ssd,hd,15.3,1920x1200,60,300,57.0,57wh,1.79,windows 11 home,24,18490000,34.35,23.82,1.74,2,2,1,0,1
+thegioididong,msi,msi modern 15 b12mo 625vn,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,39.3,3,1.7,windows 11 home,24,11490000,35.9,24.1,1.99,1,1,1,0,0
+thegioididong,lenovo,lenovo gaming loq 15iax9 83gs00dbvn,intel core i5-12450hx,geforce rtx 2050,24,ddr5,512,ssd,hd,15.6,1920x1080,144,300,60.0,60 wh,2.38,windows 11 home,24,20890000,35.99,25.87,2.39,3,1,1,0,1
+thegioididong,dell,dell inspiron 15 3520 71043883,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,41.0,3,1.9,windows 11 home,12,16490000,35.85,23.56,1.9,2,0,1,0,1
+thegioididong,asus,asus gaming vivobook k3605zc rp629w,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,hd,16.0,1920x1200,144,300,50.0,3,1.8,windows 11 home,24,18990000,35.86,24.91,1.89,2,1,1,0,0
+thegioididong,asus,asus tuf gaming f15 fx507zc4 hn181w,intel core i7-12700h,geforce rtx 3050,16,ddr4,512,ssd,hd,15.6,1920x1080,144,250,56.0,4,2.2,windows 11 home,24,22490000,35.4,25.1,2.49,2,2,1,0,0
+thegioididong,acer,acer aspire 5 a515 58p 34rj nx.khjsv.003,intel core i3-1315u,n/a,8,ddr5,512,ssd,hd,15.6,1920x1080,60,250,50.0,3,1.7,windows 11 home,12,9990000,36.29,23.75,1.8,2,0,1,0,0
+thegioididong,acer,acer aspire 3 a315 59 5283 nx.k6tsv.00b,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,40.0,3,1.7,windows 11 home,12,12490000,36.29,24.13,1.99,3,0,1,0,0
+thegioididong,msi,msi gaming katana 15 b13udxk 2077vn,intel core i7-13620h,geforce rtx 3050,16,ddr5,1024,ssd,hd,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,23990000,35.9,25.9,2.49,2,1,1,0,0
+thegioididong,hp,hp 15 fd1063tu 9z2y1pa,intel core ultra 5 meteor lake - 125h,n/a,16,ddr5,512,ssd,hd,15.6,1920x1080,60,300,41.0,3,1.65,windows 11 home,12,18490000,35.98,23.6,1.86,2,1,1,0,1
+thegioididong,lenovo,lenovo v14 g4 83a00012vn,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1080,60,300,38.0,38wh,1.43,windows 11 home,24,18990000,32.42,21.52,1.99,1,1,1,0,1
+thegioididong,lenovo,lenovo gaming loq 15irx9 83dv00d5vn,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,300,60.0,60 wh,2.38,windows 11 home,24,29890000,35.99,25.87,2.39,3,1,1,0,0
+thegioididong,dell,dell vostro 3520 71030559,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,41.0,3,1.9,windows 11 home,12,16490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,hp,hp 240 g9 6l1x7pa,intel core i3-1215u,n/a,8,ddr4,256,ssd,hd,14.0,1920x1080,60,n/a,41.0,3,1.41,windows 11 home,12,12990000,32.4,22.59,1.99,2,1,1,0,0
+thegioididong,dell,dell vostro 15 3520 5m2tt2,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.67,windows 11 home,12,15490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,asus,asus vivobook 15 x1504za nj1528w,intel core i5-1235u,n/a,16,ddr4,1024,ssd,hd,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,15190000,35.97,23.25,1.79,2,1,1,0,0
+thegioididong,msi,msi modern 14 c13m 611vn,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1080,60,n/a,39.3,3,1.4,windows 11 home,24,13490000,31.99,22.3,1.94,1,1,1,0,0
+thegioididong,asus,asus vivobook 15 oled a1505va l1341w,intel core i5-13500h,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,600,50.0,3,1.7,windows 11 home,24,19990000,35.68,22.76,1.99,2,1,1,0,0
+thegioididong,asus,asus zenbook 14 oled ux3405ma,intel core ultra 5 meteor lake - 125h,n/a,16,ddr5,512,ssd,hd,14.0,2880x1800,120,400,75.0,4,1.2,windows 11 home,24,28990000,31.24,22.01,1.49,1,2,1,0,0
+thegioididong,hp,hp 240 g9 6l1y2pa,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,14.0,1920x1080,60,250,41.0,3,1.47,windows 11 home,12,18590000,32.4,22.59,1.99,0,1,1,0,0
+thegioididong,acer,acer gaming aspire 7 a715 76g 5806 nh.qmfsv.002,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,50.0,3,2.1,windows 11 home,12,18490000,36.23,23.74,1.99,3,1,1,0,0
+thegioididong,apple,apple macbook air mrxq3sa/a,apple m3,n/a,8,n/a,256,ssd,hd,13.6,2560x1664,n/a,500,lên đến 18 giờ,lên đến 18 giờ,1.24,macos,12,26490000,30.41,21.5,1.13,0,2,0,0,0
+thegioididong,hp,hp 240 g9 6l1x8pa,intel core i3-1215u,n/a,8,ddr4,512,ssd,hd,14.0,1920x1080,60,250,41.04,3,1.42,windows 11 home,12,10990000,32.4,22.59,1.99,2,1,1,0,1
+thegioididong,acer,acer aspire 5 a514 56p 742f nx.khrsv.005,intel core i7-1355u,n/a,16,ddr5,512,ssd,hd,14.0,1920x1200,60,250,50.0,3,1.5,windows 11 home,12,13990000,31.88,22.55,1.8,2,0,1,0,0
+thegioididong,msi,msi gaming gf63 thin 12uc 887vn,intel core i7-12650h,geforce rtx 3050,8,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,12,17990000,35.9,25.4,2.17,3,1,1,0,1
+thegioididong,dell,dell inspiron 15 3530 n5i5340w1,intel core i5-1334u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,19990000,35.85,23.56,1.9,1,1,1,0,0
+thegioididong,asus,asus vivobook 15 x1504va nj025w,intel core i5-1335u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,42.0,3,1.7,windows 11 home,24,13990000,35.97,23.25,1.79,2,1,1,0,0
+thegioididong,acer,acer aspire 5 a515 58p 774r nx.khjsv.005,intel core i7-1355u,n/a,16,ddr5,512,ssd,hd,15.6,1920x1080,60,250,50.0,3,1.7,windows 11 home,12,13990000,36.29,23.75,1.8,2,0,1,0,0
+thegioididong,dell,dell inspiron 15 3530 n5i7301w1,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,54.0,3,1.65,windows 11 home,12,21490000,35.85,23.49,1.75,1,1,1,0,0
+thegioididong,asus,asus vivobook 15 oled a1505va ma467w,intel core i5-13500h,n/a,16,ddr4,512,ssd,hd,15.6,2880x1620,120,600,50.0,3,1.7,windows 11 home,24,18690000,35.68,22.76,1.99,2,1,1,0,0
+thegioididong,asus,asus vivobook s 16 oled s5606ma mx050w,intel core ultra 5 meteor lake - 125h,n/a,16,ddr5,512,ssd,hd,16.0,3200x2000,120,400,75.0,4,1.5,windows 11 home,24,24490000,35.36,24.69,1.59,2,2,1,0,0
+thegioididong,acer,acer aspire lite al16 51p 596h nx.kwzsv.002,intel core i5-1235u,n/a,8,ddr5,512,ssd,hd,16.0,1920x1200,60,300,58.0,3,1.7,windows 11 home,12,12690000,35.76,24.7,1.89,3,1,1,0,0
+thegioididong,msi,msi gaming bravo 15 b7ed 010vn,amd ryzen 5 7535hs,card r i -  radeon rx 6550m,16,ddr5,512,ssd,hd,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,16490000,35.9,25.9,2.5,2,1,1,0,0
+thegioididong,msi,msi gaming katana 15 b13vfk 676vn,intel core i7-13620h,geforce rtx 4060,16,ddr5,1024,ssd,hd,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,27990000,35.9,25.9,2.49,2,1,1,0,0
+thegioididong,lenovo,lenovo v15 g4 iru 83a1000lvn,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,38.0,38wh,1.67,windows 11 home,24,15990000,35.92,23.58,1.99,1,1,1,0,0
+thegioididong,lenovo,lenovo thinkpad e14 gen 6 21m7004uvn,intel core ultra 7 meteor lake - 155u,n/a,16,ddr5,512,ssd,hd,14.0,1920x1200,60,300,47.0,47 wh,1.44,windows 11 home,24,27990000,31.3,21.93,1.8,2,2,1,0,1
+thegioididong,acer,acer predator helios neo phn16 71 53m7 nh.qlusv.005,intel core i5-13500hx,geforce rtx 4060,16,ddr5,512,ssd,hd,16.0,1920x1200,165,400,90.0,4,2.6,windows 11 home,12,26990000,36.01,27.99,2.83,3,2,1,0,0
+thegioididong,dell,dell inspiron 15 3520 i5u085w11blu,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.9,windows 11 home,12,15490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,asus,asus vivobook s 14 oled s5406ma pp136w,intel core ultra 5 meteor lake - 125h,n/a,16,ddr5,1024,ssd,hd,14.0,2880x1800,120,400,75.0,4,1.3,windows 11 home,24,23990000,31.05,22.19,1.59,2,2,1,0,0
+thegioididong,dell,dell inspiron 15 3530 71043885,intel core i5-1334u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,41.0,3,1.66,windows 11 home,12,18490000,35.85,23.56,1.9,1,1,1,0,1
+thegioididong,asus,asus zenbook 14 oled ux3402va km657w,intel core i5-13500h,n/a,16,ddr5,512,ssd,hd,14.0,2880x1800,90,400,75.0,4,1.39,windows 11 home,24,23990000,31.36,22.06,1.69,1,2,1,0,0
+thegioididong,hp,hp pavilion 15 eg2082tu 7c0q5pa,intel core i5-1240p,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,41.04,3,1.72,windows 11 home,12,16390000,36.02,23.4,1.79,2,1,1,0,0
+thegioididong,asus,asus tuf gaming f15 fx507zc4 hn229w,intel core i5-12500h,geforce rtx 3050,16,ddr4,1024,ssd,hd,15.6,1920x1080,144,n/a,56.0,4,2.2,windows 11 home,24,25990000,35.4,25.1,2.24,2,2,1,0,0
+thegioididong,asus,asus vivobook s 14 flip tp3402va lz031w,intel core i5-13500h,n/a,16,ddr4,512,ssd,hd,14.0,1920x1200,60,300,50.0,3,1.5,windows 11 home,24,18990000,31.32,22.76,1.89,1,1,1,0,0
+thegioididong,acer,acer aspire lite 15 51m 5542 nx.ks5sv.001,intel core i5-1155g,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,36.0,36wh,1.7,windows 11 home,12,11190000,36.04,23.93,1.97,1,1,1,0,0
+thegioididong,hp,hp 15 fd0304tu a2nl5pa,intel core i3-1315u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.59,windows 11 home,12,13490000,35.98,23.6,1.86,2,1,1,0,1
+thegioididong,msi,msi modern 15 b7m 231vn,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,39.3,3,1.75,windows 11 home,24,11490000,35.9,24.1,1.99,1,1,1,0,0
+thegioididong,acer,acer gaming nitro v anv15 51 55ca nh.qn8sv.004,intel core i5-13420h,geforce rtx 4050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,57.0,4,2.1,windows 11 home,12,24490000,36.23,23.99,2.69,3,1,1,0,0
+thegioididong,lenovo,lenovo ideapad slim 5 16imh9 83dc001rvn,intel core ultra 5 meteor lake - 125h,n/a,16,ddr5,512,ssd,hd,16.0,2048x1152,120,400,57.0,57wh,1.82,windows 11 home,24,22990000,35.6,25.1,1.69,2,2,1,0,0
+thegioididong,lenovo,lenovo gaming legion 5 16irx9 83dg0051vn,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,hd,16.0,2560x1600,165,350,80.0,80 wh,2.36,windows 11 home,24,42990000,35.97,26.23,2.52,3,2,1,0,1
+thegioididong,msi,msi gaming gf63 thin 12ve 460vn,intel core i5-12450h,geforce rtx 4050,8,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,12,22490000,35.9,25.4,2.17,3,1,1,0,0
+thegioididong,dell,dell inspiron 15 3520 n3520-i5u165w11blu-fp,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.9,windows 11 home,12,16490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,acer,acer aspire 3 a315 510p 32ef nx.kdhsv.001,intel core i3 chuỗi n - n305,n/a,8,ddr5,256,ssd,hd,15.6,1920x1080,60,n/a,40.0,40 wh,1.7,windows 11 home,12,9990000,36.29,23.75,1.89,2,1,1,0,0
+thegioididong,asus,asus tuf gaming a15 fa506nc hn017w,amd ryzen 5 7535hs,geforce rtx 3050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,18490000,35.9,25.6,2.45,3,1,1,0,0
+thegioididong,asus,asus tuf gaming a15 fa506ncr hn097w,amd ryzen 7 7435hs,geforce rtx 3050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,20490000,35.9,25.6,2.45,3,1,1,0,0
+thegioididong,dell,dell vostro 15 3520 i5u165w11gru,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.9,windows 11 home,12,16990000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,dell,dell vostro 15 3520 v3520-i5u165w11gru,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.9,windows 11 home,12,16490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,hp,hp 15s fq5229tu 8u237pa,intel core i3-1215u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.69,windows 11 home,12,13690000,35.85,24.2,1.79,2,1,1,0,0
+thegioididong,acer,acer aspire lite 15 51m 55nb nx.krssv.001,intel core i5-1155g,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,220,36.0,36wh,1.7,windows 11 home,12,11190000,36.04,23.93,1.97,1,1,1,0,0
+thegioididong,hp,hp 15s fq5162tu 7c134pa,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.7,windows 11 home,12,18890000,35.85,24.2,1.79,2,1,1,0,0
+thegioididong,lenovo,lenovo ideapad slim 5 14imh9 83da0020vn,intel core ultra 7 meteor lake - 155h,n/a,32,ddr5,1024,ssd,hd,14.0,1920x1200,60,400,57.0,57wh,1.48,windows 11 home,24,27990000,31.2,22.1,1.69,2,2,1,0,1
+thegioididong,hp,hp 240 g9 9t2g2pt,intel core i5-1235u,n/a,16,ddr4,512,ssd,hptruevisionwebcam,14.0,1920x1080,60,250,41.04,3,1.42,windows 11 home,12,15990000,32.4,22.59,1.99,2,1,1,0,1
+thegioididong,msi,msi gaming thin gf63 12uc 803vn,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,12,18990000,35.9,25.4,2.17,3,1,1,0,0
+thegioididong,msi,msi gaming cyborg 15 a13vek 1423vn,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,53.5,3,1.98,windows 11 home,24,24990000,35.94,25.03,2.29,2,1,1,0,0
+thegioididong,msi,msi gaming thin 15 b13ucx 2080vn,intel core i5-13420h,geforce rtx 2050,16,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,17490000,35.9,25.4,2.17,3,0,1,0,1
+thegioididong,lenovo,lenovo thinkbook 16 g7 21ms007gvn,intel core ultra 5 meteor lake - 125u,n/a,16,ddr5,512,ssd,hd,16.0,1920x1200,60,300,45.0,45wh,1.7,windows 11 home,24,22990000,35.6,25.35,1.75,2,2,1,0,1
+thegioididong,lenovo,lenovo ideapad slim 5 16imh9 83dc001svn,intel core ultra 7 meteor lake - 155h,n/a,32,ddr5,512,ssd,hd,16.0,2048x1152,120,400,57.0,57wh,1.82,windows 11 home,24,26990000,35.6,25.1,1.69,2,2,1,0,1
+thegioididong,dell,dell inspiron 15 3520 n3520-i5u085w11slu,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,41.0,3,1.9,windows 11 home,12,15690000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,asus,asus vivobook 15 x1504va nj023w,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,42.0,3,1.7,windows 11 home,24,19490000,35.97,23.25,1.79,2,1,1,0,0
+thegioididong,msi,msi thin 15 b13uc 1411vn,intel core i7-13620h,geforce rtx 3050,32,ddr4,512,ssd,hd,15.6,1920x1080,144,250,52.4,3,1.86,windows 11 home,24,21490000,35.9,25.4,2.17,3,1,1,0,1
+thegioididong,hp,hp pavilion 15 eg2088tu 7c0r0pa,intel core i7-1260p,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,41.04,3,1.74,windows 11 home,12,20990000,36.02,23.4,1.79,2,1,1,0,0
+thegioididong,hp,hp envy x360 14 fc0094tu a19c4pa,intel core ultra 5 meteor lake - 125u,n/a,16,ddr5,512,ssd,camerair5mp,14.0,2880x1800,60,500,59.0,3,1.39,windows 11 home,12,27290000,31.33,21.89,1.69,2,2,1,0,1
+thegioididong,asus,asus gaming vivobook k3605zu rp296w,intel core i5-12500h,geforce rtx 4050,16,ddr4,512,ssd,hd,16.0,1920x1200,144,300,70.0,3,1.8,windows 11 home,24,22990000,35.86,24.91,1.89,2,1,1,0,0
+thegioididong,dell,dell inspiron 15 3530 71026454,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,54.0,4,1.66,windows 11 home,12,21490000,35.85,23.55,1.89,1,1,1,0,0
+thegioididong,acer,acer gaming nitro 5 tiger an515 58 52sp nh.qfhsv.001,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,19490000,36.04,27.11,2.59,3,1,1,0,0
+thegioididong,dell,dell inspiron 14 5440 7fn5j,intel core 7 - 150u,n/a,16,ddr5,1024,ssd,hd,14.0,1920x1200,60,250,54.0,4,1.56,windows 11 home,12,24990000,31.4,22.66,1.89,2,1,1,0,1
+thegioididong,apple,macbook air z18t0003t,apple m2,n/a,8,n/a,256,ssd,fhd,15.3,liquidretina,n/a,500,lên đến 18 giờ,lên đến 18 giờ,1.51,macos,12,32390000,34.04,23.76,1.15,0,2,0,0,0
+thegioididong,hp,hp 15 fd1064tu 9z2y2pa,intel core ultra 5 meteor lake - 125h,n/a,16,ddr5,512,ssd,hd,15.6,1920x1080,60,n/a,41.0,3,1.65,windows 11 home,12,20990000,35.98,23.6,1.86,2,1,1,0,1
+thegioididong,lenovo,lenovo gaming legion pro 5 16irx9 83df0047vn,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,hd,16.0,2560x1600,240,500,80.0,80 wh,2.5,windows 11 home,24,47990000,36.34,26.18,2.69,4,2,1,0,0
+thegioididong,msi,msi gaming sword 16 hx b14vfkg 045vn,intel core i7-14700hx,geforce rtx 4060,16,ddr5,1024,ssd,hd,16.0,2560x1600,240,n/a,65.0,4,2.3,windows 11 home,24,36990000,35.9,26.64,2.77,3,1,1,0,0
+thegioididong,asus,asus tuf gaming f15 fx507vu lp186w,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,26990000,35.4,25.1,2.49,2,2,1,0,0
+thegioididong,asus,asus vivobook s 16 oled m5606wa mx072ws,amd ryzen ai 9 - hx 370,n/a,32,ddr5,1024,ssd,hd,16.0,3200x2000,120,400,75.0,4,1.5,windows 11 home,24,30490000,35.36,24.69,1.39,2,2,1,0,0
+thegioididong,acer,acer swift go sfg14 71 513f nx.kpzsv.003,intel core i5-13500h,n/a,16,ddr5,512,ssd,qhd,14.0,2880x1800,90,400,65.0,65wh,1.3,windows 11 home,12,17590000,31.29,21.79,1.49,2,2,1,0,1
+thegioididong,dell,dell vostro 3420 v4i5702w1,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,14.0,1920x1080,60,250,41.0,3,1.49,windows 11 home,12,16190000,32.13,22.03,1.95,2,0,1,0,0
+thegioididong,acer,acer swift go 14 41 r251 nx.kg3sv.005,amd ryzen 5 7430u,n/a,16,ddr4,1024,ssd,hd,14.0,1920x1080,60,300,50.0,50 wh,1.25,windows 11 home,12,16490000,32.17,21.17,1.59,2,2,1,0,0
+thegioididong,hp,hp pavilion 15 eg2062tx 7c0w7pa,intel core i5-1235u,geforce mx550,8,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,41.04,3,1.74,windows 11 home,12,20590000,36.02,23.4,1.79,2,1,1,0,0
+thegioididong,acer,acer swift lite 14 ai sfl14 51m 56hs nx.j1hsv.002,intel core ultra 5 meteor lake - 125u,n/a,16,ddr5,512,ssd,hd,14.0,1920x1200,60,n/a,58.0,3,1.27,windows 11 home,12,18690000,31.44,22.19,1.75,3,1,1,0,0
+thegioididong,lenovo,lenovo yoga slim 7 14imh9 83cv001vvn,intel core ultra 7 meteor lake - 155h,n/a,32,ddr5,1024,ssd,hd,14.0,1920x1200,60,400,65.0,65wh,1.39,windows 11 home,24,31490000,31.2,22.1,1.49,1,2,1,0,0
+thegioididong,lenovo,lenovo ideapad slim 5 14imh9 83da001nvn,intel core ultra 5 meteor lake - 125h,n/a,16,ddr5,512,ssd,hd,14.0,1920x1200,60,400,57.0,57wh,1.48,windows 11 home,24,21990000,31.2,22.1,1.69,2,2,1,0,1
+thegioididong,msi,msi gaming cyborg 14 a13ve 090vn,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,hd,14.0,1920x1200,144,n/a,53.5,3,1.6,windows 11 home,24,25990000,31.47,23.35,2.23,2,1,1,0,0
+thegioididong,dell,dell vostro 15 3520 v5i3614w1,intel core i3-1215u,n/a,8,ddr4,256,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.83,windows 11 home,12,10490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,msi,msi prestige 14 ai studio c1veg 056vn,intel core ultra 7 meteor lake - 155h,geforce rtx 4050,32,ddr5,1024,ssd,hd,14.0,2880x1800,144,400,90.0,4,1.7,windows 11 home,24,32990000,31.34,24.65,1.9,1,1,1,0,1
+thegioididong,hp,hp pavilion x360 14 ek2027tu 9z2v9pa,intel core 7 - 150u,n/a,16,ddr4,512,ssd,hptruevision5mp,14.0,1920x1080,60,300,43.0,3,1.51,windows 11 home,12,26590000,32.2,21.0,1.89,2,1,1,0,1
+thegioididong,acer,acer gaming nitro v anv15 51 53ne nh.qnasv.002,intel core i5-13420h,geforce rtx 2050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,19690000,36.23,23.99,2.29,3,1,1,0,0
+thegioididong,hp,hp pavilion x360 14 ek1047tu 80r25pa,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1080,60,n/a,43.0,3,1.53,windows 11 home,12,24990000,32.2,21.0,1.99,2,1,1,0,0
+thegioididong,asus,asus tuf gaming f15 fx507vu lp167w,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,n/a,90.0,4,2.2,windows 11 home,24,26490000,35.4,25.1,2.49,2,2,1,0,0
+thegioididong,hp,hp gaming victus 16 r0130tx 8c5n5pa,intel core i5-13500h,geforce rtx 3050,16,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.34,windows 11 home,12,29690000,36.9,25.94,2.39,3,1,1,0,0
+thegioididong,asus,asus gaming tuf a15 fa507nur lp057w,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,25990000,35.4,25.1,2.49,2,2,1,0,0
+thegioididong,asus,asus zenbook 14 oled ux3405ma pp475w,intel core ultra 9 meteor lake - 185h,n/a,32,ddr5,1024,ssd,hd,14.0,2880x1800,120,400,75.0,4,1.2,windows 11 home,24,36990000,31.24,22.01,1.49,1,2,1,0,0
+thegioididong,asus,asus vivobook 15 oled a1505za l1337w,intel core i5-12500h,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,600,50.0,3,1.7,windows 11 home,24,16990000,35.68,22.76,1.99,2,1,1,0,0
+thegioididong,hp,hp envy x360 14 fa0050au a29h8pa,amd ryzen 5 8640hs,n/a,16,ddr5,512,ssd,camerair5mp,14.0,2880x1800,60,400,59.0,3,1.39,windows 11 home,12,26790000,31.33,21.89,1.69,2,2,1,0,1
+thegioididong,hp,hp pavilion 15 eg3094tu 8c5l5pa,intel core i5-1335u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.69,windows 11 home,12,17990000,36.02,23.4,1.8,2,1,1,0,0
+thegioididong,acer,acer gaming aspire 7 a715 76g 59mw nh.qmysv.001,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,50.0,3,2.1,windows 11 home,12,15690000,36.23,23.74,1.99,3,1,1,0,0
+thegioididong,acer,acer gaming nitro 5 tiger an515 58 769j nh.qfhsv.003,intel core i7-12700h,geforce rtx 3050,8,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,21190000,36.04,27.11,2.59,3,1,1,0,0
+thegioididong,dell,dell inspiron 15 3520 i3u082w11blu,intel core i3-1215u,n/a,8,ddr4,256,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.9,windows 11 home,12,10490000,35.85,23.56,1.7,2,0,1,0,0
+thegioididong,lenovo,lenovo gaming legion pro 5 16irx9 83df0046vn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,hd,16.0,2560x1600,240,500,80.0,80 wh,2.5,windows 11 home,24,54990000,36.34,26.18,2.69,4,2,1,0,0
+thegioididong,dell,dell inspiron 14 5440 n4i7204w1,intel core 7 - 150u,n/a,16,ddr5,512,ssd,hd,14.0,1920x1200,60,250,54.0,4,1.67,windows 11 home,12,23990000,31.4,22.62,1.81,2,1,1,0,0
+thegioididong,msi,msi gaming stealth 14 ai studio a1vfg 085vn,intel core ultra 7 meteor lake - 155h,geforce rtx 4060,32,ddr5,1024,ssd,hd,14.0,2880x1800,120,n/a,72.0,4,1.7,windows 11 home,24,48990000,31.56,24.62,2.18,1,2,1,0,0
+thegioididong,lenovo,lenovo thinkbook 14 21mr0072vn,intel core ultra 7 meteor lake - 155u,n/a,16,ddr5,512,ssd,hd,14.0,1920x1200,60,300,45.0,45wh,1.38,windows 11 home,24,26990000,31.35,22.4,1.69,2,2,1,0,1
+thegioididong,lenovo,lenovo ideapad slim 5 14imh9 83da001yvn,intel core ultra 7 meteor lake - 155h,n/a,32,ddr5,512,ssd,hd,14.0,1920x1200,60,400,57.0,57wh,1.48,windows 11 home,24,26990000,31.2,22.1,1.69,2,2,1,0,1
+thegioididong,asus,asus vivobook 15 oled a1505va ma586ws,intel core i9-13900h,n/a,16,ddr4,512,ssd,hd,15.6,2880x1620,120,600,50.0,3,1.7,windows 11 home,24,23490000,35.68,22.76,1.99,2,1,1,0,0
+thegioididong,acer,acer swift go sfg14 71 74cp nx.kpzsv.004,intel core i7-13700h,n/a,16,ddr5,512,ssd,qhd,14.0,2880x1800,90,400,65.0,65wh,1.3,windows 11 home,12,19690000,31.29,21.79,1.49,2,2,1,0,1
+thegioididong,dell,dell inspiron 15 3520 71027003,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.9,windows 11 home,12,15490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,asus,asus vivobook 15 oled a1505va l1386w,intel core i9-13900h,n/a,16,ddr4,1024,ssd,hd,15.6,1920x1080,60,600,50.0,3,1.7,windows 11 home,24,21990000,35.68,22.76,1.99,2,1,1,0,0
+thegioididong,hp,hp 245 g10 8f155pa,amd ryzen 5 7520u,n/a,8,ddr4,512,ssd,hd,14.0,1920x1080,60,n/a,41.0,3,1.36,windows 11 home,12,14190000,32.4,21.5,1.79,2,1,1,0,0
+thegioididong,hp,hp probook 450 g10 9h1n5pt,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,51.0,3,1.72,windows 11 home,12,20290000,35.94,23.39,1.99,2,2,1,0,1
+thegioididong,acer,acer swift go 14 ai sfg14 73 53x7 nx.kslsv.001,intel core ultra 5 meteor lake - 125h,n/a,16,ddr5,512,ssd,qhd,14.0,2880x1800,120,400,65.0,4,1.32,windows 11 home,12,22990000,31.29,21.79,1.49,2,2,1,0,0
+thegioididong,hp,hp pavilion 15 eg3095tu 8c5l6pa,intel core i5-1335u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.74,windows 11 home,12,17990000,36.02,23.4,1.79,2,1,1,0,0
+thegioididong,msi,msi prestige 13 ai evo a1mg 062vn,intel core ultra 7 meteor lake - 155h,n/a,32,ddr5,1024,ssd,hd,13.3,2880x1800,60,n/a,75.0,4,0.99,windows 11 home,24,30990000,29.9,21.0,1.69,1,2,1,0,0
+thegioididong,lenovo,lenovo gaming legion slim 5 16ahp9 83dh003bvn,amd ryzen 7 8845hs,geforce rtx 4060,32,ddr5,1024,ssd,hd,16.0,2560x1600,165,350,80.0,80 wh,2.3,windows 11 home,24,41990000,35.97,26.05,2.19,2,2,1,0,1
+thegioididong,dell,dell inspiron 16 5640 n5640-c7u161w11ibu,intel core 7 - 150u,n/a,16,ddr5,1024,ssd,hd,16.0,1920x1200,60,250,54.0,4,1.98,windows 11 home,12,25990000,35.68,24.95,1.74,2,1,1,0,1
+thegioididong,hp,hp elitebook 630 g10 9h1n9pt,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,13.3,1920x1080,60,250,42.0,3,1.28,windows 11 home,12,24490000,30.69,20.84,1.59,2,1,1,0,1
+thegioididong,asus,asus tuf gaming f15 fx507vv lp151w,intel core i7-13620h,geforce rtx 4060,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,28990000,35.4,25.1,2.49,2,2,1,0,0
+thegioididong,hp,hp elitebook 630 g10 9j0b4pt,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,13.3,1920x1080,60,250,42.0,3,1.22,windows 11 home,12,21490000,30.69,20.84,1.59,2,1,1,0,0
+thegioididong,dell,dell inspiron 16 5640 khpf5,intel core 7 - 150u,geforce mx570a,16,ddr5,1024,ssd,hd,16.0,1920x1200,60,250,54.0,4,1.87,windows 11 home,12,27990000,35.67,24.95,1.9,2,1,1,0,1
+thegioididong,acer,acer aspire 5 a515 58m 79r7 nx.kq8sv.007,intel core i7-13620h,n/a,16,ddr5,512,ssd,hd,15.6,1920x1080,60,250,50.0,3,1.7,windows 11 home,12,18690000,36.29,23.75,1.79,2,1,1,0,0
+thegioididong,asus,asus vivobook 14x oled k3405vc km006w,intel core i5-13500h,geforce rtx 3050,16,ddr4,512,ssd,hd,14.0,2880x1800,90,400,63.0,3,1.4,windows 11 home,24,23990000,31.71,22.25,1.89,2,1,1,0,0
+thegioididong,acer,acer aspire 5 a514 56p 54tn nx.khrsv.004,intel core i5-1335u,n/a,8,ddr5,512,ssd,hd,14.0,1920x1200,60,n/a,50.0,3,1.5,windows 11 home,12,13490000,31.88,22.55,1.8,2,0,1,0,0
+thegioididong,lenovo,lenovo v15 g5 irl 83hf0000vn,intel core 5 - 120u,n/a,16,ddr5,512,ssd,hd,15.6,1920x1080,60,300,47.0,47 wh,1.61,windows 11 home,24,18990000,35.92,23.58,1.83,2,1,1,0,1
+thegioididong,msi,msi gaming thin a15 b7ucx 020vn,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,hd,15.6,1920x1080,144,n/a,53.5,3,1.86,windows 11 home,24,15490000,35.9,25.4,2.17,3,1,1,0,0
+thegioididong,msi,msi gaming katana a15 ai b8vf 419vn,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,512,ssd,hd,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,28490000,35.9,25.9,2.49,2,1,1,0,0
+thegioididong,acer,acer aspire 5 a514 54 5127 nx.a28sv.007,intel core i5-1135g,n/a,8,ddr4,512,ssd,hd,14.0,1920x1080,60,n/a,48.0,48wh,1.46,windows 11 home,12,15490000,32.8,22.3,1.79,3,1,1,0,0
+thegioididong,dell,dell vostro 15 3520 v5i5610w1,intel core i5-1235u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.85,windows 11 home,12,15490000,35.85,23.49,1.75,2,0,1,0,0
+thegioididong,hp,hp 15s fq5147tu 7c133pa,intel core i7-1255u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.69,windows 11 home,12,20890000,35.85,24.2,1.79,2,1,1,0,0
+thegioididong,asus,asus tuf gaming a15 fa507nv lp031w,amd ryzen 7 7735hs,geforce rtx 4060,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,27990000,35.4,25.1,2.24,2,2,1,0,0
+thegioididong,asus,asus tuf gaming f15 fx506hf hn014w,intel core i5-11400h,geforce rtx 2050,8,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,48.0,3,2.3,windows 11 home,24,15990000,35.9,25.6,2.28,3,1,1,0,0
+thegioididong,acer,acer gaming nitro 5 tiger an515 58 773y nh.qfksv.001,intel core i7-12700h,geforce rtx 3050 ti,8,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,31990000,36.04,27.11,2.59,3,2,1,0,0
+thegioididong,acer,acer gaming nitro v anv15 51 57b2 nh.qn8sv.001,intel core i5-13420h,geforce rtx 4050,8,ddr5,512,ssd,hd,15.6,1920x1080,144,250,57.0,4,2.1,windows 11 home,12,23690000,36.23,23.99,2.29,3,1,1,0,0
+thegioididong,acer,acer gaming nitro v anv15 51 58an nh.qnasv.001,intel core i5-13420h,geforce rtx 2050,8,ddr5,512,ssd,hd,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,18990000,36.23,23.99,2.69,3,1,1,0,0
+thegioididong,acer,acer swift go 14 ai sfg14 73 71zx nx.kslsv.002,intel core ultra 7 meteor lake - 155h,n/a,16,ddr5,512,ssd,qhd,14.0,2880x1800,120,400,65.0,4,1.32,windows 11 home,12,25990000,31.29,21.79,1.49,2,2,1,0,0
+thegioididong,hp,hp pavilion 15 eg2086tu 7c0q8pa,intel core i3-1215u,n/a,8,ddr4,256,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.74,windows 11 home,12,12290000,36.02,23.4,1.79,2,1,1,0,0
+thegioididong,lenovo,lenovo v14 83hd0001vn,intel core 5 - 120u,n/a,16,ddr5,512,ssd,hd,14.0,1920x1080,60,300,47.0,47 wh,1.37,windows 11 home,24,18990000,32.42,21.52,1.79,2,1,1,0,0
+thegioididong,asus,asus tuf gaming a15 fa507nu lp105w,amd ryzen 5 7535hs,geforce rtx 4050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,23490000,35.4,25.1,2.49,2,2,1,0,0
+thegioididong,msi,msi gaming katana a15 ai b8vg 465vn,amd ryzen 7 8845hs,geforce rtx 4070,16,ddr5,1024,ssd,hd,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,36990000,35.9,25.9,2.49,2,1,1,0,0
+thegioididong,hp,hp pavilion 15 eg3098tu 8c5l9pa,intel core i3-1315u,n/a,8,ddr4,256,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.68,windows 11 home,12,15290000,36.02,23.4,1.8,2,1,1,0,0
+thegioididong,dell,dell latitude 3540 71038100,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,42.0,3,1.81,windows 11 home,12,16990000,35.9,24.0,2.04,3,1,1,0,0
+thegioididong,hp,hp gaming victus 16 s0173ax a9lg9pa,amd ryzen 5 7640hs,geforce rtx 3050,16,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.31,windows 11 home,12,23790000,36.9,25.94,2.29,3,1,1,0,1
+thegioididong,hp,hp gaming victus 16 s0078ax 8c5n7pa,amd ryzen 5 7640hs,geforce rtx 3050,16,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.31,windows 11 home,12,27390000,36.9,25.94,2.39,3,1,1,0,1
+thegioididong,hp,hp probook 450 g10 873d1pa,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,51.0,3,1.79,windows 11 home,12,20290000,35.94,23.39,1.99,2,2,1,0,0
+thegioididong,dell,dell inspiron 14 7430 2-in-1 i7u165w11slu,intel core i7-1355u,n/a,16,ddr5,512,ssd,hd,14.0,1920x1200,60,250,54.0,4,1.62,windows 11 home,12,27990000,31.4,22.66,1.55,1,2,1,0,0
+thegioididong,msi,msi gaming cyborg 15 ai a1vek 053vn,intel core ultra 7 meteor lake - 155h,geforce rtx 4050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,n/a,53.5,3,1.98,windows 11 home,24,28490000,35.94,25.03,2.29,2,1,1,0,0
+thegioididong,dell,dell inspiron 15 3530 n3530i716w1,intel core i7-1355u,geforce mx550,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,54.0,4,1.65,windows 11 home,12,23990000,35.85,23.49,1.75,1,1,1,0,0
+thegioididong,asus,asus tuf gaming f15 fx507zc4 hn074w,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,hd,15.6,1920x1080,144,n/a,56.0,4,2.2,windows 11 home,24,18990000,35.4,25.1,2.24,2,2,1,0,0
+thegioididong,hp,hp probook 450 g10 873d3pa,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,250,51.0,3,1.79,windows 11 home,12,24990000,35.94,23.39,1.99,2,2,1,0,0
+thegioididong,asus,asus zenbook 14 oled ux3405ma pp152w,intel core ultra 7 meteor lake - 155h,n/a,32,ddr5,1024,ssd,hd,14.0,2880x1800,120,400,75.0,4,1.2,windows 11 home,24,34990000,31.24,22.01,1.49,1,2,1,0,0
+thegioididong,dell,dell inspiron 15 3530 n5i5791w1,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,19990000,35.85,23.56,1.9,1,1,1,0,0
+thegioididong,dell,dell inspiron 15 3520 71003264,intel core i3-1215u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,41.0,3,1.9,windows 11 home,12,11490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,hp,hp elitebook 630 g10 873f2pa,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,13.3,1920x1080,60,250,42.0,3,1.22,windows 11 home,12,24490000,30.69,20.84,1.59,2,1,1,0,0
+thegioididong,msi,msi gaming katana 15 b13vgk 1211vn,intel core i7-13620h,geforce rtx 4070,16,ddr5,1024,ssd,hd,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,36990000,35.9,25.9,2.49,2,1,1,0,0
+thegioididong,lenovo,lenovo thinkpad t14s 21f6007xvn,intel core i7-1355u,n/a,32,ddr5,512,ssd,camera5.0mpcamerair,14.0,1920x1200,60,500,57.0,57wh,1.48,windows 11 pro,36,44990000,31.75,22.69,1.69,2,2,1,0,1
+thegioididong,hp,hp probook 450 g10 9h8h1pt,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,60,n/a,51.0,3,1.72,windows 11 home,12,24990000,35.94,23.39,1.99,2,2,1,0,1
+thegioididong,dell,dell inspiron 15 3520 n5i5011w1,intel core i5-1235u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.9,windows 11 home,12,16490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,hp,hp victus 16 r0283tx ad9t3pa,intel core i5-13500h,geforce rtx 3050,16,ddr5,512,ssd,fhd,16.1,1920x1080,144,250,70.0,4,2.31,windows 11 home,12,23490000,36.9,25.94,2.39,3,1,1,0,1
+thegioididong,hp,hp gaming victus 16 s0139ax 9q986pa,amd ryzen 7 7840hs,geforce rtx 4060,32,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,32190000,36.9,25.94,2.39,3,1,1,0,0
+thegioididong,msi,msi gaming katana a15 ai b8ve 402vn,amd ryzen 7 8845hs,geforce rtx 4050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,26990000,35.9,25.9,2.49,2,1,1,0,0
+thegioididong,hp,hp envy x360 14 fa0048au a19bqpa,amd ryzen 7 8840hs,n/a,16,ddr5,512,ssd,camerair5mp,14.0,2880x1800,60,500,59.0,3,1.39,windows 11 home,12,28990000,31.33,21.89,1.69,2,2,1,0,1
+thegioididong,msi,msi gaming stealth 16 mercedes amg a1vgg 293vn,intel core ultra 9 meteor lake - 185h,geforce rtx 4070,32,ddr5,2048,ssd,hd,16.0,2560x1600,240,n/a,99.9,4,1.99,windows 11 home,24,66490000,35.58,25.97,1.99,1,2,1,0,0
+thegioididong,dell,dell vostro 15 3520 5m2tt1,intel core i3-1215u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,41.0,3,1.67,windows 11 home,12,11490000,35.85,23.56,1.9,2,0,1,0,0
+thegioididong,lenovo,lenovo thinkpad x13 21lu004nvn,intel core ultra 5 meteor lake - 125u,n/a,16,ddr5,512,ssd,camera5.0mpcamerair,13.3,1920x1200,60,300,54.7,54.7 wh,1.17,windows 11 pro,36,33990000,30.17,21.48,1.59,2,2,1,0,1
+thegioididong,dell,dell inspiron 15 3530 n3530-i5u085w11blu,intel core i5-1335u,n/a,8,ddr4,512,ssd,hd,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,17490000,35.85,23.56,1.7,1,1,1,0,0
+thegioididong,asus,asus vivobook s 14 oled m5406wa pp071ws,amd ryzen ai 9 - hx 370,n/a,32,ddr5,1024,ssd,hd,14.0,2880x1800,120,400,75.0,4,1.3,windows 11 home,24,31490000,31.05,22.19,1.39,2,2,1,0,0
+thegioididong,asus,asus tuf gaming a15 fa507nvr lp007w,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,27990000,35.4,25.1,2.49,2,2,1,0,0
+thegioididong,dell,dell latitude 3440 71038103,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,14.0,1920x1080,60,250,42.0,3,1.6,windows 11 home,12,24490000,35.9,24.0,2.04,3,1,1,0,0
+thegioididong,asus,asus tuf gaming dash f15 fx517ze hn045w,intel core i5-12450h,geforce rtx 3050 ti,8,ddr5,512,ssd,hd,15.6,1920x1080,144,250,76.0,4,2.0,windows 11 home,24,19990000,35.4,25.1,2.07,2,2,1,0,0
+thegioididong,hp,hp gaming victus 16 s0077ax 8c5n6pa,amd ryzen 7 7840hs,geforce rtx 3050,16,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.34,windows 11 home,12,26390000,36.9,25.94,2.39,3,1,1,0,0
+thegioididong,apple,apple macbook pro mr7j3sa/a,apple m3,n/a,8,n/a,512,ssd,fhd,14.2,3024x1964,120,1000,lên đến 22 giờ,lên đến 22 giờ,1.55,macos,12,37990000,31.26,22.12,1.55,0,2,1,0,0
+thegioididong,msi,msi gaming stealth 18 mercedes amg a1vhg 080vn,intel core ultra 9 meteor lake - 185h,geforce rtx 4080,64,ddr5,2048,ssd,hd,18.0,3840x2400,120,1000,99.9,4,2.89,windows 11 home,24,95990000,40.0,28.97,2.4,2,2,1,0,0
+thegioididong,dell,dell inspiron 7440 n7440-c7u161w11ibu,intel core 7 - 150u,n/a,16,ddr5,1024,ssd,hd,14.0,1920x1200,60,250,64.0,4,1.71,windows 11 home,12,31990000,31.4,22.62,1.89,2,2,1,0,1
+thegioididong,dell,dell inspiron 7440 n4i5006w1,intel core 5 - 120u,n/a,16,ddr5,1024,ssd,hd,14.0,1920x1200,60,250,54.0,4,1.74,windows 11 home,12,29490000,31.4,22.62,1.89,2,2,1,0,0
+thegioididong,asus,asus tuf gaming a15 fa507uv lp142w,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,29990000,35.4,25.1,2.49,2,2,1,0,0
+thegioididong,dell,dell xps 13 9340 hxrgt,intel core ultra 7 meteor lake - 155h,n/a,16,ddr5,1024,ssd,hd,13.4,2560x1600,60,500,55.0,3,1.17,windows 11 home,12,55990000,29.53,19.9,1.53,0,2,0,0,0
+thegioididong,hp,hp victus 16 r0127tx 8c5n2pa,intel core i7-13700h,geforce rtx 4060,16,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,32390000,36.9,25.94,2.39,3,1,1,0,0
+thegioididong,dell,dell inspiron 16 5640 n6i7512w1,intel core 7 - 150u,geforce mx570a,16,ddr5,1024,ssd,hd,16.0,2560x1440,120,300,54.0,4,1.87,windows 11 home,12,31490000,35.68,24.95,1.74,2,1,1,0,1
+thegioididong,dell,dell inspiron 15 3530 p16wd2,intel core i5-1334u,n/a,16,ddr4,512,ssd,hd,15.6,1920x1080,120,n/a,41.0,3,1.65,windows 11 home,12,18490000,35.85,23.56,1.9,1,1,1,0,1
+thegioididong,hp,hp envy x360 14 fc0083tu a19bspa,intel core ultra 7 meteor lake - 155u,n/a,32,ddr5,1024,ssd,camerair5mp,14.0,2880x1800,60,500,59.0,3,1.39,windows 11 home,12,33890000,31.33,21.89,1.69,2,2,1,0,1
+thegioididong,msi,msi creator m16 hx c14vfg 040vn,intel core i7-14700hx,geforce rtx 4060,32,ddr5,1024,ssd,hd,16.0,2560x1600,240,n/a,65.0,4,2.38,windows 11 home,24,41990000,35.9,26.64,2.18,3,1,1,0,0
+thegioididong,dell,dell g15 5530 i9hx161w11gr4060,intel core i9-13900hx,geforce rtx 4060,16,ddr5,1024,ssd,hd,15.6,1920x1080,165,300,86.0,6,2.81,windows 11 home,12,40990000,35.73,27.45,2.61,3,1,1,0,0
+thegioididong,hp,hp envy x360 14 fc0089tu a19bzpa,intel core ultra 7 meteor lake - 155u,n/a,16,ddr5,512,ssd,camerair5mp,14.0,2880x1800,60,500,59.0,3,1.39,windows 11 home,12,30790000,31.33,21.89,1.69,2,2,1,0,1
+thegioididong,msi,msi cyborg 15 a13vfk 876vn,intel core i7-13620h,geforce rtx 4060,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,53.5,3,1.98,windows 11 home,24,27490000,35.94,25.03,2.29,2,1,1,0,0
+thegioididong,apple,apple macbook air z15w,apple m2,n/a,16,n/a,256,ssd,fhd,13.6,2560x1664,n/a,500,lên đến 18 giờ,lên đến 18 giờ,1.24,macos,12,28890000,30.41,21.5,1.13,0,2,0,0,0
+thegioididong,hp,hp spectre x360 14 eu0050tu a19blpa,intel core ultra 7 meteor lake - 155h,n/a,32,ddr5,1024,ssd,hpwidevision9mpcamerair,14.0,2880x1800,120,400,68.0,4,1.44,windows 11 home,12,51790000,31.37,22.04,1.69,1,2,0,0,1
+thegioididong,msi,msi gaming katana a15 ai b8vg 466vn,amd ryzen 9 8945hs,geforce rtx 4070,16,ddr5,1024,ssd,hd,15.6,1920x1080,144,250,53.5,3,2.25,windows 11 home,24,38990000,35.9,25.9,2.49,2,1,1,0,1
+thegioididong,apple,macbook pro,apple m3 pro,n/a,18,n/a,512,ssd,fhd,14.2,3024x1964,120,1000,lên đến 18 giờ,lên đến 18 giờ,1.61,macos,12,49490000,31.26,22.12,1.55,0,3,1,0,0
+thegioididong,apple,apple macbook air,apple m3,n/a,16,n/a,256,ssd,fhd,15.3,liquidretina,n/a,500,lên đến 18 giờ,lên đến 18 giờ,1.51,macos,12,36490000,34.04,23.76,1.15,0,2,0,0,0
+thegioididong,asus,asus tuf gaming a15 fa506nfr hn113w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,512,ssd,hd,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,18490000,35.9,25.6,2.45,3,1,1,0,0
+thegioididong,hp,hp pavilion 15 eg2034tx 6k780pa,intel core i7-1255u,geforce mx550,8,ddr4,512,ssd,hd,15.6,1920x1080,60,250,41.0,3,1.74,windows 11 home,12,24590000,36.02,23.4,1.79,2,1,1,0,0
+thegioididong,dell,dell g15 5530 i7hx161w11gr4060,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,hd,15.6,1920x1080,165,300,86.0,6,2.81,windows 11 home,12,36990000,35.73,27.45,2.61,3,1,1,0,0
+thegioididong,asus,asus vivobook 14 a1405va ly097w,intel core i3-1315u,n/a,8,ddr4,512,ssd,hd,14.0,1920x1200,60,300,42.0,3,1.6,windows 11 home,24,11690000,31.71,22.2,1.99,2,1,1,0,0
+thegioididong,hp,hp elitebook 630 g10 9j0b5pt,intel core i5-1335u,n/a,16,ddr4,512,ssd,hd,13.3,1920x1080,60,250,42.0,3,1.22,windows 11 home,12,21990000,30.69,20.84,1.59,2,1,1,0,0
+thegioididong,hp,hp elitebook 630 g10 9j0b7pt,intel core i7-1355u,n/a,16,ddr4,512,ssd,hd,13.3,1920x1080,60,250,42.0,3,1.22,windows 11 home,12,24990000,30.69,20.84,1.59,2,1,1,0,0
+thegioididong,msi,msi gaming sword 16 hx b14vekg 459vn,intel core i7-14700hx,geforce rtx 4050,16,ddr5,1024,ssd,hd,16.0,1920x1200,144,300,65.0,4,2.3,windows 11 home,24,30990000,35.9,26.64,2.77,3,1,1,0,0
+thegioididong,asus,asus tuf gaming a16 fa617nsr rl100w,amd ryzen 7 7435hs,card r i -  radeon rx 7600s,16,ddr5,512,ssd,hd,16.0,1920x1200,144,300,90.0,4,2.2,windows 11 home,24,23990000,35.5,25.2,2.68,2,2,1,0,0
+thegioididong,dell,dell inspiron 14 5430 n5430-i5p165w11sl2050,intel core i5-1340p,geforce rtx 2050,16,ddr5,512,ssd,hd,14.0,2560x1600,120,300,54.0,4,1.78,windows 11 home,12,26990000,31.4,22.66,1.65,2,1,1,0,0
+thegioididong,hp,hp gaming victus 16 s0140ax 9q987pa,amd ryzen 7 7840hs,geforce rtx 4050,32,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,31690000,36.9,25.94,2.39,3,1,1,0,0
+thegioididong,hp,hp gaming victus 16 s0138ax 9q985pa,amd ryzen 7 7840hs,geforce rtx 4070,32,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,36790000,36.9,25.94,2.39,3,1,1,0,0
+thegioididong,hp,hp omen 16 xf0070ax 8w945pa,amd ryzen 9 7940hs,geforce rtx 4070,32,ddr5,1024,ssd,hd,16.1,2560x1440,240,300,83.0,6,2.37,windows 11 home,12,56690000,36.9,25.94,2.35,2,2,1,0,0
+thegioididong,dell,dell xps 13 9340 xpsu5934w1,intel core ultra 5 meteor lake - 125h,n/a,16,ddr5,2048,ssd,hd,13.4,2560x1600,120,500,55.0,3,1.22,windows 11 home,12,52990000,29.53,19.91,1.53,0,2,0,0,0
+thegioididong,samsung,samsung galaxy chromebook go xe340xda,celeron - n4500,n/a,4,ddr4,32,emmc,hd,14.0,1366x768,60,n/a,42.3,2,1.145,chrome os,12,8990000,32.71,22.56,1.59,1,2,0,0,0
+thegioididong,samsung,samsung galaxy chromebook go xe310xda,intel celeron - n4500,n/a,4,ddr4,32,emmc,hd,11.6,1366x768,60,220,40.2,2,1.06,chrome os,12,7990000,28.79,20.23,1.59,1,1,0,0,0
+thegioididong,msi,msi prestige 14 ai studio c1udxg 058vn,intel core ultra 7 meteor lake - 155h,geforce rtx 3050,16,ddr5,1024,ssd,hd,14.0,1920x1200,144,n/a,90.0,4,1.7,windows 11 home,24,26990000,31.34,24.65,1.9,1,2,1,0,1
+thegioididong,asus,asus zenbook s 14 ux5406sa pv140ws,intel core ultra 7 lunar lake - 258v,n/a,32,ddr5,1024,ssd,hd,14.0,2880x1800,120,400,72.0,4,1.2,windows 11 home,24,44990000,31.03,21.47,1.29,1,2,1,0,0
+thegioididong,hp,hp gaming victus 16 r0128tx 8c5n3pa,intel core i5-13450hx,geforce rtx 4050,16,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.34,windows 11 home,12,27990000,36.9,25.94,2.39,3,1,1,0,0
+thegioididong,dell,dell precision 15 3581 71024677,intel core i7-13800h,geforce rtx a500,32,ddr5,1024,ssd,hd,15.6,1920x1080,60,250,64.0,4,1.8,windows 11 pro,12,57290000,35.78,23.33,2.27,2,2,1,0,0
+thegioididong,hp,hp gaming victus 16 r0228tx 9q979pa,intel core i5-13500h,geforce rtx 4050,32,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,29490000,36.9,25.94,2.39,3,1,1,0,0
+thegioididong,hp,hp omen 16 xf0071ax 8w946pa,amd ryzen 7 7840hs,geforce rtx 4060,32,ddr5,1024,ssd,hd,16.1,2560x1440,240,300,83.0,6,2.37,windows 11 home,12,52690000,36.9,25.94,2.35,2,2,1,0,0
+thegioididong,hp,hp gaming victus 16 r0227tx 9q978pa,intel core i5-13500h,geforce rtx 4060,32,ddr5,512,ssd,hd,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,30890000,36.9,25.94,2.39,3,1,1,0,0
+thegioididong,msi,msi creator z17 hx studio a14vgt 272vn,intel core i7-14700hx,geforce rtx 4070,32,ddr5,2048,ssd,hd,17.0,2560x1600,165,n/a,90.0,4,2.49,windows 11 home,24,65990000,38.2,26.0,1.9,1,2,1,0,0
+thegioididong,lenovo,lenovo gaming legion pro 7 16irx9h 83de001mvn,intel core i9-14900hx,geforce rtx 4090,32,ddr5,1024,ssd,hd,16.0,2560x1600,240,500,99.9,99.9 wh,2.62,windows 11 home,24,96990000,36.35,26.21,2.59,4,2,1,0,0
+thegioididong,apple,apple macbook pro,apple m3 max,n/a,96,n/a,1024,ssd,fhd,16.2,3456x2234,120,1000,lên đến 22 giờ,lên đến 22 giờ,2.16,macos,12,104990000,35.57,24.81,1.68,0,3,1,0,0
+thegioididong,lenovo,lenovo thinkpad x13 21lu004lvn,intel core ultra 7 meteor lake - 155h,n/a,32,ddr5,1024,ssd,camerair5mp,13.3,1920x1200,60,300,54.7,54.7 wh,1.17,windows 11 pro,36,44990000,30.17,21.48,1.59,2,2,1,0,1
+thegioididong,hp,hp envy x360 14 fc0162tu ay8x1pa,intel core ultra 5 meteor lake - 125u,n/a,16,ddr5,512,ssd,camerair5mp,14.0,2880x1800,60,400,59.0,3,1.39,windows 11 home,12,29890000,31.33,21.89,1.69,2,2,1,0,1
+thegioididong,dell,dell inspiron 15 3530 n3530-i7u161w11blu-fp,intel core i7-1355u,n/a,16,ddr4,1024,ssd,hd,15.6,1920x1080,120,250,54.0,4,1.66,windows 11 home,12,23490000,35.85,23.56,1.9,1,1,1,0,0
+thegioididong,hp,hp probook 460 g11 a74btpt,intel core ultra 5 meteor lake - 125u,n/a,16,ddr5,512,ssd,hd,16.0,1920x1200,60,300,56.0,3,1.786,windows 11 home,12,23190000,35.94,25.11,1.7,2,2,1,0,1
+thegioididong,hp,hp elitebook 630 g11 a7lc5pt,intel core ultra 7 meteor lake - 155u,n/a,16,ddr5,512,ssd,hd,13.3,1920x1200,60,n/a,56.0,3,1.347,windows 11 home,12,28390000,30.31,21.51,1.7,2,2,1,0,1
+thegioididong,apple,apple macbook pro,apple m4,n/a,16,n/a,512,ssd,fhd,14.2,3024x1964,120,1000,72.4,"li-po, 72.4 wh",1.55,macos,n/a,39990000,31.26,22.12,1.55,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4,n/a,16,n/a,1024,ssd,fhd,14.2,3024x1964,120,1000,72.4,"li-po, 72.4 wh",1.55,macos,n/a,44990000,31.26,22.12,1.55,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4,n/a,24,n/a,1024,ssd,fhd,14.2,3024x1964,120,1000,72.4,"li-po, 72.4 wh",1.55,macos,n/a,49990000,31.26,22.12,1.55,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 pro,n/a,24,n/a,512,ssd,fhd,14.2,3024x1964,120,1000,72.4,"li-po, 72.4 wh",1.6,macos,n/a,49990000,31.26,22.12,1.55,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 pro,n/a,24,n/a,1024,ssd,fhd,14.2,3024x1964,120,1000,72.4,"li-po, 72.4 wh",1.6,macos,n/a,54990000,31.26,22.12,1.55,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 pro,n/a,48,n/a,512,ssd,fhd,14.2,3024x1964,120,1000,72.4,"li-po, 72.4 wh",1.6,macos,n/a,59990000,31.26,22.12,1.55,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 pro,n/a,48,n/a,1024,ssd,fhd,14.2,3024x1964,120,1000,72.4,"li-po, 72.4 wh",1.6,macos,n/a,64990000,31.26,22.12,1.55,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 max,n/a,36,n/a,1024,ssd,fhd,14.2,3024x1964,120,1000,72.4,"li-po, 72.4 wh",1.62,macos,n/a,79990000,31.26,22.12,1.55,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 pro,n/a,24,n/a,512,ssd,fhd,16.2,3456x2234,120,1000,100.0,"li-po, 100 wh",2.14,macos,n/a,64990000,35.57,24.81,1.68,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 pro,n/a,24,n/a,1024,ssd,fhd,16.2,3456x2234,120,1000,100.0,"li-po, 100 wh",2.14,macos,n/a,69990000,35.57,24.81,1.68,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 pro,n/a,48,n/a,512,ssd,fhd,16.2,3456x2234,120,1000,100.0,"li-po, 100 wh",2.14,macos,n/a,74990000,35.57,24.81,1.68,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 pro,n/a,48,n/a,1024,ssd,fhd,16.2,3456x2234,120,1000,100.0,"li-po, 100 wh",2.14,macos,n/a,79990000,35.57,24.81,1.68,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 max,n/a,36,n/a,1024,ssd,fhd,16.2,3456x2234,120,1000,100.0,"li-po, 100 wh",2.15,macos,n/a,89990000,35.57,24.81,1.68,0,3,1,0,0
+thegioididong,apple,apple macbook pro,apple m4 max,n/a,128,n/a,1024,ssd,fhd,16.2,3456x2234,120,1000,100.0,"li-po, 100 wh",2.15,macos,n/a,119990000,35.57,24.81,1.68,0,3,1,0,0
+thegioididong,apple,apple macbook air,apple m3,n/a,16,n/a,256,ssd,hd,13.6,2560x1664,n/a,500,lên đến 18 giờ,lên đến 18 giờ,1.24,macos,n/a,27990000,30.41,21.5,1.13,0,2,0,0,0
