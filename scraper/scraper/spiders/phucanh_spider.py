@@ -271,5 +271,4 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
     
     def parse_screen_refresh_rate(self, response):
         screen_text = self.get_scoped_value(response, ['Tần số quét', 'Công nghệ màn hình'])
-        print(screen_text)
         return screen_text if screen_text else 'n/a'
