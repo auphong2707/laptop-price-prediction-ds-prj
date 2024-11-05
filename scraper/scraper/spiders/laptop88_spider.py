@@ -98,8 +98,20 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the name of the laptop from the response.
         """
         try:
-            product_name = response.xpath("//h2[@class='name-product']/text()").get().lower()
-            return product_name if product_name else "n/a"
+            res = response.xpath("//h2[@class='name-product']/text()").get().lower()
+            for removal in ['laptop gaming ', 'laptop ', 'gray', 'black', 'silver', 'iceblue', '2 in 1']:
+                res = res.replace(removal, '')
+
+            res = re.sub(r'\([^()]*\)', '', res)
+            res = res.split(']')[1].split('- ')[0].strip()
+            
+            if "macbook" in res:
+                res = "apple " + ' '.join(res.split()[:2] + res.split()[-1:])
+            
+            if not res[-1].isalnum():
+                res = res[:-1]
+            
+            return res.strip()
         except:
             return "n/a"
     
