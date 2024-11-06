@@ -417,12 +417,12 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                value = value.replace(',', '.')
+                value = value.replace(',', '.').replace('-', ' ').replace('–', ' ')
                 value = re.sub(r'[()]', '', value)
-                
-                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery)', value)
+
+                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery|watt-giờ|w|watt)', value)
                 if search_value:
-                    value = float(search_value.group().split('wh')[0].split('battery')[0])
+                    value = float(search_value.group().split('wh')[0].split('battery')[0].split('watt-giờ')[0].split('w')[0].split('watt')[0])
                 
                 self.adapter['battery_capacity'] = value
             except Exception as e:
@@ -437,7 +437,7 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells|chân\s*(\d+)', value)
+                search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+(cells|chân|cell)\s*(\d+)|(\d+)[ -]?(?:pin|chân)', value)
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
