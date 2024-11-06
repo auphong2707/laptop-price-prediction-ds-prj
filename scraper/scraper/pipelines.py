@@ -214,7 +214,8 @@ class TransformPipeline:
                 search_value = re.search(r'ddr+\d', value)
                 if search_value:
                     value = search_value.group()
-                
+                elif '3200' in value:
+                    value = 'ddr4'
                 else: 
                     value = "n/a"
                 
@@ -259,7 +260,7 @@ class TransformPipeline:
                         value = "ssd"
                     else:
                         value = "hdd"
-                elif any(x in value for x in ["ssd", "pcie"]):
+                elif any(x in value for x in ["ssd", "pcie", "pci", "m.2", "nvme"]):
                     value = "ssd"
                 elif "hdd" in value:
                     value = "hdd"
