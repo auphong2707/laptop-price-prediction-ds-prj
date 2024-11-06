@@ -644,7 +644,7 @@ class TransformPipeline:
                 value = value.replace('.', '')
                 value = re.sub(r'[đ₫]', '', value).strip()
                 
-                self.adapter['price'] = value
+                self.adapter['price'] = int(value)
             except Exception as e:
                 print("Error in price transformation:", e)
                 print("Error at:", self.adapter.get('name'))
