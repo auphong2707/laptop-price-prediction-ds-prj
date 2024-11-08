@@ -277,17 +277,9 @@ class TransformPipeline:
                 # Get the webcam resolution field value
                 value = self.adapter.get('webcam_resolution')
                 if value == "n/a":
-                    return
-                
-                value = ''.join(value.split())
-
-                if any(term in value for term in ['qhd', '2k', '1440p', '2560x1440']):
-                    value = 'qhd'
-                elif any(term in value for term in ['fhd', '1080p', '1920x1080']):
-                    value = 'fhd'
-                elif any(term in value for term in ['hd', '720p', '1280x720']):
-                    value = 'hd'
-                
+                    value = "no"
+                else:
+                    value = "yes"
                 self.adapter['webcam_resolution'] = value
             except Exception as e:
                 print("Error in webcam resolution transformation:", e)
@@ -307,7 +299,8 @@ class TransformPipeline:
                 
                 if value:
                     value = float(value.group(1))
-                
+                else:
+                    value = "n/a"
                 self.adapter['screen_size'] = value
             except Exception as e:
                 print("Error in screen size transformation:", e)
@@ -382,6 +375,8 @@ class TransformPipeline:
                 if search_value:
                     value = search_value.group()
                     value = int(value.split('hz')[0])
+                else: 
+                    value = "n/a"
                 
                 self.adapter['screen_refresh_rate'] = value
             except Exception as e:
