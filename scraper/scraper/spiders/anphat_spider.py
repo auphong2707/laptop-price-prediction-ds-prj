@@ -4,7 +4,7 @@ import re
 from .base_laptopshop_spider import BaseLaptopshopPageSpider
 
 class AnphatSpider(BaseLaptopshopPageSpider):
-    name = "anphat"
+    name = "anphat_spider"
     allowed_domains = ["anphatpc.com.vn"]
     start_urls = [
         "https://www.anphatpc.com.vn/may-tinh-xach-tay-laptop.html",
@@ -12,6 +12,11 @@ class AnphatSpider(BaseLaptopshopPageSpider):
     product_site_css = ".p-img::attr(href)"   
     page_css = "div.paging a[href]:not(:has(i))::attr(href)"
     source = 'anphat'
+    
+    custom_settings = {
+        'DOWNLOAD_MIDDLEWARES': {
+        }
+    }
 
     def get_scoped_value(self, response: Response, list_names, category_names = []):
         possible_values = [
