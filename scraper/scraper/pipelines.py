@@ -109,6 +109,15 @@ class TransformPipeline:
                         if match:
                             value = 'amd ' f"ryzen {match.group(1)} {match.group(2)}{match.group(3)}"
                             
+                    elif "amd" in value:
+                        # pattern = re.compile(r'(amd)\s*([a-z]{3,4})\s*(\d{3,4})')
+                        
+                        # match = pattern.search(value)
+                        
+                        # if match:
+                        #     value = 'amd ' + f"{match.group(2)} {match.group(3)}"
+                        pass
+                            
                     # Snapdragon solving
                     elif "snapdragon" in value:
                         pattern = r'([A-Za-z]+\s+\d+\s+\d+)'
@@ -198,6 +207,11 @@ class TransformPipeline:
                 if search_value:
                     value = search_value.group()
                     value = int(value.split('gb')[0])
+                elif self.adapter.get('source') == 'hacom' and re.search(r'\d+\s?g', value):
+                    value = re.search(r'\d+\s?g', value).group()
+                    value = int(value.split('g')[0])
+                else:
+                    pass    
                     
                 self.adapter['ram_amount'] = value
             except Exception as e:
@@ -216,8 +230,8 @@ class TransformPipeline:
                     value = search_value.group()
                 elif '3200' in value:
                     value = 'ddr4'
-                else: 
-                    value = "n/a"
+                # else: 
+                #     value = "n/a"
                 
                 self.adapter['ram_type'] = value
             except Exception as e:
