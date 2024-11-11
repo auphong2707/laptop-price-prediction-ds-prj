@@ -55,7 +55,7 @@ class TransformPipeline:
                     return
                 
                 # Basic cleaning steps
-                for removal in ['®', '™', ' processors', ' processor', 'mobile', 'with intel ai boost', '', '(tm)', '(r)', 
+                for removal in ['®', '™', ' processors', ' processor', 'mobile', 'with intel ai boost', '', '(tm)', '(r)', ':'
                                     'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 'comet lake', 'kabylake refresh', 'kabylake']:
                             value = value.replace(removal, '')
                     
@@ -66,7 +66,7 @@ class TransformPipeline:
                 for spliter in [',',  'up']:
                     value = value.split(spliter)[0]
                 
-                value = ' '.join(value.split())
+                value = ' '.join(value.split()).strip()
                 
                 # Apple solving
                 if self.adapter.get('brand') == "apple":
@@ -92,6 +92,8 @@ class TransformPipeline:
                         if match:
                             # Format the matched processor name as "iX-XXXXXH"
                             value = 'intel core ' + f"{match.group(1)}-{match.group(2)}{match.group(3)}"
+                        else:
+                            value = "n/a"
                     elif "ultra" in value:
                         pattern = re.compile(r'(?:ultra\s*)?(u?\d)\s*[- ]?\s*(\d{3})([a-z]?)')
                         match = pattern.search(value)
@@ -131,7 +133,9 @@ class TransformPipeline:
                         # Substitute the pattern in the input string using re.sub
                         value = re.sub(pattern, replace_with_hyphens, value)
                         
-                    value = value.split('(')[0].strip()
+                    
+                        
+                value = value.split('(')[0].split('(')[0].strip()
                     
                 self.adapter['cpu'] = value
             except Exception as e:
