@@ -5,7 +5,7 @@ import re
 
 class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
 
-    name = "hacom"
+    name = "hacom_spider"
     allowed_domains = ["hacom.vn"]
     start_urls = [
         "https://hacom.vn/laptop"

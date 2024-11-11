@@ -1,0 +1,209 @@
+source,brand,name,cpu,vga,ram_amount,ram_type,storage_amount,storage_type,webcam_resolution,screen_size,screen_resolution,screen_refresh_rate,screen_brightness,battery_capacity,battery_cells,weight,default_os,warranty,price,width,depth,height,number_usb_a_ports,number_usb_c_ports,number_hdmi_ports,number_ethernet_ports,number_audio_jacks
+fpt,apple,macbook air 13 inch m1 2020 8cpu 7gpu 8gb/256gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp 14s-dq5121tu,intel core i3-1215u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,n/a,3 cell,3,1.36,windows 11 home,aaaaaaaaaaa,n/a,32.4,22.5,1.4,2,1,1,0,0
+fpt,asus,asus vivobook 15 x1504za-nj517w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer nitro 5 tiger gaming an515-58-773y,intel core i7-12700h,geforce rtx 3050 ti,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,4 cell,4,2.5,windows 11 home,aaaaaaaaaaa,n/a,36.04,27.11,1.56,3,1,1,1,0
+fpt,hp,"hp gaming victus 16-s0173ax r5-7640hs/16gb/512gb/16""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire lite al16-51p-55n7,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell inspiron n3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus vivobook 14 oled a1405za-km264w,intel core i5-12500h,n/a,16,ddr4,16,ssd,yes,14.0,2880x1800,n/a,600,50.0,50 wh,1.6,windows,aaaaaaaaaaa,n/a,31.71,22.2,1.4,2,1,1,0,0
+fpt,hp,hp 15-fd0235tu,intel core i5-1334u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,41 wh,1.59,windows 11 home,aaaaaaaaaaa,n/a,35.98,23.6,1.56,0,2,0,0,0
+fpt,hp,hp pavilion 15-eg3111tu,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo ideapad slim 3 15irh8 i7 13620h/16gb/512gb/15.6""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook air 13 inch m2 2022 8cpu 8gpu 8gb/256gb,apple m2,n/a,8,ddr4,8,ssd,yes,13.6,2560x1644,60,500,18 giờ,18 giờ,1.24,macos,aaaaaaaaaaa,n/a,30.41,21.5,1.36,0,2,0,0,0
+fpt,acer,acer nitro 5 tiger gaming an515-58-5193,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus tuf gaming fx507zc4-hn095w,intel core i5-12500h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,250,56.0,56 wh,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.4,25.1,1.56,5,1,1,0,0
+fpt,lenovo,"lenovo gaming loq - 15iax9 i5 12450hx/ai/12gb/512gb/15.6""fhd/rtx3050",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire 7 gaming a715-76g-73fm,intel core i7-12650h,geforce rtx 2050,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,n/a,n/a,2.1,windows 11 home,aaaaaaaaaaa,n/a,36.23,23.74,1.56,3,1,1,1,0
+fpt,lenovo,"lenovo ideapad 3 14iah8 i5 12450h/16gb/512gb/14""fhd/win11",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,msi gaming katana 15 b13udxk-2213vn,intel core i5-13500h,geforce rtx 3050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,53.5,53.5 whr,2.3,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.9,1.56,2,1,1,1,0
+fpt,asus,asus tuf gaming fa506nfr-hn006w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,48.0,48 wh,2.3,windows,aaaaaaaaaaa,n/a,35.9,25.6,1.56,3,1,0,1,0
+fpt,asus,asus tuf gaming fa507nur-lp101w,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.97,23.25,1.56,2,2,0,1,0
+fpt,dell,"dell inspiron n3530 i5 1334u/16gb/512gb/15.6""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp 14s-em0086au,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,"msi gaming thin a15 b7uc-261vn r5 7535hs/16gb/512gb/15.6""",amd ryzen 5 7535hs,geforce rtx 3050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,52.4,52.4 wh,1.86,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.4,1.56,3,1,1,1,0
+fpt,hp,hp 15-fc0089au,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo v15 g4 iru i5 13420h/16gb/512gb/15.6""fhd/win",intel core i5-13420h,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,300,38.0,38 wh,1.65,windows 11 home,aaaaaaaaaaa,n/a,35.92,23.58,1.56,1,1,1,1,0
+fpt,acer,acer swift x sfx16-51g-516q,intel core i5-11320h,geforce rtx 3050,16,ddr4,16,ssd,yes,16.1,1920x1080,60,n/a,4 cell,4,1.9,windows 11 home,aaaaaaaaaaa,n/a,36.8,18.9,1.61,2,1,1,0,0
+fpt,lenovo,"lenovo gaming loq - 15iax9 i5 12450hx/ai/16gb/512gb/15.6""fhd/rtx2050",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire 7 gaming a715-76g-59mw,intel core i5-12450h,geforce rtx 2050,8,ddr4,8,ssd,yes,15.6,1920x1080,n/a,n/a,50.0,50 wh,2.1,windows 11 home,aaaaaaaaaaa,n/a,36.23,23.74,1.56,3,1,0,1,0
+fpt,hp,hp 15-fd0083tu,intel core i7-1355u,n/a,16,n/a,16,ssd,yes,15.6,1920x1080,60,n/a,3 cell,3,1.59,windows,aaaaaaaaaaa,n/a,35.98,23.6,1.56,0,0,1,0,0
+fpt,asus,asus vivobook x1504va-nj526w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire lite 16 al16-51p-72s2,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer swift 3 sf314-512-741l,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo thinkbook 14 g6 irl i5 13420h/16gb/512gb/14""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus tuf gaming a15 fa506nf-hn005w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell vostro 14 v3420 i5 1235u/8gb/512gb/14""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire 7 a715-76-53pj,intel core i5-12450h,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,n/a,50.0,50 wh,2.1,windows 11 home,aaaaaaaaaaa,n/a,36.23,23.74,1.56,0,1,1,1,0
+fpt,dell,"dell inspiron n3520 i5 1235u/8gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,8,ddr4,8,ssd,yes,15.6,1920x1200,n/a,n/a,3 cell,3,1.9,windows 11 home,aaaaaaaaaaa,n/a,18.99,16.96,1.56,2,0,1,0,0
+fpt,dell,"dell inspiron n3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell vostro 15 v3530 i5 1335u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1335u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,3 cell,3,1.657,windows 11 home,aaaaaaaaaaa,n/a,35.85,23.56,1.56,1,1,1,1,1
+fpt,huawei,"huawei matebook d15 r7 5700u/8gb/512gb/15.6""fhd/win11",amd ryzen 7 5700u,n/a,8,ddr4,8,ssd,yes,15.6,1920x1080,60,250,56.0,56 wh,1.53,windows 11 home,aaaaaaaaaaa,n/a,35.78,16.9,1.56,0,0,1,0,0
+fpt,asus,asus tuf gaming fa507nvr-lp091w,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.4,25.1,1.56,1,2,0,1,0
+fpt,gigabyte,gigabyte gaming g5 mf5-52vn353sh,intel core i5-13500h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,54.0,54 wh,2.08,windows 11 home,aaaaaaaaaaa,n/a,36.0,23.8,1.56,1,2,1,1,0
+fpt,gigabyte,gigabyte gaming g5 mf5-h2ph353kh,intel core i7-13620h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,54.0,54 wh,2.08,windows 11 home,aaaaaaaaaaa,n/a,36.0,23.8,1.56,1,2,1,1,0
+fpt,gigabyte,gigabyte gaming g5 mf5-h2vn353kh,intel core i7-13620h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,54.0,54 wh,2.08,windows 11 home,aaaaaaaaaaa,n/a,36.0,23.8,1.56,3,0,1,1,0
+fpt,hp,hp pavilion 15-eg3112tu,intel core i7-1335u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,3 cell,3,1.68,windows 11 home,aaaaaaaaaaa,n/a,36.02,23.4,1.56,3,0,1,0,0
+fpt,dell,dell vostro 14 3420 (v4i5703w1),intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,250,41.0,41 whrs,1.49,windows 11 home,aaaaaaaaaaa,n/a,32.13,22.03,1.4,2,0,1,0,0
+fpt,msi,msi gaming thin15 b13uc-2044vn,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell inspiron 14 n5440 i5 1334u/16gb/512gb/14""fhd+/win11/office",intel core i5-1334u,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,250,3 cell,3,1.54,windows 11 home,aaaaaaaaaaa,n/a,31.4,22.62,1.4,2,1,1,0,1
+fpt,acer,acer nitro 5 tiger gaming an515-58-52sp,intel core i5-12500h,geforce rtx 3050,8,ddr4,8,ssd,yes,15.6,1920x1080,144,n/a,4 cell,4,2.5,windows 11 home,aaaaaaaaaaa,n/a,36.04,27.11,1.56,3,1,1,0,0
+fpt,acer,acer nitro 16 phoenix gaming an16-41-r50z,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,msi gaming thin a15 b7ucx-240vn,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp 14s-em0078au,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus vivobook x1404za-nk387w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus gaming vivobook k3605zc-rp564w,intel core i5-12500,geforce rtx 3050,16,ddr4,16,ssd,yes,16.0,1920x1200,n/a,300,50.0,50 whr,1.8,windows,aaaaaaaaaaa,n/a,35.86,24.91,1.6,2,1,1,0,0
+fpt,asus,asus gaming vivobook k3605zf-rp634w,intel core i5-12500h,geforce rtx 2050,16,ddr4,16,ssd,yes,16.0,1920x1200,n/a,n/a,50.0,50 whr,1.8,windows 11 home,aaaaaaaaaaa,n/a,35.86,24.91,1.6,2,1,1,0,0
+fpt,dell,"dell inspiron n3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell vostro v3520 i5-1235u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1200,n/a,250,n/a,n/a,1.9,windows 11 home,n/a,n/a,35.85,23.49,1.56,2,0,1,0,1
+fpt,msi,"msi modern 14 c7m-221vn r7 7730u/8gb/512gb/14""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire 7 gaming a715-76g-5806,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus vivobook s16 oled s5606ma-mx051w,intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,16.0,3201x2000,n/a,n/a,75.0,75 wh,1.5,windows 11 home,aaaaaaaaaaa,n/a,35.36,24.69,1.6,2,2,1,0,0
+fpt,asus,asus vivobook e1404fa-nk186w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire 3 a315-44p-r5qg,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus vivobook x1504za-nj1039w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire go ag15-31p-32u6,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo thinkpad e14 g5 i5 13420h/16gb/512gb/14""wuxga/win",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp 15s-fq5231tu,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo thinkbook 16 gen 6 i7 1355u/16gb/512gb/16.0""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell inspiron 16 n5640 i5 1334u/16gb/512gb/16""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo ideapad slim 5 14imh9 ultra 7-155h/ai/16gb/512g/14""wuxga/oled/win",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire 3 a315-59-51x8,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo ideapad 1 15alc7 r5 5500u/16gb/512gb/15.6""",amd ryzen 5 5500u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,220,42.0,42 wh,1.58,windows 11 home,aaaaaaaaaaa,n/a,36.02,23.6,1.56,1,1,1,0,0
+fpt,msi,msi gaming cyborg 14 a13udx-099vn,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook air m3 13 2024 8cpu 8gpu/8gb/256gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,"hp gaming victus 16-r0127tx i7-13700h/ai/16gb/512gb/16.1""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,msi gaming gf63 thin 12uc-1006vn,intel core i5-12450h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,250,3 cell,3,1.86,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.4,1.56,3,1,1,1,0
+fpt,lenovo,"lenovo gaming loq 15iax9 i5 12450hx/ai/24gb/512gb/15.6""fhd/rtx4050_6gb/win11",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo gaming loq - 15irx9 i7-13650hx/ai/16gb/512gb/15.6""fhd/rtx4050",intel core i7-13650hx,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,3,1,1,1,0
+fpt,asus,asus vivobook flip tn3402ya-lz188w,amd ryzen 5 7530u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1200,60,n/a,3 cell,3,1.5,windows 11 home,aaaaaaaaaaa,n/a,31.32,22.76,1.4,2,0,1,0,0
+fpt,asus,asus zenbook 14 oled ux3405ma-pp151w,intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 wh,1.2,windows 11 home,aaaaaaaaaaa,n/a,31.24,22.01,1.4,1,2,1,0,0
+fpt,apple,macbook pro 14 2023 m3 8 cpu/10 gpu/8gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp 15-fd1060tu,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp pavilion aero 13-be2098au,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer swift go ai sfg14-73-53x7,intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,65.0,65 wh,1.32,windows 11 home,aaaaaaaaaaa,n/a,31.29,21.79,1.4,2,2,1,0,0
+fpt,apple,macbook air 15 inch m2 2023 8cpu 10gpu 8gb/256gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,"msi modern 14 c7m-220vn r5 7530u/8gb/512gb/14""fhd/win",amd ryzen 5 7530u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,n/a,39.3,39.3 wh,1.4,windows 11 home,aaaaaaaaaaa,n/a,31.99,22.3,1.4,1,1,1,0,0
+fpt,acer,acer aspire 3 a315-58-53s6,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook air m3 13 2024 8cpu 10gpu/16gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus vivobook s14 s5406ma-pp161w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire lite al16-51p-596h,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook air m2 13 inch 2022 8cpu 10gpu/16gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo yoga slim 6 14irh8 i7 13700h/16gb/512gb/14""wuxga",intel core i7-13700h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,60,400,65.0,65 wh,1.35,windows 11 home,aaaaaaaaaaa,n/a,31.2,22.1,1.4,1,2,1,0,0
+fpt,hp,"hp 245 g10 (a20tfpt) r5-7530u/16gb/256gb/14""",amd ryzen 5 7530u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,n/a,41 cell,41,1.36,windows 11 home,aaaaaaaaaaa,n/a,32.4,21.5,1.4,2,1,1,0,0
+fpt,msi,"msi gaming thin gf63 12ve-454vn i5 12450h/16gb/512gb/15.6""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell latitude l3540 i5 1235u/16gb/512gb/15.6""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,masstel,"masstel e140 celeron n4120/4gb/128gb/14""hd/win10",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer gaming aspire 5 a515-58gm-53cm,intel core i5-13420h,geforce rtx 2050,32,ddr4,32,ssd,yes,15.6,1920x1080,n/a,n/a,50.0,50 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,36.1,23.7,1.56,3,1,0,1,0
+fpt,asus,asus vivobook 15 oled a1505va-ma466w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,tính,máy tính xách tay acer gaming aspire 5 a515-58gm-51lb,intel core i5-13420h,geforce rtx 2050,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,60.0,60 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,36.1,23.7,1.56,2,1,1,1,0
+fpt,dell,"dell vostro v3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer gaming aspire 5 a515-58gm-53pz,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,msi gaming thin 15 b12uc-1416vn,intel core i5-12450h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,52.4,52.4 whr,1.86,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.4,1.56,3,1,1,1,0
+fpt,msi,msi gaming katana 15 b13vfk-676vn,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,msi gaming thin 15 b13ucx-2080vn,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,"hp 245 g10 r5-7520u/8gb/256gb/14""fhd/win11",amd ryzen 5 7520u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,41 wh,1.36,windows 11 home,aaaaaaaaaaa,n/a,32.4,21.5,1.4,0,2,0,0,0
+fpt,gigabyte,gigabyte gaming g5 kf5-53vn353sh,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo gaming loq 15ahp9 r7 8845hs/ai/16gb/512gb/15.6""fhd/rtx4060",amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,3,1,1,1,0
+fpt,vaio,vaio fe14 i5 1235u/8gb/512gb/14',intel core i5-1235u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,n/a,10 giờ,10 giờ,1.8,windows 11 home,aaaaaaaaaaa,n/a,35.8,23.9,1.4,0,1,1,0,0
+fpt,hp,hp envy x360 14-fc0089tu,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 14 2023 m3 pro 11 cpu/14gpu/36gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo ideapad slim 5 14q8x9 x1p-42-100/ai/16gb/512gb/14""wuxga",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus vivobook s 14 oled s5406ma-pp124w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus tuf gaming a15 fa506ncr-hn047w,amd ryzen 7 7435hs,geforce rtx 3050,16,ddr5,16,ssd,yes,16.0,1920x1080,n/a,n/a,48.0,48 wh,2.3,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.6,1.6,0,0,0,1,0
+fpt,lenovo,"lenovo gaming loq 15iax9 i5 12450hx/ai/12gb/512gb/15.6""fhd/rtx4050_6gb/w11_83gs001qvn",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 14 2023 m3 pro 11 cpu/14 gpu/18gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer swift lite 14 ai sfl14-51m-56hs,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,"hp gaming victus 16-s0078ax r5-7640hs/16gb/512gb/16.1""fhd/nvidia",amd ryzen 5 7640hs,n/a,16,ddr5,16,ssd,yes,16.0,1920x1080,144,n/a,4 cell,4,2.31,windows 11 home,aaaaaaaaaaa,n/a,36.9,25.94,1.6,0,0,1,0,0
+fpt,lenovo,"lenovo gaming legion 5 16irx9 i7 14650hx/ai/32gb/1tb/16""wqxga/rtx4060",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 16 2023 m3 pro 12 cpu/18 gpu/18gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo thinkbook 16 g6 irl i5-13420h/16gb/512gb/16.0""wuxga/win",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp envy x360 14-fc0087tu,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo yoga slim 7 14imh9 ultra 7 155h/ai/32gb/1tb/14""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook air 13 inch m2 2022 8cpu 10gpu 8gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo gaming legion pro 5 16irx9 i9-14900hx/ai/32gb/1tb/16""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell inspiron 15 n3530 i5 1335u/16gb/512gb/15.6""fhd/nvidia",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo yoga slim 7 14imh9 ultra 7 155h/ai/32gb/512gb/14""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,"hp probook 440 g10 i5-1340p/16gb/512gb/14""fhd",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,"msi modern 14 c13m-612vn i5 1335u/16gb/512gb/14""fhd/win11_hồng",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook air m3 15 2024 8cpu 10gpu/8gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell inspiron 15 n3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp envy x360 14-fc0084tu,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 14 2023 m3 pro 12 cpu/18 gpu/18gb/1tb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo ideapad slim 5 15iru9 core 5_120u/32gb/512g/15.3""wuxga/win11",intel core 5 120u,n/a,32,ddr5,32,ssd,yes,15.3,1920x1200,n/a,n/a,57.0,57 wh,1.79,windows 11 home,aaaaaaaaaaa,n/a,34.35,23.82,1.53,2,2,1,0,0
+fpt,asus,asus vivobook pro k3405vc-km070w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo ideapad slim 3 - 15abr8 r5 7430u/16gb/512gb/15.6""fhd/win",amd ryzen 5 7430u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,300,47.0,47 wh,1.62,windows 11 home,aaaaaaaaaaa,n/a,35.93,23.5,1.56,2,1,1,0,0
+fpt,msi,msi gaming thin 15 b12ucx-1419vn,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo gaming legion slim 5 16ahp9 r7-8845hs/ai/16gb/512gb/16""wqxga/rtx4060_8gb/win11",amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,16,ssd,yes,16.0,2560x1600,n/a,350,80.0,80 wh,2.3,windows 11 home,aaaaaaaaaaa,n/a,35.97,21.9,1.6,2,2,1,1,0
+fpt,lenovo,"lenovo gaming loq - 15iax9 i5 12450hx/ai/12gb/512gb/15.6""fhd/rtx2050",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus gaming rog strix g16 g614jv-n4156w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus tuf gaming a16 advantage edition fa617nsr-rl100w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,gigabyte,gigabyte gaming g6 kf-h3vn853sh,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,gigabyte,gigabyte gaming g5 mf-f2vn313sh,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp pavilion 15-eg3095tu,intel core i5-1335u,n/a,8,n/a,8,ssd,yes,15.6,1920x1080,n/a,n/a,3 cell,3,1.69,windows 11 home,aaaaaaaaaaa,n/a,36.02,23.4,1.56,3,0,1,0,0
+fpt,apple,macbook air m3 15 2024 8cpu 10gpu/8gb/256gb,apple m3,n/a,8,ddr4,8,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,aaaaaaaaaaa,n/a,34.04,23.76,1.53,0,2,0,0,0
+fpt,acer,acer aspire lite al15-51m-55nb,intel core i5-1155g,n/a,8,ddr4,8,ssd,yes,15.6,1920x1080,n/a,n/a,36.0,36 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,36.04,23.93,1.56,1,1,1,1,0
+fpt,gigabyte,gigabyte gaming g5 kf-e3vn313sh,intel core i5-12500h,geforce rtx 4060,16,ddr4,16,ssd,yes,15.6,1920x1080,144,n/a,54.0,54 wh,1.9,windows 11 home,aaaaaaaaaaa,n/a,36.0,23.8,1.56,3,0,1,0,0
+fpt,asus,asus zenbook 14 oled ux3405ma-pp152w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook air 13 inch m1 2020 8cpu 7gpu 16gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,"msi gaming cyborg 15 ai a1ve-053vn ultra 7 155h/ai/16gb/512gb/15.6""fhd/rtx4050",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus tuf gaming fx507vv-lp304w,intel core i7-13620h,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.97,23.25,1.56,2,2,0,1,0
+fpt,huawei,"huawei matebook d14 be i3 1215u/8gb/256gb/14""fhd+/win11",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 13 inch m1 2020 8cpu 8gpu 8gb/256gb,apple m1,n/a,8,ddr4,8,ssd,yes,13.3,2560x1600,n/a,n/a,n/a,n/a,1.4,macos,aaaaaaaaaaa,n/a,30.41,21.24,1.33,0,4,0,0,0
+fpt,acer,acer gaming predator helios neo 14 phn14-51-99y8,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell inspiron 15 n3530 i7 1355u/16gb/512gb/15.6""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo thinkpad x1 carbon gen 12 u7-155h/ai/16gb/512gb/14""wuxga/win11pro",intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.09,windows 11 pro,aaaaaaaaaaa,n/a,31.28,21.48,1.4,2,2,1,0,0
+fpt,hp,"hp probook 440 g10 i7-1360p/16gb/512gb/14""",intel core i7-1360p,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,n/a,51.0,51 whrs,1.38,windows 11 home,aaaaaaaaaaa,n/a,32.19,21.39,1.4,2,2,1,1,1
+fpt,asus,asus vivobook s 15 oled s5507qa-ma090ws,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo gaming legion 7 - 16irx9 i9 14900hx/ai/32gb/1tb/16""",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer nitro v 16 propanel gaming anv16-41-r36y,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,"msi gaming katana a15 ai b8vf-419vn r7-8845hs/16gb/512gb/15.6""fhd/rtx4060_8gb/win11_balo",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo gaming loq - 15iax9 i5 12450hx/ai/16gb/512gb/15.6""fhd/rtx",intel core i5-12450hx,geforce rtx 2050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,4,0,1,1,0
+fpt,lenovo,"lenovo gaming legion pro 5 16irx9 i9 14900hx/ai/32gb/1tb/16""wqxga/rtx4060",intel core i9-14900hx,geforce rtx 4060,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,500,80.0,80 wh,2.55,windows 11 home,aaaaaaaaaaa,n/a,36.34,26.04,1.6,4,2,1,1,0
+fpt,msi,"msi gaming katana 15 ai b8vg-465vn r7 8845hs/ai/16gb/1tb/15.6""fhd/rtx4070",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,"hp 245 g10 r5 7520u/8gb/256gb/14""fhd/win11",amd ryzen 5 7520u,n/a,8,n/a,8,ssd,yes,14.0,1920x1080,60,n/a,3 cell,3,1.36,windows 11 home,aaaaaaaaaaa,n/a,32.4,21.5,1.4,0,0,1,0,0
+fpt,hp,hp 15s-fq5144tu,intel core i7-1255u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,250,41.0,41 wh,0.0016899999999999999,windows 11 home,aaaaaaaaaaa,n/a,35.85,24.2,1.56,1,0,0,0,0
+fpt,msi,msi gaming sword 16 hx b14vgkg-038vn,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp 240 g10 i3 n305/8gb/256gb/14',n/a,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,n/a,41.04,41.04 wh,1.37,windows 11 home,aaaaaaaaaaa,n/a,32.4,21.5,1.4,2,1,1,1,0
+fpt,asus,asus vivobook pro 14 oled k3405zf-km184w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,msi gaming raider ge68 hx 14vhg-646vn,intel core i9-14900hx,geforce rtx 4080,32,ddr5,32,ssd,yes,16.0,3840x2400,n/a,n/a,99.0,99 wh,2.75,windows 11 home,aaaaaaaaaaa,n/a,35.7,27.85,1.6,2,3,1,1,0
+fpt,msi,"msi gaming vector gp77 13vg-043vn i7 13700h/ai/16gb/512gb/17.3""qhd/rtx4070",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer swift edge sfa16-41-r3l6,amd ryzen 7 6800h,n/a,16,ddr5,16,ssd,yes,16.0,3840x2400,60,n/a,54.0,54 wh,1.1,windows 11 home,aaaaaaaaaaa,n/a,35.67,24.23,1.6,0,2,1,0,0
+fpt,msi,msi gaming creator m16 b13ve-830vn,intel core i7-13700h,geforce rtx 4050,16,ddr5,16,ssd,yes,16.0,1920x1200,144,n/a,53.3,53.3 wh,2.26,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.9,1.6,0,0,0,0,0
+fpt,asus,asus gaming rog zephyrus g16 gu603vu-n4019w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,msi prestige 14 ai studio c1veg-056vn,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,400,90.0,90 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,31.34,24.65,1.4,1,2,0,0,0
+fpt,apple,macbook air m3 15 2024 8cpu 10gpu/16gb/512gb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,asus,asus vivobook s 14 oled m5406wa-pp071ws,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell inspiron n5440 core5 120u/16gb/512gb/14.0""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell xps 14 9440 u7 155h/ai/64gb/1tb/14.5""3.2k",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,dell,"dell inspiron n3530 i7 1355u/16gb/512gb/15.6""fhd/win11/office",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 14 2023 m3 max 14 cpu/30 gpu/36gb/1tb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo thinkbook 16 g6 irl i5-13500h/16gb/512gb/16.0""wuxga/win11",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 16 m4 pro 2024 14cpu/20gpu/48gb/512gb,apple m4 pro 14-core,n/a,48,hãng không công bố,48,ssd,yes,16.2,3456x2234,n/a,n/a,22 giờ,22 giờ,2.14,macos,aaaaaaaaaaa,n/a,35.57,16.2,1.68,0,0,0,0,0
+fpt,apple,macbook pro 14 m4 2024 10cpu/10gpu/16gb/512b,apple m4,n/a,16,hãng không công bố,16,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,0,0,0,0
+fpt,apple,macbook pro 14 m4 2024 10cpu/10gpu/24gb/1tb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 14 m4 pro 2024 12cpu/16gpu/24gb/512gb,apple m4 pro 14-core,n/a,24,hãng không công bố,24,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,0,0,0,0
+fpt,apple,macbook pro 14 m4 pro 2024 14cpu/20gpu/24gb/1tb,apple m4 pro 14-core,n/a,24,hãng không công bố,24,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,0,0,0,0
+fpt,apple,macbook pro 14 m4 max 2024 14cpu/32gpu/36gb/1tb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook air 15 m3 2024 8cpu/10gpu/16gb/256gb,apple m3,n/a,16,ddr4,16,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,aaaaaaaaaaa,n/a,34.04,23.76,1.53,0,2,0,0,0
+fpt,apple,macbook air 15 m3 2024 8cpu/10gpu/24gb/512gb,apple m3,n/a,24,ddr4,24,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,aaaaaaaaaaa,n/a,34.04,23.76,1.53,0,2,0,0,0
+fpt,acer,acer swift lite 14 sfl14-51m-78xz,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook air 13 m3 2024 8cpu/8gpu/16gb/256gb,apple m3,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,aaaaaaaaaaa,n/a,30.41,21.5,1.36,0,2,0,0,0
+fpt,hp,hp envy x360 14-fa0093au,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,hp,hp envy x360 14-fc0155tu,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
+fpt,slim,"slim 5 - 14imh9 ultra7 155h/ai/32gb/512gb/14""wuxga",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 16 m4 pro 2024 14cpu/20gpu/24gb/512gb,apple m4 pro 14-core,n/a,24,hãng không công bố,24,ssd,yes,16.2,3456x2234,n/a,n/a,22 giờ,22 giờ,2.14,macos,aaaaaaaaaaa,n/a,35.57,16.2,1.68,0,0,0,0,0
+fpt,lenovo,"lenovo ideapad slim 3 - 15abr8 r7 7730u/16gb/512gb/15.6""fhd/win",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,acer,acer aspire 5 a515-58p-71ej,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 16 m4 max 2024 14cpu/32gpu/36gb/1tb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,msi modern 15 f13mg-082vn,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo gaming legion pro 7 16irx9h i9 14900hx/ai/32gb/1tb/16""wqxga/rtx4090",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo ideapad 1 15alc7 r5 5625u/16gb/512gb/15.6""",amd ryzen 5 5625u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,42.0,42 wh,1.61,windows 11 home,aaaaaaaaaaa,n/a,36.02,23.6,1.56,2,0,1,0,0
+fpt,hp,hp envy x360 14-fc0161tu,intel core ultra 5 125u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
+fpt,msi,msi gaming stealth 16 mercedesamg,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,msi,"msi gaming raider ge68 hx 13vg-048vn i7-13700hx/ai/32gb/2tb/16""qhd+/rtx4070_8gb/win11",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,apple,macbook pro 16 m4 max 2024 16cpu/40gpu/48gb/1tb,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+fpt,lenovo,"lenovo gaming legion 5 15irx9 i7 13650hx/ai/24gb/512gb/15.6""fhd/rtx4060",intel core i7-13650hx,geforce rtx 4060,24,ddr5,24,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.32,windows 11 home,aaaaaaaaaaa,n/a,35.88,24.65,1.56,3,1,1,1,0
+fpt,msi,msi prestige 14 ai studio c1udxg-058vn,intel core ultra 7 155h,geforce rtx 3050,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,n/a,90.0,90 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,31.34,24.65,1.4,1,2,0,0,0
+fpt,hp,hp envy x360 14-fa0092au,amd ryzen 7 8840hs,n/a,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
+fpt,lenovo,"lenovo ideapad slim 5 14imh9 ultra5 125h/ai/16gb/1tb/14""wuxga/oled/win11",n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
