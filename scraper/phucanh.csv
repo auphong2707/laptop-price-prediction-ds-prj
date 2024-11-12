@@ -1,0 +1,137 @@
+source,brand,name,cpu,vga,ram_amount,ram_type,storage_amount,storage_type,webcam_resolution,screen_size,screen_resolution,screen_refresh_rate,screen_brightness,battery_capacity,battery_cells,weight,default_os,warranty,price,width,depth,height,number_usb_a_ports,number_usb_c_ports,number_hdmi_ports,number_ethernet_ports,number_audio_jacks
+phucanh,dell,dell inspiron 3530 71043888,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.62,windows 11 home,12,22990000,38.1,25.6,2.5,4,0,1,0,0
+phucanh,dell,dell inspiron 3530 n5i5340w1,intel core i5-1334u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,18990000,35.8,23.5,1.67,2,2,1,0,0
+phucanh,dell,dell latitude l3450-1335u-08512w,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,: 3 cell,3,1.52,windows 11 home,12,20990000,32.6,22.6,1.76,6,2,1,0,0
+phucanh,lenovo,lenovo ideapad slim 3 15irh8,intel core i7-13620h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 65w round tip 3-pin,: 65w round tip (3-pin),1.62,windows 11 home,24,18990000,35.9,23.6,1.99,4,2,1,0,1
+phucanh,dell,dell inspiron n5640 n6i7512w1,: core 7 150u,geforce mx570,16,ddr5,1024,ssd,yes,16.0,2560x1600,n/a,n/a,: 4 cell,4,1.8,windows 11 home,12,32990000,35.6,25.1,1.79,4,2,1,0,1
+phucanh,dell,dell  g15 5530 i7hx161w11gr4060,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,165,300,: 6 cell,6,2.65,windows 11 home,12,41990000,35.6,27.4,2.61,8,0,1,1,0
+phucanh,lenovo,lenovo v15 g4 iru,intel core i3-1315u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 2 cell,2,1.7,windows 11 home,24,12590000,35.98,23.53,1.95,0,2,1,1,1
+phucanh,lenovo,lenovo loq  15irx9 83fq0005vn,intel core i5-12450hx,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,: 4 cell,4,2.38,windows 11 home,24,21990000,35.96,26.48,2.21,6,2,1,1,1
+phucanh,dell,dell vostro 3430 71021669,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,: 3 cell,3,1.49,windows 11 home,12,19790000,32.1,22.0,1.86,2,2,1,1,0
+phucanh,samsung,samsung galaxy chromebook go xe340xda,: celeron n4500,n/a,4,ddr4,32,ssd,yes,14.0,1366x768,n/a,n/a,: nguồn 45w,: nguồn 45w,1.145,: chrome os,12,11990000,32.71,22.56,1.59,2,4,0,0,0
+phucanh,dell,dell latitude l3540 71038101,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.81,windows 11 home,12,20990000,35.8,23.5,1.67,6,2,1,0,0
+phucanh,dell,dell latitude l3540 71038102,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.81,windows 11 home,12,26490000,35.8,23.5,1.67,6,2,1,0,0
+phucanh,lenovo,lenovo yoga slim 7 14imh9 83e2006mvn,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.5,2880x1800,n/a,400,73.0,n/a,1.59,windows 11 home,24,47290000,32.5,22.6,1.66,2,4,1,0,1
+phucanh,lenovo,lenovo legion  7 16irx9 83fd006jvn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,3000x2000,165,430,80.0,n/a,2.24,windows 11 home,24,66990000,35.7,26.2,1.76,4,6,1,0,1
+phucanh,gigabyte,gigabyte  g5 mf e2vn313sh,intel core i5-12500h,geforce rtx 4050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,: 4 cell,4,1.9,windows 11 home,24,21190000,36.0,23.8,2.27,2,0,1,0,0
+phucanh,acer,acer  nitro v anv15-51-53dm nh.qn9sv.007,intel core i5-13420h,geforce rtx 3050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,: 4 cell,4,2.5,windows 11 home,12,24990000,36.3,25.5,2.29,2,0,0,1,0
+phucanh,lenovo,lenovo thinkpad x1 carbon gen 12 21kc008mvn,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,n/a,1.09,windows 11 pro,36,53990000,31.2,21.4,1.49,4,4,1,0,1
+phucanh,gaming,acer predator helios neo 16 phn16-71-74qr,intel core i7-13700hx,geforce rtx 4070,16,ddr5,512,ssd,yes,16.1,1920x1200,165,n/a,: 4 cell,4,4.6,windows 11 home,12,49990000,35.7,27.8,2.49,14,8,1,0,0
+phucanh,gaming,acer predator helios neo 16 phn16-72-950p,intel core i9-14900hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1440,240,n/a,: 4 cell,4,4.6,windows 11 home,12,59990000,35.7,27.8,2.49,14,8,1,0,0
+phucanh,gaming,acer predator helios neo 16 phn16-72-78dq,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1440,240,n/a,: 4 cell,4,4.6,windows 11 home,12,46990000,35.7,27.8,2.49,14,8,1,0,0
+phucanh,acer,acer  nitro v 16 propanel anv16-41-r36y,amd ryzen 7 8845hs,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1920x1200,165,n/a,57.0,4,2.1,windows 11 home,12,31990000,36.2,23.9,2.29,4,4,1,1,1
+phucanh,acer,acer  nitro v 16 propanel anv16-41-r6na,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,1920x1200,165,n/a,57.0,4,2.1,windows 11 home,12,34990000,36.2,23.9,2.29,4,4,1,1,1
+phucanh,acer,acer  nitro v 16 propanel anv16-41-r7en,amd ryzen 7 8845hs,geforce rtx 3050,16,ddr5,512,ssd,yes,16.0,1920x1200,165,n/a,57.0,4,2.1,windows 11 home,12,28790000,36.2,23.9,2.29,4,4,1,1,1
+phucanh,acer,acer swift go ai oled sfg14-73-57fz,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,n/a,: 4 cell,4,1.32,windows 11 home,12,24490000,31.2,21.7,1.49,4,6,1,0,1
+phucanh,acer,acer swift go ai oled sfg14-73-75ym,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,n/a,: 4 cell,4,1.32,windows 11 home,12,27490000,31.2,21.7,1.49,4,6,1,0,1
+phucanh,acer,acer swift x 14 oled sfx14-71g-78sy,intel core i7-13700h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,n/a,: 4 cell,4,1.19,windows 11 home,12,42990000,32.5,21.5,1.95,4,2,1,0,1
+phucanh,acer,acer swift x 14 oled sfx14-72g-708x,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,n/a,: 4 cell,4,1.19,windows 11 home,12,47490000,32.5,21.5,1.95,4,2,1,0,1
+phucanh,acer,acer swift x 14 oled sfx14-72g-79uw,intel core ultra 7 155h,geforce rtx 4070,32,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,n/a,: 4 cell,4,1.19,windows 11 home,12,53990000,32.5,21.5,1.95,4,2,1,0,1
+phucanh,lenovo,lenovo yoga pro 7 14asp9 83hn0022vn,: amd ryzen ai 9 365,n/a,32,ddr5,1024,ssd,yes,14.5,2880x1800,n/a,400,73.0,n/a,1.54,windows 11 home,24,41990000,32.5,22.6,1.66,2,4,1,0,1
+phucanh,lenovo,lenovo thinkpad p16s g3 21ks0037va,intel core ultra 7 155h,: vga - rtx 500 ada generation,64,ddr5,1024,ssd,yes,16.0,1920x1200,n/a,300,57.0,n/a,1.61,n,36,49190000,32.5,22.7,1.85,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad p16s g3 21ks0038va,intel core ultra 5 125h,: vga - rtx 500 ada generation,32,ddr5,1024,ssd,yes,16.0,1920x1200,n/a,300,57.0,n/a,1.61,n,36,40690000,32.5,22.7,1.85,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad p16s g3 21ks0039va,intel core ultra 5 125h,: vga - rtx 500 ada generation,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,57.0,n/a,1.61,n,36,37690000,32.5,22.7,1.85,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad p16s g3 21ks0033va,intel core ultra 7 155h,: vga - rtx 500 ada generation,32,ddr5,1024,ssd,yes,16.0,1920x1200,n/a,300,57.0,n/a,1.61,n,36,45690000,32.5,22.7,1.85,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad p14s g5 21g2003xva,intel core ultra 7 155h,: vga - rtx 500 ada generation,64,ddr5,1024,ssd,yes,14.5,3072x1920,n/a,430,75.0,n/a,1.61,n,36,53190000,32.5,22.7,1.85,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad p14s g5 21g2004xva,intel core ultra 5 125h,: vga - rtx 500 ada generation,32,ddr5,1024,hdd,yes,14.5,1920x1200,n/a,430,75.0,n/a,1.61,n,36,40490000,32.5,22.7,1.85,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad p14s g5 21g20050va,intel core ultra 5 125h,: vga - rtx 500 ada generation,16,ddr5,1024,hdd,yes,14.5,1920x1200,n/a,430,75.0,n/a,1.61,n,36,38390000,32.5,22.7,1.85,4,4,1,1,1
+phucanh,dell,dell latitude l3440-i71355u-08512gw,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,: 3 cell,3,1.52,windows 11 home,12,26490000,32.6,22.6,1.76,6,2,1,0,0
+phucanh,lenovo,lenovo v15 g4 iru,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,38.0,n/a,1.7,windows 11 home,24,15990000,35.98,23.53,1.95,2,2,1,1,1
+phucanh,lenovo,lenovo ideapad slim 5 14imh9 oled 83da006uvn,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,: 3 cell,3,1.46,windows 11 home,24,26890000,31.2,22.1,1.69,4,4,1,0,1
+phucanh,lenovo,lenovo loq  15iax9 83dv00ervn,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,: 4 cell,4,2.38,windows 11 home,24,34990000,35.96,25.87,2.39,6,2,1,1,1
+phucanh,lenovo,lenovo thinkbook 14 g6 irl 21kg00rcvn,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,60.0,n/a,1.38,n,24,18990000,31.3,22.4,1.69,4,4,1,1,1
+phucanh,lenovo,lenovo v15 g4 iru,intel core i5-13420h,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,38.0,n/a,1.7,windows 11 home,24,14490000,35.98,23.53,1.95,2,2,1,1,1
+phucanh,dell,dell inspiron n5640 n6i5419w1,intel core i5-1334u,n/a,16,ddr5,512,ssd,yes,16.1,1920x1200,n/a,n/a,: 4 cell,4,1.8,windows 11 home,12,24490000,35.6,25.1,1.79,4,2,1,0,1
+phucanh,lenovo,lenovo yoga book 9 13imu9 83ff001svn,intel core ultra 7 155u,n/a,32,ddr5,1024,ssd,yes,13.3,2880x1800,n/a,400,80.0,n/a,1.34,windows 11 home,24,66990000,29.9,20.3,1.59,0,6,0,0,0
+phucanh,lenovo,lenovo thinkbook 14 g6 abp 21kj005gvn,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,60.0,n/a,1.38,windows 11 home,24,17490000,31.3,22.4,1.69,4,4,1,1,1
+phucanh,lenovo,lenovo ideapad slim 5 16imh9 oled 83dc001rvn,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,2048x1280,120,400,: 3 cell,3,1.82,windows 11 home,24,22990000,35.6,25.1,1.69,4,4,1,0,1
+phucanh,lenovo,lenovo yoga 9 2-in-1 14imh9 83ac000svn,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,400,75.0,n/a,1.32,windows 11 home,24,47990000,31.6,22.0,1.59,2,6,0,0,1
+phucanh,lenovo,lenovo thinkpad e16 gen 1 21jn006gvn,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,: 3 cell,3,1.97,windows 11 home,24,25490000,35.6,24.7,1.98,2,4,1,1,1
+phucanh,gigabyte,gigabyte  g5 mf f2ph333sh,intel core i5-12450h,geforce rtx 4050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,: 4 cell,4,1.9,windows 11 home,24,22990000,36.0,23.8,2.27,2,0,1,0,0
+phucanh,acer,acer aspire a314-23m-r4tx,amd ryzen 5 7520u,n/a,8,ddr5,512,ssd,yes,14.0,1920x1080,n/a,n/a,: 3 cell,3,1.4,windows 11 home,12,13490000,32.83,21.7,1.8,8,4,1,0,1
+phucanh,lenovo,lenovo thinkpad e14 gen 5 21jk006hva,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,: 3 cell,3,1.53,n,24,25690000,31.3,21.9,1.79,0,2,1,1,1
+phucanh,lenovo,lenovo v15 g4 iru,intel core i3-1315u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 2 cell,2,1.7,n,24,10990000,35.98,23.53,1.95,0,2,1,1,1
+phucanh,lenovo,lenovo thinkpad e14 gen 6 21m7004mva,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,: 3 cell,3,1.44,n,24,22790000,31.3,21.9,1.79,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad e16 gen 1 21jn00gkva,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.97,n,24,19890000,35.6,24.7,1.98,2,4,1,1,1
+phucanh,lenovo,lenovo ideapad slim 5 14imh9 oled 83da001nvn,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,: 3 cell,3,1.46,windows 11 home,24,21990000,31.2,22.1,1.69,4,4,1,0,1
+phucanh,lenovo,lenovo ideapad slim 5 14imh9 oled 83da0020vn,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,n/a,: 3 cell,3,1.46,windows 11 home,24,27990000,31.2,22.1,1.69,4,4,1,0,1
+phucanh,dell,dell latitude 3430 l3430i58g256ssd,intel core i5-1235u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,n/a,n/a,: 3 cell,3,1.52,n,12,16990000,32.6,22.6,1.76,4,2,1,0,0
+phucanh,lenovo,lenovo legion  5 pro 16irx9 83df0046vn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,n/a,2.5,windows 11 home,24,55990000,36.3,26.0,2.2,8,4,1,1,1
+phucanh,lenovo,lenovo legion  5 16irx9 83dg004xvn,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,n/a,2.5,windows 11 home,24,40990000,36.3,26.0,2.2,8,4,1,1,1
+phucanh,samsung,samsung galaxy chromebook go xe310xda,: celeron n4500,n/a,4,ddr4,32,ssd,yes,11.6,1366x768,n/a,n/a,: nguồn 45w,: nguồn 45w,1.06,: chrome os,12,9990000,28.79,20.23,1.59,2,2,0,0,0
+phucanh,acer,acer aspire a515-58m-56yx nx.kq8sv.005,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,: 50wh li-ion battery,1.7,windows 11 home,12,17990000,36.1,23.7,1.79,4,2,1,1,1
+phucanh,lenovo,lenovo thinkpad e16 gen 1 21jn00fkva,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,57.0,n/a,1.97,n,24,21990000,35.6,24.7,1.98,2,4,1,1,1
+phucanh,lenovo,lenovo ideapad slim 5 16imh9 oled 83dc001svn,intel core ultra 7 155h,n/a,32,ddr5,512,ssd,yes,16.0,2048x1280,120,400,: 3 cell,3,1.82,windows 11 home,24,26990000,35.6,25.1,1.69,4,4,1,0,1
+phucanh,lenovo,lenovo thinkpad t14 gen 5 ult7 ram 32gb,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,300,52.5,4,1.36,n,36,38990000,31.5,22.3,1.77,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad e14 gen 6 21m7004gva,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,: 3 cell,3,1.44,n,24,22490000,31.3,21.9,1.79,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad p14s g5 21g2003gva,intel core ultra 5 125h,: vga - rtx 500 ada generation,32,ddr5,1024,ssd,yes,14.5,2240x1400,n/a,430,75.0,n/a,1.61,n,36,45290000,32.5,22.7,1.85,4,4,1,1,1
+phucanh,lenovo,lenovo thinkpad t14 gen 5 ult 5,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,52.5,4,1.36,n,36,30990000,31.5,22.3,1.77,4,4,1,1,1
+phucanh,lenovo,lenovo loq  15iax9 83gs00dbvn,intel core i5-12450hx,geforce rtx 2050,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,: 4 cell,4,2.38,windows 11 home,24,23990000,35.96,25.87,2.39,6,2,1,1,1
+phucanh,acer,acer  nitro tiger an515-58-773y,intel core i7-12700h,geforce rtx 3050 ti,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,: 4 cell,4,2.5,windows 11 home,12,28990000,36.3,25.5,2.29,2,0,0,1,0
+phucanh,acer,acer  nitro anv15-51-55ca nh.qn8sv.004,intel core i5-13420h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,27990000,36.2,23.9,2.29,6,2,1,1,1
+phucanh,acer,acer aspire a5sp14-51mtn-573x nx.khksv.002,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,50.0,: 50wh li-ion battery,1.6,windows 11 home,12,20990000,31.8,22.5,1.8,4,2,1,0,1
+phucanh,acer,acer swift go ai 2024 sfg14-73-53x7 nx.kslsv.001,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,n/a,: 4 cell,4,1.32,windows 11 home,12,23990000,31.2,21.7,1.49,4,6,1,0,1
+phucanh,dell,dell inspiron 3530 i5u085w11slu,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.66,windows 11 home,12,16990000,35.8,23.5,1.67,2,2,1,0,0
+phucanh,lenovo,lenovo thinkpad x1 carbon gen 12,intel core ultra 7 155h,n/a,32,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,n/a,1.09,windows 11 pro,36,56990000,31.2,21.4,1.49,4,4,1,0,1
+phucanh,acer,acer aspire a514-56p-562p nx.khrsv.008,intel core i5-1335u,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,: 3 cell,3,1.5,windows 11 home,12,15990000,31.8,22.5,1.8,2,0,0,0,1
+phucanh,lenovo,lenovo yoga 7 2-in-1 14iml9 83dj001fvn,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,73.0,n/a,1.59,windows 11 home,24,30990000,32.5,22.6,1.66,2,4,1,0,1
+phucanh,dell,dell inspiron 7440 c7u161w11ibu,: core 7 150u,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1080,60,n/a,: 4 cell,4,1.56,windows 11 home,12,30990000,31.4,22.6,1.57,4,4,1,0,0
+phucanh,lenovo,lenovo loq  15iax9 83gs001rvn,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,: 4 cell,4,2.38,windows 11 home,24,22490000,35.96,25.87,2.39,6,2,1,1,1
+phucanh,dell,dell inspiron 3530 p16wd1,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,17990000,35.8,23.5,1.67,2,2,1,0,0
+phucanh,lenovo,lenovo thinkpad x13 gen 5 ultra 7 155h w11p,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,41.0,n/a,1.17,windows 11 pro,36,40990000,30.1,21.4,1.59,4,4,1,0,1
+phucanh,lenovo,lenovo thinkbook 16 g6 irl 21kh00byvn,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,71.0,n/a,1.7,windows 11 home,24,24990000,35.7,25.3,1.75,4,4,1,1,1
+phucanh,dell,dell inspiron 3530 p16wd,intel core i7-1355u,n/a,16,ddr4,1024,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.62,windows 11 home,12,23990000,38.1,25.6,2.5,4,0,1,0,0
+phucanh,lenovo,lenovo thinkpad e16 gen 1 21jn006ava,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,: 3 cell,3,1.97,n,24,25490000,35.6,24.7,1.98,2,4,1,1,1
+phucanh,dell,dell inspiron 5440 i5u085w11ibu,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,n/a,: 4 cell,4,1.69,windows 11 home,12,20490000,31.4,22.6,1.65,4,2,1,0,0
+phucanh,lenovo,lenovo loq  15iax9,intel core i5-12450hx,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,: 4 cell,4,2.38,windows 11 home,24,22490000,35.96,25.87,2.39,6,2,1,1,1
+phucanh,lenovo,lenovo thinkpad l14 gen 5 21l10043va,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,250,46.5,n/a,1.4,n,24,23990000,31.3,22.6,1.89,6,4,1,1,1
+phucanh,lenovo,lenovo yoga slim 6 14irh8 oled,intel core i7-13700h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,65.0,n/a,1.35,windows 11 home,36,25990000,31.2,22.1,1.49,2,4,1,0,1
+phucanh,lenovo,lenovo ideapad slim 3 15abr8 82xm00ehvn,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 1x headphone / microphone combo jack 3.5mm,: 1x headphone / microphone combo jack (3.5mm),1.62,windows 11 home,24,16490000,35.9,23.6,1.99,0,2,1,0,1
+phucanh,dell,dell inspiron 5440 7fn5j,: core 7 150u,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,n/a,: 4 cell,4,1.69,windows 11 home,12,26490000,31.4,22.6,1.65,4,2,1,0,0
+phucanh,dell,dell inspiron 3520 71049019,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.83,windows 11 home,12,15490000,36.3,24.9,1.99,6,2,0,0,0
+phucanh,msi,msi  thin 15 b13uc-1411vn,intel core i7-13620h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,1.86,windows 11 home,24,23490000,35.9,25.4,2.15,6,2,1,0,1
+phucanh,msi,msi  thin 15 b12ucx-1419vn,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,1.86,windows 11 home,24,19090000,35.9,25.4,2.17,6,2,1,0,1
+phucanh,lenovo,lenovo yoga slim 7 14imh9 83cv001vvn,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,400,65.0,n/a,1.39,windows 11 home,24,32990000,31.5,22.16,1.49,2,4,1,0,1
+phucanh,lenovo,lenovo thinkpad e14 gen 5 21jk007xvn,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,n/a,: 3 cell,3,1.53,windows 11 home,24,25690000,31.3,21.9,1.79,0,2,1,1,1
+phucanh,lenovo,lenovo loq  15iax9 83gs000rvn,intel core i5-12450hx,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,: 4 cell,4,2.38,windows 11 home,24,27990000,35.96,25.87,2.39,6,2,1,1,1
+phucanh,lenovo,lenovo thinkpad e14 gen 5 core i5,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,: 3 cell,3,1.53,n,24,19990000,31.3,21.9,1.79,2,4,1,1,1
+phucanh,dell,dell  g15 5530 71045030,intel core i7-13650hx,geforce rtx 3050,16,ddr5,512,ssd,yes,15.6,1920x1080,165,300,: 6 cell,6,2.65,windows 11 home,12,35490000,35.6,27.4,2.61,8,0,1,1,0
+phucanh,acer,acer aspire lite al16-51p-55n7 nx.kx0sv.001,intel core i5-1235u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,n/a,: 2 cell,2,1.7,windows 11 home,12,14490000,35.7,24.7,1.89,4,4,1,0,1
+phucanh,lenovo,lenovo loq  15iax9,intel core i5-12450hx,geforce rtx 4050,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,: 4 cell,4,2.38,windows 11 home,24,26690000,35.96,25.87,2.39,6,2,1,1,1
+phucanh,dell,dell mobile precision workstation 5680 71023333,intel core i7-13800h,geforce rtx a1000,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,n/a,: 6 cell,6,2.67,n,36,78800000,35.7,23.3,2.27,4,6,1,0,1
+phucanh,acer,acer aspire lite al16-52p-572a,intel core i5-1334u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,n/a,: 2 cell,2,1.7,windows 11 home,12,14990000,35.7,24.7,1.89,4,4,1,0,1
+phucanh,lenovo,lenovo thinkpad x1 carbon gen 12 ult7 32gb,intel core ultra 7 155u,n/a,32,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,400,57.0,n/a,1.09,windows 11 pro,36,54990000,31.2,21.4,1.49,4,4,1,0,1
+phucanh,lenovo,lenovo thinkpad t14 gen 5 ult7,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,52.5,4,1.36,n,36,34490000,31.5,22.3,1.77,4,4,1,1,1
+phucanh,lenovo,lenovo ideapad slim 3 14irh8 83el0023vn,intel core i7-13620h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,n/a,n/a,: 65w round tip 3-pin,: 65w round tip (3-pin),1.37,windows 11 home,24,18490000,32.4,21.3,1.79,4,2,1,0,1
+phucanh,lenovo,lenovo thinkbook 16 g6 abp màn 2k,amd ryzen 7 7730u,n/a,32,ddr4,1024,ssd,yes,16.0,2560x1600,n/a,350,71.0,n/a,1.7,windows 11 home,24,26490000,35.7,25.3,1.75,4,4,1,1,1
+phucanh,acer,acer swift lite 14 ai sfl14-51m-56hs,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,: 3 cell,3,1.27,windows 11 home,12,19990000,31.44,24.7,1.89,4,4,1,0,0
+phucanh,gigabyte,gigabyte  g5 mf5 52vn383sh,intel core i5-13500h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,: 4 cell,4,1.9,windows 11 home,24,24990000,36.0,23.8,2.27,2,0,1,0,0
+phucanh,lenovo,lenovo loq  15irx9 83dv00ufvn,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,: 4 cell,4,2.38,windows 11 home,24,34990000,35.96,26.48,2.21,6,2,1,1,1
+phucanh,lenovo,lenovo thinkbook 14 g6 irl 21kg00bqvn,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,60.0,n/a,1.38,n,24,22790000,31.3,22.4,1.69,4,4,1,1,1
+phucanh,lenovo,lenovo ideapad slim 3 14iah8,intel core i5-12450h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,n/a,n/a,47.0,n/a,1.63,windows 11 home,24,15490000,35.9,23.6,1.99,0,2,1,0,1
+phucanh,acer,acer aspire  a715-76g-59mw nh.qmysv.001,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,: 4 cell,4,2.1,windows 11 home,12,20990000,36.2,23.7,1.99,2,2,0,1,1
+phucanh,acer,acer aspire a515-58p-35eu nx.khjsv.006,intel core i3-1305u,n/a,8,ddr5,512,ssd,yes,15.6,1920x1200,n/a,n/a,: 3 cell,3,1.5,windows 11 home,12,11990000,31.8,22.5,1.8,2,0,0,0,1
+phucanh,lenovo,lenovo yoga slim 7 14imh9 83cv001uvn,intel core ultra 7 155h,n/a,32,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,65.0,n/a,1.39,windows 11 home,24,31990000,31.5,22.16,1.49,2,4,1,0,1
+phucanh,lenovo,lenovo thinkbook 16 g6 abp màn 2k,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,16.0,2560x1600,n/a,350,71.0,n/a,1.7,windows 11 home,24,20290000,35.7,25.3,1.75,4,4,1,1,1
+phucanh,acer,acer aspire a315-44p-r5qg,amd ryzen 7 5700u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.7,windows 11 home,12,13990000,36.2,24.1,1.99,6,2,1,1,1
+phucanh,lenovo,lenovo thinkpad x13 gen 5 21lu0055va,intel core ultra 5 125h,n/a,32,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,41.0,n/a,1.17,n,36,34200000,30.1,21.4,1.59,4,4,1,0,1
+phucanh,dell,dell inspiron 7440 n4i5006w1,: core 5 120u,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1080,60,n/a,: 4 cell,4,1.56,windows 11 home,12,31990000,31.4,22.6,1.57,4,4,1,0,0
+phucanh,lenovo,lenovo loq  15iax9 83gs001svn,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,: 4 cell,4,2.38,windows 11 home,24,20490000,35.96,25.87,2.39,6,2,1,1,1
+phucanh,dell,dell mobile precision workstation 7680 71023334,intel core i7-13850hx,geforce rtx 2000 ada,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,n/a,: 6 cell,6,2.67,n,36,74200000,35.7,23.3,2.27,4,6,1,0,1
+phucanh,acer,acer  nitro v anv15 51 72vs nh.qnasv.004,intel core i7-13620h,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,: 4 cell,4,2.5,windows 11 home,12,25990000,36.3,25.5,2.29,2,0,0,1,0
+phucanh,dell,dell inspiron 3520 25p2311,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.83,windows 11 home,12,14990000,36.3,24.9,1.99,6,2,0,0,0
+phucanh,lenovo,lenovo thinkpad x13 gen 5 ram 32gb,intel core ultra 7 155u,n/a,32,ddr5,1024,ssd,yes,13.3,1920x1200,n/a,300,41.0,n/a,1.17,n,36,38990000,30.1,21.4,1.59,4,4,1,0,1
+phucanh,lenovo,lenovo yoga slim 6 slim 14irh8 83e00008vn oled,intel core i7-13700h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,65.0,n/a,1.35,windows 11 home,36,26990000,31.2,22.1,1.49,2,4,1,0,1
+phucanh,dell,dell inspiron 3530 p16wd2,intel core i5-1334u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,18990000,35.8,23.5,1.67,2,2,1,0,0
+phucanh,lenovo,lenovo thinkbook 14 g7 irl 21mr006wvn,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,45.0,n/a,1.38,n,24,20990000,31.3,22.4,1.69,4,4,1,1,1
+phucanh,lenovo,lenovo thinkbook 16 g6 irl,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,71.0,n/a,1.7,windows 11 home,24,19490000,35.7,25.3,1.75,4,4,1,1,1
+phucanh,dell,dell inspiron 3520 25p2312,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.83,windows 11 home,12,17990000,36.3,24.9,1.99,4,0,1,0,0
+phucanh,dell,dell vostro 3530 v5i3465w1,intel core i3-1305u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.66,windows 11 home,12,14690000,35.8,23.5,1.67,2,4,1,0,0
+phucanh,dell,dell inspiron 3530 i5u085w11slu2,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,17990000,35.8,23.5,1.67,2,2,1,0,0
+phucanh,lenovo,lenovo thinkpad e14 gen 5,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,: 3 cell,3,1.53,windows 11 home,24,20490000,31.3,21.9,1.79,2,4,1,1,1
+phucanh,lenovo,lenovo v14 g4 iru 83a000bhvn,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,: 2 cell,2,1.43,windows 11 home,24,16490000,32.4,21.5,1.95,2,2,1,1,1
+phucanh,lenovo,lenovo thinkpad e14 gen 5,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,n/a,: 3 cell,3,1.53,windows 11 home,24,25690000,31.3,21.9,1.79,0,2,1,1,1
+phucanh,dell,dell inspiron 3530 i3u085w11slu,intel core i3-1305u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.66,windows 11 home,12,14490000,35.8,23.5,1.67,2,2,1,0,0
+phucanh,dell,dell inspiron 3520 71045026,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.83,windows 11 home,12,17990000,36.3,24.9,1.99,4,0,1,0,0
+phucanh,lenovo,lenovo thinkpad e14 gen 5 21jk00h4va,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,: 3 cell,3,1.53,n,24,19790000,31.3,21.9,1.79,2,4,1,1,1
+phucanh,dell,dell inspiron 3520 n5i5052w1,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,: 3 cell,3,1.83,windows 11 home,12,16990000,36.3,24.9,1.99,4,0,1,0,0
