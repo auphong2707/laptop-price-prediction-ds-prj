@@ -3,7 +3,7 @@ from requests import Response
 from .base_laptopshop_spider import BaseLaptopshopPageSpider
 
 class Laptop88Spider(BaseLaptopshopPageSpider):
-    name = "laptop88"
+    name = "laptop88_spider"
     allowed_domains = ["laptop88.vn"]
     start_urls = ["https://laptop88.vn/laptop-moi.html"]
     
