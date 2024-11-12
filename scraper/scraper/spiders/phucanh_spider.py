@@ -272,3 +272,12 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
     def parse_screen_refresh_rate(self, response):
         screen_text = self.get_scoped_value(response, ['Tần số quét', 'Công nghệ màn hình'])
         return screen_text if screen_text else 'n/a'
+    
+    # Webcam
+    def parse_webcam_resolution(self, response: Response): 
+        """
+        Extracts the webcam resolution from the response.
+        Example: HD, FHD, 4K.
+        """
+        res = self.get_scoped_value(response, ["Webcam"])
+        return res if res else "n/a"
