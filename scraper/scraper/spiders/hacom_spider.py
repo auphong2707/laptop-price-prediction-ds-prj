@@ -48,11 +48,6 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             
         return None
 
-    def yield_condition(self, response):
-        if "cũ" in self.parse_name(response):
-            return False
-
-        return True
     def parse_brand(self, response: Response):
         try:
             brand = response.css('div.pd-info-right h1.sptitle2024::text').get().lower().split()

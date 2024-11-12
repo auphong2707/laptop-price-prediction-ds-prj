@@ -31,17 +31,7 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
                 return '\n'.join(scope)
             
         return None
-    
 
-    def yield_condition(self, response):
-        try:
-            res = response.xpath('//h1/text()').get().lower()
-            if "laptop" in res or "macbook" in res:
-                return True
-            
-            return False
-        except:
-            return False
     # [PARSE FEATURES SECTION: START]
     # Brand
     def parse_brand(self, response: Response): 

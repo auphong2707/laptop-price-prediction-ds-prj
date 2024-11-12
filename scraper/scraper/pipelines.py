@@ -152,15 +152,16 @@ class TransformPipeline:
                 # Basic cleaning steps
                 value = re.sub(r'[^\x20-\x7E]|®|™|integrated|gpu', ' ', value, flags=re.IGNORECASE)              
                 value = re.sub(r'\([^()]*\)', '', value)
-
+                
                 special_sep = re.search(r'\d+\s?gb|gddr\d+|\d+g', value)
                 if special_sep:
                     value = value.split(special_sep.group())[0]
-
+                
                 for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
                     value = value.split(spliter)[0]
-
+                
                 value = ' '.join(value.split())
+
                 # Apple solving
                 if self.adapter.get('brand') == "apple":
                     value = 'n/a'
@@ -171,7 +172,7 @@ class TransformPipeline:
                             value = ' '.join(value.split())
                         
                         if (value.startswith('rtx') and 'ada' not in value) \
-                            or value.startswith('gtx'):
+                           or value.startswith('gtx'):
                             value = 'geforce ' + value
                             
                         value = re.sub(r'(\s\d{3,4})ti', r'\1 ti', value)
@@ -181,8 +182,7 @@ class TransformPipeline:
                             value = value[value.index('geforce'):]
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
-                                                                'intel arc', 'adreno', 'onboard', 'on board', 'uma', 'special technology',
-                                                                'hdmi']]):
+                                                               'intel arc', 'adreno', 'onboard', 'on board', 'uma',]]):
                         value = "n/a"
                     elif any([keyword in value for keyword in ['amd', 'radeon']]):
                         value = value.replace('amd', '')
@@ -436,12 +436,12 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                value = value.replace(',', '.').replace('-', ' ').replace('–', ' ')
+                value = value.replace(',', '.')
                 value = re.sub(r'[()]', '', value)
-
-                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery|watt-giờ|w|watt)', value)
+                
+                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery)', value)
                 if search_value:
-                    value = float(search_value.group().split('wh')[0].split('battery')[0].split('watt-giờ')[0].split('w')[0].split('watt')[0])
+                    value = float(search_value.group().split('wh')[0].split('battery')[0])
                 
                 self.adapter['battery_capacity'] = value
             except Exception as e:
@@ -456,7 +456,7 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+(cells|chân|cell)\s*(\d+)|(\d+)[ -]?(?:pin|chân)', value)
+                search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells|chân\s*(\d+)', value)
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
