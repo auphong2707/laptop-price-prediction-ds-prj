@@ -15,6 +15,9 @@ class AnphatSpider(BaseLaptopshopPageSpider):
     
     custom_settings = {
         'DOWNLOAD_MIDDLEWARES': {
+        },
+        'ITEM_PIPELINES': {
+            'scraper.pipelines.TransformPipeline': 300
         }
     }
 
