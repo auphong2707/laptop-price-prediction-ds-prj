@@ -1,4 +1,6 @@
+import time
 from scrapy.http import Response
+from selenium.webdriver.common.by import By
 
 from .base_laptopshop_spider import BaseLaptopshopLoadmoreButtonSpider
 class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
@@ -10,9 +12,82 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
     # close_button_xpaths = ["//button[@class='close']"]
     
     show_technical_spec_button_xpath = "//button[span[text()='Tất cả thông số']]"
-    source = 'fpt'
+    source = 'fptshop'
     selenium_product_request = True
 
+
+    def get_source_selenium(self, url: str):
+        time.sleep(1)
+        self.driver.execute_script("window.open('');")
+        self.driver.switch_to.window(self.driver.window_handles[-1])
+        
+        self.driver.execute_script(f"Object.defineProperty(navigator, 'userAgent', {{get: () => '{self.ua.random}'}});")
+        self.driver.get(url)
+        self.driver.switch_to.window(self.driver.window_handles[-1])
+        time.sleep(4)
+        if self.show_technical_spec_button_xpath:
+            retries = 5
+            while retries > 0:
+                self.driver.execute_script("document.body.style.zoom='40%'")
+                time.sleep(3)
+                try:
+                    buttons = self.driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
+                    if buttons:
+                        break
+                    else:
+                        print("Technical spec button not found, reloading the page.")
+                        self.driver.refresh()
+                        time.sleep(2)
+                        retries -= 1
+                except Exception as e:
+                    print("Error while trying to find the technical spec button:", e)
+                    self.driver.refresh()
+                    time.sleep(2)
+                    retries -= 1
+                
+            for xpath in self.close_button_xpaths:
+                try:
+                    buttons = self.driver.find_elements(By.XPATH, xpath)
+                    
+                    for button in buttons:
+                        if button.is_displayed() and button.is_enabled():
+                            button.click()
+                            print("Closed the modal successfully.")
+                            break
+                except Exception as e:
+                    print("Failed to close the modal:", e)
+            
+            opened_modal = False
+            try:
+                buttons = self.driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
+                
+                for button in buttons:
+                    self.driver.execute_script("arguments[0].click();", button)
+                    while not self.driver.find_elements(By.CLASS_NAME, 'Swipeable_swipeable__BTB2L'):
+                        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                        time.sleep(1)
+                        self.driver.execute_script("window.scrollTo(0, 0);")
+                        time.sleep(1)
+                    
+                    print("Opened the modal successfully.")
+                    opened_modal = True
+                    break
+            except:
+                pass
+                
+            if not opened_modal:
+                print("Failed to open the modal.")
+        else:
+            time.sleep(2)
+            self.driver.execute_script("document.body.style.zoom='1%'")
+            time.sleep(3)
+        
+        html = self.driver.page_source
+
+        self.driver.close()
+        self.driver.switch_to.window(self.driver.window_handles[0])
+
+        return html
 
     def get_scoped_value(self, response, names):
         possibile_values = [

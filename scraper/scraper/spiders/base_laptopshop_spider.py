@@ -42,7 +42,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
 
     # You can also set other preferences as needed
     options.set_preference('permissions.default.image', 2)  # Disable image loading to speed up browsing
-    
+    options.set_preference("privacy.trackingprotection.enabled", True) # Enable tracking protection
 
     driver = webdriver.Firefox(options=options)
 
