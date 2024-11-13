@@ -10,7 +10,7 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
     product_site_css = 'h2.product-title a::attr(href)'
     page_css = '.paging a::attr(href)' 
     selenium_product_request = True
-    show_technical_spec_button_xpath = "//div[@class='thongsokythuat']/a[@class='button-box']"
+    # show_technical_spec_button_xpath = "//div[@class='thongsokythuat']/a[@class='button-box']"
     
     source = 'laptop88'
     
@@ -59,18 +59,24 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Returns True if the response is valid to be scraped.
         """
-        number_of_stores = response.xpath("//div[@class='product_store']//span[@id='total-store']/text()").get()
-        if number_of_stores and int(number_of_stores) == 0:
-            return False
+        valid = True
+        # number_of_stores = response.xpath("//div[@class='product_store']//span[@id='total-store']/text()").get()
+        # if number_of_stores and int(number_of_stores) == 0:
+        #     valid = False
+        
         product_name = response.xpath("//h2[@class='name-product']/text()").get().lower()
         for _ in ["ipad", "tablet", "cũ", "new outlet"]:
             if _ in product_name:
-                return False
+                valid = False
         
         price = response.xpath("//div[@class='price js-price-config js-price-buildpc']/text()").get().lower()
         if "liên hệ" in price or "call" in price:
-            return False
-        return True
+            valid = False
+            
+        if not valid:
+            print("Skipped: ", product_name)
+        
+        return valid
     
     # [PARSE FEATURES SECTION: START]
     # Brand
