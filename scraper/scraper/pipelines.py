@@ -191,6 +191,10 @@ class TransformPipeline:
                             value = "n/a"
                         elif not 'rx' in value:
                             value = "n/a"
+                        elif 'ang c p nh t' in value:
+                            value = "n/a"
+                        elif 'card r i' in value:
+                            value = "n/a"
                     
                 value = value.strip()
                 
@@ -234,8 +238,10 @@ class TransformPipeline:
                     value = search_value.group()
                 elif '3200' in value:
                     value = 'ddr4'
-                # else: 
-                #     value = "n/a"
+                elif 'Ä‘ang cáº­p nháº­t' in value:
+                    value = 'n/a'
+                else: 
+                    value = "n/a"
                 
                 self.adapter['ram_type'] = value
             except Exception as e:
@@ -431,6 +437,12 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
+                # Check if the value contains specific battery capacity information
+                if not re.search(r'\b(wh|battery)\b', value, re.IGNORECASE):
+                    # If 'wh' or 'battery' is not found, set to 'n/a'
+                    self.adapter['battery_capacity'] = 'n/a'
+                    return
+
                 value = value.replace(',', '.')
                 value = re.sub(r'[()]', '', value)
                 
