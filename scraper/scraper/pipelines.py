@@ -450,8 +450,15 @@ class TransformPipeline:
                 value = self.adapter.get('battery_cells')
                 if value == "n/a":
                     return
-                
-                search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells|chân\s*(\d+)', value)
+
+                # Check if the value contains specific battery cell, pin, or chân information
+                if not re.search(r'\b(cell|pin|chân)s?\b', value, re.IGNORECASE):
+                    # If 'cell', 'pin', or 'chân' is not found, set to 'n/a'
+                    self.adapter['battery_cells'] = 'n/a'
+                    return
+            
+                # Use regex to find battery cell, pin, or chân count patterns
+                search_value = re.search(r'(\d+)[ -]?(?:cell|pin|chân)(?:s)?|(\d+)\s+(?:cells|pins|chân)', value, re.IGNORECASE)
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
@@ -651,7 +658,7 @@ class TransformPipeline:
                     else:  # 'năm' or 'year(s)'
                         value = number * 12
                 else:
-                    value = "aaaaaaaaaaa"
+                    value = "n/a"
                 
                 self.adapter['warranty'] = value
             except Exception as e:
