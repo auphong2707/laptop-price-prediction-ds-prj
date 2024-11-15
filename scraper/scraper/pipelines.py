@@ -438,12 +438,6 @@ class TransformPipeline:
                 value = self.adapter.get('battery_capacity')
                 if value == "n/a":
                     return
-                
-                # Check if the value contains specific battery capacity information
-                if not re.search(r'\b(wh|battery)\b', value, re.IGNORECASE):
-                    # If 'wh' or 'battery' is not found, set to 'n/a'
-                    self.adapter['battery_capacity'] = 'n/a'
-                    return
 
                 value = value.replace(',', '.')
                 value = re.sub(r'[()]', '', value)
@@ -451,7 +445,8 @@ class TransformPipeline:
                 search_value = re.search(r'(\d+(?:\.\d+)?)\s*[-]?(w(?:att)?|wh|battery)', value)
                 if search_value:
                     value = float(search_value.group().split('wh')[0].split('battery')[0].split('-watt')[0].split('watt')[0].split('w')[0])
-                
+                elif search_value is None:
+                    value = "n/a"
                 self.adapter['battery_capacity'] = value
             except Exception as e:
                 print("Error in battery capacity transformation:", e)
