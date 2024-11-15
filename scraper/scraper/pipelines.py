@@ -62,6 +62,8 @@ class TransformPipeline:
                 special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+(\.\d+)?\s*ghz|\d+\s?gb|dgb)\b', value)
                 if special_sep:
                     value = value.split(special_sep.group())[0]
+                else: 
+                    value = 'n/a'
                 
                 for spliter in [',',  'up']:
                     value = value.split(spliter)[0]
@@ -238,10 +240,8 @@ class TransformPipeline:
                     value = search_value.group()
                 elif '3200' in value:
                     value = 'ddr4'
-                elif 'Ä‘ang cáº­p nháº­t' in value:
+                elif search_value is None:
                     value = 'n/a'
-                else: 
-                    value = "n/a"
                 
                 self.adapter['ram_type'] = value
             except Exception as e:
@@ -290,6 +290,8 @@ class TransformPipeline:
                     value = "hdd"
                 elif "emmc" in value:
                     value = "emmc"
+                else: 
+                    value = 'n/a'
                 
                 self.adapter['storage_type'] = value
             except Exception as e:
@@ -446,9 +448,9 @@ class TransformPipeline:
                 value = value.replace(',', '.')
                 value = re.sub(r'[()]', '', value)
                 
-                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery)', value)
+                search_value = re.search(r'(\d+(?:\.\d+)?)\s*[-]?(w(?:att)?|wh|battery)', value)
                 if search_value:
-                    value = float(search_value.group().split('wh')[0].split('battery')[0])
+                    value = float(search_value.group().split('wh')[0].split('battery')[0].split('-watt')[0].split('watt')[0].split('w')[0])
                 
                 self.adapter['battery_capacity'] = value
             except Exception as e:
@@ -462,20 +464,15 @@ class TransformPipeline:
                 value = self.adapter.get('battery_cells')
                 if value == "n/a":
                     return
-
-                # Check if the value contains specific battery cell, pin, or chân information
-                if not re.search(r'\b(cell|pin|chân)s?\b', value, re.IGNORECASE):
-                    # If 'cell', 'pin', or 'chân' is not found, set to 'n/a'
-                    self.adapter['battery_cells'] = 'n/a'
-                    return
-            
-                # Use regex to find battery cell, pin, or chân count patterns
+                
                 search_value = re.search(r'(\d+)[ -]?(?:cell|pin|chân)(?:s)?|(\d+)\s+(?:cells|pins|chân)', value, re.IGNORECASE)
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
                 elif "integrated" in value:
                     value = "n/a"
+                elif search_value is None:
+                    value = "n/a"  
                 
                 self.adapter['battery_cells'] = value
             except Exception as e:
