@@ -56,12 +56,14 @@ class TransformPipeline:
                 
                 # Basic cleaning steps
                 for removal in ['®', '™', ' processors', ' processor', 'mobile', 'with intel ai boost', '', '(tm)', '(r)', ':'
-                                    'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 'comet lake', 'kabylake refresh', 'kabylake']:
+                                    'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 'comet lake', 'kabylake refresh', 'kabylake', 'cpu']:
                             value = value.replace(removal, '')
                     
                 special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+(\.\d+)?\s*ghz|\d+\s?gb|dgb)\b', value)
                 if special_sep:
                     value = value.split(special_sep.group())[0]
+                elif value == 'amd r5 7530u amd r5 7530u cpu: amd r5 7530u amd r5 7530u amd r5 7530u':
+                    value = 'amd r5 7530u'
                 else: 
                     value = 'n/a'
                 
@@ -158,7 +160,9 @@ class TransformPipeline:
                 special_sep = re.search(r'\d+\s?gb|gddr\d+|\d+g', value)
                 if special_sep:
                     value = value.split(special_sep.group())[0]
-                
+                elif special_sep is None:
+                    value = 'n/a'
+
                 for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
                     value = value.split(spliter)[0]
                 
@@ -169,7 +173,7 @@ class TransformPipeline:
                     value = 'n/a'
                 else:
                     if any([keyword in value for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
-                        for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia', 'intel iris xe', 'graphics']:
+                        for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia', 'intel iris xe', 'graphics', 'vga:']:
                             value = value.replace(removal, '')
                             value = ' '.join(value.split())
                         
@@ -183,8 +187,8 @@ class TransformPipeline:
                         if 'geforce' in value:
                             value = value[value.index('geforce'):]
                         
-                    elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
-                                                               'intel arc', 'adreno', 'onboard', 'on board', 'uma',]]):
+                    elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 'intel',
+                                                               'intel arc', 'adreno', 'onboard', 'on board', 'uma', 'graphics']]):
                         value = "n/a"
                     elif any([keyword in value for keyword in ['amd', 'radeon']]):
                         value = value.replace('amd', '')
@@ -265,7 +269,8 @@ class TransformPipeline:
                         value = int(value.split('tb')[0]) * 1024
                     else:
                         value = int(value.split('gb')[0])
-                
+                else:
+                    value = "n/a"
                 self.adapter['storage_amount'] = value
             except Exception as e:
                 print("Error in storage amount transformation:", e)
@@ -348,6 +353,8 @@ class TransformPipeline:
                 if search_value:
                     width, height = sorted(map(int, search_value.groups()), reverse=True)
                     value = f"{width}x{height}"
+                elif search_value is None:
+                    value = "n/a"
                 else:
                     resolution_widths = {
                         'fhd': 1920,       # Full HD
