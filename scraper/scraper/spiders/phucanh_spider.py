@@ -231,6 +231,7 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
     
     def parse_connectivity(self, response):
         connectivity_text = self.get_scoped_value(response, ['Cổng giao tiếp'])
+        connectivity_text = connectivity_text[:len(connectivity_text) // 2]
         return connectivity_text if connectivity_text else 'n/a'
 
     def parse_battery_capacity(self, response):
