@@ -250,6 +250,8 @@ class TransformPipeline:
                     value = search_value.group()
                 elif '3200' in value:
                     value = 'ddr4'
+                elif '7467' in value:
+                    value = 'ddr5'
                 elif search_value is None:
                     value = 'n/a'
                 
@@ -628,8 +630,10 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                if "noos" in value:
+                if "no" in value:
                     value = "n/a"
+                elif "ubuntu" in value:
+                    value = "ubuntu"
                 elif self.adapter.get('brand') == 'apple':
                     value = 'macos'
                 else:
