@@ -58,7 +58,7 @@ class TransformPipeline:
                 for removal in ['®', '™', ' processors', ' processor', 'mobile',
                                 'with intel ai boost', '', '(tm)', '(r)', ':',
                                 'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 
-                                'comet lake', 'kabylake refresh', 'kabylake', 'cpu']:
+                                'comet lake', 'kabylake refresh', 'kabylake', 'cpu:']:
                     value = value.replace(removal, '')
                     
                 special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+(\.\d+)?\s*ghz|\d+\s?gb|dgb)\b', value)
@@ -114,13 +114,12 @@ class TransformPipeline:
                             value = 'amd ' f"ryzen {match.group(1)} {match.group(2)}{match.group(3)}"
                             
                     elif "amd" in value:
-                        # pattern = re.compile(r'(amd)\s*([a-z]{3,4})\s*(\d{3,4})')
+                        pattern = re.compile(r'(amd)\s*([a-z]{3,4})\s*(\d{3,4})')
                         
-                        # match = pattern.search(value)
+                        match = pattern.search(value)
                         
-                        # if match:
-                        #     value = 'amd ' + f"{match.group(2)} {match.group(3)}"
-                        pass
+                        if match:
+                            value = 'amd ' + f"{match.group(2)} {match.group(3)}"
                             
                     # Snapdragon solving
                     elif "snapdragon" in value:
