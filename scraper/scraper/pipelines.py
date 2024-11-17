@@ -163,7 +163,7 @@ class TransformPipeline:
                     value = value.split(spliter)[0]
                     
                 for spliter in ['-']:
-                    value = value.replace(spliter, '')
+                    value = value.split(spliter)[1]
                 
                 value = ' '.join(value.split())
 
