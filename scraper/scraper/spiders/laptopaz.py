@@ -42,10 +42,18 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
         return None
 
     def parse_brand(self, response: Response):
-        res = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get()
-        if res:
-            res = res.split(']')[-1].split('laptop')[-1]
-        return res if res else 'n/a'
+        try:
+            product_name = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get().lower()
+            for brand in ["dell", "asus", "lenovo", "hp", "msi", "acer", "huawei", "gigabyte", "samsung galaxy", "lg", "microsoft"]:
+                if brand in product_name:
+                    return brand
+            if "macbook" in product_name:
+                return "apple"
+            for name in ["thinkpad", "ideapad"]:
+                if name in product_name:
+                    return "lenovo"
+        except:
+            return "n/a"
     
     def parse_name(self, response: Response):
         res = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get()
@@ -228,6 +236,7 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
         for path in paths:
             res = response.xpath(path).get()
             if res:
+                res = res.replace("deal:", "").strip()
                 return res
         return 'n/a'
         
