@@ -29,28 +29,30 @@ class BaseLaptopshopSpider(scrapy.Spider):
     
     source = None
     
-    options = webdriver.FirefoxOptions()
-    options.page_load_strategy = 'none'
-    # options.add_argument('--headless')
-    
-    options.set_preference('dom.webnotifications.enabled', False)  # Disable notifications
-    options.set_preference('security.cert_pinning.enforcement_level', 0)  # Ignore certificate errors
-    options.set_preference('browser.safebrowsing.malware.enabled', False)  # Disable safe browsing (optional)
+    def _get_driver_options(self):
+        options = webdriver.FirefoxOptions()
+        options.page_load_strategy = 'none'
+        options.add_argument('--headless')
+        
+        options.set_preference('dom.webnotifications.enabled', False)  # Disable notifications
+        options.set_preference('security.cert_pinning.enforcement_level', 0)  # Ignore certificate errors
+        options.set_preference('browser.safebrowsing.malware.enabled', False)  # Disable safe browsing (optional)
 
-    # To reduce GPU load (Firefox doesn’t have a direct equivalent to --disable-gpu):
-    options.set_preference('layers.acceleration.disabled', True)
+        # To reduce GPU load (Firefox doesn’t have a direct equivalent to --disable-gpu):
+        options.set_preference('layers.acceleration.disabled', True)
 
-    # You can also set other preferences as needed
-    options.set_preference('permissions.default.image', 2)  # Disable image loading to speed up browsing
-    options.set_preference("privacy.trackingprotection.enabled", True) # Enable tracking protection
-
-    driver = webdriver.Firefox(options=options)
+        # You can also set other preferences as needed
+        options.set_preference('permissions.default.image', 2)  # Disable image loading to speed up browsing
+        options.set_preference("privacy.trackingprotection.enabled", True) # Enable tracking protection
+        
+        return options
 
     _num_product = 0
     
     def __init__(self, name = None, **kwargs):
         super().__init__(name, **kwargs)
         self.ua = UserAgent()
+        self.driver = webdriver.Firefox(options=self._get_driver_options())
         
     def __del__(self):
         self.driver.quit()
