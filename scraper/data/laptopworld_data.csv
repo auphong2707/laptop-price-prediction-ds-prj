@@ -1,75 +1,5 @@
 source,brand,name,cpu,vga,ram_amount,ram_type,storage_amount,storage_type,webcam_resolution,screen_size,screen_resolution,screen_refresh_rate,screen_brightness,battery_capacity,battery_cells,weight,default_os,warranty,price,width,depth,height,number_usb_a_ports,number_usb_c_ports,number_hdmi_ports,number_ethernet_ports,number_audio_jacks
-laptopworld,apple,macbook pro 14inch m3 mr7j3sa,apple m3 8-core,n/a,512,"512gb hoặc 1tb
-
-
-ssd 512gb hoặc 1tb
-
-
-có thể nâng cấp thành:
-
-
-1tb hoặc 2tb",8,"8gb
-
-
-
-
-bộ nhớ thống nhất 8gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-16gb hoặc 24gb",yes,14.2,3024x1964,120,n/a,"m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.55,macos,12,38990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,lenovo,laptop lenovo legion y7000 irx9,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,60.0,4,2.45,windows 11 home,12,27990000,n/a,n/a,n/a,4,2,1,0,1
-laptopworld,lenovo,laptop lenovo legion 5 15irx9 83jj000fvn,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.32,windows 11 home,24,34890000,n/a,n/a,n/a,3,2,1,1,1
-laptopworld,msi,laptop msi stealth 18 mercedes amg a1vhg 080vn,intel core ultra 9 185h,geforce rtx 4080,64,ddr5,2048,ssd,yes,18.0,3840x2400,120,n/a,99.9,4,2.89,windows 11 home,24,96490000,n/a,n/a,n/a,2,2,1,0,0
-laptopworld,lenovo,laptop lenovo loq 15ahp9,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,27590000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,asus,laptop asus tuf gaming a14 fa401wv-rg062ws,amd ryzen ai 9 hx 370,geforce rtx 4060,16,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,40990000,n/a,n/a,n/a,2,2,1,0,0
-laptopworld,apple,macbook air mly33sa,apple m2 8-core,n/a,8,"8gb
+laptopworld,apple,macbook air mgn63sa,apple m1 8-core,n/a,8,"8gb
 
 
 
@@ -84,25 +14,32 @@ configurable to:
 
 
 
-16gb or 24gb",256,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
+16gb",256,ssd,yes,13.3,2560x1600,n/a,400,30.0,"up to 15 hours wireless web
 
 
-lên đến 15 giờ web không dây
+up to 18 hours apple tv app movie playback
 
 
-pin lithium ‑ polymer 52.6 watt ‑ giờ
+built-in 49.9‑watt‑hour lithium‑polymer battery
 
 
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
+30w usb-c power adapter",n/a,macos,12,18590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air mlxw3sa,apple m2 8-core,n/a,8,"8gb
 
 
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
 
 
-cáp usb-c sang magsafe 3
+8gb unified memory
 
 
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
+
+
+configurable to:
+
+
+
+
+16gb or 24gb",256,ssd,yes,13.6,2560x1664,60,500,52.6,"lên đến 18 giờ phát lại phim ứng dụng apple tv
 
 
 lên đến 15 giờ web không dây
@@ -120,28 +57,8 @@ bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m
 cáp usb-c sang magsafe 3
 
 
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,24690000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,asus,laptop asus tuf gaming a14 fa401wv-rg061ws,amd ryzen ai 9 hx 370,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,43490000,n/a,n/a,n/a,2,2,1,0,0
-laptopworld,asus,laptop asus rog zephyrus g16 ga605wi-qr090ws,amd ryzen ai 9 hx 370,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,74990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus tuf gaming a15 fa507nur-lp101w,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,23990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,lenovo,laptop lenovo loq 15arp9,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,24990000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,dell,laptop dell gaming g15 5530,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,120,250,86.0,6,2.65,windows 11 home,12,27490000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,lenovo,laptop lenovo loq 15arp9 83jc007hvn,amd ryzen 5 7235hs,geforce rtx 3050,12,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,19590000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,lenovo,laptop lenovo loq 15irx9 83dv00ufvn,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,31590000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,lenovo,laptop lenovo legion 5 16irx9,intel core i9-14900hx,geforce rtx 4070,16,ddr5,512,ssd,yes,16.0,2560x1600,n/a,n/a,80.0,4,2.43,windows 11 home,12,39990000,n/a,n/a,n/a,3,2,1,1,1
-laptopworld,lenovo,laptop lenovo legion pro 7 16irx9h,intel core i9-14900hx,geforce rtx 4080,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,500,99.99,4,2.62,windows 11 home,12,65990000,n/a,n/a,n/a,4,2,1,1,1
-laptopworld,asus,laptop asus rog strix scar 16 g634jyr-ra132w,intel core i9-14900hx,geforce rtx 4090,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,1100,90.0,4,2.65,windows 11 home,24,116990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,acer,laptop acer predator helios neo phn16-72-78dq nh.qnmsv.00u,intel core i7-14650hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.8,windows 11 home,12,45990000,n/a,n/a,n/a,3,2,1,1,1
-laptopworld,lenovo,laptop lenovo legion 5 r7000,amd ryzen 7 8745h,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,12,26990000,n/a,n/a,n/a,2,2,1,0,0
-laptopworld,gigabyte,laptop gigabyte aorus 16x 9kg-43vnc54sh,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,99.0,99whrs,2.3,windows 11 home,24,31990000,n/a,n/a,n/a,2,2,1,1,1
-laptopworld,gigabyte,laptop gigabyte aorus 16x asg-53vnc54sh,intel core i7-14650hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,99.0,99whrs,2.3,windows 11 home,24,41490000,n/a,n/a,n/a,2,2,1,1,1
-laptopworld,acer,laptop acer gaming nitro v 16 propanel anv16-41-r4kd nh.qp0sv.004,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2048x1152,165,n/a,57.0,4,2.5,windows 11 home,12,36990000,n/a,n/a,n/a,2,1,1,0,1
-laptopworld,acer,laptop acer nitro v anv15-51-78bg nh.qqesv.00a,intel core i7-13620h,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,n/a,57.5,4,2.1,windows 11 home,12,34990000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,lenovo,laptop lenovo loq 15arp9,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,20990000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,asus,laptop asus tuf gaming a15 fa506ncr-hn047w,amd ryzen 7 7435hs,geforce rtx 3050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.08,windows 11 home,24,20490000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,lenovo,laptop lenovo legion 5 pro 2024 r9000p arx8,amd ryzen 9 7945hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,6,2.55,windows,12,36490000,n/a,n/a,n/a,4,2,1,0,1
-laptopworld,acer,laptop acer predator triton neo 16 ptn16-51-78jq nh.qpnsv.004,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,500,76.0,76wh,2.05,windows 11 home,12,50990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,apple,macbook air mlxx3sa,apple m2 8-core,n/a,8,"8gb
+khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,24690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air mlxy3sa,apple m2 8-core,n/a,8,"8gb
 
 
 
@@ -156,25 +73,7 @@ configurable to:
 
 
 
-16gb or 24gb",512,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52.6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
+16gb or 24gb",256,ssd,yes,13.6,2560x1664,60,500,52.6,"lên đến 18 giờ phát lại phim ứng dụng apple tv
 
 
 lên đến 15 giờ web không dây
@@ -192,8 +91,8 @@ bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m
 cáp usb-c sang magsafe 3
 
 
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,31490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air mly03sa,apple m2 8-core,n/a,8,"8gb
+khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,24690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air mly13sa,apple m2 8-core,n/a,8,"8gb
 
 
 
@@ -208,25 +107,7 @@ configurable to:
 
 
 
-16gb or 24gb",512,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52.6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
+16gb or 24gb",256,ssd,yes,13.6,2560x1664,60,500,52.6,"lên đến 18 giờ phát lại phim ứng dụng apple tv
 
 
 lên đến 15 giờ web không dây
@@ -244,690 +125,7 @@ bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m
 cáp usb-c sang magsafe 3
 
 
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,31490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air mly23sa,apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52.6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52,6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w (đi kèm với m2 với gpu 8 lõi)
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb, có thể định cấu hình với m2 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,31490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air mly43sa,apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52.6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52,6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w (đi kèm với m2 với gpu 8 lõi)
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb, có thể định cấu hình với m2 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,31490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook pro mneh3sa,apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,28990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook pro mnep3sa,apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,28990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook pro mnej3sa,apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,31990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook pro mneq3sa,apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,31990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro z16r0003v 13in touch bar ram 16gb, 256gb 2022 space gray",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,34790000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro z16t0003w 13in touch bar ram 24gb, 256gb 2022 silver",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,41690000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro z16r0003w 13in touch bar ram 24gb, 256gb 2022 space gray",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,41690000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro z16r0003x 13in touch bar ram 16gb, 512gb 2022 space gray",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,39990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro z16r00040 13in touch bar ram 24gb, 512gb 2022 space gray",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,46790000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro z16t00040 13in touch bar ram 24gb, 512gb 2022 silver",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,46790000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro 13in touch bar ram 16gb, 1tb 2022 silver",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,46790000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro 13in touch bar ram 8gb, 1tb 2022 silver",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,41690000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro 13in touch bar ram 24gb, 1tb 2022 silver",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,51890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro 13in touch bar ram 8gb, 1tb 2022 space gray",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,41690000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro 13in touch bar ram 24gb, 1tb 2022 space gray",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,51890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro 13in touch bar ram 16gb, 1tb 2022 space gray",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,46790000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro 13in touch bar ram 8gb, 2tb 2022 silver",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,51890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,msi,laptop msi stealth 18 ai studio a1vhg-025vn,intel core ultra 9 185h,geforce rtx 4080,32,ddr5,n/a,n/a,yes,18.0,3840x2400,120,n/a,99.99,4,2.79,windows 11 home,36,89990000,n/a,n/a,n/a,2,2,1,0,1
+khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,24690000,n/a,n/a,n/a,0,0,0,0,0
 laptopworld,msi,laptop msi stealth 16 ai studio a1vgg 089vn,intel core ultra 9 185h,geforce rtx 4070,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,n/a,99.99,4,1.99,windows 11 home,36,59390000,n/a,n/a,n/a,1,2,1,0,1
 laptopworld,msi,laptop msi vector 16 hx 13vhg,intel core i9-13980hx,geforce rtx 4080,16,ddr5,1024,ssd,yes,16.0,1920x1200,144,n/a,90.0,4,2.67,windows 11 home,24,57990000,n/a,n/a,n/a,2,3,1,0,1
 laptopworld,msi,laptop msi katana a15 ai b8vf 419vn,amd ryzen 7 8840h,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,30490000,n/a,n/a,n/a,3,1,1,0,1
@@ -935,3035 +133,74 @@ laptopworld,msi,laptop msi cyborg 15 a13vfk 876vn,intel core i7-13620h,geforce r
 laptopworld,msi,laptop msi thin 15 b12uc 1416vn,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,17490000,n/a,n/a,n/a,3,1,1,0,1
 laptopworld,msi,laptop msi thin a15 b7uc 026vn,amd ryzen 5 7535hs,geforce rtx 3050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,16690000,n/a,n/a,n/a,3,1,1,0,1
 laptopworld,msi,laptop msi thin 15 b12ucx 1419vn,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,15490000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,lenovo,laptop lenovo loq 15iax9 83gs001svn,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,24,17990000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,asus,laptop asus tuf gaming f15 fx507vu-lp198w,intel core i7-13620h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,24990000,n/a,n/a,n/a,2,2,1,0,1
 laptopworld,msi,laptop msi creator 16 ai studio a1vig 078vn,intel core ultra 9 185h,geforce rtx 4090,64,ddr5,2048,ssd,yes,16.0,3840x2400,120,n/a,99.99,4,1.99,windows 11 home,24,99890000,n/a,n/a,n/a,1,2,1,0,1
-laptopworld,gigabyte,laptop gigabyte g5 mf5-52vn383sh,intel core i5-13500h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,4,2.08,windows 11 home,24,21290000,n/a,n/a,n/a,3,0,1,1,1
-laptopworld,gigabyte,laptop gigabyte g5 kf5-53vn383sh,intel core i5-13500h,geforce rtx 4060,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,4,2.08,windows 11 home,24,23990000,n/a,n/a,n/a,3,0,1,1,1
-laptopworld,lenovo,lenovo legion 5 r7000 aph9,amd ryzen 7 7840h,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,350,4cell,4,2.4,windows 11 home,12,26490000,n/a,n/a,n/a,2,2,1,0,0
-laptopworld,acer,laptop acer predator helios neo 16-phn16-71-73lt,intel core i7-13700hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,90.0,4,2.6,windows 11 home,12,30990000,n/a,n/a,n/a,7,4,1,0,1
-laptopworld,dell,dell gaming g16 7630 2023,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,86.0,6,2.65,windows 11 home,12,34990000,n/a,n/a,n/a,4,0,1,1,1
-laptopworld,acer,laptop acer gaming aspire 5 a515-58gm-53pz nx.kq4sv.008,intel core i5-13420h,geforce rtx 2050,8,ddr4,n/a,n/a,yes,15.6,1920x1080,60,n/a,50.0,50wh,1.7,windows 11 home,12,15490000,n/a,n/a,n/a,0,1,1,1,1
-laptopworld,acer,laptop acer nitro v anv15-51-58an nh.qnasv.001,intel core i5-13420h,geforce rtx 2050,8,ddr5,n/a,n/a,yes,15.6,1920x1080,144,250,57.5,4,2.1,windows 11 home,12,16990000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,acer,laptop acer nitro v anv15-51-72vs nh.qnasv.004,intel core i7-13620h,geforce rtx 2050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,250,57.5,4,2.1,windows 11 home,12,23990000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,gigabyte,gigabyte g5 kf-e3vn333sh,intel core i5-12500h,geforce rtx 4060,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,54whrs,1.9,windows 11 home,24,21990000,n/a,n/a,n/a,3,0,1,1,1
-laptopworld,gigabyte,laptop gigabyte aorus 15 9mf-e2vn583sh,intel core i5-12500h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1980x1080,360,n/a,99.0,99wh,2.25,windows 11 home,24,24490000,n/a,n/a,n/a,3,2,1,1,1
-laptopworld,acer,laptop acer nitro 17 phoenix an17-51-50b9 nh.qk5sv.001,intel core i5-13500h,geforce rtx 4050,8,ddr5,512,ssd,yes,17.3,1920x1080,165,300,90.0,90wh,3.0,windows 11 home,12,29990000,n/a,n/a,n/a,3,2,1,0,1
-laptopworld,asus,laptop asus rog zephyrus duo 16 gx650pz-nm031w,amd ryzen 9 7945hx,geforce rtx 4080,32,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,90.0,4,2.6,windows 11 home,24,86990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,n/a,balo rog bp2500g,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,aaaaaaaaaaa,1890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopworld,n/a,balo rog bp2701g,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,aaaaaaaaaaa,2390000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopworld,n/a,balo rog bp1500g,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,aaaaaaaaaaa,1190000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopworld,n/a,balo rog bp3703g,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,aaaaaaaaaaa,6990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopworld,acer,laptop acer nitro 5 an515-58-52sp nh.qfhsv.001,intel core i5-12500h,geforce rtx 3050,8,ddr4,n/a,n/a,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,19990000,n/a,n/a,n/a,2,1,1,1,1
-laptopworld,msi,balo gaming msi trooper backpack,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,2800000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopworld,hp,hp victus 2022,intel core i7-12650h,geforce rtx 3050 ti,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,70.0,4,2.29,windows 11 home,12,24890000,n/a,n/a,n/a,2,1,1,1,1
-laptopworld,n/a,balo tuf gaming vp4700,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,aaaaaaaaaaa,1890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopworld,msi,laptop msi katana 15 b13vfk 676vn,intel core i7-13620h,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,n/a,53.5,"3 cell, 53.5whr",2.25,windows 11 home,24,27990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,asus,laptop asus rog strix g16 g614ju-n3135w,intel core i5-13450hx,geforce rtx 4050,8,ddr5,512,ssd,yes,16.0,1920x1200,165,250,90.0,4,2.5,windows 11 home,24,28990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus tuf gaming a15 fa507nv-lp046w,amd ryzen 7 7735hs,geforce rtx 4060,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,26990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,tai nghe asus rog delta s core,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,24,1590000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopworld,dell,dell gaming g15 5530 i7h165w11gr4060,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,165,n/a,86.0,6,2.65,windows 11 home,12,37490000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,dell,dell gaming g15 5530 i7h165w11gr4050,intel core i7-13650hx,geforce rtx rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,165,n/a,86.0,6,2.65,windows 11 home,12,37690000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,acer,laptop acer predator helios neo phn16-71-74qr nh.qlvsv.002,intel core i7-13700hx,geforce rtx 4070,16,ddr5,n/a,n/a,yes,16.0,2560x1600,165,500,90.0,4,2.6,windows 11 home,12,47990000,n/a,n/a,n/a,7,4,1,0,1
-laptopworld,gigabyte,gigabyte g5 kf-e3vn313sh,intel core i5-12500h,geforce rtx 4060,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,54whrs,1.9,windows 11 home,24,25490000,n/a,n/a,n/a,3,0,1,1,1
-laptopworld,lenovo,laptop lenovo legion pro 7 16irx9h 83de001mvn,intel core i9-14900hx,geforce rtx 4090,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,99.99,4,2.62,windows 11 home,24,93990000,n/a,n/a,n/a,4,2,1,1,1
-laptopworld,lenovo,laptop lenovo legion pro 5 16irx9 83df0046vn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,4,2.5,windows 11 home,24,50890000,n/a,n/a,n/a,4,2,1,1,1
-laptopworld,acer,laptop acer nitro 5 tiger an515-58-50ee nh.qfhsv.007,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,22990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,lenovo,laptop lenovo legion 5 16irx9 83dg004yvn,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,4,2.4,windows 11 home,24,38590000,n/a,n/a,n/a,3,2,1,1,1
-laptopworld,msi,laptop msi cyborg 15 a12ucx 618vn,intel core i5-12450h,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,1.98,windows 11 home,24,15990000,n/a,n/a,n/a,2,1,1,0,1
-laptopworld,lenovo,laptop lenovo loq 15iax9 83gs001rvn,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,24,20890000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,msi,laptop msi cyborg 15 ai a1vek 053vn,intel core ultra 7 155h,geforce rtx 4050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,n/a,53.5,3,1.98,windows 11 home,24,28490000,n/a,n/a,n/a,2,1,1,0,1
-laptopworld,msi,laptop msi thin a15 b7ve 023vn,amd ryzen 5 7535hs,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,20890000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,hp,laptop hp omen transcend 14,intel core ultra 9 185h,geforce rtx 4070,16,ddr5,2048,ssd,yes,14.0,2880x1800,n/a,n/a,71.0,6,1.8,windows 11 home,12,liên hệ,n/a,n/a,n/a,1,2,1,0,1
-laptopworld,msi,laptop msi stealth 14 ai studio a1vfg 050vn,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,n/a,72.0,4,1.7,windows 11 home,24,46490000,n/a,n/a,n/a,1,2,1,0,1
-laptopworld,msi,laptop msi katana a15 ai b8ve 402vn,amd ryzen 7 8845hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,26990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,msi,laptop msi sword 16 hx b14vfkg 045vn,intel core i7-14700hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,n/a,65.0,4,2.3,windows 11 home,24,36990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,msi,laptop msi raider 18 hx a14vhg 230vn,intel core i9-14900hx,geforce rtx 4080,32,ddr5,2048,ssd,yes,18.0,3840x2400,120,n/a,99.99,4,3.6,windows 11 home,36,88990000,n/a,n/a,n/a,3,2,1,0,1
-laptopworld,msi,laptop msi stealth 18 ai studio a1vgg 008vn,intel core ultra 9 185h,geforce rtx 4070,32,ddr5,2048,ssd,yes,18.0,3840x2400,120,n/a,99.99,4,2.97,windows 11 home,36,74890000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,msi,laptop msi pulse 17 ai c1vgkg 017vn,intel core ultra 7 155h,geforce rtx 4070,32,ddr5,1024,ssd,yes,17.0,2560x1600,240,n/a,90.0,4,2.8,windows11 home,24,49990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,gigabyte,gigabyte g6 kf-h3vn853sh,intel core i7-13620h,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,1920x1200,165,n/a,54.0,54whrs,2.3,windows 11 home,24,27590000,n/a,n/a,n/a,3,0,1,1,1
-laptopworld,gigabyte,gigabyte g5 mf5-h2vn353sh,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,4,2.08,windows 11 home,24,26990000,n/a,n/a,n/a,3,0,1,1,1
-laptopworld,gigabyte,laptop gigabyte g5 mf5-52vn353sh,intel core i5-13500h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,4,2.08,windows 11 home,24,21790000,n/a,n/a,n/a,3,0,1,1,1
-laptopworld,hp,hp victus 15-fb1022ax 94f19pa,amd ryzen 5 7535hs,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,n/a,250,52.5,3,2.29,windows 11 home,12,18990000,n/a,n/a,n/a,2,1,1,0,1
-laptopworld,acer,laptop acer nitro v anv15-51-55ca nh.qn8sv.004,intel core i5-13420h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,24490000,n/a,n/a,n/a,6,3,1,1,1
-laptopworld,hp,hp victus 15-fb1023ax 94f20pa,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,yes,15.6,1920x1080,n/a,250,52.5,3,2.29,windows 11 home,12,16890000,n/a,n/a,n/a,2,1,1,0,1
-laptopworld,dell,dell gaming g15 5530,intel core i7-13650hx,geforce rtx 4050,8,ddr5,1024,ssd,yes,15.6,1920x1080,120,n/a,86.0,6,2.65,windows 11 home,12,25990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,msi,laptop msi raider ge68 hx 13vg 068us,intel core i9-13950hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,99.99,4,2.7,windows 11 home,12,59990000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,hp,hp victus 15-fa1139tx 8y6w3pa,intel core i5-12450h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,52.5,3,2.29,windows 11 home,12,17990000,n/a,n/a,n/a,2,1,1,1,1
-laptopworld,dell,dell mobile precision workstation 3581 71023331,intel core i7-13800h,geforce rtx a500,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,64.0,4,1.795,ubun,36,42990000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,dell,dell mobile precision workstation 5680 71023332,intel core i7-13800h,rtx 2000 ada,16,ddr5,512,ssd,yes,16.0,1920x1200,60,250,100.0,6,,ubun,36,69990000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,dell,dell mobile precision workstation 7680 71023334,intel core i7-13850hx,rtx 2000 ada,16,16gb,512,ssd,yes,16.0,1920x1200,60,500,83.0,6,2.67,ubun,36,69990000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,dell,dell mobile precision workstation 5680 71023333,intel core i7-13800h,geforce rtx a1000,16,ddr5,512,ssd,yes,16.0,1920x1200,60,250,100.0,6,,ubun,36,75190000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,dell,dell mobile precision workstation 3480 71024682,intel core i7-1370p,geforce rtx a500,32,32gb (2 x 16gb) dual-channel,1024,ssd,yes,14.0,1920x1080,60,250,54.0,3,1.39,windows 11 pro,36,48990000,n/a,n/a,n/a,2,4,1,0,0
-laptopworld,asus,laptop asus tuf gaming a15 fa507nv-lp061w,amd ryzen 7 7735hs,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,28690000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,dell,dell mobile precision workstation 3581 71024677,intel core i7-13800h,geforce rtx a500,32,ddr5,1024,ssd,yes,15.6,1920x1080,60,n/a,64.0,4,1.795,windows 11 pro,36,51990000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,dell,dell mobile precision workstation 3581 71024679,intel core i7-13800h,geforce rtx a1000,32,ddr5,1024,ssd,yes,15.6,1920x1080,60,n/a,64.0,4,1.795,windows 11 pro,36,54990000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,dell,dell mobile precision workstation 5680 71024680,intel core i9-13900h,rtx 2000 ada,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,250,100.0,6,,windows 11 pro,36,81590000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,dell,dell mobile precision workstation 7680 71024681,intel core i7-13850hx,geforce rtx 2000,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,500,83.0,6,2.67,windows 11 pro,36,77990000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,msi,msi vector gp68,intel core i9-13950hx,geforce rtx 4080,16,16gb,1024,ssd,yes,16.0,1920x1200,144,n/a,90.0,4,2.67,windows 11 home,12,47990000,n/a,n/a,n/a,2,3,1,0,0
-laptopworld,dell,dell mobile precision workstation 7680 71024676,intel core i9-13950hx,geforce rtx 2000,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,500,83.0,6,2.67,windows 11 pro,36,84990000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,msi,msi vector gp77,intel core i9-13900h,geforce rtx 4070,32,ddr5,1024,ssd,yes,17.3,2560x1440,240,n/a,65.0,4,2.8,windows 11 home,12,45990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,acer,laptop acer nitro v anv15-51-75gs nh.qn8sv.005,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,28990000,n/a,n/a,n/a,6,3,1,1,1
 laptopworld,msi,laptop msi creator 16 ai studio a1vhg 079vn,intel core ultra 9 185h,geforce rtx 4080,64,ddr5,2048,ssd,yes,16.0,3840x2400,120,n/a,99.99,4,1.99,windows 11 home,24,82890000,n/a,n/a,n/a,1,2,1,0,1
-laptopworld,acer,acer predator helios neo 16-phn16-71-92wj,intel core i9-13900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,90.0,4,2.6,windows 11 home,12,31690000,n/a,n/a,n/a,7,4,1,0,1
 laptopworld,n/a,laptop creator z17 hx studio a14vgt 272vn,intel core i7-14700hx,geforce rtx 4070,32,ddr5,2048,ssd,yes,17.0,2560x1600,165,n/a,99.0,4,2.49,windows 11 home,24,65890000,n/a,n/a,n/a,1,2,1,0,1
 laptopworld,n/a,laptop creator z17 hx studio a14vft 273vn,intel core i7-14700hx,geforce rtx 4060,64,ddr5,2048,ssd,yes,17.0,2560x1600,165,n/a,99.0,4,2.49,windows 11 home,24,63390000,n/a,n/a,n/a,1,2,1,0,1
-laptopworld,acer,laptop acer predator helios 18 ph18-72-908n nh.qp4sv.001,intel core i9-14900hx,geforce rtx 4090,32,ddr5,4096,ssd,yes,18.0,2560x1600,250,1000,90.0,4,3.25,windows 11 home,12,101990000,n/a,n/a,n/a,3,2,1,1,1
 laptopworld,msi,laptop msi creator m16 hx c14vfg 040vn,intel core i7-14700hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,65.0,3,2.25,windows 11 home,24,41890000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,acer,laptop acer predator helios 16 ph16-72-95zm nh.qnzsv.008,intel core i9-14900hx,geforce rtx 4080,32,ddr5,2048,ssd,yes,16.0,2560x1600,250,1000,90.0,4,2.7,windows 11 home,12,76990000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,acer,laptop acer predator helios 18 ph18-72-908n nh.qp4sv.001,intel core i9-14900hx,geforce rtx 4090,32,ddr5,4096,ssd,yes,18.0,2560x1600,250,1000,90.0,4,3.25,windows 11 home,12,101990000,n/a,n/a,n/a,3,0,1,1,1
+laptopworld,acer,laptop acer predator helios 16 ph16-72-95zm nh.qnzsv.008,intel core i9-14900hx,geforce rtx 4080,32,ddr5,2048,ssd,yes,16.0,2560x1600,250,1000,90.0,4,2.7,windows 11 home,12,76990000,n/a,n/a,n/a,3,0,1,1,1
 laptopworld,lenovo,laptop lenovo legion pro 7 16irx9h 83de001nvn,intel core i9-14900hx,geforce rtx 4080,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,99.99,4,2.62,windows 11 home,24,80990000,n/a,n/a,n/a,4,2,1,1,1
 laptopworld,lenovo,laptop lenovo legion 5 16irx9 83dg0051vn,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,350,80.0,4,2.4,windows 11 home,24,39990000,n/a,n/a,n/a,3,2,1,1,1
-laptopworld,asus,laptop asus tuf gaming a15 fa506nf-hn005w,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,yes,n/a,1920x1080,144,250,48.0,3,2.2,windows 11 home,24,15790000,n/a,n/a,n/a,2,2,0,0,0
 laptopworld,lenovo,laptop lenovo legion 5 y7000p 16irx9,intel core i7-14650hx,geforce rtx 4050,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,80.0,4,2.43,windows 11 home,12,29990000,n/a,n/a,n/a,3,2,1,1,1
 laptopworld,lenovo,laptop lenovo legion 5 y7000p 16irx9,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,80.0,4,2.43,windows 11 home,12,31890000,n/a,n/a,n/a,3,2,1,1,1
 laptopworld,lenovo,laptop lenovo legion pro 5 y9000p,intel core i9-14900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1440,240,500,80.0,80wh,2.35,windows 11 home,12,41690000,n/a,n/a,n/a,4,2,1,1,1
 laptopworld,lenovo,laptop lenovo legion 5 y7000p 2024,intel core i7-14700hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,80.0,4,2.43,windows 11 home,12,34490000,n/a,n/a,n/a,3,2,1,1,1
-laptopworld,asus,laptop asus tuf gaming f15 fx507vi-lp088w,intel core i7-13620h,geforce rtx 4070,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,36490000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog zephyrus g16 gu605mi-qr116w,intel core ultra 9 185h,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,71990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,apple,"macbook pro 13in touch bar ram 16gb, 2tb 2022 silver",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,56990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro 13in touch bar ram 8gb, 2tb 2022 space gray",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,51890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook pro 13in touch bar ram 16gb, 2tb 2022 space gray",apple m2,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",512,ssd,yes,13.3,2560x1600,60,500,"lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58.2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w","lên đến 20 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 17 giờ web không dây
-
-
-pin lithium-polymer 58,2 watt-giờ
-
-
-bộ đổi nguồn usb-c 67w",1.4,macos,12,56990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,asus,laptop asus rog zephyrus g16 gu605mv-qr135w,intel core ultra 9 185h,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,62990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog strix g18 g814jir-n6108w,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,18.0,2560x1600,240,n/a,90.0,4,3.0,windows 11 home,24,56990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog strix g18 g814jvr-n6089w,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,18.0,2560x1600,240,n/a,90.0,4,3.0,windows 11 home,24,49990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog strix scar 18 g834jzr-r6160,intel core i9-14900hx,geforce rtx 4080,32,ddr5,1024,ssd,yes,18.0,2560x1600,240,500,90.0,4,3.1,no os,24,87990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog strix scar 18 g834jyr-r6199,intel core i9-14900hx,geforce rtx 4090,64,ddr5,2048,ssd,yes,18.0,2560x1600,240,500,90.0,4,3.1,no os,24,114990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog zephyrus g16 ga605wi-qr152ws,amd ryzen ai 9 hx 370,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,66990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus tuf gaming f15 fx507vi-lp088w,intel core i7-13620h,geforce rtx 4070,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,36490000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus rog zephyrus g16 gu605mi-qr116w,intel core ultra 9 185h,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,71990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus rog zephyrus g16 gu605mv-qr135w,intel core ultra 9 185h,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,62990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15iax9 83gs000rvn,intel core i5-12450hx,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,24,24190000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,dell,laptop dell gaming g15 5530,intel core i5-13450hx,geforce rtx 3050,8,ddr5,512,ssd,yes,15.6,1920x1080,120,n/a,56.0,3,2.65,windows 11 home,12,20590000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus rog strix scar 18 g834jyr-r6199,intel core i9-14900hx,geforce rtx 4090,64,ddr5,2048,ssd,yes,18.0,2560x1600,240,500,90.0,4,3.1,n/a,24,114990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus rog zephyrus g16 ga605wi-qr152ws,amd ryzen ai 9 hx 370,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,66990000,n/a,n/a,n/a,3,1,1,0,1
 laptopworld,gigabyte,laptop gigabyte aorus 5 ke4-72vn313sh,intel core i7-12700h,geforce rtx 3060,16,ddr4,512,ssd,yes,15.6,1920x1080,240,n/a,99.0,4,2.3,windows 11 home,24,32990000,n/a,n/a,n/a,3,1,1,0,0
-laptopworld,msi,laptop msi vector 17 hx a14vgg - 219us,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,17.3,2560x1600,240,n/a,90.0,4,3.0,windows,12,49990000,n/a,n/a,n/a,2,3,1,0,0
+laptopworld,lenovo,laptop lenovo loq 15ahp9,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,27590000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,msi,laptop msi stealth 18 mercedes amg a1vhg 080vn,intel core ultra 9 185h,geforce rtx 4080,64,ddr5,2048,ssd,yes,18.0,3840x2400,120,n/a,99.9,4,2.89,windows 11 home,24,96490000,n/a,n/a,n/a,3,1,1,0,0
+laptopworld,asus,laptop asus tuf gaming a14 fa401wv-rg062ws,amd ryzen ai 9 hx 370,geforce rtx 4060,16,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,40990000,n/a,n/a,n/a,3,1,1,0,0
+laptopworld,asus,laptop asus tuf gaming a14 fa401wv-rg061ws,amd ryzen ai 9 hx 370,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,43490000,n/a,n/a,n/a,3,1,1,0,0
+laptopworld,asus,laptop asus rog zephyrus g16 ga605wi-qr090ws,amd ryzen ai 9 hx 370,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,74990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus tuf gaming a15 fa507nur-lp101w,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,23990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,24990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,dell,laptop dell gaming g15 5530,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,120,250,86.0,6,2.65,windows 11 home,12,27490000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9 83jc007hvn,amd ryzen 5 7235hs,geforce rtx 3050,12,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,18990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,lenovo,laptop lenovo loq 15irx9 83dv00ufvn,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,31590000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,lenovo,laptop lenovo legion 5 16irx9,intel core i9-14900hx,geforce rtx 4070,16,ddr5,512,ssd,yes,16.0,2560x1600,n/a,n/a,80.0,4,2.43,windows 11 home,12,39990000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,lenovo,laptop lenovo legion pro 7 16irx9h,intel core i9-14900hx,geforce rtx 4080,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,500,99.99,4,2.62,windows 11 home,12,65990000,n/a,n/a,n/a,4,2,1,1,1
+laptopworld,asus,laptop asus rog strix scar 16 g634jyr-ra132w,intel core i9-14900hx,geforce rtx 4090,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,1100,90.0,4,2.65,windows 11 home,24,116990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,acer,laptop acer predator helios neo phn16-72-78dq nh.qnmsv.00u,intel core i7-14650hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.8,windows 11 home,12,45990000,n/a,n/a,n/a,5,0,1,1,1
+laptopworld,lenovo,laptop lenovo legion 5 r7000,amd ryzen 7 8745h,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,12,26990000,n/a,n/a,n/a,2,2,1,0,0
+laptopworld,gigabyte,laptop gigabyte aorus 16x 9kg-43vnc54sh,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,99.0,99whrs,2.3,windows 11 home,24,31990000,n/a,n/a,n/a,2,2,1,1,1
+laptopworld,gigabyte,laptop gigabyte aorus 16x asg-53vnc54sh,intel core i7-14650hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,99.0,99whrs,2.3,windows 11 home,24,41490000,n/a,n/a,n/a,2,2,1,1,1
+laptopworld,acer,laptop acer nitro v anv15-51-78bg nh.qqesv.00a,intel core i7-13620h,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,n/a,57.5,4,2.1,windows 11 home,12,34990000,n/a,n/a,n/a,0,0,1,1,1
+laptopworld,acer,laptop acer gaming nitro v 16 propanel anv16-41-r4kd nh.qp0sv.004,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2048x1152,165,n/a,57.0,4,2.5,windows 11 home,12,36990000,n/a,n/a,n/a,0,0,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,20990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus tuf gaming a15 fa506ncr-hn047w,amd ryzen 7 7435hs,geforce rtx 3050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.08,windows 11 home,24,20190000,n/a,n/a,n/a,4,0,1,0,1
+laptopworld,lenovo,laptop lenovo legion 5 pro 2024 r9000p arx8,amd ryzen 9 7945hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,6,2.55,windows,12,36490000,n/a,n/a,n/a,4,2,1,0,1
+laptopworld,acer,laptop acer predator triton neo 16 ptn16-51-78jq nh.qpnsv.004,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,500,76.0,76wh,2.05,windows 11 home,12,50990000,n/a,n/a,n/a,0,2,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15iax9,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,12,17990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus rog zephyrus g16 gu605mi-g16.u94070,intel core ultra 9 185h,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,12,44990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,msi,laptop msi vector 17 hx a14vgg - 219us,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,17.3,2560x1600,240,n/a,90.0,4,3.0,windows,12,49990000,n/a,n/a,n/a,4,1,1,0,0
 laptopworld,msi,laptop msi stealth 16 ai studio a1vgg-036us,intel core ultra 9 185h,geforce rtx 4070,64,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,99.99,4,1.99,windows,12,54990000,n/a,n/a,n/a,1,2,1,0,1
 laptopworld,msi,laptop msi sword 16 hx b14vgkg-229us,intel core i7-14650hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,1920x1200,144,n/a,65.0,4,2.3,windows,12,35990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,lenovo,laptop lenovo loq 15iax9,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,12,17990000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,asus,laptop asus rog zephyrus g16 gu605mi-g16.u94070,intel core ultra 9 185h,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,12,44990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,hp,laptop hp victus 2023 15,amd ryzen 5 7535hs,radeon rx 6550m graphics,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,52.0,4,2.19,windows 11 home,12,15990000,n/a,n/a,n/a,0,0,1,0,1
-laptopworld,hp,laptop gaming hp victus 15-fa0033dx,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,250,70.0,4,2.29,windows 11 home,12,16890000,n/a,n/a,n/a,2,1,1,1,1
-laptopworld,lenovo,laptop lenovo legion pro 7 16irx9h,intel core i9-14900hx,geforce rtx 4080,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,99.99,4,2.62,windows 11 home,12,62990000,n/a,n/a,n/a,4,2,1,1,1
-laptopworld,dell,laptop dell alienware m18 r2,intel core i9-14900hx,geforce rtx 4080,32,ddr5,1024,ssd,yes,18.0,2560x1600,165,n/a,97.0,6,4.23,windows 11 home,12,69990000,n/a,n/a,n/a,3,3,1,1,0
-laptopworld,asus,laptop asus rog zephyrus g16 gu603,intel core i7-13620h,geforce rtx 4070,16,ddr4,512,ssd,yes,16.0,1920x1200,165,n/a,90.0,4,2.0,windows 11 home,12,35990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,acer,laptop acer nitro v anv15-41-r5n6,amd ryzen 5 7535hs,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,59.0,59wh,2.1,windows 11 home,12,19490000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,lenovo,laptop lenovo legion slim 5 16ahp9 83dh003bvn,amd ryzen 7 8845hs,geforce rtx 4060,32,ddr5,n/a,n/a,yes,16.0,2560x1600,165,300,80.0,4,2.3,windows 11 home,24,39990000,n/a,n/a,n/a,2,2,1,1,1
-laptopworld,msi,laptop msi sword 16 hx b14vgkg 466vn,intel core i7-14650hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,65.0,4,2.3,windows 11 home,24,38990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,acer,laptop acer nitro v anv15-51-76b9 nh.qn8sv.008,intel core i7-13620h,geforce rtx 4050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,n/a,57.5,4,2.1,windows 11 home,12,32690000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,acer,laptop acer nitro v 15 propanel anv15-51-73uu nh.qn9sv.00c,intel core i7-13620h,geforce rtx 3050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,n/a,57.0,4,2.1,windows 11 home,12,27590000,n/a,n/a,n/a,4,1,1,0,1
-laptopworld,hp,laptop hp victus 15-fa1155tx 952r1pa_16g,intel core i5-12450h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,52.5,3,2.29,windows 11 home,12,18390000,n/a,n/a,n/a,2,1,1,1,1
-laptopworld,hp,laptop hp victus 16-r1190tx a2np4pa,intel core i5-14450hx,geforce rtx 3050,32,ddr5,1024,ssd,yes,16.1,1920x1080,144,300,70.0,4,2.31,windows 11 home,12,31190000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,hp,laptop hp victus 16-r1192tx a2np6pa,intel core i5-14450hx,geforce rtx 3050,16,ddr5,1024,ssd,yes,16.1,1920x1080,144,300,70.0,4,2.31,windows 11 home,12,30590000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,hp,laptop hp workstation zbook mobile 16 g11 mobile 9a660av,intel core ultra 7 155h,geforce rtx 2000 ada,32,ddr5,1024,ssd,yes,16.0,1920x1200,n/a,400,83.0,6,2.12,windows 11 pro,36,62990000,n/a,n/a,n/a,2,2,0,1,0
-laptopworld,lenovo,laptop lenovo loq 15irx9 83dv00ugvn,intel core i7-13650hx,geforce rtx 4050,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,24,29490000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,acer,laptop acer predator helios neo 16 phn16-72-99pa,intel core i9-14900hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,1900x1200,165,n/a,90.0,4,2.6,windows 11 home,12,33490000,n/a,n/a,n/a,3,2,1,0,1
-laptopworld,acer,laptop acer predator helios 16 2024 ph16-72,intel core i9-14900hx,geforce rtx 4080,32,ddr5,2048,ssd,yes,16.0,2560x1600,250,1000,90.0,4,2.7,windows 11 home,12,64990000,n/a,n/a,n/a,3,2,1,1,1
-laptopworld,lenovo,laptop lenovo loq 15arp9,amd ryzen 5 7235hs,geforce rtx 3050,12,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,17490000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,lenovo,laptop lenovo loq 15iax9,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,12,16990000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,asus,laptop asus rog strix g16 g614ju-n3206w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1920x1200,165,250,90.0,4,2.5,windows 11 home,24,37190000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog strix g16 g614ju-n4450w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1920x1200,240,250,90.0,4,2.5,windows 11 home,24,39190000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog strix g16 g614jir-n4193w,intel core i9-14900hx,geforce rtx 4070,32,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,54990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog strix g18 g814ju-n6143w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,1024,ssd,yes,18.0,2560x1600,240,n/a,90.0,4,3.3,windows 11 home,24,40990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog strix g18 g814jv-rs75,intel core i7-13650hx,geforce rtx 4060,16,ddr5,2048,ssd,yes,18.0,2560x1600,240,n/a,90.0,4,3.0,windows 11 home,12,38990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,msi,laptop msi stealth a16 ai+ a3xvgg 208vn,amd ryzen ai 9 hx 370,geforce rtx 4070,32,ddr5,2048,ssd,yes,16.0,3840x2400,120,n/a,99.99,4,2.1,windows 11 home,24,72490000,n/a,n/a,n/a,2,1,1,0,0
+laptopworld,asus,laptop asus rog strix g18 g814jv-rs75,intel core i7-13650hx,geforce rtx 4060,16,ddr5,2048,ssd,yes,18.0,2560x1600,240,n/a,90.0,4,3.0,windows 11 home,12,38990000,n/a,n/a,n/a,3,1,1,0,1
 laptopworld,n/a,laptop stealth 16 ai studio a1vhg,intel core ultra 9 185h,geforce rtx 4080,64,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,99.99,4,1.99,windows 11 home,24,76990000,n/a,n/a,n/a,1,2,1,0,1
-laptopworld,hp,laptop hp gaming victus 15-fb2063dx,amd ryzen 5 7535hs,radeon rx 6550m,8,ddr5,512,ssd,yes,15.6,1920x1080,144,300,52.5,3,2.29,windows,12,15590000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,msi,laptop msi stealth a16 ai+ a3xvgg 208vn,amd ryzen ai 9 hx 370,geforce rtx 4070,32,ddr5,2048,ssd,yes,16.0,3840x2400,120,n/a,99.99,4,2.1,windows 11 home,24,72490000,n/a,n/a,n/a,2,1,1,0,0
+laptopworld,hp,laptop hp gaming victus 15-fb2063dx,amd ryzen 5 7535hs,radeon rx 6550m,8,ddr5,512,ssd,yes,15.6,1920x1080,144,300,52.5,3,2.29,windows,12,14990000,n/a,n/a,n/a,0,0,1,0,1
+laptopworld,acer,laptop acer nitro v 15 propanel anv15-51-500a nh.qnasv.008,intel core i5-13420h,geforce rtx 2050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,300,57.0,4,2.1,windows 11 home,12,23990000,n/a,n/a,n/a,0,0,1,0,1
+laptopworld,acer,laptop acer nitro v 15 propanel anv15-51-56d5 nh.qn9sv.00b,intel core i5-13420h,geforce rtx 3050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,300,57.0,4,2.1,windows 11 home,12,24990000,n/a,n/a,n/a,0,0,1,0,1
+laptopworld,acer,laptop acer nitro v 15 propanel anv15-51-73bt nh.qnasv.009,intel core i7-13620h,geforce rtx 2050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,300,57.0,4,2.1,windows 11 home,12,25990000,n/a,n/a,n/a,0,0,1,0,1
 laptopworld,asus,laptop asus gaming vivobook k3605zf-rp634w,intel core i5-12500h,geforce rtx 2050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,50.0,3,1.8,windows 11 home,24,16890000,n/a,n/a,n/a,2,1,1,0,1
-laptopworld,dell,laptop dell alienware x14 r2,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,14.0,2560x1600,165,300,80.0,6,1.91,windows 11 home,12,32990000,n/a,n/a,n/a,1,3,1,0,0
+laptopworld,dell,laptop dell alienware x14 r2,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,14.0,2560x1600,165,300,80.0,6,1.91,windows 11 home,12,32990000,n/a,n/a,n/a,2,2,1,0,0
 laptopworld,lenovo,laptop lenovo legion 7 16irx9 83fd004mvn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,3200x2000,165,430,99.99,4,2.24,windows 11 home,24,59890000,n/a,n/a,n/a,2,3,1,0,1
-laptopworld,asus,laptop asus tuf gaming a15 fa506nfr-hn006w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,512,ssd,yes,n/a,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,17990000,n/a,n/a,n/a,3,1,1,0,1
-laptopworld,lenovo,laptop lenovo loq 15arp9 ai 83jc007jvn,amd ryzen 5 7235hs,geforce rtx 3050,24,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,20990000,n/a,n/a,n/a,3,1,1,1,1
-laptopworld,asus,laptop asus tuf gaming a16 advantage edition fa617nsr-rl100w,amd ryzen 7 7435hs,radeon rx7600s,16,ddr5,512,ssd,yes,16.0,1920x1200,144,n/a,90.0,4,2.2,windows 11 home,24,n/a,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog flow x16 gv601vv-nf044w,intel core i9-13900h,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,49990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,asus,laptop asus tuf gaming a15 fa506nfr-hn006w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,512,ssd,yes,n/a,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,17990000,n/a,n/a,n/a,4,0,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9 ai 83jc007jvn,amd ryzen 5 7235hs,geforce rtx 3050,24,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,20490000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus rog flow x16 gv601vv-nf044w,intel core i9-13900h,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,49990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus tuf gaming a16 advantage edition fa617nsr-rl100w,amd ryzen 7 7435hs,radeon rx7600s,16,ddr5,512,ssd,yes,16.0,1920x1200,144,n/a,90.0,4,2.2,windows 11 home,24,n/a,n/a,n/a,n/a,4,0,1,0,1
 laptopworld,lenovo,laptop lenovo legion 5 16irx9,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,4,2.36,windows 11 home,12,31990000,n/a,n/a,n/a,3,2,1,1,1
 laptopworld,lenovo,laptop lenovo legion pro 5 16irx9 83df0047vn,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,4,2.5,windows 11 home,24,44390000,n/a,n/a,n/a,4,2,1,1,1
-laptopworld,asus,laptop asus rog strix g16 g614ju-n4132w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,32990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus tuf gaming f15 fx507zc4-hn074w,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,56.0,4,2.2,windows 11 home,24,18990000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,asus,laptop asus rog zephyrus g16 gu603vv-n4022w,intel core i7-13620h,geforce rtx 4060,16,ddr4,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,40590000,n/a,n/a,n/a,2,2,1,0,1
-laptopworld,apple,macbook air m3 15.3inch mryt3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mxd13sa,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,41790000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mxd23sa,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,41790000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mxd43sa,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,41790000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mxd33sa,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,41790000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook pro 14inch m3 mxe13sa,apple m3 8-core,n/a,512,"512gb hoặc 1tb
-
-
-ssd 512gb hoặc 1tb
-
-
-có thể nâng cấp thành:
-
-
-1tb hoặc 2tb",16,"16gb
-
-
-
-
-bộ nhớ thống nhất 16gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-24gb",yes,14.2,3024x1964,120,n/a,"m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.55,macos,12,48890000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14inch m3 mxe03sa,apple m3 8-core,n/a,512,"512gb hoặc 1tb
-
-
-ssd 512gb hoặc 1tb
-
-
-có thể nâng cấp thành:
-
-
-1tb hoặc 2tb",16,"16gb
-
-
-
-
-bộ nhớ thống nhất 16gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-24gb",yes,14.2,3024x1964,120,n/a,"m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.55,macos,12,48890000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook air m3 15.3inch z1bp000rb space grey- 2024,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,36990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch z1br000pw silver- 2024,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,36990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mryp3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mryu3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mryr3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mryn3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air 15.3inch 16gb, 512gb starlight - 2023",apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,41290000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air 15.3inch 16gb, 512gb midnight - 2023",apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,41290000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mrxn3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",256,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,26890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mrxq3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",256,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,26890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mrxv3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",256,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,26890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mrxt3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",256,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,26890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch z1b6001h3 space grey - 2024,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",256,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch z1b8001fz silver - 2024,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",256,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch z1bc001mq midnight - 2024,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",256,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch z1ba001g3 starlight - 2024,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",256,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mrxp3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",512,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32690000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mrxr3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",512,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32690000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mrxw3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",512,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32690000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mrxu3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",512,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32690000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mxct3sa,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",512,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mxcr3sa,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",512,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mxcv3sa,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",512,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 13.6inch mxcu3sa,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",512,ssd,yes,13.6,2560x1664,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52.6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w đi kèm phiên bản m2 và m3 với gpu 8 lõi
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb. có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 52,6 watt-giờ
-
-
-bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mrym3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air mqkw3sa,apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,28990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air mqkq3sa,apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,34890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air mqkt3sa,apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,34890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air mqkx3sa,apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,34890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air mqkv3sa,apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,34890000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook pro 14inch m3 mr7k3sa,apple m3 8-core,n/a,512,"512gb hoặc 1tb
-
-
-ssd 512gb hoặc 1tb
-
-
-có thể nâng cấp thành:
-
-
-1tb hoặc 2tb",8,"8gb
-
-
-
-
-bộ nhớ thống nhất 8gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-16gb hoặc 24gb",yes,14.2,3024x1964,120,n/a,"m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.55,macos,12,42990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14 inch m3 pro mrx43sa,apple m3 pro 12-core,n/a,"1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb hoặc 4tb; 8tb (chỉ m3 max)","1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb hoặc 4tb; 8tb (chỉ m3 max)",18,"18gb
-
-
-
-
-bộ nhớ thống nhất 18gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-36gb (m3 pro hoặc m3 max với cpu 14 lõi)
-
-
-hoặc 96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,14.2,3024x1964,120,n/a,"m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72.4 watt-giờ
-3
-
-
-bộ tiếp hợp nguồn usb‑c 70w đi kèm phiên bản m3 pro với cpu 11 lõi
-
-
-bộ tiếp hợp nguồn usb‑c 96w đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max. có thể cấu hình với phiên bản m3 pro với cpu 11 lõi
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72,4 watt-giờ
-3
-
-
-bộ tiếp hợp nguồn usb‑c 70w (đi kèm phiên bản m3 pro với cpu 11 lõi)
-
-
-bộ tiếp hợp nguồn usb‑c 96w (đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max, có thể cấu hình với phiên bản m3 pro với cpu 11 lõi)
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.61,macos,12,58990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14 inch m3 pro mrx73sa,apple m3 pro 12-core,n/a,"1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb hoặc 4tb; 8tb (chỉ m3 max)","1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb hoặc 4tb; 8tb (chỉ m3 max)",18,"18gb
-
-
-
-
-bộ nhớ thống nhất 18gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-36gb (m3 pro hoặc m3 max với cpu 14 lõi)
-
-
-hoặc 96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,14.2,3024x1964,120,n/a,"m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72.4 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w đi kèm phiên bản m3 pro với cpu 11 lõi
-
-
-bộ tiếp hợp nguồn usb‑c 96w đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max. có thể cấu hình với phiên bản m3 pro với cpu 11 lõi
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72,4 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w (đi kèm phiên bản m3 pro với cpu 11 lõi)
-
-
-bộ tiếp hợp nguồn usb‑c 96w (đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max, có thể cấu hình với phiên bản m3 pro với cpu 11 lõi)
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.61,macos,12,58990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14 inch m3 max mrx53sa,apple m3 max 14-core,n/a,"1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb, 4tb hoặc 8tb","1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb, 4tb hoặc 8tb",36,"36gb
-
-
-
-
-bộ nhớ thống nhất 36gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,14.2,3024x1964,120,n/a,"m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72.4 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w đi kèm phiên bản m3 pro với cpu 11 lõi
-
-
-bộ tiếp hợp nguồn usb‑c 96w đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max. có thể cấu hình với phiên bản m3 pro với cpu 11 lõi
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72,4 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w (đi kèm phiên bản m3 pro với cpu 11 lõi)
-
-
-bộ tiếp hợp nguồn usb‑c 96w (đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max, có thể cấu hình với phiên bản m3 pro với cpu 11 lõi)
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.62,macos,12,78990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14 inch m3 max mrx83sa,apple m3 max 14-core,n/a,"1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb, 4tb hoặc 8tb","1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb, 4tb hoặc 8tb",36,"36gb
-
-
-
-
-bộ nhớ thống nhất 36gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,14.2,3024x1964,120,n/a,"m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72.4 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w đi kèm phiên bản m3 pro với cpu 11 lõi
-
-
-bộ tiếp hợp nguồn usb‑c 96w đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max. có thể cấu hình với phiên bản m3 pro với cpu 11 lõi
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72,4 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w (đi kèm phiên bản m3 pro với cpu 11 lõi)
-
-
-bộ tiếp hợp nguồn usb‑c 96w (đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max, có thể cấu hình với phiên bản m3 pro với cpu 11 lõi)
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.62,macos,12,78990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 16 inch m3 pro mrw23sa,apple m3 pro 12-core,n/a,512,"512gb
-
-
-ssd 512gb
-
-
-có thể nâng cấp thành:
-
-
-1tb, 2tb, hoặc 4tb; 8tb (chỉ m3 max)",36,"36gb
-
-
-bộ nhớ thống nhất 36gb
-
-
-có thể nâng cấp thành:
-
-
-
-
-96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,16.2,3456x2234,120,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm","thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm",2.14,macos,12,72490000,35.57,24.81,1.68,0,2,1,0,0
-laptopworld,apple,macbook pro 16 inch m3 max mrw33sa,apple m3 max 14-core,n/a,"1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb, 4tb hoặc 8tb","1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb, 4tb hoặc 8tb",36,"36gb
-
-
-bộ nhớ thống nhất 36gb
-
-
-có thể nâng cấp thành:
-
-
-
-
-96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,16.2,3456x2234,120,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm","thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm",2.14,macos,12,88490000,35.57,24.81,1.68,0,2,1,0,0
-laptopworld,apple,macbook pro 16 inch m3 pro mrw63sa,apple m3 pro 12-core,n/a,512,"512gb
-
-
-ssd 512gb
-
-
-có thể nâng cấp thành:
-
-
-1tb, 2tb, hoặc 4tb; 8tb (chỉ m3 max)",36,"36gb
-
-
-bộ nhớ thống nhất 36gb
-
-
-có thể nâng cấp thành:
-
-
-
-
-96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,16.2,3456x2234,120,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm","thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm",2.14,macos,12,72490000,35.57,24.81,1.68,0,2,1,0,0
-laptopworld,apple,macbook pro 16 inch m3 max mrw73sa,apple m3 max 14-core,n/a,"1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb, 4tb hoặc 8tb","1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành:
-
-
-2tb, 4tb hoặc 8tb",36,"36gb
-
-
-bộ nhớ thống nhất 36gb
-
-
-có thể nâng cấp thành:
-
-
-
-
-96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,16.2,3456x2234,120,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm","thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm",2.14,macos,12,88490000,35.57,24.81,1.68,0,2,1,0,0
-laptopworld,apple,macbook pro 16 inch m3 max muw63sa,apple m3 max 16-core,n/a,"1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành: 
-
-
-2tb, 4tb hoặc 8tb","1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành: 
-
-
-2tb, 4tb hoặc 8tb",48,"48gb
-
-
-bộ nhớ thống nhất 48gb
-
-
-có thể nâng cấp thành:
-
-
-
-
-64gb hoặc 128gb",yes,16.2,3456x2234,120,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm","thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm",2.14,macos,12,101990000,35.57,24.81,1.68,0,2,1,0,0
-laptopworld,apple,macbook pro 16 inch m3 max muw73sa,apple m3 max 16-core,n/a,"1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành: 
-
-
-2tb, 4tb hoặc 8tb","1tb
-
-
-ssd 1tb
-
-
-có thể nâng cấp thành: 
-
-
-2tb, 4tb hoặc 8tb",48,"48gb
-
-
-bộ nhớ thống nhất 48gb
-
-
-có thể nâng cấp thành:
-
-
-
-
-64gb hoặc 128gb",yes,16.2,3456x2234,120,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm","thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm",2.14,macos,12,101990000,35.57,24.81,1.68,0,2,1,0,0
-laptopworld,apple,macbook pro 16 inch m3 pro mrw13sa,apple m3 pro 12-core,n/a,512,"512gb
-
-
-ssd 512gb
-
-
-có thể nâng cấp thành:
-
-
-1tb, 2tb, hoặc 4tb; 8tb (chỉ m3 max)",18,"18gb
-
-
-bộ nhớ thống nhất 18gb
-
-
-có thể nâng cấp thành:
-
-
-
-
-36gb (m3 pro hoặc m3 max với cpu 14 lõi)
-
-
-hoặc 96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,16.2,3456x2234,120,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm","thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm",2.14,macos,12,62990000,35.57,24.81,1.68,0,2,1,0,0
-laptopworld,apple,macbook pro 16 inch m3 pro mrw43sa,apple m3 pro 12-core,n/a,512,"512gb
-
-
-ssd 512gb
-
-
-có thể nâng cấp thành:
-
-
-1tb, 2tb, hoặc 4tb; 8tb (chỉ m3 max)",18,"18gb
-
-
-bộ nhớ thống nhất 18gb
-
-
-có thể nâng cấp thành:
-
-
-
-
-36gb (m3 pro hoặc m3 max với cpu 14 lõi)
-
-
-hoặc 96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,16.2,3456x2234,120,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm","thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 100 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 140w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 140w đi kèm",2.14,macos,12,62990000,35.57,24.81,1.68,0,2,1,0,0
-laptopworld,apple,"macbook air 13.6inch 24gb, 256gb silver- 2022",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52.6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52,6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w (đi kèm với m2 với gpu 8 lõi)
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb, có thể định cấu hình với m2 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,33990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air 15.3inch 16gb, 256gb space grey- 2023",apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,36490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air 15.3inch 16gb, 256gb silver- 2023",apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,36490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air 15.3inch 16gb, 256gb starlight - 2023",apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,36490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air 15.3inch 16gb, 256gb midnight - 2023",apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,36490000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch mryq3sa,apple m3 8-core,n/a,8,"8gb
-
-
-bộ nhớ thống nhất 8gb
-
-
-có thể nâng cấp thành:
-
-
-16gb hoặc 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air 15.3inch 16gb, 512gb space grey- 2023",apple m2 8-core,n/a,8,"8gb
-
-
-8gb unified memory
-
-
-configurable to:
-
-
-16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66,5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,41290000,n/a,n/a,n/a,0,2,0,0,0
+laptopworld,asus,laptop asus rog strix g16 g614ju-n4132w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,33990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus tuf gaming f15 fx507zc4-hn074w,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,56.0,4,2.2,windows 11 home,24,18490000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus rog zephyrus g16 gu603vv-n4022w,intel core i7-13620h,geforce rtx 4060,16,ddr4,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,40590000,n/a,n/a,n/a,3,1,1,0,1
 laptopworld,apple,macbook air m3 15.3inch mryv3sa,apple m3 8-core,n/a,8,"8gb
 
 
@@ -3973,22 +210,7 @@ bộ nhớ thống nhất 8gb
 có thể nâng cấp thành:
 
 
-16gb hoặc 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+16gb hoặc 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,66.5,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
 
 
 thời gian duyệt web trên mạng không dây lên đến 15 giờ
@@ -4003,8 +225,8 @@ bộ tiếp hợp nguồn cổng usb-c kép 35w
 cáp usb-c sang magsafe 3
 
 
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air 15.3inch 16gb, 512gb silver- 2023",apple m2 8-core,n/a,8,"8gb
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air 15.3inch 16gb, 512gb starlight - 2023",apple m2 8-core,n/a,8,"8gb
 
 
 8gb unified memory
@@ -4013,22 +235,7 @@ laptopworld,apple,"macbook air 15.3inch 16gb, 512gb silver- 2023",apple m2 8-cor
 configurable to:
 
 
-16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
+16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,66.5,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
 
 
 lên đến 15 giờ web không dây
@@ -4043,375 +250,8 @@ bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
 cáp usb-c sang magsafe 3
 
 
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,41290000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch z1bv000ym midnight - 2024,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,36990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook air m3 15.3inch z1bt000q0 starlight - 2024,apple m3 8-core,n/a,16,"16gb
-
-
-bộ nhớ thống nhất 16gb
-
-
-có thể nâng cấp thành:
-
-
-24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66.5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w","thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 66,5 watt-giờ
-
-
-bộ tiếp hợp nguồn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,36990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air z15w005j9 13.6inch 16gb, 256gb silver- 2022",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52.6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52,6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w (đi kèm với m2 với gpu 8 lõi)
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb, có thể định cấu hình với m2 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,29990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air z1600098b 13.6inch 16gb, 256gb midnight- 2022",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52.6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52,6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w (đi kèm với m2 với gpu 8 lõi)
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb, có thể định cấu hình với m2 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,29990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air z15y0063v 13.6inch 16gb, 256gb starlight- 2022",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52.6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52,6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w (đi kèm với m2 với gpu 8 lõi)
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb, có thể định cấu hình với m2 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,29990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,"macbook air z15s006j7 13.6inch 16gb, 256gb space gray- 2022",apple m2 8-core,n/a,8,"8gb
-
-
-
-
-8gb unified memory
-
-
-
-
-configurable to:
-
-
-
-
-16gb or 24gb",256,ssd,yes,13.6,2560x1664,60,500,"lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52.6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w đi kèm với m2 với gpu 8 lõi
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb. có thể định cấu hình với m2 với gpu 8 lõi
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w","lên đến 18 giờ phát lại phim ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium ‑ polymer 52,6 watt ‑ giờ
-
-
-bộ đổi nguồn usb-c 30w (đi kèm với m2 với gpu 8 lõi)
-
-
-bộ chuyển đổi nguồn nhỏ gọn cổng usb-c kép 35w (đi kèm với m2 với gpu 10 lõi và bộ nhớ 512gb, có thể định cấu hình với m2 với gpu 8 lõi)
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 67w",n/a,macos,12,29990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook pro 14 inch m3 pro mrx63sa,apple m3 pro 11-core,n/a,512,"512gb
-
-
-ssd 512gb
-
-
-có thể nâng cấp thành:
-
-
-1tb, 2tb, hoặc 4tb; 8tb (chỉ m3 max)",18,"18gb
-
-
-
-
-bộ nhớ thống nhất 18gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-36gb (m3 pro hoặc m3 max với cpu 14 lõi)
-
-
-hoặc 96gb (m3 max với cpu 14 lõi)
-
-
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,14.2,3024x1964,120,n/a,"m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72.4 watt-giờ
-3
-
-
-bộ tiếp hợp nguồn usb‑c 70w đi kèm phiên bản m3 pro với cpu 11 lõi
-
-
-bộ tiếp hợp nguồn usb‑c 96w đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max. có thể cấu hình với phiên bản m3 pro với cpu 11 lõi
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3 pro và m3 max
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
-
-
-pin li-po 72,4 watt-giờ
-3
-
-
-bộ tiếp hợp nguồn usb‑c 70w (đi kèm phiên bản m3 pro với cpu 11 lõi)
-
-
-bộ tiếp hợp nguồn usb‑c 96w (đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max, có thể cấu hình với phiên bản m3 pro với cpu 11 lõi)
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.61,macos,12,48490000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook air mqkp3sa,apple m2 8-core,n/a,8,"8gb
+khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,41290000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air 15.3inch 16gb, 512gb midnight - 2023",apple m2 8-core,n/a,8,"8gb
 
 
 8gb unified memory
@@ -4420,22 +260,7 @@ laptopworld,apple,macbook air mqkp3sa,apple m2 8-core,n/a,8,"8gb
 configurable to:
 
 
-16gb or 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
-
-
-lên đến 15 giờ web không dây
-
-
-pin lithium-polymer 66.5 watt-giờ
-
-
-bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
-
-
-cáp usb-c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w","lên đến 18 giờ phát lại phim trên ứng dụng apple tv
+16gb or 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,66.5,"lên đến 18 giờ phát lại phim trên ứng dụng apple tv
 
 
 lên đến 15 giờ web không dây
@@ -4450,446 +275,602 @@ bộ đổi nguồn nhỏ gọn cổng usb-c kép 35w
 cáp usb-c sang magsafe 3
 
 
-khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,28990000,n/a,n/a,n/a,0,2,0,0,0
-laptopworld,apple,macbook pro 14inch m3 mtl73sa,apple m3 8-core,n/a,512,"512gb hoặc 1tb
-
-
-ssd 512gb hoặc 1tb
-
-
-có thể nâng cấp thành:
-
-
-1tb hoặc 2tb",8,"8gb
-
-
+khả năng sạc nhanh với bộ đổi nguồn usb-c 70w",n/a,macos,12,41290000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxn3sa,apple m3 8-core,n/a,8,"8gb
 
 
 bộ nhớ thống nhất 8gb
 
 
-
-
 có thể nâng cấp thành:
 
 
-
-
-16gb hoặc 24gb",yes,14.2,3024x1964,120,n/a,"m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
+16gb hoặc 24gb",256,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
 
 
 thời gian duyệt web trên mạng không dây lên đến 15 giờ
 
 
-pin li-po 70 watt-giờ
+pin li-po 52,6 watt-giờ
 
 
-bộ tiếp hợp nguồn usb‑c 70w
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
 
 
-cáp usb‑c sang magsafe 3
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
 
 
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3
+cáp usb-c sang magsafe 3
 
 
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.55,macos,12,38990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14inch m3 z1c80005f space gray,apple m3 8-core,n/a,512,"512gb hoặc 1tb
-
-
-ssd 512gb hoặc 1tb
-
-
-có thể nâng cấp thành:
-
-
-1tb hoặc 2tb",16,"16gb
-
-
-
-
-bộ nhớ thống nhất 16gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-24gb",yes,14.2,3024x1964,120,n/a,"m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.55,macos,12,43990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14inch m3 z1a90005b silver,apple m3 8-core,n/a,512,"512gb hoặc 1tb
-
-
-ssd 512gb hoặc 1tb
-
-
-có thể nâng cấp thành:
-
-
-1tb hoặc 2tb",16,"16gb
-
-
-
-
-bộ nhớ thống nhất 16gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-24gb",yes,14.2,3024x1964,120,n/a,"m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.55,macos,12,43990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14inch m3 z1a90005c silver,apple m3 8-core,n/a,512,"512gb hoặc 1tb
-
-
-ssd 512gb hoặc 1tb
-
-
-có thể nâng cấp thành:
-
-
-1tb hoặc 2tb",16,"16gb
-
-
-
-
-bộ nhớ thống nhất 16gb
-
-
-
-
-có thể nâng cấp thành:
-
-
-
-
-24gb",yes,14.2,3024x1964,120,n/a,"m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
-
-
-thời gian duyệt web trên mạng không dây lên đến 15 giờ
-
-
-pin li-po 70 watt-giờ
-
-
-bộ tiếp hợp nguồn usb‑c 70w
-
-
-cáp usb‑c sang magsafe 3
-
-
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.55,macos,12,48890000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14inch m3 mtl83sa,apple m3 8-core,n/a,512,"512gb hoặc 1tb
-
-
-ssd 512gb hoặc 1tb
-
-
-có thể nâng cấp thành:
-
-
-1tb hoặc 2tb",8,"8gb
-
-
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,26890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxq3sa,apple m3 8-core,n/a,8,"8gb
 
 
 bộ nhớ thống nhất 8gb
 
 
-
-
 có thể nâng cấp thành:
 
 
-
-
-16gb hoặc 24gb",yes,14.2,3024x1964,120,n/a,"m3
-
-
-
-
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
+16gb hoặc 24gb",256,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
 
 
 thời gian duyệt web trên mạng không dây lên đến 15 giờ
 
 
-pin li-po 70 watt-giờ
+pin li-po 52,6 watt-giờ
 
 
-bộ tiếp hợp nguồn usb‑c 70w
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
 
 
-cáp usb‑c sang magsafe 3
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
 
 
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3
+cáp usb-c sang magsafe 3
 
 
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,26890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxv3sa,apple m3 8-core,n/a,8,"8gb
 
 
-thời gian xem phim trên ứng dụng apple tv lên đến 22 giờ
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",256,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
 
 
 thời gian duyệt web trên mạng không dây lên đến 15 giờ
 
 
-pin li-po 70 watt-giờ
+pin li-po 52,6 watt-giờ
 
 
-bộ tiếp hợp nguồn usb‑c 70w
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
 
 
-cáp usb‑c sang magsafe 3
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
 
 
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.55,macos,12,42990000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 14 inch m3 pro mrx33sa,apple m3 pro 11-core,n/a,512,"512gb
+cáp usb-c sang magsafe 3
 
 
-ssd 512gb
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,26890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxt3sa,apple m3 8-core,n/a,8,"8gb
 
 
-có thể nâng cấp thành:
-
-
-1tb, 2tb, hoặc 4tb; 8tb (chỉ m3 max)",18,"18gb
-
-
-
-
-bộ nhớ thống nhất 18gb
-
-
+bộ nhớ thống nhất 8gb
 
 
 có thể nâng cấp thành:
 
 
+16gb hoặc 24gb",256,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
 
 
-36gb (m3 pro hoặc m3 max với cpu 14 lõi)
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
 
 
-hoặc 96gb (m3 max với cpu 14 lõi)
+pin li-po 52,6 watt-giờ
 
 
-hoặc 48gb, 64gb, hoặc 128gb (m3 max với cpu 16 lõi)",yes,14.2,3024x1964,120,n/a,"m3 pro và m3 max
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
 
 
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
 
 
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+cáp usb-c sang magsafe 3
 
 
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,26890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch z1b6001h3 space grey - 2024,apple m3 8-core,n/a,16,"16gb
 
 
-pin li-po 72.4 watt-giờ
+bộ nhớ thống nhất 16gb
 
 
-bộ tiếp hợp nguồn usb‑c 70w đi kèm phiên bản m3 pro với cpu 11 lõi
+có thể nâng cấp thành:
 
 
-bộ tiếp hợp nguồn usb‑c 96w đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max. có thể cấu hình với phiên bản m3 pro với cpu 11 lõi
+24gb",256,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
 
 
-cáp usb‑c sang magsafe 3
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
 
 
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w","m3 pro và m3 max
+pin li-po 52,6 watt-giờ
 
 
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
 
 
-thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
 
 
-thời gian duyệt web trên mạng không dây lên đến 12 giờ
+cáp usb-c sang magsafe 3
 
 
-pin li-po 72,4 watt-giờ
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch z1b8001fz silver - 2024,apple m3 8-core,n/a,16,"16gb
 
 
-bộ tiếp hợp nguồn usb‑c 70w (đi kèm phiên bản m3 pro với cpu 11 lõi)
+bộ nhớ thống nhất 16gb
 
 
-bộ tiếp hợp nguồn usb‑c 96w (đi kèm phiên bản m3 pro với cpu 12 lõi hoặc m3 max, có thể cấu hình với phiên bản m3 pro với cpu 11 lõi)
+có thể nâng cấp thành:
 
 
-cáp usb‑c sang magsafe 3
+24gb",256,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
 
 
-khả năng sạc nhanh với bộ tiếp hợp nguồn usb‑c 96w",1.61,macos,12,48890000,31.26,22.12,1.55,0,2,1,0,0
-laptopworld,apple,macbook pro 16inch m2 pro mnwc3sa,apple m2 pro 12-core,n/a,16,"16gb
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
 
 
-16gb unified memory
+pin li-po 52,6 watt-giờ
 
 
-configurable to:
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
 
 
-32gb (m2 pro or m2 max), 64gb (m2 max), or 96gb (m2 max with 38‑core gpu)",512,ssd,yes,16.2,"liquidretinaxdrdisplay16.2-inch(diagonal)liquidretinaxdrdisplay;3456-by-2234nativeresolutionat254pixelsperinchxdr(extremedynamicrange)1,000,000:1contrastratioxdrbrightness:1000nitssustainedfull-screen,1600nitspeak2(hdrcontentonly)sdrbrightness:500nitscolor1billioncolorswidecolor(p3)truetonetechnologyrefreshratespromotiontechnologyforadaptiverefreshratesupto120hzfixedrefreshrates:47.95hz,48.00hz,50.00hz,59.94hz,60.00hz",n/a,1000,"up to 22 hours apple tv app movie playback
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
 
 
-up to 15 hours wireless web
+cáp usb-c sang magsafe 3
 
 
-100-watt-hour lithium-polymer battery
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch z1bc001mq midnight - 2024,apple m3 8-core,n/a,16,"16gb
 
 
-140w usb-c power adapter
+bộ nhớ thống nhất 16gb
 
 
-usb-c to magsafe 3 cable
+có thể nâng cấp thành:
 
 
-fast-charge capable with included 140w usb‑c power adapter","up to 22 hours apple tv app movie playback
+24gb",256,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
 
 
-up to 15 hours wireless web
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
 
 
-100-watt-hour lithium-polymer battery
+pin li-po 52,6 watt-giờ
 
 
-140w usb-c power adapter
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
 
 
-usb-c to magsafe 3 cable
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
 
 
-fast-charge capable with included 140w usb‑c power adapter",2.15,macos,12,47990000,14.01,1.68,0.66,0,2,1,0,1
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32490000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch z1ba001g3 starlight - 2024,apple m3 8-core,n/a,16,"16gb
+
+
+bộ nhớ thống nhất 16gb
+
+
+có thể nâng cấp thành:
+
+
+24gb",256,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 52,6 watt-giờ
+
+
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32490000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxp3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",512,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 52,6 watt-giờ
+
+
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxr3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",512,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 52,6 watt-giờ
+
+
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxw3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",512,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 52,6 watt-giờ
+
+
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxu3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",512,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 52,6 watt-giờ
+
+
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,32690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mxcr3sa,apple m3 8-core,n/a,16,"16gb
+
+
+bộ nhớ thống nhất 16gb
+
+
+có thể nâng cấp thành:
+
+
+24gb",512,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 52,6 watt-giờ
+
+
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mxct3sa,apple m3 8-core,n/a,16,"16gb
+
+
+bộ nhớ thống nhất 16gb
+
+
+có thể nâng cấp thành:
+
+
+24gb",512,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 52,6 watt-giờ
+
+
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mxcv3sa,apple m3 8-core,n/a,16,"16gb
+
+
+bộ nhớ thống nhất 16gb
+
+
+có thể nâng cấp thành:
+
+
+24gb",512,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 52,6 watt-giờ
+
+
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mxcu3sa,apple m3 8-core,n/a,16,"16gb
+
+
+bộ nhớ thống nhất 16gb
+
+
+có thể nâng cấp thành:
+
+
+24gb",512,ssd,yes,13.6,2560x1664,60,n/a,52.6,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 52,6 watt-giờ
+
+
+bộ tiếp hợp nguồn usb-c 30w (đi kèm phiên bản m2 và m3 với gpu 8 lõi)
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w (đi kèm phiên bản m2 và m3 với gpu 10 lõi và dung lượng lưu trữ 512gb, có thể cấu hình với phiên bản m2 và m3 với gpu 8 lõi)
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mrym3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,66.5,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 66,5 watt-giờ
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mryp3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,66.5,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 66,5 watt-giờ
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mryu3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,66.5,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 66,5 watt-giờ
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mryr3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",256,ssd,yes,15.3,2880x1864,60,n/a,66.5,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 66,5 watt-giờ
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mryn3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,66.5,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 66,5 watt-giờ
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mryq3sa,apple m3 8-core,n/a,8,"8gb
+
+
+bộ nhớ thống nhất 8gb
+
+
+có thể nâng cấp thành:
+
+
+16gb hoặc 24gb",512,ssd,yes,15.3,2880x1864,60,n/a,66.5,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+
+
+thời gian duyệt web trên mạng không dây lên đến 15 giờ
+
+
+pin li-po 66,5 watt-giờ
+
+
+bộ tiếp hợp nguồn cổng usb-c kép 35w
+
+
+cáp usb-c sang magsafe 3
+
+
+khả năng sạc nhanh với bộ tiếp hợp nguồn usb-c 70w",n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0

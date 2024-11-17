@@ -3,7 +3,7 @@ from scrapy.http import Response
 import re
 
 class LaptopazSpider(BaseLaptopshopPageSpider):
-    name = 'laptopaz'
+    name = 'laptopaz_spider'
     allowed_domains = ["laptopaz.vn"]
     start_urls = ['https://laptopaz.vn/laptop-moi.html']
 

@@ -1,191 +1,201 @@
 source,brand,name,cpu,vga,ram_amount,ram_type,storage_amount,storage_type,webcam_resolution,screen_size,screen_resolution,screen_refresh_rate,screen_brightness,battery_capacity,battery_cells,weight,default_os,warranty,price,width,depth,height,number_usb_a_ports,number_usb_c_ports,number_hdmi_ports,number_ethernet_ports,number_audio_jacks
-fptshop,hp,hp 14s-dq5121tu,intel core i3-1215u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,n/a,3 cell,3,1.36,windows 11 home,aaaaaaaaaaa,n/a,32.4,22.5,1.4,2,1,1,0,0
-fptshop,asus,asus vivobook 15 x1504za-nj517w,intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,42.0,42 whrs,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.97,23.25,1.56,2,1,1,0,0
-fptshop,apple,macbook air 13 inch m1 2020 8cpu 7gpu 8gb/256gb,apple m1,n/a,8,ddr4,8,ssd,yes,13.3,2560x1600,n/a,n/a,n/a,n/a,1.29,macos,aaaaaaaaaaa,n/a,30.41,21.24,1.33,n/a,n/a,n/a,n/a,n/a
-fptshop,acer,acer nitro 5 tiger gaming an515-58-773y,intel core i7-12700h,geforce rtx 3050 ti,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,4 cell,4,2.5,windows 11 home,aaaaaaaaaaa,n/a,36.04,27.11,1.56,3,1,1,1,0
-fptshop,hp,"hp gaming victus 16-s0173ax r5-7640hs/16gb/512gb/16""",amd ryzen 5 7640hs,geforce rtx 3050,16,ddr5,16,ssd,yes,16.1,1920x1080,n/a,n/a,70.0,70 whrs,2.33,windows 11 home,aaaaaaaaaaa,n/a,36.9,25.94,1.61,3,1,1,1,1
-fptshop,acer,acer aspire lite al16-51p-55n7,intel core i5-1235u,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,300,76.0,76 whr,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.76,24.7,1.6,3,1,1,0,0
-fptshop,dell,"dell inspiron n3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,3 cell,3,1.9,windows 11 home,aaaaaaaaaaa,n/a,35.85,23.56,1.56,2,2,1,1,1
-fptshop,hp,hp 15-fd0235tu,intel core i5-1334u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,41 wh,1.59,windows 11 home,aaaaaaaaaaa,n/a,35.98,23.6,1.56,0,2,0,0,0
-fptshop,asus,asus vivobook 14 oled a1405za-km264w,intel core i5-12500h,n/a,16,ddr4,16,ssd,yes,14.0,2880x1800,n/a,600,50.0,50 wh,1.6,windows,aaaaaaaaaaa,n/a,31.71,22.2,1.4,2,1,1,0,0
-fptshop,lenovo,"lenovo ideapad slim 3 15irh8 i7 13620h/16gb/512gb/15.6""",intel core i7-13620h,n/a,16,ddr5,16,ssd,yes,15.6,1920x1200,n/a,300,47.0,47 wh,1.62,windows 11 home,aaaaaaaaaaa,n/a,35.93,23.5,1.56,2,1,1,0,0
-fptshop,hp,hp pavilion 15-eg3111tu,intel core i5-1335u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,3 cell,3,1.68,windows 11 home,aaaaaaaaaaa,n/a,36.02,23.4,1.56,3,0,1,0,0
-fptshop,apple,macbook air 13 inch m2 2022 8cpu 8gpu 8gb/256gb,apple m2,n/a,8,ddr4,8,ssd,yes,13.6,2560x1644,60,500,18 giờ,18 giờ,1.24,macos,aaaaaaaaaaa,n/a,30.41,21.5,1.36,0,2,0,0,0
-fptshop,acer,acer nitro 5 tiger gaming an515-58-5193,intel core i5-12450h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1200,n/a,250,4 cell,4,2.5,windows 11 home,aaaaaaaaaaa,n/a,36.04,27.11,1.56,3,1,1,1,0
-fptshop,asus,asus tuf gaming fx507zc4-hn095w,intel core i5-12500h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,250,56.0,56 wh,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.4,25.1,1.56,5,1,1,0,0
-fptshop,lenovo,"lenovo gaming loq - 15iax9 i5 12450hx/ai/12gb/512gb/15.6""fhd/rtx3050",intel core i5-12450hx,geforce rtx 3050,12,ddr5,12,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,3,1,1,1,0
-fptshop,hp,hp 14s-em0086au,amd ryzen 5 7520u,n/a,16,ddr5,16,ssd,yes,14.0,1920x1080,60,250,3 cell,3,1.4,windows 11 home,aaaaaaaaaaa,n/a,32.37,21.5,1.4,2,1,1,0,0
-fptshop,dell,"dell inspiron n3530 i5 1334u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1334u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,3 cell,3,1.66,windows 11 home,aaaaaaaaaaa,n/a,35.85,23.56,1.56,1,2,1,1,1
-fptshop,msi,"msi gaming thin a15 b7uc-261vn r5 7535hs/16gb/512gb/15.6""",amd ryzen 5 7535hs,geforce rtx 3050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,52.4,52.4 wh,1.86,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.4,1.56,3,1,1,1,0
-fptshop,asus,asus tuf gaming fa507nur-lp101w,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.97,23.25,1.56,2,2,0,1,0
-fptshop,acer,acer aspire 7 gaming a715-76g-73fm,intel core i7-12650h,geforce rtx 2050,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,n/a,n/a,2.1,windows 11 home,aaaaaaaaaaa,n/a,36.23,23.74,1.56,3,1,1,1,0
-fptshop,lenovo,"lenovo ideapad 3 14iah8 i5 12450h/16gb/512gb/14""fhd/win11",intel core i5-12450h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1080,60,300,47.0,47 wh,1.37,windows 11 home,aaaaaaaaaaa,n/a,32.43,21.38,1.4,2,1,1,0,0
-fptshop,msi,msi gaming katana 15 b13udxk-2213vn,intel core i5-13500h,geforce rtx 3050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,53.5,53.5 whr,2.3,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.9,1.56,2,1,1,1,0
-fptshop,asus,asus tuf gaming fa506nfr-hn006w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,48.0,48 wh,2.3,windows,aaaaaaaaaaa,n/a,35.9,25.6,1.56,3,1,0,1,0
-fptshop,hp,hp 15-fc0089au,amd ryzen 7 7730u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,41 wh,1.59,windows 11 home,aaaaaaaaaaa,n/a,35.98,23.6,1.56,2,1,1,0,0
-fptshop,lenovo,"lenovo v15 g4 iru i5 13420h/16gb/512gb/15.6""fhd/win",intel core i5-13420h,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,300,38.0,38 wh,1.65,windows 11 home,aaaaaaaaaaa,n/a,35.92,23.58,1.56,1,1,1,1,0
-fptshop,acer,acer swift x sfx16-51g-516q,intel core i5-11320h,geforce rtx 3050,16,ddr4,16,ssd,yes,16.1,1920x1080,60,n/a,4 cell,4,1.9,windows 11 home,aaaaaaaaaaa,n/a,36.8,18.9,1.61,2,1,1,0,0
-fptshop,asus,asus vivobook x1504va-nj526w,intel core i5-1335u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,n/a,42.0,42 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.97,23.25,1.56,2,1,1,0,0
-fptshop,acer,acer aspire 7 gaming a715-76g-59mw,intel core i5-12450h,geforce rtx 2050,8,ddr4,8,ssd,yes,15.6,1920x1080,n/a,n/a,50.0,50 wh,2.1,windows 11 home,aaaaaaaaaaa,n/a,36.23,23.74,1.56,3,1,0,1,0
-fptshop,lenovo,"lenovo gaming loq - 15iax9 i5 12450hx/ai/16gb/512gb/15.6""fhd/rtx2050",intel core i5-12450hx,geforce rtx 2050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,3,1,1,1,0
-fptshop,hp,hp 15-fd0083tu,intel core i7-1355u,n/a,16,n/a,16,ssd,yes,15.6,1920x1080,60,n/a,3 cell,3,1.59,windows,aaaaaaaaaaa,n/a,35.98,23.6,1.56,0,0,1,0,0
-fptshop,acer,acer aspire lite 16 al16-51p-72s2,intel core i7-1255u,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,n/a,3 cell,3,1.8,windows 11 home,aaaaaaaaaaa,n/a,35.76,24.7,1.6,3,1,1,0,0
-fptshop,dell,"dell vostro 14 v3420 i5 1235u/8gb/512gb/14""fhd/win11/office",intel core i5-1235u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,250,65.0,65 wh,1.49,windows 11 home,aaaaaaaaaaa,n/a,32.13,22.03,1.4,2,0,1,0,0
-fptshop,acer,acer swift 3 sf314-512-741l,intel core i7-1260p,n/a,16,ddr4,16,ssd,yes,14.0,2560x1440,60,n/a,56.0,56 wh,1.2,windows 11 home,aaaaaaaaaaa,n/a,32.1,21.08,1.4,2,2,1,0,0
-fptshop,asus,asus tuf gaming a15 fa506nf-hn005w,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,8,ssd,yes,15.6,1920x1080,n/a,n/a,48.0,48 whrs,2.3,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.6,1.56,3,1,0,1,0
-fptshop,acer,acer aspire 7 a715-76-53pj,intel core i5-12450h,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,n/a,50.0,50 wh,2.1,windows 11 home,aaaaaaaaaaa,n/a,36.23,23.74,1.56,0,1,1,1,0
-fptshop,lenovo,"lenovo thinkbook 14 g6 irl i5 13420h/16gb/512gb/14""",intel core i5-13420h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,300,60.0,60 wh,1.38,windows 11 home,aaaaaaaaaaa,n/a,31.35,22.4,1.4,3,1,1,1,0
-fptshop,dell,"dell inspiron n3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,3 cell,3,1.66,windows 11 home,aaaaaaaaaaa,n/a,35.85,23.56,1.56,2,0,1,1,1
-fptshop,dell,"dell inspiron n3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1200,n/a,n/a,4 cell,4,1.66,windows 11 home,aaaaaaaaaaa,n/a,18.99,16.96,1.56,2,0,1,0,0
-fptshop,dell,"dell vostro v3520 i5-1235u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1200,n/a,250,n/a,n/a,1.9,windows 11 home,n/a,n/a,35.85,23.49,1.56,2,0,1,0,1
-fptshop,msi,"msi modern 14 c7m-221vn r7 7730u/8gb/512gb/14""",amd ryzen 7 7730u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,n/a,39.3,39.3 wh,1.4,windows 11 home,aaaaaaaaaaa,n/a,31.99,22.3,1.4,1,1,1,0,0
-fptshop,asus,asus gaming vivobook k3605zf-rp634w,intel core i5-12500h,geforce rtx 2050,16,ddr4,16,ssd,yes,16.0,1920x1200,n/a,n/a,50.0,50 whr,1.8,windows 11 home,aaaaaaaaaaa,n/a,35.86,24.91,1.6,2,1,1,0,0
-fptshop,acer,acer aspire 7 gaming a715-76g-5806,intel core i5-12450h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,n/a,50 giờ,50 giờ,2.1,windows 11 home,aaaaaaaaaaa,n/a,36.23,23.74,1.56,4,1,1,0,0
-fptshop,asus,asus vivobook 16 x1605za-mb193w,intel core i3-1215u,n/a,8,ddr4,8,ssd,yes,16.0,1920x1200,60,n/a,3 cell,3,1.68,windows 11 home,aaaaaaaaaaa,n/a,35.87,24.95,1.6,3,0,1,0,0
-fptshop,dell,"dell vostro v3430 i5 1335u/16gb/512gb/14""fhd/nvidia",intel core i5-1335u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,250,3 cell,3,1.49,windows 11 home,aaaaaaaaaaa,n/a,32.37,22.03,1.4,1,1,1,1,1
-fptshop,acer,acer aspire 5 a515-58m-56yx,intel core i5-13420h,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,n/a,n/a,2.87,windows 11 home,aaaaaaaaaaa,n/a,50.5,31.6,1.56,2,1,1,0,0
-fptshop,lenovo,"lenovo ideapad slim 5 14imh9 ultra 5 125h/ai/16gb/512gb/14""wuxga/oled/win",intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.48,windows 11 home,aaaaaaaaaaa,n/a,31.2,22.1,1.4,2,2,1,0,0
-fptshop,dell,"dell inspiron n3520 i5 1235u/8gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,8,ddr4,8,ssd,yes,15.6,1920x1200,n/a,n/a,3 cell,3,1.9,windows 11 home,aaaaaaaaaaa,n/a,18.99,16.96,1.56,2,0,1,0,0
-fptshop,msi,msi gaming cyborg 15 a12uc-621vn,intel core i5-12450h,geforce rtx 3050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,53.5,53.5 whr,1.9,windows 11 home,aaaaaaaaaaa,n/a,35.94,22.9,1.56,2,1,1,1,0
-fptshop,lenovo,"lenovo gaming loq 15iax9 i5 12450hx/ai/24gb/512gb/15.6""fhd/rtx2050",intel core i5-12450hx,geforce rtx 2050,24,ddr5,24,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,3,1,1,1,0
-fptshop,acer,acer nitro v gaming anv15-51-53ne,intel core i5-13420h,geforce rtx 2050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,n/a,n/a,2.1,windows 11 home,aaaaaaaaaaa,n/a,36.23,23.99,1.56,3,1,1,1,0
-fptshop,msi,msi modern 14 c12mo-660vn,intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,60,300,3 cell,3,1.4,windows 11 home,aaaaaaaaaaa,n/a,31.99,22.3,1.4,1,1,1,0,0
-fptshop,acer,acer aspire 7 gaming a715-76g-55t6,intel core i5-12450h,geforce rtx 2050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,n/a,50.0,50 wh,2.1,windows 11 home,aaaaaaaaaaa,n/a,36.23,23.74,1.56,3,1,1,1,0
-fptshop,asus,asus gaming vivobook k3605zu-rp296w,intel core i5-12500,geforce rtx 4050,16,ddr4,16,ssd,yes,16.0,1920x1200,n/a,300,70.0,70 whr,1.8,windows,aaaaaaaaaaa,n/a,35.86,24.91,1.6,2,1,1,0,0
-fptshop,asus,asus vivobook 15 oled a1505va-l1113w,intel core i5-13500h,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,600,50.0,50 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.68,22.76,1.56,3,1,1,0,0
-fptshop,lenovo,"lenovo thinkbook 16 gen 6 i7 1355u/16gb/512gb/16.0""",intel core i7-1355u,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,300,71.0,71 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.6,25.35,1.6,2,2,1,1,0
-fptshop,asus,asus vivobook 15 oled a1505va-ma492w,intel core i7-13700h,n/a,16,ddr4,16,ssd,yes,15.6,2880x1620,n/a,600,65.0,65 wh,1.7,windows,aaaaaaaaaaa,n/a,35.68,22.76,1.56,2,1,1,0,0
-fptshop,asus,asus zenbook 14 oled um3402ya-km826w,amd ryzen 5 7430u,n/a,16,ddr4,16,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 whrs,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.36,22.06,1.4,1,2,1,0,0
-fptshop,acer,acer swift go sfg14-41-r19z,amd ryzen 5 7530u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,60,n/a,3 cell,3,1.2,windows 11 home,aaaaaaaaaaa,n/a,32.17,21.17,1.4,2,1,1,0,0
-fptshop,apple,macbook air m2 13 inch 2022 8cpu 10gpu/16gb/256gb,apple m2,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,n/a,n/a,22 giờ,22 giờ,1.2,macos,n/a,n/a,30.41,21.5,1.36,0,2,0,0,0
-fptshop,lenovo,"lenovo ideapad slim 5 16iah8 i5 12450h/16gb/512gb/16""wuxga/win11",intel core i5-12450h,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,60,300,3 cell,3,1.89,windows 11 home,aaaaaaaaaaa,n/a,35.6,25.1,1.6,2,0,1,0,0
-fptshop,msi,msi gaming katana15 b13vfk-2099vn,intel core i7-13620h,geforce rtx 4060,32,ddr5,32,ssd,yes,15.6,1920x1080,n/a,n/a,53.5,53.5 wh,2.25,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.9,1.56,2,1,1,1,0
-fptshop,lenovo,"lenovo thinkpad e14 g5 i5 13420h/16gb/512gb/14""wuxga/win",intel core i5-13420h,n/a,16,ddr4,16,ssd,yes,14.0,1920x1200,n/a,300,47.0,47 wh,1.43,windows 11 home,aaaaaaaaaaa,n/a,31.3,21.93,1.4,2,1,1,1,0
-fptshop,lenovo,"lenovo ideapad 1 - 14alc7 r7 5700u/16gb/512gb/14.0""",amd ryzen 7 5700u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,250,42.0,42 wh,1.38,windows 11 home,aaaaaaaaaaa,n/a,32.53,21.65,1.4,1,1,1,0,0
-fptshop,apple,macbook pro 14 2023 m3 8 cpu/10 gpu/16gb/512gb,apple m3,n/a,16,hãng không công bố,16,ssd,yes,14.2,3024x1964,n/a,n/a,22 giờ,22 giờ,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,2,1,0,0
-fptshop,hp,"hp 245 g10 (a20tfpt) r5-7530u/16gb/256gb/14""",amd ryzen 5 7530u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,n/a,41 cell,41,1.36,windows 11 home,aaaaaaaaaaa,n/a,32.4,21.5,1.4,2,1,1,0,0
-fptshop,masstel,"masstel e140 celeron n4120/4gb/128gb/14""hd/win10",intel celeron n4120,n/a,4,ddr4,4,ssd,no,14.0,1366x768,60,250,37.0,37 wh,1.39,windows 10 pro,aaaaaaaaaaa,n/a,32.9,22.0,1.4,2,0,1,0,0
-fptshop,asus,asus vivobook s 14 oled s5406ma-pp124w,intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 whrs,1.3,windows 11 home,aaaaaaaaaaa,n/a,31.05,22.19,1.4,2,2,1,0,0
-fptshop,acer,acer swift lite 14 ai sfl14-51m-56hs,intel core ultra 5 125u,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,380,3 cell,3,1.27,windows 11 home,aaaaaaaaaaa,n/a,31.44,22.19,1.4,6,1,1,0,0
-fptshop,hp,"hp gaming victus 16-r0127tx i7-13700h/ai/16gb/512gb/16.1""",intel core i7-13700h,geforce rtx 4060,16,ddr5,16,ssd,yes,16.1,1920x1080,n/a,n/a,70.0,70 wh,2.33,windows 11 home,aaaaaaaaaaa,n/a,36.9,25.94,1.61,3,1,1,1,0
-fptshop,huawei,"huawei matebook d15 r7 5700u/8gb/512gb/15.6""fhd/win11",amd ryzen 7 5700u,n/a,8,ddr4,8,ssd,yes,15.6,1920x1080,60,250,56.0,56 wh,1.53,windows 11 home,aaaaaaaaaaa,n/a,35.78,16.9,1.56,0,0,1,0,0
-fptshop,gigabyte,gigabyte gaming g5 mf5-52vn353sh,intel core i5-13500h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,54.0,54 wh,2.08,windows 11 home,aaaaaaaaaaa,n/a,36.0,23.8,1.56,1,2,1,1,0
-fptshop,asus,asus vivobook s16 oled s5606ma-mx051w,intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,16.0,3201x2000,n/a,n/a,75.0,75 wh,1.5,windows 11 home,aaaaaaaaaaa,n/a,35.36,24.69,1.6,2,2,1,0,0
-fptshop,msi,msi gaming gf63 thin 12uc-1006vn,intel core i5-12450h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,250,3 cell,3,1.86,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.4,1.56,3,1,1,1,0
-fptshop,asus,asus tuf gaming fa507nvr-lp091w,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.4,25.1,1.56,1,2,0,1,0
-fptshop,asus,asus zenbook 14 oled ux3405ma-pp151w,intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 wh,1.2,windows 11 home,aaaaaaaaaaa,n/a,31.24,22.01,1.4,1,2,1,0,0
-fptshop,hp,hp envy x360 14-fc0162tu,intel core ultra 5 125u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
-fptshop,asus,asus vivobook 15 oled a1505va-ma469w,intel core i9-13900h,n/a,16,ddr4,16,ssd,yes,15.6,2880x1620,n/a,600,65.0,65 wh,1.7,windows,aaaaaaaaaaa,n/a,35.68,22.76,1.56,2,1,1,0,0
-fptshop,gigabyte,gigabyte gaming g5 mf5-h2ph353kh,intel core i7-13620h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,54.0,54 wh,2.08,windows 11 home,aaaaaaaaaaa,n/a,36.0,23.8,1.56,1,2,1,1,0
-fptshop,apple,macbook air m3 13 2024 8cpu 8gpu/8gb/256gb,apple m3,n/a,8,ddr4,8,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,aaaaaaaaaaa,n/a,30.41,21.5,1.36,0,2,0,0,0
-fptshop,asus,asus vivobook flip tn3402ya-lz188w,amd ryzen 5 7530u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1200,60,n/a,3 cell,3,1.5,windows 11 home,aaaaaaaaaaa,n/a,31.32,22.76,1.4,2,0,1,0,0
-fptshop,gigabyte,gigabyte gaming g5 mf5-h2vn353kh,intel core i7-13620h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,54.0,54 wh,2.08,windows 11 home,aaaaaaaaaaa,n/a,36.0,23.8,1.56,3,0,1,1,0
-fptshop,acer,acer aspire 3 a315-510p-34xz,n/a,n/a,8,ddr5,8,ssd,yes,15.6,1920x1080,n/a,n/a,40.0,40 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,36.29,23.75,1.56,2,1,1,0,0
-fptshop,hp,hp 15-fd1060tu,intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,41 cell,41,1.65,windows 11 home,aaaaaaaaaaa,n/a,35.98,23.6,1.56,2,1,1,0,0
-fptshop,dell,dell vostro 14 3420 (v4i5703w1),intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,250,41.0,41 whrs,1.49,windows 11 home,aaaaaaaaaaa,n/a,32.13,22.03,1.4,2,0,1,0,0
-fptshop,apple,macbook air 13 inch m1 2020 8cpu 7gpu 16gb/256gb,apple m1,n/a,16,ddr4,16,ssd,yes,13.3,2560x1600,n/a,n/a,n/a,n/a,1.29,macos,aaaaaaaaaaa,n/a,30.41,21.24,1.33,0,4,0,0,0
-fptshop,msi,msi modern 15 b12mo-628vn,intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,n/a,39.0,39 wh,1.7,windows,aaaaaaaaaaa,n/a,35.9,24.1,1.56,1,1,1,0,0
-fptshop,acer,acer aspire 3 a315-58-53s6,intel core i5-1135g,n/a,8,ddr4,8,ssd,yes,15.6,1920x1080,60,n/a,2 cell,2,1.7,windows 11 home,aaaaaaaaaaa,n/a,36.34,24.75,1.56,2,0,1,0,0
-fptshop,msi,msi gaming cyborg 14 a13udx-099vn,intel core i7-13620h,geforce rtx 3050,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,n/a,53.5,53.5 wh,1.6,windows 11 home,aaaaaaaaaaa,n/a,31.47,22.3,1.4,2,1,1,1,0
-fptshop,asus,asus vivobook s14 s5406ma-pp161w,intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 wh,1.3,windows 11 home,aaaaaaaaaaa,n/a,31.05,22.19,1.4,2,2,1,0,0
-fptshop,apple,macbook air m3 13 2024 8cpu 10gpu/16gb/512gb,apple m3,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,aaaaaaaaaaa,n/a,30.41,21.5,1.36,0,2,0,0,0
-fptshop,msi,"msi modern 14 c7m-220vn r5 7530u/8gb/512gb/14""fhd/win",amd ryzen 5 7530u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,n/a,39.3,39.3 wh,1.4,windows 11 home,aaaaaaaaaaa,n/a,31.99,22.3,1.4,1,1,1,0,0
-fptshop,lenovo,"lenovo ideapad slim 5 light 14abr8 r5 7530u/8gb/512gb/14""fhd/win",amd ryzen 5 7530u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,300,47.0,47 wh,1.17,windows 11 home,aaaaaaaaaaa,n/a,32.41,21.57,1.4,2,2,1,0,0
-fptshop,vaio,vaio fe14 i5 1235u/8gb/512gb/14',intel core i5-1235u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,n/a,10 giờ,10 giờ,1.8,windows 11 home,aaaaaaaaaaa,n/a,35.8,23.9,1.4,0,1,1,0,0
-fptshop,acer,acer aspire lite al16-51p-596h,intel core i5-1235u,n/a,8,ddr5,8,ssd,yes,16.0,1920x1200,n/a,300,n/a,n/a,1.8,windows 11 home,aaaaaaaaaaa,n/a,35.76,24.7,1.6,3,1,1,0,0
-fptshop,apple,macbook air m2 13 inch 2022 8cpu 10gpu/16gb/512gb,apple m2,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,n/a,n/a,22 giờ,22 giờ,1.2,macos,aaaaaaaaaaa,n/a,30.41,21.5,1.36,0,2,0,0,0
-fptshop,lenovo,"lenovo yoga slim 6 14irh8 i7 13700h/16gb/512gb/14""wuxga",intel core i7-13700h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,60,400,65.0,65 wh,1.35,windows 11 home,aaaaaaaaaaa,n/a,31.2,22.1,1.4,1,2,1,0,0
-fptshop,lenovo,"lenovo gaming loq 15ahp9 r7 8845hs/ai/16gb/512gb/15.6""fhd/rtx4060",amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,3,1,1,1,0
-fptshop,msi,"msi gaming thin gf63 12ve-454vn i5 12450h/16gb/512gb/15.6""",intel core i5-12450h,geforce rtx 4050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,n/a,52.4,52.4 wh,1.86,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.4,1.56,3,2,1,0,0
-fptshop,lenovo,"lenovo gaming loq 15iax9 i5 12450hx/ai/12gb/512gb/15.6""fhd/rtx4050_6gb/w11_83gs001qvn",intel core i5-12450hx,geforce rtx 4050,12,ddr5,12,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,3,1,1,1,0
-fptshop,lenovo,"lenovo gaming legion 5 16irx9 i7 14650hx/ai/32gb/1tb/16""wqxga/rtx4060",intel core i7-14650hx,geforce rtx 4060,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,350,80.0,80 whrs,2.3,windows 11 home,aaaaaaaaaaa,n/a,35.97,25.2,1.6,3,3,1,1,0
-fptshop,apple,macbook pro 16 2023 m3 pro 12 cpu/18 gpu/18gb/512gb,apple m3 pro 12-core,n/a,18,hãng không công bố,18,ssd,yes,16.2,3456x2234,120,n/a,22 giờ,22 giờ,2.14,macos,aaaaaaaaaaa,n/a,35.57,16.2,1.68,0,3,1,0,0
-fptshop,hp,hp envy x360 14-fc0089tu,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
-fptshop,hp,hp envy x360 14-fc0087tu,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
-fptshop,apple,macbook pro 14 2023 m3 pro 11 cpu/14 gpu/18gb/512gb,apple m3 pro 11-core,n/a,18,hãng không công bố,18,ssd,yes,14.2,3024x1964,120,n/a,22 giờ,22 giờ,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,3,1,0,0
-fptshop,gigabyte,gigabyte gaming g5 kf-e3vn313sh,intel core i5-12500h,geforce rtx 4060,16,ddr4,16,ssd,yes,15.6,1920x1080,144,n/a,54.0,54 wh,1.9,windows 11 home,aaaaaaaaaaa,n/a,36.0,23.8,1.56,3,0,1,0,0
-fptshop,lenovo,"lenovo ideapad slim 5 15iru9 core 5_120u/32gb/512g/15.3""wuxga/win11",intel core 5 120u,n/a,32,ddr5,32,ssd,yes,15.3,1920x1200,n/a,n/a,57.0,57 wh,1.79,windows 11 home,aaaaaaaaaaa,n/a,34.35,23.82,1.53,2,2,1,0,0
-fptshop,asus,asus tuf gaming fx507vv-lp304w,intel core i7-13620h,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.97,23.25,1.56,2,2,0,1,0
-fptshop,msi,msi gaming thin 15 b12ucx-1419vn,intel core i5-12450h,geforce rtx 2050,8,ddr4,8,ssd,yes,15.6,1920x1080,n/a,250,52.4,52.4 wh,1.86,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.4,1.56,3,1,1,1,0
-fptshop,asus,asus zenbook 14 oled ux3405ma-pp152w,intel core ultra 7 155h,n/a,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 wh,1.2,windows 11 home,aaaaaaaaaaa,n/a,31.24,22.01,1.4,1,0,0,0,0
-fptshop,huawei,"huawei matebook d14 be i3 1215u/8gb/256gb/14""fhd+/win11",intel core i3-1215u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,300,56.0,56 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.45,22.78,1.4,0,0,1,0,0
-fptshop,hp,hp envy x360 14-fc0158tu,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
-fptshop,asus,asus tuf gaming f15 fx507vu-lp197w,intel core i7-13620h,geforce rtx 4050,32,ddr5,32,ssd,yes,15.6,1920x1200,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.4,25.1,1.56,2,2,0,1,0
-fptshop,lenovo,"lenovo thinkpad e14 gen 5 i7-1355u/16gb/512gb/14.0""wuxga/win",intel core i7-1355u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,300,3 cell,3,1.59,windows 11 home,aaaaaaaaaaa,n/a,32.4,22.0,1.4,2,1,1,1,0
-fptshop,asus,asus tuf gaming fa507nu-lp045w,amd ryzen 7 7735hs,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,144,n/a,90.0,90 wh,2.2,windows,aaaaaaaaaaa,n/a,35.4,25.1,1.56,2,2,0,1,0
-fptshop,lenovo,"lenovo gaming legion pro 5 16irx9 i9-14900hx/ai/32gb/1tb/16""",intel core i9-14900hx,geforce rtx 4070,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,500,800.0,800 wh,2.5,windows 11 home,aaaaaaaaaaa,n/a,36.34,26.95,1.6,4,2,1,1,0
-fptshop,apple,macbook air m3 15 2024 8cpu 10gpu/8gb/512gb,apple m3,n/a,8,ddr4,8,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,aaaaaaaaaaa,n/a,34.04,23.76,1.53,0,2,0,0,0
-fptshop,lenovo,"lenovo thinkbook 16 g6 abp r5-7530u/16gb/512gb/16""",amd ryzen 5 7530u,n/a,16,ddr4,16,ssd,yes,16.0,2560x1600,n/a,n/a,71.0,71 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.6,25.35,1.6,4,0,1,1,0
-fptshop,apple,macbook air 13 inch m2 2022 8cpu 10gpu 8gb/512gb,apple m2,n/a,8,ddr4,8,ssd,yes,13.6,2560x1644,60,500,18 giờ,18 giờ,1.24,macos,aaaaaaaaaaa,n/a,30.41,21.5,1.36,0,2,0,0,0
-fptshop,lenovo,"lenovo gaming loq 15arp9 r7 7435hs/ai/24gb/512gb/15.6""fhd/rtx4060",amd ryzen 7 7435hs,geforce rtx 4060,24,ddr5,24,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,3,1,1,1,0
-fptshop,lenovo,"lenovo ideapad slim 5 14imh9 u7-155h/ai/32gb/1tb/14""wuxga/oled/win11",intel core ultra 7 155h,n/a,32,ddr5,32,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.48,windows 11 home,aaaaaaaaaaa,n/a,31.2,22.1,1.4,2,2,1,0,0
-fptshop,hp,"hp probook 440 g10 i5-1340p/16gb/512gb/14""fhd",intel core i5-1340p,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,n/a,51.0,51 whrs,1.38,windows 11 home,aaaaaaaaaaa,n/a,32.19,21.39,1.4,2,2,1,1,1
-fptshop,asus,asus tuf gaming fx507vu-lp315w,intel core i7-13620h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.4,25.1,1.56,2,2,0,1,0
-fptshop,apple,macbook pro 14 2023 m3 pro 12 cpu/18 gpu/18gb/1tb,apple m3 pro 12-core,n/a,18,hãng không công bố,18,ssd,yes,14.2,3024x1964,120,n/a,22 giờ,22 giờ,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,3,1,0,0
-fptshop,lenovo,"lenovo thinkbook 16 g6 irl i5-13420h/16gb/512gb/16.0""wuxga/win",intel core i5-13420h,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,300,71.0,71 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.6,25.35,1.6,2,2,0,0,0
-fptshop,lenovo,"lenovo thinkpad x1 carbon gen 12 u7-155h/ai/16gb/512gb/14""wuxga/win11pro",intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.09,windows 11 pro,aaaaaaaaaaa,n/a,31.28,21.48,1.4,2,2,1,0,0
-fptshop,hp,"hp gaming victus 16-s0078ax r5-7640hs/16gb/512gb/16.1""fhd/nvidia",amd ryzen 5 7640hs,n/a,16,ddr5,16,ssd,yes,16.0,1920x1080,144,n/a,4 cell,4,2.31,windows 11 home,aaaaaaaaaaa,n/a,36.9,25.94,1.6,0,0,1,0,0
-fptshop,lenovo,"lenovo gaming legion 9 16irx8 i9 13980hx/ai/64gb/2tb/16""3.2k",intel core i9-13980hx,geforce rtx 4090,64,ddr5,64,ssd,yes,16.0,3200x2000,n/a,1200,99.9,99.9 wh,2.56,windows 11 home,aaaaaaaaaaa,n/a,35.77,27.77,1.6,2,2,1,1,0
-fptshop,msi,msi gaming raider ge68 hx 14vig-496vn,intel core i9-14900hx,geforce rtx 4090,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,400,99.9,99.9 whrs,2.75,windows 11 home,aaaaaaaaaaa,n/a,35.7,27.85,1.6,2,3,1,1,0
-fptshop,hp,"hp probook 440 g10 i7-1360p/16gb/512gb/14""",intel core i7-1360p,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,n/a,51.0,51 whrs,1.38,windows 11 home,aaaaaaaaaaa,n/a,32.19,21.39,1.4,2,2,1,1,1
-fptshop,msi,"msi gaming katana a15 ai b8vf-419vn r7-8845hs/16gb/512gb/15.6""fhd/rtx4060_8gb/win11_balo",amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,53.5,53.5 wh,2.25,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.9,1.56,2,1,1,1,0
-fptshop,msi,"msi gaming gp68hx 12vh-070vn i9-12900hx/ai/16gb/1tb/16""",intel core i9-12900hx,geforce rtx 4080,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,300,90.0,90 whrs,2.67,windows 11 home,aaaaaaaaaaa,n/a,35.7,28.4,1.6,2,3,1,1,0
-fptshop,msi,msi gaming katana 15 b13vgk-1211vn,intel core i7-13620h,geforce rtx 4070,16,ddr5,16,ssd,yes,15.6,1920x1080,144,250,53.5,53.5 wh,2.29,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.9,1.56,2,1,1,0,0
-fptshop,lenovo,"lenovo gaming legion pro 5 16irx9 i9 14900hx/ai/32gb/1tb/16""wqxga/rtx4060",intel core i9-14900hx,geforce rtx 4060,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,500,80.0,80 wh,2.55,windows 11 home,aaaaaaaaaaa,n/a,36.34,26.04,1.6,4,2,1,1,0
-fptshop,acer,acer swift edge sfa16-41-r3l6,amd ryzen 7 6800h,n/a,16,ddr5,16,ssd,yes,16.0,3840x2400,60,n/a,54.0,54 wh,1.1,windows 11 home,aaaaaaaaaaa,n/a,35.67,24.23,1.6,0,2,1,0,0
-fptshop,msi,msi prestige 14 ai studio c1veg-056vn,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,400,90.0,90 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,31.34,24.65,1.4,1,2,0,0,0
-fptshop,asus,asus tuf gaming fx506hc-hn144w,intel core i5-11400h,geforce rtx 3050,8,ddr4,8,ssd,yes,15.6,1920x1080,144,n/a,48.0,48 wh,2.3,windows,aaaaaaaaaaa,n/a,35.9,25.6,1.56,0,1,1,0,0
-fptshop,dell,"dell latitude l3540 i5 1235u/16gb/512gb/15.6""fhd/win11",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,n/a,n/a,1.86,windows 11 home,aaaaaaaaaaa,n/a,35.9,23.97,1.56,3,0,1,0,0
-fptshop,apple,macbook air m3 15 2024 8cpu 10gpu/8gb/256gb,apple m3,n/a,8,ddr4,8,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,aaaaaaaaaaa,n/a,34.04,23.76,1.53,0,2,0,0,0
-fptshop,asus,asus tuf gaming fa507nv-lp046w,amd ryzen 7 7735hs,geforce rtx 4060,8,ddr5,8,ssd,yes,15.6,1920x1080,144,250,90.0,90 wh,2.2,windows,aaaaaaaaaaa,n/a,35.4,25.1,1.56,3,1,0,0,0
-fptshop,msi,msi gaming gf63 thin 11uc-1228vn,intel core i7-11800h,geforce rtx 3050,8,ddr4,8,ssd,yes,15.6,1920x1080,144,250,52.4,52.4 wh,0.00186,windows 11 home,aaaaaaaaaaa,n/a,35.9,24.5,1.56,3,1,1,0,0
-fptshop,apple,macbook air 13 inch m1 2020 8cpu 7gpu 16gb/512gb,apple m1,n/a,16,ddr4,16,ssd,yes,13.3,2560x1600,n/a,n/a,18 giờ,18 giờ,1.29,macos,aaaaaaaaaaa,n/a,30.41,21.24,1.33,2,4,0,0,0
-fptshop,acer,acer gaming predator helios neo 14 phn14-51-99y8,intel core ultra 9 185h,geforce rtx 4060,32,ddr5,32,ssd,yes,14.5,3072x1920,n/a,400,n/a,n/a,1.9,windows 11 home,aaaaaaaaaaa,n/a,32.41,25.54,1.45,3,2,1,0,0
-fptshop,lenovo,"lenovo gaming loq - 15iax9 i5 12450hx/ai/12gb/512gb/15.6""fhd/rtx2050",intel core i5-12450hx,geforce rtx 2050,12,ddr5,12,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,aaaaaaaaaaa,n/a,35.99,23.9,1.56,3,1,1,1,0
-fptshop,asus,asus vivobook s 14 oled s5406ma-pp198ws,intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 wh,1.3,windows,aaaaaaaaaaa,n/a,31.05,22.19,1.4,2,2,1,0,0
-fptshop,hp,hp spectre x360 14-eu0050tu,intel core ultra 7 155h,n/a,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,n/a,4 cell,4,1.465,windows 11 home,aaaaaaaaaaa,n/a,31.37,22.04,1.4,1,2,0,0,0
-fptshop,asus,asus zenbook 14 oled ux3405ma-pp588w,intel ultra 5 meteor lake 125h,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 whrs,1.2,windows 11 home,aaaaaaaaaaa,n/a,31.24,22.01,1.4,1,2,1,0,0
-fptshop,asus,asus tuf gaming a16 advantage edition fa617nsr-rl100w,amd ryzen 7 7435hs,radeon rx 7600s,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,300,90.0,90 whrs,2.2,windows 11 home,aaaaaaaaaaa,n/a,35.5,25.2,1.6,2,2,0,1,0
-fptshop,msi,msi gaming sword 16 hx b14vgkg-038vn,intel core i7-14700hx,geforce rtx 4070,16,ddr5,16,ssd,yes,16.0,2560x1600,n/a,400,65.0,65 wh,2.3,windows 11 home,aaaaaaaaaaa,n/a,35.9,27.7,1.6,3,1,1,1,0
-fptshop,asus,asus vivobook s 14 oled m5406wa-pp071ws,amd ryzen ai 9 hx 370,n/a,32,ddr5,32,ssd,yes,14.0,2880x1620,n/a,400,75.0,75 whrs,1.3,windows 11 home,aaaaaaaaaaa,n/a,31.05,22.19,1.4,2,2,1,0,0
-fptshop,dell,"dell inspiron n5440 core5 120u/16gb/512gb/14.0""fhd/win11/office",n/a,n/a,16,ddr5,16,ssd,yes,14.0,1920x1080,n/a,250,4 cell,4,1.67,windows 11 home,aaaaaaaaaaa,n/a,31.4,22.62,1.4,2,2,1,0,1
-fptshop,lenovo,"lenovo thinkbook 16 g6 irl i5-13500h/16gb/512gb/16.0""wuxga/win11",intel core i5-13500h,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,300,4 cell,4,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.6,25.35,1.6,2,2,1,1,0
-fptshop,hp,hp 15s-fq5144tu,intel core i7-1255u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,250,41.0,41 wh,0.0016899999999999999,windows 11 home,aaaaaaaaaaa,n/a,35.85,24.2,1.56,1,0,0,0,0
-fptshop,msi,msi gaming raider ge68 hx 14vhg-646vn,intel core i9-14900hx,geforce rtx 4080,32,ddr5,32,ssd,yes,16.0,3840x2400,n/a,n/a,99.0,99 wh,2.75,windows 11 home,aaaaaaaaaaa,n/a,35.7,27.85,1.6,2,3,1,1,0
-fptshop,msi,"msi gaming vector gp77 13vg-043vn i7 13700h/ai/16gb/512gb/17.3""qhd/rtx4070",intel core i7-13700h,geforce rtx 4070,16,ddr5,16,ssd,yes,17.3,2560x1440,240,n/a,4 cell,4,2.8,windows 11 home,aaaaaaaaaaa,n/a,39.7,28.4,1.73,3,1,1,0,0
-fptshop,asus,asus gaming rog zephyrus g16 gu603vu-n4019w,intel core i7-13620h,geforce rtx 4050,16,ddr4,16,ssd,yes,16.0,2560x1600,n/a,n/a,90.0,90 whrs,2.0,windows 11 home,aaaaaaaaaaa,n/a,35.5,24.3,1.6,2,2,0,1,0
-fptshop,msi,msi gaming creator m16 b13ve-830vn,intel core i7-13700h,geforce rtx 4050,16,ddr5,16,ssd,yes,16.0,1920x1200,144,n/a,53.3,53.3 wh,2.26,windows 11 home,aaaaaaaaaaa,n/a,35.9,25.9,1.6,0,0,0,0,0
-fptshop,msi,"msi gaming raider ge68hx 13vf-050vn i7 13700hx/ai/16gb/2tb/16""qhd/nvidia",intel core i7-13700hx,geforce rtx 4060,16,ddr5,16,ssd,yes,16.0,2560x1600,240,n/a,99.0,99 wh,2.7,windows 11 home,aaaaaaaaaaa,n/a,35.7,28.4,1.6,0,0,1,0,0
-fptshop,dell,"dell xps 14 9440 u7 155h/ai/64gb/1tb/14.5""3.2k",intel core ultra 7 155h,n/a,64,đang cập nhật,64,ssd,yes,14.5,3200x2000,n/a,500,n/a,n/a,1.8,windows 11 home,aaaaaaaaaaa,n/a,32.0,21.6,1.45,0,4,0,0,0
-fptshop,msi,"msi gaming vector gp78hx 13vi-476vn i9-13980hx/ai/32gb/2tb/17""qhd+/rtx4090_16gb/win11_balo",intel core i9-13980hx,geforce rtx 4090,32,ddr5,32,ssd,yes,17.0,2560x1600,n/a,400,90.0,90 whrs,3.0,windows 11 home,aaaaaaaaaaa,n/a,38.03,29.8,1.7,2,3,1,1,0
-fptshop,dell,"dell inspiron n3530 i7 1355u/16gb/512gb/15.6""fhd/win11/office",intel core i7-1355u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,3 cell,3,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.85,23.56,1.56,1,1,1,0,0
-fptshop,apple,macbook pro 16 2023 m3 max 16 cpu/40 gpu/48gb/1tb,apple m3 max 16-core,n/a,48,hãng không công bố,48,ssd,yes,16.2,3456x2234,120,n/a,22 giờ,22 giờ,2.16,macos,aaaaaaaaaaa,n/a,35.57,16.2,1.68,0,3,1,0,0
-fptshop,apple,macbook pro 14 2023 m3 max 14 cpu/30 gpu/36gb/1tb,apple m3 max 14-core,n/a,36,hãng không công bố,36,ssd,yes,14.2,3024x1964,120,n/a,22 giờ,22 giờ,1.62,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,3,1,0,0
-fptshop,apple,macbook pro 16 2023 m3 pro 12 cpu/18 gpu/36gb/512gb,apple m3 pro 12-core,n/a,36,hãng không công bố,36,ssd,yes,16.2,3456x2234,120,n/a,22 giờ,22 giờ,2.14,macos,aaaaaaaaaaa,n/a,35.57,16.2,1.68,0,3,1,0,0
-fptshop,lenovo,"lenovo yoga 9 2in1 14imh9 ultra 7 155h/ai/16gb/1tb/14""2.8k_touch/bút/win11_xanh",intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,400,75.0,75 wh,1.32,windows 11 home,aaaaaaaaaaa,n/a,31.6,22.0,1.4,1,3,0,0,0
-fptshop,apple,macbook pro 14 m4 pro 2024 12cpu/16gpu/24gb/512gb,apple m4 pro 14-core,n/a,24,hãng không công bố,24,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,0,0,0,0
-fptshop,apple,macbook pro 16 m4 pro 2024 14cpu/20gpu/24gb/512gb,apple m4 pro 14-core,n/a,24,hãng không công bố,24,ssd,yes,16.2,3456x2234,n/a,n/a,22 giờ,22 giờ,2.14,macos,aaaaaaaaaaa,n/a,35.57,16.2,1.68,0,0,0,0,0
-fptshop,apple,macbook pro 14 m4 2024 10cpu/10gpu/16gb/1tb,apple m4,n/a,16,hãng không công bố,16,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,0,0,0,0
-fptshop,apple,macbook pro 14 m4 2024 10cpu/10gpu/16gb/512b,apple m4,n/a,16,hãng không công bố,16,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,0,0,0,0
-fptshop,apple,macbook pro 14 m4 2024 10cpu/10gpu/24gb/1tb,apple m4,n/a,24,hãng không công bố,24,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,0,0,0,0
-fptshop,apple,macbook pro 14 m4 pro 2024 14cpu/20gpu/24gb/1tb,apple m4 pro 14-core,n/a,24,hãng không công bố,24,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,aaaaaaaaaaa,n/a,31.26,14.2,1.55,0,0,0,0,0
-fptshop,apple,macbook pro 16 m4 max 2024 14cpu/32gpu/36gb/1tb,apple m4 max 14-core,n/a,36,hãng không công bố,36,ssd,yes,16.2,3456x2234,n/a,n/a,22 giờ,22 giờ,2.14,macos,aaaaaaaaaaa,n/a,35.57,16.2,1.68,0,0,0,0,0
-fptshop,apple,macbook air 13 m3 2024 8cpu/10gpu/24gb/512gb,apple m3,n/a,24,ddr4,24,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,aaaaaaaaaaa,n/a,30.41,21.5,1.36,0,2,0,0,0
-fptshop,apple,macbook air 15 m3 2024 8cpu/10gpu/16gb/256gb,apple m3,n/a,16,ddr4,16,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,aaaaaaaaaaa,n/a,34.04,23.76,1.53,0,2,0,0,0
-fptshop,apple,macbook air 13 m3 2024 8cpu/8gpu/16gb/256gb,apple m3,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,aaaaaaaaaaa,n/a,30.41,21.5,1.36,0,2,0,0,0
-fptshop,msi,msi modern 15 f13mg-082vn,intel core i5-1335u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,3 cell,3,1.7,windows 11 home,aaaaaaaaaaa,n/a,35.89,23.59,1.56,3,1,1,1,0
-fptshop,lenovo,"lenovo gaming legion pro 7 16irx9h i9 14900hx/ai/32gb/1tb/16""wqxga/rtx4090",intel core i9-14900hx,geforce rtx 4090,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,500,99.9,99.9 wh,2.62,windows 11 home,aaaaaaaaaaa,n/a,36.35,25.9,1.6,4,2,1,1,0
-fptshop,lenovo,"lenovo ideapad 1 15alc7 r5 5625u/16gb/512gb/15.6""",amd ryzen 5 5625u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,42.0,42 wh,1.61,windows 11 home,aaaaaaaaaaa,n/a,36.02,23.6,1.56,2,0,1,0,0
-fptshop,hp,hp envy x360 14-fc0161tu,intel core ultra 5 125u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
-fptshop,hp,hp envy x360 14-fc0156tu,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
-fptshop,lenovo,"lenovo ideapad slim 5 - 16imh9 ultra7 155h/ai/32gb/512gb/16""2k_oled/arc",intel core ultra 7 155h,n/a,32,ddr5,32,ssd,yes,16.0,2048x1280,n/a,400,57.0,57 wh,1.82,windows 11 home,aaaaaaaaaaa,n/a,35.6,25.1,1.6,2,2,1,0,0
-fptshop,lenovo,"lenovo ideapad slim 5 - 16imh9 ultra5 125h/ai/16gb/512gb/16""2k_oled/arc",intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,16.0,2048x1280,n/a,400,57.0,57 wh,1.82,windows 11 home,aaaaaaaaaaa,n/a,35.6,25.1,1.6,2,2,1,0,0
-fptshop,lenovo,"lenovo ideapad slim 5 - 15iru9 core 5_120u/16gb/512gb/15.3""wuxga/win",intel core 5 120u,n/a,16,ddr5,16,ssd,yes,15.3,1920x1200,n/a,300,57.0,57 wh,1.79,windows 11 home,aaaaaaaaaaa,n/a,34.35,23.82,1.53,2,2,1,0,0
-fptshop,msi,msi gaming stealth 14 ai studio a1vfg-050vn,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,n/a,72.0,72 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,31.56,21.8,1.4,1,2,1,0,0
-fptshop,msi,msi gaming stealth 16 mercedesamg,intel core i9-13900h,geforce rtx 4070,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,400,n/a,n/a,3.3,windows 11 home,aaaaaaaaaaa,n/a,35.58,25.97,1.6,1,2,1,1,0
-fptshop,msi,"msi gaming raider ge68 hx 13vg-048vn i7-13700hx/ai/32gb/2tb/16""qhd+/rtx4070_8gb/win11",intel core i7-13700hx,geforce rtx 4070,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,400,99.9,99.9 whrs,2.7,windows 11 home,aaaaaaaaaaa,n/a,35.7,28.4,1.6,2,3,1,1,0
-fptshop,apple,macbook pro 16 m4 max 2024 16cpu/40gpu/48gb/1tb,apple m4 max 16-core,n/a,48,hãng không công bố,48,ssd,yes,16.2,3456x2234,n/a,n/a,22 giờ,22 giờ,2.14,macos,aaaaaaaaaaa,n/a,35.57,16.2,1.68,0,0,0,0,0
-fptshop,lenovo,"lenovo gaming legion 5 15irx9 i7 13650hx/ai/24gb/512gb/15.6""fhd/rtx4060",intel core i7-13650hx,geforce rtx 4060,24,ddr5,24,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.32,windows 11 home,aaaaaaaaaaa,n/a,35.88,24.65,1.56,3,1,1,1,0
-fptshop,msi,msi prestige 14 ai studio c1udxg-058vn,intel core ultra 7 155h,geforce rtx 3050,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,n/a,90.0,90 wh,1.7,windows 11 home,aaaaaaaaaaa,n/a,31.34,24.65,1.4,1,2,0,0,0
-fptshop,hp,hp envy x360 14-fa0092au,amd ryzen 7 8840hs,n/a,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,aaaaaaaaaaa,n/a,31.33,21.89,1.4,2,2,1,0,1
-fptshop,lenovo,"lenovo ideapad slim 5 14imh9 ultra5 125h/ai/16gb/1tb/14""wuxga/oled/win11",intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.48,windows 11 home,aaaaaaaaaaa,n/a,31.2,22.1,1.4,2,2,1,0,0
+fptshop,hp,hp 14s-dq5121tu,intel core i3-1215u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,n/a,3 cell,3,1.36,windows 11 home,12,n/a,32.4,22.5,1.4,0,0,1,0,0
+fptshop,dell,"dell latitude l3540 i5 1235u/16gb/512gb/15.6""",intel core i5-1235u,n/a,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,n/a,n/a,1.81,windows 11 home,12,n/a,35.9,23.97,1.56,0,0,1,1,0
+fptshop,apple,macbook air 13 inch m1 2020 8cpu 7gpu 8gb/256gb,apple m1,n/a,8,ddr4,8,ssd,yes,13.3,2560x1600,n/a,n/a,n/a,n/a,1.29,macos,12,n/a,30.41,21.24,1.33,0,0,0,0,0
+fptshop,acer,acer nitro 5 tiger gaming an515-58-773y,intel core i7-12700h,geforce rtx 3050 ti,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,4 cell,4,2.5,windows 11 home,12,n/a,36.04,27.11,1.56,0,0,1,1,0
+fptshop,hp,"hp gaming victus 16-s0173ax r5-7640hs/16gb/512gb/16""",amd ryzen 5 7640hs,geforce rtx 3050,16,ddr5,16,ssd,yes,16.1,1920x1080,n/a,n/a,70.0,70 whrs,2.33,windows 11 home,12,n/a,36.9,25.94,1.61,0,0,1,1,1
+fptshop,acer,acer aspire lite al16-51p-55n7,intel core i5-1235u,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,300,76.0,76 whr,1.7,windows 11 home,12,n/a,35.76,24.7,1.6,0,0,1,0,0
+fptshop,dell,"dell inspiron n3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,3 cell,3,1.9,windows 11 home,12,n/a,35.85,23.56,1.56,0,0,1,1,1
+fptshop,hp,hp 15-fd0235tu,intel core i5-1334u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,41 wh,1.59,windows 11 home,12,n/a,35.98,23.6,1.56,0,0,0,0,0
+fptshop,asus,asus vivobook 14 oled a1405za-km264w,intel core i5-12500h,n/a,16,ddr4,16,ssd,yes,14.0,2880x1800,n/a,600,50.0,50 wh,1.6,windows,24,n/a,31.71,22.2,1.4,0,0,1,0,0
+fptshop,msi,msi gaming thin 15 b13ucx-2080vn,intel core i5-13420h,geforce rtx 2050,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,52.4,52.4 wh,1.86,windows 11 home,24,n/a,35.9,25.4,1.56,0,0,1,1,0
+fptshop,hp,hp pavilion 15-eg3111tu,intel core i5-1335u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,3 cell,3,1.68,windows 11 home,12,n/a,36.02,23.4,1.56,0,0,1,0,0
+fptshop,apple,macbook air 13 inch m2 2022 8cpu 8gpu 8gb/256gb,apple m2,n/a,8,ddr4,8,ssd,yes,13.6,2560x1644,60,500,18 giờ,18 giờ,1.24,macos,12,n/a,30.41,21.5,1.36,0,0,0,0,0
+fptshop,hp,hp pavilion 15-eg3112tu,intel core i7-1335u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,3 cell,3,1.68,windows 11 home,12,n/a,36.02,23.4,1.56,0,0,1,0,0
+fptshop,asus,asus tuf gaming fx507zc4-hn095w,intel core i5-12500h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,250,56.0,56 wh,2.2,windows 11 home,24,n/a,35.4,25.1,1.56,0,0,1,0,0
+fptshop,lenovo,"lenovo gaming loq - 15iax9 i5 12450hx/ai/12gb/512gb/15.6""fhd/rtx3050",intel core i5-12450hx,geforce rtx 3050,12,ddr5,12,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,24,n/a,35.99,23.9,1.56,0,0,1,1,0
+fptshop,asus,asus tuf gaming fa507nur-lp101w,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,24,n/a,35.97,23.25,1.56,0,0,0,1,0
+fptshop,hp,hp 14s-em0086au,amd ryzen 5 7520u,n/a,16,ddr5,16,ssd,yes,14.0,1920x1080,60,250,3 cell,3,1.4,windows 11 home,12,n/a,32.37,21.5,1.4,0,0,1,0,0
+fptshop,dell,"dell inspiron n3530 i5 1334u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1334u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,3 cell,3,1.66,windows 11 home,12,n/a,35.85,23.56,1.56,0,0,1,1,1
+fptshop,msi,"msi gaming thin a15 b7uc-261vn r5 7535hs/16gb/512gb/15.6""",amd ryzen 5 7535hs,geforce rtx 3050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,52.4,52.4 wh,1.86,windows 11 home,24,n/a,35.9,25.4,1.56,0,0,1,1,0
+fptshop,acer,acer nitro 5 tiger gaming an515-58-5193,intel core i5-12450h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1200,n/a,250,4 cell,4,2.5,windows 11 home,12,n/a,36.04,27.11,1.56,0,0,1,1,0
+fptshop,acer,acer aspire 7 gaming a715-76g-73fm,intel core i7-12650h,geforce rtx 2050,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,n/a,n/a,2.1,windows 11 home,12,n/a,36.23,23.74,1.56,0,0,1,1,0
+fptshop,lenovo,"lenovo ideapad 3 14iah8 i5 12450h/16gb/512gb/14""fhd/win11",intel core i5-12450h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1080,60,300,47.0,47 wh,1.37,windows 11 home,24,n/a,32.43,21.38,1.4,0,0,1,0,0
+fptshop,msi,msi gaming katana 15 b13udxk-2213vn,intel core i5-13500h,geforce rtx 3050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,53.5,53.5 whr,2.3,windows 11 home,24,n/a,35.9,25.9,1.56,0,0,1,1,0
+fptshop,asus,asus tuf gaming fa506nfr-hn006w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,48.0,48 wh,2.3,windows,24,n/a,35.9,25.6,1.56,0,0,0,1,0
+fptshop,asus,asus vivobook e1404fa-nk186w,amd ryzen 5 7520u,n/a,16,ddr5,16,ssd,yes,14.0,1920x1080,60,250,42.0,42 wh,1.3,windows 11 home,24,n/a,32.45,21.39,1.4,0,0,1,0,0
+fptshop,acer,acer aspire 3 a315-44p-r5qg,amd ryzen 7 5700u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,3 cell,3,1.7,windows 11 home,12,n/a,36.29,24.13,1.56,0,0,0,1,0
+fptshop,acer,acer aspire go ag15-31p-32u6,n/a,n/a,8,ddr5,8,ssd,yes,15.6,1920x1080,n/a,n/a,57.0,57 wh,1.75,windows 11 home,12,n/a,36.29,23.97,1.56,0,0,1,0,0
+fptshop,asus,asus vivobook x1504za-nj1039w,intel core i7-1255u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,42.0,42 whrs,1.7,windows 11 home,24,n/a,35.97,23.25,1.56,0,0,1,0,0
+fptshop,hp,hp 15s-fq5231tu,intel core i3-1215u,n/a,8,ddr4,8,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,41 wh,1.69,windows 11 home,12,n/a,35.85,24.2,1.56,0,0,1,0,0
+fptshop,msi,msi gaming thin15 b13uc-2044vn,intel core i7-13620h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1200,n/a,n/a,52.4,52.4 wh,1.86,windows 11 home,24,n/a,35.9,25.4,1.56,0,0,1,1,0
+fptshop,msi,msi gaming thin a15 b7ucx-240vn,amd ryzen 5 7535hs,geforce rtx 2050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,52.4,52.4 wh,1.86,windows 11 home,24,n/a,35.9,25.4,1.56,0,0,1,1,0
+fptshop,acer,acer nitro 5 tiger gaming an515-58-52sp,intel core i5-12500h,geforce rtx 3050,8,ddr4,8,ssd,yes,15.6,1920x1080,144,n/a,4 cell,4,2.5,windows 11 home,12,n/a,36.04,27.11,1.56,0,0,1,0,0
+fptshop,dell,"dell inspiron 14 n5440 i5 1334u/16gb/512gb/14""fhd+/win11/office",intel core i5-1334u,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,250,3 cell,3,1.54,windows 11 home,12,n/a,31.4,22.62,1.4,0,0,1,0,1
+fptshop,acer,acer nitro 16 phoenix gaming an16-41-r50z,amd ryzen 5 7640hs,geforce rtx 4050,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,400,4 cell,4,2.7,windows 11 home,12,n/a,36.01,27.99,1.6,0,0,1,1,0
+fptshop,asus,asus vivobook x1404za-nk387w,intel core i3-1215u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,n/a,42.0,42 wh,1.4,windows 11 home,24,n/a,32.49,21.39,1.4,0,0,1,0,0
+fptshop,hp,hp 14s-em0078au,amd ryzen 5 7520u,n/a,8,ddr5,8,ssd,yes,14.0,1920x1080,60,250,3 cell,3,1.4,windows 11 home,12,n/a,32.37,21.5,1.4,0,0,1,0,0
+fptshop,asus,asus gaming vivobook k3605zc-rp564w,intel core i5-12500,geforce rtx 3050,16,ddr4,16,ssd,yes,16.0,1920x1200,n/a,300,50.0,50 whr,1.8,windows,24,n/a,35.86,24.91,1.6,0,0,1,0,0
+fptshop,asus,asus gaming vivobook k3605zf-rp634w,intel core i5-12500h,geforce rtx 2050,16,ddr4,16,ssd,yes,16.0,1920x1200,n/a,n/a,50.0,50 whr,1.8,windows 11 home,24,n/a,35.86,24.91,1.6,0,0,1,0,0
+fptshop,dell,"dell vostro v3520 i5-1235u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1200,n/a,250,n/a,n/a,1.9,windows 11 home,n/a,n/a,35.85,23.49,1.56,0,0,1,0,1
+fptshop,dell,"dell inspiron n3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1200,n/a,n/a,4 cell,4,1.66,windows 11 home,12,n/a,18.99,16.96,1.56,0,0,1,0,0
+fptshop,msi,"msi modern 14 c7m-221vn r7 7730u/8gb/512gb/14""",amd ryzen 7 7730u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,n/a,39.3,39.3 wh,1.4,windows 11 home,24,n/a,31.99,22.3,1.4,0,0,1,0,0
+fptshop,acer,acer aspire 7 gaming a715-76g-5806,intel core i5-12450h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,n/a,50 giờ,50 giờ,2.1,windows 11 home,12,n/a,36.23,23.74,1.56,0,0,1,0,0
+fptshop,dell,"dell vostro v3430 i5 1335u/16gb/512gb/14""fhd/nvidia",intel core i5-1335u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,250,3 cell,3,1.49,windows 11 home,12,n/a,32.37,22.03,1.4,0,0,1,1,1
+fptshop,asus,asus vivobook 16 x1605za-mb193w,intel core i3-1215u,n/a,8,ddr4,8,ssd,yes,16.0,1920x1200,60,n/a,3 cell,3,1.68,windows 11 home,24,n/a,35.87,24.95,1.6,0,0,1,0,0
+fptshop,acer,acer aspire 5 a515-58m-56yx,intel core i5-13420h,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,n/a,n/a,2.87,windows 11 home,12,n/a,50.5,31.6,1.56,0,0,1,0,0
+fptshop,acer,acer nitro v gaming anv15-51-53ne,intel core i5-13420h,geforce rtx 2050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,n/a,n/a,2.1,windows 11 home,12,n/a,36.23,23.99,1.56,0,0,1,1,0
+fptshop,msi,msi gaming cyborg 15 a12uc-621vn,intel core i5-12450h,geforce rtx 3050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,53.5,53.5 whr,1.9,windows 11 home,24,n/a,35.94,22.9,1.56,0,0,1,1,0
+fptshop,lenovo,"lenovo gaming loq 15iax9 i5 12450hx/ai/24gb/512gb/15.6""fhd/rtx2050",intel core i5-12450hx,geforce rtx 2050,24,ddr5,24,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,24,n/a,35.99,23.9,1.56,0,0,1,1,0
+fptshop,asus,asus gaming vivobook k3605zu-rp296w,intel core i5-12500,geforce rtx 4050,16,ddr4,16,ssd,yes,16.0,1920x1200,n/a,300,70.0,70 whr,1.8,windows,24,n/a,35.86,24.91,1.6,0,0,1,0,0
+fptshop,asus,asus vivobook 15 oled a1505va-l1113w,intel core i5-13500h,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,600,50.0,50 wh,1.7,windows 11 home,24,n/a,35.68,22.76,1.56,0,0,1,0,0
+fptshop,asus,asus vivobook 15 oled a1505va-ma492w,intel core i7-13700h,n/a,16,ddr4,16,ssd,yes,15.6,2880x1620,n/a,600,65.0,65 wh,1.7,windows,24,n/a,35.68,22.76,1.56,0,0,1,0,0
+fptshop,asus,asus zenbook 14 oled um3402ya-km826w,amd ryzen 5 7430u,n/a,16,ddr4,16,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 whrs,1.39,windows 11 home,24,n/a,31.36,22.06,1.4,0,0,1,0,0
+fptshop,acer,acer swift go sfg14-41-r19z,amd ryzen 5 7530u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,60,n/a,3 cell,3,1.2,windows 11 home,12,n/a,32.17,21.17,1.4,0,0,1,0,0
+fptshop,asus,asus vivobook 15 oled a1505va-ma466w,intel core i5-13500h,n/a,16,ddr4,16,ssd,yes,15.6,2880x1620,n/a,600,50.0,50 whrs,1.7,windows 11 home,24,n/a,35.68,22.76,1.56,0,0,1,0,0
+fptshop,acer,acer gaming aspire 5 a515-58gm-53pz,intel core i5-13420h,geforce rtx 2050,8,ddr4,8,ssd,yes,15.6,1920x1080,n/a,n/a,50.0,50 wh,1.7,windows 11 home,12,n/a,36.1,23.7,1.56,0,0,1,1,0
+fptshop,tính,máy tính xách tay acer gaming aspire 5 a515-58gm-51lb,intel core i5-13420h,geforce rtx 2050,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,60.0,60 wh,1.7,windows 11 home,12,n/a,36.1,23.7,1.56,0,0,1,1,0
+fptshop,dell,"dell vostro v3520 i5 1235u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,41.0,41 wh,1.9,windows 11 home,12,n/a,35.85,23.49,1.56,0,0,1,1,0
+fptshop,msi,msi gaming katana 15 b13vfk-676vn,intel core i7-13620h,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,144,n/a,53.5,53.5 wh,2.25,windows 11 home,24,n/a,35.9,25.9,1.56,0,0,1,0,0
+fptshop,gigabyte,gigabyte gaming g5 kf5-53vn353sh,intel core i5-13500h,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,54.0,54 wh,2.08,windows 11 home,24,n/a,36.0,23.8,1.56,0,0,1,1,0
+fptshop,hp,"hp 245 g10 r5-7520u/8gb/256gb/14""fhd/win11",amd ryzen 5 7520u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,41 wh,1.36,windows 11 home,12,n/a,32.4,21.5,1.4,0,0,0,0,0
+fptshop,dell,"dell vostro 15 v3530 i5 1335u/16gb/512gb/15.6""fhd/win11/office",intel core i5-1335u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,3 cell,3,1.657,windows 11 home,12,n/a,35.85,23.56,1.56,0,0,1,1,1
+fptshop,dell,"dell inspiron n3520 i5 1235u/8gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,8,ddr4,8,ssd,yes,15.6,1920x1200,n/a,n/a,3 cell,3,1.9,windows 11 home,12,n/a,18.99,16.96,1.56,0,0,1,0,0
+fptshop,huawei,"huawei matebook d15 r7 5700u/8gb/512gb/15.6""fhd/win11",amd ryzen 7 5700u,n/a,8,ddr4,8,ssd,yes,15.6,1920x1080,60,250,56.0,56 wh,1.53,windows 11 home,12,n/a,35.78,16.9,1.56,0,0,1,0,0
+fptshop,gigabyte,gigabyte gaming g5 mf5-52vn353sh,intel core i5-13500h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,54.0,54 wh,2.08,windows 11 home,24,n/a,36.0,23.8,1.56,0,0,1,1,0
+fptshop,asus,asus tuf gaming fa507nvr-lp091w,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,24,n/a,35.4,25.1,1.56,0,0,0,1,0
+fptshop,lenovo,"lenovo ideapad slim 5 light 14abr8 r5 7530u/8gb/512gb/14""fhd/win",amd ryzen 5 7530u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,300,47.0,47 wh,1.17,windows 11 home,36,n/a,32.41,21.57,1.4,0,0,1,0,0
+fptshop,lenovo,"lenovo ideapad 1 - 14alc7 r7 5700u/16gb/512gb/14.0""",amd ryzen 7 5700u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,250,42.0,42 wh,1.38,windows 11 home,24,n/a,32.53,21.65,1.4,0,0,1,0,0
+fptshop,acer,acer aspire 7 gaming a715-76g-55t6,intel core i5-12450h,geforce rtx 2050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,n/a,50.0,50 wh,2.1,windows 11 home,12,n/a,36.23,23.74,1.56,0,0,1,1,0
+fptshop,lenovo,"lenovo thinkbook 16 gen 6 i7 1355u/16gb/512gb/16.0""",intel core i7-1355u,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,300,71.0,71 wh,1.7,windows 11 home,24,n/a,35.6,25.35,1.6,0,0,1,1,0
+fptshop,apple,macbook air 13 inch m1 2020 8cpu 7gpu 16gb/256gb,apple m1,n/a,16,ddr4,16,ssd,yes,13.3,2560x1600,n/a,n/a,n/a,n/a,1.29,macos,12,n/a,30.41,21.24,1.33,0,0,0,0,0
+fptshop,apple,macbook air m3 13 2024 8cpu 10gpu/16gb/512gb,apple m3,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,12,n/a,30.41,21.5,1.36,0,0,0,0,0
+fptshop,msi,msi gaming katana15 b13vfk-2099vn,intel core i7-13620h,geforce rtx 4060,32,ddr5,32,ssd,yes,15.6,1920x1080,n/a,n/a,53.5,53.5 wh,2.25,windows 11 home,24,n/a,35.9,25.9,1.56,0,0,1,1,0
+fptshop,apple,macbook air m3 13 2024 8cpu 8gpu/8gb/256gb,apple m3,n/a,8,ddr4,8,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,12,n/a,30.41,21.5,1.36,0,0,0,0,0
+fptshop,msi,msi modern 15 b12mo-628vn,intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,n/a,39.0,39 wh,1.7,windows,24,n/a,35.9,24.1,1.56,0,0,1,0,0
+fptshop,apple,macbook air m3 13 2024 8cpu 10gpu/16gb/256gb,apple m3,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,12,n/a,30.41,21.5,1.36,0,0,0,0,0
+fptshop,apple,macbook air 13 m2 2024 8cpu/8gpu/16gb/256gb,apple m2,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,60,n/a,22 giờ,22 giờ,1.24,macos,12,n/a,30.41,21.5,1.36,0,0,0,0,0
+fptshop,apple,macbook pro 14 2023 m3 8 cpu/10 gpu/16gb/512gb,apple m3,n/a,16,hãng không công bố,16,ssd,yes,14.2,3024x1964,n/a,n/a,22 giờ,22 giờ,1.61,macos,12,n/a,31.26,14.2,1.55,0,0,1,0,0
+fptshop,asus,asus vivobook 15 oled a1505va-ma469w,intel core i9-13900h,n/a,16,ddr4,16,ssd,yes,15.6,2880x1620,n/a,600,65.0,65 wh,1.7,windows,24,n/a,35.68,22.76,1.56,0,0,1,0,0
+fptshop,asus,asus vivobook s16 oled s5606ma-mx051w,intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,16.0,3201x2000,n/a,n/a,75.0,75 wh,1.5,windows 11 home,24,n/a,35.36,24.69,1.6,0,0,1,0,0
+fptshop,hp,hp envy x360 14-fc0162tu,intel core ultra 5 125u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,acer,acer aspire 3 a315-510p-34xz,n/a,n/a,8,ddr5,8,ssd,yes,15.6,1920x1080,n/a,n/a,40.0,40 wh,1.7,windows 11 home,12,n/a,36.29,23.75,1.56,0,0,1,0,0
+fptshop,lenovo,"lenovo ideapad slim 5 14imh9 ultra 5 125h/ai/16gb/512gb/14""wuxga/oled/win",intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.48,windows 11 home,24,n/a,31.2,22.1,1.4,0,0,1,0,0
+fptshop,dell,"dell inspiron n3520 i5 1235u/8gb/512gb/15.6""fhd/win11/office",intel core i5-1235u,n/a,8,ddr4,8,ssd,yes,15.6,1920x1200,n/a,n/a,3 cell,3,1.9,windows 11 home,12,n/a,18.99,16.96,1.56,0,0,1,0,0
+fptshop,msi,msi gaming cyborg 14 a13udx-099vn,intel core i7-13620h,geforce rtx 3050,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,n/a,53.5,53.5 wh,1.6,windows 11 home,24,n/a,31.47,22.3,1.4,0,0,1,1,0
+fptshop,msi,msi modern 14 c12mo-660vn,intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,60,300,3 cell,3,1.4,windows 11 home,24,n/a,31.99,22.3,1.4,0,0,1,0,0
+fptshop,hp,"hp gaming victus 16-r0127tx i7-13700h/ai/16gb/512gb/16.1""",intel core i7-13700h,geforce rtx 4060,16,ddr5,16,ssd,yes,16.1,1920x1080,n/a,n/a,70.0,70 wh,2.33,windows 11 home,12,n/a,36.9,25.94,1.61,0,0,1,1,0
+fptshop,lenovo,"lenovo ideapad slim 5 16iah8 i5 12450h/16gb/512gb/16""wuxga/win11",intel core i5-12450h,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,60,300,3 cell,3,1.89,windows 11 home,36,n/a,35.6,25.1,1.6,0,0,1,0,0
+fptshop,msi,msi gaming gf63 thin 12uc-1006vn,intel core i5-12450h,geforce rtx 3050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,250,3 cell,3,1.86,windows 11 home,12,n/a,35.9,25.4,1.56,0,0,1,1,0
+fptshop,gigabyte,gigabyte gaming g6 kf-h3vn853sh,intel core i7-13620h,geforce rtx 4060,16,ddr5,16,ssd,yes,16.0,2220x1080,n/a,n/a,54.0,54 wh,2.3,windows,24,n/a,36.0,23.8,1.6,0,0,1,1,0
+fptshop,dell,"dell inspiron 16 n5640 i5 1334u/16gb/512gb/16""",intel core i5-1334u,n/a,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,250,54.0,54 wh,1.87,windows 11 home,12,n/a,35.68,24.95,1.6,0,0,1,0,0
+fptshop,gigabyte,gigabyte gaming g5 kf-e3vn313sh,intel core i5-12500h,geforce rtx 4060,16,ddr4,16,ssd,yes,15.6,1920x1080,144,n/a,54.0,54 wh,1.9,windows 11 home,24,n/a,36.0,23.8,1.56,0,0,1,0,0
+fptshop,acer,acer swift lite 14 ai sfl14-51m-56hs,intel core ultra 5 125u,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,380,3 cell,3,1.27,windows 11 home,12,n/a,31.44,22.19,1.4,0,0,1,0,0
+fptshop,msi,"msi modern 14 c7m-220vn r5 7530u/8gb/512gb/14""fhd/win",amd ryzen 5 7530u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,n/a,39.3,39.3 wh,1.4,windows 11 home,24,n/a,31.99,22.3,1.4,0,0,1,0,0
+fptshop,lenovo,"lenovo ideapad slim 5 14imh9 ultra 7-155h/ai/16gb/512g/14""wuxga/oled/win",intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.48,windows 11 home,24,n/a,31.2,22.1,1.4,0,0,1,0,0
+fptshop,apple,macbook air m2 13 inch 2022 8cpu 10gpu/16gb/512gb,apple m2,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,n/a,n/a,22 giờ,22 giờ,1.2,macos,12,n/a,30.41,21.5,1.36,0,0,0,0,0
+fptshop,asus,asus tuf gaming a15 fa506ncr-hn047w,amd ryzen 7 7435hs,geforce rtx 3050,16,ddr5,16,ssd,yes,16.0,1920x1080,n/a,n/a,48.0,48 wh,2.3,windows 11 home,24,n/a,35.9,25.6,1.6,0,0,0,1,0
+fptshop,acer,acer aspire lite al16-51p-596h,intel core i5-1235u,n/a,8,ddr5,8,ssd,yes,16.0,1920x1200,n/a,300,n/a,n/a,1.8,windows 11 home,12,n/a,35.76,24.7,1.6,0,0,1,0,0
+fptshop,msi,"msi gaming thin gf63 12ve-454vn i5 12450h/16gb/512gb/15.6""",intel core i5-12450h,geforce rtx 4050,16,ddr4,16,ssd,yes,15.6,1920x1080,144,n/a,52.4,52.4 wh,1.86,windows 11 home,12,n/a,35.9,25.4,1.56,0,0,1,0,0
+fptshop,hp,hp envy x360 14-fc0089tu,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,acer,acer aspire 3 a315-59-51x8,intel core i5-1235u,n/a,8,n/a,8,ssd,yes,15.6,1920x1080,60,n/a,3 cell,3,1.7,windows 11 home,12,n/a,36.29,24.13,1.56,0,0,1,0,0
+fptshop,lenovo,"lenovo gaming loq 15iax9 i5 12450hx/ai/24gb/512gb/15.6""fhd/rtx4050_6gb/win11",intel core i5-12450hx,geforce rtx 4050,24,ddr5,24,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,24,n/a,35.99,23.9,1.56,0,0,1,1,0
+fptshop,lenovo,"lenovo ideapad 1 15alc7 r5 5500u/16gb/512gb/15.6""",amd ryzen 5 5500u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,60,220,42.0,42 wh,1.58,windows 11 home,24,n/a,36.02,23.6,1.56,0,0,1,0,0
+fptshop,apple,macbook pro 14 2023 m3 pro 11 cpu/14gpu/36gb/512gb,apple m3 pro 11-core,n/a,36,hãng không công bố,36,ssd,yes,14.2,3024x1964,n/a,n/a,22 giờ,22 giờ,1.61,macos,12,n/a,31.26,14.2,1.55,0,0,1,0,0
+fptshop,lenovo,"lenovo gaming loq - 15irx9 i7-13650hx/ai/16gb/512gb/15.6""fhd/rtx4050",intel core i7-13650hx,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,24,n/a,35.99,23.9,1.56,0,0,1,1,0
+fptshop,asus,asus tuf gaming fx507vv-lp304w,intel core i7-13620h,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,24,n/a,35.97,23.25,1.56,0,0,0,1,0
+fptshop,huawei,"huawei matebook d14 be i3 1215u/8gb/256gb/14""fhd+/win11",intel core i3-1215u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,300,56.0,56 wh,1.39,windows 11 home,12,n/a,31.45,22.78,1.4,0,0,1,0,0
+fptshop,lenovo,"lenovo ideapad slim 5 14q8x9 x1p-42-100/ai/16gb/512gb/14""wuxga",qualcomm snapdragon x plus x1p- 42-100,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.48,windows 11 home,24,n/a,31.2,22.1,1.4,0,0,1,0,0
+fptshop,hp,hp pavilion aero 13-be2098au,amd ryzen 7 7735u,n/a,16,ddr4,16,ssd,yes,13.3,1920x1200,n/a,400,3 cell,3,1.0,windows,12,n/a,29.76,20.9,1.33,0,0,1,0,0
+fptshop,hp,hp envy x360 14-fc0094tu,intel core ultra 5 125u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,msi,msi gaming thin 15 b12ucx-1419vn,intel core i5-12450h,geforce rtx 2050,8,ddr4,8,ssd,yes,15.6,1920x1080,n/a,250,52.4,52.4 wh,1.86,windows 11 home,24,n/a,35.9,25.4,1.56,0,0,1,1,0
+fptshop,lenovo,"lenovo ideapad slim 5 15iru9 core 5_120u/32gb/512g/15.3""wuxga/win11",intel core 5 120u,n/a,32,ddr5,32,ssd,yes,15.3,1920x1200,n/a,n/a,57.0,57 wh,1.79,windows 11 home,24,n/a,34.35,23.82,1.53,0,0,1,0,0
+fptshop,lenovo,"lenovo ideapad slim 3 - 15abr8 r5 7430u/16gb/512gb/15.6""fhd/win",amd ryzen 5 7430u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,300,47.0,47 wh,1.62,windows 11 home,24,n/a,35.93,23.5,1.56,0,0,1,0,0
+fptshop,asus,asus zenbook 14 oled ux3405ma-pp152w,intel core ultra 7 155h,n/a,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 wh,1.2,windows 11 home,24,n/a,31.24,22.01,1.4,0,0,0,0,0
+fptshop,acer,acer aspire 3 a315-58-53s6,intel core i5-1135g,n/a,8,ddr4,8,ssd,yes,15.6,1920x1080,60,n/a,2 cell,2,1.7,windows 11 home,12,n/a,36.34,24.75,1.56,0,0,1,0,0
+fptshop,hp,hp envy x360 14-fc0158tu,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,asus,asus tuf gaming fa507nu-lp045w,amd ryzen 7 7735hs,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,144,n/a,90.0,90 wh,2.2,windows,24,n/a,35.4,25.1,1.56,0,0,0,1,0
+fptshop,lenovo,"lenovo thinkbook 16 g6 abp r5-7530u/16gb/512gb/16""",amd ryzen 5 7530u,n/a,16,ddr4,16,ssd,yes,16.0,2560x1600,n/a,n/a,71.0,71 wh,1.7,windows 11 home,24,n/a,35.6,25.35,1.6,0,0,1,1,0
+fptshop,asus,asus vivobook s14 s5406ma-pp161w,intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,75 wh,1.3,windows 11 home,24,n/a,31.05,22.19,1.4,0,0,1,0,0
+fptshop,lenovo,"lenovo gaming loq 15arp9 r7 7435hs/ai/24gb/512gb/15.6""fhd/rtx4060",amd ryzen 7 7435hs,geforce rtx 4060,24,ddr5,24,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,24,n/a,35.99,23.9,1.56,0,0,1,1,0
+fptshop,lenovo,"lenovo ideapad slim 5 14imh9 u7-155h/ai/32gb/1tb/14""wuxga/oled/win11",intel core ultra 7 155h,n/a,32,ddr5,32,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.48,windows 11 home,24,n/a,31.2,22.1,1.4,0,0,1,0,0
+fptshop,asus,asus tuf gaming f15 fx507vu-lp197w,intel core i7-13620h,geforce rtx 4050,32,ddr5,32,ssd,yes,15.6,1920x1200,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,24,n/a,35.4,25.1,1.56,0,0,0,1,0
+fptshop,acer,acer nitro v gaming anv15-51-55ca,intel core i5-13420h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,144,250,57.0,57 wh,2.1,windows 11 home,12,n/a,36.23,23.99,1.56,0,0,1,1,0
+fptshop,asus,asus tuf gaming fx507vu-lp315w,intel core i7-13620h,geforce rtx 4050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,90.0,90 whrs,2.2,windows 11 home,24,n/a,35.4,25.1,1.56,0,0,0,1,0
+fptshop,vaio,vaio fe14 i5 1235u/8gb/512gb/14',intel core i5-1235u,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,60,n/a,10 giờ,10 giờ,1.8,windows 11 home,12,n/a,35.8,23.9,1.4,0,0,1,0,0
+fptshop,lenovo,"lenovo yoga slim 7 14imh9 ultra 7 155h/ai/32gb/1tb/14""",intel core ultra 7 155h,n/a,32,ddr5,32,ssd,yes,14.0,1920x1200,n/a,400,65.0,65 wh,1.39,windows 11 home,24,n/a,31.2,22.1,1.4,0,0,1,0,0
+fptshop,apple,macbook air m3 15 2024 8cpu 10gpu/16gb/512gb,apple m3,n/a,16,ddr4,16,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,12,n/a,34.04,23.76,1.53,0,0,0,0,0
+fptshop,lenovo,"lenovo yoga slim 7 14imh9 ultra 7 155h/ai/32gb/512gb/14""",intel core ultra 7 155h,n/a,32,ddr5,32,ssd,yes,14.0,1920x1200,n/a,400,65.0,65 wh,1.39,windows 11 home,24,n/a,31.2,22.1,1.4,0,0,1,0,0
+fptshop,dell,"dell inspiron 15 n3530 i5 1335u/16gb/512gb/15.6""fhd/nvidia",intel core i5-1335u,geforce mx550,16,ddr4,16,ssd,yes,15.6,1920x1080,120,250,3467 mah,3467 mah,1.66,windows 11 home,12,n/a,35.8,23.6,1.56,0,0,1,0,0
+fptshop,lenovo,"lenovo gaming legion pro 5 16irx9 i9-14900hx/ai/32gb/1tb/16""",intel core i9-14900hx,geforce rtx 4070,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,500,800.0,800 wh,2.5,windows 11 home,24,n/a,36.34,26.95,1.6,0,0,1,1,0
+fptshop,apple,macbook air m3 15 2024 8cpu 10gpu/8gb/512gb,apple m3,n/a,8,ddr4,8,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,12,n/a,34.04,23.76,1.53,0,0,0,0,0
+fptshop,hp,"hp probook 440 g10 i7-1360p/16gb/512gb/14""",intel core i7-1360p,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,n/a,51.0,51 whrs,1.38,windows 11 home,12,n/a,32.19,21.39,1.4,0,0,1,1,1
+fptshop,msi,"msi gaming katana a15 ai b8vf-419vn r7-8845hs/16gb/512gb/15.6""fhd/rtx4060_8gb/win11_balo",amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,250,53.5,53.5 wh,2.25,windows 11 home,24,n/a,35.9,25.9,1.56,0,0,1,1,0
+fptshop,lenovo,"lenovo thinkpad e14 gen 5 i7-1355u/16gb/512gb/14.0""wuxga/win",intel core i7-1355u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,300,3 cell,3,1.59,windows 11 home,24,n/a,32.4,22.0,1.4,0,0,1,1,0
+fptshop,lenovo,"lenovo gaming loq 15ahp9 r7 8845hs/ai/16gb/512gb/15.6""fhd/rtx4060",amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,24,n/a,35.99,23.9,1.56,0,0,1,1,0
+fptshop,lenovo,"lenovo gaming legion pro 5 16irx9 i9 14900hx/ai/32gb/1tb/16""wqxga/rtx4060",intel core i9-14900hx,geforce rtx 4060,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,500,80.0,80 wh,2.55,windows 11 home,24,n/a,36.34,26.04,1.6,0,0,1,1,0
+fptshop,apple,macbook air 13 inch m2 2022 8cpu 10gpu 8gb/512gb,apple m2,n/a,8,ddr4,8,ssd,yes,13.6,2560x1644,60,500,18 giờ,18 giờ,1.24,macos,12,n/a,30.41,21.5,1.36,0,0,0,0,0
+fptshop,hp,"hp 245 g10 r5 7520u/8gb/256gb/14""fhd/win11",amd ryzen 5 7520u,n/a,8,n/a,8,ssd,yes,14.0,1920x1080,60,n/a,3 cell,3,1.36,windows 11 home,12,n/a,32.4,21.5,1.4,0,0,1,0,0
+fptshop,lenovo,"lenovo gaming loq 15iax9 i5 12450hx/ai/12gb/512gb/15.6""fhd/rtx4050_6gb/w11_83gs001qvn",intel core i5-12450hx,geforce rtx 4050,12,ddr5,12,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,24,n/a,35.99,23.9,1.56,0,0,1,1,0
+fptshop,asus,asus vivobook pro k3405vc-km070w,intel core i9-13900h,geforce rtx 3050,16,ddr4,16,ssd,yes,14.0,2880x1800,90,n/a,3 cell,3,1400 g,windows 11 home,24,n/a,31.71,22.25,1.4,0,0,0,0,0
+fptshop,dell,"dell latitude 3440 i5-1235u/16gb/512gb/14""fhd/win11",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,14.1,1920x1080,n/a,n/a,n/a,n/a,1.54,windows 11 home,n/a,n/a,32.22,21.94,1.41,0,0,1,1,0
+fptshop,msi,msi gaming cyborg 15 a12ucx-281vn,intel core i5-12450h,geforce rtx 2050,8,ddr5,8,ssd,yes,15.6,1920x1080,144,250,53.5,53.5 wh,1.98,windows 11 home,24,n/a,35.94,25.03,1.56,0,0,1,1,0
+fptshop,dell,"dell latitude l3540 i5 1235u/16gb/512gb/15.6""fhd/win11",intel core i5-1235u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,n/a,n/a,1.86,windows 11 home,12,n/a,35.9,23.97,1.56,0,0,1,0,0
+fptshop,dell,"dell xps 13 9340 ultra 7 155h/ai/16gb/1t/13.4""",intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,13.4,2560x1600,n/a,500,3 cell,3,1.243,windows 11 home,12,n/a,29.53,19.91,1.34,0,0,1,0,0
+fptshop,acer,acer aspire 5 a515-58p-56rp,intel core i5-1335u,n/a,16,ddr5,16,ssd,yes,15.6,1920x1080,60,n/a,50.0,50 wh,1.7,windows 11 home,12,n/a,36.29,23.75,1.56,0,0,1,0,0
+fptshop,apple,macbook air m3 15 2024 8cpu 10gpu/8gb/256gb,apple m3,n/a,8,ddr4,8,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,12,n/a,34.04,23.76,1.53,0,0,0,0,0
+fptshop,apple,macbook air 13 inch m1 2020 8cpu 7gpu 16gb/512gb,apple m1,n/a,16,ddr4,16,ssd,yes,13.3,2560x1600,n/a,n/a,18 giờ,18 giờ,1.29,macos,12,n/a,30.41,21.24,1.33,0,0,0,0,0
+fptshop,acer,acer nitro v 16 propanel gaming anv16-41-r36y,amd ryzen 7 8845hs,geforce rtx 4050,16,ddr5,16,ssd,yes,16.0,1920x1200,n/a,300,4 cell,4,2.5,windows 11 home,12,n/a,36.18,27.84,1.6,0,0,0,1,0
+fptshop,lenovo,"lenovo gaming legion 7 - 16irx9 i9 14900hx/ai/32gb/1tb/16""",intel core i9-14900hx,geforce rtx 4070,32,ddr5,32,ssd,yes,16.0,3200x2000,n/a,439,99.9,99.9 wh,2.24,windows 11 home,24,n/a,35.77,19.8,1.6,0,0,1,0,0
+fptshop,lenovo,"lenovo gaming loq - 15iax9 i5 12450hx/ai/16gb/512gb/15.6""fhd/rtx",intel core i5-12450hx,geforce rtx 2050,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.38,windows 11 home,24,n/a,35.99,23.9,1.56,0,0,1,1,0
+fptshop,asus,asus vivobook s 15 oled s5507qa-ma090ws,qualcomm x1e-78-100 đang cập nhật,geforce rtx 3050,32,ddr5,32,ssd,yes,15.6,2880x1620,n/a,n/a,70.0,70 wh,1.42,windows 11 home,24,n/a,35.26,22.69,1.56,0,0,0,0,0
+fptshop,dell,"dell inspiron n5440 core5 120u/16gb/512gb/14.0""fhd/win11/office",n/a,n/a,16,ddr5,16,ssd,yes,14.0,1920x1080,n/a,250,4 cell,4,1.67,windows 11 home,12,n/a,31.4,22.62,1.4,0,0,1,0,1
+fptshop,msi,msi gaming sword 16 hx b14vgkg-038vn,intel core i7-14700hx,geforce rtx 4070,16,ddr5,16,ssd,yes,16.0,2560x1600,n/a,400,65.0,65 wh,2.3,windows 11 home,24,n/a,35.9,27.7,1.6,0,0,1,1,0
+fptshop,acer,acer gaming predator helios neo 14 phn14-51-99y8,intel core ultra 9 185h,geforce rtx 4060,32,ddr5,32,ssd,yes,14.5,3072x1920,n/a,400,n/a,n/a,1.9,windows 11 home,12,n/a,32.41,25.54,1.45,0,0,1,0,0
+fptshop,asus,asus vivobook s 14 oled m5406wa-pp071ws,amd ryzen ai 9 hx 370,n/a,32,ddr5,32,ssd,yes,14.0,2880x1620,n/a,400,75.0,75 whrs,1.3,windows 11 home,24,n/a,31.05,22.19,1.4,0,0,1,0,0
+fptshop,hp,hp 240 g10 i3 n305/8gb/256gb/14',n/a,n/a,8,ddr4,8,ssd,yes,14.0,1920x1080,n/a,n/a,41.04,41.04 wh,1.37,windows 11 home,12,n/a,32.4,21.5,1.4,0,0,1,1,0
+fptshop,lenovo,"lenovo thinkpad x1 carbon gen 12 u7-155h/ai/16gb/512gb/14""wuxga/win11pro",intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.09,windows 11 pro,36,n/a,31.28,21.48,1.4,0,0,1,0,0
+fptshop,hp,hp envy x360 14-fa0045au,amd ryzen 7 8840hs,n/a,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,lenovo,"lenovo ideapad 3 15iau7 i7 1255u/16gb/512gb/15.6""fhd/win",intel core i7-1255u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,300,45.0,45 wh,1.63,windows 11 home,24,n/a,35.92,23.65,1.56,0,0,1,0,0
+fptshop,msi,msi gaming raider ge68 hx 14vhg-646vn,intel core i9-14900hx,geforce rtx 4080,32,ddr5,32,ssd,yes,16.0,3840x2400,n/a,n/a,99.0,99 wh,2.75,windows 11 home,36,n/a,35.7,27.85,1.6,0,0,1,1,0
+fptshop,apple,macbook pro 16 2023 m3 max 16 cpu/40 gpu/48gb/1tb,apple m3 max 16-core,n/a,48,hãng không công bố,48,ssd,yes,16.2,3456x2234,120,n/a,22 giờ,22 giờ,2.16,macos,12,n/a,35.57,16.2,1.68,0,0,1,0,0
+fptshop,apple,macbook pro 14 2023 m3 max 14 cpu/30 gpu/36gb/1tb,apple m3 max 14-core,n/a,36,hãng không công bố,36,ssd,yes,14.2,3024x1964,120,n/a,22 giờ,22 giờ,1.62,macos,12,n/a,31.26,14.2,1.55,0,0,1,0,0
+fptshop,apple,macbook pro 16 2023 m3 pro 12 cpu/18 gpu/36gb/512gb,apple m3 pro 12-core,n/a,36,hãng không công bố,36,ssd,yes,16.2,3456x2234,120,n/a,22 giờ,22 giờ,2.14,macos,12,n/a,35.57,16.2,1.68,0,0,1,0,0
+fptshop,lenovo,"lenovo gaming legion 9 16irx8 i9 13980hx/ai/64gb/2tb/16""3.2k",intel core i9-13980hx,geforce rtx 4090,64,ddr5,64,ssd,yes,16.0,3200x2000,n/a,1200,99.9,99.9 wh,2.56,windows 11 home,36,n/a,35.77,27.77,1.6,0,0,1,1,0
+fptshop,msi,msi gaming raider ge68 hx 14vig-496vn,intel core i9-14900hx,geforce rtx 4090,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,400,99.9,99.9 whrs,2.75,windows 11 home,36,n/a,35.7,27.85,1.6,0,0,1,1,0
+fptshop,msi,msi gaming katana 15 b13vgk-1211vn,intel core i7-13620h,geforce rtx 4070,16,ddr5,16,ssd,yes,15.6,1920x1080,144,250,53.5,53.5 wh,2.29,windows 11 home,24,n/a,35.9,25.9,1.56,0,0,1,0,0
+fptshop,apple,macbook pro 14 2023 m3 8 cpu/10 gpu/8gb/1tb,apple m3,n/a,8,hãng không công bố,8,ssd,yes,14.2,3024x1964,120,n/a,22 giờ,22 giờ,1.55 g,macos,12,n/a,31.26,14.2,1.55,0,0,1,0,0
+fptshop,msi,"msi gaming vector gp77 13vg-043vn i7 13700h/ai/16gb/512gb/17.3""qhd/rtx4070",intel core i7-13700h,geforce rtx 4070,16,ddr5,16,ssd,yes,17.3,2560x1440,240,n/a,4 cell,4,2.8,windows 11 home,24,n/a,39.7,28.4,1.73,0,0,1,0,0
+fptshop,asus,asus gaming rog zephyrus g16 gu603vu-n4019w,intel core i7-13620h,geforce rtx 4050,16,ddr4,16,ssd,yes,16.0,2560x1600,n/a,n/a,90.0,90 whrs,2.0,windows 11 home,24,n/a,35.5,24.3,1.6,0,0,0,1,0
+fptshop,msi,msi gaming creator m16 b13ve-830vn,intel core i7-13700h,geforce rtx 4050,16,ddr5,16,ssd,yes,16.0,1920x1200,144,n/a,53.3,53.3 wh,2.26,windows 11 home,24,n/a,35.9,25.9,1.6,0,0,0,0,0
+fptshop,dell,"dell xps 14 9440 u7 155h/ai/64gb/1tb/14.5""3.2k",intel core ultra 7 155h,n/a,64,đang cập nhật,64,ssd,yes,14.5,3200x2000,n/a,500,n/a,n/a,1.8,windows 11 home,12,n/a,32.0,21.6,1.45,0,0,0,0,0
+fptshop,dell,"dell inspiron n3530 i7 1355u/16gb/512gb/15.6""fhd/win11/office",intel core i7-1355u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,3 cell,3,1.7,windows 11 home,12,n/a,35.85,23.56,1.56,0,0,1,0,0
+fptshop,apple,macbook pro 16 2023 m3 max 14 cpu/30 gpu/36gb/1tb,apple m3 max 14-core,n/a,36,hãng không công bố,36,ssd,yes,16.2,3456x2234,120,n/a,22 giờ,22 giờ,2.16,macos,12,n/a,35.57,16.2,1.68,0,0,1,0,0
+fptshop,apple,macbook air 13 m3 2024 8cpu/10gpu/24gb/512gb,apple m3,n/a,24,ddr4,24,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,12,n/a,30.41,21.5,1.36,0,0,0,0,0
+fptshop,apple,macbook pro 16 m4 pro 2024 14cpu/20gpu/48gb/512gb,apple m4 pro 14-core,n/a,48,hãng không công bố,48,ssd,yes,16.2,3456x2234,n/a,n/a,22 giờ,22 giờ,2.14,macos,12,n/a,35.57,16.2,1.68,0,0,0,0,0
+fptshop,apple,macbook pro 14 m4 2024 10cpu/10gpu/16gb/1tb,apple m4,n/a,16,hãng không công bố,16,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,12,n/a,31.26,14.2,1.55,0,0,0,0,0
+fptshop,apple,macbook pro 16 m4 max 2024 16cpu/40gpu/48gb/1tb,apple m4 max 16-core,n/a,48,hãng không công bố,48,ssd,yes,16.2,3456x2234,n/a,n/a,22 giờ,22 giờ,2.14,macos,12,n/a,35.57,16.2,1.68,0,0,0,0,0
+fptshop,apple,macbook pro 14 m4 max 2024 14cpu/32gpu/36gb/1tb,apple m4 max 14-core,n/a,36,hãng không công bố,36,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,12,n/a,31.26,14.2,1.55,0,0,0,0,0
+fptshop,apple,macbook air 15 m3 2024 8cpu/10gpu/24gb/512gb,apple m3,n/a,24,ddr4,24,ssd,yes,15.3,2880x1864,n/a,500,n/a,n/a,1.51,macos,12,n/a,34.04,23.76,1.53,0,0,0,0,0
+fptshop,apple,macbook air 13 m3 2024 8cpu/8gpu/16gb/256gb,apple m3,n/a,16,ddr4,16,ssd,yes,13.6,2560x1644,n/a,500,n/a,n/a,1.24,macos,12,n/a,30.41,21.5,1.36,0,0,0,0,0
+fptshop,lenovo,"lenovo gaming legion 5 15irx9 i7 13650hx/ai/24gb/512gb/15.6""fhd/rtx4060",intel core i7-13650hx,geforce rtx 4060,24,ddr5,24,ssd,yes,15.6,1920x1080,n/a,300,60.0,60 wh,2.32,windows 11 home,24,n/a,35.88,24.65,1.56,0,0,1,1,0
+fptshop,msi,msi prestige 14 ai studio c1udxg-058vn,intel core ultra 7 155h,geforce rtx 3050,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,n/a,90.0,90 wh,1.7,windows 11 home,24,n/a,31.34,24.65,1.4,0,0,0,0,0
+fptshop,hp,hp envy x360 14-fa0092au,amd ryzen 7 8840hs,n/a,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,lenovo,"lenovo ideapad slim 5 14imh9 ultra5 125h/ai/16gb/1tb/14""wuxga/oled/win11",intel core ultra 5 125h,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,400,57.0,57 wh,1.48,windows 11 home,24,n/a,31.2,22.1,1.4,0,0,1,0,0
+fptshop,acer,acer swift lite 14 sfl14-51m-78xz,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,1920x1200,n/a,380,3 cell,3,1.27,windows 11 home,12,n/a,31.44,22.19,1.4,0,0,1,0,0
+fptshop,apple,macbook pro 14 m4 pro 2024 12cpu/16gpu/24gb/512gb,apple m4 pro 14-core,n/a,24,hãng không công bố,24,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,12,n/a,31.26,14.2,1.55,0,0,0,0,0
+fptshop,apple,macbook pro 14 m4 2024 10cpu/10gpu/16gb/512b,apple m4,n/a,16,hãng không công bố,16,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,12,n/a,31.26,14.2,1.55,0,0,0,0,0
+fptshop,apple,macbook pro 14 m4 2024 10cpu/10gpu/24gb/1tb,apple m4,n/a,24,hãng không công bố,24,ssd,yes,14.2,3024x1964,n/a,n/a,n/a,n/a,1.61,macos,12,n/a,31.26,14.2,1.55,0,0,0,0,0
+fptshop,apple,macbook pro 16 m4 pro 2024 14cpu/20gpu/24gb/512gb,apple m4 pro 14-core,n/a,24,hãng không công bố,24,ssd,yes,16.2,3456x2234,n/a,n/a,22 giờ,22 giờ,2.14,macos,12,n/a,35.57,16.2,1.68,0,0,0,0,0
+fptshop,apple,macbook pro 16 m4 max 2024 14cpu/32gpu/36gb/1tb,apple m4 max 14-core,n/a,36,hãng không công bố,36,ssd,yes,16.2,3456x2234,n/a,n/a,22 giờ,22 giờ,2.14,macos,12,n/a,35.57,16.2,1.68,0,0,0,0,0
+fptshop,lenovo,"lenovo ideapad slim 5 - 15iru9 core 5_120u/16gb/512gb/15.3""wuxga/win",intel core 5 120u,n/a,16,ddr5,16,ssd,yes,15.3,1920x1200,n/a,300,57.0,57 wh,1.79,windows 11 home,24,n/a,34.35,23.82,1.53,0,0,1,0,0
+fptshop,msi,msi modern 15 f13mg-082vn,intel core i5-1335u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,n/a,3 cell,3,1.7,windows 11 home,24,n/a,35.89,23.59,1.56,0,0,1,1,0
+fptshop,lenovo,"lenovo gaming legion pro 7 16irx9h i9 14900hx/ai/32gb/1tb/16""wqxga/rtx4090",intel core i9-14900hx,geforce rtx 4090,32,ddr5,32,ssd,yes,16.0,2560x1600,n/a,500,99.9,99.9 wh,2.62,windows 11 home,24,n/a,36.35,25.9,1.6,0,0,1,1,0
+fptshop,lenovo,"lenovo ideapad 1 15alc7 r5 5625u/16gb/512gb/15.6""",amd ryzen 5 5625u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,n/a,250,42.0,42 wh,1.61,windows 11 home,24,n/a,36.02,23.6,1.56,0,0,1,0,0
+fptshop,hp,hp envy x360 14-fc0161tu,intel core ultra 5 125u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,hp,hp envy x360 14-fc0156tu,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,lenovo,"lenovo ideapad slim 5 - 16imh9 ultra7 155h/ai/32gb/512gb/16""2k_oled/arc",intel core ultra 7 155h,n/a,32,ddr5,32,ssd,yes,16.0,2048x1280,n/a,400,57.0,57 wh,1.82,windows 11 home,24,n/a,35.6,25.1,1.6,0,0,1,0,0
+fptshop,hp,hp envy x360 14-fa0093au,amd ryzen 7 8840hs,n/a,32,ddr5,32,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,hp,hp envy x360 14-fc0155tu,intel core ultra 7 155u,n/a,16,ddr5,16,ssd,yes,14.0,2880x1800,n/a,n/a,59.0,59 wh,1.39,windows 11 home,12,n/a,31.33,21.89,1.4,0,0,1,0,1
+fptshop,lenovo,"lenovo ideapad slim 3 - 15abr8 r7 7730u/16gb/512gb/15.6""fhd/win",amd ryzen 7 7730u,n/a,16,ddr4,16,ssd,yes,15.3,1920x1200,n/a,300,47.0,47 wh,1.62,windows 11 home,24,n/a,35.93,23.5,1.53,0,0,1,0,0
+fptshop,acer,acer aspire 5 a515-58p-71ej,intel core i7-1355u,n/a,16,ddr5,16,ssd,yes,15.6,1920x1080,n/a,n/a,n/a,n/a,1.7,windows 11 home,12,n/a,36.29,23.75,1.56,0,0,1,0,0

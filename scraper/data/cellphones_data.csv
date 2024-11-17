@@ -1,316 +1,312 @@
 source,brand,name,cpu,vga,ram_amount,ram_type,storage_amount,storage_type,webcam_resolution,screen_size,screen_resolution,screen_refresh_rate,screen_brightness,battery_capacity,battery_cells,weight,default_os,warranty,price,width,depth,height,number_usb_a_ports,number_usb_c_ports,number_hdmi_ports,number_ethernet_ports,number_audio_jacks
-cellphones,acer,acer gaming aspire 7 a715-76-53pj,intel core i5-12450h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,2.1,windows 11 home,12,13990000,36.23,23.74,1.99,3,1,1,1,0
-cellphones,lenovo,lenovo ideapad slim 5 14iah8 83bf002nvn,intel core i5-12450h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,56.6,56.6wh,1.46,windows 11 home,36,15990000,31.2,22.1,1.79,2,2,1,0,1
+cellphones,asus,asus tuf gaming f15 fx507zc4-hn095w,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,56.0,4,2.2,windows 11 home,24,20290000,35.4,25.1,2.24,3,1,1,0,1
+cellphones,acer,acer gaming aspire 7 a715-76-53pj,intel core i5-12450h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,2.1,windows 11 home,12,13990000,36.23,23.74,1.99,3,0,1,1,0
 cellphones,lenovo,lenovo loq 15arp9 83jc007hvn,amd ryzen 5 7235hs,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,20990000,35.99,25.87,2.39,3,1,1,1,1
-cellphones,asus,asus tuf gaming f15 fx507zc4-hn095w,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,56.0,4,2.2,windows 11 home,24,19990000,35.4,25.1,2.24,2,2,1,0,1
-cellphones,asus,asus vivobook 14 oled a1405za-km264w,intel core i5-12500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,16290000,31.71,22.2,1.99,3,1,1,0,0
+cellphones,asus,asus vivobook 14 oled a1405za-km264w,intel core i5-12500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,16290000,31.71,22.2,1.99,3,0,1,0,0
+cellphones,lenovo,lenovo ideapad slim 5 14iah8 83bf002nvn,intel core i5-12450h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,56.6,56.6wh,1.46,windows 11 home,36,15990000,31.2,22.1,1.79,2,2,1,0,1
+cellphones,dell,dell inspiron 15 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.685,windows 11 home,12,16390000,35.85,23.49,1.75,2,0,1,0,1
 cellphones,lenovo,lenovo ideapad slim 5 14q8x9 83hl000kvn,snapdragon x plus x1p-42-100,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,57wh,1.48,windows 11 home,24,22990000,31.2,22.1,1.69,2,2,1,0,1
-cellphones,asus,asus vivobook 15 x1504za-nj517w,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,13990000,35.97,23.25,1.79,3,1,1,0,1
-cellphones,dell,dell inspiron 15 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.685,windows 11 home,12,16390000,35.85,23.49,1.75,3,0,1,0,1
-cellphones,apple,apple macbook air m1,8 nhân với 4 nhân hiệu năng cao và 4 nhân tiết kiệm điện,n/a,8,ddr4,256,ssd,no,13.3,2560x1600,n/a,400,49.9-watt lithium-polymer. củ sạc công suất 30w,"49.9-watt lithium-polymer, củ sạc công suất 30w",1.29,macos,12,18090000,30.41,21.24,1.61,0,2,0,0,0
-cellphones,acer,acer nitro 5 tiger an515 58 52sp,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,17990000,36.04,27.11,2.59,3,1,1,1,1
-cellphones,lenovo,lenovo ideapad slim 3 14iah8 83eq0005vn,intel core i5-12450h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,n/a,300,47.0,47wh,1.37,windows 11 home,24,14490000,32.43,21.38,1.79,2,1,1,0,1
-cellphones,lenovo,lenovo loq 15iax9 83gs001rvn,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,21490000,35.99,25.87,2.39,3,1,1,1,1
-cellphones,asus,asus gaming vivobook k3605zf-rp634w,intel core i5-12500h,geforce rtx 2050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,50.0,3,1.8,windows 11 home,24,16890000,35.86,24.91,1.89,2,1,1,0,1
-cellphones,asus,asus vivobook go 14 e1404fa-nk177w,amd ryzen 5 7520u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.3,windows 11 home,24,12390000,32.45,21.39,1.79,2,1,1,0,0
+cellphones,asus,asus vivobook 15 x1504za-nj517w,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,13990000,35.97,23.25,1.79,3,0,1,0,1
+cellphones,msi,msi prestige 14 ai studio c1udxg-058vn,intel core ultra 7 155h,geforce rtx 3050,16,ddr5,1024,ssd,yes,14.0,1920x1200,144,n/a,90.0,4,1.7,windows 11 home,24,26990000,31.34,24.65,1.9,1,1,1,0,1
+cellphones,apple,apple macbook air m1,8 nhân với 4 nhân hiệu năng cao và 4 nhân tiết kiệm điện,n/a,8,ddr4,256,ssd,no,13.3,2560x1600,n/a,400,49.9,"49.9-watt lithium-polymer, củ sạc công suất 30w",1.29,macos,12,18290000,30.41,21.24,1.61,0,0,0,0,0
+cellphones,acer,acer nitro 5 tiger an515 58 52sp,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,17990000,36.04,27.11,2.59,3,0,1,1,1
+cellphones,lenovo,lenovo loq 15iax9 83gs001rvn,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,20990000,35.99,25.87,2.39,3,1,1,1,1
 cellphones,msi,msi modern 14 c13m-607vn,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,300,39.3,3,1.4,windows 11 home,24,14990000,32.0,22.3,1.95,1,1,1,0,0
-cellphones,msi,msi gaming gf63 12ve-460vn,intel core i5-12450h,geforce rtx 4050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.85,windows 11 home,12,17990000,35.9,25.4,2.15,3,1,1,0,0
+cellphones,asus,asus vivobook go 14 e1404fa-nk177w,amd ryzen 5 7520u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.3,windows 11 home,24,12390000,32.45,21.39,1.79,2,0,1,0,0
+cellphones,lenovo,lenovo ideapad slim 3 14iah8 83eq0005vn,intel core i5-12450h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,n/a,300,47.0,47wh,1.37,windows 11 home,24,14190000,32.43,21.38,1.79,2,1,1,0,1
+cellphones,asus,asus gaming vivobook k3605zf-rp634w,intel core i5-12500h,geforce rtx 2050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,50.0,3,1.8,windows 11 home,24,17390000,35.86,24.91,1.89,3,0,1,0,1
 cellphones,lenovo,lenovo loq 15iax9 83gs001svn,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,3,2.38,windows 11 home,24,18990000,35.99,25.87,2.39,3,1,1,1,0
-cellphones,asus,asus vivobook 14 x1404za-nk389w,intel core i7-1255u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.4,windows 11 home,24,15790000,32.49,21.39,1.79,3,1,1,0,1
-cellphones,asus,asus tuf gaming f15 fx507zc4-hn074w,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,250,56.0,4,2.2,windows 11 home,24,18990000,35.4,25.1,2.24,2,2,1,0,1
-cellphones,asus,asus  vivobook 14 oled a1405va-km257w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,17090000,31.71,22.2,1.99,3,1,1,0,1
-cellphones,asus,asus tuf gaming a15 fa506nf-hn005w,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,15990000,35.9,25.6,2.28,3,1,0,0,0
+cellphones,asus,asus tuf gaming f15 fx507zc4-hn074w,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,250,56.0,4,2.2,windows 11 home,24,18990000,35.4,25.1,2.24,3,1,1,0,1
+cellphones,asus,asus  vivobook 14 oled a1405va-km257w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,17090000,31.71,22.2,1.99,3,0,1,0,1
 cellphones,asus,asus zenbook 14 oled ux3405ma-pp151w,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,600,75.0,4,1.2,windows 11 home,24,26390000,31.24,22.01,1.49,1,2,1,0,0
-cellphones,asus,asus vivobook s 15 s5507qa-ma092ws copilot+ x plus,snapdragon x plus x1p-42-100,n/a,16,ddr5,512,ssd,yes,15.6,2880x1620,120,600,70.0,3,1.42,windows 11 home,24,23990000,35.26,22.69,1.47,2,2,1,0,1
+cellphones,asus,asus tuf gaming a15 fa506ncr-hn047w,amd ryzen 7 7435hs,geforce rtx 3050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,20490000,35.9,25.6,2.28,4,0,1,0,0
+cellphones,asus,asus tuf gaming a15 fa506nf-hn005w,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,15990000,35.9,25.6,2.28,0,0,0,0,0
+cellphones,apple,macbook pro 14 m3,apple m3 8-core,n/a,8,n/a,512,512gb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,36490000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,asus,asus vivobook 14 x1404za-nk389w,intel core i7-1255u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.4,windows 11 home,24,15790000,32.49,21.39,1.79,3,0,1,0,1
+cellphones,asus,asus vivobook go 15 e1504fa-nj454w,amd ryzen 5 7520u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.8,windows 11 home,24,12390000,36.03,23.25,1.79,2,0,1,0,1
 cellphones,apple,apple macbook air m2 2022 8cpu 10gpu,apple m2 8-core,n/a,16,n/a,512,"512gb wi-fi 6, bảo mật vân tay",yes,13.6,2560x1664,n/a,n/a,52.6,"52,6 wh",1.27,macos,12,29990000,30.41,21.5,1.13,0,2,0,0,0
-cellphones,apple,macbook pro 14 m3,apple m3 8-core,n/a,8,n/a,512,512gb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,36490000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,asus,asus vivobook 14 oled a1405za-km263w,intel core i7-12700h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,17990000,31.71,22.2,1.99,3,1,1,0,1
-cellphones,asus,asus vivobook go 15 e1504fa-nj454w,amd ryzen 5 7520u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.8,windows 11 home,24,12390000,36.03,23.25,1.79,2,1,1,0,1
-cellphones,acer,acer aspire 7 a715-76g-59mw,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,50.0,3,2.1,windows 11 home,12,15690000,36.23,23.74,1.99,3,1,1,0,0
-cellphones,acer,acer nitro 5 tiger an515-58-50d2,intel core i5-12500h,geforce rtx 3060,16,ddr5,512,ssd,yes,15.6,1920x1080,165,300,57.5,4,2.5,windows 11 home,12,22990000,36.04,27.11,2.59,2,1,1,1,0
+cellphones,asus,asus vivobook s 15 s5507qa-ma092ws copilot+ x plus,snapdragon x plus x1p-42-100,n/a,16,ddr5,512,ssd,yes,15.6,2880x1620,120,600,70.0,3,1.42,windows 11 home,24,23990000,35.26,22.69,1.47,2,0,1,0,1
 cellphones,dell,dell inspiron 15 3520-5124blk gj8w7,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,41.0,3,1.66,windows 11 home,12,13990000,35.85,23.56,1.7,2,0,1,0,0
-cellphones,acer,acer aspire 7 a715-76g-5806,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,50.0,3,2.1,windows 11 home,12,18490000,36.23,23.74,1.99,3,1,1,0,0
-cellphones,acer,acer nitro 5 tiger an515 58 773y,intel core i7-12700h,geforce rtx 3050,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,57.5,4,2.5,windows 11 home,12,22990000,36.04,27.11,2.59,3,1,0,0,0
-cellphones,asus,asus tuf gaming a15 fa506nc-hn011w,amd ryzen 5 7535hs,geforce rtx 3050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,17490000,35.9,25.6,2.28,3,1,1,0,1
-cellphones,asus,asus vivobook 15 oled a1505va-l1114w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,600,50.0,3,1.7,windows 11 home,24,17390000,35.68,22.76,1.99,3,1,1,0,1
-cellphones,asus,asus gaming vivobook k3605zu-rp296w,intel core i5-12500h,geforce rtx 4050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows 11 home,24,22890000,35.86,24.91,1.89,2,1,1,0,1
-cellphones,asus,asus vivobook 14 x1404za-nk386w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,42.0,3,1.4,windows 11 home,24,9890000,32.49,21.39,1.79,3,1,1,0,0
-cellphones,asus,asus vivobook 15 x1504za-nj582w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,9990000,35.97,23.25,1.79,3,1,1,0,0
-cellphones,asus,asus tuf gaming a15 fa506ncr-hn047w,amd ryzen 7 7435hs,geforce rtx 3050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,20490000,35.9,25.6,2.28,3,1,1,0,0
-cellphones,lenovo,lenovo ideapad flex 5 14iau7 82r700jqvn,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,14.0,2240x1400,60,300,52.5,52.5wh,1.5,windows 11 home,24,11490000,31.31,22.49,1.74,2,1,1,0,1
-cellphones,hp,hp 15-fd0237tu 9q972pa,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.59,windows 11 home,12,14990000,35.98,23.6,1.86,2,1,1,0,1
-cellphones,apple,macbook pro 14 inch m3 2023,apple m3 8-core,n/a,16,n/a,512,ssd,yes,14.2,3024x1964,120,n/a,n/a,n/a,1.55,macos,12,42990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,lenovo,lenovo ideapad slim 3 14iah8 83eq0009vn,intel core i5-12450h,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1080,n/a,300,47.0,47wh,1.37,windows 11 home,24,15290000,32.43,21.38,1.79,2,1,1,0,1
-cellphones,acer,acer aspire 3 a315-59-381e,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,40.0,3,1.7,windows 11 home,12,9490000,36.29,24.13,1.99,3,0,1,0,0
-cellphones,dell,dell vostro 3520 f0v0vi3,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.9,free os,12,9690000,35.85,18.99,1.7,2,0,1,1,1
-cellphones,lenovo,lenovo thinkpad e14 gen 5 21jk00h5vn,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,n/a,47.0,47wh,1.43,windows 11 home,24,19490000,31.3,21.93,1.8,1,2,1,1,1
-cellphones,lenovo,lenovo ideapad slim 3 15 abr8 82xm00ejvn,amd ryzen 5 7430u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,300,47.0,47wh,1.62,windows 11 home,24,12490000,35.93,23.5,1.79,2,1,1,0,1
-cellphones,asus,asus zenbook s 14 oled ux5406sa-pv140ws,intel core ultra 7 258v,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,500,72.0,4,1.2,windows 11 home,24,44990000,31.03,21.47,1.19,1,2,1,0,1
-cellphones,asus,asus vivobook s 14 oled m5406wa-pp071ws,amd ryzen ai 9 hx 370,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,600,75.0,4,1.3,windows 11 home,24,30990000,31.05,22.19,1.39,2,2,1,0,1
-cellphones,asus,asus vivobook 14 oled a1405va-km095w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,17390000,31.71,22.2,1.99,3,1,1,0,0
-cellphones,acer,acer gaming aspire 7 a715-76g-73fm,intel core i7-12650h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,50.0,3,2.1,windows 11 home,12,17790000,36.23,23.74,1.99,3,1,1,1,0
-cellphones,lenovo,lenovo thinkbook 16 g6 irl 21kh00q0vn,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,71.0,71wh,1.7,windows 11 home,24,17990000,35.6,25.35,1.75,2,2,1,1,1
-cellphones,msi,msi gaming thin 15 b12ucx-1419vn,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,15490000,35.9,25.4,2.17,3,1,1,0,0
-cellphones,msi,msi modern 15 b7m-238vn,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,39.3,3,1.75,windows 11 home,24,12990000,35.9,24.1,1.99,1,1,1,0,0
-cellphones,asus,asus vivobook 15 x1504za-nj1039w,intel core i7-1255u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,15990000,35.97,23.25,1.79,3,1,1,0,1
+cellphones,asus,asus vivobook 14 oled a1405za-km263w,intel core i7-12700h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,17990000,31.71,22.2,1.99,3,0,1,0,1
+cellphones,msi,msi gaming gf63 12ve-460vn,intel core i5-12450h,geforce rtx 4050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.85,windows 11 home,12,17490000,35.9,25.4,2.15,3,0,1,0,0
+cellphones,acer,acer nitro 5 tiger an515 58 773y,intel core i7-12700h,geforce rtx 3050,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,57.5,4,2.5,windows 11 home,12,22990000,36.04,27.11,2.59,2,0,0,0,0
+cellphones,acer,acer aspire 7 a715-76g-59mw,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,50.0,3,2.1,windows 11 home,12,15690000,36.23,23.74,1.99,3,0,1,0,0
+cellphones,msi,msi katana 15 b13vfk-676vn,intel core i7-13620h,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,26990000,35.9,25.9,2.49,3,1,1,0,0
+cellphones,apple,macbook pro 14 inch m3 2023,apple m3 8-core,n/a,16,n/a,512,ssd,yes,14.2,3024x1964,120,n/a,n/a,n/a,1.55,macos,12,42990000,31.26,22.12,1.55,0,0,1,0,1
 cellphones,lenovo,lenovo legion 5 15irx9 83jj000fvn,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.32,windows 11 home,24,35990000,35.88,26.14,2.46,3,2,1,1,1
-cellphones,lenovo,lenovo ideapad slim 5 15iru9 83d00003vn,intel core 5 120u,n/a,32,ddr5,512,ssd,yes,15.3,1920x1200,n/a,300,57.0,57wh,1.79,windows 11 home,24,19990000,34.35,23.82,1.74,2,2,1,0,1
+cellphones,asus,asus vivobook 15 x1504za-nj582w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,9990000,35.97,23.25,1.79,3,0,1,0,0
+cellphones,acer,acer aspire 7 a715-76g-5806,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,50.0,3,2.1,windows 11 home,12,18490000,36.23,23.74,1.99,3,0,1,0,0
+cellphones,asus,asus vivobook 14 x1404za-nk386w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,42.0,3,1.4,windows 11 home,24,9690000,32.49,21.39,1.79,3,0,1,0,0
+cellphones,asus,asus vivobook 15 x1504za-nj1039w,intel core i7-1255u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,15990000,35.97,23.25,1.79,3,0,1,0,1
+cellphones,asus,asus gaming vivobook k3605zu-rp296w,intel core i5-12500h,geforce rtx 4050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows 11 home,24,23290000,35.86,24.91,1.89,2,1,1,0,1
 cellphones,asus,asus vivobook s 14 oled s5406ma-pp046ws,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.3,windows 11 home,24,23990000,31.05,22.19,1.39,2,2,1,0,1
-cellphones,msi,msi modern 14 c7m-221vn,amd ryzen 7 7730u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,39.3,3,1.4,windows 11 home,24,10490000,32.0,22.3,1.95,3,1,1,0,1
-cellphones,lenovo,lenovo loq 15irx9 83dv00d5vn,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,29690000,35.99,25.87,2.39,3,1,1,1,0
-cellphones,asus,asus zenbook 14 oled ux3405ma-pp152w,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,600,75.0,4,1.2,windows 11 home,24,31490000,31.24,22.01,1.49,1,2,1,0,1
+cellphones,asus,asus vivobook 15 oled a1505va-l1114w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,600,50.0,3,1.7,windows 11 home,24,17390000,35.68,22.76,1.99,3,0,1,0,1
+cellphones,asus,asus vivobook 14 oled a1405va-km095w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,17390000,31.71,22.2,1.99,3,0,1,0,0
+cellphones,acer,acer aspire 3 a315-59-381e,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,40.0,3,1.7,windows 11 home,12,9490000,36.29,24.13,1.99,3,0,1,0,0
+cellphones,dell,dell vostro 3520 f0v0vi3,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.9,linux,12,9690000,35.85,18.99,1.7,2,0,1,1,1
+cellphones,lenovo,lenovo ideapad slim 3 15 abr8 82xm00ejvn,amd ryzen 5 7430u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,300,47.0,47wh,1.62,windows 11 home,24,11990000,35.93,23.5,1.79,2,1,1,0,1
+cellphones,lenovo,lenovo ideapad flex 5 14iau7 82r700jqvn,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,14.0,2240x1400,60,300,52.5,52.5wh,1.5,windows 11 home,24,11490000,31.31,22.49,1.74,1,1,1,0,1
+cellphones,hp,hp 15-fd0237tu 9q972pa,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.59,windows 11 home,12,14990000,35.98,23.6,1.86,0,0,1,0,1
+cellphones,acer,acer nitro 5 tiger an515-58-50d2,intel core i5-12500h,geforce rtx 3060,16,ddr5,512,ssd,yes,15.6,1920x1080,165,300,57.5,4,2.5,windows 11 home,12,22990000,36.04,27.11,2.59,2,0,1,1,0
+cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 11-core,n/a,18,n/a,512,512gb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,46990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,lenovo,lenovo thinkpad e14 gen 5 21jk00h5vn,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,n/a,47.0,47wh,1.43,windows 11 home,24,19990000,31.3,21.93,1.8,1,2,1,1,1
+cellphones,lenovo,lenovo thinkbook 16 g6 irl 21kh00q0vn,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,71.0,71wh,1.7,windows 11 home,24,17990000,35.6,25.35,1.75,2,2,1,1,1
+cellphones,lenovo,lenovo ideapad slim 3 14iah8 83eq0009vn,intel core i5-12450h,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1080,n/a,300,47.0,47wh,1.37,windows 11 home,24,15290000,32.43,21.38,1.79,2,1,1,0,1
+cellphones,acer,acer aspire 5 spin 14 a5sp14-51mtn-573x,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,50wh li-ion battery,1.6,windows 11 home,12,14990000,31.82,22.55,1.8,2,0,1,0,1
 cellphones,lenovo,lenovo loq 15iax9 83gs000rvn,intel core i5-12450hx,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60 wh,2.38,windows 11 home,24,25990000,35.99,25.87,2.39,3,1,1,1,1
-cellphones,msi,msi katana 15 b13vfk-676vn,intel core i7-13620h,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,27490000,35.9,25.9,2.49,3,1,1,0,0
-cellphones,acer,acer aspire 5 spin 14 a5sp14-51mtn-573x,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,50wh li-ion battery,1.6,windows 11 home,12,14990000,31.82,22.55,1.8,2,1,1,0,1
-cellphones,asus,asus expertbook b1402cba-nk2669w,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.49,windows 11 home,24,12990000,32.69,21.45,1.99,2,2,1,1,1
-cellphones,hp,hp pavilion 15-eg2083tu 7c0w9pa,intel core i5-1240p,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,3,1.7,windows 11 home,12,14990000,36.02,23.4,1.79,2,1,1,0,0
-cellphones,asus,asus vivobook 15 oled a1505va-ma492w,intel core i7-13700h,n/a,16,ddr4,512,ssd,yes,15.6,2880x1620,120,600,50.0,3,1.7,windows 11 home,24,20190000,35.68,22.76,1.99,3,1,1,0,1
-cellphones,lenovo,lenovo loq 15irx9 83dv00ufvn,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,32990000,35.99,25.87,2.39,3,1,1,1,1
+cellphones,msi,msi modern 15 b7m-238vn,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,39.3,3,1.75,windows 11 home,24,12990000,35.9,24.1,1.99,1,1,1,0,0
+cellphones,acer,acer aspire 5 spin 14 a5sp14-51mtn-78jh,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,250,50.0,50wh li-ion battery,1.6,windows 11 home,12,16990000,31.82,22.55,1.8,2,0,1,0,1
+cellphones,asus,asus tuf gaming a15 fa506nc-hn011w,amd ryzen 5 7535hs,geforce rtx 3050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,17490000,35.9,25.6,2.28,4,0,1,0,1
+cellphones,msi,msi modern 14 c7m-221vn,amd ryzen 7 7730u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,39.3,3,1.4,windows 11 home,24,10490000,32.0,22.3,1.95,3,0,1,0,1
+cellphones,asus,asus zenbook 14 oled ux3405ma-pp152w,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,600,75.0,4,1.2,windows 11 home,24,31490000,31.24,22.01,1.49,1,2,1,0,1
+cellphones,asus,asus vivobook 15 oled a1505va-ma492w,intel core i7-13700h,n/a,16,ddr4,512,ssd,yes,15.6,2880x1620,120,600,50.0,3,1.7,windows 11 home,24,20190000,35.68,22.76,1.99,3,0,1,0,1
+cellphones,asus,asus vivobook 15 x1504va-nj070w,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,15390000,35.97,23.25,1.79,3,0,1,0,0
+cellphones,acer,acer gaming aspire 7 a715-76g-73fm,intel core i7-12650h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,50.0,3,2.1,windows 11 home,12,17490000,36.23,23.74,1.99,3,0,1,1,0
+cellphones,asus,asus zenbook s 14 oled ux5406sa-pv140ws,intel core ultra 7 258v,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,500,72.0,4,1.2,windows 11 home,24,44990000,31.03,21.47,1.19,1,2,1,0,1
+cellphones,asus,asus rog strix g16 g614ju-n4132w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,2.5,windows 11 home,24,34990000,35.4,26.4,2.26,3,1,1,0,1
+cellphones,asus,asus expertbook b1402cba-nk2669w,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.49,windows 11 home,24,12990000,32.69,21.45,1.99,3,0,1,1,1
 cellphones,dell,dell inspiron 15 3520 6r6nk,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.66,windows 11 home,12,13490000,35.85,23.56,1.7,2,0,1,0,0
+cellphones,lenovo,lenovo legion 7 16irx9 83fd004mvn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,3200x2000,165,430,99.9,99.9wh,2.24,windows 11 home,24,60990000,35.77,26.25,1.98,2,3,1,0,0
+cellphones,lenovo,lenovo ideapad slim 5 15iru9 83d00003vn,intel core 5 120u,n/a,32,ddr5,512,ssd,yes,15.3,1920x1200,n/a,300,57.0,57wh,1.79,windows 11 home,24,19490000,34.35,23.82,1.74,2,2,1,0,1
+cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 11-core,n/a,36,n/a,512,512gb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,55990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,hp,hp pavilion 15-eg2083tu 7c0w9pa,intel core i5-1240p,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,3,1.7,windows 11 home,12,14990000,36.02,23.4,1.79,2,0,1,0,0
+cellphones,lenovo,lenovo loq 15irx9 83dv00d5vn,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,29690000,35.99,25.87,2.39,3,1,1,1,0
+cellphones,lenovo,lenovo thinkbook 14 g6 irl 21kg00bqvn,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,45.0,45wh,1.38,windows 11 home,24,20490000,31.35,22.4,1.69,2,2,1,1,1
+cellphones,hp,hp pavilion 15-eg2088tu 7c0r0pa,intel core i7-1260p,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.75,windows 11 home,12,19490000,36.02,23.4,1.79,2,0,1,0,1
+cellphones,lenovo,lenovo loq 15arp9 83jc003vvn,amd ryzen 7 7435hs,geforce rtx 4050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,60.0,60wh,2.38,windows 11 home,24,25890000,35.99,25.87,2.39,1,2,1,1,1
+cellphones,lenovo,lenovo loq 15irx9 83dv00ufvn,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,32990000,35.99,25.87,2.39,3,1,1,1,1
+cellphones,dell,dell inspiron 15 3530 p16wd,intel core i7-1355u,n/a,16,ddr4,1024,ssd,yes,15.6,1920x1080,120,n/a,54.0,4,1.716,windows 11 home,12,22490000,35.85,23.56,1.7,2,0,0,0,1
+cellphones,lenovo,lenovo ideapad slim 3 15abr8 82xm00ehvn,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,300,47.0,47wh,1.62,windows 11 home,24,14490000,35.93,23.5,1.79,2,1,1,0,1
 cellphones,lenovo,lenovo loq 15arp9 83jc003yvn,amd ryzen 7 7435hs,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,29290000,35.99,25.87,2.39,3,1,1,1,1
 cellphones,asus,asus  vivobook s 16 oled s5606ma-mx051w,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,3200x2000,120,600,75.0,4,1.5,windows 11 home,24,26890000,35.36,24.69,1.39,2,2,1,0,1
-cellphones,lenovo,lenovo thinkbook 14 g6 irl 21kg00bqvn,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,45.0,45wh,1.38,windows 11 home,24,20490000,31.35,22.4,1.69,2,2,1,1,1
-cellphones,dell,dell inspiron 15 3530 p16wd,intel core i7-1355u,n/a,16,ddr4,1024,ssd,yes,15.6,1920x1080,120,n/a,54.0,4,1.716,windows 11 home,12,22490000,35.85,23.56,1.7,2,1,0,0,1
-cellphones,acer,acer aspire 5 spin 14 a5sp14-51mtn-78jh,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,250,50.0,50wh li-ion battery,1.6,windows 11 home,12,16990000,31.82,22.55,1.8,2,1,1,0,1
-cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 11-core,n/a,36,n/a,512,512gb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,55990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,asus,asus vivobook 15 x1504va-nj070w,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,15390000,35.97,23.25,1.79,3,1,1,0,0
+cellphones,asus,asus tuf gaming a15 fa507nur-lp101w,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,24790000,35.4,25.1,2.24,4,0,1,0,1
+cellphones,msi,msi gaming thin 15 b12ucx-1419vn,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,15490000,35.9,25.4,2.17,3,1,1,0,0
 cellphones,lenovo,lenovo loq 15arp9 83jc007jvn,amd ryzen 5 7235hs,geforce rtx 3050,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,22490000,35.99,25.87,2.39,3,1,1,1,1
-cellphones,asus,asus tuf gaming a15 fa507nur-lp101w,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,24590000,35.4,25.1,2.24,2,2,1,0,1
-cellphones,lenovo,lenovo loq 15arp9 83jc003vvn,amd ryzen 7 7435hs,geforce rtx 4050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,60.0,60wh,2.38,windows 11 home,24,25890000,35.99,25.87,2.39,1,2,1,1,1
-cellphones,lenovo,lenovo yoga slim 7 14imh9 83cv001uvn,intel core ultra 7 155h,n/a,32,ddr5,512,ssd,yes,14.0,1920x1200,60,400,65.0,65wh,1.39,windows 11 home,24,29990000,31.2,22.1,1.49,1,2,1,0,1
-cellphones,asus,asus vivobook 15 oled a1505va ma468w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,15.6,2880x1620,120,600,50.0,3,1.7,windows 11 home,24,17990000,35.68,22.76,1.99,3,1,1,0,1
-cellphones,lenovo,lenovo legion 7 16irx9 83fd004mvn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,3200x2000,165,430,99.9,99.9wh,2.24,windows 11 home,24,60990000,35.77,26.25,1.98,2,3,1,0,0
-cellphones,hp,hp pavilion 15-eg2088tu 7c0r0pa,intel core i7-1260p,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.75,windows 11 home,12,19490000,36.02,23.4,1.79,2,1,1,0,1
+cellphones,asus,asus vivobook 15 oled a1505va ma468w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,15.6,2880x1620,120,600,50.0,3,1.7,windows 11 home,24,17990000,35.68,22.76,1.99,3,0,1,0,1
 cellphones,apple,macbook air m2 2022 8cpu 10gpu,apple m2 8-core,n/a,16,n/a,256,"256gb wi-fi 6, bảo mật vân tay",yes,13.6,2560x1664,n/a,n/a,52.6,"52,6 wh",1.24,macos,12,26590000,30.41,21.5,1.13,0,2,0,0,0
-cellphones,lenovo,lenovo ideapad slim 3 15abr8 82xm00ehvn,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,300,47.0,47wh,1.62,windows 11 home,24,14490000,35.93,23.5,1.79,2,1,1,0,1
-cellphones,asus,asus rog strix g16 g614ju-n4132w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,2.5,windows 11 home,24,34990000,35.4,26.4,2.26,2,2,1,0,1
-cellphones,lenovo,lenovo ideapad slim 3 14irh8 83el0023vn,intel core i7-13620h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,n/a,300,47.0,47wh,1.37,windows 11 home,24,17990000,32.43,21.38,1.79,2,1,1,0,1
-cellphones,asus,asus rog strix g16 g614jv-n4156w,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,36790000,35.4,26.4,2.26,2,2,1,0,1
 cellphones,lenovo,lenovo thinkpad e14 gen 5 21jk006bvn,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,n/a,47.0,47wh,1.43,windows 11 home,24,19790000,31.3,21.93,1.8,1,2,1,1,1
-cellphones,msi,msi gaming thin gf63 12ve-454vn,intel core i5-12450h,geforce rtx 4050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,52.4 wh,1.85,windows 11 home,24,18490000,35.9,25.4,2.15,3,1,1,0,0
-cellphones,lenovo,lenovo ideapad slim 5 14imh9 83da001nvn,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,57.0,57wh,1.46,windows 11 home,24,21990000,31.2,22.1,1.69,2,2,1,0,1
-cellphones,dell,dell inspiron 15 3530 n5i5407w1,intel core i5-1334u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1200,120,250,41.0,3,1.62,windows 11 home,12,17490000,35.85,23.56,1.9,1,1,1,0,0
-cellphones,lenovo,lenovo thinkbook 14 g6 abp 21kj005hvn,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,45.0,45wh,1.38,windows 11 home,24,18490000,31.35,22.4,1.69,2,2,1,1,1
-cellphones,msi,msi prestige 14 ai studio c1udxg-058vn,intel core ultra 7 155h,geforce rtx 3050,16,ddr5,1024,ssd,yes,14.0,1920x1200,144,n/a,90.0,4,1.7,windows 11 home,24,26990000,31.34,24.65,1.9,1,1,1,0,1
-cellphones,asus,asus rog strix g16 g614ju-n3135w,intel core i5-13450hx,geforce rtx 4050,8,ddr5,512,ssd,yes,16.0,1920x1200,165,250,90.0,4,2.5,windows 11 home,24,29490000,35.4,26.4,2.26,2,2,1,0,1
-cellphones,asus,asus vivobook s 14 flip tp3402va-lz118w,intel core i9-13900h,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,50.0,3,1.5,windows 11 home,24,22890000,31.32,22.76,1.89,2,1,1,0,1
-cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 12-core,n/a,18,n/a,1024,1tb wi-fi 6,yes,14.2,3024x1964,120,n/a,72.4,72.4wh,1.55,n/a,12,56990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,msi,msi gaming thin 15 b13uc-1411vn,intel core i7-13620h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,18490000,35.9,25.4,2.17,3,1,1,0,1
-cellphones,hp,hp gaming victus 15-fb1023ax 94f20pa,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,no,15.6,1920x1080,n/a,250,52.5,3,2.29,windows 11 home,12,17990000,35.79,25.5,2.35,2,1,1,0,0
-cellphones,lenovo,lenovo thinkpad e16 gen 1 21jn00gjvn,intel core i5-13420h,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,47wh,1.81,windows 11 home,24,18990000,35.61,24.77,1.99,1,2,1,1,1
-cellphones,msi,msi gaming gf63 thin 12uc-1006vn,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,3 cell. lithium-ion. 120 w,3,1.86,windows 11 home,12,16490000,35.9,25.4,2.17,3,1,1,1,0
-cellphones,lenovo,lenovo ideapad slim  5 14aph9 83db003bvn,amd ryzen 7 8845hs,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,57wh,1.48,windows 11 home,24,21990000,31.2,22.1,1.69,2,2,1,0,1
-cellphones,dell,dell latitude 3540 71038100,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.81,windows 11 home,12,16990000,35.9,23.97,1.81,3,1,1,0,0
-cellphones,lenovo,lenovo ideapad slim 5 14imh9 83da006uvn,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,57wh,1.48,windows 11 home,24,24490000,31.2,22.1,1.69,2,2,1,0,1
-cellphones,asus,asus tuf gaming f15 fx507vu-lp198w,intel core i7-13620h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,25290000,35.4,25.1,2.24,2,2,1,0,1
-cellphones,acer,acer swift lite 14 ai sfl14-51m-56hs,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,58.0,3,1.27,windows 11 home,12,18190000,31.44,22.19,1.75,3,1,1,0,1
-cellphones,asus,asus vivobook s 14 oled s5406ma-pp136w,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,600,75.0,4,1.3,windows 11 home,24,23990000,31.05,22.19,1.39,2,2,1,0,1
-cellphones,lenovo,lenovo loq 15iax9 83gs001qvn,intel core i5-12450hx,geforce rtx 4050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,25290000,35.99,25.87,2.39,3,1,1,1,1
-cellphones,asus,asus rog strix g16 g614jvr-n4162w,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,44990000,35.4,26.4,2.26,2,2,1,0,1
-cellphones,lenovo,lenovo ideapad slim 3 14iah8 83eq0004vn,intel core i5-12450h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1080,60,300,47.0,47 wh,1.37,windows 11 home,24,12490000,32.43,21.38,1.79,2,1,1,0,0
-cellphones,asus,asus vivobook 15x oled m3504ya-l1332w,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,600,50.0,3,1.6,windows 11 home,24,15990000,35.97,23.25,1.79,3,1,1,0,1
-cellphones,msi,msi modern 14 c12mo-660vn,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,39wh,1.4,windows 11 home,24,11990000,32.0,22.3,1.95,1,1,1,0,1
-cellphones,asus,asus tuf gaming f15 fx507vv-lp304w,intel core i7-13620h,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,29990000,35.4,25.1,2.24,2,2,1,0,1
 cellphones,asus,asus zenbook 14 oled ux3405ma-pp588w,intel core ultra 5,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,600,75.0,4,1.2,windows 11 home,24,26390000,31.24,22.01,1.49,1,2,1,0,1
-cellphones,lenovo,lenovo yoga slim 6 14irh8 83e00008vn,intel core i7-13700h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,65.0,65 wh,1.35,windows 11 home,36,24490000,31.2,22.1,1.49,1,2,1,0,1
-cellphones,asus,asus gaming rog zephyrus g16 gu603vu-n4019w,intel core i7-13620h,geforce rtx 4050,16,ddr4,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,38990000,35.5,24.3,1.99,2,2,1,0,1
-cellphones,lenovo,lenovo ideapad slim 5 14imh9 83da006tvn,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,400,57.0,57wh,1.48,windows 11 home,24,22990000,31.2,22.1,1.69,2,2,1,0,1
-cellphones,asus,asus tuf gaming a15 fa506nfr-hn006w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,"48 wh, 150 w",2.3,windows,24,18490000,35.9,25.6,2.28,3,1,0,1,0
-cellphones,asus,asus tuf gaming f15 fx507vu-lp315w,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,26990000,35.4,25.1,2.24,2,2,1,0,1
-cellphones,lenovo,lenovo loq 15irx9 83dv00ugvn,intel core i7-13650hx,geforce rtx 4050,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,"60wh, 170w slim tip (3-pin)",2.38,windows 11 home,24,30490000,35.99,25.87,2.39,3,1,1,1,1
-cellphones,hp,hp envy x360 2in1 14-fc0162tu ay8x1pa,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,27990000,31.33,21.89,1.69,2,2,1,0,1
-cellphones,asus,asus expertbook b1 b1502cba-nj1261w,intel core i3-1215u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.69,windows 11 home,24,9490000,36.16,23.3,1.99,2,2,1,1,1
-cellphones,lg,lg gram 2023 14z90r-g.ah53a5,intel core i5-1340p,n/a,16,ddr5,256,ssd,yes,14.0,1920x1200,60,350,72.0,72 wh li-ion,0.999,windows 11 home,12,21990000,31.2,21.39,1.68,2,2,0,0,0
-cellphones,apple,macbook pro 16 m3 max,apple m3 max 16-core,n/a,48,n/a,1024,1tb wi-fi 6,yes,16.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,97990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,acer,acer aspire lite al16-51p-55n7 nx.kx0sv.001,intel core i5-1235u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.8,windows 11 home,12,13490000,35.76,24.7,1.89,3,1,1,0,1
+cellphones,asus,asus rog strix g16 g614jv-n4156w,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,36790000,35.4,26.4,2.26,3,1,1,0,1
+cellphones,msi,msi gaming thin 15 b13uc-1411vn,intel core i7-13620h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,18490000,35.9,25.4,2.17,3,1,1,0,1
+cellphones,asus,asus tuf gaming a14 fa401wv-rg062ws,amd ryzen ai 9 hx 370,geforce rtx 4060,16,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,41990000,31.1,22.7,1.69,3,1,1,0,1
+cellphones,lenovo,lenovo thinkbook 14 g6 abp 21kj005hvn,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,45.0,45wh,1.38,windows 11 home,24,18490000,31.35,22.4,1.69,2,2,1,1,1
+cellphones,asus,asus rog strix g16 g614ju-n3135w,intel core i5-13450hx,geforce rtx 4050,8,ddr5,512,ssd,yes,16.0,1920x1200,165,250,90.0,4,2.5,windows 11 home,24,29490000,35.4,26.4,2.26,3,1,1,0,1
+cellphones,lenovo,lenovo loq 15iax9 83gs001qvn,intel core i5-12450hx,geforce rtx 4050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,60wh,2.38,windows 11 home,24,24990000,35.99,25.87,2.39,3,1,1,1,1
+cellphones,lenovo,lenovo yoga slim 7 14imh9 83cv001uvn,intel core ultra 7 155h,n/a,32,ddr5,512,ssd,yes,14.0,1920x1200,60,400,65.0,65wh,1.39,windows 11 home,24,29990000,31.2,22.1,1.49,1,2,1,0,1
+cellphones,dell,dell inspiron 15 3530 n5i5407w1,intel core i5-1334u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1200,120,250,41.0,3,1.62,windows 11 home,12,17490000,35.85,23.56,1.9,2,0,1,0,0
+cellphones,acer,acer nitro v 15 propanel anv15-41-r7ap,amd ryzen 5 7535hs,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,180,300,57.0,4,2.1,windows 11 home,12,19490000,36.23,23.99,2.35,0,0,1,1,0
+cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 12-core,n/a,18,n/a,1024,1tb wi-fi 6,yes,14.2,3024x1964,120,n/a,72.4,72.4wh,1.55,n/a,12,56990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,lenovo,lenovo ideapad slim 5 14imh9 83da006uvn,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,57wh,1.48,windows 11 home,24,24490000,31.2,22.1,1.69,2,2,1,0,1
+cellphones,lenovo,lenovo thinkpad e16 gen 1 21jn00gjvn,intel core i5-13420h,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,47wh,1.81,windows 11 home,24,18990000,35.61,24.77,1.99,1,2,1,1,1
+cellphones,msi,msi modern 14 c12mo-660vn,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,39wh,1.4,windows 11 home,24,11990000,32.0,22.3,1.95,1,0,1,0,1
+cellphones,hp,hp gaming victus 15-fb1023ax 94f20pa,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,no,15.6,1920x1080,n/a,250,52.5,3,2.29,windows 11 home,12,17990000,35.79,25.5,2.35,0,0,1,0,0
+cellphones,asus,asus vivobook s 14 oled s5406ma-pp136w,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,600,75.0,4,1.3,windows 11 home,24,23990000,31.05,22.19,1.39,2,2,1,0,1
+cellphones,lenovo,lenovo ideapad slim 5 14imh9 83da001nvn,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,57.0,57wh,1.46,windows 11 home,24,21790000,31.2,22.1,1.69,2,2,1,0,1
 cellphones,msi,msi gaming bravo 15 c7vfk-275vn,amd ryzen 7 7735hs,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,24490000,35.9,25.9,2.49,3,1,1,0,1
-cellphones,asus,asus tuf gaming a15 fa506nfr-hn075w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,18690000,35.9,25.6,2.28,3,1,1,0,1
-cellphones,acer,acer nitro v 15 propanel anv15-41-r7ap,amd ryzen 5 7535hs,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,180,300,57.0,4,2.1,windows 11 home,12,19490000,36.23,23.99,2.35,3,1,1,1,0
-cellphones,dell,dell latitude 5550 71047019,intel core ultra 7 165u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,54.0,3,1.62,windows 11 home,12,31490000,35.7,23.3,2.08,2,2,1,0,0
-cellphones,asus,asus tuf gaming a15 fa507nvr-lp091w,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,27490000,35.4,25.1,2.24,2,2,1,0,1
-cellphones,lenovo,lenovo gaming legion 5 16irx9 83dg004yvn,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,80wh,2.36,windows 11 home,24,40990000,35.97,26.23,2.52,3,2,1,1,1
-cellphones,acer,acer nitro v anv15-51-75gs,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,28990000,36.23,23.99,2.29,5,1,1,0,1
-cellphones,asus,asus tuf gaming a14 fa401wv-rg062ws,amd ryzen ai 9 hx 370,geforce rtx 4060,16,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,41990000,31.1,22.7,1.69,2,2,1,0,1
-cellphones,hp,hp 15 250 g8 85c69ea,intel core i5-1135g,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.74,free os,12,10990000,35.79,24.21,1.98,2,1,1,1,1
-cellphones,lenovo,lenovo legion slim 5 16ahp9 83dh003avn,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,80wh,2.3,windows 11 home,24,39990000,35.97,26.05,1.99,4,1,1,1,1
-cellphones,asus,asus vivobook s 14 oled s5406ma-pp198ws,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.3,windows 11 home,24,26390000,31.05,22.19,1.39,2,2,1,0,1
+cellphones,asus,asus gaming rog zephyrus g16 gu603vu-n4019w,intel core i7-13620h,geforce rtx 4050,16,ddr4,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,38990000,35.5,24.3,1.99,3,1,1,0,1
+cellphones,hp,hp envy x360 2in1 14-fc0162tu ay8x1pa,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,27790000,31.33,21.89,1.69,0,1,1,0,1
+cellphones,asus,asus tuf gaming f15 fx507vu-lp198w,intel core i7-13620h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,25290000,35.4,25.1,2.24,0,1,1,0,1
+cellphones,asus,asus tuf gaming f15 fx507vv-lp304w,intel core i7-13620h,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,29990000,35.4,25.1,2.24,3,1,1,0,1
+cellphones,msi,msi gaming gf63 thin 12uc-1006vn,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,120.0,3,1.86,windows 11 home,12,16490000,35.9,25.4,2.17,3,1,1,1,0
+cellphones,asus,asus vivobook s 14 flip tp3402va-lz118w,intel core i9-13900h,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,50.0,3,1.5,windows 11 home,24,22890000,31.32,22.76,1.89,2,0,1,0,1
+cellphones,lenovo,lenovo ideapad slim 5 14imh9 83da006tvn,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,400,57.0,57wh,1.48,windows 11 home,24,22790000,31.2,22.1,1.69,2,2,1,0,1
 cellphones,lenovo,lenovo gaming legion 5 pro 16irx9 83df0046vn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,80.0,80wh,2.5,windows 11 home,24,51690000,36.34,26.18,2.69,4,2,1,1,1
-cellphones,lenovo,lenovo gaming legion 5 pro 16irx9 83df0047vn,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,80.0,80wh,2.5,windows 11 home,24,45990000,36.34,26.18,2.69,4,2,1,1,1
-cellphones,asus,asus expertbook b1402cva-nk0157w,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.46,windows 11 home,24,15990000,32.69,21.45,1.99,2,2,1,1,0
-cellphones,asus,asus expertbook b1 b1502cva-nj0101w,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.69,windows 11 home,24,9990000,36.16,23.3,1.99,1,2,1,1,0
-cellphones,msi,msi cyborg 15 a12ucx-618vn,intel core i5-12450h,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,53.5,3,1.95,windows 11 home,24,16990000,35.9,25.0,2.19,2,1,1,0,0
+cellphones,dell,dell latitude 3540 71038100,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.81,windows 11 home,12,16990000,35.9,23.97,1.81,4,0,1,0,0
+cellphones,apple,macbook pro 16 m3 max,apple m3 max 16-core,n/a,48,n/a,1024,1tb wi-fi 6,yes,16.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,97990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,lenovo,lenovo ideapad slim  5 14aph9 83db003bvn,amd ryzen 7 8845hs,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,57wh,1.48,windows 11 home,24,21990000,31.2,22.1,1.69,2,2,1,0,1
+cellphones,lg,lg gram 2023 14z90r-g.ah53a5,intel core i5-1340p,n/a,16,ddr5,256,ssd,yes,14.0,1920x1200,60,350,72.0,72 wh li-ion,999g,windows 11 home,12,21990000,31.2,21.39,1.68,2,0,0,0,0
+cellphones,asus,asus expertbook b1 b1502cva-nj0101w,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.69,windows 11 home,24,9990000,36.16,23.3,1.99,3,0,1,1,0
+cellphones,hp,hp 15 250 g8 85c69ea,intel core i5-1135g,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.74,linux,12,10990000,35.79,24.21,1.98,3,0,1,1,1
 cellphones,asus,asus zenbook s 13 oled ux5304va-nq125w,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,13.3,2880x1800,60,550,63.0,4,1.0,windows 11 home,24,32990000,29.62,21.63,1.09,1,2,1,0,1
-cellphones,msi,msi modern 14 c12m-241vn,intel core i7-1255u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,39.0,39 wh,1.4,windows 11 home,24,14490000,32.0,22.3,1.95,1,1,1,0,1
-cellphones,asus,asus tuf gaming f15 fx507vi-lp088w,intel core i7-13620h,geforce rtx 4070,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,36990000,35.4,25.1,2.24,2,2,1,0,1
-cellphones,asus,asus tuf gaming a15 fa507nv-lp061w,amd ryzen 7 7735hs,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,28990000,35.4,25.1,2.24,2,2,0,0,0
-cellphones,apple,macbook pro 14 m3,apple m3 8-core,n/a,8,n/a,1024,1tb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,38990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,apple,macbook pro 14 m3  | chính hãng apple việt nam,apple m3 8-core,n/a,16,n/a,1024,1tb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,45990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,asus,asus expertbook b1 b1402cva-nk0149w,intel core i5-1335u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.46,windows 11 home,24,12490000,32.69,21.45,1.99,2,2,1,1,0
-cellphones,dell,dell vostro 3520,intel core i7-1255u,geforce mx550,8,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,n/a,n/a,1.66,free os,12,18490000,35.85,23.56,1.7,1,0,1,1,0
-cellphones,acer,acer nitro v anv15-51-55ca,intel core i5-13420h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,24490000,36.23,23.99,2.29,3,1,1,1,1
-cellphones,asus,asus vivobook 15 oled s5507qa-ma090ws,snapdragon x elite x1e-78-100,n/a,32,ddr5,1024,ssd,yes,15.6,2880x1620,120,600,70.0,3,1.42,windows 11 home,24,31490000,35.26,22.69,1.47,2,2,1,0,1
-cellphones,lg,lg gram 2023 14z90rs-g.ah54a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,400,72.0,72 wh li-ion,0.999,windows 11 home,12,27990000,31.16,21.39,1.59,2,1,0,0,0
-cellphones,asus,asus tuf gaming a16 advantage edition fa617nsr-rl100w,amd ryzen 7 7435hs,radeon rx 7600s,16,ddr5,512,ssd,yes,16.0,1920x1200,144,300,90.0,4,2.2,windows 11 home,24,23490000,35.5,25.2,2.21,2,2,1,0,1
-cellphones,dell,dell inspiron 15 3520 8d10nk,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.685,windows 11 home,12,16390000,35.85,23.49,1.75,3,0,1,0,1
+cellphones,lenovo,lenovo loq 15irx9 83dv00ugvn,intel core i7-13650hx,geforce rtx 4050,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,3,2.38,windows 11 home,24,30490000,35.99,25.87,2.39,3,1,1,1,1
+cellphones,asus,asus tuf gaming a15 fa507nvr-lp091w,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,27490000,35.4,25.1,2.24,4,0,1,0,1
+cellphones,asus,asus expertbook b1 b1502cba-nj1261w,intel core i3-1215u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.69,windows 11 home,24,9490000,36.16,23.3,1.99,3,0,1,1,1
+cellphones,lenovo,lenovo gaming legion 5 pro 16irx9 83df0047vn,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,80.0,80wh,2.5,windows 11 home,24,45990000,36.34,26.18,2.69,4,2,1,1,1
+cellphones,lenovo,lenovo legion slim 5 16ahp9 83dh003avn,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,80wh,2.3,windows 11 home,24,39990000,35.97,26.05,1.99,4,1,1,1,1
+cellphones,asus,asus tuf gaming a15 fa506nfr-hn006w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,"48 wh, 150 w",2.3,windows,24,18490000,35.9,25.6,2.28,4,0,0,1,0
+cellphones,lenovo,lenovo yoga slim 6 14irh8 83e00008vn,intel core i7-13700h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,65.0,65 wh,1.35,windows 11 home,36,24490000,31.2,22.1,1.49,1,2,1,0,1
+cellphones,asus,asus vivobook 15x oled m3504ya-l1332w,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,600,50.0,3,1.6,windows 11 home,24,15990000,35.97,23.25,1.79,3,0,1,0,1
+cellphones,dell,dell latitude 5550 71047019,intel core ultra 7 165u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,54.0,3,1.62,windows 11 home,12,31490000,35.7,23.3,2.08,2,2,1,0,0
+cellphones,asus,asus vivobook s 14 oled s5406ma-pp198ws,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.3,windows 11 home,24,26490000,31.05,22.19,1.39,2,2,1,0,1
+cellphones,dell,dell vostro 3520,intel core i7-1255u,geforce mx550,8,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,n/a,n/a,1.66,linux,12,18490000,35.85,23.56,1.7,0,0,1,1,0
+cellphones,asus,asus tuf gaming f15 fx507vi-lp088w,intel core i7-13620h,geforce rtx 4070,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,36990000,35.4,25.1,2.24,3,1,1,0,1
+cellphones,asus,asus tuf gaming f15 fx507vu-lp315w,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,26990000,35.4,25.1,2.24,3,1,1,0,1
+cellphones,asus,asus tuf gaming a15 fa506nfr-hn075w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,18690000,35.9,25.6,2.28,4,0,1,0,1
+cellphones,acer,acer nitro v anv15-51-75gs,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,27990000,36.23,23.99,2.29,5,0,1,0,1
+cellphones,asus,asus expertbook b1402cva-nk0157w,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.46,windows 11 home,24,15990000,32.69,21.45,1.99,3,0,1,1,0
+cellphones,msi,msi cyborg 15 a12ucx-618vn,intel core i5-12450h,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,53.5,3,1.95,windows 11 home,24,16490000,35.9,25.0,2.19,2,1,1,0,0
+cellphones,apple,apple macbook air m2 2022 8cpu 10gpu,apple m2 8-core,n/a,16,n/a,512,"512gb wi-fi 6, bảo mật vân tay",yes,13.6,2560x1664,n/a,500,52.6,"52,6 wh",1.27,macos,12,29990000,30.41,21.5,1.13,0,2,0,0,0
+cellphones,apple,macbook pro 14 m3,apple m3 8-core,n/a,8,n/a,1024,1tb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,38990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,acer,acer aspire lite al16-51p-55n7 nx.kx0sv.001,intel core i5-1235u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.8,windows 11 home,12,13490000,35.76,24.7,1.89,3,0,1,0,1
+cellphones,msi,msi prestige 14 ai studio c1veg-056vn,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.0,2880x1800,60,400,90.0,4,1.7,windows 11 home,24,32990000,31.34,24.65,1.9,1,1,1,0,1
+cellphones,lenovo,lenovo gaming legion 5 16irx9 83dg004yvn,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,80wh,2.36,windows 11 home,24,40990000,35.97,26.23,2.52,3,2,1,1,1
+cellphones,acer,acer swift lite 14 ai sfl14-51m-56hs,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,58.0,3,1.27,windows 11 home,12,18190000,31.44,22.19,1.75,3,0,1,0,1
+cellphones,asus,asus tuf gaming a15 fa507nv-lp061w,amd ryzen 7 7735hs,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,28990000,35.4,25.1,2.24,0,0,0,0,0
+cellphones,acer,acer nitro v anv15-51-55ca,intel core i5-13420h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,24490000,36.23,23.99,2.29,3,0,1,1,1
+cellphones,huawei,huawei matebook 14,intel core i5-1135g,n/a,8,n/a,512,ssd,yes,14.0,2160x1440,n/a,n/a,56.0,56 wh,1.49,windows 10 home,24,16990000,30.75,22.38,1.59,0,0,1,0,0
+cellphones,asus,asus tuf gaming a16 advantage edition fa617nsr-rl100w,amd ryzen 7 7435hs,radeon rx 7600s,16,ddr5,512,ssd,yes,16.0,1920x1200,144,300,90.0,4,2.2,windows 11 home,24,23490000,35.5,25.2,2.21,4,0,1,0,1
+cellphones,asus,asus vivobook 15 oled s5507qa-ma090ws,snapdragon x elite x1e-78-100,n/a,32,ddr5,1024,ssd,yes,15.6,2880x1620,120,600,70.0,3,1.42,windows 11 home,24,31490000,35.26,22.69,1.47,2,0,1,0,1
 cellphones,lenovo,lenovo thinkbook 13s g3 acn 20ya0039vn,amd ryzen 7 5800u,n/a,8,ddr4,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,56wh,1.26,windows 11 home,24,16490000,29.9,21.0,1.49,2,0,1,0,1
-cellphones,acer,acer nitro v anv15-51-57b2,intel core i5-13420h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,57.0,4,2.1,windows,12,23690000,36.23,23.99,2.29,3,1,1,1,1
-cellphones,acer,acer nitro v anv15-51-72vs nh.qnasv.004,intel core i7-13620h,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,24490000,36.23,23.99,2.29,3,1,1,1,1
-cellphones,acer,acer aspire lite 16 al16-51p-72s2,intel core i7-1255u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.8,windows 11 home,12,15490000,35.76,24.7,1.89,3,1,1,0,0
-cellphones,apple,macbook pro 16 m3 pro,apple m3 pro 12-core,n/a,36,n/a,512,512gb wi-fi 6,yes,16.2,3024x1964,120,n/a,72.4,72.4wh,1.55,n/a,12,69990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,apple,macbook pro 16 m3 max,apple m3 max 14-core,n/a,36,n/a,1024,"1tb wi-fi 6, bảo mật vân tay",yes,16.2,3024x1964,120,n/a,pin li-po 72.4 watt-giờ,"pin li-po 72,4 watt-giờ",2.16,macos,12,86990000,35.57,24.81,1.68,0,1,1,0,1
+cellphones,apple,macbook pro 16 m3 pro,apple m3 pro 12-core,n/a,36,n/a,512,512gb wi-fi 6,yes,16.2,3024x1964,120,n/a,72.4,72.4wh,1.55,n/a,12,69990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,asus,asus rog strix g16 g614jir-n4046w,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,51990000,35.4,26.4,2.26,3,1,1,0,1
+cellphones,asus,asus expertbook b1 b1402cva-nk0149w,intel core i5-1335u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.46,windows 11 home,24,12490000,32.69,21.45,1.99,3,0,1,1,0
+cellphones,apple,macbook pro 16 m3 max,apple m3 max 14-core,n/a,36,n/a,1024,"1tb wi-fi 6, bảo mật vân tay",yes,16.2,3024x1964,120,n/a,72.4,"pin li-po 72,4 watt-giờ",2.16,macos,12,86990000,35.57,24.81,1.68,0,0,1,0,1
+cellphones,asus,asus vivobook 15 x1504va-nj069w,intel core i3-1315u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.7,windows 11 home,24,10690000,35.97,23.25,1.79,2,0,1,0,0
+cellphones,msi,msi modern 14 c12m-241vn,intel core i7-1255u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,39.0,39 wh,1.4,windows 11 home,24,14490000,32.0,22.3,1.95,1,0,1,0,1
+cellphones,acer,acer nitro v anv15-51-57b2,intel core i5-13420h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,57.0,4,2.1,windows,12,23690000,36.23,23.99,2.29,3,0,1,1,1
+cellphones,acer,acer nitro v anv15-51-72vs nh.qnasv.004,intel core i7-13620h,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,23990000,36.23,23.99,2.29,3,0,1,1,1
+cellphones,acer,acer nitro 5 an515 58 52sp,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,57.5,4,2.5,windows 11 home,12,17990000,36.04,27.11,2.59,3,0,1,0,1
+cellphones,dell,dell inspiron 15 3520 8d10nk,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.685,windows 11 home,12,16390000,35.85,23.49,1.75,2,0,1,0,1
 cellphones,hp,hp elitebook 630 g9 6m142pa,intel core i5-1235u,n/a,8,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,42.0,3,1.3,windows,12,16990000,30.69,20.84,1.59,2,1,0,0,0
 cellphones,lenovo,lenovo yoga slim 6 14irh8 83e0000vvn,intel core i7-13700h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,65.0,65 wh,1.35,windows 11 home,36,24490000,31.2,22.1,1.49,1,2,1,0,1
-cellphones,hp,hp pavilion 15-eg3095tu 8c5l6pa,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.74,windows 11 home,12,16490000,36.02,23.4,1.79,2,1,1,0,0
-cellphones,msi,msi prestige 14 ai studio c1veg-056vn,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.0,2880x1800,60,400,90.0,4,1.7,windows 11 home,24,32990000,31.34,24.65,1.9,1,1,1,0,1
-cellphones,apple,apple macbook air m2 2022 8cpu 10gpu,apple m2 8-core,n/a,16,n/a,512,"512gb wi-fi 6, bảo mật vân tay",yes,13.6,2560x1664,n/a,500,52.6,"52,6 wh",1.27,macos,12,29990000,30.41,21.5,1.13,0,2,0,0,0
-cellphones,asus,asus rog strix g16 g614jir-n4046w,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,51990000,35.4,26.4,2.26,2,2,1,0,1
-cellphones,acer,acer aspire 5 a515-58gm-59lj,intel core i5-13420h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,15990000,36.1,23.7,1.79,2,1,1,1,1
+cellphones,apple,macbook pro 14 m3  | chính hãng apple việt nam,apple m3 8-core,n/a,16,n/a,1024,1tb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,45990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,acer,acer aspire 5 a515-58gm-59lj,intel core i5-13420h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,15490000,36.1,23.7,1.79,2,0,1,1,1
 cellphones,asus,asus zenbook s 13 oled ux5304ma-nq117w,intel core ultra 7 155u,n/a,32,ddr5,1024,ssd,yes,13.3,2880x1800,60,600,63.0,4,1.0,windows 11 home,24,40990000,29.62,21.63,1.09,1,2,1,0,1
-cellphones,acer,acer nitro 5 an515 58 52sp,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,57.5,4,2.5,windows 11 home,12,17990000,36.04,27.11,2.59,3,1,1,0,1
-cellphones,asus,asus rog flow gv601vv-nf044w,intel core i9-13900h,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,50990000,35.5,24.3,1.94,2,3,1,0,1
-cellphones,lg,lg gram 2023 17z90r-g.ah78a5,intel core i7-1360p,n/a,16,ddr5,1024,ssd,yes,17.0,2560x1600,60,400,80.0,80 wh li-ion,1.35,windows 11 home,12,38990000,37.88,25.88,1.78,2,2,1,0,0
-cellphones,hp,hp pavilion 15-eg3093tu 8c5l4pa,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.69,windows 11 home,12,17490000,36.02,23.4,1.8,2,1,1,0,0
-cellphones,apple,macbook pro 14 m3 max,apple m3 max 14-core,n/a,36,n/a,1024,"1tb wi-fi 6, bảo mật vân tay",yes,14.2,3024x1964,120,n/a,72.4,72.4wh,1.55,n/a,12,74990000,31.26,22.12,1.55,0,1,1,0,1
-cellphones,huawei,huawei matebook 14,intel core i5-1135g,n/a,8,n/a,512,ssd,yes,14.0,2160x1440,n/a,n/a,56.0,56 wh,1.49,windows 10 home,24,16990000,30.75,22.38,1.59,1,1,1,0,0
-cellphones,lg,lg gram 2023 15z90rt-g.ah55a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,350,60.0,60wh li-ion,0.99,windows 11 home,12,31990000,35.6,22.76,1.1,0,3,0,0,0
-cellphones,lg,lg gram 2023 16z90rs-g.ah54a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,3200x2000,120,400,80.0,80 wh li-ion,1.23,windows 11 home,12,33990000,35.51,24.13,1.59,1,2,0,0,0
+cellphones,hp,hp pavilion 15-eg3095tu 8c5l6pa,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.74,windows 11 home,12,16390000,36.02,23.4,1.79,2,0,1,0,0
+cellphones,acer,acer aspire lite 16 al16-51p-72s2,intel core i7-1255u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.8,windows 11 home,12,15490000,35.76,24.7,1.89,3,0,1,0,0
+cellphones,lg,lg gram 2023 16z90rs-g.ah54a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,3200x2000,120,400,80.0,80 wh li-ion,1230g,windows 11 home,12,33990000,35.51,24.13,1.59,0,0,0,0,0
+cellphones,asus,asus rog flow gv601vv-nf044w,intel core i9-13900h,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,50990000,35.5,24.3,1.94,3,1,1,0,1
+cellphones,apple,macbook pro 14 m3 max,apple m3 max 14-core,n/a,36,n/a,1024,"1tb wi-fi 6, bảo mật vân tay",yes,14.2,3024x1964,120,n/a,72.4,72.4wh,1.55,n/a,12,74990000,31.26,22.12,1.55,0,0,1,0,1
 cellphones,msi,msi modern 14 c13m-608vn,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,39.3,3,1.4,windows 11 home,24,13490000,31.9,22.3,1.94,3,1,1,0,1
-cellphones,msi,msi gaming sword 16 hx b14vfkg-460vn,intel core i7-14650hx,geforce rtx 4060,16,n/a,1024,ssd,yes,16.0,2560x1600,240,n/a,65.0,4,2.3,windows 11 home,24,36990000,35.9,26.64,2.77,3,1,0,0,1
-cellphones,msi,msi sword 16 hx b14vgkg-466vn,intel core i7-14650hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,65.0,4,2.3,windows 11 home,24,39990000,35.9,26.64,2.18,3,1,1,0,1
-cellphones,asus,asus vivobook 15 x1504va-nj069w,intel core i3-1315u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.7,windows 11 home,24,10690000,35.97,23.25,1.79,2,1,1,0,0
-cellphones,msi,msi sword 16 hx b14vekg-459vn,intel core i7-14700hx,geforce rtx 4050,16,ddr5,1024,ssd,yes,16.0,1920x1200,144,300,65.0,4,2.3,windows 11 home,24,30990000,35.9,26.64,2.18,3,1,1,0,1
-cellphones,apple,macbook air 15 inch m2 2023,apple m2 8-core,n/a,16,n/a,512,ssd,yes,15.3,2880x1864,n/a,500,lên đến 18 giờ,lên đến 18 giờ,1.51,macos,12,34990000,34.04,23.76,1.15,0,3,0,0,0
-cellphones,lg,lg gram 2023 16z90r-g.ah76a5,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,60,350,80.0,80 wh li-ion,1.19,windows 11 home,12,32990000,35.51,24.23,1.68,2,2,0,0,0
-cellphones,asus,asus vivobook 15x oled s3504va-l1227ws,intel core i7-1360p,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,400,50.0,3,1.7,windows 11 home,24,21890000,35.97,23.25,1.79,3,1,1,0,1
-cellphones,msi,msi cyborg 15 a1vek-053vn,intel core ultra 7 155h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,1.98,windows 11 home,24,28490000,35.94,25.03,2.29,2,1,1,0,1
-cellphones,lg,lg gram 2023 16z90r-e.ah75a5,intel core i7-1360p,geforce rtx 3050,16,ddr5,512,ssd,yes,16.0,2560x1600,60,350,90.0,90 wh li-ion,1.299,windows 11 home,12,36990000,31.2,21.39,1.68,2,2,0,0,0
-cellphones,acer,acer swift lite 14 ai sfl14-51m-78xz,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,58.0,3,1.27,windows 11 home,12,21990000,31.44,22.19,1.75,3,1,1,0,1
-cellphones,apple,macbook pro 14 m3 pro 2023,apple m3 pro 12-core,n/a,36,n/a,1024,ssd,yes,14.2,3024x1964,120,n/a,72.4,72.4wh,1.61,macos,12,65990000,31.26,22.12,1.55,0,1,1,0,1
-cellphones,msi,msi modern 15 b13m-438vn,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,300,65 w. 3-cell pin li-po,3,1.7,windows 11 home,24,12490000,35.9,24.1,1.99,1,1,1,0,0
-cellphones,lg,lg gram 2023 16zd90r-g.ax55a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,60,350,80.0,80 wh li-ion,1.199,khn,12,28990000,35.51,24.23,1.68,2,2,0,0,0
+cellphones,surface,surface go core i5 /,n/a,n/a,8,ddr4,128,ssd,yes,12.4,1536x1024,n/a,n/a,lên đến 13 giờ tùy vào nhu cầu sử dụng,lên đến 13 giờ (tùy vào nhu cầu sử dụng),"1,110 g",windows 10 home,12,15790000,27.82,20.57,1.57,0,0,0,0,1
+cellphones,msi,msi gaming sword 16 hx b14vfkg-460vn,intel core i7-14650hx,geforce rtx 4060,16,n/a,1024,ssd,yes,16.0,2560x1600,240,n/a,65.0,4,2.3,windows 11 home,24,35490000,35.9,26.64,2.77,3,1,0,0,1
+cellphones,gigabyte,gigabyte g5 kf-e3ph333sh,intel core i5-12500h,geforce rtx 4060,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,lithium-ion 54wh,1.9,windows 11 home,24,21990000,36.0,23.8,2.27,3,0,1,1,1
+cellphones,lg,lg gram 2023 15z90rt-g.ah55a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,350,60.0,60wh li-ion,990 g,windows 11 home,12,31990000,35.6,22.76,1.1,0,0,0,0,0
+cellphones,msi,msi sword 16 hx b14vgkg-466vn,intel core i7-14650hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,65.0,4,2.3,windows 11 home,24,37990000,35.9,26.64,2.18,3,1,1,0,1
+cellphones,msi,msi cyborg 15 a12ve-412vn,intel core i5-12450h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,1.98,windows 11 home,24,18990000,35.9,25.0,2.19,2,1,1,0,1
+cellphones,msi,msi modern 15 b13m-438vn,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,300,65.0,3,1.7,windows 11 home,24,12490000,35.9,24.1,1.99,1,1,1,0,0
+cellphones,msi,msi sword 16 hx b14vekg-459vn,intel core i7-14700hx,geforce rtx 4050,16,ddr5,1024,ssd,yes,16.0,1920x1200,144,300,65.0,4,2.3,windows 11 home,24,32990000,35.9,26.64,2.18,3,1,1,0,1
+cellphones,lg,lg gram 2023 17z90r-g.ah78a5,intel core i7-1360p,n/a,16,ddr5,1024,ssd,yes,17.0,2560x1600,60,400,80.0,80 wh li-ion,1.35,windows 11 home,12,38990000,37.88,25.88,1.78,2,0,1,0,0
+cellphones,hp,hp pavilion 15-eg3093tu 8c5l4pa,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.69,windows 11 home,12,18490000,36.02,23.4,1.8,2,0,1,0,0
+cellphones,asus,asus vivobook 15x oled s3504va-l1227ws,intel core i7-1360p,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,400,50.0,3,1.7,windows 11 home,24,21890000,35.97,23.25,1.79,3,0,1,0,1
+cellphones,asus,asus zenbook 14 oled ux3405ma-pp475w,intel core ultra 9 185h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.2,windows 11 home,24,33490000,31.24,22.01,1.49,1,2,1,0,1
+cellphones,lg,lg gram 2023 16z90r-g.ah76a5,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,60,350,80.0,80 wh li-ion,1.19,windows 11 home,12,32990000,35.51,24.23,1.68,2,0,0,0,0
+cellphones,lg,lg gram 2024 14z90s-g.ah55a5,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,72.0,"72 wh li-ion
+ phát lại video: 29,5 giờ
+ jeita 3.0 (phát lại video) : 14 giờ
+ jeita 3.0 (không hoạt động) : 31 giờ",1.120 g,windows 11 home,12,28990000,31.2,21.43,1.57,3,0,1,0,0
+cellphones,asus,asus gaming tuf fx506lhb-hn188w,intel core i5-10300h,geforce gtx 1650,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,48.0,3,2.3,windows 11 home,24,14990000,35.9,25.6,2.47,3,0,1,0,1
+cellphones,lg,lg gram 2023 16zd90r-g.ax55a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,60,350,80.0,80 wh li-ion,1.199,khn,12,28990000,35.51,24.23,1.68,2,0,0,0,0
+cellphones,lg,lg gram 2023 16z90r-e.ah75a5,intel core i7-1360p,geforce rtx 3050,16,ddr5,512,ssd,yes,16.0,2560x1600,60,350,90.0,90 wh li-ion,1.299,windows 11 home,12,36990000,31.2,21.39,1.68,2,0,0,0,0
+cellphones,apple,macbook pro 14 m3 pro 2023,apple m3 pro 12-core,n/a,36,n/a,1024,ssd,yes,14.2,3024x1964,120,n/a,72.4,72.4wh,1.61,macos,12,65990000,31.26,22.12,1.55,0,0,1,0,1
 cellphones,msi,msi pulse 17 ai c1vgkg-017vn,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,1024,ssd,yes,17.0,2560x1600,240,n/a,90.0,4,2.8,windows 11 home,24,49990000,38.32,27.99,2.97,3,1,1,0,1
-cellphones,asus,asus vivobook pro n7600ze-l2010w,intel core i7-12700h,geforce rtx 3050 ti t ch h p:,16,ddr5,1024,ssd,yes,16.0,3840x2400,n/a,550,96.0,6,2.0,windows 11 home,24,29990000,36.05,25.9,1.89,3,1,1,0,1
-cellphones,lg,lg gram 2024 2in1 14t90s-g.ah55a5,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,72.0,72 wh li-ion,1.25,windows 11 home,12,43500000,31.4,21.95,1.62,1,1,1,0,0
-cellphones,msi,msi modern 14 b11sbu-668vn,intel core i5-1155g,geforce mx450,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,52.0,3,1.3,windows 10 home,12,13990000,31.9,21.9,1.81,2,1,1,0,1
-cellphones,lg,lg gram 2024 16z90s-g.ah76a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,60,n/a,77.0,77 wh li-ion,1.21,windows 11 home,12,44990000,35.51,24.23,1.57,2,2,1,0,0
-cellphones,lg,lg gram 2024 super slim 15z90st-g.ah75a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,60.0,60 wh li-ion,0.99,windows 11 home,12,46000000,35.6,22.7,1.26,1,2,1,0,0
-cellphones,asus,asus vivobook 15 oled a1505va-ma469w,intel core i9-13900h,n/a,16,ddr4,512,ssd,yes,15.6,2880x1620,120,600,50.0,3,1.7,windows 11 home,24,22490000,35.68,22.76,1.99,3,1,1,0,1
-cellphones,lenovo,lenovo yoga 9 2in1 14imh9 83ac000svn,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,75.0,"75wh, 65w usb-c (3-pin)",1.32,windows 11 home,24,43990000,31.6,22.0,1.59,1,3,0,0,1
-cellphones,asus,asus tuf gaming a14 fa401wv-rg061ws,amd ryzen ai 9 hx 370,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,44990000,31.1,22.7,1.69,2,2,1,0,1
-cellphones,lg,lg gram 2024 pro 16z90sp-k.ah75a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,2880x1800,120,n/a,77.0,"77 wh li-ion (gm), 90wh li-ion (pm)",1.19,windows 11 home,12,50900000,35.77,25.16,1.24,2,2,1,0,0
-cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 11-core,n/a,18,n/a,512,512gb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,46990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,asus,asus rog zephyrus g16 ga605wi-qr090ws,amd ryzen ai 9 hx 370,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,1.85,windows 11 home,24,77990000,35.4,24.6,1.49,2,2,1,0,1
-cellphones,asus,asus vivobook 16 m1605ya-mb303w,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,60,300,42.0,3,1.88,windows 11 home,24,14690000,35.87,24.95,1.99,3,1,1,0,1
+cellphones,msi,msi cyborg 15 a12ucx-281vn,intel core i5-12450h,geforce rtx 2050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,1.95,windows 11 home,24,15490000,35.9,25.0,2.19,2,1,1,0,0
+cellphones,msi,msi cyborg 15 a1vek-053vn,intel core ultra 7 155h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,1.98,windows 11 home,24,28490000,35.94,25.03,2.29,2,1,1,0,1
+cellphones,acer,acer swift lite 14 ai sfl14-51m-78xz,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,58.0,3,1.27,windows 11 home,12,21990000,31.44,22.19,1.75,3,0,1,0,1
+cellphones,lg,lg gram 2024 14z90s-g.ah75a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,72.0,"72 wh li-ion
+ phát lại video: 29,5 giờ
+ jeita 3.0 (phát lại video) : 14 giờ
+ jeita 3.0 (không hoạt động) : 31 giờ",1.120 g,windows 11 home,12,30990000,31.2,21.43,1.57,3,0,1,0,0
+cellphones,dell,dell inspiron 14 5440 n5440-c5u165w11ibd2,intel core 5 120u,geforce mx570a,16,ddr5,512,ssd,no,14.0,2240x1400,60,n/a,54.0,4,1.65,windows 11 home,12,25490000,31.4,22.6,1.5,3,0,1,0,1
+cellphones,lg,lg gram 2024 17z90s-g.ah78a5,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,17.0,2560x1600,60,n/a,77.0,77 wh li-ion,1.37,windows 11 home,12,47990000,37.88,25.88,1.6,2,0,1,0,0
+cellphones,lg,lg gram 2024 16z90s-g.ah76a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,60,n/a,77.0,77 wh li-ion,1.21,windows 11 home,12,44990000,35.51,24.23,1.57,2,0,1,0,0
+cellphones,lg,lg gram 2024 2in1 14t90s-g.ah55a5,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,72.0,72 wh li-ion,1.25,windows 11 home,12,43500000,31.4,21.95,1.62,1,0,1,0,0
+cellphones,asus,asus vivobook 15 oled a1505va-ma469w,intel core i9-13900h,n/a,16,ddr4,512,ssd,yes,15.6,2880x1620,120,600,50.0,3,1.7,windows 11 home,24,22490000,35.68,22.76,1.99,3,0,1,0,1
+cellphones,lenovo,lenovo yoga 9 2in1 14imh9 83ac000svn,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,75.0,3,1.32,windows 11 home,24,43990000,31.6,22.0,1.59,1,3,0,0,1
+cellphones,lg,lg gram 2024 pro 16z90sp-k.ah75a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,2880x1800,120,n/a,77.0,"77 wh li-ion (gm), 90wh li-ion (pm)",1.19,windows 11 home,12,50900000,35.77,25.16,1.24,2,0,1,0,0
+cellphones,lg,lg gram 2024 super slim 15z90st-g.ah75a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,60.0,60 wh li-ion,0.99,windows 11 home,12,46000000,35.6,22.7,1.26,1,0,1,0,0
+cellphones,asus,asus tuf gaming a14 fa401wv-rg061ws,amd ryzen ai 9 hx 370,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,44990000,31.1,22.7,1.69,3,1,1,0,1
+cellphones,asus,asus vivobook s 14 oled m5406wa-pp071ws,amd ryzen ai 9 hx 370,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,600,75.0,4,1.3,windows 11 home,24,30990000,31.05,22.19,1.39,3,0,1,0,1
+cellphones,msi,msi gaming thin gf63 12ve-454vn,intel core i5-12450h,geforce rtx 4050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,52.4 wh,1.85,windows 11 home,24,17490000,35.9,25.4,2.15,3,1,1,0,0
+cellphones,lenovo,lenovo ideapad slim 3 14irh8 83el0023vn,intel core i7-13620h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,n/a,300,47.0,47wh,1.37,windows 11 home,24,17790000,32.43,21.38,1.79,2,1,1,0,1
+cellphones,lenovo,lenovo ideapad slim 3 14iah8 83eq0004vn,intel core i5-12450h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1080,60,300,47.0,47 wh,1.37,windows 11 home,24,12490000,32.43,21.38,1.79,2,1,1,0,0
+cellphones,asus,asus vivobook 16 m1605ya-mb303w,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,60,300,42.0,3,1.88,windows 11 home,24,14690000,35.87,24.95,1.99,3,0,1,0,1
 cellphones,apple,macbook pro 16 inch m1 max 10 cpu - 32 gpu,apple m1 max,n/a,32,n/a,1024,ssd,yes,16.2,3456x2234,n/a,n/a,n/a,n/a,2.1,macos,12,51990000,35.57,24.81,1.68,0,1,1,0,1
-cellphones,asus,asus zenbook 14 oled um3402ya-km405w,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,n/a,75.0,4,1.35,windows 11 home,24,20490000,31.36,22.06,1.69,1,2,1,0,1
+cellphones,asus,asus rog strix g16 g614jvr-n4162w,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,44990000,35.4,26.4,2.26,3,1,1,0,1
 cellphones,asus,asus zenbook duo ux8406ma-pz307w,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,500,75.0,4,1.65,windows 11 home,24,45990000,31.35,21.79,1.46,1,2,1,0,1
-cellphones,msi,msi modern 14 c13m-458vn,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,39.3,3,1.4,windows 11 home,24,11990000,32.0,22.3,1.95,1,1,1,0,0
-cellphones,huawei,huawei matebook d15,amd ryzen 7 5700u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,42.0,42wh,1.63,windows 11 home,24,10990000,35.78,22.99,1.69,1,1,1,0,1
+cellphones,lenovo,lenovo thinkbook 14 g6 irl 21kg00rdvn,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,60.0,60wh,1.38,windows 11 home,24,17990000,31.35,22.4,1.69,2,2,1,1,1
 cellphones,apple,macbook pro 14 inch m2 pro 2023,apple m2 pro,n/a,16,n/a,512,ssd,yes,14.2,3024x1964,n/a,n/a,70.0,"70wh
 đi kèm sạc 67w",1.55 x 31.26 x 22.12 cm,macos,12,46990000,n/a,n/a,n/a,0,0,1,0,1
-cellphones,lenovo,lenovo thinkbook 14 g6 irl 21kg00rdvn,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,60.0,60wh,1.38,windows 11 home,24,17990000,31.35,22.4,1.69,2,2,1,1,1
-cellphones,apple,macbook pro 16 m3 pro,apple m3 pro 12-core,n/a,18,n/a,512,512gb wi-fi 6,yes,16.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,61990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,asus,asus vivobook s 14 flip tn3402ya-lz192w,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,60,300,50.0,3,1.5,windows 11 home,24,15990000,31.32,22.76,1.89,2,1,1,0,1
+cellphones,msi,msi modern 14 c13m-458vn,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,39.3,3,1.4,windows 11 home,24,11990000,32.0,22.3,1.95,1,0,1,0,0
+cellphones,huawei,huawei matebook d15,amd ryzen 7 5700u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,42.0,42wh,1.63,windows 11 home,24,10990000,35.78,22.99,1.69,1,1,1,0,1
+cellphones,apple,macbook pro 16 m3 pro,apple m3 pro 12-core,n/a,18,n/a,512,512gb wi-fi 6,yes,16.2,3024x1964,120,n/a,70.0,70wh,1.55,n/a,12,61990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,lg,lg gram 2023 14z90rs-g.ah54a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,400,72.0,72 wh li-ion,999g,windows 11 home,12,27990000,31.16,21.39,1.59,2,0,0,0,0
 cellphones,lenovo,lenovo v14 g4 amn 82yt00m8vn,amd ryzen 5 7520u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,n/a,300,38.0,38wh,1.43,windows 11 home,24,11990000,32.42,21.52,1.99,2,1,1,1,1
-cellphones,asus,asus vivobook 15 oled a1505va-l1201w,intel core i9-13900h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,600,50.0,3,1.7,windows 11 home,24,21890000,35.68,22.76,1.99,3,1,1,0,1
-cellphones,msi,msi gaming bravo 15 b7ed-010vn,amd ryzen 5 7535hs,radeon rx 6550m,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.0,3,2.35,windows 11 home,24,15490000,35.9,25.9,2.49,2,1,1,0,0
-cellphones,dell,dell latidude 7320 9ppwv,intel core i5-1145g,n/a,16,ddr4,256,ssd,no,13.3,1920x1080,60,n/a,n/a,n/a,1.12,windows,12,16990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-cellphones,hp,hp pavilion 15-eg2089tu 7c0r1pa,intel core i7-1260p,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.75,windows 11 home,12,17990000,36.02,23.4,1.79,2,1,1,0,1
-cellphones,gigabyte,gigabyte g5 kf-e3ph333sh,intel core i5-12500h,geforce rtx 4060,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,lithium-ion 54wh,1.9,windows 11 home,24,21990000,36.0,23.8,2.27,3,0,1,1,1
+cellphones,msi,msi gaming bravo 15 b7ed-010vn,amd ryzen 5 7535hs,radeon rx 6550m,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.0,3,2.35,windows 11 home,24,16490000,35.9,25.9,2.49,2,0,1,0,0
+cellphones,asus,asus vivobook s 14 flip tn3402ya-lz192w,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,60,300,50.0,3,1.5,windows 11 home,24,15990000,31.32,22.76,1.89,2,0,1,0,1
 cellphones,asus,asus zenbook duo ux8406ma-pz142w,intel core ultra 9 185h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,500,75.0,4,1.65,windows 11 home,24,58990000,31.35,21.79,1.46,1,2,1,0,1
-cellphones,hp,hp 14-ep0112tu 8c5l1pa,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,41.0,3,1.46,windows 11 home,12,16990000,32.4,22.5,1.79,2,1,1,0,1
-cellphones,asus,asus vivobook s 14 flip tp3402va-lz025w,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1200,60,300,50.0,3,1.5,windows 11 home,24,11490000,31.32,22.76,1.89,2,1,1,0,1
+cellphones,hp,hp pavilion 15-eg2089tu 7c0r1pa,intel core i7-1260p,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.75,windows 11 home,12,17990000,36.02,23.4,1.79,2,0,1,0,1
 cellphones,msi,msi gf63 12ucx-841vn,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.0,52whr,1.85,windowsdown 11 home,12,14490000,35.9,25.4,2.15,3,1,1,0,1
-cellphones,msi,msi cyborg 15 a12ve-412vn,intel core i5-12450h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,1.98,windows 11 home,24,18990000,35.9,25.0,2.19,2,1,1,0,1
-cellphones,msi,msi modern 14 b11mo,intel core i3-1115g,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.3,windows 10 home,12,13790000,32.0,22.05,1.69,0,1,1,0,0
-cellphones,apple,macbook pro 14 m4 pro 12cpu 16gpu,apple m4 pro 12-core,n/a,24,n/a,512,512gb bảo mật vân tay,yes,14.2,3024x1964,120,n/a,"pin li-po 72.4 watt-giờ
+cellphones,hp,hp 14-ep0112tu 8c5l1pa,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,41.0,3,1.46,windows 11 home,12,16990000,32.4,22.5,1.79,0,0,1,0,1
+cellphones,apple,macbook air 15 inch m2 2023,apple m2 8-core,n/a,16,n/a,512,ssd,yes,15.3,2880x1864,n/a,500,lên đến 18 giờ,lên đến 18 giờ,1.51,macos,12,34990000,34.04,23.76,1.15,0,3,0,0,0
+cellphones,asus,asus vivobook s 14 flip tp3402va-lz025w,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1200,60,300,50.0,3,1.5,windows 11 home,24,11490000,31.32,22.76,1.89,2,0,1,0,1
+cellphones,apple,macbook pro 14 m4 pro 12cpu 16gpu,apple m4 pro 12-core,n/a,24,n/a,512,512gb bảo mật vân tay,yes,14.2,3024x1964,120,n/a,72.4,"pin li-po 72.4 watt-giờ
  thời gian xem video trực tuyến lên đến 22 giờ
- thời gian duyệt web trên mạng không dây lên đến 14 giờ","pin li-po 72.4 watt-giờ
- thời gian xem video trực tuyến lên đến 22 giờ
- thời gian duyệt web trên mạng không dây lên đến 14 giờ",1.6,macos,12,49990000,31.26,22.12,1.55,0,3,1,0,0
-cellphones,asus,asus tuf gaming a15 fa507nu-lp140w,amd ryzen 5 7535hs,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,22490000,35.97,23.25,1.79,2,2,1,0,1
+ thời gian duyệt web trên mạng không dây lên đến 14 giờ",1.6,macos,12,49990000,31.26,22.12,1.55,0,0,1,0,0
 cellphones,apple,macbook air m2 2022,apple m2 8-core,n/a,16,n/a,512,"512gb wi-fi 6, bảo mật vân tay",yes,13.6,2560x1664,n/a,500,52.6,"52,6 wh",1.24,macos,12,29990000,30.41,21.5,1.13,0,2,0,0,0
-cellphones,asus,asus zenbook 14 oled ux3405ma-pp475w,intel core ultra 9 185h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.2,windows 11 home,24,33490000,31.24,22.01,1.49,1,2,1,0,1
-cellphones,asus,asus tuf gaming f15 fx506hf-hn078w,intel core i5-11260h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,16990000,35.9,25.6,2.28,3,1,1,0,1
-cellphones,asus,asus zenbook 14 flip oled up3404va-kn039w,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,90,550,75.0,4,1.5,windows 11 home,24,28990000,31.15,22.34,1.59,1,2,1,0,1
-cellphones,asus,asus vivobook 15x oled m1503qa-l1044w,amd ryzen 7 5800h,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,70.0,3,1.7,windows 11 home,24,16790000,35.68,22.76,1.99,4,1,1,0,1
+cellphones,asus,asus vivobook 15x oled m1503qa-l1044w,amd ryzen 7 5800h,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,70.0,3,1.7,windows 11 home,24,16790000,35.68,22.76,1.99,3,0,1,0,1
 cellphones,msi,msi gf63 thin 11sc 664vn,intel core i5-11400h,geforce gtx 1650,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,52.4whrs li-ion battery,1.85,windows 11 home,12,14990000,35.9,25.4,2.15,3,1,1,1,0
-cellphones,apple,macbook pro 16 inch m3 pro 2023,apple m3 pro 12-core,n/a,36,n/a,1024,ssd,yes,16.2,3024x1964,120,n/a,n/a,n/a,1.55,macos,12,75990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,asus,asus expertbook b1402cba-nk1904w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.49,windows 11 home,24,9490000,32.69,21.45,1.99,2,2,1,1,1
-cellphones,apple,apple macbook air 13,intel core i3 2 nhân,n/a,8,n/a,256,ssd,no,13.3,2560x1600,n/a,n/a,9.9‑watt‑hour lithium‑polymer battery. củ cáp sạc usb-c công suất 30w,"9.9‑watt‑hour lithium‑polymer battery, củ cáp sạc usb-c công suất 30w",1.29,macos,12,23020000,30.41,1.61,0.41,0,3,0,0,0
-cellphones,apple,macbook pro 16 m4 max 16cpu 40gpu,apple m4 max 16-core,n/a,48,n/a,1024,1tb bảo mật vân tay,yes,16.2,3456x2234,120,n/a,"pin li-po 100 watt-giờ
+cellphones,apple,macbook pro 16 m4 max 16cpu 40gpu,apple m4 max 16-core,n/a,48,n/a,1024,1tb bảo mật vân tay,yes,16.2,3456x2234,120,n/a,100.0,"pin li-po 100 watt-giờ
  thời gian xem video trực tuyến lên đến 21 giờ
- thời gian duyệt web trên mạng không dây lên đến 14 giờ","pin li-po 100 watt-giờ
- thời gian xem video trực tuyến lên đến 21 giờ
- thời gian duyệt web trên mạng không dây lên đến 14 giờ",2.15,macos,12,102490000,35.57,24.81,1.68,0,3,1,0,0
-cellphones,apple,macbook pro 14 inch m3 max,apple m3 max 14-core,n/a,96,n/a,512,"512gb wi-fi 6, bảo mật vân tay",yes,14.2,3024x1964,120,n/a,pin li-po 72.4 watt-giờ,"pin li-po 72,4 watt-giờ",1.55,macos,12,89990000,31.26,22.12,1.55,0,1,1,0,1
-cellphones,asus,asus rog strix g15 g513rc hn038w,amd ryzen 7 6800h,geforce rtx 3050,8,ddr5,512,ssd,no,15.6,1920x1080,n/a,n/a,56.0,4,2.1,windows 11 home,24,24990000,35.4,25.9,2.06,2,2,1,0,1
-cellphones,asus,asus vivobook flip s 14 flip tp3402za-lz159w,intel core i5-12500h,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,50.0,3,1.5,windows,24,17990000,31.32,22.76,1.89,2,1,1,0,1
-cellphones,apple,macbook pro 14 m4 10cpu 10gpu,apple m4 10-core,n/a,16,n/a,1024,1tb bảo mật vân tay,yes,14.2,3024x1964,120,n/a,"pin li-po 72.4 watt-giờ
+ thời gian duyệt web trên mạng không dây lên đến 14 giờ",2.15,macos,12,102490000,35.57,24.81,1.68,0,0,1,0,0
+cellphones,asus,asus vivobook 14x oled s3405va-km071w,intel core i9-13900h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,400,63.0,3,1.4,windows 11 home,24,22390000,31.71,22.25,1.89,3,0,1,0,0
+cellphones,apple,apple macbook air 13,intel core i3 2 nhân,n/a,8,n/a,256,ssd,no,13.3,2560x1600,n/a,n/a,30.0,"9.9‑watt‑hour lithium‑polymer battery, củ cáp sạc usb-c công suất 30w",1.29,macos,12,23020000,30.41,1.61,0.41,0,0,0,0,0
+cellphones,asus,asus expertbook b1402cba-nk1904w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.49,windows 11 home,24,9490000,32.69,21.45,1.99,3,0,1,1,1
+cellphones,apple,macbook pro 14 inch m3 max,apple m3 max 14-core,n/a,96,n/a,512,"512gb wi-fi 6, bảo mật vân tay",yes,14.2,3024x1964,120,n/a,72.4,"pin li-po 72,4 watt-giờ",1.55,macos,12,89990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,asus,asus rog strix g15 g513rc hn038w,amd ryzen 7 6800h,geforce rtx 3050,8,ddr5,512,ssd,no,15.6,1920x1080,n/a,n/a,56.0,4,2.1,windows 11 home,24,24990000,35.4,25.9,2.06,4,0,1,0,1
+cellphones,asus,asus vivobook flip s 14 flip tp3402za-lz159w,intel core i5-12500h,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,50.0,3,1.5,windows,24,17990000,31.32,22.76,1.89,1,1,1,0,1
+cellphones,msi,msi modern 14 b11sbu-668vn,intel core i5-1155g,geforce mx450,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,52.0,3,1.3,windows 10 home,12,13990000,31.9,21.9,1.81,2,1,1,0,1
+cellphones,apple,macbook pro 16 inch m3 pro 2023,apple m3 pro 12-core,n/a,36,n/a,1024,ssd,yes,16.2,3024x1964,120,n/a,n/a,n/a,1.55,macos,12,75990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,apple,macbook pro 14 m4 10cpu 10gpu,apple m4 10-core,n/a,16,n/a,1024,1tb bảo mật vân tay,yes,14.2,3024x1964,120,n/a,72.4,"pin li-po 72.4 watt-giờ
  thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 16 giờ","pin li-po 72.4 watt-giờ
+ thời gian duyệt web trên mạng không dây lên đến 16 giờ",1.55,macos,12,44990000,31.26,22.12,1.55,0,0,1,0,0
+cellphones,lenovo,lenovo thinkpad e16 gen 1 21jn00glvn,intel core i5-13420h,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,3,1.81,windows 11 home,24,19990000,35.61,24.77,1.98,1,2,1,1,1
+cellphones,apple,macbook pro 14 m4 10cpu 10gpu,apple m4 10-core,n/a,24,n/a,1024,1tb bảo mật vân tay,yes,14.2,3024x1964,120,n/a,72.4,"pin li-po 72.4 watt-giờ
  thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 16 giờ",1.55,macos,12,44990000,31.26,22.12,1.55,0,2,1,0,0
-cellphones,apple,macbook pro 14 m4 10cpu 10gpu,apple m4 10-core,n/a,24,n/a,1024,1tb bảo mật vân tay,yes,14.2,3024x1964,120,n/a,"pin li-po 72.4 watt-giờ
- thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 16 giờ","pin li-po 72.4 watt-giờ
- thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 16 giờ",1.55,macos,12,49990000,31.26,22.12,1.55,0,2,1,0,0
-cellphones,apple,macbook pro 14 inch m3 pro,apple m3 pro 12-core,n/a,18,n/a,512,512gb wi-fi 6,yes,14.2,3024x1964,120,n/a,n/a,n/a,1.55,n/a,12,46990000,31.26,22.12,1.55,0,2,1,0,1
-cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 11-core,n/a,36,n/a,512,"512gb wi-fi 6, bảo mật vân tay",yes,14.2,3024x1964,120,n/a,pin li-po 72.4 watt-giờ,"pin li-po 72,4 watt-giờ",1.55,n/a,12,55990000,31.26,22.12,1.55,0,1,1,0,1
-cellphones,dell,dell inspiron 7506-5903slv,intel core i5-1135g,n/a,8,8gb ram,256,ssd,yes,15.6,1920x1080,n/a,n/a,53.0,53 whr,1.91,windows 11 home,12,17990000,35.56,23.88,1.78,2,1,1,0,0
-cellphones,apple,macbook pro 14 m4 max 14cpu 32gpu,apple m4 max 14-core,n/a,36,n/a,1024,1tb  bảo mật vân tay,yes,14.2,3024x1964,120,n/a,"pin li-po 72.4 watt-giờ
+ thời gian duyệt web trên mạng không dây lên đến 16 giờ",1.55,macos,12,49990000,31.26,22.12,1.55,0,0,1,0,0
+cellphones,apple,macbook pro 14 inch m3 pro,apple m3 pro 12-core,n/a,18,n/a,512,512gb wi-fi 6,yes,14.2,3024x1964,120,n/a,n/a,n/a,1.55,n/a,12,46990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,dell,dell inspiron 7506-5903slv,intel core i5-1135g,n/a,8,8gb ram,256,ssd,yes,15.6,1920x1080,n/a,n/a,53.0,53 whr,1.91,windows 11 home,12,17990000,35.56,23.88,1.78,0,1,1,0,0
+cellphones,asus,asus vivobook pro n7600ze-l2010w,intel core i7-12700h,geforce rtx 3050 ti t ch h p,16,ddr5,1024,ssd,yes,16.0,3840x2400,n/a,550,96.0,6,2.0,windows 11 home,24,29990000,36.05,25.9,1.89,1,1,1,0,1
+cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 11-core,n/a,36,n/a,512,"512gb wi-fi 6, bảo mật vân tay",yes,14.2,3024x1964,120,n/a,72.4,"pin li-po 72,4 watt-giờ",1.55,n/a,12,55990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,apple,macbook pro 14 m4 max 14cpu 32gpu,apple m4 max 14-core,n/a,36,n/a,1024,1tb  bảo mật vân tay,yes,14.2,3024x1964,120,n/a,72.4,"pin li-po 72.4 watt-giờ
  thời gian xem video trực tuyến lên đến 18 giờ
- thời gian duyệt web trên mạng không dây lên đến 13 giờ","pin li-po 72.4 watt-giờ
- thời gian xem video trực tuyến lên đến 18 giờ
- thời gian duyệt web trên mạng không dây lên đến 13 giờ",1.62,macos,12,79990000,31.26,22.12,1.55,0,3,1,0,0
-cellphones,apple,macbook pro 16 m4 pro 14cpu 20gpu,apple m4 pro 14-core,n/a,48,n/a,512,512gb  bảo mật vân tay,yes,16.2,3456x2234,120,n/a,"pin li-po 100 watt-giờ
+ thời gian duyệt web trên mạng không dây lên đến 13 giờ",1.62,macos,12,79990000,31.26,22.12,1.55,0,0,1,0,0
+cellphones,apple,macbook pro 16 m4 pro 14cpu 20gpu,apple m4 pro 14-core,n/a,48,n/a,512,512gb  bảo mật vân tay,yes,16.2,3456x2234,120,n/a,100.0,"pin li-po 100 watt-giờ
  thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 17 giờ","pin li-po 100 watt-giờ
- thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 17 giờ",2.14,macos,12,74990000,35.57,24.81,1.68,0,3,1,0,0
-cellphones,apple,macbook pro 16 m4 max 14cpu 32gpu,apple m4 max 14-core,n/a,36,n/a,1024,1tb bảo mật vân tay,yes,16.2,3456x2234,120,n/a,"pin li-po 100 watt-giờ
+ thời gian duyệt web trên mạng không dây lên đến 17 giờ",2.14,macos,12,74990000,35.57,24.81,1.68,0,0,1,0,0
+cellphones,apple,macbook pro 16 m4 max 14cpu 32gpu,apple m4 max 14-core,n/a,36,n/a,1024,1tb bảo mật vân tay,yes,16.2,3456x2234,120,n/a,100.0,"pin li-po 100 watt-giờ
  thời gian xem video trực tuyến lên đến 21 giờ
- thời gian duyệt web trên mạng không dây lên đến 14 giờ","pin li-po 100 watt-giờ
- thời gian xem video trực tuyến lên đến 21 giờ
- thời gian duyệt web trên mạng không dây lên đến 14 giờ",2.15,macos,12,89990000,35.57,24.81,1.68,0,3,1,0,0
-cellphones,apple,macbook pro 14 m4 pro 12cpu 16gpu,apple m4 pro 12-core,n/a,24,n/a,1024,1tb  bảo mật vân tay,yes,14.2,3024x1964,120,n/a,"pin li-po 72.4 watt-giờ
+ thời gian duyệt web trên mạng không dây lên đến 14 giờ",2.15,macos,12,89990000,35.57,24.81,1.68,0,0,1,0,0
+cellphones,acer,acer nitro 5 eagle an515-57-74rd nh.qd8sv.001,intel core i7-11800h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,57.5,4,2.2,windows 10 home,12,26230000,36.34,25.5,2.39,3,0,1,0,0
+cellphones,apple,macbook pro 14 m4 pro 12cpu 16gpu,apple m4 pro 12-core,n/a,24,n/a,1024,1tb  bảo mật vân tay,yes,14.2,3024x1964,120,n/a,72.4,"pin li-po 72.4 watt-giờ
  thời gian xem video trực tuyến lên đến 22 giờ
- thời gian duyệt web trên mạng không dây lên đến 14 giờ","pin li-po 72.4 watt-giờ
- thời gian xem video trực tuyến lên đến 22 giờ
- thời gian duyệt web trên mạng không dây lên đến 14 giờ",1.6,macos,12,59990000,31.26,22.12,1.55,0,3,1,0,0
-cellphones,apple,macbook pro 14 m3 pro 11 cpu - 14 gpu,apple m3 pro 11-core,n/a,18,n/a,2048,2tb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.61,n/a,12,60990000,31.26,22.12,1.55,0,1,1,0,1
+ thời gian duyệt web trên mạng không dây lên đến 14 giờ",1.6,macos,12,59990000,31.26,22.12,1.55,0,0,1,0,0
+cellphones,apple,macbook pro 14 m3 pro 11 cpu - 14 gpu,apple m3 pro 11-core,n/a,18,n/a,2048,2tb wi-fi 6,yes,14.2,3024x1964,120,n/a,70.0,70wh,1.61,n/a,12,60990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,asus,asus zenbook 14 ux3402za-km219w,intel core i5-1240p,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,600,75.0,4,1.39,windows 11 home,24,23690000,31.36,22.06,1.69,1,2,1,0,1
 cellphones,lenovo,lenovo ideapad slim 5 16imh9 83dc001svn,intel core ultra 7 155h,n/a,32,ddr5,512,ssd,yes,16.0,2048x1280,120,400,57.0,57wh,1.82,windows 11 home,24,26690000,35.6,25.1,1.69,2,2,1,0,0
 cellphones,lenovo,lenovo ideapad slim 5 16imh9 83dc001rvn,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,2048x1280,120,400,57.0,57wh,1.82,windows 11 home,24,22690000,35.6,25.1,1.69,2,2,1,0,0
-cellphones,asus,asus zenbook 14 ux3402za-km219w,intel core i5-1240p,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,600,75.0,4,1.39,windows 11 home,24,23690000,31.36,22.06,1.69,1,2,1,0,1
-cellphones,acer,acer nitro v 16 propanel anv16-41-r6na,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,32990000,36.18,27.84,2.47,2,1,1,1,0
+cellphones,acer,acer nitro v 16 propanel anv16-41-r6na,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,32990000,36.18,27.84,2.47,0,0,1,1,0
 cellphones,lenovo,lenovo legion slim 5 16irh8 82ya00buvn,intel core i7-13700h,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,300,80.0,80wh,2.4,windows 11 home,36,39990000,35.97,26.03,1.99,2,2,1,1,0
-cellphones,apple,macbook pro 16 m4 pro 14cpu 20gpu,apple m4 pro 14-core,n/a,24,n/a,512,512gb  bảo mật vân tay,yes,16.2,3456x2234,120,n/a,"pin li-po 100 watt-giờ
+cellphones,apple,macbook pro 16 m4 pro 14cpu 20gpu,apple m4 pro 14-core,n/a,24,n/a,512,512gb  bảo mật vân tay,yes,16.2,3456x2234,120,n/a,100.0,"pin li-po 100 watt-giờ
  thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 17 giờ","pin li-po 100 watt-giờ
- thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 17 giờ",2.14,macos,12,64990000,35.57,24.81,1.68,0,3,1,0,0
-cellphones,asus,asus expertbook b1 b1502cva-nj0149w,intel core i3-1315u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.69,windows 11 home,24,10990000,36.16,23.3,1.99,1,2,1,1,0
-cellphones,asus,asus zenbook ux425ea bm069t,n/a,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,4-cell li-ion,4,1.17,windows 10 home,24,24690000,31.9,20.8,1.39,1,2,1,0,0
-cellphones,dell,dell inspiron 3511 p112f001abl,intel core i3-1115g,n/a,4,ddr4,256,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,3,1.73,windows 10 home,12,10490000,35.85,23.56,1.9,2,0,1,0,0
-cellphones,acer,acer nitro v 16 propanel anv16-41-r7en,amd ryzen 7 8845hs,geforce rtx 3050,16,ddr5,512,ssd,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,27490000,36.18,27.84,2.47,2,1,1,1,0
-cellphones,asus,asus expertbook b1 b1402cva-nk0104w,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.46,windows 11 home,24,10690000,32.69,21.45,1.99,2,2,1,1,0
-cellphones,asus,asus vivobook m513ua-l1221t,amd ryzen 5 5500u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,400,42.0,3,1.8,windows 10 home,24,18090000,35.98,23.53,1.86,3,1,1,0,0
+ thời gian duyệt web trên mạng không dây lên đến 17 giờ",2.14,macos,12,64990000,35.57,24.81,1.68,0,0,1,0,0
+cellphones,asus,asus expertbook b1 b1502cva-nj0149w,intel core i3-1315u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.69,windows 11 home,24,10990000,36.16,23.3,1.99,3,0,1,1,0
+cellphones,asus,asus zenbook ux425ea bm069t,intel core i5-1135g,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,4-cell li-ion,4,1.17,windows 10 home,24,24690000,31.9,20.8,1.39,1,2,1,0,0
+cellphones,acer,acer nitro v 16 propanel anv16-41-r7en,amd ryzen 7 8845hs,geforce rtx 3050,16,ddr5,512,ssd,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,27490000,36.18,27.84,2.47,0,0,1,1,0
+cellphones,asus,asus expertbook p5 p5405csa-nz0451w,intel core ultra 5 226v,n/a,16,ddr5,1024,ssd,yes,14.0,2560x1600,144,400,63.0,3,1.27,windows 11 home,24,29490000,31.2,22.32,1.49,2,2,1,0,1
+cellphones,asus,asus expertbook b1 b1402cva-nk0104w,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.46,windows 11 home,24,10690000,32.69,21.45,1.99,3,0,1,1,0
+cellphones,asus,asus expertbook p5 p5405csa-nz0017w,intel core ultra 7 258v,n/a,32,ddr5,1024,ssd,yes,14.0,2560x1600,144,400,63.0,3,1.27,windows 11 home,24,34990000,31.2,22.32,1.49,2,2,1,0,1
 cellphones,apple,macbook pro 16 inch m2 max,apple m2 max 12-core,n/a,64,n/a,1024,ssd,yes,16.0,3456x2234,n/a,n/a,n/a,n/a,2.1,macos,12,105990000,35.57,24.81,1.68,0,1,1,0,1
-cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 16-core,n/a,128,n/a,8192,"8tb wi-fi 6, bảo mật vân tay",yes,14.2,3024x1964,120,n/a,pin li-po 72.4 watt-giờ,"pin li-po 72,4 watt-giờ",1.55,n/a,12,194990000,31.26,22.12,1.55,0,1,1,0,1
-cellphones,asus,asus vivobook 14x a1403za-ly153w,intel core i3-1220p,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,50.0,3,1.6,windows 11 home,24,11290000,31.71,22.2,1.99,3,1,1,0,1
-cellphones,acer,acer nitro v 16 propanel anv16-41-r6zy,amd ryzen 5 8645hs,geforce rtx 3050,16,ddr5,512,ssd,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,25990000,36.18,27.84,2.47,2,1,1,1,0
-cellphones,asus,asus rog strix g16 g614ji-n4125w,intel core i7-13650hx,geforce rtx 4070,16,ddr5,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,43990000,35.4,26.4,2.26,2,2,1,0,1
+cellphones,apple,macbook pro 14 m3 pro,apple m3 pro 16-core,n/a,128,n/a,8192,"8tb wi-fi 6, bảo mật vân tay",yes,14.2,3024x1964,120,n/a,72.4,"pin li-po 72,4 watt-giờ",1.55,n/a,12,194990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,apple,macbook air 15 inch m3,apple m3 8-core,n/a,16,n/a,1024,1tb wi-fi 6,yes,15.3,2880x1864,60,n/a,66.5,pin li-po 66.5 watt-giờ,1.51,macos,12,47990000,34.04,23.76,1.15,0,0,0,0,0
+cellphones,apple,macbook pro 16 m3 max,apple m3 max 16-core,n/a,128,n/a,8192,"8tb wi-fi 6, bảo mật vân tay",yes,16.2,3024x1964,120,n/a,72.4,"pin li-po 72,4 watt-giờ",2.16,macos,12,182490000,35.57,24.81,1.68,0,0,1,0,1
+cellphones,acer,acer nitro v 16 propanel anv16-41-r36y,amd ryzen 7 8845hs,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,29990000,36.18,27.84,2.47,0,0,1,1,0
+cellphones,acer,acer nitro v 16 propanel anv16-41-r6zy,amd ryzen 5 8645hs,geforce rtx 3050,16,ddr5,512,ssd,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,25990000,36.18,27.84,2.47,0,0,1,1,0
 cellphones,msi,msi prestige 13 ai evo a1mg-062vn,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,13.3,2880x1800,n/a,n/a,75.0,4,0.99,windows 11 home,24,32990000,29.9,21.0,1.69,1,2,1,0,1
-cellphones,apple,macbook pro 14 m4 10cpu 10gpu,apple m4 10-core,n/a,16,n/a,512,512gb  bảo mật vân tay,yes,14.2,3024x1964,120,n/a,"pin li-po 72.4 watt-giờ
+cellphones,apple,macbook pro 14 m4 10cpu 10gpu,apple m4 10-core,n/a,16,n/a,512,512gb  bảo mật vân tay,yes,14.2,3024x1964,120,n/a,72.4,"pin li-po 72.4 watt-giờ
  thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 16 giờ","pin li-po 72.4 watt-giờ
- thời gian xem video trực tuyến lên đến 24 giờ
- thời gian duyệt web trên mạng không dây lên đến 16 giờ",1.55,macos,12,39990000,31.26,22.12,1.55,0,2,1,0,0
+ thời gian duyệt web trên mạng không dây lên đến 16 giờ",1.55,macos,12,39990000,31.26,22.12,1.55,0,0,1,0,0
 cellphones,msi,msi katana 15 b13vek-2256vn,intel core i7-13620h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,25490000,35.9,25.9,2.49,3,1,1,0,1
-cellphones,lenovo,lenovo yoga pro 7 14imh9 83e2005dvn,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,73.0,"73wh, 140w usb-c slim (3-pin)",1.59,windows 11 home,24,43490000,32.55,22.65,1.66,1,2,1,0,1
-cellphones,dell,dell inspiron 15 3530 n5i7240w1,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,54.0,4,1.66,windows 11 home,12,21490000,35.85,23.56,1.9,1,1,1,0,0
+cellphones,dell,dell inspiron 15 3530 n5i7240w1,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,54.0,4,1.66,windows 11 home,12,21490000,35.85,23.56,1.9,0,0,1,0,0
+cellphones,apple,macbook pro 14 m3 pro 2023  sạc 70w | chính hãng apple việt nam,apple m3 pro 11-core,n/a,36,n/a,1024,"1tb wi-fi 6, bảo mật vân tay",yes,14.2,3024x1964,120,n/a,72.4,"thời gian xem phim trên ứng dụng apple tv lên đến 18 giờ
+pin li-po 72,4 watt-giờ",1.55,n/a,12,64990000,31.26,22.12,1.55,0,0,1,0,1
+cellphones,asus,asus rog strix g16 g614ji-n4125w,intel core i7-13650hx,geforce rtx 4070,16,ddr5,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,43990000,35.4,26.4,2.26,3,1,1,0,1
+cellphones,lenovo,lenovo yoga pro 7 14imh9 83e2005dvn,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,73.0,3,1.59,windows 11 home,24,43490000,32.55,22.65,1.66,1,2,1,0,1
+cellphones,lenovo,lenovo yoga pro 7 14asp9 83hn0022vn,amd ryzen ai 9 365,n/a,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,73.0,73wh,1.54,windows 11 home,24,40990000,32.55,22.65,1.66,1,2,1,0,1
+cellphones,acer,acer gaming aspire 7 a715-76-728x,intel core i7-12650h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,n/a,n/a,2.1,windows 11 home,12,19590000,36.23,23.74,1.99,0,1,1,1,0
+cellphones,acer,acer aspire 5 a515-58p-56rp,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,n/a,n/a,50.0,50wh li-ion battery,1.7,windows 11 home,12,15990000,36.29,23.75,1.8,2,0,1,1,1
+cellphones,asus,asus expertbook p5 p5405csa-nz0016w,intel core ultra 5 226v,n/a,16,ddr5,512,ssd,yes,14.0,2560x1600,144,400,63.0,3,1.27,windows 11 home,24,27990000,31.2,22.32,1.49,2,2,1,0,1
+cellphones,asus,asus gaming rog strix scar 16 g634jzr-nm009w,intel core i9-14900hx,geforce rtx 4080,64,ddr5,2048,ssd,yes,16.0,2560x1600,240,1100,90.0,4,2.65,windows 11 home,24,105990000,35.4,26.4,2.26,3,1,1,0,1
+cellphones,msi,msi prestige a16 ai+ a3hmg-045vn,amd ryzen ai 9 365,n/a,32,ddr5,1024,ssd,yes,16.0,3840x2400,60,n/a,82.0,4,1.9,windows 11 home,24,39990000,35.8,25.86,1.74,1,2,1,0,0
 cellphones,apple,macbook pro 14 inch m2 max,apple m2 max 12-core,n/a,64,n/a,1024,ssd,yes,14.2,3024x1964,n/a,n/a,70.0,"70wh
 đi kèm củ sạc 96w",1.6,macos,12,88990000,31.26,22.12,1.55,0,1,1,0,1
-cellphones,asus,asus gaming rog strix scar 16 g634jzr-nm009w,intel core i9-14900hx,geforce rtx 4080,64,ddr5,2048,ssd,yes,16.0,2560x1600,240,1100,90.0,4,2.65,windows 11 home,24,105990000,35.4,26.4,2.26,2,2,1,0,1
-cellphones,lenovo,lenovo yoga 7 2-in-1 14iml9 83dj001fvn,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,71.0,71wh,1.49,windows 11 home,24,29990000,31.77,22.21,1.66,1,2,1,0,1
