@@ -185,7 +185,7 @@ class TransformPipeline:
                             value = value[value.index('geforce'):]
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
-                                                               'intel arc', 'adreno', 'onboard', 'on board', 'uma',]]):
+                                                               'intel arc', 'adreno', 'onboard', 'on board', 'uma', ' intel iris',]]):
                         value = "n/a"
                     elif any([keyword in value for keyword in ['amd', 'radeon']]):
                         value = value.replace('amd', '')
@@ -214,9 +214,10 @@ class TransformPipeline:
                 if search_value:
                     value = search_value.group()
                     value = int(value.split('gb')[0])
-                elif self.adapter.get('source') == 'hacom' and re.search(r'\d+\s?g', value):
-                    value = re.search(r'\d+\s?g', value).group()
-                    value = int(value.split('g')[0])
+                elif self.adapter.get('source') == 'hacom' or self.adapter.get('source') == 'laptopaz': 
+                    if re.search(r'\d+\s?g', value):
+                        value = re.search(r'\d+\s?g', value).group()
+                        value = int(value.split('g')[0])
                 else:
                     pass    
                     
@@ -237,7 +238,7 @@ class TransformPipeline:
                     value = search_value.group()
                 elif '3200' in value:
                     value = 'ddr4'
-                elif '7467' in value:
+                elif '7467' in value or '5600' in value:
                     value = 'ddr5'
                 # else: 
                 #     value = "n/a"
@@ -341,7 +342,7 @@ class TransformPipeline:
                 value = ''.join(value.split())
                 value = value.replace('*', 'x')
                 
-                search_value = re.search(r'(\d{3,4})\s*[-xXby]+\s*(\d{3,4})', value)
+                search_value = re.search(r'(\d{3,4})\s*[×xXby]\s*(\d{3,4})', value)
                 if search_value:
                     width, height = sorted(map(int, search_value.groups()), reverse=True)
                     value = f"{width}x{height}"
@@ -357,6 +358,7 @@ class TransformPipeline:
                         '8k': 7680,        # 8K Ultra HD
                         'fullhd+': 1920,   # Full HD+ with 16:10 ratio
                         'wuxga': 1920,     # WUXGA with 16:10 ratio
+                        'uhd+': 3840,      # UHD+ 16:10 ratio
                     }
 
                     ratio_match = re.search(r'(\d+):(\d+)', value)
