@@ -159,7 +159,7 @@ class TransformPipeline:
                 if special_sep:
                     value = value.split(special_sep.group())[0]
                 
-                for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
+                for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog', '-']:
                     value = value.split(spliter)[0]
                 
                 value = ' '.join(value.split())
