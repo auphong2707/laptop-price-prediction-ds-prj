@@ -436,10 +436,10 @@ class TransformPipeline:
                 
                 value = value.replace(',', '.')
                 value = re.sub(r'[():]|nguồn', '', value).strip()
-                
-                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery)', value)
+
+                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(w|wh|battery)', value)
                 if search_value:
-                    value = float(search_value.group().split('wh')[0].split('battery')[0])
+                    value = float(search_value.group(1))
                 
                 self.adapter['battery_capacity'] = value
             except Exception as e:

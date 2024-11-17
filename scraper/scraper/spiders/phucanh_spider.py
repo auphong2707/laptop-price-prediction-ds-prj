@@ -19,7 +19,7 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
                 "//div[@id='fancybox-spec']//table[contains(@class, 'tb-product-spec')]//tr//td[text()='{}']/following-sibling::td//text()".format(name)
                 for name in names
             ] + [
-                "//div//strong[contains(text(), '{}')]//text()".format(name)
+                "//div//strong[contains(text(), '{}')]/following-sibling::text()[1]".format(name)
                 for name in names
             ]
 
