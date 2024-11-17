@@ -19,7 +19,8 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
                 "//div[@id='fancybox-spec']//table[contains(@class, 'tb-product-spec')]//tr//td[text()='{}']/following-sibling::td//text()".format(name)
                 for name in names
             ] + [
-                "//div//strong[contains(text(), {})]//text()".format(name) for name in names
+                "//div//strong[contains(text(), '{}')]//text()".format(name)
+                for name in names
             ]
 
         for value in possibile_values:
