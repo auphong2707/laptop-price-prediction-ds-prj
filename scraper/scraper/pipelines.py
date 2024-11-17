@@ -183,6 +183,8 @@ class TransformPipeline:
                         
                         if 'geforce' in value:
                             value = value[value.index('geforce'):]
+                        elif 'generation' in value:
+                            value = value + ' laptop gpu'
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
                                                                'intel arc', 'adreno', 'onboard', 'on board', 'uma',]]):
