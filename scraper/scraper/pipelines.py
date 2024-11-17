@@ -659,8 +659,7 @@ class TransformPipeline:
                         value = number
                     else:  # 'năm' or 'year(s)'
                         value = number * 12
-                else:
-                    value = "aaaaaaaaaaa"
+
                 
                 self.adapter['warranty'] = value
             except Exception as e:
