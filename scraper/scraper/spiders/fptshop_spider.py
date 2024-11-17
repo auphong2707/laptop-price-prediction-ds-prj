@@ -14,7 +14,11 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
     show_technical_spec_button_xpath = "//button[span[text()='Tất cả thông số']]"
     source = 'fptshop'
     selenium_product_request = True
-
+    
+    def _get_driver_options(self):
+        options = super()._get_driver_options()
+        options.set_preference('permissions.default.image', 1)
+        return options
 
     def get_source_selenium(self, url: str):
         time.sleep(1)
