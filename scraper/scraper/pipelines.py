@@ -170,7 +170,7 @@ class TransformPipeline:
                 else:
                     if any([keyword in value for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
                         for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia',
-                                        'intel iris xe', 'graphics', 'vga:', 'vga - ', ':']:
+                                        'intel iris xe', 'graphics', 'vga:', 'vga -', ':']:
                             value = value.replace(removal, '')
                             value = ' '.join(value.split())
                         
