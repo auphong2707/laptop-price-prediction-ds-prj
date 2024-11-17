@@ -51,8 +51,6 @@ class TransformPipeline:
             try:
                 # Get the CPU field value
                 value = self.adapter.get('cpu')
-                if value == "n/a":
-                    return
                 
                 # Basic cleaning steps
                 for removal in ['®', '™', ' processors', ' processor', 'mobile',
@@ -103,6 +101,8 @@ class TransformPipeline:
                         if match:
                             model_number = match.group(1).replace('u', '')
                             value = 'intel core ' + f"ultra {model_number} {match.group(2)}{match.group(3)}"
+                        else:
+                            value = "n/a"
                     
                     # AMD solving
                     elif "ryzen" in value:
@@ -112,6 +112,8 @@ class TransformPipeline:
                         
                         if match:
                             value = 'amd ' f"ryzen {match.group(1)} {match.group(2)}{match.group(3)}"
+                        else:
+                            value = "n/a"
                             
                     elif "amd" in value:
                         pattern = re.compile(r'(amd)\s*([a-z]{3,4})\s*(\d{3,4})')
@@ -120,6 +122,8 @@ class TransformPipeline:
                         
                         if match:
                             value = 'amd ' + f"{match.group(2)} {match.group(3)}"
+                        else:
+                            value = "n/a"
                             
                     # Snapdragon solving
                     elif "snapdragon" in value:
@@ -147,8 +151,6 @@ class TransformPipeline:
             try:
                 # Get the VGA field value
                 value = self.adapter.get('vga')
-                if value == "n/a":
-                    return
                 
                 # Basic cleaning steps
                 value = re.sub(r'[^\x20-\x7E]|®|™|integrated|gpu', ' ', value, flags=re.IGNORECASE)              
@@ -198,6 +200,8 @@ class TransformPipeline:
                             value = "n/a"
                         elif not 'rx' in value:
                             value = "n/a"
+                    else:
+                        value = "n/a"
                     
                 value = value.strip()
                 
@@ -211,8 +215,6 @@ class TransformPipeline:
             try:
                 # Get the RAM amount field value
                 value = self.adapter.get('ram_amount')
-                if value == "n/a":
-                    return
                 
                 search_value = re.search(r'\d+\s?gb', value)
                 if search_value:
@@ -223,7 +225,7 @@ class TransformPipeline:
                         value = re.search(r'\d+\s?g', value).group()
                         value = int(value.split('g')[0])
                 else:
-                    pass    
+                    value = "n/a"    
                     
                 self.adapter['ram_amount'] = value
             except Exception as e:
@@ -235,8 +237,7 @@ class TransformPipeline:
             try:
                 # Get the RAM type field value
                 value = self.adapter.get('ram_type')
-                if value == "n/a":
-                    return
+                
                 search_value = re.search(r'ddr+\d', value)
                 if search_value:
                     value = search_value.group()
@@ -244,8 +245,8 @@ class TransformPipeline:
                     value = 'ddr4'
                 elif '7467' in value or '5600' in value:
                     value = 'ddr5'
-                # else: 
-                #     value = "n/a"
+                else: 
+                    value = "n/a"
                 
                 self.adapter['ram_type'] = value
             except Exception as e:
@@ -257,8 +258,6 @@ class TransformPipeline:
             try:
                 # Get the storage amount field value
                 value = self.adapter.get('storage_amount')
-                if value == "n/a":
-                    return
                 
                 value = ''.join(value.split())
                 
@@ -269,6 +268,8 @@ class TransformPipeline:
                         value = int(value.split('tb')[0]) * 1024
                     else:
                         value = int(value.split('gb')[0])
+                else:
+                    value = "n/a"
                 
                 self.adapter['storage_amount'] = value
             except Exception as e:
@@ -280,8 +281,6 @@ class TransformPipeline:
             try:
                 # Get the storage type field value
                 value = self.adapter.get('storage_type')
-                if value == "n/a":
-                    return
                 
                 if any(x in value for x in ["ssd", "pcie"]) and "hdd" in value:
                     if min(value.index(x) for x in ["ssd", "pcie"] if x in value) < value.index("hdd"):
@@ -294,6 +293,8 @@ class TransformPipeline:
                     value = "hdd"
                 elif "emmc" in value:
                     value = "emmc"
+                else:
+                    value = "n/a"
                 
                 self.adapter['storage_type'] = value
             except Exception as e:
@@ -319,8 +320,6 @@ class TransformPipeline:
             try:
                 # Get the screen size field value
                 value = self.adapter.get('screen_size')
-                if value == "n/a":
-                    return
                 
                 value = value.replace(',', '.')
                 
@@ -340,8 +339,6 @@ class TransformPipeline:
             try:
                 # Get the screen resolution field value
                 value = self.adapter.get('screen_resolution')
-                if value == "n/a":
-                    return
                 
                 value = ''.join(value.split())
                 value = value.replace('*', 'x')
@@ -382,6 +379,8 @@ class TransformPipeline:
                             
                             value = f"{width}x{height}"
                             break  # Exit loop after finding the first matching resolution
+                        else:
+                            value = "n/a"
 
                 
                 self.adapter['screen_resolution'] = value
@@ -394,8 +393,6 @@ class TransformPipeline:
             try:
                 # Get the screen refresh rate field value
                 value = self.adapter.get('screen_refresh_rate')
-                if value == "n/a":
-                    return
                 
                 invalid_vals = ["đang cập nhật", "hãng không công bố"]
                 if any(invalid_val in value for invalid_val in invalid_vals):
@@ -439,8 +436,6 @@ class TransformPipeline:
             try:
                 # Get the battery capacity field value
                 value = self.adapter.get('battery_capacity')
-                if value == "n/a":
-                    return
                 
                 value = value.replace(',', '.')
                 value = re.sub(r'[():]|nguồn', '', value).strip()
@@ -448,6 +443,8 @@ class TransformPipeline:
                 search_value = re.search(r'(\d+(?:\.\d+)?)\s*[-]?(w(?:att)?|wh|battery)', value, re.IGNORECASE)
                 if search_value:
                     value = float(search_value.group(1))
+                else:
+                    value = "n/a"
                 
                 self.adapter['battery_capacity'] = value
             except Exception as e:
@@ -459,14 +456,12 @@ class TransformPipeline:
             try:
                 # Get the number of battery cells field value
                 value = self.adapter.get('battery_cells')
-                if value == "n/a":
-                    return
                 
                 search_value = re.search(r'(\d+)[ -]?(?:cell(?:s)?|pin(?:s)?)|(\d+)\s+cells|chân\s*(\d+)', value)
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
-                elif "integrated" in value:
+                else:
                     value = "n/a"
                 
                 self.adapter['battery_cells'] = value
@@ -517,8 +512,6 @@ class TransformPipeline:
             """Transforms the weight field to a standardized format."""
             try:
                 value = self.adapter.get('weight')
-                if value == "n/a":
-                    return
             
                 value = value.replace(',', '.')
             
@@ -532,6 +525,8 @@ class TransformPipeline:
                         value = float(value_g.group(1)) / 1000
                     else:
                         value = float(value_g.group(1))
+                else:
+                    value = "n/a"
                     
                 self.adapter['weight'] = value
             except Exception as e:
@@ -615,8 +610,6 @@ class TransformPipeline:
             """Transforms the default OS field to a standardized format."""
             try:
                 value = self.adapter.get('default_os')
-                if value == "n/a":
-                    return
                 
                 if self.adapter.get('brand') == 'apple':
                     value = 'macos'
@@ -646,6 +639,8 @@ class TransformPipeline:
                             break
                     if 'windows' in value:
                         value = value[value.index('windows'):]
+                    else:
+                        value = "n/a"
                 
                 self.adapter['default_os'] = value
             except Exception as e:
@@ -658,9 +653,6 @@ class TransformPipeline:
                 value = self.adapter.get('warranty')
                 if type(value) == list:
                     value = " ".join([i.replace('\n', '').strip() for i in value])
-                    
-                if value == "n/a":
-                    return
                 
                 match = re.search(r'(\d+)\s*(tháng|năm|years?)', value)
                 if match:
@@ -670,6 +662,8 @@ class TransformPipeline:
                         value = number
                     else:  # 'năm' or 'year(s)'
                         value = number * 12
+                else:
+                    value = "n/a"
 
                 
                 self.adapter['warranty'] = value
