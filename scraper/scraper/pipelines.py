@@ -179,7 +179,7 @@ class TransformPipeline:
                 else:
                     if any([keyword in value for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
                         for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia',
-                                        'intel iris xe', 'graphics', 'vga:', 'vga - ']:
+                                        'intel iris xe', 'graphics', 'vga:', 'vga - ', ':']:
                             value = value.replace(removal, '')
                             value = ' '.join(value.split())
                         
@@ -250,6 +250,8 @@ class TransformPipeline:
                     value = search_value.group()
                 elif '3200' in value:
                     value = 'ddr4'
+                elif '7467' in value:
+                    value = 'ddr5'
                 elif search_value is None:
                     value = 'n/a'
                 
@@ -628,10 +630,11 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                if "noos" in value:
+                if "no" in value:
                     value = "n/a"
-                
-                if self.adapter.get('brand') == 'apple':
+                elif "ubuntu" in value:
+                    value = "ubuntu"
+                elif self.adapter.get('brand') == 'apple':
                     value = 'macos'
                 else:
                     for removal in ['single language', 'sl', '64', 'bit', 'sea', 'microsoft', 'office', ':']:
