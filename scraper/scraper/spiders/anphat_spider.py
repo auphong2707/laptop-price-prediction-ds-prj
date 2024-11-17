@@ -52,7 +52,15 @@ class AnphatSpider(BaseLaptopshopPageSpider):
 
     def parse_brand(self, response: Response):
         brand = self.get_scoped_value(response, ["Hãng sản xuất"])
-        return brand.split("Laptop ")[-1].split("laptop ")[-1] if brand else 'n/a'        
+        if brand:
+            if "surface" in brand:
+                return "microsoft"
+            elif "ezel" in brand:
+                return "conceptd"
+            else:
+                return brand.split("Laptop ")[-1].split("laptop ")[-1]
+        else:
+            return 'n/a'        
     
     def parse_name(self, response: Response):
         name = self.get_scoped_value(response, ["Tên sản phẩm"])

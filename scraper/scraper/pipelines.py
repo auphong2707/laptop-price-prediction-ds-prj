@@ -55,9 +55,11 @@ class TransformPipeline:
                     return
                 
                 # Basic cleaning steps
-                for removal in ['®', '™', ' processors', ' processor', 'mobile', 'with intel ai boost', '', '(tm)', '(r)', ':'
-                                    'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 'comet lake', 'kabylake refresh', 'kabylake', 'cpu']:
-                            value = value.replace(removal, '')
+                for removal in ['®', '™', ' processors', ' processor', 'mobile',
+                                'with intel ai boost', '', '(tm)', '(r)', ':',
+                                'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 
+                                'comet lake', 'kabylake refresh', 'kabylake', 'cpu']:
+                    value = value.replace(removal, '')
                     
                 special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+(\.\d+)?\s*ghz|\d+\s?gb|dgb)\b', value)
                 if special_sep:
@@ -105,6 +107,9 @@ class TransformPipeline:
                         if match:
                             model_number = match.group(1).replace('u', '')
                             value = 'intel core ' + f"ultra {model_number} {match.group(2)}{match.group(3)}"
+                    
+                    elif re.match(r'^core \d \d{3}u', value):
+                        value = 'intel ' + value
                     
                     # AMD solving
                     elif "ryzen" in value:
@@ -173,7 +178,8 @@ class TransformPipeline:
                     value = 'n/a'
                 else:
                     if any([keyword in value for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
-                        for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia', 'intel iris xe', 'graphics', 'vga:']:
+                        for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia',
+                                        'intel iris xe', 'graphics', 'vga:', 'vga - ', ':']:
                             value = value.replace(removal, '')
                             value = ' '.join(value.split())
                         
@@ -244,6 +250,8 @@ class TransformPipeline:
                     value = search_value.group()
                 elif '3200' in value:
                     value = 'ddr4'
+                elif '7467' in value:
+                    value = 'ddr5'
                 elif search_value is None:
                     value = 'n/a'
                 
@@ -445,10 +453,10 @@ class TransformPipeline:
                 value = self.adapter.get('battery_capacity')
                 if value == "n/a":
                     return
-
-                value = value.replace(',', '.')
-                value = re.sub(r'[()]', '', value)
                 
+                value = value.replace(',', '.')
+                value = re.sub(r'[():]|nguồn', '', value).strip()
+
                 search_value = re.search(r'(\d+(?:\.\d+)?)\s*[-]?(w(?:att)?|wh|battery)', value)
                 if search_value:
                     value = float(search_value.group().split('wh')[0].split('battery')[0].split('-watt')[0].split('watt')[0].split('w')[0])
@@ -558,8 +566,11 @@ class TransformPipeline:
                     return
             
                 def count_number_usb(value, get_a=True):
-                    pattern_a = r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b'
-                    pattern_c = r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b'
+                    # pattern_a = r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b'
+                    # pattern_c = r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b'
+                    
+                    pattern_a = r'\b(\d+)\s*x\s*(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b'
+                    pattern_c = r'\b(\d+)\s*x\s*(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b'
                     
                     if re.sub(r'^\s*[•-].*\n?', '', value, flags=re.MULTILINE) != '':
                         value = re.sub(r'^\s*[•-].*\n?', '', value, flags=re.MULTILINE)
@@ -619,13 +630,14 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                if "noos" in value.lower():
+                if "no" in value:
                     value = "n/a"
-                
-                if self.adapter.get('brand') == 'apple':
+                elif "ubuntu" in value:
+                    value = "ubuntu"
+                elif self.adapter.get('brand') == 'apple':
                     value = 'macos'
                 else:
-                    for removal in ['single language', 'sl', '64', 'bit', 'sea', 'microsoft', 'office']:
+                    for removal in ['single language', 'sl', '64', 'bit', 'sea', 'microsoft', 'office', ':']:
                         value = value.replace(removal, '')
                     value = ' '.join(value.split())
                     
