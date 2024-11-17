@@ -159,7 +159,7 @@ class TransformPipeline:
                 if special_sep:
                     value = value.split(special_sep.group())[0]
                 
-                for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
+                for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog', '-']:
                     value = value.split(spliter)[0]
                 
                 value = ' '.join(value.split())
@@ -183,6 +183,8 @@ class TransformPipeline:
                         
                         if 'geforce' in value:
                             value = value[value.index('geforce'):]
+                        elif 'generation' in value:
+                            value = value + ' laptop gpu'
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
                                                                'intel arc', 'adreno', 'onboard', 'on board', 'uma', ' intel iris',]]):
