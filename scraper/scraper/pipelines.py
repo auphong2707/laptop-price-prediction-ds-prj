@@ -162,8 +162,8 @@ class TransformPipeline:
                 for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
                     value = value.split(spliter)[0]
                     
-                for spliter in ['-'] and self.adapter.get('source') in ['thegioididong', 'phucanh']:
-                    value = value.split(spliter)[1]
+                if self.adapter.get('source') in ['thegioididong', 'phucanh']:
+                    value = value.split('-')[1]
                 
                 value = ' '.join(value.split())
 
