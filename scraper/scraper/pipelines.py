@@ -526,7 +526,7 @@ class TransformPipeline:
                 if value_kg:
                     value = float(value_kg.group(1))
                 elif value_g:
-                    if value_g > 1000:
+                    if float(value_g.group(1)) > 1000:
                         value = float(value_g.group(1)) / 1000
                     else:
                         value = float(value_g.group(1))
