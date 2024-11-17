@@ -31,8 +31,10 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
             ] + [
                 "//td[span/strong[text() = '{}']]/following-sibling::td//span/text()".format(name)
                 for name in names
-            ]
-        
+            ] + [
+                "//table//tr[td/strong[contains(text(), '{}')]]/td[2]".format(name)
+                for name in names
+            ] 
         for value in possible_values:
             scope = response.xpath(value).getall()
             if len(scope) != 0:
