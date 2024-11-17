@@ -161,9 +161,6 @@ class TransformPipeline:
                 
                 for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
                     value = value.split(spliter)[0]
-                    
-                if self.adapter.get('source') in ['thegioididong', 'phucanh']:
-                    value = value.split('-')[1]
                 
                 value = ' '.join(value.split())
 
@@ -194,6 +191,9 @@ class TransformPipeline:
                         value = "n/a"
                     elif any([keyword in value for keyword in ['amd', 'radeon']]):
                         value = value.replace('amd', '')
+                        
+                        if '-' in value:
+                            value = value.split('-')[1]
                         
                         if 'vega' in value:
                             value = "n/a"
