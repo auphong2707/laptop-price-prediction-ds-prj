@@ -237,6 +237,8 @@ class TransformPipeline:
                     value = search_value.group()
                 elif '3200' in value:
                     value = 'ddr4'
+                elif '7467' in value:
+                    value = 'ddr5'
                 # else: 
                 #     value = "n/a"
                 
@@ -339,7 +341,7 @@ class TransformPipeline:
                 value = ''.join(value.split())
                 value = value.replace('*', 'x')
                 
-                search_value = re.search(r'(\d{3,4})\s*x\s*(\d{3,4})', value)
+                search_value = re.search(r'(\d{3,4})\s*[-xXby]+\s*(\d{3,4})', value)
                 if search_value:
                     width, height = sorted(map(int, search_value.groups()), reverse=True)
                     value = f"{width}x{height}"
@@ -437,7 +439,7 @@ class TransformPipeline:
                 value = value.replace(',', '.')
                 value = re.sub(r'[():]|nguồn', '', value).strip()
 
-                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(w|wh|battery)', value)
+                search_value = re.search(r'(\d+(?:\.\d+)?)\s*[-]?(w(?:att)?|wh|battery)', value, re.IGNORECASE)
                 if search_value:
                     value = float(search_value.group(1))
                 
@@ -454,7 +456,7 @@ class TransformPipeline:
                 if value == "n/a":
                     return
                 
-                search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells|chân\s*(\d+)', value)
+                search_value = re.search(r'(\d+)[ -]?(?:cell(?:s)?|pin(?:s)?)|(\d+)\s+cells|chân\s*(\d+)', value)
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
@@ -520,7 +522,10 @@ class TransformPipeline:
                 if value_kg:
                     value = float(value_kg.group(1))
                 elif value_g:
-                    value = float(value_g.group(1)) / 1000
+                    if value_g > 1000:
+                        value = float(value_g.group(1)) / 1000
+                    else:
+                        value = float(value_g.group(1))
                     
                 self.adapter['weight'] = value
             except Exception as e:
