@@ -562,13 +562,7 @@ class TransformPipeline:
                     del self.adapter['connectivity']
                     return
             
-                def count_number_usb(value, get_a=True):
-                    # pattern_a = r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b'
-                    # pattern_c = r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b'
-                    
-                    pattern_a = r'\b(\d+)\s*x\s*(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b'
-                    pattern_c = r'\b(\d+)\s*x\s*(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b'
-                    
+                def count_number_usb(value):
                     if re.sub(r'^\s*[•-].*\n?', '', value, flags=re.MULTILINE) != '':
                         value = re.sub(r'^\s*[•-].*\n?', '', value, flags=re.MULTILINE)
                     
@@ -576,33 +570,37 @@ class TransformPipeline:
                         value = re.sub(r'\([^()]*\)', '', value)
                     
                     value = re.split(r'[\n,]', value)
-                    count = 0
+                    
+                    pattern_a = r'\b(\d+)\s*x\s*.*?(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b'
+                    pattern_c = r'\b(\d+)\s*x\s*.*?(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b'
+                    
+                    count_a = 0
+                    count_c = 0
+                    
+                    
                     for line in value:
-                        if get_a:
-                            if re.search(pattern_a, line) and not re.search(pattern_c, line):
-                                line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
-                                val = line.split()[0]
-                                if val[-1] == 'x': val = val[:-1]
-                        
-                                if val.isnumeric():
-                                    count += int(val)
-                                else:
-                                    count += 1
-                        else:
-                            if re.search(pattern_c, line):
-                                line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
-                                val = line.split()[0]
-                                if val[-1] == 'x': val = val[:-1]
-                        
-                                if val.isnumeric():
-                                    count += int(val)
-                                else:
-                                    count += 1
+                        if re.search(pattern_c, line):
+                            line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
+                            val = line.split()[0]
+                            if val[-1] == 'x': val = val[:-1]
                     
-                    return count
+                            if val.isnumeric():
+                                count_c += int(val)
+                            else:
+                                count_c += 1
+                        elif re.search(pattern_a, line) and not re.search(pattern_c, line):
+                            line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
+                            val = line.split()[0]
+                            if val[-1] == 'x': val = val[:-1]
                     
-                self.adapter['number_usb_a_ports'] = count_number_usb(value, get_a=True)
-                self.adapter['number_usb_c_ports'] = count_number_usb(value, get_a=False)
+                            if val.isnumeric():
+                                count_a += int(val)
+                            else:
+                                count_a += 1
+                                
+                    return count_a, count_c
+                    
+                self.adapter['number_usb_a_ports'], self.adapter['number_usb_c_ports'] = count_number_usb(value)
                 
                 def has_port(value, pattern):
                     if value:

@@ -297,7 +297,7 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the price of the laptop from the response.
         """
-        price_text = response.xpath("//div[@id='tradePrice']//span[@class='text-black-opacity-100 h4-bold']").getall()
+        price_text = response.xpath("//div[@id='tradePrice']//span[@class='text-black-opacity-100 h4-bold']//text()").getall()
         price_text = ' '.join(price_text)
         return price_text if price_text else 'n/a'
 
