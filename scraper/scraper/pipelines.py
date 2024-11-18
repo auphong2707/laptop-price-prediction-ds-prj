@@ -227,6 +227,8 @@ class TransformPipeline:
                     if re.search(r'\d+\s?g', value):
                         value = re.search(r'\d+\s?g', value).group()
                         value = int(value.split('g')[0])
+                        if value == 316:
+                            value = 16
                 else:
                     value = "n/a"    
                     
@@ -464,8 +466,11 @@ class TransformPipeline:
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
+                    if value > 10:
+                        value = 'n/a'
                 else:
                     value = "n/a"
+                
                 
                 self.adapter['battery_cells'] = value
             except Exception as e:
@@ -494,6 +499,10 @@ class TransformPipeline:
                     na_exit()
                     return
                 
+                if any(float(num) > 1000 for num in numbers):
+                    na_exit()
+                    return
+                
                 numbers = [float(num) for num in numbers]
                 extracted_numbers = sorted(numbers, reverse=True)[:3]
                 
@@ -506,7 +515,7 @@ class TransformPipeline:
                 
                 self.adapter['width'] = round(extracted_numbers[0] if extracted_numbers[0] < 100 else extracted_numbers[0] / 10, 2)
                 self.adapter['depth'] = round(extracted_numbers[1] if extracted_numbers[1] < 100 else extracted_numbers[1] / 10, 2)
-                self.adapter['height'] = round(extracted_numbers[2] if extracted_numbers[2] < 3  else extracted_numbers[2] / 10, 2)
+                self.adapter['height'] = round(extracted_numbers[2] if extracted_numbers[2] < 4.5  else extracted_numbers[2] / 10, 2)
                 
                 del self.adapter['size']
             except Exception as e:
