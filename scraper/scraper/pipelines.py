@@ -504,6 +504,7 @@ class TransformPipeline:
                     return
                 
                 numbers = [float(num) for num in numbers]
+                numbers = set(numbers)
                 extracted_numbers = sorted(numbers, reverse=True)[:3]
                 
                 # hyphenated_number = re.search(r'-(\d+\.?\d*)', value)
