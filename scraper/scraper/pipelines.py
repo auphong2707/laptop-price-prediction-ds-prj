@@ -80,6 +80,8 @@ class TransformPipeline:
                             value = f"apple {cpu_name.group(0)} {num_cores}-core"
                         else:
                             value = f"apple {cpu_name.group(0)}"
+                    else:
+                        value = "n/a"
                 else:
                     value = re.sub(r'\([^()]*\)', '', value)
                     
@@ -202,7 +204,8 @@ class TransformPipeline:
                             value = "n/a"
                     else:
                         value = "n/a"
-                    
+                        
+                value = value.split("ti")[0]
                 value = value.strip()
                 
                 self.adapter['vga'] = value
@@ -491,13 +494,15 @@ class TransformPipeline:
                     na_exit()
                     return
                 
-                extracted_numbers = numbers[:3]
-                hyphenated_number = re.search(r'-(\d+\.?\d*)', value)
-                if hyphenated_number:
-                    extracted_numbers[-1] = hyphenated_number.group(1)
+                numbers = [float(num) for num in numbers]
+                extracted_numbers = sorted(numbers, reverse=True)[:3]
                 
-                extracted_numbers = [float(num) for num in extracted_numbers]
-                extracted_numbers = sorted(extracted_numbers, reverse=True)
+                # hyphenated_number = re.search(r'-(\d+\.?\d*)', value)
+                # if hyphenated_number:
+                #     extracted_numbers[-1] = hyphenated_number.group(1)
+                
+                # extracted_numbers = [float(num) for num in extracted_numbers]
+                # extracted_numbers = sorted(extracted_numbers, reverse=True)
                 
                 self.adapter['width'] = round(extracted_numbers[0] if extracted_numbers[0] < 100 else extracted_numbers[0] / 10, 2)
                 self.adapter['depth'] = round(extracted_numbers[1] if extracted_numbers[1] < 100 else extracted_numbers[1] / 10, 2)
@@ -521,7 +526,7 @@ class TransformPipeline:
                 if value_kg:
                     value = float(value_kg.group(1))
                 elif value_g:
-                    if float(value_g.group(1)) > 1000:
+                    if float(value_g.group(1)) > 500:
                         value = float(value_g.group(1)) / 1000
                     else:
                         value = float(value_g.group(1))
