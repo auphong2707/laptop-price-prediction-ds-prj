@@ -31,6 +31,12 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
                 return '\n'.join(scope)
             
         return None
+    
+    def yield_condition(self, response):
+        name = response.xpath('//h1/text()').get().lower()
+        if 'laptop' not in name:
+            return False
+        return True
 
     # [PARSE FEATURES SECTION: START]
     # Brand
