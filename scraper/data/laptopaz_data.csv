@@ -1,256 +1,224 @@
 source,brand,name,cpu,vga,ram_amount,ram_type,storage_amount,storage_type,webcam_resolution,screen_size,screen_resolution,screen_refresh_rate,screen_brightness,battery_capacity,battery_cells,weight,default_os,warranty,price,width,depth,height,number_usb_a_ports,number_usb_c_ports,number_hdmi_ports,number_ethernet_ports,number_audio_jacks
-laptopaz,lenovo,lenovo loq 2024 15iax9 83gs001svn,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,17990000,n/a,n/a,n/a,1,1,1,1,1
-laptopaz,lenovo,lenovo legion y7000p 2024,intel core i7-14700hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,350,80.0,4,2.3,windows,12,deal: 34890000,n/a,n/a,n/a,0,1,1,0,0
-laptopaz,asus,asus zenbook 14 oled q415ma 2024,intel core ultra 5 125h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,60,500,75.0,4,1.28,windows,n/a,14990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,asus,asus zenbook 14 oled q425ma 2024,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,60,500,75.0,4,1.28,windows,n/a,21490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,laptop dell xps 9510,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,51890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo legion 5 r7000 aph9,amd ryzen 7 7840h,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.3,windows,12,26490000,n/a,n/a,n/a,0,2,1,0,0
-laptopaz,dell,dell inspiron 7440 plus 2024,intel core i5-12450h,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,300,64.0,4,1.6,windows,n/a,17390000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,asus,asus vivobook 14 oled a1405va-km257w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows,24,17490000,n/a,n/a,n/a,2,0,1,0,1
-laptopaz,lenovo,lenovo loq 2023 15aph8,amd ryzen 7 7840hs,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,350,60.0,4,2.4,windows,n/a,23890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,acer,acer predator helios 300 ph315-55-71ef,intel core i7-12700h,geforce rtx 3070 ti,16,ddr5,512,ssd,yes,15.6,2560x1440,165,n/a,90.0,4,2.59,linux,n/a,31890000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,msi,msi thin gf63 12ucx,intel core i5-12450h,geforce rtx 2050,8,ddr4,1024,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows,n/a,14990000,n/a,n/a,n/a,0,1,0,0,0
-laptopaz,acer,acer predator helios neo 2023 phn16-71,intel core i7-13700hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,500,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,acer,acer predator helios neo 2023 phn16-71,intel core i9-13900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,500,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,1,0,1,0,1
-laptopaz,lenovo,lenovo legion pro 5 y9000p irx8,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,80.0,4,2.53,windows,n/a,24990000,n/a,n/a,n/a,0,3,1,0,1
-laptopaz,dell,dell vostro 16 5620,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12290000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,asus,asus tuf gaming a15 fa506qm- hn077t,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,18390000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell inspiron 16 5620,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,19490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo legion pro 5 y9000p irx8,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,80.0,4,2.53,windows,n/a,24990000,n/a,n/a,n/a,0,3,1,0,1
-laptopaz,acer,acer predator helios neo 2024 phn16-72-53mt,intel core i5-14500hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,n/a,2560x1600,240,500,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,0,2,1,0,1
-laptopaz,acer,acer predator helios neo 2024 phn16-72-598p,intel core i5-14500hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,n/a,2560x1600,165,500,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,0,2,1,0,1
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 5 125h,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,n/a,17590000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo loq 82xv0012us,intel core i5-12450h,geforce rtx 3050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,350,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,1,1,1,1,1
-laptopaz,dell,dell gaming g15 5520,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,20890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,asus,asus vivobook 14 s5602za,intel core i7-12700h,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,60,300,70.0,3,1.6,windows,n/a,24590000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,asus,asus tuf gaming fx506hf-hn078w,intel core i5-11260h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.3,windows,n/a,18390000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell inspiron 16 plus 7630,intel core i7-13700h,n/a,32,ddr5,1024,ssd,yes,16.0,2560x1600,n/a,300,86.0,6,2.06,windows,12,21890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,amd ryzen 7 8845h,n/a,32,ddr5,1024,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,deal: 23190000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,lenovo,lenovo thinkpad x1 nano gen 1,intel core i7-1180g,n/a,16,ddr4,256,ssd,no,13.3,n/a,n/a,n/a,48.0,n/a,0.96,windows,n/a,20890000,n/a,n/a,n/a,0,1,0,0,1
-laptopaz,acer,acer aspire 5 a515-58gm-53pz,intel core i5-13420h,geforce rtx 2050,8,ddr4,512,ssd,no,15.6,1920x1080,60,n/a,50.0,n/a,1.7,windows,n/a,16290000,n/a,n/a,n/a,2,0,1,1,1
-laptopaz,dell,dell inspiron 14 7440 2-in-1 2024,intel core 5 120u,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,n/a,250,64.0,4,1.71,windows,n/a,15990000,n/a,n/a,n/a,0,0,1,0,0
-laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050 ti,16,ddr5,512,ssd,no,15.6,1920x1200,60,n/a,86.0,n/a,1.92,windows,n/a,31890000,n/a,n/a,n/a,0,0,0,0,1
-laptopaz,lenovo,lenovo thinkbook 14 g6+ 2024,amd ryzen 7 8845h,n/a,16,ddr5,1024,ssd,yes,n/a,2560x1600,120,n/a,85.0,4,1.5,windows,12,19890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,dell,dell latitude 5400,intel core i7-8650u,n/a,8,ddr4,256,ssd,no,14.0,1920x1080,n/a,n/a,n/a,4,1.48,windows,12,7690000,n/a,n/a,n/a,0,0,1,0,0
-laptopaz,lenovo,lenovo yoga 7 2-in-1 14iml9,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,71.0,n/a,1.6,windows,12,17990000,n/a,n/a,n/a,1,0,0,0,0
-laptopaz,dell,dell inspiron 14 7440 2-in-1 2024,intel core 7 150u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,250,64.0,4,1.71,windows,n/a,20690000,n/a,n/a,n/a,0,0,1,0,0
-laptopaz,acer,acer nitro 5 an515-58-73rs,intel core i7-12650h,geforce rtx 4050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,n/a,20990000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,acer,acer nitro v 15 anv15-51-789j,intel core i7-13620h,geforce rtx 4060,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,23890000,n/a,n/a,n/a,0,0,1,1,1
-laptopaz,dell,dell gaming g15 5525,amd ryzen 7 6800h,geforce rtx 3060,16,ddr5,512,ssd,yes,15.6,n/a,240,n/a,56.0,3,2.55,windows,n/a,20890000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,acer,acer nitro v 15 anv15-51-73b9,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,n/a,20890000,n/a,n/a,n/a,0,0,1,1,1
-laptopaz,asus,asus gaming vivobook k3605zu-rp296w,intel core i5-12500h,geforce rtx 4050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows,n/a,24790000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,asus,asus gaming vivobook k3605zc-rp564w,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows,24,18790000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,asus,asus gaming vivobook k3605zf-rp634w,intel core i5-12500h,geforce rtx 2050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows,24,17490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,acer,acer nitro 5 an515-58-57y8,intel core i5-12500h,geforce rtx 3050 ti,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,n/a,17990000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,dell,dell inspiron 14 7440 2-in-1 2024,intel core 7 150u,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,250,64.0,4,1.71,windows,12,21490000,n/a,n/a,n/a,0,0,1,0,0
-laptopaz,acer,acer nitro v 15 anv15-51h9,intel core i5-13420h,geforce rtx 4050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,n/a,18990000,n/a,n/a,n/a,0,0,1,1,1
-laptopaz,lenovo,lenovo slim 7 pro x,intel core i7-12700h,geforce rtx 3050,16,ddr5,512,ssd,yes,14.5,3072x1920,120,400,70.0,n/a,1.45,windows,n/a,22890000,n/a,n/a,n/a,0,0,0,0,1
-laptopaz,lenovo,lenovo legion 5 16irx9 2024,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,4,2.3,windows,n/a,30990000,n/a,n/a,n/a,2,0,0,0,0
-laptopaz,asus,asus tuf gaming a15 fa506nfr-hn006w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,24,18390000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell inspiron 7640 plus 2024 7640r-r3808l,intel core i7-13620h,n/a,16,ddr5,1024,ssd,yes,16.0,2560x1600,n/a,300,64.0,4,1.9,windows,12,21990000,n/a,n/a,n/a,0,1,0,0,1
-laptopaz,lenovo,lenovo thinkbook 14 g5+ arp,amd ryzen 7 7735h,n/a,16,ddr5,512,ssd,yes,n/a,2880x1800,90,400,62.0,4,1.4,windows,n/a,17590000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell inspiron 3530,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows,12,13590000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,dell,dell inspiron 15 7501,intel core i5-10300h,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,300,56.0,3,1.8,windows,12,17390000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo loq 2024 15iax9,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,16990000,n/a,n/a,n/a,1,1,1,1,1
-laptopaz,lenovo,lenovo loq 2024 15iax9,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,17990000,n/a,n/a,n/a,1,1,1,1,1
-laptopaz,lenovo,lenovo loq 2024 15arp9 83jc0001us,amd ryzen 5 7235hs,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,16990000,n/a,n/a,n/a,0,1,1,1,1
-laptopaz,lenovo,lenovo loq 2024 15arp9,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,12,deal: 21290000,n/a,n/a,n/a,0,1,1,1,1
-laptopaz,lenovo,lenovo thinkpad t14,n/a,n/a,16,ddr4,256,ssd,no,14.0,1920x1080,n/a,n/a,45.0,3,1.69,windows,n/a,17890000,n/a,n/a,n/a,0,0,1,1,1
-laptopaz,dell,dell inspiron plus 7620,intel core i7-12700h,n/a,16,ddr5,512,ssd,yes,16.0,3072x1920,n/a,300,86.0,6,2.0,windows,n/a,26890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell gaming g16 7630 2023,intel core i9-13900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,86.0,6,2.65,windows,12,39890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,gigabyte,gigabyte g5 mf-e2vn333sh,intel core i5-12500h,geforce rtx 4050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,54.0,4,1.9,windows 11 home,n/a,22790000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,gigabyte,gigabyte g5 mf-e3vn313sh,intel core i5-12500h,geforce rtx 4060,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,54.0,4,1.9,windows 11 home,24,25990000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,acer,acer nitro 5 an515-55-50v2,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,13890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,msi,msi modern 14 2023 c7m 212vn,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows,n/a,12490000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,dell,dell inspiron 7440 plus 2024,intel core i5-12450h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,64.0,4,1.6,windows,12,15990000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,asus,asus tuf gaming a15 fa506nc-hn011w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,17190000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,n/a,20890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,asus,asus vivobook s14 oled s5406 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.3,windows,24,24990000,n/a,n/a,n/a,0,5,1,0,0
-laptopaz,dell,dell inspiron 7640 plus 2024,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,16.0,1920x1200,n/a,300,64.0,4,1.9,windows,n/a,24890000,n/a,n/a,n/a,0,1,0,0,1
-laptopaz,asus,asus vivobook 14 oled a1405za-km264w,intel core i5-12500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows,n/a,15990000,n/a,n/a,n/a,2,0,1,0,1
-laptopaz,lenovo,lenovo legion y9000p 2024,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,n/a,2.53,windows,n/a,40190000,n/a,n/a,n/a,1,1,1,1,1
-laptopaz,acer,acer nitro v 15 anv15-51-789j,intel core i7-13620h,geforce rtx 4060,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,22890000,n/a,n/a,n/a,0,0,1,1,1
+laptopaz,lenovo,lenovo loq 2024 15iax9 83gs001svn,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,24,17990000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,21290000,n/a,n/a,n/a,0,3,1,0,1
+laptopaz,lenovo,lenovo loq 2024 15iax9 83gs001rvn,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,24,20890000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,acer,acer predator helios neo 2024 phn16-72-91rf,intel core i9-14900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.6,windows,12,33990000,n/a,n/a,n/a,1,0,1,0,1
+laptopaz,dell,dell vostro 3425,n/a,n/a,8,ddr4,256,ssd,no,n/a,1920x1080,60,n/a,41.0,3,1.4,windows,n/a,11290000,n/a,n/a,n/a,1,0,1,1,1
+laptopaz,dell,laptop dell xps 15 9520,intel core i5-12500h,n/a,16,ddr5,256,ssd,no,15.6,1920x1200,60,n/a,86.0,n/a,1.92,windows,n/a,38890000,n/a,n/a,n/a,0,0,0,0,1
+laptopaz,dell,dell inspiron 7440 plus 2024,intel core i5-12450h,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,300,64.0,4,1.6,windows,12,17390000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,acer,acer nitro 5 2022 an515-58,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,n/a,4,2.4,windows 11 home,n/a,12990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,lenovo,lenovo loq 2023 15aph8,amd ryzen 7 7840hs,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,asus,asus vivobook pro 14 oled k3400pa,intel core i5-11300h,n/a,16,ddr4,512,ssd,yes,n/a,2880x1800,90,600,63.0,3,1.4,windows,n/a,22790000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,acer,acer nitro 5 an515-58-57qw,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,n/a,n/a,12990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,asus,asus tuf f15 fx507zc4-hn074w,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,56.0,4,2.2,windows,n/a,18390000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo legion pro 5 y9000p 2023,intel core i9-13900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,80.0,4,2.53,windows,n/a,24990000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo legion 5 r7000 arp8,amd ryzen 7 7735h,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,2560x1440,165,350,71.0,4,2.3,windows,n/a,24990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,dell,dell gaming g15 5530 2023,intel core i7-13650hx,geforce rtx 4050,8,ddr5,1024,ssd,yes,15.0,1920x1080,120,250,86.0,3,2.65,windows,n/a,20890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,acer,acer nitro 5 an517-55-5354,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,no,17.3,1920x1080,144,n/a,n/a,4,2.8,windows 11 home,n/a,12990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,acer,acer nitro 5 an515-58-56ch,intel core i5-12500h,geforce rtx 4050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows,n/a,12990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,acer,acer predator helios neo 2023 phn16-71-50jg,intel core i5-13500hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1900x1200,165,n/a,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,asus,asus vivobook 15x oled m1503qa-l1044w,amd ryzen 7 5800h,n/a,16,ddr4,512,ssd,yes,15.6,n/a,n/a,600,70.0,3,1.7,windows,n/a,22790000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo ideapad 5 pro 14acn6,amd ryzen 5 5600u,n/a,16,ddr4,512,ssd,yes,14.0,2240x1400,n/a,300,56.0,3,1.38,windows,n/a,17590000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo legion 5 pro 16iah7h 82rf0046vn,intel core i7-12700h,geforce rtx 3060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,500,80.0,4,2.49,windows,n/a,24690000,n/a,n/a,n/a,0,1,1,1,0
+laptopaz,dell,dell alienware m16 r1 2023,intel core i9-13900hx,geforce rtx 4090,64,ddr5,2048,ssd,yes,16.0,1920x1200,480,n/a,86.0,6,3.2,windows,n/a,20890000,n/a,n/a,n/a,0,0,1,1,0
+laptopaz,dell,dell alienware m16 r1 2023,intel core i9-13900hx,geforce rtx 4090,64,ddr5,2048,ssd,yes,16.0,2560x1600,240,n/a,86.0,6,3.2,windows,n/a,20890000,n/a,n/a,n/a,0,0,1,1,0
+laptopaz,acer,acer predator helios neo 2023 phn16-71-50jg,intel core i5-13500hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1900x1200,165,n/a,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,dell,dell alienware m18 r1 2023,intel core i9-13900hx,geforce rtx 4080,32,ddr5,1024,ssd,yes,n/a,2560x1600,165,n/a,97.0,6,4.0,windows,n/a,20890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,dell,dell inspiron 7440 plus 2024,intel core i5-12450h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,64.0,4,1.6,windows,n/a,15990000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,20890000,n/a,n/a,n/a,0,3,1,0,1
+laptopaz,asus,asus vivobook s14 oled s5406 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.3,windows,24,24990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,dell,dell inspiron 7640 plus 2024,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,16.0,1920x1200,n/a,300,64.0,4,1.9,windows,12,24890000,n/a,n/a,n/a,0,2,0,0,1
+laptopaz,asus,asus vivobook 14 oled a1405za-km264w,intel core i5-12500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows,24,15990000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo legion y9000p 2024,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,n/a,2.53,windows,n/a,40190000,n/a,n/a,n/a,0,4,1,1,1
+laptopaz,acer,acer nitro v 15 anv15-51-789j,intel core i7-13620h,geforce rtx 4060,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,n/a,22890000,n/a,n/a,n/a,1,1,1,1,1
 laptopaz,dell,dell inspiron 16 7640 2-in-1 2024,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,16.0,1920x1200,n/a,300,90.0,n/a,2.18,windows,12,22990000,n/a,n/a,n/a,0,1,1,0,0
-laptopaz,asus,asus zenbook 14 oled ux3405ma-pp151w,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.2,windows,24,25490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,asus,asus vivobook s14 oled 2024 m5406wa-pp071ws,n/a,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,400,75.0,4,1.3,windows,24,31490000,n/a,n/a,n/a,2,0,1,0,1
-laptopaz,asus,asus vivobook s16 oled 2024 s5606ma-mx051w,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,3200x2000,120,400,75.0,4,1.5,windows,n/a,26390000,n/a,n/a,n/a,0,5,1,0,0
+laptopaz,asus,asus zenbook 14 oled ux3405ma-pp151w,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.2,windows,n/a,25490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,asus,asus vivobook s14 oled 2024 m5406wa-pp071ws,n/a,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,400,75.0,4,1.3,windows,24,31490000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,asus,asus vivobook s16 oled 2024 s5606ma-mx051w,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,3200x2000,120,400,75.0,4,1.5,windows,24,26390000,n/a,n/a,n/a,0,1,1,0,0
 laptopaz,asus,asus zenbook 14 oled ux3405ma-pp152w,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.2,windows,n/a,30490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,asus,asus vivobook pro 15 oled q533,intel core ultra 7 155h,geforce rtx 3050,16,ddr5,1024,ssd,yes,15.6,1920x1080,60,400,75.0,4,1.9,windows,12,24590000,n/a,n/a,n/a,0,2,1,1,1
-laptopaz,acer,acer nitro 5 tiger an515-58-52sp,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,12,18690000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050 ti,16,ddr5,512,ssd,no,15.6,1920x1200,60,n/a,86.0,n/a,1.92,windows,12,47990000,n/a,n/a,n/a,0,0,0,0,1
+laptopaz,asus,asus vivobook pro 15 oled q533,intel core ultra 7 155h,geforce rtx 3050,16,ddr5,1024,ssd,yes,15.6,1920x1080,60,400,75.0,4,1.9,windows,12,24590000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,acer,acer nitro 5 tiger an515-58-52sp,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,12,18690000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050,16,ddr5,512,ssd,no,15.6,1920x1200,60,n/a,86.0,n/a,1.92,windows,12,47990000,n/a,n/a,n/a,0,0,0,0,1
 laptopaz,gigabyte,gigabyte g5 mf-f2vn333sh,intel core i5-12450h,geforce rtx 4050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,54.0,4,1.9,windows 11 home,n/a,21890000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,msi,msi modern 15 2023 b7m 238vn,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.3,3,1.75,windows,n/a,14990000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,msi,msi modern 15 2023 b7m 238vn,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.3,3,1.75,windows,24,14990000,n/a,n/a,n/a,0,1,1,0,1
 laptopaz,msi,msi modern 14 2023 c7m 083vn,amd ryzen 5 7530u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows,n/a,11990000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,dell,dell inspiron 13 5310,n/a,n/a,16,ddr4,512,ssd,no,n/a,n/a,n/a,300,54.0,n/a,1.28,windows,12,16990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,acer,acer nitro 5 an515-54-50tp,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,dell,dell inspiron 13 5310,n/a,n/a,16,ddr4,512,ssd,no,n/a,n/a,n/a,300,54.0,n/a,1.28,windows,n/a,16990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,asus,asus rog zephyrus g16 2023 gu603vu n3898w,intel core i7-13620h,geforce rtx 4050,16,ddr4,512,ssd,no,16.0,1920x1200,165,n/a,90.0,4,2.0,windows,n/a,41790000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,msi,msi cyborg 15 a12ucx 281vn,intel core i5-12450h,geforce rtx 2050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,1.98,windows,n/a,16690000,n/a,n/a,n/a,0,2,1,0,1
-laptopaz,msi,msi cyborg 15 a12ve 412vn,intel core i5-12450h,geforce rtx 4050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,1.98,windows,n/a,20790000,n/a,n/a,n/a,0,2,1,0,1
-laptopaz,msi,msi cyborg 15 a12ve 240vn,intel core i7-12650h,geforce rtx 4050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,1.98,windows,24,21190000,n/a,n/a,n/a,0,2,1,0,1
-laptopaz,msi,msi cyborg 15 a12vf 267vn,intel core i7-12650h,geforce rtx 4060,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,1.98,windows,24,27690000,n/a,n/a,n/a,0,2,1,0,1
-laptopaz,asus,asus vivobook 15 oled a1505va-l1114w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,600,50.0,3,1.7,windows,24,17890000,n/a,n/a,n/a,2,0,1,0,1
+laptopaz,msi,msi cyborg 15 a12ucx 281vn,intel core i5-12450h,geforce rtx 2050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,1.98,windows,n/a,16690000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,msi,msi cyborg 15 a12ve 412vn,intel core i5-12450h,geforce rtx 4050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,1.98,windows,n/a,20790000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,msi,msi cyborg 15 a12ve 240vn,intel core i7-12650h,geforce rtx 4050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,1.98,windows,24,21190000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,msi,msi cyborg 15 a12vf 267vn,intel core i7-12650h,geforce rtx 4060,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,1.98,windows,n/a,27690000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,asus,asus vivobook 15 oled a1505va-l1114w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,600,50.0,3,1.7,windows,24,17890000,n/a,n/a,n/a,0,1,1,0,1
 laptopaz,dell,dell inspiron 16 plus 7630,intel core i7-13620h,n/a,16,ddr5,1024,ssd,yes,16.0,2560x1600,n/a,300,86.0,6,2.06,windows,n/a,21590000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,dell,dell alienware m18 r1 2023,intel core i9-13980hx,geforce rtx 4080,32,ddr5,1024,ssd,yes,18.0,1920x1200,480,n/a,97.0,6,4.0,windows,12,66990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,acer,acer nitro 5 tiger 2022 an515-58,intel core i7-12650h,geforce rtx 4060,16,ddr5,1024,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,n/a,25890000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,n/a,26890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,dell,dell precision 7560,intel core i7-11800h,quadro t1200,16,ddr4,512,ssd,no,15.6,1920x1080,60,300,n/a,6,2.45,windows,12,21890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell precision 7560,intel core i7-11800h,geforce rtx a2000,32,ddr4,512,ssd,no,15.6,1920x1080,60,300,n/a,6,2.45,windows,n/a,24490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell precision 7560,intel core i7-11800h,geforce rtx a3000,32,ddr4,1024,ssd,no,15.6,1920x1080,60,300,n/a,6,2.45,windows,n/a,26890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell precision 7680,intel core i7-13850hx,geforce rtx a2000,16,ddr5,1024,ssd,no,16.0,1920x1200,60,500,83.0,6,2.6,windows,n/a,42890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,acer,acer nitro 5 tiger 2022 an515-58,intel core i7-12650h,geforce rtx 4060,16,ddr5,1024,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,12,25890000,n/a,n/a,n/a,0,2,1,0,0
+laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,26890000,n/a,n/a,n/a,0,3,1,0,1
+laptopaz,dell,dell precision 7560,intel core i7-11800h,quadro t1200,16,ddr4,512,ssd,no,15.6,1920x1080,60,300,n/a,6,2.45,windows,n/a,21890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,dell,dell precision 7560,intel core i7-11800h,geforce rtx a2000,32,ddr4,512,ssd,no,15.6,1920x1080,60,300,n/a,6,2.45,windows,12,24490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,dell,dell precision 7560,intel core i7-11800h,geforce rtx a3000,32,ddr4,1024,ssd,no,15.6,1920x1080,60,300,n/a,6,2.45,windows,12,26890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,dell,dell precision 7680,intel core i7-13850hx,geforce rtx a2000,16,ddr5,1024,ssd,no,16.0,1920x1200,60,500,83.0,6,2.6,windows,12,42890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,dell,dell precision 7680,intel core i7-13850hx,geforce rtx a2000,32,ddr5,512,ssd,no,16.0,1920x1200,60,500,83.0,6,2.6,windows,12,43890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell precision 7680,intel core i7-13850hx,geforce rtx a2000,32,ddr5,512,ssd,no,16.0,3840x2400,60,400,83.0,6,2.6,windows,12,47490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,asus,asus tuf gaming a15 fa506nf-hn005w,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,24,15990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,acer,acer nitro 5 tiger an515-58,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,n/a,18490000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,dell,dell vostro 3420,intel core i5-1135g,n/a,8,ddr4,256,ssd,no,n/a,1920x1080,60,n/a,41.0,3,1.48,windows,n/a,13590000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,dell,dell inspiron 13 5330n 2024,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,13.3,2560x1600,n/a,300,64.0,4,1.24,windows,12,29990000,n/a,n/a,n/a,0,0,1,0,0
-laptopaz,dell,dell inspiron 13 5330n 2024,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,13.3,2560x1600,n/a,300,64.0,4,1.24,windows,n/a,31990000,n/a,n/a,n/a,0,0,1,0,0
-laptopaz,dell,dell inspiron 7440 plus 2024,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,300,64.0,4,1.6,windows,12,27990000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,dell,dell inspiron 7640 plus 2024,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,16.0,2560x1600,n/a,300,64.0,4,1.9,windows,n/a,29990000,n/a,n/a,n/a,0,1,0,0,1
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 5 125h,n/a,32,ddr5,1024,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,23890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,msi,msi cyborg 15 a12ucx-618vn,intel core i5-12450h,geforce rtx 2050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,1.98,windows,n/a,17990000,n/a,n/a,n/a,0,2,1,0,1
-laptopaz,dell,dell vostro 3420,intel core i5-1235u,n/a,8,ddr4,512,ssd,no,n/a,1920x1080,60,n/a,41.0,3,1.48,windows,12,13690000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,lenovo,lenovo thinkpad p16,intel core i9-12900hx,"<td scope=""row""> rtx a2000",32,ddr5,512,ssd,no,n/a,1920x1200,n/a,600,94.0,n/a,3.0,windows,n/a,36890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,dell,dell gaming g16 7620,intel core i7-12700h,geforce rtx 3060,16,ddr5,1024,ssd,yes,16.0,n/a,165,335,81.0,6,2.65,windows,n/a,20890000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,asus,asus expertbook b1 b1402cva-nk0176w,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,42.0,3,1.46,windows,n/a,14990000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,dell,dell gaming g16 7630 2023,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,86.0,6,2.65,windows,n/a,32990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,acer,acer nitro 5 tiger an515-58,intel core i7-12650h,geforce rtx 4050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,12,23990000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,dell,dell inspiron 3530,intel core i5-1334u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows,n/a,13990000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,dell,dell inspiron 14 5445 2024,amd ryzen 7 8840hs,n/a,16,ddr5,512,ssd,yes,14.0,2240x1400,n/a,300,41.0,3,1.54,windows,12,16990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,acer,acer nitro 5 tiger an515-58,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,no,15.6,1920x1080,165,n/a,57.0,4,2.4,n/a,12,16990000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,acer,acer nitro 5 tiger 2022 an515-58,intel core i5-12500h,geforce rtx 3050 ti,16,ddr4,512,ssd,no,15.6,1920x1080,165,n/a,57.0,4,2.4,n/a,n/a,17490000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,dell,laptop dell xps 13 plus 9320,n/a,n/a,n/a,n/a,n/a,n/a,yes,n/a,n/a,n/a,n/a,n/a,n/a,1.2,windows,12,24490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell inspiron 7620,intel core i7-12700h,geforce rtx 3060,16,ddr5,512,ssd,yes,16.0,3072x1920,n/a,300,86.0,6,2.0,windows,n/a,19490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell vostro 3420,intel core i5-1135g,n/a,8,ddr4,256,ssd,no,n/a,1920x1080,60,n/a,41.0,3,1.48,windows,n/a,12290000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,acer,acer nitro 5 an515-58,intel core i7-12650h,geforce rtx 4050,16,ddr5,1024,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,n/a,21690000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,dell,dell gaming g15 5520,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,18890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell gaming g15 5520,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,20890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,asus,asus creator laptop q530vj,intel core i7-13620h,geforce rtx 3050,8,ddr5,512,ssd,yes,15.6,1920x1080,60,400,70.0,3,1.8,windows,12,21990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell inspiron 16 5640 2024 n6i7512w1,intel core 7-150u,geforce mx570a,16,ddr5,1024,ssd,yes,16.0,2560x1600,n/a,300,54.0,4,1.87,windows,n/a,31390000,n/a,n/a,n/a,2,0,1,0,1
-laptopaz,lenovo,lenovo thinkbook 16p g5 2024,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,3200x2000,165,430,81.0,4,2.2,windows,12,37990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo thinkbook 16p 1xcd 2024,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,3200x2000,165,430,81.0,4,2.2,windows,12,37990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo thinkbook 16p 00cd 2024,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,3200x2000,165,430,81.0,4,2.2,windows,n/a,45990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo thinkbook x ai 2024,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,13.5,2880x1920,120,500,74.0,4,1.1,windows,12,28890000,n/a,n/a,n/a,0,0,0,0,1
-laptopaz,lenovo,lenovo thinkbook x ai 2024,intel core ultra 9 185h,n/a,32,ddr5,1024,ssd,yes,13.5,2880x1920,120,500,74.0,4,1.1,windows,12,32890000,n/a,n/a,n/a,0,0,0,0,1
-laptopaz,acer,acer nitro v 15 anv15-51-789j,intel core i7-13620h,geforce rtx 4060,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,24890000,n/a,n/a,n/a,0,0,1,1,1
-laptopaz,dell,dell gaming g15 5530,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.0,1920x1080,120,300,86.0,3,2.65,windows,12,27890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,dell,dell inspiron 3520,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,3,1.65,windows,12,12890000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,22390000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,asus,asus gaming vivobook k3605zc-rp564w,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows,n/a,17990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell inspiron 14 5440,intel core i5-1334u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,41.0,3,1.69,windows,12,19490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell xps 13 9340 2024,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,13.4,1920x1200,120,n/a,55.0,3,1.2,windows,12,32490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo thinkbook 16 g7 2024,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,16.0,2560x1600,120,350,71.0,4,1.7,windows,12,18590000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,dell,laptop dell xps 15 9520,intel core i5-12500h,n/a,16,ddr5,256,ssd,no,15.6,1920x1200,60,n/a,86.0,n/a,1.92,windows,n/a,38890000,n/a,n/a,n/a,0,0,0,0,1
+laptopaz,dell,dell precision 7680,intel core i7-13850hx,geforce rtx a2000,32,ddr5,512,ssd,no,16.0,3840x2400,60,400,83.0,6,2.6,windows,n/a,47490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,acer,acer nitro 5 tiger an515-58,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,12,18490000,n/a,n/a,n/a,0,1,1,0,0
 laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050,16,ddr5,512,ssd,no,15.6,1920x1200,60,n/a,86.0,n/a,1.92,windows,12,36990000,n/a,n/a,n/a,0,0,0,0,1
-laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050 ti,32,ddr5,1024,ssd,no,15.6,3456x2160,60,n/a,86.0,n/a,1.92,windows,12,65490000,n/a,n/a,n/a,0,0,0,0,1
-laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050 ti,32,ddr5,1024,ssd,no,15.6,1920x1200,60,n/a,86.0,n/a,1.92,windows,n/a,61490000,n/a,n/a,n/a,0,0,0,0,1
+laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050,32,ddr5,1024,ssd,no,15.6,3456x2160,60,n/a,86.0,n/a,1.92,windows,12,65490000,n/a,n/a,n/a,0,0,0,0,1
+laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050,32,ddr5,1024,ssd,no,15.6,1920x1200,60,n/a,86.0,n/a,1.92,windows,12,61490000,n/a,n/a,n/a,0,0,0,0,1
 laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050,32,ddr5,512,ssd,no,15.6,3456x2160,60,n/a,86.0,n/a,1.92,windows,n/a,60490000,n/a,n/a,n/a,0,0,0,0,1
-laptopaz,dell,dell vostro 3405,n/a,n/a,8,ddr4,256,ssd,no,14.0,1920x1080,n/a,n/a,45.0,3,1.6,windows,n/a,15890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,dell,dell inspiron 5405,n/a,n/a,16,ddr4,512,ssd,no,14.0,1920x1080,60,n/a,40.0,n/a,1.4,windows,n/a,14290000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,hp,hp pavilion 15-eg2035tx 6k781pa,intel core i5-1235u,geforce mx550,8,ddr4,512,ssd,no,n/a,1920x1080,n/a,n/a,n/a,3,1.75,windows,12,19790000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,hp,hp pavilion 14-dv2033tu 6k769pa,intel core i5-1235u,n/a,8,ddr4,512,ssd,no,14.0,1920x1080,n/a,250,43.0,3,1.4,windows,12,16390000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,dell,dell vostro 16 5625,amd ryzen 5 5625u,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,60,n/a,54.0,4,1.97,windows,n/a,16990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell precision 7670,intel core i7-12850hx,"<td scope=""row""> rtx a2000",32,ddr5,512,ssd,no,16.0,1920x1200,60,500,93.0,6,2.67,windows,n/a,52500000,n/a,n/a,n/a,0,1,1,1,0
+laptopaz,dell,dell precision 7670,intel core i7-12850hx,geforce rtx a2000,32,ddr5,512,ssd,no,16.0,1920x1200,60,500,93.0,6,2.67,windows,n/a,52500000,n/a,n/a,n/a,0,1,1,1,0
 laptopaz,dell,dell precision 7670,intel core i7-12850hx,geforce rtx a3000,32,ddr5,512,ssd,no,16.0,1920x1200,60,500,93.0,6,2.67,windows,12,56890000,n/a,n/a,n/a,0,2,1,1,0
 laptopaz,dell,dell gaming g16 7630 2023,intel core i9-13900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,86.0,6,2.65,windows,n/a,39890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,msi,msi thin gf63 12ucx,intel core i5-12450h,geforce rtx 2050,8,ddr4,1024,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows,12,14990000,n/a,n/a,n/a,0,1,0,0,0
-laptopaz,lenovo,lenovo thinkpad p16,intel core i7-12850hx,"<td scope=""row""> rtx a1000",16,ddr5,512,ssd,no,16.0,1920x1200,n/a,300,94.0,n/a,3.0,windows,n/a,28890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo thinkpad p16,intel core i7-12850hx,"<td scope=""row""> rtx a1000",32,ddr5,1024,ssd,no,16.0,1920x1200,n/a,300,94.0,n/a,3.0,windows,12,32790000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo thinkpad p16,intel core i7-12850hx,"<td scope=""row""> rtx a2000",32,ddr5,1024,ssd,no,n/a,2560x1600,n/a,600,94.0,n/a,3.0,windows,n/a,35890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo thinkpad p16,intel core i7-12850hx,"<td scope=""row""> rtx a4500",64,ddr5,1024,ssd,no,n/a,2560x1600,n/a,600,94.0,n/a,3.0,windows,12,48490000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo thinkpad p16,intel core i9-12950hx,"<td scope=""row""> rtx a2000",16,ddr5,512,ssd,no,n/a,2560x1600,n/a,600,94.0,n/a,3.0,windows,12,38890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,hp,hp envy x360 2-in-1 14-fa0013dx 2024,amd ryzen 5 8640hs,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,59.0,3,1.39,windows,12,15890000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,lenovo,lenovo thinkbook 14 g6+ 2024,amd ryzen 7 8845h,n/a,32,ddr5,1024,ssd,yes,n/a,2560x1600,120,n/a,85.0,4,1.5,windows,12,22490000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo thinkbook 16 g5+,amd ryzen 7 7840h,n/a,32,ddr5,1024,ssd,yes,n/a,2560x1600,n/a,350,71.0,3,1.7,windows,12,19990000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,n/a,20890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050 ti,16,ddr5,1024,ssd,no,15.6,3456x2160,60,n/a,86.0,n/a,1.92,windows,n/a,61990000,n/a,n/a,n/a,0,0,0,0,1
-laptopaz,dell,dell xps 13 9315 2022,intel core i5-1230u,n/a,8,ddr5,256,ssd,yes,13.4,1920x1200,60,n/a,51.0,3,1.17,windows,12,22990000,n/a,n/a,n/a,0,1,0,0,0
-laptopaz,lenovo,lenovo ideapad gaming 3 15arh7,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,yes,15.6,1920x1080,120,250,60.0,n/a,2.3,windows,n/a,24690000,n/a,n/a,n/a,2,0,1,1,1
-laptopaz,hp,laptop gaming hp victus 15-fa0033dx,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,70.0,4,2.29,windows,n/a,14590000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,dell,dell inspiron 14 5430,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,54.0,4,1.55,windows,12,13990000,n/a,n/a,n/a,1,0,1,0,1
-laptopaz,dell,dell g3-3500,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,14490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell latitude 5400,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,6490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell g3 3500,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell vostro 5630,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,16.0,n/a,n/a,n/a,54.0,4,1.9,windows,12,21990000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo thinkpad p16,intel core i7-12850hx,geforce rtx a1000,16,ddr5,512,ssd,no,16.0,1920x1200,n/a,300,94.0,n/a,3.0,windows,12,28890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo thinkpad p16,intel core i7-12850hx,geforce rtx a1000,32,ddr5,1024,ssd,no,16.0,1920x1200,n/a,300,94.0,n/a,3.0,windows,n/a,32790000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo thinkpad p16,intel core i7-12850hx,geforce rtx a2000,32,ddr5,1024,ssd,no,n/a,2560x1600,n/a,600,94.0,n/a,3.0,windows,n/a,35890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo thinkpad p16,intel core i7-12850hx,geforce rtx a4500,64,ddr5,1024,ssd,no,n/a,2560x1600,n/a,600,94.0,n/a,3.0,windows,12,48490000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo thinkpad p16,intel core i9-12950hx,geforce rtx a2000,16,ddr5,512,ssd,no,n/a,2560x1600,n/a,600,94.0,n/a,3.0,windows,n/a,38890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,hp,hp envy x360 2-in-1 14-fa0013dx 2024,amd ryzen 5 8640hs,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,59.0,3,1.39,windows,12,15890000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,lenovo,lenovo thinkbook 14 g6+ 2024,amd ryzen 7 8845h,n/a,32,ddr5,1024,ssd,yes,n/a,2560x1600,120,n/a,85.0,4,1.5,windows,n/a,22490000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,lenovo,lenovo thinkbook 16 g5+,amd ryzen 7 7840h,n/a,32,ddr5,1024,ssd,yes,n/a,2560x1600,n/a,350,71.0,3,1.7,windows,12,19990000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,20890000,n/a,n/a,n/a,0,3,1,0,1
+laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050,16,ddr5,1024,ssd,no,15.6,3456x2160,60,n/a,86.0,n/a,1.92,windows,12,61990000,n/a,n/a,n/a,0,0,0,0,1
+laptopaz,dell,dell xps 13 9315 2022,intel core i5-1230u,n/a,8,ddr5,256,ssd,yes,13.4,1920x1200,60,n/a,51.0,3,1.17,windows,n/a,22990000,n/a,n/a,n/a,0,1,0,0,0
+laptopaz,hp,laptop gaming hp victus 15-fa0033dx,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,70.0,4,2.29,windows,12,14590000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,dell,dell inspiron 14 5430,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,54.0,4,1.55,windows,n/a,13990000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,dell,dell vostro 5630,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,16.0,n/a,n/a,n/a,54.0,4,1.9,windows,n/a,21990000,n/a,n/a,n/a,0,1,1,1,1
 laptopaz,dell,dell gaming g16 7630 2023,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,86.0,6,2.65,windows,12,38890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell gaming g15 5530 2023,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.0,1920x1080,165,300,86.0,3,2.65,windows,12,deal: 29390000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,dell,dell inspiron plus 7620,intel core i7-12700h,n/a,40,ddr5,1024,ssd,yes,16.0,3072x1920,n/a,300,86.0,6,2.0,windows,12,20690000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,msi,msi bravo 15 b7ed 010vn,amd ryzen 5 7535hs,radeon rx6550m,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,2.35,windows,24,16890000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,dell,dell gaming g15 5530 2023,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.0,1920x1080,165,300,86.0,3,2.65,windows,12,29390000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,msi,msi bravo 15 b7ed 010vn,amd ryzen 5 7535hs,radeon rx6550m,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.5,3,2.35,windows,24,16890000,n/a,n/a,n/a,0,1,1,0,1
 laptopaz,dell,dell inspiron 14 plus 7430,intel core i5-13420h,n/a,16,ddr5,1024,ssd,yes,14.0,2560x1600,90,300,64.0,4,1.66,windows,12,18990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell gaming g15 5520,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,23990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,dell,dell alienware m16 r1 2023,intel core i7-13700hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,86.0,6,3.2,windows,12,45990000,n/a,n/a,n/a,0,0,1,1,0
-laptopaz,dell,dell vostro 3425,n/a,n/a,8,ddr4,256,ssd,no,n/a,1920x1080,60,n/a,41.0,3,1.4,windows,n/a,11290000,n/a,n/a,n/a,1,0,1,1,1
 laptopaz,dell,laptop dell xps 13-9300,intel core i5-1035g,n/a,8,ddr4,256,ssd,no,13.4,1920x1080,n/a,n/a,n/a,4,1.2,windows,12,27890000,n/a,n/a,n/a,0,0,1,0,0
-laptopaz,dell,dell xps 9500 2020,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,43490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,laptop dell xps 13-9310,intel core i5-1135g,n/a,16,ddr4,256,ssd,yes,13.4,1920x1080,n/a,n/a,n/a,4,1.2,windows,n/a,33890000,n/a,n/a,n/a,0,0,0,0,0
+laptopaz,dell,laptop dell xps 13-9310,intel core i5-1135g,n/a,16,ddr4,256,ssd,yes,13.4,1920x1080,n/a,n/a,n/a,4,1.2,windows,12,33890000,n/a,n/a,n/a,0,0,0,0,0
 laptopaz,dell,laptop dell xps 13-9310,intel core i7-1165g,n/a,16,ddr4,512,ssd,yes,13.4,1920x1080,n/a,n/a,n/a,4,1.2,windows,n/a,43890000,n/a,n/a,n/a,0,0,0,0,0
-laptopaz,dell,laptop dell xps 13-9310,intel core i7-1165g,n/a,16,ddr4,512,ssd,yes,13.4,3840x2400,n/a,n/a,n/a,4,1.2,windows,12,48890000,n/a,n/a,n/a,0,0,0,0,0
-laptopaz,dell,laptop dell xps 13-9310,intel core i5-1135g,n/a,16,ddr4,512,ssd,no,13.4,1920x1080,n/a,n/a,n/a,4,1.2,windows,12,34890000,n/a,n/a,n/a,0,0,0,0,0
-laptopaz,lenovo,"laptop lenovo thinkpad p1 gen 3 core i7-10750h, 8gb, 256gb, nvidia® quadro t1000 4gb max-q, 15.6 fhd ips",intel core i7-10750h,n/a,n/a,n/a,n/a,n/a,no,15.6,1920x1080,n/a,300,n/a,4,1.8,windows,n/a,37490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell xps 17 9700,intel core i7-10750h,geforce gtx 1650 ti,16,ddr4,512,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,12,51490000,n/a,n/a,n/a,0,4,0,0,1
+laptopaz,dell,laptop dell xps 13-9310,intel core i7-1165g,n/a,16,ddr4,512,ssd,yes,13.4,3840x2400,n/a,n/a,n/a,4,1.2,windows,n/a,48890000,n/a,n/a,n/a,0,0,0,0,0
+laptopaz,dell,dell xps 17 9700,intel core i7-10750h,geforce gtx 1650,16,ddr4,512,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,n/a,51490000,n/a,n/a,n/a,0,1,0,0,1
 laptopaz,dell,"dell xps 15 9500 core i9-10885h, 64gb, 2tb, gtx 1650ti, 15.6'' 4k touch",intel core i9-10885h,n/a,64,ddr4,2048,ssd,no,15.6,3840x2400,n/a,n/a,86.0,6,1.83,windows,12,72990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell inspiron 15 3511,intel core i3-1115g,n/a,n/a,n/a,128,ssd,yes,n/a,n/a,n/a,n/a,42.0,3,1.6,windows,12,11990000,n/a,n/a,n/a,3,0,1,1,0
 laptopaz,hp,laptop hp 15 - dy2093dx,intel core i5-1135g,n/a,8,ddr4,256,ssd,no,15.6,1920x1080,n/a,250,41.0,3,1.46,windows,n/a,16890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell inspiron 15 3511,intel core i5-1035g,n/a,n/a,n/a,256,ssd,yes,15.6,1920x1080,n/a,250,42.0,3,1.6,windows,12,12890000,n/a,n/a,n/a,3,0,1,1,0
+laptopaz,dell,dell inspiron 15 3511,intel core i5-1035g,n/a,n/a,n/a,256,ssd,yes,15.6,1920x1080,n/a,250,42.0,3,1.6,windows,n/a,12890000,n/a,n/a,n/a,3,0,1,1,0
 laptopaz,hp,laptop hp 15 - dw3025cl,intel core i5-1135g,n/a,12,ddr4,512,ssd,no,15.6,1366x768,n/a,250,41.0,3,1.75,windows,12,16890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,laptop dell xps 9500,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,51990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,laptop dell xps 9510,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,69990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,dell xps 17 9700,intel core i7-10875h,geforce rtx 2060,16,ddr4,512,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,12,55990000,n/a,n/a,n/a,0,4,0,0,1
-laptopaz,dell,dell xps 17 9710,intel core i7-11800h,geforce rtx 3050,16,ddr4,512,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,12,55990000,n/a,n/a,n/a,0,4,0,0,1
-laptopaz,dell,dell xps 17 9710,intel core i7-11800h,geforce rtx 3050,16,ddr4,1024,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,12,58990000,n/a,n/a,n/a,0,4,0,0,1
-laptopaz,dell,dell xps 17 9710,intel core i7-11800h,geforce rtx 3060,32,ddr4,1024,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,12,79499000,n/a,n/a,n/a,0,4,0,0,1
-laptopaz,dell,dell xps 17 9710,intel core i9-11900h,geforce rtx 3060,32,ddr4,1024,ssd,yes,17.0,n/a,n/a,n/a,n/a,6,2.5,windows,n/a,85000000,n/a,n/a,n/a,0,4,0,0,1
-laptopaz,hp,laptop hp 15 - dw3058cl,intel core i5-1135g,n/a,8,ddr4,256,ssd,no,15.6,1920x1080,n/a,250,41.0,3,1.75,windows,n/a,16890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,laptop dell inspiron 5402,intel core i5-1135g,n/a,8,ddr4,512,ssd,no,14.0,1920x1080,n/a,n/a,40.0,n/a,1.38,windows,12,17890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,dell,dell xps 17 9700,intel core i7-10875h,geforce rtx 2060,16,ddr4,512,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,12,55990000,n/a,n/a,n/a,0,1,0,0,1
+laptopaz,dell,dell xps 17 9710,intel core i7-11800h,geforce rtx 3050,16,ddr4,512,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,n/a,55990000,n/a,n/a,n/a,0,1,0,0,1
+laptopaz,dell,dell xps 17 9710,intel core i7-11800h,geforce rtx 3050,16,ddr4,1024,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,12,58990000,n/a,n/a,n/a,0,1,0,0,1
+laptopaz,dell,dell xps 17 9710,intel core i7-11800h,geforce rtx 3060,32,ddr4,1024,ssd,yes,17.0,1920x1200,n/a,n/a,n/a,6,2.5,windows,12,79499000,n/a,n/a,n/a,0,1,0,0,1
+laptopaz,dell,dell xps 17 9710,intel core i9-11900h,geforce rtx 3060,32,ddr4,1024,ssd,yes,17.0,n/a,n/a,n/a,n/a,6,2.5,windows,12,85000000,n/a,n/a,n/a,0,1,0,0,1
+laptopaz,hp,laptop hp 15 - dw3058cl,intel core i5-1135g,n/a,8,ddr4,256,ssd,no,15.6,1920x1080,n/a,250,41.0,3,1.75,windows,12,16890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 laptopaz,dell,laptop dell xps 13-9310,intel core i7-1165g,n/a,8,ddr4,512,ssd,yes,13.4,1920x1080,n/a,n/a,n/a,4,1.2,windows,n/a,36890000,n/a,n/a,n/a,0,0,0,0,0
-laptopaz,dell,laptop dell xps 13 plus 9320,n/a,n/a,n/a,n/a,n/a,n/a,yes,n/a,n/a,n/a,n/a,n/a,n/a,1.2,windows,12,36990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,laptop dell xps 13 plus 9320,n/a,n/a,n/a,n/a,n/a,n/a,yes,n/a,n/a,n/a,n/a,n/a,n/a,1.2,windows,12,39990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,laptop dell xps 13 plus 9320,n/a,n/a,n/a,n/a,n/a,n/a,yes,n/a,n/a,n/a,n/a,n/a,n/a,1.2,windows,12,55990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,laptop dell xps 13 plus 9320,n/a,n/a,n/a,n/a,n/a,n/a,yes,n/a,n/a,n/a,n/a,n/a,n/a,1.2,windows,n/a,63990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,dell,laptop dell xps 13 plus 9320,n/a,n/a,n/a,n/a,n/a,n/a,yes,n/a,n/a,n/a,n/a,n/a,n/a,1.2,windows,n/a,66990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,gigabyte,gigabyte g5 ke-52vn263sh,intel core i5-12500h,geforce rtx 3060,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,54.0,n/a,1.9,windows 11 home,24,26590000,n/a,n/a,n/a,1,0,1,1,1
+laptopaz,gigabyte,gigabyte g5 ke-52vn263sh,intel core i5-12500h,geforce rtx 3060,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,54.0,n/a,1.9,windows 11 home,n/a,26590000,n/a,n/a,n/a,0,1,1,1,1
 laptopaz,dell,dell vostro 3420 v4i7310w1,intel core i7-1255u,geforce mx550,8,ddr4,512,ssd,no,n/a,1920x1080,60,n/a,41.0,3,1.48,windows,n/a,22990000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,dell,dell gaming g16 7620,intel core i9-12900h,geforce rtx 3070 ti,32,ddr5,1024,ssd,yes,16.0,n/a,165,335,81.0,6,2.65,windows,12,37490000,n/a,n/a,n/a,1,0,1,1,1
+laptopaz,dell,dell gaming g16 7620,intel core i9-12900h,geforce rtx 3070,32,ddr5,1024,ssd,yes,16.0,n/a,165,335,81.0,6,2.65,windows,n/a,37490000,n/a,n/a,n/a,3,0,1,1,1
 laptopaz,gigabyte,gigabyte g5 mf-f2vn313sh,intel core i5-12450h,geforce rtx 4050,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,54.0,4,1.9,windows 11 home,24,23990000,n/a,n/a,n/a,1,0,1,1,1
 laptopaz,gigabyte,gigabyte g5 mf-e3vn333sh,intel core i5-12500h,geforce rtx 4060,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,54.0,4,1.9,windows 11 home,24,25790000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,acer,acer predator helios 16 2023 ph16-71-74uu,intel core i7-13700hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,n/a,2560x1600,165,500,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,1,0,1,1,1
-laptopaz,acer,acer nitro 5 an515-58,intel core i7-12700h,geforce rtx 3060,16,ddr4,512,ssd,no,15.6,2560x1440,165,n/a,57.0,4,2.4,windows,12,20990000,n/a,n/a,n/a,1,0,1,0,0
+laptopaz,acer,acer predator helios 16 2023 ph16-71-74uu,intel core i7-13700hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,n/a,2560x1600,165,500,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,acer,acer nitro 5 an515-58,intel core i7-12700h,geforce rtx 3060,16,ddr4,512,ssd,no,15.6,2560x1440,165,n/a,57.0,4,2.4,windows,n/a,20990000,n/a,n/a,n/a,0,1,1,0,0
 laptopaz,lenovo,lenovo thinkpad x1 nano gen 1,intel core i7-1180g,n/a,16,ddr4,512,ssd,no,13.3,n/a,n/a,n/a,48.0,n/a,0.96,windows,12,21490000,n/a,n/a,n/a,0,1,0,0,1
-laptopaz,lenovo,lenovo geekpro g5000 2024,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,1,1,1,1,1
+laptopaz,lenovo,lenovo geekpro g5000 2024,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,12,24690000,n/a,n/a,n/a,0,1,1,1,1
 laptopaz,dell,"dell inspiron 7405 2-in-1 ryzen 5 - 4500u, 8gb, 256gb, amd vega 6, 14'' fhd ips touch screen",amd ryzen 5 4500u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,n/a,n/a,40.0,n/a,1.54,windows,12,17990000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,dell,dell inspiron 15 3515,amd ryzen 5 3500u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,n/a,n/a,42.0,3,1.69,windows,n/a,15790000,n/a,n/a,n/a,0,0,1,0,0
-laptopaz,dell,dell inspiron 16 5630,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,250,54.0,4,1.85,windows,n/a,21890000,n/a,n/a,n/a,1,0,1,0,1
-laptopaz,acer,acer nitro 5 an515-45-r7wa,amd ryzen 7 5800h,geforce rtx 3060,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.3,windows 10 home,12,17590000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,asus,asus tuf f15 fx507zc4-hn074w,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,56.0,4,2.2,windows,24,19290000,n/a,n/a,n/a,1,0,1,0,1
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,amd ryzen 7 8845h,n/a,16,ddr5,1024,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,n/a,21490000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,n/a,23490000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,hp,hp envy x360 2-in-1 14-es1013dx 2024,intel core 5 120u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.0,3,1.52,windows,12,14990000,n/a,n/a,n/a,1,0,1,0,1
+laptopaz,dell,dell inspiron 15 3515,amd ryzen 5 3500u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,n/a,n/a,42.0,3,1.69,windows,12,15790000,n/a,n/a,n/a,0,0,1,0,0
+laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,n/a,17590000,n/a,n/a,n/a,0,3,1,0,1
+laptopaz,lenovo,lenovo legion y7000p 2024,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,500,80.0,n/a,2.3,windows,n/a,24990000,n/a,n/a,n/a,0,4,1,1,1
+laptopaz,msi,msi gf63 12ucx-841vn,intel core i5-12450h,geforce rtx 2050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows,n/a,14990000,n/a,n/a,n/a,0,1,0,0,0
+laptopaz,lenovo,lenovo loq 2024 15iax9,intel core i5-12450hx,geforce rtx 2050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,acer,acer predator helios neo 2023 phn16-71,intel core i7-13700hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1900x1200,165,n/a,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,dell,dell gaming g15 5535 2023,amd ryzen 5 7640hs,geforce rtx 3050,16,ddr5,1024,ssd,yes,15.6,1920x1080,120,250,56.0,3,2.8,windows,n/a,20890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo yoga slim 7 pro x,amd ryzen 7 6800hs,geforce rtx 3050,16,ddr5,512,ssd,yes,14.5,3072x1920,120,400,70.0,n/a,1.45,windows,n/a,24690000,n/a,n/a,n/a,0,1,0,0,1
+laptopaz,acer,acer predator helios neo 2023 phn16-71-50jg,intel core i5-13500hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1900x1200,165,n/a,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo legion slim 5 y7000p,,geforce rtx 4050,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,400,80.0,4,2.3,windows,n/a,24990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,dell,dell gaming g15 5530 2023,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.0,1920x1080,165,300,86.0,3,2.65,windows,n/a,20890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,acer,acer nitro 5 an515-58-57qw,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,n/a,n/a,12990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,dell,dell gaming g15 5535,amd ryzen 5 7640hs,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,165,250,56.0,3,2.8,windows,n/a,20890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo loq 2024 15iax9 83dv000mvn,intel core i5-13450hx,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo loq 2024 15iax9,intel core i5-13450hx,geforce rtx 4050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,dell,dell inspiron 16 5630,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,250,54.0,4,1.85,windows,n/a,15990000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo geekpro g5000 2024,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo thinkbook 14 g7 2024,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,n/a,2880x1800,120,400,60.0,4,1.38,windows,n/a,17590000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,asus,asus tuf gaming a16 advantage edition 2023 fa617nt,amd ryzen 7 7735hs,radeon rx 7700s,16,ddr5,512,ssd,yes,16.0,1920x1200,165,250,90.0,4,2.2,windows,n/a,18390000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,lenovo,lenovo loq 82xv0012us,intel core i5-12450h,geforce rtx 3050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,350,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo legion slim 5 16aph8 82y9000qus,amd ryzen 5 7640hs,geforce rtx 4060,16,ddr5,512,ssd,yes,n/a,1920x1600,144,300,80.0,4,2.3,windows,n/a,24990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,lenovo,lenovo loq 2024 15iax9,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,dell,dell vostro 5630,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,n/a,54.0,4,1.9,windows,n/a,15990000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo yoga slim 7 pro x,amd ryzen 7 6800hs,geforce rtx 3050,16,ddr5,512,ssd,yes,14.5,3072x1920,120,400,70.0,n/a,1.45,windows,n/a,24690000,n/a,n/a,n/a,0,1,0,0,1
+laptopaz,acer,acer predator helios 16,intel core i7-13700hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,n/a,2560x1600,165,500,90.0,4,2.6,windows,n/a,12990000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo loq 2024 15iax9 83gs001rvn,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,24690000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,acer,acer nitro 5 an515-58-73rs,intel core i7-12650h,geforce rtx 4050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,n/a,12990000,n/a,n/a,n/a,0,2,1,0,0
+laptopaz,lenovo,lenovo legion y7000p 2024,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,500,80.0,n/a,2.3,windows,n/a,24990000,n/a,n/a,n/a,0,4,1,1,1
+laptopaz,dell,dell inspiron 3520,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,3,1.65,windows,n/a,15990000,n/a,n/a,n/a,0,0,1,0,1
+laptopaz,dell,dell inspiron 14 5445 2024,amd ryzen 7 8840hs,n/a,16,ddr5,512,ssd,yes,14.0,2240x1400,n/a,300,41.0,3,1.54,windows,n/a,15990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,dell,laptop dell xps 13-9310,intel core i7-1165g,n/a,16,ddr4,1024,ssd,yes,13.4,3840x2400,n/a,n/a,n/a,4,1.2,windows,12,53890000,n/a,n/a,n/a,0,0,0,0,0
+laptopaz,lenovo,lenovo thinkpad p16,intel core i7-12850hx,geforce rtx a2000,32,ddr5,512,ssd,no,16.0,1920x1200,n/a,300,94.0,n/a,3.0,windows,n/a,43890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo thinkpad p16,intel core i5-12600hx,geforce rtx a1000,32,ddr5,512,ssd,no,16.0,1920x1200,n/a,300,94.0,n/a,3.0,windows,12,38000000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,dell,dell inspiron 13 5310,n/a,n/a,16,ddr4,512,ssd,no,n/a,n/a,n/a,300,54.0,n/a,1.28,windows,n/a,16990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,dell,dell inspiron 16 5630,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,250,54.0,4,1.85,windows,n/a,21890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,acer,acer nitro 5 an515-45-r7wa,amd ryzen 7 5800h,geforce rtx 3060,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.3,windows 10 home,n/a,17590000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,asus,asus tuf f15 fx507zc4-hn074w,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,56.0,4,2.2,windows,n/a,19290000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,amd ryzen 7 8845h,n/a,16,ddr5,1024,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,21490000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,asus,asus vivobook 14 oled a1405va-km257w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows,n/a,17490000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,dell,dell inspiron 16 plus 7630,intel core i7-13700h,n/a,32,ddr5,1024,ssd,yes,16.0,2560x1600,n/a,300,86.0,6,2.06,windows,n/a,21890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,amd ryzen 7 8845h,n/a,32,ddr5,1024,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,23190000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,lenovo,lenovo thinkpad x1 nano gen 1,intel core i7-1180g,n/a,16,ddr4,256,ssd,no,13.3,n/a,n/a,n/a,48.0,n/a,0.96,windows,12,20890000,n/a,n/a,n/a,0,1,0,0,1
+laptopaz,acer,acer aspire 5 a515-58gm-53pz,intel core i5-13420h,geforce rtx 2050,8,ddr4,512,ssd,no,15.6,1920x1080,60,n/a,50.0,n/a,1.7,windows,12,16290000,n/a,n/a,n/a,1,1,1,1,1
+laptopaz,dell,dell inspiron 14 7440 2-in-1 2024,intel core 5 120u,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,n/a,250,64.0,4,1.71,windows,12,15990000,n/a,n/a,n/a,0,0,1,0,0
+laptopaz,dell,dell xps 15 9520,intel core i7-12700h,geforce rtx 3050,16,ddr5,512,ssd,no,15.6,1920x1200,60,n/a,86.0,n/a,1.92,windows,n/a,31890000,n/a,n/a,n/a,0,0,0,0,1
+laptopaz,lenovo,lenovo thinkbook 14 g6+ 2024,amd ryzen 7 8845h,n/a,16,ddr5,1024,ssd,yes,n/a,2560x1600,120,n/a,85.0,4,1.5,windows,12,19890000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,dell,dell latitude 5400,intel core i7-8650u,n/a,8,ddr4,256,ssd,no,14.0,1920x1080,n/a,n/a,n/a,4,1.48,windows,12,7690000,n/a,n/a,n/a,0,0,1,0,0
+laptopaz,lenovo,lenovo yoga 7 2-in-1 14iml9,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,71.0,n/a,1.6,windows,12,17990000,n/a,n/a,n/a,1,0,0,0,0
+laptopaz,dell,dell inspiron 14 7440 2-in-1 2024,intel core 7 150u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,250,64.0,4,1.71,windows,12,20690000,n/a,n/a,n/a,0,0,1,0,0
+laptopaz,acer,acer nitro 5 an515-58-73rs,intel core i7-12650h,geforce rtx 4050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,12,20990000,n/a,n/a,n/a,0,2,1,0,0
+laptopaz,acer,acer nitro v 15 anv15-51-789j,intel core i7-13620h,geforce rtx 4060,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,23890000,n/a,n/a,n/a,1,1,1,1,1
+laptopaz,acer,acer nitro v 15 anv15-51-73b9,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,20890000,n/a,n/a,n/a,1,1,1,1,1
+laptopaz,asus,asus gaming vivobook k3605zu-rp296w,intel core i5-12500h,geforce rtx 4050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows,24,22790000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,asus,asus gaming vivobook k3605zc-rp564w,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows,n/a,18790000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,asus,asus gaming vivobook k3605zf-rp634w,intel core i5-12500h,geforce rtx 2050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows,24,17490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,acer,acer nitro 5 an515-58-57y8,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows 11 home,12,17990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,dell,dell inspiron 14 7440 2-in-1 2024,intel core 7 150u,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,250,64.0,4,1.71,windows,12,21490000,n/a,n/a,n/a,0,0,1,0,0
+laptopaz,acer,acer nitro v 15 anv15-51h9,intel core i5-13420h,geforce rtx 4050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.1,windows 11 home,12,18990000,n/a,n/a,n/a,1,1,1,1,1
+laptopaz,lenovo,lenovo slim 7 pro x,intel core i7-12700h,geforce rtx 3050,16,ddr5,512,ssd,yes,14.5,3072x1920,120,400,70.0,n/a,1.45,windows,n/a,22890000,n/a,n/a,n/a,0,1,0,0,1
+laptopaz,lenovo,lenovo legion 5 16irx9 2024,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,4,2.3,windows,12,30990000,n/a,n/a,n/a,2,0,0,0,0
+laptopaz,dell,dell inspiron 7640 plus 2024 7640r-r3808l,intel core i7-13620h,n/a,16,ddr5,1024,ssd,yes,16.0,2560x1600,n/a,300,64.0,4,1.9,windows,12,21990000,n/a,n/a,n/a,0,2,0,0,1
+laptopaz,lenovo,lenovo thinkbook 14 g5+ arp,amd ryzen 7 7735h,n/a,16,ddr5,512,ssd,yes,n/a,2880x1800,90,400,62.0,4,1.4,windows,12,17590000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,dell,dell inspiron 3530,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows,12,13590000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,dell,dell inspiron 15 7501,intel core i5-10300h,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,300,56.0,3,1.8,windows,12,17390000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,lenovo,lenovo loq 2024 15iax9,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,12,16990000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo loq 2024 15iax9,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,12,17990000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo loq 2024 15arp9 83jc0001us,amd ryzen 5 7235hs,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,12,16990000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo loq 2024 15arp9,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,12,21290000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo thinkpad t14,n/a,n/a,16,ddr4,256,ssd,no,14.0,1920x1080,n/a,n/a,45.0,3,1.69,windows,12,17890000,n/a,n/a,n/a,0,0,1,1,1
+laptopaz,dell,dell gaming g16 7620,intel core i7-12700h,geforce rtx 3060,16,ddr5,1024,ssd,yes,16.0,n/a,165,335,81.0,6,2.65,windows,n/a,20890000,n/a,n/a,n/a,3,0,1,1,1
+laptopaz,dell,dell gaming g16 7630 2023,intel core i9-13900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,86.0,6,2.65,windows,12,39890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,gigabyte,gigabyte g5 mf-e2vn333sh,intel core i5-12500h,geforce rtx 4050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,54.0,4,1.9,windows 11 home,24,22790000,n/a,n/a,n/a,1,0,1,1,1
+laptopaz,gigabyte,gigabyte g5 mf-e3vn313sh,intel core i5-12500h,geforce rtx 4060,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,54.0,4,1.9,windows 11 home,24,25990000,n/a,n/a,n/a,1,0,1,1,1
+laptopaz,msi,msi modern 14 2023 c7m 212vn,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows,24,12490000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,12,23490000,n/a,n/a,n/a,0,3,1,0,1
+laptopaz,hp,hp envy x360 2-in-1 14-es1013dx 2024,intel core 5 120u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.0,3,1.52,windows,12,14990000,n/a,n/a,n/a,0,1,1,0,1
 laptopaz,lenovo,lenovo loq 2024 15arp9,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,12,23890000,n/a,n/a,n/a,0,1,1,1,1
-laptopaz,lenovo,lenovo legion 5 r7000 2024 15ahp9,amd ryzen 7 8745h,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,80.0,4,2.4,windows,12,26690000,n/a,n/a,n/a,0,2,1,0,0
-laptopaz,lenovo,lenovo legion 5 r7000 2024 15ahp9,amd ryzen 7 8745h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,80.0,4,2.4,windows,12,deal: 24990000,n/a,n/a,n/a,0,2,1,0,0
-laptopaz,acer,acer predator helios neo 2024 hn16-72-7148,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,n/a,2560x1600,165,500,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,0,2,1,0,1
-laptopaz,dell,dell inspiron 16 5620,n/a,n/a,n/a,n/a,n/a,n/a,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,15590000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo legion y7000p 2024,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,500,80.0,n/a,2.3,windows,12,31890000,n/a,n/a,n/a,1,1,1,1,1
-laptopaz,lenovo,lenovo legion y7000p 2024,intel core i7-14650hx,geforce rtx 4050,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,350,80.0,n/a,2.3,windows,12,29990000,n/a,n/a,n/a,1,1,1,1,1
+laptopaz,lenovo,lenovo legion 5 r7000 2024 15ahp9,amd ryzen 7 8745h,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,80.0,4,2.4,windows,n/a,26690000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,lenovo,lenovo legion 5 r7000 2024 15ahp9,amd ryzen 7 8745h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,300,80.0,4,2.4,windows,12,24990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,acer,acer predator helios neo 2024 hn16-72-7148,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,n/a,2560x1600,165,500,90.0,4,2.6,windows,n/a,31890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo legion y7000p 2024,intel core i7-14650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,500,80.0,n/a,2.3,windows,12,31890000,n/a,n/a,n/a,0,4,1,1,1
+laptopaz,lenovo,lenovo legion y7000p 2024,intel core i7-14650hx,geforce rtx 4050,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,350,80.0,n/a,2.3,windows,12,29990000,n/a,n/a,n/a,0,4,1,1,1
 laptopaz,hp,hp envy x360 2in1 16-ac0013dx 2024,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,n/a,68.0,4,1.87,windows,n/a,16490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,hp,hp envy x360 2in1 16-ac0013dx 2024,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,n/a,68.0,4,1.87,windows,12,21890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,acer,acer nitro 5 an515-58-56ch,intel core i5-12500h,geforce rtx 4050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows,12,19990000,n/a,n/a,n/a,1,0,1,0,0
-laptopaz,hp,hp envy x360 2-in-1 14-es1013dx 2024,intel core 5 120u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.0,3,1.52,windows,n/a,17990000,n/a,n/a,n/a,1,0,1,0,1
-laptopaz,hp,laptop gaming hp victus 15-fb2063dx,amd ryzen 5 7535hs,radeon rx 6550m,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,52.0,4,2.29,windows,12,14990000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,dell,dell inspiron 16 5630,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,250,54.0,4,1.85,windows,n/a,15690000,n/a,n/a,n/a,1,0,1,0,1
-laptopaz,lenovo,lenovo legion y9000p 2024,intel core i9-14900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,n/a,2.53,windows,12,38990000,n/a,n/a,n/a,1,1,1,1,1
+laptopaz,hp,hp envy x360 2in1 16-ac0013dx 2024,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,n/a,68.0,4,1.87,windows,n/a,21890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,acer,acer nitro 5 an515-58-56ch,intel core i5-12500h,geforce rtx 4050,16,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,57.0,4,2.4,windows,12,19990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,hp,hp envy x360 2-in-1 14-es1013dx 2024,intel core 5 120u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.0,3,1.52,windows,12,17990000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,hp,laptop gaming hp victus 15-fb2063dx,amd ryzen 5 7535hs,radeon rx 6550m,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,52.0,4,2.29,windows,n/a,14990000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,dell,dell inspiron 16 5630,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,250,54.0,4,1.85,windows,12,15690000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo legion y7000p 2024,intel core i7-14700hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,350,80.0,4,2.3,windows,n/a,34890000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,asus,asus zenbook 14 oled q415ma 2024,intel core ultra 5 125h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,60,500,75.0,4,1.28,windows,n/a,14990000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,asus,asus zenbook 14 oled q425ma 2024,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,60,500,75.0,4,1.28,windows,n/a,21490000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+laptopaz,lenovo,lenovo legion y9000p 2024,intel core i9-14900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,n/a,2.53,windows,12,38990000,n/a,n/a,n/a,0,4,1,1,1
 laptopaz,dell,dell inspiron 14 plus 7430,intel core i7-13620h,n/a,16,ddr5,1024,ssd,yes,14.0,2560x1600,90,300,64.0,4,1.66,windows,12,19890000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-laptopaz,lenovo,lenovo legion y7000 2024,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,n/a,2.3,windows,12,deal: 27990000,n/a,n/a,n/a,0,1,1,0,0
-laptopaz,dell,dell inspiron 14 5430,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,54.0,4,1.55,windows,12,deal: 15690000,n/a,n/a,n/a,1,0,1,0,1
-laptopaz,lenovo,lenovo thinkbook 16 g6+ 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,n/a,120,n/a,85.0,4,1.9,windows,n/a,21290000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo loq 2024 15iax9 83gs001rvn,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,20890000,n/a,n/a,n/a,1,1,1,1,1
-laptopaz,acer,acer predator helios neo 2024 phn16-72-91rf,intel core i9-14900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.6,windows,12,deal: 33990000,n/a,n/a,n/a,2,0,1,0,1
-laptopaz,lenovo,lenovo thinkbook 16 g7 2024,amd ryzen 7 8845h,n/a,16,ddr5,1024,ssd,yes,16.0,2560x1600,120,350,71.0,4,1.7,windows,12,20890000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo thinkbook 14 g6+ 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,n/a,2560x1600,90,n/a,85.0,4,1.5,windows,n/a,19090000,n/a,n/a,n/a,0,1,1,0,1
-laptopaz,lenovo,lenovo loq 2024 15arp9 83jc003yvn,amd ryzen 7 7435hs,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,24,27990000,n/a,n/a,n/a,0,1,1,1,1
-laptopaz,lenovo,lenovo loq 2024 15arp9 83jc003vvn,amd ryzen 7 7435hs,geforce rtx 4050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,24,24490000,n/a,n/a,n/a,0,1,1,1,1
-laptopaz,lenovo,lenovo loq 2024 15arp9 ai 83jc007jvn,amd ryzen 5 7235hs,geforce rtx 3050,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,20990000,n/a,n/a,n/a,0,1,1,1,1
-laptopaz,hp,laptop gaming hp victus 15-fa0033dx,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,70.0,4,2.29,windows,n/a,15890000,n/a,n/a,n/a,0,0,1,0,1
-laptopaz,lenovo,lenovo legion 5 2024 16irx9 83dg004yvn,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,500,80.0,n/a,2.3,windows,24,38590000,n/a,n/a,n/a,1,1,1,1,1
-laptopaz,dell,dell inspiron 7445 2-in-1 2024,amd ryzen 5 8640hs,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,n/a,250,54.0,4,1.7,windows,12,deal: 14990000,n/a,n/a,n/a,0,0,1,0,1
+laptopaz,lenovo,lenovo legion y7000 2024,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,n/a,2.3,windows,n/a,27990000,n/a,n/a,n/a,0,1,1,0,0
+laptopaz,dell,dell inspiron 14 5430,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,54.0,4,1.55,windows,n/a,15690000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo thinkbook 16 g7 2024,amd ryzen 7 8845h,n/a,16,ddr5,1024,ssd,yes,16.0,2560x1600,120,350,71.0,4,1.7,windows,n/a,20890000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,lenovo,lenovo thinkbook 14 g6+ 2024,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,n/a,2560x1600,90,n/a,85.0,4,1.5,windows,12,19090000,n/a,n/a,n/a,0,2,1,0,1
+laptopaz,lenovo,lenovo loq 2024 15arp9 83jc003yvn,amd ryzen 7 7435hs,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,27990000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo loq 2024 15arp9 83jc003vvn,amd ryzen 7 7435hs,geforce rtx 4050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,24490000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,lenovo,lenovo loq 2024 15arp9 ai 83jc007jvn,amd ryzen 5 7235hs,geforce rtx 3050,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,24,20990000,n/a,n/a,n/a,0,1,1,1,1
+laptopaz,hp,laptop gaming hp victus 15-fa0033dx,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,70.0,4,2.29,windows,n/a,15890000,n/a,n/a,n/a,0,1,1,0,1
+laptopaz,lenovo,lenovo legion 5 2024 16irx9 83dg004yvn,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,500,80.0,n/a,2.3,windows,n/a,38590000,n/a,n/a,n/a,0,4,1,1,1
+laptopaz,dell,dell inspiron 7445 2-in-1 2024,amd ryzen 5 8640hs,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,n/a,250,54.0,4,1.7,windows,12,14990000,n/a,n/a,n/a,0,1,1,0,1
 laptopaz,lenovo,lenovo loq 2024 15arp9 83jc007hvn,amd ryzen 5 7235hs,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows,n/a,19590000,n/a,n/a,n/a,0,1,1,1,1
-laptopaz,hp,hp envy x360 2-in-1 14-fa0023dx 2024,amd ryzen 7 8840hs,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,300,59.0,3,1.39,windows,n/a,17890000,n/a,n/a,n/a,0,0,1,0,1
+laptopaz,hp,hp envy x360 2-in-1 14-fa0023dx 2024,amd ryzen 7 8840hs,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,300,59.0,3,1.39,windows,12,17890000,n/a,n/a,n/a,0,2,1,0,1
