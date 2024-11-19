@@ -2,12 +2,14 @@ import scrapy
 from scrapy.http import Response, Request
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from scrapy.selector import Selector
 import time
 import logging
 from fake_useragent import UserAgent
+from selenium.webdriver.firefox.service import Service
 
 logging.disable()
 
@@ -27,16 +29,30 @@ class BaseLaptopshopSpider(scrapy.Spider):
     
     source = None
     
-    options = webdriver.FirefoxOptions()
-    options.page_load_strategy = 'none'
-    options.add_argument('--headless')
-    driver = webdriver.Firefox(options=options)
+    def _get_driver_options(self):
+        options = webdriver.FirefoxOptions()
+        options.page_load_strategy = 'none'
+        options.add_argument('--headless')
+        
+        options.set_preference('dom.webnotifications.enabled', False)  # Disable notifications
+        options.set_preference('security.cert_pinning.enforcement_level', 0)  # Ignore certificate errors
+        options.set_preference('browser.safebrowsing.malware.enabled', False)  # Disable safe browsing (optional)
+
+        # To reduce GPU load (Firefox doesn’t have a direct equivalent to --disable-gpu):
+        options.set_preference('layers.acceleration.disabled', True)
+
+        # You can also set other preferences as needed
+        options.set_preference('permissions.default.image', 2)  # Disable image loading to speed up browsing
+        options.set_preference("privacy.trackingprotection.enabled", True) # Enable tracking protection
+        
+        return options
 
     _num_product = 0
     
     def __init__(self, name = None, **kwargs):
         super().__init__(name, **kwargs)
         self.ua = UserAgent()
+        self.driver = webdriver.Firefox(options=self._get_driver_options())
         
     def __del__(self):
         self.driver.quit()
@@ -49,7 +65,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
     
     # [PARSE FEATURES SECTION: START]
     # Brand
-    def parse_brand(self, response: Response): 
+    def parse_brand(self, response: Response):
         """
         Extracts the brand of the laptop from the response.
         Example: Dell, HP, etc.
@@ -202,7 +218,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
             return
         
         if self.selenium_product_request:
-            response = self.get_source_selenium(response.url)
+            response = response.replace(body=self.get_source_selenium(response.url))
             if not self.yield_condition(response):
                 return
 
@@ -282,6 +298,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
                 for button in buttons:
                     self.driver.execute_script("arguments[0].click();", button)
                     print("Opened the modal successfully.")
+                    time.sleep(1)
                     opened_modal = True
                     break
             except:
@@ -294,12 +311,13 @@ class BaseLaptopshopSpider(scrapy.Spider):
             self.driver.execute_script("document.body.style.zoom='1%'")
             time.sleep(3)
         
-        response = Selector(text=self.driver.page_source)
-        
+        html = self.driver.page_source
+
         self.driver.close()
         self.driver.switch_to.window(self.driver.window_handles[0])
-        
-        return response
+
+        return html
+
 
 class BaseLaptopshopPageSpider(BaseLaptopshopSpider):
     page_css = None
@@ -399,7 +417,7 @@ class BaseLaptopshopLoadmoreButtonSpider(BaseLaptopshopSpider):
                 
             # Get all the products links
             page_source = Selector(text=self.driver.page_source)
-            
+                
             self.driver.close()
             self.driver.switch_to.window(self.driver.window_handles[0])
             
