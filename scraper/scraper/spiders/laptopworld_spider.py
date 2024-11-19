@@ -34,7 +34,7 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
     
     def yield_condition(self, response):
         name = response.xpath('//h1/text()').get().lower()
-        if 'laptop' not in name:
+        if any(_ in name for _ in ['balo', 'tai nghe', 'dock', 'máy chơi game']):
             print(f"Skipped: {name}")
             return False
         return True
