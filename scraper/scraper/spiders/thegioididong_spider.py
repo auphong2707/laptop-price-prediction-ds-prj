@@ -470,7 +470,7 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
         #         return int(warranty[0]) * 12
         # except:
         #     return "N/A"
-        warranty = response.xpath('//ul[@class="policy__list"]/li[2]/p//text()').getall()
+        warranty = response.xpath("//div[@class='policy policy-vs']//li[4]/div[@class='pl-txt']/p/b").getall()
         return warranty if warranty else "n/a"
     
     # Price
