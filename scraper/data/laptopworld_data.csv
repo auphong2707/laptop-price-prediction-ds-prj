@@ -1,0 +1,286 @@
+source,brand,name,cpu,vga,ram_amount,ram_type,storage_amount,storage_type,webcam_resolution,screen_size,screen_resolution,screen_refresh_rate,screen_brightness,battery_capacity,battery_cells,weight,default_os,warranty,price,width,depth,height,number_usb_a_ports,number_usb_c_ports,number_hdmi_ports,number_ethernet_ports,number_audio_jacks
+laptopworld,apple,macbook air mly13sa,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,24690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 16gb, 2tb 2022 space gray",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,56990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,acer,laptop acer predator helios neo 16 phn16-72-71um nh.qnmsv.002,intel core i7-14700hx,geforce rtx 4070,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.8,windows 11 home,12,51290000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,dell,laptop dell gaming g15 5530 i9hx161w11gr4060,intel core i9-13900hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,165,n/a,86.0,6,2.81,windows 11 home,12,42990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus rog strix g16 g614jir-n4046w,intel core i9-14900hx,geforce rtx 4070,32,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,49990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,lenovo,laptop lenovo legion 9 16irx9 83g0001avn,intel core i9-14900hx,geforce rtx 4090,64,ddr5,2048,ssd,yes,16.0,3200x2000,165,1200,99.9,4,2.6,windows 11 home,36,134190000,n/a,n/a,n/a,2,3,1,1,1
+laptopworld,msi,laptop msi titan 18 hx a14vig 410vn,intel core i9-14900hx,geforce rtx 4090,128,ddr5,2048,ssd,yes,18.0,3840x2400,120,n/a,99.99,4,3.6,windows 11 home,36,129990000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9 83jc003vvn,amd ryzen 7 7435hs,geforce rtx 4050,12,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,23990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,hp,laptop hp victus 16-r1174tx a2nm9pa,intel core i7-14650hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.1,1920x1080,144,300,70.0,4,n/a,windows 11 home,12,35790000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,laptop acer nitro 5 an515-58-52sp nh.qfhsv.001,intel core i5-12500h,geforce rtx 3050,8,ddr4,n/a,n/a,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,19990000,n/a,n/a,n/a,2,1,1,1,1
+laptopworld,msi,laptop msi katana 15 b13vfk 676vn,intel core i7-13620h,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,n/a,53.5,n/a,2.25,windows 11 home,24,27990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus rog strix g16 g614ju-n3135w,intel core i5-13450hx,geforce rtx 4050,8,ddr5,512,ssd,yes,16.0,1920x1200,165,250,90.0,4,2.5,windows 11 home,24,28990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus tuf gaming a15 fa507nv-lp046w,amd ryzen 7 7735hs,geforce rtx 4060,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,26990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,dell,dell gaming g15 5530 i7h165w11gr4060,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,165,n/a,86.0,6,2.65,windows 11 home,12,37490000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,dell,dell gaming g15 5530 i7h165w11gr4050,intel core i7-13650hx,geforce rtx rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,165,n/a,86.0,6,2.65,windows 11 home,12,37690000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,gigabyte,gigabyte g5 kf-e3vn313sh,intel core i5-12500h,geforce rtx 4060,16,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,n/a,1.9,windows 11 home,24,25490000,n/a,n/a,n/a,3,0,1,1,1
+laptopworld,gigabyte,gigabyte g5 kf-e3vn333sh,intel core i5-12500h,geforce rtx 4060,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,n/a,1.9,windows 11 home,24,21990000,n/a,n/a,n/a,3,0,1,1,1
+laptopworld,gigabyte,laptop gigabyte aorus 15 9mf-e2vn583sh,intel core i5-12500h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1980x1080,360,n/a,99.0,n/a,2.25,windows 11 home,24,24490000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,acer,laptop acer nitro 17 phoenix an17-51-50b9 nh.qk5sv.001,intel core i5-13500h,geforce rtx 4050,8,ddr5,512,ssd,yes,17.3,1920x1080,165,300,90.0,n/a,3.0,windows 11 home,12,29990000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,asus,laptop asus rog zephyrus duo 16 gx650pz-nm031w,amd ryzen 9 7945hx,geforce rtx 4080,32,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,90.0,4,2.6,windows 11 home,24,86990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,acer,laptop acer nitro 5 an515-58-50d2 nh.qhysv.005,intel core i5-12500h,geforce rtx 3060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,165,n/a,57.5,4,2.5,windows 11 home,12,27490000,n/a,n/a,n/a,2,1,1,1,1
+laptopworld,acer,laptop acer nitro 5 an515-58-773y nh.qfksv.001,intel core i7-12700h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,165,n/a,57.5,4,2.5,windows 11 home,12,22990000,n/a,n/a,n/a,2,1,1,1,1
+laptopworld,hp,laptop hp victus 16-r1173tx a2ns5pa,intel core i7-14650hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.1,1920x1080,144,300,70.0,4,n/a,windows 11 home,12,42590000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,hp,laptop hp victus 16-r1176tx a2nn0pa,intel core i7-14650hx,geforce rtx 4050,32,ddr5,1024,ssd,yes,16.1,1920x1080,144,300,70.0,4,n/a,windows 11 home,12,35990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,hp,laptop hp victus 16-s0136ax 9q984pa,amd ryzen 5 7640hs,geforce rtx 3050,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,32590000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-s0142ax 9q989pa,amd ryzen 5 7640hs,geforce rtx 4060,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,37390000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-s0143ax 9q990pa,amd ryzen 5 7640hs,geforce rtx 4050,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,31490000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-s0144ax 9q991pa,amd ryzen 5 7640hs,geforce rtx 4050,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.33,windows 11 home,12,31490000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-r0223tx 9q974pa,intel core i7-13700h,geforce rtx 4070,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.31,windows 11 home,12,44290000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-r0224tx 9q975pa,intel core i7-13700h,geforce rtx 4060,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.31,windows 11 home,12,38590000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-r0226tx 9q977pa,intel core i7-13700h,geforce rtx 4050,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.31,windows 11 home,12,34190000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-r0225tx 9q976pa,intel core i7-13700h,geforce rtx 4050,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.31,windows 11 home,12,34190000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-r0215tx 9q9b8pa,intel core i7-13700h,geforce rtx 3050,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.31,windows 11 home,12,32990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-r0230tx 9q981pa,intel core i7-13700h,geforce rtx 3050,32,ddr5,512,ssd,yes,16.1,1920x1080,144,250,70.0,4,2.31,windows 11 home,12,32990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus rog strix g16 g614jvr-n4162w,intel core i9-14900hx,geforce rtx 4060,32,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,45490000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog strix g16 g614ji-n4125w,intel core i7-13650hx,geforce rtx 4070,16,ddr5,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,40990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,acer,laptop acer predator helios neo phn16-72-950p nh.qnmsv.001,intel core i9-14900hx,geforce rtx 4070,32,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.8,windows 11 home,12,52990000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,acer,laptop acer predator helios neo 14 phn14-51-96hg nh.qrnsv.001,intel core ultra 9 185h,geforce rtx 4070,32,ddr5,n/a,n/a,yes,14.5,2560x1600,165,350,76.0,4,1.9,windows 11 home,12,59990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,acer,laptop acer predator helios neo 14 phn14-51-99y8 nh.qrpsv.001,intel core ultra 9 185h,geforce rtx 4060,32,ddr5,n/a,n/a,yes,14.5,3072x1920,165,400,76.0,4,1.9,windows 11 home,12,46990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,msi,laptop msi thin 15 b13uc 1411vn,intel core i7-13620h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,18790000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo legion slim 5 16ahp9 83dh003avn,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,165,300,80.0,4,2.3,windows 11 home,24,35990000,n/a,n/a,n/a,2,2,1,1,1
+laptopworld,lenovo,laptop lenovo legion 7 16irx9 83fd006jvn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,3200x2000,165,430,99.99,4,2.24,windows 11 home,24,62890000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,dell,laptop dell gaming g15 5535,amd ryzen 7 7840hs,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,165,n/a,86.0,6,2.81,windows 11 home,12,26990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus rog strix g16 g614jv-n4156w,intel core i7-13650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,36790000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog zephyrus g16 gu603vu-n4019w,intel core i7-13620h,geforce rtx 4050,16,ddr4,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,36990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog zephyrus g16 gu605mv-qr196w,intel core ultra 9 185h,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,62990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,acer,laptop acer gaming nitro v anv15-51-91t5 nh.qqesv.009,intel core i9-13900h,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,250,57.5,4,2.1,windows 11 home,12,31990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,msi,laptop msi stealth 14 ai studio a1vfg 085vn,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,n/a,72.0,4,1.7,windows 11 home,24,49990000,n/a,n/a,n/a,1,2,1,0,1
+laptopworld,msi,laptop msi sword 16 hx b14vfkg 460vn,intel core i7-14650hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,n/a,65.0,4,2.3,windows 11 home,24,34990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,msi,laptop msi cyborg 14 a13ve-090vn,intel core i7-13620h,geforce rtx 4050,16,ddr5,n/a,n/a,yes,14.0,1920x1200,144,n/a,53.5,3,1.6,windows 11 home,24,26490000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,dell,laptop dell gaming g15 5530,intel core i9-13900hx,geforce rtx rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,165,n/a,86.0,6,2.65,windows 11 home,12,45990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9 83jc003yvn,amd ryzen 7 7435hs,geforce rtx 4060,24,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,26990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,lenovo,laptop lenovo legion 5 y7000p 2024,intel core i7-14700hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,80.0,4,2.43,windows 11 home,12,34890000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,acer,laptop acer predator helios neo 2024 phn16-72-91rf,intel core i9-14900hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.6,windows,12,34990000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,acer,laptop acer predator helios neo 2024 phn16-72-75a0,intel core i7-14700hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.6,windows,12,34890000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,acer,laptop acer predator helios neo 2024 phn16-72-598p,intel core i5-14500hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.6,windows,12,32890000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,acer,laptop acer gaming nitro v anv15-51-53dm nh.qn9sv.007,intel core i5-13420h,geforce rtx 3050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,250,57.5,4,2.1,windows 11 home,12,22990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,laptop acer nitro 5 tiger an515-58-5935 nh.qlzsv.001,intel core i5-12450h,geforce rtx 3050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,57.5,4,2.5,windows 11 home,12,22990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,acer,laptop acer gaming aspire 5 a515-58gm-598j nx.kw1sv.002,intel core i5-13420h,geforce rtx 2050,16,ddr4,n/a,n/a,yes,15.6,1920x1080,144,n/a,50.0,n/a,1.7,windows 11 home,12,18490000,n/a,n/a,n/a,0,1,1,1,1
+laptopworld,gigabyte,laptop gigabyte g5 mf5-h2ph353kh,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,4,2.08,windows 11 home,24,24290000,n/a,n/a,n/a,3,0,1,1,1
+laptopworld,gigabyte,laptop gigabyte g6 mf-h2vn854kh,intel core i7-13620h,geforce rtx 4050,16,ddr5,1024,ssd,yes,16.0,1920x1200,165,n/a,54.0,n/a,2.3,windows 11 home,24,25190000,n/a,n/a,n/a,3,0,1,1,1
+laptopworld,acer,laptop acer nitro 5 tiger an515-58-5193 nh.qlzsv.004,intel core i5-12450h,geforce rtx 3050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,57.5,4,2.5,windows 11 home,12,25990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,dell,laptop dell gaming g15 5530 i7hx161w11gr4060,intel core i7-13650hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,165,n/a,86.0,6,2.81,windows 11 home,12,38990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,apple,"macbook pro 13in touch bar ram 24gb, 2tb 2022 silver",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,61990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 24gb, 2tb 2022 space gray",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,61990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro z16t0003v 13in touch bar ram 16gb, 256gb 2022 silver",apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,34790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,acer,laptop acer nitro v anv15-51-55ca nh.qn8sv.004,intel core i5-13420h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,24490000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,laptop acer predator helios neo 16-phn16-71-73lt,intel core i7-13700hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,90.0,4,2.6,windows 11 home,12,30990000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,dell,dell gaming g16 7630 2023,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,86.0,6,2.65,windows 11 home,12,34990000,n/a,n/a,n/a,4,0,1,1,1
+laptopworld,acer,laptop acer gaming aspire 5 a515-58gm-53pz nx.kq4sv.008,intel core i5-13420h,geforce rtx 2050,8,ddr4,n/a,n/a,yes,15.6,1920x1080,60,n/a,50.0,n/a,1.7,windows 11 home,12,15290000,n/a,n/a,n/a,0,1,1,1,1
+laptopworld,acer,laptop acer nitro v anv15-51-58an nh.qnasv.001,intel core i5-13420h,geforce rtx 2050,8,ddr5,n/a,n/a,yes,15.6,1920x1080,144,250,57.5,4,2.1,windows 11 home,12,16990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,laptop acer nitro v anv15-51-72vs nh.qnasv.004,intel core i7-13620h,geforce rtx 2050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,250,57.5,4,2.1,windows 11 home,12,23990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,laptop acer predator helios neo phn16-71-74qr nh.qlvsv.002,intel core i7-13700hx,geforce rtx 4070,16,ddr5,n/a,n/a,yes,16.0,2560x1600,165,500,90.0,4,2.6,windows 11 home,12,47990000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,lenovo,laptop lenovo legion pro 7 16irx9h 83de001mvn,intel core i9-14900hx,geforce rtx 4090,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,99.99,4,2.62,windows 11 home,24,93990000,n/a,n/a,n/a,4,2,1,1,1
+laptopworld,lenovo,laptop lenovo legion pro 5 16irx9 83df0046vn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,4,2.5,windows 11 home,24,50890000,n/a,n/a,n/a,4,2,1,1,1
+laptopworld,acer,laptop acer nitro 5 tiger an515-58-50ee nh.qfhsv.007,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,22990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo legion 5 16irx9 83dg004yvn,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,4,2.4,windows 11 home,24,38590000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,msi,laptop msi cyborg 15 a12ucx 618vn,intel core i5-12450h,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,1.98,windows 11 home,24,15990000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15iax9 83gs001rvn,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,24,20390000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,msi,laptop msi cyborg 15 ai a1vek 053vn,intel core ultra 7 155h,geforce rtx 4050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,n/a,53.5,3,1.98,windows 11 home,24,28490000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,msi,laptop msi thin a15 b7ve 023vn,amd ryzen 5 7535hs,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,52.4,3,1.86,windows 11 home,24,20890000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp omen transcend 14,intel core ultra 9 185h,geforce rtx 4070,16,ddr5,2048,ssd,yes,14.0,2880x1800,n/a,n/a,71.0,6,1.8,windows 11 home,12,liên hệ,n/a,n/a,n/a,1,2,1,0,1
+laptopworld,msi,laptop msi stealth 14 ai studio a1vfg 050vn,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,n/a,72.0,4,1.7,windows 11 home,24,46490000,n/a,n/a,n/a,1,2,1,0,1
+laptopworld,msi,laptop msi sword 16 hx b14vfkg 045vn,intel core i7-14700hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,n/a,65.0,4,2.3,windows 11 home,24,36990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,msi,laptop msi katana a15 ai b8ve 402vn,amd ryzen 7 8845hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,53.5,3,2.25,windows 11 home,24,26990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,msi,laptop msi raider 18 hx a14vhg 230vn,intel core i9-14900hx,geforce rtx 4080,32,ddr5,2048,ssd,yes,18.0,3840x2400,120,n/a,99.99,4,3.6,windows 11 home,36,88990000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,msi,laptop msi stealth 18 ai studio a1vgg 008vn,intel core ultra 9 185h,geforce rtx 4070,32,ddr5,2048,ssd,yes,18.0,3840x2400,120,n/a,99.99,4,2.97,windows 11 home,36,74890000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,msi,laptop msi pulse 17 ai c1vgkg 017vn,intel core ultra 7 155h,geforce rtx 4070,32,ddr5,1024,ssd,yes,17.0,2560x1600,240,n/a,90.0,4,2.8,windows11 home,24,49990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15iax9 83gs001svn,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,24,17790000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,msi,laptop msi stealth 18 ai studio a1vhg-025vn,intel core ultra 9 185h,geforce rtx 4080,32,ddr5,n/a,n/a,yes,18.0,3840x2400,120,n/a,99.99,4,2.79,windows 11 home,36,89990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,msi,laptop msi stealth 16 ai studio a1vgg 089vn,intel core ultra 9 185h,geforce rtx 4070,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,n/a,99.99,4,1.99,windows 11 home,36,59390000,n/a,n/a,n/a,1,2,1,0,1
+laptopworld,msi,laptop msi vector 16 hx 13vhg,intel core i9-13980hx,geforce rtx 4080,16,ddr5,1024,ssd,yes,16.0,1920x1200,144,n/a,90.0,4,2.67,windows 11 home,24,57990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,hp,hp victus 15-fb1022ax 94f19pa,amd ryzen 5 7535hs,geforce rtx 2050,16,ddr5,512,ssd,yes,15.6,1920x1080,n/a,250,52.5,3,2.29,windows 11 home,12,18990000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,hp,hp victus 15-fb1023ax 94f20pa,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,yes,15.6,1920x1080,n/a,250,52.5,3,2.29,windows 11 home,12,16890000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,dell,dell gaming g15 5530,intel core i7-13650hx,geforce rtx 4050,8,ddr5,1024,ssd,yes,15.6,1920x1080,120,n/a,86.0,6,2.65,windows 11 home,12,25990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,msi,laptop msi raider ge68 hx 13vg 068us,intel core i9-13950hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,99.99,4,2.7,windows 11 home,12,59990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,hp,hp victus 15-fa1139tx 8y6w3pa,intel core i5-12450h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,52.5,3,2.29,windows 11 home,12,17990000,n/a,n/a,n/a,2,1,1,1,1
+laptopworld,dell,dell mobile precision workstation 3581 71023331,intel core i7-13800h,geforce rtx a500,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,64.0,4,1.795,linux,36,42990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,dell,dell mobile precision workstation 5680 71023332,intel core i7-13800h,rtx 2000 ada,16,ddr5,512,ssd,yes,16.0,1920x1200,60,250,100.0,6,n/a,linux,36,69990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,dell,dell mobile precision workstation 5680 71023333,intel core i7-13800h,geforce rtx a1000,16,ddr5,512,ssd,yes,16.0,1920x1200,60,250,100.0,6,n/a,linux,36,75190000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,dell,dell mobile precision workstation 7680 71023334,intel core i7-13850hx,rtx 2000 ada,16,n/a,512,ssd,yes,16.0,1920x1200,60,500,83.0,6,2.67,linux,36,69990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,dell,dell mobile precision workstation 3480 71024682,intel core i7-1370p,geforce rtx a500,32,n/a,1024,ssd,yes,14.0,1920x1080,60,250,54.0,3,1.39,windows 11 pro,36,48990000,n/a,n/a,n/a,2,2,1,0,0
+laptopworld,asus,laptop asus tuf gaming a15 fa507nv-lp061w,amd ryzen 7 7735hs,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,28690000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,dell,dell mobile precision workstation 3581 71024679,intel core i7-13800h,geforce rtx a1000,32,ddr5,1024,ssd,yes,15.6,1920x1080,60,n/a,64.0,4,1.795,windows 11 pro,36,54990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,dell,dell mobile precision workstation 3581 71024677,intel core i7-13800h,geforce rtx a500,32,ddr5,1024,ssd,yes,15.6,1920x1080,60,n/a,64.0,4,1.795,windows 11 pro,36,51990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,dell,dell mobile precision workstation 5680 71024680,intel core i9-13900h,rtx 2000 ada,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,250,100.0,6,n/a,windows 11 pro,36,81590000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,dell,dell mobile precision workstation 7680 71024681,intel core i7-13850hx,geforce rtx 2000,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,500,83.0,6,2.67,windows 11 pro,36,77990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,dell,dell mobile precision workstation 7680 71024676,intel core i9-13950hx,geforce rtx 2000,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,500,83.0,6,2.67,windows 11 pro,36,84990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,msi,msi vector gp68,intel core i9-13950hx,geforce rtx 4080,16,n/a,1024,ssd,yes,16.0,1920x1200,144,n/a,90.0,4,2.67,windows 11 home,12,47990000,n/a,n/a,n/a,2,3,1,0,0
+laptopworld,msi,msi vector gp77,intel core i9-13900h,geforce rtx 4070,32,ddr5,1024,ssd,yes,17.3,2560x1440,240,n/a,65.0,4,2.8,windows 11 home,12,45990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,acer,laptop acer nitro v anv15-51-75gs nh.qn8sv.005,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,28990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,acer predator helios neo 16-phn16-71-92wj,intel core i9-13900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,90.0,4,2.6,windows 11 home,12,31690000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,asus,laptop asus tuf gaming f15 fx507vu-lp198w,intel core i7-13620h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,24590000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,gigabyte,laptop gigabyte g5 mf5-52vn383sh,intel core i5-13500h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,4,2.08,windows 11 home,24,21290000,n/a,n/a,n/a,3,0,1,1,1
+laptopworld,gigabyte,laptop gigabyte g5 kf5-53vn383sh,intel core i5-13500h,geforce rtx 4060,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,54.0,4,2.08,windows 11 home,24,23990000,n/a,n/a,n/a,3,0,1,1,1
+laptopworld,lenovo,lenovo legion 5 r7000 aph9,amd ryzen 7 7840h,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,350,n/a,4,2.4,windows 11 home,12,26490000,n/a,n/a,n/a,2,2,1,0,0
+laptopworld,apple,"macbook pro z16t0003x 13in touch bar ram 16gb, 512gb 2022 silver",apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,39990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air z1600005a 13.6inch 16gb, 512gb midnight - 2022",apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,36190000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air z15y0005a 13.6inch 16gb, 512gb starlight - 2022",apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,36190000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air z15w00056 13.6inch 16gb, 512gb silver - 2022",apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,36190000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air z15s00092 13.6inch 16gb, 256gb space gray - 2022",apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,29790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air z15y00051 13.6inch 16gb, 256gb starlight- 2022",apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,29790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air z16000051 13.6inch 16gb, 256gb midnight- 2022",apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,29790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air z15w00051 13.6inch 16gb, 256gb silver- 2022",apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,29790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air z15s0009d 13.6inch 16gb, 512gb space gray - 2022",apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,36190000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook pro 16inch m2 max mnwe3sa,apple m2 max 12-core,n/a,32,n/a,512,ssd,yes,16.2,n/a,n/a,1000,100.0,n/a,2.15,macos,12,81990000,35.57,24.81,1.4,0,0,1,0,1
+laptopworld,apple,macbook pro 16inch m2 max mnwa3sa,apple m2 max 12-core,n/a,32,n/a,512,ssd,yes,16.2,n/a,n/a,1000,100.0,n/a,2.15,macos,12,81990000,35.57,24.81,1.4,0,0,1,0,1
+laptopworld,apple,macbook pro 16inch m2 pro mnwd3sa,apple m2 pro 12-core,n/a,16,n/a,512,ssd,yes,16.2,n/a,n/a,1000,100.0,n/a,2.15,macos,12,50990000,35.57,24.81,1.4,0,0,1,0,1
+laptopworld,apple,macbook pro 16inch m2 pro mnw93sa,apple m2 pro 12-core,n/a,16,n/a,512,ssd,yes,16.2,n/a,n/a,1000,100.0,n/a,2.15,macos,12,50990000,35.57,24.81,1.4,0,0,1,0,1
+laptopworld,apple,macbook pro 16inch m2 pro mnw83sa,apple m2 pro 12-core,n/a,16,n/a,512,ssd,yes,16.2,n/a,n/a,1000,100.0,n/a,2.15,macos,12,47990000,35.57,24.81,1.4,0,0,1,0,1
+laptopworld,apple,macbook pro 14inch m2 max mphk3sa,apple m2 max 12-core,n/a,32,n/a,1024,ssd,yes,14.2,n/a,n/a,1000,70.0,n/a,1.6,macos,12,70990000,31.26,22.12,1.23,0,0,1,0,1
+laptopworld,apple,macbook pro 14inch m2 max mphg3sa,apple m2 max 12-core,n/a,32,n/a,1024,ssd,yes,14.2,n/a,n/a,1000,70.0,n/a,1.6,macos,12,70990000,31.26,22.12,1.23,0,0,1,0,1
+laptopworld,apple,macbook pro 14inch m2 pro mphj3sa,apple m2 pro 12-core,n/a,16,n/a,1024,ssd,yes,14.2,n/a,n/a,1000,70.0,n/a,1.6,macos,12,49990000,31.26,22.12,1.23,0,0,1,0,1
+laptopworld,apple,macbook pro 14inch m2 pro mphf3sa,apple m2 pro 12-core,n/a,16,n/a,1024,ssd,yes,14.2,n/a,n/a,1000,70.0,n/a,1.6,macos,12,49990000,31.26,22.12,1.23,0,0,1,0,1
+laptopworld,apple,macbook pro 14inch m2 pro mphh3sa,apple m2 pro 10-core,n/a,16,n/a,512,ssd,yes,14.2,n/a,n/a,1000,70.0,n/a,1.6,macos,12,45990000,31.26,22.12,1.23,0,0,1,0,1
+laptopworld,apple,macbook pro 14inch m2 pro mphe3sa,apple m2 pro 10-core,n/a,16,n/a,512,ssd,yes,14.2,n/a,n/a,1000,70.0,n/a,1.6,macos,12,45990000,31.26,22.12,1.23,0,0,1,0,1
+laptopworld,apple,macbook air mqkr3sa,apple m2 8-core,n/a,8,n/a,256,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,28990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air mly33sa,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,24690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air mlxx3sa,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,31490000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air mly03sa,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,31490000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air mly23sa,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,31490000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air mly43sa,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,500,52.6,n/a,n/a,macos,12,31490000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook pro mneh3sa,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,28990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook pro mnep3sa,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,28990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook pro mnej3sa,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook pro mneq3sa,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro z16r0003v 13in touch bar ram 16gb, 256gb 2022 space gray",apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,34790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro z16t0003w 13in touch bar ram 24gb, 256gb 2022 silver",apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,41690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro z16r0003w 13in touch bar ram 24gb, 256gb 2022 space gray",apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,41690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro z16r0003x 13in touch bar ram 16gb, 512gb 2022 space gray",apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,39990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro z16r00040 13in touch bar ram 24gb, 512gb 2022 space gray",apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,46790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro z16t00040 13in touch bar ram 24gb, 512gb 2022 silver",apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,46790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 8gb, 1tb 2022 silver",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,41690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 16gb, 1tb 2022 silver",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,46790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 24gb, 1tb 2022 silver",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,51890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 8gb, 1tb 2022 space gray",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,41690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 16gb, 1tb 2022 space gray",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,46790000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 24gb, 1tb 2022 space gray",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,51890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 8gb, 2tb 2022 silver",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,51890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 8gb, 2tb 2022 space gray",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,51890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook pro 13in touch bar ram 16gb, 2tb 2022 silver",apple m2,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,60,500,58.2,n/a,1.4,macos,12,56990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,gigabyte,laptop gigabyte aorus 5 ke4-72vn313sh,intel core i7-12700h,geforce rtx 3060,16,ddr4,512,ssd,yes,15.6,1920x1080,240,n/a,99.0,4,2.3,windows 11 home,24,32990000,n/a,n/a,n/a,3,1,1,0,0
+laptopworld,msi,laptop msi vector 17 hx a14vgg - 219us,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,17.3,2560x1600,240,n/a,90.0,4,3.0,windows,12,49990000,n/a,n/a,n/a,2,3,1,0,0
+laptopworld,acer,laptop acer gaming nitro v 15 propanel anv15-41-r7ap nh.qpgsv.002,amd ryzen 5 7535hs,geforce rtx 2050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,300,57.0,4,2.1,windows 11 home,12,19490000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus tuf gaming a14 fa401wv-rg062ws,n/a,geforce rtx 4060,16,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,40990000,n/a,n/a,n/a,2,2,1,0,0
+laptopworld,dell,laptop dell alienware m18 r2,intel core i9-14900hx,geforce rtx 4080,32,ddr5,1024,ssd,yes,18.0,2560x1600,165,n/a,97.0,6,4.23,windows 11 home,12,69990000,n/a,n/a,n/a,3,3,1,1,0
+laptopworld,asus,laptop asus rog zephyrus g16 gu603,intel core i7-13620h,geforce rtx 4070,16,ddr4,512,ssd,yes,16.0,1920x1200,165,n/a,90.0,4,2.0,windows 11 home,12,35990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,acer,laptop acer nitro v anv15-41-r5n6,amd ryzen 5 7535hs,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,59.0,n/a,2.1,windows 11 home,12,19490000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,lenovo,laptop lenovo legion slim 5 16ahp9 83dh003bvn,amd ryzen 7 8845hs,geforce rtx 4060,32,ddr5,n/a,n/a,yes,16.0,2560x1600,165,300,80.0,4,2.3,windows 11 home,24,39990000,n/a,n/a,n/a,2,2,1,1,1
+laptopworld,msi,laptop msi sword 16 hx b14vgkg 466vn,intel core i7-14650hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,65.0,4,2.3,windows 11 home,24,38990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,acer,laptop acer nitro v anv15-51-76b9 nh.qn8sv.008,intel core i7-13620h,geforce rtx 4050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,n/a,57.5,4,2.1,windows 11 home,12,32690000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,laptop acer nitro v 15 propanel anv15-51-73uu nh.qn9sv.00c,intel core i7-13620h,geforce rtx 3050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,n/a,57.0,4,2.1,windows 11 home,12,27590000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 15-fa1155tx 952r1pa_16g,intel core i5-12450h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,52.5,3,2.29,windows 11 home,12,18390000,n/a,n/a,n/a,2,1,1,1,1
+laptopworld,hp,laptop hp victus 16-r1190tx a2np4pa,intel core i5-14450hx,geforce rtx 3050,32,ddr5,1024,ssd,yes,16.1,1920x1080,144,300,70.0,4,2.31,windows 11 home,12,31190000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp victus 16-r1192tx a2np6pa,intel core i5-14450hx,geforce rtx 3050,16,ddr5,1024,ssd,yes,16.1,1920x1080,144,300,70.0,4,2.31,windows 11 home,12,30590000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,hp,laptop hp workstation zbook mobile 16 g11 mobile 9a660av,intel core ultra 7 155h,geforce rtx 2000 ada,32,ddr5,1024,ssd,yes,16.0,1920x1200,n/a,400,83.0,6,2.12,windows 11 pro,36,62990000,n/a,n/a,n/a,2,2,0,1,0
+laptopworld,lenovo,laptop lenovo loq 15irx9 83dv00ugvn,intel core i7-13650hx,geforce rtx 4050,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,24,29490000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,laptop acer predator helios neo 16 phn16-72-99pa,intel core i9-14900hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,1900x1200,165,n/a,90.0,4,2.6,windows 11 home,12,33490000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,acer,laptop acer predator helios 16 2024 ph16-72,intel core i9-14900hx,geforce rtx 4080,32,ddr5,2048,ssd,yes,16.0,2560x1600,250,1000,90.0,4,2.7,windows 11 home,12,64990000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,lenovo,laptop lenovo loq 15arp9,amd ryzen 5 7235hs,geforce rtx 3050,12,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,17490000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,lenovo,laptop lenovo loq 15iax9,intel core i5-12450hx,geforce rtx 2050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,12,16990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus rog strix g16 g614ju-n3206w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1920x1200,165,250,90.0,4,2.5,windows 11 home,24,37190000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog strix g16 g614ju-n4450w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,1920x1200,240,250,90.0,4,2.5,windows 11 home,24,39190000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog strix g16 g614jir-n4193w,intel core i9-14900hx,geforce rtx 4070,32,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,54990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog strix g18 g814ju-n6143w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,1024,ssd,yes,18.0,2560x1600,240,n/a,90.0,4,3.3,windows 11 home,24,40990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog strix g18 g814jir-n6108w,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,18.0,2560x1600,240,n/a,90.0,4,3.0,windows 11 home,24,56990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog strix g18 g814jvr-n6089w,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,18.0,2560x1600,240,n/a,90.0,4,3.0,windows 11 home,24,49990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog strix scar 18 g834jzr-r6160,intel core i9-14900hx,geforce rtx 4080,32,ddr5,1024,ssd,yes,18.0,2560x1600,240,500,90.0,4,3.1,n/a,24,87990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog strix scar 18 g834jyr-r6199,intel core i9-14900hx,geforce rtx 4090,64,ddr5,2048,ssd,yes,18.0,2560x1600,240,500,90.0,4,3.1,n/a,24,114990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog zephyrus g16 ga605wi-qr152ws,n/a,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,66990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus tuf gaming a14 fa401wv-rg061ws,n/a,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.0,2560x1600,165,400,73.0,4,1.46,windows 11 home,24,43490000,n/a,n/a,n/a,2,2,1,0,0
+laptopworld,asus,laptop asus rog zephyrus g16 ga605wi-qr090ws,n/a,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,24,74990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus tuf gaming a15 fa507nur-lp101w,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,23990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,24990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,dell,laptop dell gaming g15 5530,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,120,250,86.0,6,2.65,windows 11 home,12,27490000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9 83jc007hvn,amd ryzen 5 7235hs,geforce rtx 3050,12,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,18990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,lenovo,laptop lenovo loq 15irx9 83dv00ufvn,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,31590000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,lenovo,laptop lenovo legion 5 16irx9,intel core i9-14900hx,geforce rtx 4070,16,ddr5,512,ssd,yes,16.0,2560x1600,n/a,n/a,80.0,4,2.43,windows 11 home,12,39990000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,lenovo,laptop lenovo legion pro 7 16irx9h,intel core i9-14900hx,geforce rtx 4080,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,500,99.99,4,2.62,windows 11 home,12,65990000,n/a,n/a,n/a,4,2,1,1,1
+laptopworld,asus,laptop asus rog strix scar 16 g634jyr-ra132w,intel core i9-14900hx,geforce rtx 4090,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,1100,90.0,4,2.65,windows 11 home,24,116990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,acer,laptop acer predator helios neo phn16-72-78dq nh.qnmsv.00u,intel core i7-14650hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.8,windows 11 home,12,45990000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,lenovo,laptop lenovo legion 5 r7000,amd ryzen 7 8745h,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,12,26990000,n/a,n/a,n/a,2,2,1,0,0
+laptopworld,gigabyte,laptop gigabyte aorus 16x 9kg-43vnc54sh,intel core i7-13650hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,99.0,n/a,2.3,windows 11 home,24,31990000,n/a,n/a,n/a,2,2,1,1,1
+laptopworld,gigabyte,laptop gigabyte aorus 16x asg-53vnc54sh,intel core i7-14650hx,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,99.0,n/a,2.3,windows 11 home,24,41490000,n/a,n/a,n/a,2,2,1,1,1
+laptopworld,acer,laptop acer nitro v anv15-51-78bg nh.qqesv.00a,intel core i7-13620h,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,n/a,57.5,4,2.1,windows 11 home,12,34990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,laptop acer gaming nitro v 16 propanel anv16-41-r4kd nh.qp0sv.004,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,n/a,165,n/a,57.0,4,2.5,windows 11 home,12,36990000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9,amd ryzen 7 7435hs,geforce rtx 4050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,20990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus tuf gaming a15 fa506ncr-hn047w,amd ryzen 7 7435hs,geforce rtx 3050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,48.0,3,2.08,windows 11 home,24,20190000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo legion 5 pro 2024 r9000p arx8,amd ryzen 9 7945hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,6,2.55,windows,12,36490000,n/a,n/a,n/a,4,2,1,0,1
+laptopworld,acer,laptop acer predator triton neo 16 ptn16-51-78jq nh.qpnsv.004,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,500,76.0,n/a,2.05,windows 11 home,12,50990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15iax9,intel core i5-12450hx,geforce rtx 3050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.4,windows 11 home,12,17990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus rog zephyrus g16 gu605mi-g16.u94070,intel core ultra 9 185h,geforce rtx 4070,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,1.85,windows 11 home,12,44990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,hp,laptop gaming hp victus 15-fa0033dx,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,250,70.0,4,2.29,windows 11 home,12,15990000,n/a,n/a,n/a,2,1,1,1,1
+laptopworld,lenovo,laptop lenovo legion pro 7 16irx9h,intel core i9-14900hx,geforce rtx 4080,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,99.99,4,2.62,windows 11 home,12,62990000,n/a,n/a,n/a,4,2,1,1,1
+laptopworld,acer,laptop acer gaming aspire 5 a515-58gm-53cm nx.kw1sv.003,intel core i5-13420h,geforce rtx 2050,32,ddr4,n/a,n/a,yes,15.6,1920x1080,144,250,50.0,n/a,1.8,windows 11 home,12,19490000,n/a,n/a,n/a,2,1,1,1,1
+laptopworld,acer,laptop acer nitro v anv15-51-789j,intel core i7-13620h,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,57.5,4,2.5,windows 11 home,12,24390000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus tuf gaming a15 fa507nvr-lp007w,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,27790000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,dell,laptop dell gaming g15 5530,intel core i5-13450hx,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,165,n/a,56.0,3,2.65,windows 11 home,12,24590000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,acer,laptop acer predator helios neo phn16-72-76rh,intel core i7-14700hx,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,2560x1600,240,500,90.0,4,2.6,windows,12,34890000,n/a,n/a,n/a,3,2,1,0,1
+laptopworld,asus,laptop asus tuf gaming a15 fa507nvr-lp091w,amd ryzen 7 7435hs,geforce rtx 4060,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,26490000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus tuf gaming f15 fx507vu-lp315w,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,25990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog flow z13 gz301vv-mu007w,intel core i9-13900h,geforce rtx 4060,16,ddr5,1024,ssd,yes,13.4,2560x1600,165,500,56.0,4,1.18,windows 11 home,24,52990000,n/a,n/a,n/a,0,3,0,0,1
+laptopworld,msi,laptop msi stealth 16 mercedes amg motorsport a1vgg 293vn,intel core ultra 9 185h,geforce rtx 4070,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,n/a,99.9,4,1.99,windows 11 home,24,66390000,n/a,n/a,n/a,1,2,1,0,1
+laptopworld,lenovo,laptop lenovo loq 2024 15irx9,intel core i5-13450hx,geforce rtx 4050,12,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,22990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,dell,laptop dell gaming g15 5535,amd ryzen 7 7840hs,geforce rtx 4050,16,ddr5,512,ssd,yes,15.6,1920x1080,165,n/a,86.0,6,2.81,windows 11 home,12,24590000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,acer,laptop acer gaming nitro v 16 propanel anv16-41-r6na nh.qp0sv.001,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,32990000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,acer,laptop acer gaming nitro v 16 propanel anv16-41-r36y nh.qp1sv.004,amd ryzen 7 8845hs,geforce rtx 4050,16,ddr5,n/a,n/a,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,29990000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,acer,laptop acer gaming nitro v 16 propanel anv16-41-r7en nh.qp2sv.004,amd ryzen 7 8845hs,geforce rtx 3050,16,ddr5,n/a,n/a,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,27490000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,acer,laptop acer gaming nitro v 16 propanel anv16-41-r6zy nh.qp2sv.002,amd ryzen 5 8645hs,geforce rtx 3050,16,ddr5,n/a,n/a,yes,16.0,1920x1200,165,300,57.0,4,2.5,windows 11 home,12,25990000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,asus,laptop asus gaming vivobook k3605zc-rp564w,intel core i5-12500h,geforce rtx 3050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,50.0,3,1.8,windows 11 home,24,18790000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,asus,laptop asus gaming vivobook k3605zu-rp296w,intel core i5-12500h,geforce rtx 4050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,70.0,3,1.8,windows 11 home,24,22490000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,asus,laptop asus tuf gaming a15 fa506nfr-hn075w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,512,ssd,yes,n/a,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,18190000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus tuf gaming f15 fx507vv-lp304w,intel core i7-13620h,geforce rtx 4060,16,ddr5,1024,ssd,yes,15.6,1920x1080,144,250,90.0,4,2.2,windows 11 home,24,29490000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,lenovo,laptop lenovo legion 5 15irx9 83jj000fvn,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,300,60.0,4,2.32,windows 11 home,24,34890000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,lenovo,laptop lenovo legion y7000 irx9,intel core i7-13650hx,geforce rtx 4060,24,ddr5,512,ssd,yes,15.6,1920x1080,144,n/a,60.0,4,2.45,windows 11 home,12,27990000,n/a,n/a,n/a,4,2,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15ahp9,amd ryzen 7 8845hs,geforce rtx 4060,16,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,12,26990000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,msi,laptop msi stealth 18 mercedes amg a1vhg 080vn,intel core ultra 9 185h,geforce rtx 4080,64,ddr5,2048,ssd,yes,18.0,3840x2400,120,n/a,99.9,4,2.89,windows 11 home,24,96490000,n/a,n/a,n/a,2,2,1,0,0
+laptopworld,msi,laptop msi stealth 16 ai studio a1vgg-036us,intel core ultra 9 185h,geforce rtx 4070,64,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,99.99,4,1.99,windows,12,54990000,n/a,n/a,n/a,1,2,1,0,1
+laptopworld,msi,laptop msi sword 16 hx b14vgkg-229us,intel core i7-14650hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,1920x1200,144,n/a,65.0,4,2.3,windows,12,35990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus rog strix g18 g814jv-rs75,intel core i7-13650hx,geforce rtx 4060,16,ddr5,2048,ssd,yes,18.0,2560x1600,240,n/a,90.0,4,3.0,windows 11 home,12,38990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,n/a,laptop stealth 16 ai studio a1vhg,intel core ultra 9 185h,geforce rtx 4080,64,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,99.99,4,1.99,windows 11 home,24,76990000,n/a,n/a,n/a,1,2,1,0,1
+laptopworld,msi,laptop msi stealth a16 ai+ a3xvgg 208vn,n/a,geforce rtx 4070,32,ddr5,2048,ssd,yes,16.0,3840x2400,120,n/a,99.99,4,2.1,windows 11 home,24,72490000,n/a,n/a,n/a,2,1,1,0,0
+laptopworld,hp,laptop hp gaming victus 15-fb2063dx,amd ryzen 5 7535hs,radeon rx 6550m,8,ddr5,512,ssd,yes,15.6,1920x1080,144,300,52.5,3,2.29,windows,12,14990000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,acer,laptop acer nitro v 15 propanel anv15-51-500a nh.qnasv.008,intel core i5-13420h,geforce rtx 2050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,300,57.0,4,2.1,windows 11 home,12,23990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,acer,laptop acer nitro v 15 propanel anv15-51-56d5 nh.qn9sv.00b,intel core i5-13420h,geforce rtx 3050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,300,57.0,4,2.1,windows 11 home,12,24990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,acer,laptop acer nitro v 15 propanel anv15-51-73bt nh.qnasv.009,intel core i7-13620h,geforce rtx 2050,16,ddr5,n/a,n/a,yes,15.6,1920x1080,180,300,57.0,4,2.1,windows 11 home,12,25990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,dell,laptop dell mobile precision workstation 3590,intel core ultra 7 165h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,54.0,3,1.62,windows 11 pro,36,42990000,n/a,n/a,n/a,2,2,1,1,0
+laptopworld,msi,laptop msi crosshair 16 hx d14vfkg 860vn,intel core i9-14900hx,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,n/a,90.0,4,2.5,windows 11 home,24,41990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,asus,laptop asus gaming vivobook k3605zf-rp634w,intel core i5-12500h,geforce rtx 2050,16,ddr4,512,ssd,yes,16.0,1920x1200,144,300,50.0,3,1.8,windows 11 home,24,16890000,n/a,n/a,n/a,2,1,1,0,1
+laptopworld,dell,laptop dell alienware x14 r2,intel core i7-13620h,geforce rtx 4050,16,ddr5,512,ssd,yes,14.0,2560x1600,165,300,80.0,6,1.91,windows 11 home,12,32990000,n/a,n/a,n/a,1,3,1,0,0
+laptopworld,lenovo,laptop lenovo legion 7 16irx9 83fd004mvn,intel core i9-14900hx,geforce rtx 4070,32,ddr5,1024,ssd,yes,16.0,3200x2000,165,430,99.99,4,2.24,windows 11 home,24,59890000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,asus,laptop asus tuf gaming a15 fa506nfr-hn006w,amd ryzen 7 7435hs,geforce rtx 2050,16,ddr5,512,ssd,yes,n/a,1920x1080,144,250,48.0,3,2.3,windows 11 home,24,17990000,n/a,n/a,n/a,3,1,1,0,1
+laptopworld,lenovo,laptop lenovo loq 15arp9 ai 83jc007jvn,amd ryzen 5 7235hs,geforce rtx 3050,24,ddr5,n/a,n/a,yes,15.6,1920x1080,144,300,60.0,4,2.38,windows 11 home,24,20490000,n/a,n/a,n/a,3,1,1,1,1
+laptopworld,asus,laptop asus rog flow x16 gv601vv-nf044w,intel core i9-13900h,geforce rtx 4060,16,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,49990000,n/a,n/a,n/a,2,3,1,0,1
+laptopworld,asus,laptop asus tuf gaming a16 advantage edition fa617nsr-rl100w,amd ryzen 7 7435hs,radeon rx7600s,16,ddr5,512,ssd,yes,16.0,1920x1200,144,n/a,90.0,4,2.2,windows 11 home,24,n/a,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,lenovo,laptop lenovo legion 5 16irx9,intel core i7-14650hx,geforce rtx 4060,16,ddr5,512,ssd,yes,16.0,2560x1600,165,350,80.0,4,2.36,windows 11 home,12,31990000,n/a,n/a,n/a,3,2,1,1,1
+laptopworld,lenovo,laptop lenovo legion pro 5 16irx9 83df0047vn,intel core i9-14900hx,geforce rtx 4060,32,ddr5,1024,ssd,yes,16.0,2560x1600,240,500,80.0,4,2.5,windows 11 home,24,44390000,n/a,n/a,n/a,4,2,1,1,1
+laptopworld,asus,laptop asus rog strix g16 g614ju-n4132w,intel core i7-13650hx,geforce rtx 4050,16,ddr5,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.5,windows 11 home,24,33990000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus tuf gaming f15 fx507zc4-hn074w,intel core i5-12500h,geforce rtx 3050,8,ddr4,512,ssd,yes,15.6,1920x1080,144,n/a,56.0,4,2.2,windows 11 home,24,18490000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,asus,laptop asus rog zephyrus g16 gu603vv-n4022w,intel core i7-13620h,geforce rtx 4060,16,ddr4,512,ssd,yes,16.0,2560x1600,240,500,90.0,4,2.0,windows 11 home,24,40590000,n/a,n/a,n/a,2,2,1,0,1
+laptopworld,apple,macbook air m3 15.3inch mryq3sa,apple m3 8-core,n/a,8,n/a,512,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air 15.3inch 16gb, 512gb starlight - 2023",apple m2 8-core,n/a,8,n/a,512,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,41290000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air 15.3inch 16gb, 512gb midnight - 2023",apple m2 8-core,n/a,8,n/a,512,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,41290000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxn3sa,apple m3 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,26890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,"macbook air 15.3inch 16gb, 512gb silver- 2023",apple m2 8-core,n/a,8,n/a,512,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,41290000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxq3sa,apple m3 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,26890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxv3sa,apple m3 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,26890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxt3sa,apple m3 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,26890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch z1b6001h3 space grey - 2024,apple m3 8-core,n/a,16,n/a,256,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,31890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch z1b8001fz silver - 2024,apple m3 8-core,n/a,16,n/a,256,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,31890000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch z1bc001mq midnight - 2024,apple m3 8-core,n/a,16,n/a,256,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,32490000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch z1ba001g3 starlight - 2024,apple m3 8-core,n/a,16,n/a,256,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,32490000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxp3sa,apple m3 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,32690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxr3sa,apple m3 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,32690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxw3sa,apple m3 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,32690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mrxu3sa,apple m3 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,32690000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mxcr3sa,apple m3 8-core,n/a,16,n/a,512,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mxct3sa,apple m3 8-core,n/a,16,n/a,512,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mxcv3sa,apple m3 8-core,n/a,16,n/a,512,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 13.6inch mxcu3sa,apple m3 8-core,n/a,16,n/a,512,ssd,yes,13.6,2560x1664,60,n/a,52.6,n/a,n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mrym3sa,apple m3 8-core,n/a,8,n/a,256,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mryp3sa,apple m3 8-core,n/a,8,n/a,256,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mryu3sa,apple m3 8-core,n/a,8,n/a,256,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mryr3sa,apple m3 8-core,n/a,8,n/a,256,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,31990000,n/a,n/a,n/a,0,0,0,0,0
+laptopworld,apple,macbook air m3 15.3inch mryn3sa,apple m3 8-core,n/a,8,n/a,512,ssd,yes,15.3,2880x1864,60,n/a,66.5,n/a,n/a,macos,12,37590000,n/a,n/a,n/a,0,0,0,0,0

@@ -1,29 +1,28 @@
+from .base_laptopshop_spider import BaseLaptopshopPageSpider
+from scrapy.http import Response
 import re
-from requests import Response
-from .base_laptopshop_spider import BaseLaptopshopLoadmoreButtonSpider
 
-
-class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
-    name = "cellphones_spider"
-    allowed_domains = ["cellphones.com.vn"]
+class LaptopworldSpider(BaseLaptopshopPageSpider):
+    name = "laptopworld_spider"
+    allowed_domains = ["laptopworld.vn"]
     start_urls = [
-        'https://cellphones.com.vn/laptop.html',
+        'https://laptopworld.vn/san-pham-apple/laptop-apple.html',
+        'https://laptopworld.vn/laptop-games-do-hoa.html'
     ]
     
-    product_site_css = 'div.product-info a::attr(href)'
-    loadmore_button_css = '.btn-show-more'
-    close_button_xpaths = ["//button[@class='cancel-button-top']"]
-    show_technical_spec_button_xpath = "//button[contains(@class, 'button__show-modal-technical')]"
+    product_site_css = 'a.p-img::attr(href)'
+    page_css = 'div.paging a::attr(href)'
+    
+    source = 'laptopworld'
+
     selenium_product_request = True
-    
-    source = 'cellphones'
-    
+
     def get_scoped_value(self, response: Response, names):
         possibile_values = [
-                "//li[contains(@class, 'technical-content-modal-item')]//p[text()='{}']/following-sibling::div[1]//text()".format(name)
+                "//td[.//span[contains(text(),'{}')]]/following-sibling::td//span/text()".format(name)
                 for name in names
             ] + [
-                "//li[contains(@class, 'technical-content-modal-item')]//p[a[text()='{}']]/following-sibling::div[1]//text()".format(name)
+                "//div[@class='content-text nd']//tr[td//strong[contains(text(), '{}')]]/td[2]//text()".format(name)
                 for name in names
             ]
         for value in possibile_values:
@@ -34,16 +33,12 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         return None
     
     def yield_condition(self, response):
-        name = response.css('.box-product-name h1::text').get().lower()
-        price = response.css('.product__price--show::text').get()
-        if 'cũ' in name \
-            or ('mac' in name and 'macbook' not in name) \
-            or 'đã kích hoạt' in name \
-            or (price is not None and 'Giá Liên Hệ' in price):
+        name = response.xpath('//h1/text()').get().lower()
+        if any(_ in name for _ in ['balo', 'tai nghe', 'dock', 'máy chơi game']):
             print(f"Skipped: {name}")
             return False
         return True
-    
+
     # [PARSE FEATURES SECTION: START]
     # Brand
     def parse_brand(self, response: Response): 
@@ -51,17 +46,20 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the brand of the laptop from the response.
         Example: Dell, HP, etc.
         """
-        try:
-            res = response.css('.box-product-name h1::text').get().lower()
-            
-            if "mac" in res:
-                return "apple"
-            
-            for removal in ['laptop gaming ', 'laptop Gaming ', 'laptop ']:
-                res = res.replace(removal, '')
-            
-            return res.split()[0].lower()
-        except:
+        product_name = response.xpath('//h1/text()').get().lower()
+        brands = r'\b(dell|asus|lenovo|hp|msi|acer|huawei|gigabyte|samsung galaxy|lg|microsoft|macbook)\b'
+        
+        # Search for the brand in the product name
+        match = re.search(brands, product_name)
+
+        if match:
+            # If the matched brand is "macbook", return "apple"
+            if match.group(0) == 'macbook':
+                return 'apple'
+            else:
+                # Return the matched brand
+                return match.group(0)
+        else:
             return "n/a"
     
     def parse_name(self, response):
@@ -69,17 +67,8 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the name of the laptop from the response.
         """
         try:
-            res = response.css('.box-product-name h1::text').get().lower()
-            for removal in ['laptop gaming ', 'laptop ', '- chỉ có tại cellphones', 'i chính hãng apple việt nam', ' - nhập khẩu chính hãng']:
-                res = res.replace(removal, '')
-
-            res = re.sub(r'\([^()]*\)', '', res)
-            res = res.split("core")[0]
-            search_value = re.search('(?<!\w)(\d+)gb(?!\w)', res)
-            if search_value:
-                res = res.split(search_value.group())[0]
-            
-            return res.strip()
+            res = response.xpath('//h1/text()').get()
+            return re.sub(r'\s*\(.*?\)|\s*/.*', '', res).strip()
         except:
             return "n/a"
     
@@ -88,23 +77,23 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the CPU name of the laptop from the response.
         """
-        res = self.get_scoped_value(response, ['Loại CPU'])
+        res = self.get_scoped_value(response, ['CPU','Bộ Vi Xử Lý:','Bộ xử lý'])
         return res if res else "n/a"
     
-    # VGA
+    # VGA   
     def parse_vga(self, response: Response):
         """
         Extracts the VGA name of the laptop from the response.
         """
-        res = self.get_scoped_value(response, ['Loại card đồ họa'])
-        return res if res else "n/a"
+        res = self.get_scoped_value(response, ['Video','Card đồ hoạ'])
+        return res if res else "n/a"    
     
     # RAM
     def parse_ram_amount(self, response: Response): 
         """
         Extracts the amount of RAM in GB from the response.
         """
-        res = self.get_scoped_value(response, ['Dung lượng RAM'])
+        res = self.get_scoped_value(response, ['Bộ Nhớ Trong:', 'Ram', 'Bộ Nhớ:', 'Ổ đĩa cứng', 'Ổ cứng'])
         return res if res else "n/a"
     
     def parse_ram_type(self, response: Response): 
@@ -112,7 +101,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the type of RAM from the response.
         Example: DDR3, DDR4, etc.
         """
-        res = self.get_scoped_value(response, ['Loại RAM'])
+        res = self.get_scoped_value(response, ['Bộ Nhớ Trong:', 'Ram', 'Bộ Nhớ:','Ổ đĩa cứng'])
         return res if res else "n/a"
     
     # Storage
@@ -120,7 +109,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the amount of storage in GB from the response.
         """
-        res = self.get_scoped_value(response, ['Ổ cứng'])
+        res = self.get_scoped_value(response, ['Ổ đĩa cứng', 'Ổ Lưu Trữ:', 'Bộ Lưu Trữ:'])
         return res if res else "n/a"
     
     def parse_storage_type(self, response: Response): 
@@ -128,8 +117,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the type of storage from the response.
         Example: HDD, SSD, SSHD.
         """
-        res = self.get_scoped_value(response, ['Ổ cứng']) + ' '\
-                + self.get_scoped_value(response, ['Tính năng đặc biệt'])
+        res = self.get_scoped_value(response, ['Ổ đĩa cứng', 'Ổ Lưu Trữ:', 'Bộ Lưu Trữ:'])
         return res if res else "n/a"
     
     # Webcam
@@ -138,7 +126,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the webcam resolution from the response.
         Example: HD, FHD, 4K.
         """
-        res = self.get_scoped_value(response, ['Webcam'])
+        res = self.get_scoped_value(response, ['Webcam', 'Camera:', 'Camera'])
         return res if res else "n/a"
     
     # Screen
@@ -146,7 +134,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the screen size in inches from the response.
         """
-        res = self.get_scoped_value(response, ['Kích thước màn hình'])
+        res = self.get_scoped_value(response, ['Màn Hình Hiển Thị:', 'Màn hình'])
         return res if res else "n/a"
         
     
@@ -155,22 +143,21 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the screen resolution from the response.
         Example: HD, FHD, 4K.
         """
-        res = self.get_scoped_value(response, ['Độ phân giải màn hình']) + ' '\
-                + self.get_scoped_value(response, ['Công nghệ màn hình'])
+        res = self.get_scoped_value(response, ['Màn Hình Hiển Thị:', 'Màn hình'])
         return res if res else "n/a"
 
     def parse_screen_refresh_rate(self, response: Response): 
         """
         Extracts the screen refresh rate in Hz from the response.
         """
-        res = self.get_scoped_value(response, ['Tần số quét'])
+        res = self.get_scoped_value(response, ['Hỗ trợ hiển thị', 'Màn hình'])
         return res if res else "n/a"
     
     def parse_screen_brightness(self, response: Response): 
         """
         Extracts the screen brightness in nits from the response.
         """
-        res = self.get_scoped_value(response, ['Công nghệ màn hình'])
+        res = self.get_scoped_value(response, ['Màn Hình Hiển Thị:', 'Màn hình'])
         return res if res else "n/a"
     
     # Battery
@@ -178,14 +165,14 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the battery capacity in Whr from the response.
         """
-        res = self.get_scoped_value(response, ['Pin'])
+        res = self.get_scoped_value(response, ['Pin & Nguồn:', 'Pin', 'Pin & Nguồn'])
         return res if res else "n/a"
     
     def parse_battery_cells(self, response: Response):
         """
         Extracts the number of battery cells from the response.
         """
-        res = self.get_scoped_value(response, ['Pin'])
+        res = self.get_scoped_value(response, ['Pin & Nguồn:', 'Pin', 'Pin & Nguồn'])
         return res if res else "n/a"
     
     # Size
@@ -193,7 +180,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the size of the laptop in cm from the response.
         """
-        res = self.get_scoped_value(response, ['Kích thước'])
+        res = self.get_scoped_value(response, ['Size and Weight'])
         return res if res else "n/a"
         
     # Weight
@@ -201,7 +188,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the weight of the laptop in kg from the response.
         """
-        res = self.get_scoped_value(response, ['Trọng lượng'])
+        res = self.get_scoped_value(response, ['Trọng lượng', 'Size and Weight'])
         return res if res else "n/a"
     
     # Connectivity
@@ -209,7 +196,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the connectivity features from the response.
         """
-        res = self.get_scoped_value(response, ['Cổng giao tiếp'])
+        res = self.get_scoped_value(response, ['Cổng giao tiếp', 'Cổng Kết Nối', 'Sạc và mở rộng:', 'Tích Hợp Cổng:'])
         return res if res else "n/a"
     
     # Operating System
@@ -218,16 +205,15 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the default operating system of the laptop from the response.
         Example: Windows, Linux, etc.
         """
-        res = self.get_scoped_value(response, ['Hệ điều hành'])
+        res = self.get_scoped_value(response, ['Hệ Điều Hành', 'Hệ điều hành'])
         return res if res else "n/a"
     
-    # Warranty
+    # Warranty      
     def parse_warranty(self, response: Response): 
         """
         Extracts the warranty period in months from the response.
         """
-        res = response.xpath("//a[@href='https://cellphones.com.vn/chinh-sach-bao-hanh']/\
-                                 parent::div[contains(@class, 'description')]/text()[1]").get()
+        res = response.xpath("//p[@class='detail-bh']/span/text()").get()
         return res if res else "n/a"
     
     # Price
@@ -236,11 +222,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         Extracts the price of the laptop from the response.
         Example: in VND.
         """
-        for css in ['div.tpt-box.active p.tpt---sale-price::text', '.product__price--show::text']:
-            price = response.css(css).get()
-            if price:
-                return price
-
-        return "n/a"
+        res = response.xpath('//b[@class="js-this-product"]/text()').get()
+        return res.replace(' VNĐ', '').strip() if res else "n/a"
     
     # [PARSE FEATURES SECTION: END]
