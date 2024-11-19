@@ -3,7 +3,7 @@ from scrapy.http import Response
 import re
 
 class LaptopazSpider(BaseLaptopshopPageSpider):
-    name = 'laptopaz'
+    name = 'laptopaz_spider'
     allowed_domains = ["laptopaz.vn"]
     start_urls = ['https://laptopaz.vn/laptop-moi.html']
 
@@ -31,8 +31,10 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
             ] + [
                 "//td[span/strong[text() = '{}']]/following-sibling::td//span/text()".format(name)
                 for name in names
-            ]
-        
+            ] + [
+                "//table//tr[td/strong[contains(text(), '{}')]]/td[2]".format(name)
+                for name in names
+            ] 
         for value in possible_values:
             scope = response.xpath(value).getall()
             if len(scope) != 0:
@@ -42,10 +44,18 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
         return None
 
     def parse_brand(self, response: Response):
-        res = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get()
-        if res:
-            res = res.split(']')[-1].split('laptop')[-1]
-        return res if res else 'n/a'
+        try:
+            product_name = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get().lower()
+            for brand in ["dell", "asus", "lenovo", "hp", "msi", "acer", "huawei", "gigabyte", "samsung galaxy", "lg", "microsoft"]:
+                if brand in product_name:
+                    return brand
+            if "macbook" in product_name:
+                return "apple"
+            for name in ["thinkpad", "ideapad"]:
+                if name in product_name:
+                    return "lenovo"
+        except:
+            return "n/a"
     
     def parse_name(self, response: Response):
         res = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get()
@@ -72,6 +82,8 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
         """
         res = self.get_scoped_value(response, ['VGA', 'Card đồ họa', 'Bộ xử lý', 'Card VGA'],
                                         [("Đồ Họa (VGA)", "Bộ xử lý")])
+        if "td scope" in res.lower():
+            res = res.split('>')[1]
         return res if res else 'n/a'
     
     # RAM
@@ -226,8 +238,9 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
         paths = ["//span[@class='box-text-update2021']/span[@class='show-shadow']/text()"]
 
         for path in paths:
-            res = response.xpath(path).get()
+            res = response.xpath(path).get().lower()
             if res:
+                res = res.replace("deal:", "").strip()
                 return res
         return 'n/a'
         

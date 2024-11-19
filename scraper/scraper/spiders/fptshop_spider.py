@@ -1,7 +1,10 @@
-import scrapy
+import time
+import re
 from scrapy.http import Response
+from selenium.webdriver.common.by import By
 
 from .base_laptopshop_spider import BaseLaptopshopLoadmoreButtonSpider
+
 class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
     name = "fptshop_spider"
     start_urls = ['https://fptshop.com.vn/may-tinh-xach-tay']
@@ -11,9 +14,86 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
     # close_button_xpaths = ["//button[@class='close']"]
     
     show_technical_spec_button_xpath = "//button[span[text()='Tất cả thông số']]"
-    source = 'fpt'
+    source = 'fptshop'
     selenium_product_request = True
+    
+    def _get_driver_options(self):
+        options = super()._get_driver_options()
+        options.set_preference('permissions.default.image', 1)
+        return options
 
+    def get_source_selenium(self, url: str):
+        time.sleep(1)
+        self.driver.execute_script("window.open('');")
+        self.driver.switch_to.window(self.driver.window_handles[-1])
+        
+        self.driver.execute_script(f"Object.defineProperty(navigator, 'userAgent', {{get: () => '{self.ua.random}'}});")
+        self.driver.get(url)
+        self.driver.switch_to.window(self.driver.window_handles[-1])
+        time.sleep(4)
+        if self.show_technical_spec_button_xpath:
+            retries = 5
+            while retries > 0:
+                self.driver.execute_script("document.body.style.zoom='40%'")
+                time.sleep(3)
+                try:
+                    buttons = self.driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
+                    if buttons:
+                        break
+                    else:
+                        print("Technical spec button not found, reloading the page.")
+                        self.driver.refresh()
+                        time.sleep(2)
+                        retries -= 1
+                except Exception as e:
+                    print("Error while trying to find the technical spec button:", e)
+                    self.driver.refresh()
+                    time.sleep(2)
+                    retries -= 1
+                
+            for xpath in self.close_button_xpaths:
+                try:
+                    buttons = self.driver.find_elements(By.XPATH, xpath)
+                    
+                    for button in buttons:
+                        if button.is_displayed() and button.is_enabled():
+                            button.click()
+                            print("Closed the modal successfully.")
+                            break
+                except Exception as e:
+                    print("Failed to close the modal:", e)
+            
+            opened_modal = False
+            try:
+                buttons = self.driver.find_elements(By.XPATH, self.show_technical_spec_button_xpath)
+                
+                for button in buttons:
+                    self.driver.execute_script("arguments[0].click();", button)
+                    while not self.driver.find_elements(By.CLASS_NAME, 'Swipeable_swipeable__BTB2L'):
+                        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                        time.sleep(1)
+                        self.driver.execute_script("window.scrollTo(0, 0);")
+                        time.sleep(1)
+                    
+                    print("Opened the modal successfully.")
+                    opened_modal = True
+                    break
+            except:
+                pass
+                
+            if not opened_modal:
+                print("Failed to open the modal.")
+        else:
+            time.sleep(2)
+            self.driver.execute_script("document.body.style.zoom='1%'")
+            time.sleep(3)
+        
+        html = self.driver.page_source
+
+        self.driver.close()
+        self.driver.switch_to.window(self.driver.window_handles[0])
+
+        return html
 
     def get_scoped_value(self, response, names):
         possibile_values = [
@@ -56,6 +136,7 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         except Exception as e:
             print("Error", e)
             return 'n/a'
+        
     def parse_name(self, response: Response): 
         """
         Extracts the name of the laptop from the response.
@@ -85,267 +166,144 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the CPU details from the response and combines them.
         """
-        try:
-            cpu_brand = self.get_scoped_value(response, ['Hãng CPU'])
-            cpu_technology = self.get_scoped_value(response, ['Công nghệ CPU'])
-            cpu_type = self.get_scoped_value(response, ['Loại CPU'])
-            # # Extract individual CPU features using CSS selectors
-            # cpu_brand = response.css('#spec-item-0 > div:nth-child(2) > span:nth-child(2)::text').get()
-            # cpu_technology = response.css('#spec-item-0 > div:nth-child(3) > span:nth-child(2)::text').get()
-            # cpu_type = response.css('#spec-item-0 > div:nth-child(4) > span:nth-child(2)::text').get()
+        cpu_brand = self.get_scoped_value(response, ['Hãng CPU']).lower()
+        cpu_technology = self.get_scoped_value(response, ['Công nghệ CPU']).lower()
+        cpu_type = self.get_scoped_value(response, ['Loại CPU']).lower()
 
-            # if cpu_brand and cpu_technology and cpu_type:
-            #     # Combine the features into a single string
-            #     cpu_details = f"{cpu_brand} {cpu_technology} {cpu_type}"
-            #     return cpu_details.strip()
-            # else: 
-            #     return 'N/A'
-            return f"{cpu_brand} {cpu_technology} {cpu_type}" if cpu_brand or cpu_technology or cpu_type else 'n/a'
-
-        except Exception as e:
-            print("Error:", e)
-            return 'n/a'
+        cpu_parts = [part for part in [cpu_brand, cpu_technology, cpu_type] if part and "đang cập nhật" not in part]
+        return " ".join(cpu_parts) if cpu_parts else 'n/a'
     
     def parse_vga(self, response):
         """
         Extracts the VGA (not onboard) details from the response and combines them.
         """
-        try:
-            vga_text = self.get_scoped_value(response, ['Tên đầy đủ (Card rời)'])
-            return vga_text if vga_text else 'n/a'
-            # if vga_text: 
-            #     vga_text = vga_text.strip().split('\n')
-            #     for i in range(len(vga_text)): 
-            #         if vga_text[i].lower() == "tên đầy đủ (card rời)": 
-            #             return vga_text[i+1]
-        except Exception as e:
-            print("Error:", e)
-            return 'n/a'
-        
+        vga_text = self.get_scoped_value(response, ['Tên đầy đủ (Card rời)'])
+        return vga_text if vga_text else 'n/a'
+
     def parse_ram_amount(self, response):
         """
         Extract the RAM amount from the response
         """
-        try: 
-            ram_text = self.get_scoped_value(response, ['Dung lượng RAM'])
-            return ram_text if ram_text else 'n/a'
-            # if ram_text: 
-            #     # extract the number and GB
-            #     ram_text = ram_text.split('\n')
-            #     for i in range(len(ram_text)):
-            #         if 'Dung lượng' in ram_text[i]: 
-            #             ram = ram_text[i+1]Price
-            #             if 'thanh' in ram: 
-            #                 ram = ram.split('(')[0]
-            #             return ram.strip()
-            # return 'N/A'
-        except Exception as e: 
-            print("Error: ", e) 
-            return 'n/a'
+        ram_text = self.get_scoped_value(response, ['Dung lượng RAM'])
+        return ram_text if ram_text else 'n/a'
     
     def parse_ram_type(self, response):
         """
         Extract the RAM type from the response
         """
-        try: 
-            ram_text = self.get_scoped_value(response, ['Loại RAM'])
-            return ram_text if ram_text else 'n/a'
-            # if ram_text: 
-            #     # extract the number and GB
-            #     ram_text = ram_text.split('\n')
-            #     for i in range(len(ram_text)):
-            #         if 'Loại' in ram_text[i]: 
-            #             ram = ram_text[i+1]
-            #             return ram.strip()
-            # return 'N/A'
-        except Exception as e: 
-            print("Error: ", e) 
-            return 'n/a'
+        ram_text = self.get_scoped_value(response, ['Loại RAM'])
+        return ram_text if ram_text else 'n/a'
     
     def parse_storage_amount(self, response):
         """
         Extract the storage amount from the response
         """
-        try: 
-            storage_text = self.get_scoped_value(response, ['Dung lượng'])
-            return storage_text if storage_text else 'n/a'
-            # if storage_text: 
-            #     # extract the number and GB
-            #     storage_text = storage_text.split('\n')
-            #     for i in range(len(storage_text)):
-            #         if 'Dung lượng' in storage_text[i]: 
-            #             storage = storage_text[i+1]
-            #             if 'GB' not in storage: 
-            #                 storage = storage + "GB"
-            #             return storage.strip()
-            # return 'N/A'
-        except Exception as e: 
-            print("Error: ", e) 
-            return 'n/a'
+        storage_text = self.get_scoped_value(response, ['Dung lượng'])
+        return storage_text if storage_text else 'n/a'
+
     def parse_storage_type(self, response):
         """
         Extract the storage type from the response
         """
-        try: 
-            storage_text = self.get_scoped_value(response, ['Lưu trữ'])
-            return storage_text if storage_text else 'n/a'
-            # if storage_text: 
-            #     # extract the number and GB
-            #     storage_text = storage_text.split('\n')
-            #     for i in range(len(storage_text)):
-            #         if 'Kiểu ổ cứng' in storage_text[i]: 
-            #             storage = storage_text[i+1]
-            #             return storage.strip()
-            # return 'N/A'
-        except Exception as e: 
-            print("Error: ", e) 
-            return 'n/a'
+        storage_text = self.get_scoped_value(response, ['Lưu trữ'])
+        return storage_text if storage_text else 'n/a'
+
     def parse_size(self, response):
         """
         Extract the screen size from the response
         """
-        try: 
-            size_text = self.get_scoped_value(response, ['Kích thước'])
-            return size_text if size_text else 'n/a'
+        size_text = self.get_scoped_value(response, ['Kích thước'])
+        return size_text if size_text else 'n/a'
 
-        except Exception as e: 
-            print("Error: ", e) 
-            return 'n/a'
-    
     def parse_weight(self, response):
         """
         Extract the weight from the response
         """
-        try: 
-            weight_text = self.get_scoped_value(response, ['Trọng lượng sản phẩm'])
-            return weight_text if weight_text else 'n/a'
+        weight_text = self.get_scoped_value(response, ['Trọng lượng sản phẩm'])
+        return weight_text if weight_text else 'n/a'
 
-        except Exception as e: 
-            print("Error: ", e) 
-            return 'n/a'
-    
     def parse_battery_capacity(self, response):
         """
         Extracts the battery capacity in Whr from the response.
         """
-        try: 
-            battery_text = self.get_scoped_value(response, ['Dung lượng pin'])
-            return battery_text if battery_text else 'n/a'
-
-        except Exception as e: 
-            print("Error: ", e) 
-            return 'n/a'
+        battery_text = self.get_scoped_value(response, ['Dung lượng pin'])
+        return battery_text if battery_text else 'n/a'
     
     def parse_battery_cells(self, response):
         """
         Extracts the number of battery cells from the response.
         """
-        try: 
-            battery_text = self.get_scoped_value(response, ['Dung lượng pin'])
-            return battery_text if battery_text else 'n/a'
+        battery_text = self.get_scoped_value(response, ['Dung lượng pin'])
+        return battery_text if battery_text else 'n/a'
 
-        except Exception as e: 
-            print("Error: ", e) 
-            return 'n/a'
-    
     def parse_screen_size(self, response):
         """
         Extracts the screen size in inches from the response.
         """
-        try: 
-            screen_text = self.get_scoped_value(response, ['Kích thước màn hình'])
-            return screen_text if screen_text else 'n/a'
-        except Exception as e: 
-            print("Error: ", e) 
-            return 'n/a'
+        screen_text = self.get_scoped_value(response, ['Kích thước màn hình'])
+        return screen_text if screen_text else 'n/a'
     
     def parse_screen_resolution(self, response):
         """
         Extracts the screen resolution from the response.
         Example: HD, FHD, 4K.
         """
-        try: 
-            screen_text = self.get_scoped_value(response, ['Độ phân giải'])
-            return screen_text if screen_text else 'n/a'
-        except Exception as e:
-            print("Error: ", e)
-            return 'n/a'
+        screen_text = self.get_scoped_value(response, ['Độ phân giải'])
+        return screen_text if screen_text else 'n/a'
     
     def parse_screen_refresh_rate(self, response):
         """
         Extracts the screen refresh rate in Hz from the response.
         """
-        try: 
-            screen_text = self.get_scoped_value(response, ['Tần số quét'])
-            return screen_text if screen_text else 'n/a'
-        except Exception as e:
-            print("Error: ", e)
-            return 'n/a'
+        screen_text = self.get_scoped_value(response, ['Tần số quét'])
+        return screen_text if screen_text else 'n/a'
     
     def parse_screen_brightness(self, response):
         """
         Extracts the screen brightness in nits from the response.
         """
-        try: 
-            screen_text = self.get_scoped_value(response, ['Độ sáng'])
-            return screen_text if screen_text else 'n/a'
-        except Exception as e:
-            print("Error: ", e)
-            return 'n/a'
+        screen_text = self.get_scoped_value(response, ['Độ sáng'])
+        return screen_text if screen_text else 'n/a'
     
     def parse_webcam_resolution(self, response):
         """
         Extracts the webcam resolution from the response.
         """
-        try: 
-            webcam_text = self.get_scoped_value(response, ['Webcam'])
-            return webcam_text if webcam_text else 'n/a'
-        except Exception as e:
-            print("Error: ", e)
-            return 'n/a'
+        webcam_text = self.get_scoped_value(response, ['Webcam'])
+        return webcam_text if webcam_text else 'n/a'
     
     def parse_connectivity(self, response):
         """
         Extracts the connectivity options from the response.
         """
-        try: 
-            connectivity_text = self.get_scoped_value(response, ['Cổng giao tiếp'])
-            return connectivity_text if connectivity_text else 'n/a'
-        except Exception as e:
-            print("Error: ", e)
-            return 'n/a'
-    
+        connectivity_text = self.get_scoped_value(response, ['Cổng giao tiếp'])
+        if connectivity_text:
+            # Step 1: Add '1 x ' for standalone "USB" without a number before it
+            connectivity_text = re.sub(r'\b(?<!\d\s)(usb)', r'1 x \1', connectivity_text, flags=re.IGNORECASE)
+
+            # Step 2: Format cases where a number exists before "USB"
+            connectivity_text = re.sub(r'(\d+)\s*(usb)', r'\1 x \2', connectivity_text, flags=re.IGNORECASE)
+            
+        return connectivity_text if connectivity_text else 'n/a'
     
     def parse_default_os(self, response):
         """
         Extracts the operating system from the response.
         """
-        try: 
-            os_text = self.get_scoped_value(response, ['Version', 'OS'])
-            return os_text if os_text else 'n/a'
-        except Exception as e:
-            print("Error: ", e)
-            return 'n/a'
-    
+        os_text = self.get_scoped_value(response, ['Version', 'OS'])
+        return os_text if os_text else 'n/a'
     
     def parse_price(self, response):
         """
         Extracts the price of the laptop from the response.
         """
-        try: 
-            price_text = response.css('span.text-neutral-gray-5 line-through::text').get()
-            return price_text if price_text else 'n/a'
-        except Exception as e:
-            print("Error: ", e)
-            return 'n/a'
-    
+        price_text = response.xpath("//div[@id='tradePrice']//span[@class='text-black-opacity-100 h4-bold']//text()").getall()
+        price_text = ' '.join(price_text)
+        return price_text if price_text else 'n/a'
+
     def parse_warranty(self, response):
         """
         Extracts the warranty period in months from the response.
         """
-        try: 
-            warranty_text = self.get_scoped_value(response, ['Thời gian bảo hành'])
-            return warranty_text if warranty_text else 'n/a'
-        except Exception as e:
-            print("Error: ", e)
-            return 'n/a'
+        warranty_text = self.get_scoped_value(response, ['Thời gian bảo hành'])
+        return warranty_text + ' tháng' if warranty_text else 'n/a'

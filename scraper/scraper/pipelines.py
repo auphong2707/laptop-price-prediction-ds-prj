@@ -51,13 +51,13 @@ class TransformPipeline:
             try:
                 # Get the CPU field value
                 value = self.adapter.get('cpu')
-                if value == "n/a":
-                    return
                 
                 # Basic cleaning steps
-                for removal in ['®', '™', ' processors', ' processor', 'mobile', 'with intel ai boost', '', '(tm)', '(r)', 
-                                    'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 'comet lake', 'kabylake refresh', 'kabylake']:
-                            value = value.replace(removal, '')
+                for removal in ['®', '™', ' processors', ' processor', 'mobile',
+                                'with intel ai boost', '', '(tm)', '(r)', ':',
+                                'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 
+                                'comet lake', 'kabylake refresh', 'kabylake', 'cpu:']:
+                    value = value.replace(removal, '')
                     
                 special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+(\.\d+)?\s*ghz|\d+\s?gb|dgb)\b', value)
                 if special_sep:
@@ -66,7 +66,7 @@ class TransformPipeline:
                 for spliter in [',',  'up']:
                     value = value.split(spliter)[0]
                 
-                value = ' '.join(value.split())
+                value = ' '.join(value.split()).strip()
                 
                 # Apple solving
                 if self.adapter.get('brand') == "apple":
@@ -80,6 +80,8 @@ class TransformPipeline:
                             value = f"apple {cpu_name.group(0)} {num_cores}-core"
                         else:
                             value = f"apple {cpu_name.group(0)}"
+                    else:
+                        value = "n/a"
                 else:
                     value = re.sub(r'\([^()]*\)', '', value)
                     
@@ -92,6 +94,8 @@ class TransformPipeline:
                         if match:
                             # Format the matched processor name as "iX-XXXXXH"
                             value = 'intel core ' + f"{match.group(1)}-{match.group(2)}{match.group(3)}"
+                        else:
+                            value = "n/a"
                     elif "ultra" in value:
                         pattern = re.compile(r'(?:ultra\s*)?(u?\d)\s*[- ]?\s*(\d{3})([a-z]?)')
                         match = pattern.search(value)
@@ -99,6 +103,8 @@ class TransformPipeline:
                         if match:
                             model_number = match.group(1).replace('u', '')
                             value = 'intel core ' + f"ultra {model_number} {match.group(2)}{match.group(3)}"
+                        else:
+                            value = "n/a"
                     
                     # AMD solving
                     elif "ryzen" in value:
@@ -108,6 +114,18 @@ class TransformPipeline:
                         
                         if match:
                             value = 'amd ' f"ryzen {match.group(1)} {match.group(2)}{match.group(3)}"
+                        else:
+                            value = "n/a"
+                            
+                    elif "amd" in value:
+                        pattern = re.compile(r'(amd)\s*([a-z]{3,4})\s*(\d{3,4})')
+                        
+                        match = pattern.search(value)
+                        
+                        if match:
+                            value = 'amd ' + f"{match.group(2)} {match.group(3)}"
+                        else:
+                            value = "n/a"
                             
                     # Snapdragon solving
                     elif "snapdragon" in value:
@@ -122,7 +140,9 @@ class TransformPipeline:
                         # Substitute the pattern in the input string using re.sub
                         value = re.sub(pattern, replace_with_hyphens, value)
                         
-                    value = value.split('(')[0].strip()
+                    
+                        
+                value = value.split('(')[0].split('(')[0].strip()
                     
                 self.adapter['cpu'] = value
             except Exception as e:
@@ -133,8 +153,6 @@ class TransformPipeline:
             try:
                 # Get the VGA field value
                 value = self.adapter.get('vga')
-                if value == "n/a":
-                    return
                 
                 # Basic cleaning steps
                 value = re.sub(r'[^\x20-\x7E]|®|™|integrated|gpu', ' ', value, flags=re.IGNORECASE)              
@@ -154,7 +172,8 @@ class TransformPipeline:
                     value = 'n/a'
                 else:
                     if any([keyword in value for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
-                        for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia', 'intel iris xe', 'graphics']:
+                        for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia',
+                                        'intel iris xe', 'graphics', 'vga:', 'vga -', ':']:
                             value = value.replace(removal, '')
                             value = ' '.join(value.split())
                         
@@ -167,18 +186,26 @@ class TransformPipeline:
                         
                         if 'geforce' in value:
                             value = value[value.index('geforce'):]
+                        elif 'generation' in value:
+                            value = value + ' laptop gpu'
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
-                                                               'intel arc', 'adreno', 'onboard', 'on board', 'uma',]]):
+                                                               'intel arc', 'adreno', 'onboard', 'on board', 'uma', ' intel iris',]]):
                         value = "n/a"
                     elif any([keyword in value for keyword in ['amd', 'radeon']]):
                         value = value.replace('amd', '')
+                        
+                        if '-' in value:
+                            value = value.split('-')[1]
                         
                         if 'vega' in value:
                             value = "n/a"
                         elif not 'rx' in value:
                             value = "n/a"
-                    
+                    else:
+                        value = "n/a"
+                        
+                value = value.split("ti")[0]
                 value = value.strip()
                 
                 self.adapter['vga'] = value
@@ -191,13 +218,19 @@ class TransformPipeline:
             try:
                 # Get the RAM amount field value
                 value = self.adapter.get('ram_amount')
-                if value == "n/a":
-                    return
                 
                 search_value = re.search(r'\d+\s?gb', value)
                 if search_value:
                     value = search_value.group()
                     value = int(value.split('gb')[0])
+                elif self.adapter.get('source') == 'hacom' or self.adapter.get('source') == 'laptopaz': 
+                    if re.search(r'\d+\s?g', value):
+                        value = re.search(r'\d+\s?g', value).group()
+                        value = int(value.split('g')[0])
+                        if value == 316:
+                            value = 16
+                else:
+                    value = "n/a"    
                     
                 self.adapter['ram_amount'] = value
             except Exception as e:
@@ -209,12 +242,14 @@ class TransformPipeline:
             try:
                 # Get the RAM type field value
                 value = self.adapter.get('ram_type')
-                if value == "n/a":
-                    return
+                
                 search_value = re.search(r'ddr+\d', value)
                 if search_value:
                     value = search_value.group()
-                
+                elif '3200' in value:
+                    value = 'ddr4'
+                elif '7467' in value or '5600' in value:
+                    value = 'ddr5'
                 else: 
                     value = "n/a"
                 
@@ -228,8 +263,6 @@ class TransformPipeline:
             try:
                 # Get the storage amount field value
                 value = self.adapter.get('storage_amount')
-                if value == "n/a":
-                    return
                 
                 value = ''.join(value.split())
                 
@@ -240,6 +273,8 @@ class TransformPipeline:
                         value = int(value.split('tb')[0]) * 1024
                     else:
                         value = int(value.split('gb')[0])
+                else:
+                    value = "n/a"
                 
                 self.adapter['storage_amount'] = value
             except Exception as e:
@@ -251,20 +286,20 @@ class TransformPipeline:
             try:
                 # Get the storage type field value
                 value = self.adapter.get('storage_type')
-                if value == "n/a":
-                    return
                 
                 if any(x in value for x in ["ssd", "pcie"]) and "hdd" in value:
                     if min(value.index(x) for x in ["ssd", "pcie"] if x in value) < value.index("hdd"):
                         value = "ssd"
                     else:
                         value = "hdd"
-                elif any(x in value for x in ["ssd", "pcie"]):
+                elif any(x in value for x in ["ssd", "pcie", "pci", "m.2", "nvme"]):
                     value = "ssd"
                 elif "hdd" in value:
                     value = "hdd"
                 elif "emmc" in value:
                     value = "emmc"
+                else:
+                    value = "n/a"
                 
                 self.adapter['storage_type'] = value
             except Exception as e:
@@ -277,17 +312,9 @@ class TransformPipeline:
                 # Get the webcam resolution field value
                 value = self.adapter.get('webcam_resolution')
                 if value == "n/a":
-                    return
-                
-                value = ''.join(value.split())
-
-                if any(term in value for term in ['qhd', '2k', '1440p', '2560x1440']):
-                    value = 'qhd'
-                elif any(term in value for term in ['fhd', '1080p', '1920x1080']):
-                    value = 'fhd'
-                elif any(term in value for term in ['hd', '720p', '1280x720']):
-                    value = 'hd'
-                
+                    value = "no"
+                else:
+                    value = "yes"
                 self.adapter['webcam_resolution'] = value
             except Exception as e:
                 print("Error in webcam resolution transformation:", e)
@@ -298,8 +325,6 @@ class TransformPipeline:
             try:
                 # Get the screen size field value
                 value = self.adapter.get('screen_size')
-                if value == "n/a":
-                    return
                 
                 value = value.replace(',', '.')
                 
@@ -307,7 +332,8 @@ class TransformPipeline:
                 
                 if value:
                     value = float(value.group(1))
-                
+                else:
+                    value = "n/a"
                 self.adapter['screen_size'] = value
             except Exception as e:
                 print("Error in screen size transformation:", e)
@@ -318,13 +344,11 @@ class TransformPipeline:
             try:
                 # Get the screen resolution field value
                 value = self.adapter.get('screen_resolution')
-                if value == "n/a":
-                    return
                 
                 value = ''.join(value.split())
                 value = value.replace('*', 'x')
                 
-                search_value = re.search(r'(\d{3,4})\s*x\s*(\d{3,4})', value)
+                search_value = re.search(r'(\d{3,4})\s*[×xXby]\s*(\d{3,4})', value)
                 if search_value:
                     width, height = sorted(map(int, search_value.groups()), reverse=True)
                     value = f"{width}x{height}"
@@ -340,6 +364,7 @@ class TransformPipeline:
                         '8k': 7680,        # 8K Ultra HD
                         'fullhd+': 1920,   # Full HD+ with 16:10 ratio
                         'wuxga': 1920,     # WUXGA with 16:10 ratio
+                        'uhd+': 3840,      # UHD+ 16:10 ratio
                     }
 
                     ratio_match = re.search(r'(\d+):(\d+)', value)
@@ -359,6 +384,8 @@ class TransformPipeline:
                             
                             value = f"{width}x{height}"
                             break  # Exit loop after finding the first matching resolution
+                        else:
+                            value = "n/a"
 
                 
                 self.adapter['screen_resolution'] = value
@@ -371,8 +398,6 @@ class TransformPipeline:
             try:
                 # Get the screen refresh rate field value
                 value = self.adapter.get('screen_refresh_rate')
-                if value == "n/a":
-                    return
                 
                 invalid_vals = ["đang cập nhật", "hãng không công bố"]
                 if any(invalid_val in value for invalid_val in invalid_vals):
@@ -382,6 +407,8 @@ class TransformPipeline:
                 if search_value:
                     value = search_value.group()
                     value = int(value.split('hz')[0])
+                else: 
+                    value = "n/a"
                 
                 self.adapter['screen_refresh_rate'] = value
             except Exception as e:
@@ -414,15 +441,15 @@ class TransformPipeline:
             try:
                 # Get the battery capacity field value
                 value = self.adapter.get('battery_capacity')
-                if value == "n/a":
-                    return
                 
                 value = value.replace(',', '.')
-                value = re.sub(r'[()]', '', value)
-                
-                search_value = re.search(r'(\d+(?:\.\d+)?)\s*(wh|battery)', value)
+                value = re.sub(r'[():]|nguồn', '', value).strip()
+
+                search_value = re.search(r'(\d+(?:\.\d+)?)\s*[-]?(w(?:att)?|wh|battery)', value, re.IGNORECASE)
                 if search_value:
-                    value = float(search_value.group().split('wh')[0].split('battery')[0])
+                    value = float(search_value.group(1))
+                else:
+                    value = "n/a"
                 
                 self.adapter['battery_capacity'] = value
             except Exception as e:
@@ -434,15 +461,16 @@ class TransformPipeline:
             try:
                 # Get the number of battery cells field value
                 value = self.adapter.get('battery_cells')
-                if value == "n/a":
-                    return
                 
-                search_value = re.search(r'(\d+)[ -]?cell(?:s)?|(\d+)\s+cells|chân\s*(\d+)', value)
+                search_value = re.search(r'(\d+)[ -]?(?:cell(?:s)?|pin(?:s)?)|(\d+)\s+cells|chân\s*(\d+)', value)
                 
                 if search_value:
                     value = int(next(g for g in search_value.groups() if g is not None))
-                elif "integrated" in value:
+                    if value > 10:
+                        value = 'n/a'
+                else:
                     value = "n/a"
+                
                 
                 self.adapter['battery_cells'] = value
             except Exception as e:
@@ -471,17 +499,24 @@ class TransformPipeline:
                     na_exit()
                     return
                 
-                extracted_numbers = numbers[:3]
-                hyphenated_number = re.search(r'-(\d+\.?\d*)', value)
-                if hyphenated_number:
-                    extracted_numbers[-1] = hyphenated_number.group(1)
+                if any(float(num) > 1000 for num in numbers):
+                    na_exit()
+                    return
                 
-                extracted_numbers = [float(num) for num in extracted_numbers]
-                extracted_numbers = sorted(extracted_numbers, reverse=True)
+                numbers = [float(num) for num in numbers]
+                numbers = set(numbers)
+                extracted_numbers = sorted(numbers, reverse=True)[:3]
+                
+                # hyphenated_number = re.search(r'-(\d+\.?\d*)', value)
+                # if hyphenated_number:
+                #     extracted_numbers[-1] = hyphenated_number.group(1)
+                
+                # extracted_numbers = [float(num) for num in extracted_numbers]
+                # extracted_numbers = sorted(extracted_numbers, reverse=True)
                 
                 self.adapter['width'] = round(extracted_numbers[0] if extracted_numbers[0] < 100 else extracted_numbers[0] / 10, 2)
                 self.adapter['depth'] = round(extracted_numbers[1] if extracted_numbers[1] < 100 else extracted_numbers[1] / 10, 2)
-                self.adapter['height'] = round(extracted_numbers[2] if extracted_numbers[2] < 3  else extracted_numbers[2] / 10, 2)
+                self.adapter['height'] = round(extracted_numbers[2] if extracted_numbers[2] < 4.5  else extracted_numbers[2] / 10, 2)
                 
                 del self.adapter['size']
             except Exception as e:
@@ -492,8 +527,6 @@ class TransformPipeline:
             """Transforms the weight field to a standardized format."""
             try:
                 value = self.adapter.get('weight')
-                if value == "n/a":
-                    return
             
                 value = value.replace(',', '.')
             
@@ -503,7 +536,12 @@ class TransformPipeline:
                 if value_kg:
                     value = float(value_kg.group(1))
                 elif value_g:
-                    value = float(value_g.group(1)) / 1000
+                    if float(value_g.group(1)) > 500:
+                        value = float(value_g.group(1)) / 1000
+                    else:
+                        value = float(value_g.group(1))
+                else:
+                    value = "n/a"
                     
                 self.adapter['weight'] = value
             except Exception as e:
@@ -525,10 +563,7 @@ class TransformPipeline:
                     del self.adapter['connectivity']
                     return
             
-                def count_number_usb(value, get_a=True):
-                    pattern_a = r'\b(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b'
-                    pattern_c = r'\b(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b'
-                    
+                def count_number_usb(value):
                     if re.sub(r'^\s*[•-].*\n?', '', value, flags=re.MULTILINE) != '':
                         value = re.sub(r'^\s*[•-].*\n?', '', value, flags=re.MULTILINE)
                     
@@ -536,33 +571,37 @@ class TransformPipeline:
                         value = re.sub(r'\([^()]*\)', '', value)
                     
                     value = re.split(r'[\n,]', value)
-                    count = 0
+                    
+                    pattern_a = r'\b(\d+)\s*x\s*.*?(type[- ]?a|standard[- ]?a|usb[- ]?a|usb[- ]?3\.2|usb[- ]?3\.0)\b'
+                    pattern_c = r'\b(\d+)\s*x\s*.*?(type[- ]?c|standard[- ]?c|thunderbolt|usb[- ]?c)\b'
+                    
+                    count_a = 0
+                    count_c = 0
+                    
+                    
                     for line in value:
-                        if get_a:
-                            if re.search(pattern_a, line) and not re.search(pattern_c, line):
-                                line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
-                                val = line.split()[0]
-                                if val[-1] == 'x': val = val[:-1]
-                        
-                                if val.isnumeric():
-                                    count += int(val)
-                                else:
-                                    count += 1
-                        else:
-                            if re.search(pattern_c, line):
-                                line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
-                                val = line.split()[0]
-                                if val[-1] == 'x': val = val[:-1]
-                        
-                                if val.isnumeric():
-                                    count += int(val)
-                                else:
-                                    count += 1
+                        if re.search(pattern_c, line):
+                            line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
+                            val = line.split()[0]
+                            if val[-1] == 'x': val = val[:-1]
                     
-                    return count
+                            if val.isnumeric():
+                                count_c += int(val)
+                            else:
+                                count_c += 1
+                        elif re.search(pattern_a, line) and not re.search(pattern_c, line):
+                            line = re.sub(r'^[^a-zA-Z0-9]+', '', line)
+                            val = line.split()[0]
+                            if val[-1] == 'x': val = val[:-1]
                     
-                self.adapter['number_usb_a_ports'] = count_number_usb(value, get_a=True)
-                self.adapter['number_usb_c_ports'] = count_number_usb(value, get_a=False)
+                            if val.isnumeric():
+                                count_a += int(val)
+                            else:
+                                count_a += 1
+                                
+                    return count_a, count_c
+                    
+                self.adapter['number_usb_a_ports'], self.adapter['number_usb_c_ports'] = count_number_usb(value)
                 
                 def has_port(value, pattern):
                     if value:
@@ -584,14 +623,15 @@ class TransformPipeline:
             """Transforms the default OS field to a standardized format."""
             try:
                 value = self.adapter.get('default_os')
-                if value == "n/a":
-                    return
-                
-                if "noos" in value.lower():
-                    value = "n/a"
                 
                 if self.adapter.get('brand') == 'apple':
                     value = 'macos'
+                elif "no" in value:
+                    value = "n/a"
+                elif "chrome" in value:
+                    value = "chrome os"
+                elif any(_ in value for _ in ["ubuntu", "linux", "free"]):
+                    value = "linux"
                 else:
                     for removal in ['single language', 'sl', '64', 'bit', 'sea', 'microsoft', 'office']:
                         value = value.replace(removal, '')
@@ -612,6 +652,8 @@ class TransformPipeline:
                             break
                     if 'windows' in value:
                         value = value[value.index('windows'):]
+                    else:
+                        value = "n/a"
                 
                 self.adapter['default_os'] = value
             except Exception as e:
@@ -624,9 +666,6 @@ class TransformPipeline:
                 value = self.adapter.get('warranty')
                 if type(value) == list:
                     value = " ".join([i.replace('\n', '').strip() for i in value])
-                    
-                if value == "n/a":
-                    return
                 
                 match = re.search(r'(\d+)\s*(tháng|năm|years?)', value)
                 if match:
@@ -637,7 +676,8 @@ class TransformPipeline:
                     else:  # 'năm' or 'year(s)'
                         value = number * 12
                 else:
-                    value = "aaaaaaaaaaa"
+                    value = "n/a"
+
                 
                 self.adapter['warranty'] = value
             except Exception as e:

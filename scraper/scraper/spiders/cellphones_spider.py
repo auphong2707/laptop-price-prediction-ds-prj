@@ -74,6 +74,7 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
                 res = res.replace(removal, '')
 
             res = re.sub(r'\([^()]*\)', '', res)
+            res = res.split("core")[0]
             search_value = re.search('(?<!\w)(\d+)gb(?!\w)', res)
             if search_value:
                 res = res.split(search_value.group())[0]

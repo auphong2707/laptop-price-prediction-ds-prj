@@ -3,15 +3,15 @@ from requests import Response
 from .base_laptopshop_spider import BaseLaptopshopPageSpider
 
 class Laptop88Spider(BaseLaptopshopPageSpider):
-    name = "laptop88"
+    name = "laptop88_spider"
     allowed_domains = ["laptop88.vn"]
-    start_urls = [
-        "https://laptop88.vn/laptop-moi.html",
-        ] + [
-        f"https://laptop88.vn/laptop-moi.html?page={i}" for i in range(2, 15)
-        ]
+    start_urls = ["https://laptop88.vn/laptop-moi.html"]
     
     product_site_css = 'h2.product-title a::attr(href)'
+    page_css = '.paging a::attr(href)' 
+    selenium_product_request = True
+    # show_technical_spec_button_xpath = "//div[@class='thongsokythuat']/a[@class='button-box']"
+    
     source = 'laptop88'
     
 
@@ -59,18 +59,24 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Returns True if the response is valid to be scraped.
         """
-        number_of_stores = response.xpath("//div[@class='product_store']//span[@id='total-store']/text()").get()
-        if number_of_stores and int(number_of_stores) == 0:
-            return False
+        valid = True
+        # number_of_stores = response.xpath("//div[@class='product_store']//span[@id='total-store']/text()").get()
+        # if number_of_stores and int(number_of_stores) == 0:
+        #     valid = False
+        
         product_name = response.xpath("//h2[@class='name-product']/text()").get().lower()
         for _ in ["ipad", "tablet", "cũ", "new outlet"]:
             if _ in product_name:
-                return False
+                valid = False
         
         price = response.xpath("//div[@class='price js-price-config js-price-buildpc']/text()").get().lower()
         if "liên hệ" in price or "call" in price:
-            return False
-        return True
+            valid = False
+            
+        if not valid:
+            print("Skipped: ", product_name)
+        
+        return valid
     
     # [PARSE FEATURES SECTION: START]
     # Brand
@@ -97,8 +103,23 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the name of the laptop from the response.
         """
         try:
-            product_name = response.xpath("//h2[@class='name-product']/text()").get().lower()
-            return product_name if product_name else "n/a"
+            res = response.xpath("//h2[@class='name-product']/text()").get().lower()
+            for removal in ['laptop gaming ', 'laptop ', 'gray', 'black', 'silver', 'iceblue', '2 in 1']:
+                res = res.replace(removal, '')
+
+            res = re.sub(r'\([^()]*\)', '', res)
+            if ']' in res:
+                res = res.split(']')[1]
+            
+            res = res.split('- ')[0].split('|')[0].split('/')[0]
+            
+            if "macbook" in res:
+                res = "apple " + ' '.join(res.split()[:2] + res.split()[-1:])
+            
+            if not res[-1].isalnum():
+                res = res[:-1]
+            
+            return res.strip()
         except:
             return "n/a"
     
@@ -195,7 +216,10 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the screen refresh rate in Hz from the response.
         """
-        screen = self.get_scoped_values(response, ['Display', 'Độ phân giải:', 'Màn hình'])
+        screen = self.get_scoped_values(response, ['Display', 'Độ phân giải:', 'Màn hình', 'Hiển thị', 
+                                                   'Kích cỡ màn hình', 'Kích thước màn hình', 'MÀN HÌNH HIỂN THỊ',
+                                                   'Màn hình - Monitor', 'Screen size', 'Size màn hình',
+                                                   'Màn Hình', 'Màn hình:'])
         return screen if screen else 'n/a'
     
     def parse_screen_brightness(self, response: Response): 
@@ -210,14 +234,14 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the battery capacity in Whr from the response.
         """
-        battery = self.get_scoped_values(response, ['Pin', 'Battery'])
+        battery = self.get_scoped_values(response, ['Pin', 'Battery', 'Kiểu Pin', 'Pin:'])
         return battery if battery else "n/a"
     
     def parse_battery_cells(self, response: Response):
         """
         Extracts the number of battery cells from the response.
         """
-        battery = self.get_scoped_values(response, ['Pin', 'Battery'])
+        battery = self.get_scoped_values(response, ['Pin', 'Battery', 'Kiểu Pin', 'Pin:'])
         return battery if battery else "n/a"
     
     # Size
@@ -225,7 +249,8 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the size of the laptop in cm from the response.
         """
-        size = self.get_scoped_values(response, ['Kích thước', 'Dimensions', 'Trọng lượng'])
+        size = self.get_scoped_values(response, ['Kích thước', 'Dimensions', 'Trọng lượng', 
+                                                 'Kích thước & trọng lượng', 'Kích thước (Dài x Rộng x Cao)'])
         return size if size else "n/a"
     
     # Weight
@@ -233,7 +258,9 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the weight of the laptop in kg from the response.
         """
-        weight = self.get_scoped_values(response, ['Trọng lượng', 'Weight'])
+        weight = self.get_scoped_values(response, ['Trọng lượng', 'Weight', 'Cân nặng', 'Trọng Lượng', 
+                                                   'Kích thước & trọng lượng', 'Trọng lượng (kg)', 
+                                                   'Trọng lượng:',])
         return weight if weight else "n/a"
 
     # Connectivity
@@ -241,7 +268,10 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         """
         Extracts the connectivity options of the laptop from the response.
         """
-        res = self.get_scoped_values(response, ['Cổng kết nối', 'Kết nối'])
+        res = self.get_scoped_values(response, ['Cổng kết nối', 'Kết nối', 'Cổng giao tiếp', 'Cổng Kết Nối	'
+                                                'Standard Ports', 'Cổng Kết Nối', 'Cổng giao tiếp	',
+                                                'CỔNG KẾT NỐI (I/O PORT)', 'Cổng kết nối:	'
+                                                'Kết nối USB', 'Kết nối HDMI/VGA', 'Tai nghe'])
         return res if res else "n/a"
         
     # Operating System
@@ -250,7 +280,7 @@ class Laptop88Spider(BaseLaptopshopPageSpider):
         Extracts the default operating system of the laptop from the response.
         Example: Windows, Linux, etc.
         """
-        os = self.get_scoped_values(response, ['Hệ điều hành', 'Operating System'])
+        os = self.get_scoped_values(response, ['Hệ điều hành', 'Operating System', 'Hệ điều hành:'])
         return os if os else 'n/a'
     
     # Warranty

@@ -19,7 +19,8 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
                 "//div[@id='fancybox-spec']//table[contains(@class, 'tb-product-spec')]//tr//td[text()='{}']/following-sibling::td//text()".format(name)
                 for name in names
             ] + [
-                "//div//strong[contains(text(), {})]//text()".format(name) for name in names
+                "//div//strong[contains(text(), '{}')]/following-sibling::text()[1]".format(name)
+                for name in names
             ]
 
         for value in possibile_values:
@@ -231,6 +232,7 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
     
     def parse_connectivity(self, response):
         connectivity_text = self.get_scoped_value(response, ['Cổng giao tiếp'])
+        connectivity_text = connectivity_text[:len(connectivity_text) // 2]
         return connectivity_text if connectivity_text else 'n/a'
 
     def parse_battery_capacity(self, response):
@@ -271,5 +273,13 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
     
     def parse_screen_refresh_rate(self, response):
         screen_text = self.get_scoped_value(response, ['Tần số quét', 'Công nghệ màn hình'])
-        print(screen_text)
         return screen_text if screen_text else 'n/a'
+    
+    # Webcam
+    def parse_webcam_resolution(self, response: Response): 
+        """
+        Extracts the webcam resolution from the response.
+        Example: HD, FHD, 4K.
+        """
+        res = self.get_scoped_value(response, ["Webcam"])
+        return res if res else "n/a"

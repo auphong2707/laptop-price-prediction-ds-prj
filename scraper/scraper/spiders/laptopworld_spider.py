@@ -31,6 +31,13 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
                 return '\n'.join(scope)
             
         return None
+    
+    def yield_condition(self, response):
+        name = response.xpath('//h1/text()').get().lower()
+        if any(_ in name for _ in ['balo', 'tai nghe', 'dock', 'máy chơi game']):
+            print(f"Skipped: {name}")
+            return False
+        return True
 
     # [PARSE FEATURES SECTION: START]
     # Brand
