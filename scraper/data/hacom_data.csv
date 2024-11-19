@@ -1,258 +1,262 @@
 source,brand,name,cpu,vga,ram_amount,ram_type,storage_amount,storage_type,webcam_resolution,screen_size,screen_resolution,screen_refresh_rate,screen_brightness,battery_capacity,battery_cells,weight,default_os,warranty,price,width,depth,height,number_usb_a_ports,number_usb_c_ports,number_hdmi_ports,number_ethernet_ports,number_audio_jacks
-hacom,acer,acer aspire 5 a515-58p-35eu,intel core i3-1305u,n/a,8,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,9999000,36.29,36.29,23.75,0,0,0,0,0
+hacom,acer,acer aspire 5 a515-58p-35eu,intel core i3-1305u,n/a,8,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,9999000,36.29,23.75,1.8,3,0,0,0,0
 hacom,acer,acer aspire lite al14-51m-59bn,intel core i5-1235u,n/a,16,ddr5,512,ssd,no,14.0,1920x1080,n/a,300,n/a,n/a,n/a,windows 11 home,12,13599000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,asus,asus expertbook b1402cva-nk0062w,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.46,windows 11 home,24,13199000,32.69,32.69,21.45,1,0,1,0,0
-hacom,asus,asus vivobook x1404za-nk389w,intel core i7-1255u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.4,windows 11 home,24,14799000,32.49,32.49,3.25,1,0,1,0,1
-hacom,asus,asus vivobook a1405va-km257w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,n/a,50.0,3,1.6,windows 11 home,24,16799000,31.71,31.71,3.17,1,0,1,0,1
-hacom,asus,asus vivobook e1404fa-nk177w,amd ryzen 5 7520u,n/a,16,ddr5,512,n/a,yes,14.0,1920x1080,60,250,42.0,3,1.38,windows 11 home,24,11899000,32.45,32.45,3.25,n/a,n/a,n/a,n/a,n/a
-hacom,asus,asus vivobook x1504za-nj582w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,45.0,n/a,1.7,windows 11 home,24,9499000,42.0,42.0,4.2,1,0,1,0,0
-hacom,asus,asus vivobook e1504fa-nj454w,amd ryzen 5 7520u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.8,windows 11 home,24,12099000,n/a,n/a,n/a,2,0,1,0,1
-hacom,asus,asus vivobook x1504za-nj517w,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows,24,13699000,35.97,35.97,3.6,1,0,1,0,1
-hacom,asus,asus vivobook  14 oled a1405va-km095w,intel core i5-13500h,n/a,16,ddr4,512,n/a,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,16599000,31.71,31.71,3.17,1,0,1,0,1
+hacom,asus,asus expertbook b1402cva-nk0062w,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.46,windows 11 home,24,13199000,32.69,21.45,1.99,0,1,1,0,0
+hacom,asus,asus vivobook x1404za-nk389w,intel core i7-1255u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.4,windows 11 home,24,14799000,32.49,21.39,1.28,0,1,1,0,1
+hacom,asus,asus vivobook a1405va-km257w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,n/a,50.0,3,1.6,windows 11 home,24,16799000,31.71,22.2,1.99,0,1,1,0,1
+hacom,asus,asus vivobook e1404fa-nk177w,amd ryzen 5 7520u,n/a,16,ddr5,512,n/a,yes,14.0,1920x1080,60,250,42.0,3,1.38,windows 11 home,24,11899000,32.45,21.39,1.79,n/a,n/a,n/a,n/a,n/a
+hacom,asus,asus vivobook x1504za-nj582w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,45.0,n/a,1.7,windows 11 home,24,9499000,42.0,3.0,1.0,0,1,1,0,0
+hacom,asus,asus vivobook e1504fa-nj454w,amd ryzen 5 7520u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.8,windows 11 home,24,12099000,n/a,n/a,n/a,1,2,1,0,1
+hacom,asus,asus vivobook x1504za-nj517w,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows,24,13699000,35.97,23.25,1.42,0,1,1,0,1
+hacom,asus,asus vivobook  14 oled a1405va-km095w,intel core i5-13500h,n/a,16,ddr4,512,n/a,yes,14.0,2880x1800,90,600,50.0,3,1.6,windows 11 home,24,16599000,31.71,22.2,1.99,0,1,1,0,1
 hacom,dell,dell inspiron 3520,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,3,1.65,windows 11 home,12,13899000,n/a,n/a,n/a,0,0,1,0,1
-hacom,acer,acer gaming aspire 5 a515-58gm-598j,intel core i5-13420h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,50.0,3,n/a,windows 11 home,12,18399000,36.1,36.1,23.7,0,0,0,0,0
-hacom,asus,asus vivobook a1505va-ma468w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,600,50.0,3,1.7,windows 11 home,24,17599000,35.68,35.68,2.28,1,0,1,0,0
-hacom,asus,asus zenbook ux3405ma-pp588w,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,4,1.2,windows 11 home,24,25899000,31.24,31.24,3.12,0,1,1,0,1
-hacom,asus,asus vivobook x1404za-nk386w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.4,windows 11 home,24,9399000,32.49,32.49,3.25,1,0,1,0,1
-hacom,hp,hp 14-ep0110tu,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,18999000,32.37,32.37,3.24,2,0,1,0,1
+hacom,acer,acer gaming aspire 5 a515-58gm-598j,intel core i5-13420h,geforce rtx 2050,16,ddr4,512,ssd,yes,15.6,1920x1080,144,250,50.0,3,n/a,windows 11 home,12,18399000,36.1,23.7,1.79,0,2,0,0,0
+hacom,asus,asus vivobook a1505va-ma468w,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,600,50.0,3,1.7,windows 11 home,24,17599000,35.68,22.76,1.99,0,1,1,0,0
+hacom,asus,asus zenbook ux3405ma-pp588w,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,4,1.2,windows 11 home,24,25899000,31.24,22.01,1.23,0,1,1,0,1
+hacom,asus,asus vivobook x1404za-nk386w,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,42.0,3,1.4,windows 11 home,24,9399000,32.49,21.39,1.28,0,1,1,0,1
+hacom,hp,hp 14-ep0110tu,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,18999000,32.37,21.5,1.79,0,2,1,0,1
 hacom,dell,dell inspiron 3530,intel core i7-1355u,n/a,16,ddr4,1024,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,21299000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 14 7440 2 in 1,intel core 7 150u,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,250,64.0,4,n/a,windows 11 home,n/a,30999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,dell,ai dell inspiron 14 5440,cpu intel core 5 120u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,250,54.0,4,1.56,windows 11 home,12,21199000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,ai dell inspiron 14 5440,cpu intel core 7 150u,n/a,16,ddr5,512,n/a,yes,14.0,1920x1200,n/a,250,54.0,4,1.56,windows 11 home,12,23699000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 3530,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,n/a,12,20199000,n/a,n/a,n/a,0,0,1,0,0
-hacom,dell,dell inspiron 14 7440 2 in 1,intel core 5 120u,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,250,54.0,4,1.74,windows,12,28999000,31.4,31.4,22.62,0,0,1,0,0
+hacom,dell,dell inspiron 14 7440 2 in 1,intel core 5 120u,n/a,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,250,54.0,4,1.74,windows,12,28999000,31.4,22.62,1.89,0,0,1,0,0
 hacom,dell,dell inspiron 16 5640,intel core 7 150u,geforce mx570a,16,ddr5,1024,ssd,yes,16.0,2560x1600,n/a,300,54.0,4,1.9,windows 11 home,12,30899000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,ai dell inspiron 14 5440,cpu intel core 5 120u,geforce mx570a,16,ddr5,512,ssd,no,14.0,n/a,n/a,300,n/a,n/a,n/a,windows 11 home,12,24599000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell inspiron 16 5640,cpu intel core 7 150u,n/a,16,ddr5,1024,ssd,no,16.0,1920x1200,n/a,250,n/a,n/a,n/a,windows 11 home,12,25399000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp envy x360 14-fc0084tu,intel core ultra 7 155u,n/a,32,ddr5,1024,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,32699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,msi,msi thin 15,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,53.0,n/a,1.85,windows,24,17489000,35.9,35.9,25.4,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo thinkbook 16 gen 6,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,71.0,4,1.7,windows 11 home,24,18499000,35.6,35.6,25.35,0,1,0,0,0
+hacom,msi,msi thin 15,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,53.0,n/a,1.85,windows,24,17489000,35.9,25.4,2.15,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo thinkbook 16 gen 6,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,71.0,4,1.7,windows 11 home,24,18499000,35.6,25.35,1.75,0,1,0,0,0
 hacom,hp,hp 15-fd1045tu,cpu intel core 5 120u,n/a,16,ddr4,512,n/a,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,17299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell xps 13 9340,intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,13.4,2560x1600,120,500,55.0,3,1.24,windows 11 home,12,56199000,29.53,29.53,19.9,0,2,0,0,0
-hacom,hp,hp pavilion x360 14-ek2013tu,intel core 7-150u intel core intel core cpu intel core 7-150u intel core,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,300,43.0,3,1.51,windows 11 home,12,24799000,32.2,21.0,1.99,0,0,0,0,0
+hacom,dell,dell xps 13 9340,intel core ultra 7 155h,n/a,16,ddr5,16,ssd,yes,13.4,2560x1600,120,500,55.0,3,1.24,windows 11 home,12,56199000,29.53,19.9,1.53,0,2,0,0,0
+hacom,hp,hp pavilion x360 14-ek2013tu,intel core 7-150u intel core intel core cpu intel core 7-150u intel core,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,300,43.0,3,1.51,windows 11 home,12,24799000,32.2,21.0,1.99,0,1,0,0,0
 hacom,hp,hp pavilion x360 14-ek2017tu,cpu intel core 5-120u,n/a,16,ddr4,512,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,21799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo ideapad 1 14alc7,amd ryzen 5 5625u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,250,42.0,n/a,1.4,windows 11 home,24,10999000,n/a,n/a,n/a,0,0,0,0,0
-hacom,lenovo,lenovo thinkpad l14 gen 5,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,46.5,n/a,1.4,n/a,24,23199000,31.37,31.37,31.37,2,4,1,1,1
-hacom,lenovo,lenovo thinkbook 14 gen 7,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,45.0,n/a,1.38,n/a,24,19499000,31.35,31.35,31.35,2,4,1,1,1
-hacom,lenovo,lenovo thinkbook 14 gen 6,intel core i5-13420h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,60.0,n/a,1.38,n/a,24,17999000,31.35,31.35,31.35,0,2,1,1,1
-hacom,lenovo,lenovo ideapad slim 3 15abr8,amd ryzen 7 7730u,n/a,12,ddr4,512,ssd,yes,15.6,1920x1080,n/a,300,47.0,n/a,1.62,windows 11 home,24,13999000,35.93,35.93,35.93,n/a,n/a,n/a,n/a,n/a
-hacom,lg,ai lg gram 14z90s-g.ah75a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,350,n/a,n/a,1.12,windows 11 home,12,30499000,31.2,31.2,21.43,2,0,1,0,0
-hacom,lg,lg gram 14z90s-g.ah55a5,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,350,n/a,n/a,1.12,windows 11 home,12,28299000,31.2,31.2,21.43,2,0,1,0,0
-hacom,asus,asus vivobook s16 oled s5606ma-mx051w,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,3200x2000,120,400,75.0,4,1.5,windows 11 home,24,25999000,35.36,35.36,3.54,0,2,1,0,1
-hacom,lenovo,ai lenovo ideapad slim 5 16imh9,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,2048x1280,120,400,57.0,n/a,1.82,windows 11 home,24,20999000,35.6,35.6,35.6,2,2,1,0,1
-hacom,hp,hp 15-fq5231tu,intel core i3-1215u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.69,windows 11 home,12,9499000,35.85,24.2,1.79,0,0,0,0,0
-hacom,hp,hp pavilion 15-eg3095tu,intel core i5-1335u,n/a,4,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,16399000,36.02,36.02,3.6,2,0,1,0,1
+hacom,lenovo,lenovo ideapad 1 14alc7,amd ryzen 5 5625u,n/a,16,ddr4,16,ssd,yes,14.0,1920x1080,n/a,250,42.0,n/a,1.4,windows 11 home,24,10999000,n/a,n/a,n/a,0,1,0,0,0
+hacom,lenovo,lenovo thinkpad l14 gen 5,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,46.5,n/a,1.4,n/a,24,23199000,31.37,22.6,1.89,2,4,1,1,1
+hacom,lenovo,lenovo thinkbook 14 gen 7,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,45.0,n/a,1.38,n/a,24,19499000,31.35,22.4,1.69,2,4,1,1,1
+hacom,lenovo,lenovo ideapad slim 3 15abr8,amd ryzen 7 7730u,n/a,12,ddr4,512,ssd,yes,15.6,1920x1080,n/a,300,47.0,n/a,1.62,windows 11 home,24,13999000,35.93,23.5,1.79,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo thinkbook 14 gen 6,intel core i5-13420h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,60.0,n/a,1.38,n/a,24,17999000,31.35,22.4,1.69,0,2,1,1,1
+hacom,lg,ai lg gram 14z90s-g.ah75a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,350,n/a,n/a,1.12,windows 11 home,12,30499000,31.2,21.43,1.69,0,2,1,0,0
+hacom,lg,lg gram 14z90s-g.ah55a5,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,350,n/a,n/a,1.12,windows 11 home,12,28299000,31.2,21.43,1.69,0,2,1,0,0
+hacom,asus,asus vivobook s16 oled s5606ma-mx051w,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,3200x2000,120,400,75.0,4,1.5,windows 11 home,24,25999000,35.36,24.69,1.39,0,2,1,0,1
+hacom,lenovo,ai lenovo ideapad slim 5 16imh9,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,2048x1280,120,400,57.0,n/a,1.82,windows 11 home,24,20999000,35.6,25.1,1.69,2,2,1,0,1
+hacom,hp,hp 15-fq5231tu,intel core i3-1215u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.69,windows 11 home,12,9499000,35.85,24.2,1.79,0,1,0,0,0
+hacom,hp,hp pavilion 15-eg3095tu,intel core i5-1335u,n/a,4,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,16399000,36.02,23.4,1.8,0,2,1,0,1
+hacom,dell,dell inspiron 16 5640,intel core i5-1334u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,250,54.0,4,1.9,windows 11 home,12,21599000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,ai dell inspiron 14 5440,n/a,n/a,16,ddr5,1024,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,24799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lg,lg gram pro 16z90sp-k.ah75a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,2880x1800,n/a,n/a,n/a,n/a,1.199,windows 11 home,12,48199000,35.51,35.51,24.23,0,0,1,0,0
+hacom,lg,lg gram pro 16z90sp-k.ah75a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,2880x1800,n/a,n/a,n/a,n/a,1.199,windows 11 home,12,48199000,35.51,24.23,1.68,0,0,1,0,0
 hacom,dell,ai dell inspiron 14 5440,cpu intel core 5 120u,geforce mx570,16,ddr5,1024,ssd,yes,14.0,1920x1200,n/a,300,54.0,4,1.56,windows,12,22399000,n/a,n/a,n/a,0,0,1,0,1
-hacom,lg,ai lg gram 16z90s-g.ah76a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,60,350,n/a,n/a,1.12,windows 11 home,12,42699000,35.51,35.51,24.23,0,0,1,0,0
+hacom,lg,ai lg gram 16z90s-g.ah76a5,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,60,350,n/a,n/a,1.12,windows 11 home,12,42699000,35.51,24.23,1.68,0,0,1,0,0
 hacom,dell,ai dell inspiron 14 5440,cpu intel core 7 150u,geforce mx570,16,ddr5,1024,ssd,yes,14.0,n/a,n/a,300,54.0,4,1.56,windows 11 home,12,27799000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 16 5640,intel core 5 120u,n/a,16,ddr5,1024,ssd,yes,16.0,1920x1200,n/a,250,54.0,4,1.9,windows 11 home,12,22599000,n/a,n/a,n/a,0,0,1,0,1
-hacom,dell,dell inspiron 16 5640,intel core i5-1334u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,250,54.0,4,1.9,windows 11 home,12,21599000,n/a,n/a,n/a,0,0,1,0,1
-hacom,dell,ai dell xps 13 9340,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,13.4,1920x1200,n/a,500,55.0,3,1.17,windows 11 home,12,51199000,29.53,29.53,19.9,0,0,0,0,0
-hacom,hp,hp elitebook 630 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 home,12,25799000,30.31,30.31,2.15,0,0,0,0,0
+hacom,dell,ai dell xps 13 9340,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,13.4,1920x1200,n/a,500,55.0,3,1.17,windows 11 home,12,51199000,29.53,19.9,1.53,0,0,0,0,0
+hacom,asus,asus zenbook ux3405ma-pp151w,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,4,1.2,windows 11 home,24,25199000,31.24,22.01,1.23,0,1,1,0,1
+hacom,hp,hp elitebook 630 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 home,12,25799000,30.31,21.51,1.7,0,0,0,0,0
 hacom,hp,hp probook 440 g10,intel core i5-1335u,n/a,8,ddr4,512,ssd,no,14.0,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,18899000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp elitebook 630 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 home,12,22299000,30.31,30.31,2.15,0,0,0,0,0
-hacom,asus,asus vivobook x1504va-nj070w,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,14899000,35.97,35.97,3.6,1,0,1,0,1
-hacom,asus,asus zenbook ux3405ma-pp151w,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,4,1.2,windows 11 home,24,25199000,31.24,31.24,3.12,0,1,1,0,1
+hacom,hp,hp elitebook 630 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 home,12,22299000,30.31,21.51,1.7,0,0,0,0,0
+hacom,asus,asus vivobook x1504va-nj070w,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,42.0,3,1.7,windows 11 home,24,14899000,35.97,23.25,1.79,0,1,1,0,1
 hacom,msi,msi modern 15 b12mo-625vn,intel core i5-1235u,n/a,8,ddr4,8,ssd,no,15.6,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,24,11989000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,msi,msi modern 15,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,n/a,1.7,windows 11 home,24,12489000,35.9,35.9,35.9,0,1,1,0,0
-hacom,msi,msi modern 15,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,n/a,1.7,windows 11 home,24,12899000,35.9,35.9,35.9,0,1,1,0,0
-hacom,dell,dell vostro 3420,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.0,3,1.49,windows 11 home,12,12399000,32.0,32.0,22.0,0,0,1,0,0
+hacom,msi,msi modern 15,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,n/a,1.7,windows 11 home,24,12489000,35.9,24.1,1.99,0,1,1,0,0
+hacom,msi,msi modern 15,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,n/a,1.7,windows 11 home,24,12899000,35.9,24.1,1.99,0,1,1,0,0
+hacom,dell,dell vostro 3420,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.0,3,1.49,windows 11 home,12,12399000,32.0,22.0,1.9,0,0,1,0,0
 hacom,dell,dell inspiron 3530,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,54.0,4,1.65,windows 11 home,12,19999000,n/a,n/a,n/a,0,0,1,0,0
-hacom,msi,msi thin 15,intel core i7-13620h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,53.0,n/a,1.85,windows,24,18799000,35.9,35.9,25.4,n/a,n/a,n/a,n/a,n/a
+hacom,msi,msi thin 15,intel core i7-13620h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,53.0,n/a,1.85,windows,24,18799000,35.9,25.4,2.15,n/a,n/a,n/a,n/a,n/a
 hacom,asus,asus vivobook a1505va-ma469w,intel core i9-13900h,n/a,16,ddr4,512,ssd,no,n/a,2880x1620,120,600,n/a,n/a,n/a,n/a,24,22149000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2,n/a,16,n/a,256,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,29299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo ideapad 3 14aih8,intel core i5-12450h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1080,n/a,300,47.0,n/a,1.37,windows 11 home,24,13899000,32.43,32.43,32.43,0,2,1,0,1
-hacom,asus,asus expertbook b1402cva-eb1044w,intel core i5-1335u,n/a,16,ddr4,1024,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,windows 11 home,24,13899000,32.69,32.69,2.15,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo ideapad 3 14aih8,intel core i5-12450h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1080,n/a,300,47.0,n/a,1.37,windows 11 home,24,13899000,32.43,21.38,1.79,0,2,1,0,1
+hacom,asus,asus expertbook b1402cva-eb1044w,intel core i5-1335u,n/a,16,ddr4,1024,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,windows 11 home,24,13899000,32.69,21.45,1.29,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell inspiron 3530,intel core i5-1334u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,17299000,n/a,n/a,n/a,0,0,1,0,1
-hacom,acer,acer aspire 5 a515-58m-56yx,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,50.0,3,1.7,windows 11 home,12,14599000,36.29,36.29,36.29,0,0,1,0,1
-hacom,acer,acer swift lite 14 ai sfl14-51m-56hs,intel core ultra 5 125u,n/a,32,ddr5,512,ssd,yes,14.0,1920x1200,60,300,n/a,n/a,1.27,n/a,12,18399000,31.44,31.44,22.19,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire 5 a515-58m-79r7,intel core i7-13620h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,50.0,3,1.7,windows 11 home,12,18599000,36.29,36.29,36.29,0,0,1,0,1
-hacom,acer,acer aspire 5 spin 14 a5sp14-51mtn-78jh,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,n/a,1.6,windows,12,16899000,31.82,31.82,31.82,0,0,1,0,1
-hacom,acer,acer swift x ai sfx14-72g-79uw,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,76.0,4,1.5,windows 11 home,12,52699000,32.28,32.28,32.28,0,0,1,0,1
-hacom,acer,acer swift x ai sfx14-72g-77f9,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,76.0,4,1.5,windows 11 home,12,44199000,32.28,32.28,32.28,0,0,1,0,1
+hacom,acer,acer swift x ai sfx14-72g-77f9,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,76.0,4,1.5,windows 11 home,12,43999000,32.28,22.81,1.79,0,0,1,0,1
 hacom,acer,acer aspire go ag15-31p-32u6,n/a,n/a,8,ddr5,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows 11 home,12,9299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire 7 a715-76-53pj,intel core i5-12450h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,n/a,2.1,windows,12,13899000,36.23,36.23,36.23,0,0,0,1,1
-hacom,asus,asus zenbook ux3405ma-pp152w,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,4,1.2,windows 11 home,24,30599000,31.24,31.24,3.12,0,1,1,0,1
-hacom,dell,dell vostro 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.83,n/a,12,12399000,35.85,35.85,23.56,2,0,1,1,0
-hacom,msi,msi modern 14,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,11789000,31.99,31.99,31.99,0,1,1,0,0
-hacom,msi,msi modern 14,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13389000,31.99,31.99,31.99,0,1,1,0,0
-hacom,msi,msi modern 14,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13299000,31.99,31.99,31.99,0,1,1,0,0
+hacom,acer,acer aspire 7 a715-76-53pj,intel core i5-12450h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,n/a,2.1,windows,12,13899000,36.23,23.74,1.99,0,2,0,1,1
+hacom,acer,acer aspire 5 a515-58m-56yx,intel core i5-13420h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,50.0,3,1.7,windows 11 home,12,14599000,36.29,23.75,1.79,0,2,1,0,1
+hacom,acer,acer swift lite 14 ai sfl14-51m-56hs,intel core ultra 5 125u,n/a,32,ddr5,512,ssd,yes,14.0,1920x1200,60,300,n/a,n/a,1.27,n/a,12,18399000,31.44,22.19,1.75,n/a,n/a,n/a,n/a,n/a
+hacom,acer,acer aspire 5 a515-58m-79r7,intel core i7-13620h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,50.0,3,1.7,windows 11 home,12,18599000,36.29,23.75,1.79,0,2,1,0,1
+hacom,acer,acer aspire 5 spin 14 a5sp14-51mtn-78jh,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,n/a,1.6,windows,12,16899000,31.82,22.55,1.8,0,2,1,0,1
+hacom,asus,asus zenbook ux3405ma-pp152w,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,4,1.2,windows 11 home,24,30599000,31.24,22.01,1.23,0,1,1,0,1
+hacom,dell,dell vostro 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.83,n/a,12,12399000,35.85,23.56,1.9,2,0,1,1,0
+hacom,msi,msi modern 14,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,11789000,31.99,22.3,1.94,0,1,1,0,0
+hacom,msi,msi modern 14,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13389000,31.99,22.3,1.94,0,1,1,0,0
+hacom,msi,msi modern 14,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13299000,31.99,22.3,1.94,0,1,1,0,0
 hacom,asus,asus vivobook a1405za-km264w,intel core i5-12500h,n/a,16,ddr4,512,ssd,no,14.0,2880x1800,90,600,n/a,n/a,n/a,windows,24,15699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer swift go ai gen 2 sfg14-73-71zx,n/a,n/a,16,ddr5,512,ssd,yes,14.0,n/a,120,400,50.0,3,1.32,windows,12,25799000,31.29,31.29,31.29,0,0,1,0,1
-hacom,acer,acer swift go sfg14-41-r5jk,amd ryzen 5 7530u,n/a,16,ddr4,1024,ssd,yes,14.0,1920x1080,60,300,50.0,3,1.2,windows 11 home,12,17899000,32.17,32.17,32.17,0,0,1,0,1
-hacom,acer,acer swift go ai gen 2 sfg14-73-53x7,n/a,n/a,16,ddr5,512,ssd,yes,14.0,n/a,120,400,50.0,3,1.32,windows,12,23299000,31.29,31.29,31.29,0,0,1,0,1
-hacom,hp,hp pavilion 15-eg3094tu,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,16399000,36.02,36.02,3.6,2,0,1,0,1
-hacom,lenovo,lenovo thinkbook 14 gen 6,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,45.0,n/a,1.38,windows 11 home,24,19999000,31.35,31.35,22.4,0,1,0,0,0
+hacom,acer,acer swift go sfg14-41-r5jk,amd ryzen 5 7530u,n/a,16,ddr4,1024,ssd,yes,14.0,1920x1080,60,300,50.0,3,1.2,windows 11 home,12,17899000,32.17,21.17,1.59,0,3,1,0,1
+hacom,acer,acer swift go ai gen 2 sfg14-73-53x7,n/a,n/a,16,ddr5,512,ssd,yes,14.0,n/a,120,400,50.0,3,1.32,windows,12,22999000,31.29,21.79,1.49,0,0,1,0,1
+hacom,acer,acer swift go ai gen 2 sfg14-73-71zx,n/a,n/a,16,ddr5,512,ssd,yes,14.0,n/a,120,400,50.0,3,1.32,windows,12,25799000,31.29,21.79,1.49,0,0,1,0,1
+hacom,hp,hp pavilion 15-eg3094tu,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,16399000,36.02,23.4,1.8,0,2,1,0,1
+hacom,lenovo,lenovo thinkbook 14 gen 6,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,45.0,n/a,1.38,windows 11 home,24,19999000,31.35,22.4,1.69,0,1,0,0,0
+hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i5-13420h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,n/a,1.43,n/a,24,18999000,31.3,21.93,1.8,0,2,1,1,1
+hacom,hp,hp pavilion 15-eg3111tu,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,17399000,36.02,23.4,1.8,0,2,1,0,1
+hacom,dell,dell vostro 3520,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.83,linux,12,11599000,35.85,23.56,1.7,0,0,1,1,1
+hacom,dell,dell vostro 3520,intel core i7-1255u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,n/a,n/a,1.83,n/a,n/a,15999000,35.85,23.56,1.9,2,0,1,1,0
+hacom,msi,msi modern 15 h,intel core i7-13700h,n/a,16,ddr4,1024,ssd,no,15.6,1920x1080,n/a,n/a,39.0,n/a,1.8,windows,24,18489000,35.9,24.1,1.99,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell inspiron 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,n/a,15299000,n/a,n/a,n/a,0,0,1,0,1
-hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i5-13420h,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,n/a,1.43,n/a,24,18999000,31.3,31.3,31.3,0,2,1,1,1
-hacom,hp,hp pavilion 15-eg3111tu,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,17399000,36.02,36.02,3.6,2,0,1,0,1
-hacom,dell,dell vostro 3520,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.83,linux,12,11599000,35.85,35.85,23.56,0,0,1,1,1
-hacom,dell,dell vostro 3520,intel core i7-1255u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,n/a,n/a,1.83,n/a,n/a,16099000,35.85,35.85,23.56,2,0,1,1,0
-hacom,msi,msi modern 15 h,intel core i7-13700h,n/a,16,ddr4,1024,ssd,no,15.6,1920x1080,n/a,n/a,39.0,n/a,1.8,windows,24,18489000,35.9,35.9,24.1,n/a,n/a,n/a,n/a,n/a
-hacom,microsoft,microsoft surface surface pro 9,intel core i5-1235u,n/a,8,ddr5,256,ssd,no,13.0,2880x1920,n/a,n/a,n/a,n/a,0.879,windows 11 home,12,27499000,28.7,28.7,28.7,0,2,0,0,0
-hacom,acer,acer aspire lite 14 al14-52m-54cj,intel core i5-1334u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,58.0,3,1.5,windows 11 home,12,15399000,31.33,31.33,21.8,0,0,0,0,0
+hacom,microsoft,microsoft surface surface pro 9,intel core i5-1235u,n/a,8,ddr5,256,ssd,no,13.0,2880x1920,n/a,n/a,n/a,n/a,0.879,windows 11 home,12,27499000,28.7,20.9,0.93,0,2,0,0,0
+hacom,acer,acer aspire lite 14 al14-52m-54cj,intel core i5-1334u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,58.0,3,1.5,windows 11 home,12,15399000,31.33,21.8,1.69,0,2,0,0,0
 hacom,dell,dell inspiron 3530,intel core i3-1305u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,12199000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 3530,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,15599000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 3530,intel core i5-1334u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,n/a,17299000,n/a,n/a,n/a,0,0,1,0,1
-hacom,dell,dell inspiron 3530,intel core i7-1355u,n/a,16,ddr4,16,ssd,no,15.6,1920x1080,n/a,n/a,54.0,4,1.62,windows 11 home,12,20099000,35.85,35.85,23.56,0,0,0,0,0
-hacom,msi,msi thin a15,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.0,n/a,1.85,windows,24,17899000,35.9,35.9,25.4,n/a,n/a,n/a,n/a,n/a
-hacom,msi,msi modern 14 h,intel core i7-13700h,n/a,16,ddr4,1024,ssd,no,14.0,1920x1200,n/a,n/a,39.0,n/a,1.6,windows,24,18489000,32.0,32.0,22.3,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell inspiron 3530,intel core i7-1355u,n/a,16,ddr4,16,ssd,no,15.6,1920x1080,n/a,n/a,54.0,4,1.62,windows 11 home,12,20099000,35.85,23.56,2.0,2,0,0,0,0
+hacom,msi,msi thin a15,amd ryzen 5 7535hs,geforce rtx 2050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.0,n/a,1.85,windows,24,17899000,35.9,25.4,2.15,n/a,n/a,n/a,n/a,n/a
+hacom,msi,msi modern 14 h,intel core i7-13700h,n/a,16,ddr4,1024,ssd,no,14.0,1920x1200,n/a,n/a,39.0,n/a,1.6,windows,24,18489000,32.0,22.3,1.95,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo ideapad slim 5 14imh9,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,n/a,1.48,windows 11 home,24,23999000,31.2,22.1,1.69,2,2,1,0,1
+hacom,hp,hp probook 450 g10,intel core i5-1335u,geforce rtx 2050,16,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,23299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo yoga slim 7 14imh9,intel core ultra 7 155h,n/a,32,ddr5,512,ssd,yes,14.0,1920x1200,60,400,n/a,n/a,1.35,windows 11 home,24,27799000,31.2,22.1,1.49,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,n/a,24,23199000,35.61,24.77,1.99,2,4,1,1,1
+hacom,lenovo,lenovo yoga slim 7 14imh9,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,yes,14.0,1920x1200,60,400,n/a,n/a,1.35,windows 11 home,24,29499000,31.2,22.1,1.49,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo yoga book 9 13imu9,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,no,13.3,2880x1800,60,400,n/a,n/a,n/a,windows 11 home,24,61199000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo yoga 9 14imh9,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,65.0,3,1.32,windows 11 home,24,43999000,31.6,31.6,31.6,2,4,0,0,1
-hacom,lenovo,ai lenovo ideapad slim 5 16imh9,intel core ultra 7 155h,n/a,32,ddr5,512,ssd,yes,16.0,2048x1280,120,400,57.0,n/a,1.82,windows 11 home,24,24799000,35.6,35.6,35.6,2,2,1,0,1
-hacom,lenovo,lenovo yoga 7 pro 14imh9,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,73.0,4,n/a,windows 11 home,24,43699000,32.55,32.55,22.65,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo ideapad slim 5 14imh9,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,n/a,1.48,windows 11 home,24,23999000,31.2,31.2,31.2,2,2,1,0,1
-hacom,hp,hp probook 440 g11,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,56.0,3,1.39,windows 11 home,12,26799000,31.86,31.86,2.24,0,0,0,0,0
-hacom,hp,hp probook 440 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,56.0,3,1.39,windows 11 home,12,21299000,31.86,31.86,2.24,0,0,0,0,0
+hacom,lenovo,lenovo yoga 9 14imh9,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,65.0,3,1.32,windows 11 home,24,43999000,31.6,22.0,1.59,2,4,0,0,1
+hacom,lenovo,ai lenovo ideapad slim 5 16imh9,intel core ultra 7 155h,n/a,32,ddr5,512,ssd,yes,16.0,2048x1280,120,400,57.0,n/a,1.82,windows 11 home,24,24799000,35.6,25.1,1.69,2,2,1,0,1
+hacom,lenovo,lenovo yoga 7 pro 14imh9,intel core ultra 7 155h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,73.0,4,n/a,windows 11 home,24,43699000,32.55,22.65,1.66,n/a,n/a,n/a,n/a,n/a
+hacom,hp,hp probook 440 g11,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,56.0,3,1.39,windows 11 home,12,26799000,31.86,22.44,1.7,0,2,0,0,0
+hacom,hp,hp probook 440 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,56.0,3,1.39,windows 11 home,12,21299000,31.86,22.44,1.7,0,2,0,0,0
 hacom,hp,hp 14-ep1011tu,cpu intel core 5-120u,n/a,16,ddr4,512,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,17899000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,asus,asus vivobook s5406ma-pp046ws,intel core ultra 5 125h,n/a,16,n/a,512,ssd,no,14.0,3200x2000,120,600,n/a,n/a,n/a,n/a,24,23799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire 5 a515-58p-56rp,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,n/a,1.7,windows,12,14499000,36.29,36.29,36.29,0,0,1,1,1
-hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,n/a,24,21799000,35.61,35.61,35.61,2,4,1,1,1
+hacom,acer,acer aspire 5 a515-58p-56rp,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,n/a,1.7,windows,12,14499000,36.29,23.75,1.8,0,2,1,1,1
+hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,n/a,24,21799000,35.61,24.77,1.99,2,4,1,1,1
 hacom,hp,hp probook 460 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,no,n/a,n/a,n/a,n/a,56.0,3,n/a,windows 11 home,12,24299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 460 g11,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,24799000,35.94,35.94,2.51,0,0,0,0,0
-hacom,hp,hp probook 460 g11,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,26299000,35.94,35.94,2.51,0,0,0,0,0
-hacom,dell,dell vostro 3520,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.66,n/a,12,9099000,35.85,35.85,23.56,0,0,1,1,1
-hacom,acer,acer aspire 5 a515-58p-774r,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,n/a,1.7,windows,12,16499000,36.29,36.29,36.29,0,0,1,1,1
+hacom,hp,hp probook 460 g11,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,24799000,35.94,25.11,1.7,0,2,0,0,0
+hacom,hp,hp probook 460 g11,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,26299000,35.94,25.11,1.7,0,2,0,0,0
+hacom,dell,dell vostro 3520,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.66,n/a,12,9099000,35.85,23.56,1.7,0,0,1,1,1
+hacom,acer,acer aspire 5 a515-58p-774r,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,n/a,1.7,windows,12,16499000,36.29,23.75,1.8,0,2,1,1,1
 hacom,asus,asus zenbook s 14 oled ux5406sa-pv140ws,intel core ultra 7 258v,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,120,500,72.0,4,1.2,windows 11 home,24,44699000,31.03,21.47,1.29,0,1,1,0,1
-hacom,acer,acer aspire 5 spin 14 a5sp14-51mtn-573x,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,n/a,1.6,windows,12,14899000,31.82,31.82,31.82,0,0,1,0,1
-hacom,hp,hp envy x360 14-fc0085tu,intel core ultra 7 155u,n/a,32,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,30699000,31.33,31.33,2.19,0,1,0,0,0
+hacom,acer,acer aspire 5 spin 14 a5sp14-51mtn-573x,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,n/a,1.6,windows,12,14899000,31.82,22.55,1.8,0,2,1,0,1
+hacom,hp,hp probook 450 g10,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,51.0,3,1.79,windows 11 home,12,18899000,35.94,23.39,1.99,0,2,0,0,0
+hacom,hp,hp envy x360 14-fa0047au,amd ryzen 7 8840hs,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,29699000,31.33,21.89,1.23,0,2,0,0,0
+hacom,hp,hp envy x360 14-fc0085tu,intel core ultra 7 155u,n/a,32,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,30699000,31.33,21.89,1.23,0,1,0,0,0
 hacom,hp,hp envy x360 14-fc0086tu,intel core ultra 7 155u,n/a,32,ddr5,512,n/a,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,30699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 440 g10,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,51.0,3,1.38,windows 11 home,12,19999000,32.19,32.19,2.14,0,0,0,0,0
+hacom,hp,hp probook 440 g10,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,51.0,3,1.38,windows 11 home,12,19999000,32.19,21.39,1.99,0,2,0,0,0
 hacom,hp,hp spectre x360 14-eu0050tu,intel core ultra 7 155u,n/a,32,ddr5,1024,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,49999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 450 g10,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,51.0,3,1.79,windows 11 home,12,18899000,35.94,35.94,2.34,0,0,0,0,0
-hacom,hp,hp envy x360 14-fa0047au,amd ryzen 7 8840hs,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,29699000,31.33,31.33,2.19,0,0,0,0,0
 hacom,hp,hp 15-fd1039tu,cpu intel core 7 150u,n/a,16,ddr4,512,n/a,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,20299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp 14-dq5121tu,intel core i3-1215u,n/a,4,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,10399000,32.37,32.37,3.24,2,0,1,0,1
-hacom,lenovo,lenovo thinkbook 14 gen 6,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,45.0,n/a,1.38,windows 11 home,24,18299000,31.35,31.35,22.4,0,1,0,0,0
-hacom,dell,dell vostro 3430,intel core i5-1335u,geforce mx550,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,3,1.49,windows 11 home,12,18799000,n/a,n/a,n/a,6,0,1,1,0
-hacom,dell,dell inspiron 3530,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,n/a,windows 11 home,12,17299000,35.85,35.85,23.56,0,0,1,1,1
-hacom,dell,dell latitude 3540,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.86,windows 11 home,12,19099000,35.9,35.9,35.9,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo thinkbook 14 gen 6,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,60.0,n/a,1.38,n/a,24,15799000,31.35,31.35,31.35,0,2,1,1,1
+hacom,hp,hp 14-dq5121tu,intel core i3-1215u,n/a,4,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,10399000,32.37,21.5,1.79,0,2,1,0,1
+hacom,lenovo,lenovo thinkbook 14 gen 6,amd ryzen 7 7730u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,45.0,n/a,1.38,windows 11 home,24,18299000,31.35,22.4,1.69,0,1,0,0,0
+hacom,dell,dell vostro 3430,intel core i5-1335u,geforce mx550,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,3,1.49,windows 11 home,12,18799000,n/a,n/a,n/a,2,4,1,1,0
+hacom,dell,dell inspiron 3530,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,n/a,windows 11 home,12,17299000,35.85,23.56,2.0,0,0,1,1,1
+hacom,dell,dell latitude 3540,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.86,windows 11 home,12,19099000,35.9,23.97,2.14,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo thinkbook 14 gen 6,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,60.0,n/a,1.38,n/a,24,15799000,31.35,22.4,1.69,0,2,1,1,1
 hacom,hp,hp probook 450 g10,intel core i7-1355u,geforce rtx 2050,16,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,27799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp elitebook 630 g10,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,13.3,1920x1080,n/a,250,42.75,3,1.29,windows 11 home,12,24999000,30.69,30.69,3.07,0,2,1,0,1
-hacom,hp,hp elitebook 630 g10,intel core i5-1335u,n/a,16,ddr4,512,n/a,yes,13.3,1920x1080,n/a,250,42.75,3,1.29,windows 11 home,12,21299000,30.69,30.69,3.07,0,2,1,0,1
-hacom,hp,hp envy x360 14-fa0046au,amd ryzen 7 8840hs,n/a,32,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,30199000,31.33,31.33,2.19,0,0,0,0,0
-hacom,hp,hp elitebook 630 g10,intel core i7-1355u,n/a,16,ddr4,512,n/a,yes,13.3,1920x1080,n/a,250,42.75,3,1.28,windows 11 home,12,24499000,30.69,30.69,3.07,0,2,1,0,1
-hacom,hp,hp pavilion 15-eg3033tx,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.74,windows 11 home,12,19899000,36.02,36.02,3.6,2,0,1,0,1
-hacom,hp,hp 14-ep0112tu,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,16399000,32.37,32.37,3.24,2,0,1,0,1
+hacom,hp,hp elitebook 630 g10,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,13.3,1920x1080,n/a,250,42.75,3,1.29,windows 11 home,12,24999000,30.69,20.84,1.59,0,2,1,0,1
+hacom,hp,hp elitebook 630 g10,intel core i5-1335u,n/a,16,ddr4,512,n/a,yes,13.3,1920x1080,n/a,250,42.75,3,1.29,windows 11 home,12,21299000,30.69,20.84,1.59,0,2,1,0,1
+hacom,hp,hp envy x360 14-fa0046au,amd ryzen 7 8840hs,n/a,32,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,30199000,31.33,21.89,1.23,0,2,0,0,0
+hacom,hp,hp elitebook 630 g10,intel core i7-1355u,n/a,16,ddr4,512,n/a,yes,13.3,1920x1080,n/a,250,42.75,3,1.28,windows 11 home,12,24499000,30.69,20.84,2.0,0,2,1,0,1
 hacom,hp,hp probook 450 g10,intel core i7-1360p,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,24999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,hp,hp pavilion 15-eg3033tx,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.74,windows 11 home,12,19899000,36.02,23.4,1.8,0,2,1,0,1
+hacom,hp,hp 14-ep0112tu,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,16399000,32.37,21.5,1.79,0,2,1,0,1
 hacom,hp,hp envy x360 14-fc0091tu,intel core ultra 5 125u,n/a,16,ddr5,1024,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,27799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp envy x360 14-fc0092tu,intel core ultra 5 125u,n/a,16,ddr5,1024,ssd,no,14.0,n/a,120,n/a,n/a,n/a,n/a,windows 11 home,12,27799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp envy x360 14-fc0094tu,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,26799000,31.33,31.33,2.19,0,1,0,0,0
-hacom,acer,acer swift go sfg14-41-r19z,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,300,50.0,3,1.2,windows 11 home,12,15899000,32.17,32.17,32.17,0,0,1,0,1
-hacom,hp,hp envy x360 14-fc0087tu,intel core ultra 7 155u,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,31699000,31.33,31.33,2.19,0,1,0,0,0
-hacom,asus,asus zenbook ux5304ma-nq117w,intel core ultra 7 155u,n/a,32,ddr5,1024,ssd,yes,13.3,2880x1800,60,600,63.0,4,1.0,windows 11 home,24,39999000,29.62,29.62,2.96,0,1,1,0,1
+hacom,hp,hp envy x360 14-fc0094tu,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,26799000,31.33,21.89,1.23,0,1,0,0,0
+hacom,acer,acer swift go sfg14-41-r19z,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,300,50.0,3,1.2,windows 11 home,12,15899000,32.17,21.17,1.59,0,3,1,0,1
+hacom,hp,hp envy x360 14-fc0087tu,intel core ultra 7 155u,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,31699000,31.33,21.89,1.23,0,1,0,0,0
+hacom,asus,asus zenbook ux5304ma-nq117w,intel core ultra 7 155u,n/a,32,ddr5,1024,ssd,yes,13.3,2880x1800,60,600,63.0,4,1.0,windows 11 home,24,39999000,29.62,21.63,1.17,0,1,1,0,1
 hacom,hp,hp probook 460 g11,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,n/a,windows 11 home,12,27499000,31.86,22.44,1.6,n/a,n/a,n/a,n/a,n/a
-hacom,lg,lg gram 14z90r-g.ah75a5,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,350,n/a,n/a,0.999,windows 11 home,12,25999000,31.2,31.2,2.14,0,0,1,0,0
-hacom,lg,lg gram 14z90r-g.ah53a5,intel core i5-1340p,n/a,16,ddr5,256,ssd,yes,14.0,1920x1200,n/a,350,n/a,n/a,0.999,windows 11 home,12,22999000,31.2,31.2,2.14,0,0,1,0,0
 hacom,hp,hp 15-fd1043tu,cpu intel core 5 120u,n/a,16,ddr4,1024,n/a,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,18299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,lg,lg gram 14z90r-g.ah75a5,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,350,n/a,n/a,0.999,windows 11 home,12,25999000,31.2,21.39,1.68,0,0,1,0,0
+hacom,lg,lg gram 14z90r-g.ah53a5,intel core i5-1340p,n/a,16,ddr5,256,ssd,yes,14.0,1920x1200,n/a,350,n/a,n/a,0.999,windows 11 home,12,22999000,31.2,21.39,1.68,0,0,1,0,0
 hacom,dell,dell inspiron 3530,intel core i3-1305u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,12299000,n/a,n/a,n/a,0,0,1,0,1
-hacom,lenovo,lenovo thinkpad t14s gen 4,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,2240x1400,60,300,57.0,n/a,1.25,n/a,36,32499000,31.75,31.75,31.75,0,2,1,0,1
 hacom,asus,asus vivobook s15 s5507qa-ma089ws,cpu snapdragon x1e,n/a,32,ddr5,1024,ssd,no,15.6,n/a,120,n/a,n/a,n/a,n/a,windows 11 home,24,29799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo thinkpad t14s gen 4,intel core i7-1355u,n/a,16,ddr5,512,ssd,yes,14.0,2240x1400,60,300,57.0,n/a,1.25,n/a,36,32499000,31.75,22.69,1.69,0,2,1,0,1
 hacom,dell,dell inspiron 3520,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,41.0,3,1.65,windows 11 home,12,13899000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 3530,intel core i3-1305u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,12299000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 3530,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,n/a,12,16099000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 3530,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,16099000,n/a,n/a,n/a,0,0,1,0,1
-hacom,acer,acer aspire 3 a314-36m-34ap,n/a,n/a,8,ddr5,512,ssd,yes,14.0,1920x1080,60,n/a,40.0,3,n/a,windows,12,9999000,32.83,32.83,32.83,0,0,1,0,1
+hacom,acer,acer aspire 3 a314-36m-34ap,n/a,n/a,8,ddr5,512,ssd,yes,14.0,1920x1080,60,n/a,40.0,3,n/a,windows,12,9999000,32.83,21.71,1.8,2,2,1,0,1
 hacom,dell,dell inspiron 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.65,windows 11 home,12,15199000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,ai dell inspiron 14 5440,intel core i5-1334u,n/a,8,ddr5,512,ssd,no,14.0,1920x1200,n/a,250,n/a,n/a,n/a,windows 11 home,12,18599000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell inspiron 3520,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.9,windows 11 home,12,14099000,35.85,35.85,23.56,2,0,0,0,0
+hacom,dell,dell inspiron 3520,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.9,windows 11 home,12,14099000,35.85,23.56,1.9,2,0,0,0,0
 hacom,dell,dell vostro 15 3530,intel core i3-1305u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,n/a,1.65,windows,12,12299000,n/a,n/a,n/a,0,0,1,1,0
-hacom,hp,hp probook 440 g11,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,56.0,3,1.39,windows 11 pro,12,30699000,31.86,31.86,2.24,0,0,0,0,0
+hacom,hp,hp probook 440 g11,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,56.0,3,1.39,windows 11 pro,12,30499000,31.86,22.44,1.7,0,2,0,0,0
 hacom,hp,hp probook 440 g11,intel core ultra 5 125h,n/a,16,ddr5,16,ssd,no,14.0,1920x1200,n/a,n/a,n/a,n/a,1.39,windows 11 pro,12,26799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer swift 3 super sf314-71-74wd,intel core i7-12700h,n/a,16,ddr5,1024,n/a,yes,14.0,2880x1800,90,400,57.0,n/a,1.4,windows 11 home,12,26299000,31.29,31.29,31.29,1,0,0,0,1
-hacom,acer,acer swift 3 evo sf314-512-741l,intel core i7-1260p,n/a,16,ddr4,1024,n/a,yes,14.0,2560x1440,60,300,56.0,n/a,1.2,windows 11 home,12,19399000,32.1,32.1,32.1,2,0,1,0,1
-hacom,msi,msi modern 14,amd ryzen 5 7530u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows 11 home,24,9599000,35.9,35.9,24.1,0,1,1,0,0
-hacom,hp,hp elitebook 630 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 home,12,28299000,30.31,30.31,2.15,0,0,0,0,0
-hacom,hp,hp elitebook 630 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 home,12,23799000,30.31,30.31,2.15,0,0,0,0,0
+hacom,acer,acer swift 3 super sf314-71-74wd,intel core i7-12700h,n/a,16,ddr5,1024,n/a,yes,14.0,2880x1800,90,400,57.0,n/a,1.4,windows 11 home,12,26299000,31.29,21.4,1.79,0,1,0,0,1
+hacom,acer,acer swift 3 evo sf314-512-741l,intel core i7-1260p,n/a,16,ddr4,1024,n/a,yes,14.0,2560x1440,60,300,56.0,n/a,1.2,windows 11 home,12,19399000,32.1,21.08,1.59,0,2,1,0,1
+hacom,msi,msi modern 14,amd ryzen 5 7530u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows 11 home,24,9599000,35.9,24.1,1.99,0,1,1,0,0
+hacom,hp,hp elitebook 630 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 home,12,28299000,30.31,21.51,1.7,0,0,0,0,0
+hacom,hp,hp elitebook 630 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 home,12,23799000,30.31,21.51,1.7,0,0,0,0,0
 hacom,hp,hp 15-fd1058tu,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,no,15.6,1920x1080,n/a,300,n/a,n/a,n/a,windows 11 home,12,23299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell vostro 3530,intel core i5-1334u,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,120,250,n/a,n/a,n/a,n/a,n/a,14099000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell inspiron 3520,intel core i5-1235u,n/a,16,ddr4,16,ssd,no,15.6,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,15199000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo thinkbook 16 gen 6,amd ryzen 7 7730u,n/a,16,ddr4,16,ssd,no,16.0,2560x1600,n/a,n/a,n/a,n/a,n/a,n/a,24,20999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo ideapad 3 15aiu7,intel core i3-1215u,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,n/a,300,n/a,n/a,n/a,windows 11 home,24,10699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,acer,acer aspire lite al14-51m-36mh,intel core i3-1215u,n/a,8,ddr5,256,ssd,no,14.0,1920x1200,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,9199000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire 3 a314-42p-r3b3,amd ryzen 7 5700u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,3,1.4,windows 11 home,12,11899000,31.82,31.82,31.82,0,0,1,0,1
+hacom,acer,acer aspire 3 a314-42p-r3b3,amd ryzen 7 5700u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,3,1.4,windows 11 home,12,11899000,31.82,22.55,1.78,2,2,1,0,1
 hacom,acer,acer aspire 3 a315-59-51x8,intel core i5-1235u,n/a,8,ddr4,512,ssd,no,15.6,1920x1080,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,11399000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo ideapad slim 3 14irh8,intel core i7-13620h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1080,n/a,300,47.0,3,n/a,windows 11 home,24,17499000,32.43,21.38,1.79,0,2,1,0,1
-hacom,lenovo,lenovo ideapad slim 3 15iah8,intel core i5-12450h,n/a,8,ddr5,1024,ssd,yes,15.6,1920x1080,n/a,300,47.0,n/a,1.37,windows 11 home,24,14999000,35.93,35.93,35.93,0,2,1,0,1
-hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-13420h,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,3,n/a,windows 11 home,24,18999000,35.61,35.61,24.77,0,1,0,0,0
-hacom,asus,asus vivobook m5406wa-pp071ws,n/a,n/a,32,ddr5,1024,n/a,no,14.0,n/a,120,400,n/a,n/a,n/a,windows 11 home,24,31999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo ideapad slim 3 15iah8,intel core i5-12450h,n/a,8,ddr5,1024,ssd,yes,15.6,1920x1080,n/a,300,47.0,n/a,1.37,windows 11 home,24,14999000,35.93,23.5,1.79,0,2,1,0,1
+hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-13420h,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,3,n/a,windows 11 home,24,18999000,35.61,24.77,1.99,0,1,0,0,0
 hacom,asus,asus expertbook b1402cva-nk0176w,intel core i5-1335u,n/a,16,ddr4,512,ssd,no,14.0,1920x1080,n/a,250,n/a,n/a,n/a,windows 11 home,24,13999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp 14-ep1009tu,cpu intel core 5 120u,n/a,16,ddr4,1024,n/a,no,14.0,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,19899000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,asus,asus vivobook m5406wa-pp071ws,n/a,n/a,32,ddr5,1024,n/a,no,14.0,n/a,120,400,n/a,n/a,n/a,windows 11 home,24,31999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell vostro 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows,12,15199000,n/a,n/a,n/a,1,0,1,0,1
-hacom,acer,acer aspire lite al16-51p-72s2,intel core i7-1255u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.7,windows 11 home,12,15399000,35.76,35.76,35.76,0,0,1,0,1
-hacom,hp,hp pavilion x360 14-ek1049tu,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,43.3,3,1.53,windows 11 home,12,20799000,32.2,32.2,3.22,1,0,1,0,1
-hacom,hp,hp 15-fd0237tu,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.59,windows 11 home,12,14899000,35.98,23.6,1.86,0,0,0,0,0
-hacom,dell,dell vostro 3430,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,3,1.44,windows 11 home,12,16699000,n/a,n/a,n/a,6,0,1,1,0
+hacom,hp,hp 14-ep1009tu,cpu intel core 5 120u,n/a,16,ddr4,1024,n/a,no,14.0,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,19899000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,acer,acer aspire lite al16-51p-72s2,intel core i7-1255u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.7,windows 11 home,12,15399000,35.76,24.7,1.89,0,0,1,0,1
+hacom,hp,hp pavilion x360 14-ek1049tu,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,43.3,3,1.53,windows 11 home,12,20799000,32.2,21.0,1.99,0,1,1,0,1
+hacom,hp,hp 15-fd0237tu,intel core i5-1334u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,41.0,3,1.59,windows 11 home,12,14899000,35.98,23.6,1.86,0,1,0,0,0
+hacom,dell,dell vostro 3430,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,3,1.44,windows 11 home,12,16699000,n/a,n/a,n/a,2,4,1,1,0
 hacom,apple,apple macbook air,apple m2,n/a,16,n/a,256,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,29699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook pro 14,n/a,n/a,16,n/a,512,ssd,yes,14.2,3024x1964,n/a,n/a,70.0,n/a,1.55,macos,12,43999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook air,apple m3 8-core,n/a,16,n/a,512,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,36999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook pro 14,n/a,n/a,16,n/a,512,ssd,yes,14.2,3024x1964,n/a,n/a,70.0,n/a,1.55,macos,12,43999000,n/a,n/a,n/a,0,0,1,0,1
-hacom,lenovo,lenovo v14 gen 4,intel core i5-13420h,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,38.0,n/a,1.43,n/a,24,13399000,32.42,32.42,32.42,0,1,1,1,1
+hacom,lenovo,lenovo v14 gen 4,intel core i5-13420h,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,38.0,n/a,1.43,n/a,24,13399000,32.42,21.52,1.99,0,1,1,1,1
 hacom,lenovo,lenovo thinkpad t14 gen 4,intel core i5-1335u,n/a,16,ddr5,512,ssd,no,14.0,2240x1400,n/a,300,n/a,n/a,n/a,n/a,36,24999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i5-13500h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,n/a,1.43,n/a,12,19499000,31.3,31.3,31.3,0,2,1,1,1
+hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i5-13500h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,n/a,1.43,n/a,12,19499000,31.3,21.93,1.8,0,2,1,1,1
 hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i7-1355u,n/a,16,ddr4,512,ssd,no,14.0,n/a,n/a,300,n/a,n/a,n/a,windows 11 home,24,22399000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo thinkpad t16 gen 3,intel core ultra 7 155h,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,52.5,n/a,1.66,n/a,36,32999000,35.97,35.97,35.97,2,2,1,1,1
+hacom,lenovo,lenovo thinkpad t16 gen 3,intel core ultra 7 155h,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,52.5,n/a,1.66,n/a,36,32999000,35.97,25.08,1.96,2,2,1,1,1
 hacom,lenovo,lenovo thinkpad t14 gen 4,intel core i5-1345u,n/a,16,ddr5,512,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 pro,36,24999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i5-1335u,n/a,8,ddr4,512,ssd,no,14.0,1920x1080,n/a,300,45.0,n/a,1.43,windows 11 home,24,19499000,31.3,31.3,31.3,0,2,1,1,1
-hacom,lenovo,lenovo yoga 6 14irh8,intel core i7-13700h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,65.0,n/a,1.35,windows 11 home,36,23699000,31.2,31.2,31.2,2,4,1,0,1
-hacom,lenovo,lenovo yoga 6 14irh8,intel core i7-13700h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,n/a,n/a,1.35,windows 11 home,36,23799000,31.2,31.2,31.2,2,2,1,0,1
-hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-1340p,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,windows 11 home,24,19999000,35.61,35.61,35.61,2,4,1,1,1
-hacom,asus,asus vivobook s14 oled s5406ma-pp136w,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.3,windows 11 home,24,24399000,31.05,31.05,3.1,0,2,1,0,1
+hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i5-1335u,n/a,8,ddr4,512,ssd,no,14.0,1920x1080,n/a,300,45.0,n/a,1.43,windows 11 home,24,19499000,31.3,21.93,1.8,0,2,1,1,1
+hacom,lenovo,lenovo yoga 6 14irh8,intel core i7-13700h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,65.0,n/a,1.35,windows 11 home,36,23699000,31.2,22.1,1.49,2,4,1,0,1
+hacom,lenovo,lenovo yoga 6 14irh8,intel core i7-13700h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,n/a,n/a,1.35,windows 11 home,36,23799000,31.2,22.1,1.49,2,2,1,0,1
+hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-1340p,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,windows 11 home,24,19999000,35.61,24.77,1.99,2,4,1,1,1
+hacom,asus,asus vivobook s14 oled s5406ma-pp136w,intel core ultra 5 125h,n/a,16,ddr5,1024,ssd,yes,14.0,2880x1800,120,400,75.0,4,1.3,windows 11 home,24,24399000,31.05,22.19,1.22,0,2,1,0,1
 hacom,hp,hp 15-fd0305tu,intel core i3-1315u,n/a,8,ddr4,256,ssd,no,15.6,1920x1080,60,250,n/a,n/a,n/a,windows 11 home,12,10899000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp envy x360 14-fc0083tu,intel core ultra 7 155u,n/a,32,ddr5,1024,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,33999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp probook 440 g10,intel core i3-1315u,n/a,8,ddr4,256,ssd,no,14.0,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,13599000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp envy x360 14-fc0090tu,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,29799000,31.33,31.33,2.19,0,1,0,0,0
+hacom,hp,hp envy x360 14-fc0090tu,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,120,400,59.0,3,1.39,windows 11 home,12,29799000,31.33,21.89,1.23,0,1,0,0,0
 hacom,hp,hp probook 440 g10,intel core i3-1315u,n/a,8,ddr4,256,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,13699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 440 g10,intel core i7-1360p,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,51.0,3,1.38,windows 11 home,12,23799000,32.19,32.19,3.22,0,0,1,0,0
-hacom,hp,hp 15-fd0084tu,intel core i7-1355u,n/a,4,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.59,windows 11 home,12,18499000,35.98,35.98,3.6,0,0,1,0,1
-hacom,hp,hp pavilion 15-eg3093tu,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,17399000,36.02,36.02,3.6,2,0,1,0,1
-hacom,hp,hp envy x360 13-bf0090tu,intel core i7-1250u,n/a,16,ddr4,512,ssd,yes,13.3,2560x1440,n/a,1000,51.0,3,1.32,windows 11 home,12,24999000,30.65,30.65,3.06,0,1,0,0,1
+hacom,hp,hp 15-fd0235tu,intel core i5-1334u,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows 11 home,12,15599000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,hp,hp pavilion 15-eg3093tu,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,17399000,36.02,23.4,1.8,0,2,1,0,1
+hacom,hp,hp envy x360 13-bf0090tu,intel core i7-1250u,n/a,16,ddr4,512,ssd,yes,13.3,2560x1440,n/a,1000,51.0,3,1.32,windows 11 home,12,24999000,30.65,19.46,1.69,0,1,0,0,1
+hacom,hp,hp probook 440 g10,intel core i7-1360p,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,60,250,51.0,3,1.38,windows 11 home,12,23799000,32.19,21.39,1.99,0,3,1,0,0
+hacom,hp,hp 15-fd0084tu,intel core i7-1355u,n/a,4,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.59,windows 11 home,12,18499000,35.98,23.6,1.86,0,0,1,0,1
+hacom,acer,acer aspire 7 a715-76-728x,intel core i7-12650h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,n/a,2.1,windows 11 home,12,18599000,36.23,23.74,1.99,0,2,0,1,1
 hacom,dell,dell latitude 3440,intel core i7-1355u,n/a,16,ddr4,512,ssd,no,14.0,1920x1080,60,250,n/a,n/a,n/a,windows 11 home,12,24799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell latitude 3540,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.5,windows 11 home,12,24799000,35.9,35.9,35.9,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire 7 a715-76-728x,intel core i7-12650h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,n/a,2.1,windows 11 home,12,18599000,36.23,36.23,36.23,0,0,0,1,1
+hacom,dell,dell latitude 3540,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.5,windows 11 home,12,24799000,35.9,23.97,2.14,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell inspiron 16 5630,intel core i5-1340p,geforce rtx 2050,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,250,54.0,4,1.9,windows 11 home,12,24299000,n/a,n/a,n/a,2,2,1,1,0
 hacom,apple,apple macbook pro 14,n/a,n/a,18,n/a,512,ssd,yes,14.2,3024x1964,120,n/a,72.4,n/a,1.61,macos,12,48999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 3530,intel core i5-1335u,geforce mx550,16,ddr4,512,ssd,no,15.6,1920x1080,120,250,n/a,n/a,n/a,windows,n/a,19599000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer swift go ai sfg14-73-75ym,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,90,400,64.0,4,1.32,windows 11 home,12,26799000,31.29,31.29,31.29,0,0,1,0,1
-hacom,acer,acer swift go ai sfg14-73-57fz,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,400,64.0,4,1.32,windows 11 home,12,23799000,31.29,31.29,31.29,0,0,1,0,1
+hacom,acer,acer swift go ai sfg14-73-75ym,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,90,400,64.0,4,1.32,windows 11 home,12,25999000,31.29,21.79,1.49,0,0,1,0,1
+hacom,acer,acer swift go ai sfg14-73-57fz,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,2880x1800,n/a,400,64.0,4,1.32,windows 11 home,12,22999000,31.29,21.79,1.49,0,0,1,0,1
 hacom,acer,acer aspire a315-56-58eg,intel core i5-1035g,n/a,4,ddr4,256,ssd,no,15.6,1920x1080,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,8999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,msi,msi thin a15,amd ryzen 5 7535hs,geforce rtx 4050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.0,n/a,1.85,windows,24,20990000,35.9,35.9,25.4,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire 5 a515-58m-951t,intel core i9-13900h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,50.0,n/a,1.7,windows 11 home,12,20799000,36.29,36.29,36.29,0,0,1,0,1
-hacom,acer,acer aspire lite al16-51p-55n7,intel core i5-1235u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.7,windows,12,13399000,35.76,35.76,35.76,0,0,1,0,1
-hacom,dell,dell vostro 15 3530,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,n/a,1.65,windows 11 home,12,17599000,n/a,n/a,n/a,0,0,1,1,0
+hacom,msi,msi thin a15,amd ryzen 5 7535hs,geforce rtx 4050,8,ddr5,512,ssd,no,15.6,1920x1080,144,n/a,53.0,n/a,1.85,windows,24,20990000,35.9,25.4,2.15,n/a,n/a,n/a,n/a,n/a
+hacom,acer,acer aspire 5 a515-58m-951t,intel core i9-13900h,n/a,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,50.0,n/a,1.7,windows 11 home,12,20799000,36.29,23.75,1.79,0,2,1,0,1
+hacom,acer,acer aspire lite al16-51p-55n7,intel core i5-1235u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.7,windows,12,13399000,35.76,24.7,1.89,0,0,1,0,1
 hacom,apple,laptop apple macbook air,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,n/a,n/a,56.6,n/a,1.24,macos,12,23799000,n/a,n/a,n/a,0,0,0,0,0
+hacom,dell,dell vostro 15 3530,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,n/a,1.65,windows 11 home,12,17599000,n/a,n/a,n/a,0,0,1,1,0
 hacom,apple,apple macbook air,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,n/a,n/a,56.6,n/a,1.24,macos,12,23799000,n/a,n/a,n/a,0,0,0,0,0
 hacom,apple,apple macbook air,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,n/a,n/a,56.6,n/a,1.24,macos,12,23799000,n/a,n/a,n/a,0,0,0,0,0
-hacom,dell,dell vostro 3430,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,3,1.44,windows 11 home,12,17699000,n/a,n/a,n/a,6,0,1,1,0
+hacom,dell,dell vostro 3430,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,3,1.44,windows 11 home,12,17699000,n/a,n/a,n/a,2,4,1,1,0
 hacom,dell,dell inspiron 3530,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,54.0,4,1.65,windows 11 home,12,19999000,n/a,n/a,n/a,0,0,1,0,1
-hacom,msi,msi modern 14,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13899000,31.99,31.99,31.99,0,1,1,0,0
-hacom,dell,dell vostro 3520,intel core i5-1235u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.66,n/a,12,11199000,35.85,35.85,23.56,0,0,1,1,1
-hacom,dell,ai dell inspiron 14 5440,intel core i5-1334u,n/a,16,ddr5,512,ssd,no,14.0,1920x1200,n/a,250,n/a,n/a,n/a,windows 11 home,12,19699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,msi,msi modern 14,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13899000,31.99,22.3,1.94,0,1,1,0,0
+hacom,dell,dell vostro 3520,intel core i5-1235u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.66,n/a,12,11199000,35.85,23.56,1.7,0,0,1,1,1
 hacom,dell,dell inspiron 3530,intel core i7-1355u,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,120,n/a,n/a,n/a,n/a,windows 11 home,n/a,20299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell latitude 3540,intel core i5-1335u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.86,n/a,12,15299000,35.9,35.9,35.9,n/a,n/a,n/a,n/a,n/a
+hacom,dell,ai dell inspiron 14 5440,intel core i5-1334u,n/a,16,ddr5,512,ssd,no,14.0,1920x1200,n/a,250,n/a,n/a,n/a,windows 11 home,12,19699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell latitude 3540,intel core i5-1335u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.86,n/a,12,15299000,35.9,23.97,2.14,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell vostro 15 3530,intel core i7-1355u,geforce mx550,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,54.0,n/a,1.65,windows 11 home,12,21299000,n/a,n/a,n/a,0,0,1,1,0
-hacom,acer,acer aspire lite al16-51p-596h,intel core i5-1235u,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.7,windows 11 home,12,12599000,35.76,35.76,35.76,0,0,1,0,1
-hacom,acer,acer aspire 5 a514-56p-55k5,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,n/a,1.7,windows,12,14399000,36.29,36.29,36.29,0,0,1,1,1
-hacom,acer,acer swift 3 sf314-512-56qn,intel core i5-1240p,n/a,16,ddr4,512,ssd,yes,14.0,2560x1440,60,300,56.0,n/a,1.2,windows 11 home,12,16899000,32.1,32.1,32.1,2,0,1,0,1
-hacom,acer,acer aspire 3 a315-510p-34xz,n/a,n/a,8,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,40.0,n/a,1.7,windows 11 home,12,8999000,36.29,36.29,36.29,0,0,1,0,1
-hacom,msi,msi modern 15,n/a,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,1.75,windows 11 home,24,12799000,35.9,35.9,24.1,0,1,1,0,0
-hacom,msi,msi prestige 14evo,intel core i5-13500h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,72.0,4,n/a,windows 11 home,24,20199000,31.4,31.4,31.4,0,2,1,0,0
-hacom,msi,msi modern 15,n/a,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,1.75,windows 11 home,24,13399000,35.9,35.9,24.1,0,1,1,0,0
+hacom,acer,acer aspire lite al16-51p-596h,intel core i5-1235u,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.7,windows 11 home,12,12599000,35.76,24.7,1.89,0,0,1,0,1
+hacom,acer,acer aspire 5 a514-56p-55k5,intel core i5-1335u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,n/a,1.7,windows,12,14399000,36.29,23.75,1.8,0,2,1,1,1
+hacom,acer,acer swift 3 sf314-512-56qn,intel core i5-1240p,n/a,16,ddr4,512,ssd,yes,14.0,2560x1440,60,300,56.0,n/a,1.2,windows 11 home,12,16899000,32.1,21.08,1.59,0,2,1,0,1
+hacom,acer,acer aspire 3 a315-510p-34xz,n/a,n/a,8,ddr5,512,ssd,yes,15.6,1920x1080,60,n/a,40.0,n/a,1.7,windows 11 home,12,8999000,36.29,23.75,1.89,2,2,1,0,1
+hacom,msi,msi modern 15,n/a,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,1.75,windows 11 home,24,12799000,35.9,24.1,1.99,0,1,1,0,0
+hacom,msi,msi prestige 14evo,intel core i5-13500h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,n/a,72.0,4,n/a,windows 11 home,24,20199000,31.4,22.75,1.79,0,2,1,0,0
+hacom,msi,msi modern 15,n/a,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,1.75,windows 11 home,24,13399000,35.9,24.1,1.99,0,1,1,0,0
 hacom,lenovo,lenovo thinkbook 14p g3 r5 6600h/16gb ram/512gb ssd/14 2.2k/win11/xám - cũ đẹp 98 % full box,amd ryzen 5 6600h,n/a,16,ddr5,512,ssd,no,14.0,2240x1400,60,300,n/a,n/a,n/a,windows 11 home,18,11399000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp probook 440 g8,intel core i5-1135g,n/a,16,n/a,512,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,n/a,36,15999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell vostro 3520,intel core i5-1135g,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.83,n/a,12,11899000,35.85,35.85,23.56,2,0,1,1,0
+hacom,dell,dell vostro 3520,intel core i5-1135g,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.83,n/a,12,11899000,35.85,23.56,1.9,2,0,1,1,0
 hacom,lg,lg gram style 14z90rs-g.ah54a5,intel core i5-1340p,n/a,16,n/a,512,ssd,no,14.0,2880x1800,90,n/a,n/a,n/a,n/a,windows 11 home,12,28799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp pavilion x360 14-ek0135tu,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.3,3,1.53,windows 11 home,12,18499000,32.2,32.2,3.22,1,0,1,0,1
+hacom,hp,hp pavilion x360 14-ek0135tu,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.3,3,1.53,windows 11 home,12,18499000,32.2,21.0,1.99,0,1,1,0,1
 hacom,apple,apple macbook pro 14,n/a,n/a,18,n/a,512,ssd,yes,14.2,3024x1964,120,n/a,72.4,n/a,1.61,macos,12,48999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,lg,lg gram style 16z90rs-g.ah54a5,intel core i5-1340p,n/a,16,n/a,512,ssd,no,16.0,3200x2000,120,n/a,n/a,n/a,n/a,windows 11 home,12,35699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,microsoft,microsoft surface surface pro 9,intel core i7-1255u,n/a,16,n/a,256,ssd,no,13.0,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,40999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,microsoft,microsoft surface surface pro 9,intel core i7-1255u,n/a,16,n/a,512,ssd,no,13.0,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,44999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,microsoft,microsoft surface surface pro 9,intel core i7-1255u,n/a,16,n/a,512,ssd,no,13.0,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,44999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook pro 13,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,n/a,500,58.2,n/a,1.4,macos,12,29499000,n/a,n/a,n/a,0,0,0,0,0
-hacom,lenovo,lenovo thinkpad e14 gen 6,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,3,1.44,n/a,24,21999000,31.3,31.3,21.93,2,4,0,0,0
+hacom,lenovo,lenovo thinkpad e14 gen 6,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,3,1.44,n/a,24,21999000,31.3,21.93,1.8,2,4,0,0,0
 hacom,apple,apple macbook pro 16,n/a,n/a,48,n/a,48,ssd,yes,16.2,3456x2234,n/a,n/a,100.0,n/a,2.15,macos,12,103999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook pro 16,n/a,n/a,48,n/a,48,ssd,yes,16.2,3456x2234,n/a,n/a,100.0,n/a,2.15,macos,12,103999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook pro 16,n/a,n/a,36,n/a,36,ssd,yes,16.2,3456x2234,n/a,n/a,100.0,n/a,2.15,macos,12,90999000,n/a,n/a,n/a,0,0,1,0,1
@@ -267,81 +271,82 @@ hacom,apple,apple macbook pro 16,n/a,n/a,24,n/a,24,ssd,yes,16.2,3456x2234,n/a,n/
 hacom,apple,apple macbook pro 14,n/a,n/a,24,n/a,24,ssd,yes,14.2,3024x1964,n/a,n/a,72.4,n/a,1.6,macos,12,59999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook pro 14,n/a,n/a,24,n/a,24,ssd,yes,14.2,3024x1964,n/a,n/a,72.4,n/a,1.6,macos,12,49999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook pro 14,n/a,n/a,24,n/a,24,ssd,yes,14.2,3024x1964,n/a,n/a,72.4,n/a,1.55,macos,12,49999000,n/a,n/a,n/a,0,0,1,0,1
-hacom,acer,acer gaming predator triton neo 16 ptn16-51-78jq,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,500,76.0,n/a,2.05,windows 11 home,12,51699000,35.6,35.6,35.6,0,0,1,0,1
+hacom,acer,acer gaming predator triton neo 16 ptn16-51-78jq,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,2048,ssd,yes,16.0,2560x1600,240,500,76.0,n/a,2.05,windows 11 home,12,51699000,35.6,24.92,2.08,0,2,1,0,1
 hacom,apple,apple macbook pro 14,n/a,n/a,16,n/a,16,ssd,yes,14.2,3024x1964,n/a,n/a,72.4,n/a,1.55,macos,12,44999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook pro 14,n/a,n/a,16,n/a,16,ssd,yes,14.2,3024x1964,n/a,n/a,72.4,n/a,1.55,macos,12,39999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell vostro 15 3530,intel core i7-1355u,n/a,16,ddr4,16,ssd,yes,15.6,1920x1080,120,250,41.0,n/a,1.65,n/a,n/a,17199000,n/a,n/a,n/a,2,0,1,1,0
-hacom,lenovo,lenovo thinkbook 16 gen 6,intel core i5-13420h,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.7,n/a,24,17799000,35.6,35.6,35.6,0,2,1,1,1
-hacom,lg,ai lg gram 17zd90s-g.ah78a5,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,17.0,2560x1600,n/a,n/a,n/a,n/a,1.35,windows 11 home,12,46299000,37.88,37.88,25.88,0,0,1,0,0
-hacom,dell,dell xps 14 9440,intel core ultra 7 155h,geforce rtx 4050,64,ddr5,1024,ssd,yes,14.5,3200x2000,n/a,n/a,69.5,6,1.74,windows 11 home,12,75399000,32.0,32.0,21.6,0,0,0,0,1
-hacom,hp,hp 14-ep0128tu,intel core i5-1335u,n/a,4,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,15699000,32.37,32.37,3.24,2,0,1,0,1
+hacom,lenovo,lenovo thinkbook 16 gen 6,intel core i5-13420h,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.7,n/a,24,17799000,35.6,25.35,1.75,0,2,1,1,1
+hacom,lg,ai lg gram 17zd90s-g.ah78a5,intel core ultra 7 155h,n/a,16,ddr5,1024,ssd,yes,17.0,2560x1600,n/a,n/a,n/a,n/a,1.35,windows 11 home,12,46299000,37.88,25.88,1.78,0,0,1,0,0
+hacom,dell,dell xps 14 9440,intel core ultra 7 155h,geforce rtx 4050,64,ddr5,1024,ssd,yes,14.5,3200x2000,n/a,n/a,69.5,6,1.74,windows 11 home,12,75399000,32.0,21.6,1.83,0,0,0,0,1
+hacom,hp,hp 15-fd0083tu,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.59,windows 11 home,12,18999000,35.98,23.6,1.86,0,0,1,0,1
+hacom,hp,hp 14-ep0128tu,intel core i5-1335u,n/a,4,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,15699000,32.37,21.5,1.79,0,2,1,0,1
 hacom,hp,hp envy x360 14-fc0088tu,intel core ultra 7 155u,n/a,16,ddr5,1024,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,32199000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp 15-fd0083tu,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.0,3,1.59,windows 11 home,12,18999000,35.98,35.98,3.6,0,0,1,0,1
-hacom,lenovo,lenovo t14 g5,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,52.5,4,1.36,n/a,36,28999000,31.59,31.59,22.37,2,2,0,0,0
-hacom,asus,asus vivobook a1505va-l1491w,intel core i7-13700h,n/a,16,ddr4,512,n/a,yes,15.6,1920x1080,60,600,50.0,3,1.7,windows 11 home,24,19999000,35.68,35.68,3.57,1,0,1,0,1
+hacom,lenovo,lenovo t14 g5,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,300,52.5,4,1.36,n/a,36,28999000,31.59,22.37,1.77,2,2,0,0,0
+hacom,asus,asus vivobook a1505va-l1491w,intel core i7-13700h,n/a,16,ddr4,512,n/a,yes,15.6,1920x1080,60,600,50.0,3,1.7,windows 11 home,24,19999000,35.68,22.76,1.99,0,1,1,0,1
 hacom,apple,apple macbook air 13,apple m1 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,n/a,n/a,49.9,n/a,1.29,macos,12,18499000,n/a,n/a,n/a,0,0,0,0,0
 hacom,msi,msi modern 15 f13mg 082vn,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,n/a,n/a,1.7,windows 11 home,n/a,15299000,35.89,23.59,1.99,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo thinkpad t16 gen 2,intel core i5-1335u,n/a,16,ddr5,512,ssd,no,16.0,1920x1200,n/a,300,n/a,n/a,n/a,n/a,36,23999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo yoga 7 2 in 1 14iml9,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,71.0,n/a,1.43,windows 11 home,24,28999000,31.77,31.77,31.77,2,2,1,0,1
-hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i5-13420h,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,3,1.43,n/a,24,18499000,31.3,31.3,21.93,0,1,0,0,0
-hacom,dell,dell vostro 3420,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.0,3,1.49,windows 11 home,12,13799000,32.0,32.0,22.0,0,0,1,0,0
-hacom,acer,acer swift x sfx14-71g-78sy,intel core i7-13700h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,76.0,n/a,1.5,windows 11 home,12,39699000,32.28,32.28,32.28,0,0,1,0,1
-hacom,hp,hp probook 450 g10,intel core i5-1334u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,51.0,3,1.79,windows 11 home,12,20999000,35.94,35.94,2.34,0,0,0,0,0
-hacom,acer,acer aspire lite 16 al16-52p-572a,intel core i5-1334u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.7,windows 11 home,12,14699000,35.76,35.76,24.7,0,0,0,0,0
-hacom,hp,hp probook 450 g10,intel core i5-1335u,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,20999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 440 g10,intel core i5-1340p,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,51.0,3,1.38,windows 11 home,12,20999000,n/a,n/a,n/a,0,0,1,0,0
-hacom,lenovo,lenovo ideapad slim 5 14imh9,intel core ultra 5 125h,n/a,32,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,n/a,1.48,windows 11 home,24,20399000,31.2,31.2,31.2,2,2,1,0,1
+hacom,lenovo,lenovo yoga 7 2 in 1 14iml9,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,yes,14.0,1920x1200,60,400,71.0,n/a,1.43,windows 11 home,24,28999000,31.77,22.21,1.66,2,2,1,0,1
+hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i5-13420h,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,3,1.43,n/a,24,18499000,31.3,21.93,1.8,0,1,0,0,0
+hacom,dell,dell vostro 3420,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,250,41.0,3,1.49,windows 11 home,12,13799000,32.0,22.0,1.9,0,0,1,0,0
+hacom,acer,acer swift x sfx14-71g-78sy,intel core i7-13700h,geforce rtx 4050,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,76.0,n/a,1.5,windows 11 home,12,39699000,32.28,22.81,1.79,0,3,1,0,1
+hacom,hp,hp probook 450 g10,intel core i5-1334u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,250,51.0,3,1.79,windows 11 home,12,20999000,35.94,23.39,1.99,0,2,0,0,0
+hacom,acer,acer aspire lite 16 al16-52p-572a,intel core i5-1334u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,60,300,58.0,3,1.7,windows 11 home,12,14699000,35.76,24.7,1.89,0,0,0,0,0
+hacom,lenovo,lenovo ideapad slim 5 14imh9,intel core ultra 5 125h,n/a,32,ddr5,512,ssd,yes,14.0,1920x1200,n/a,400,57.0,n/a,1.48,windows 11 home,24,20399000,31.2,22.1,1.69,2,2,1,0,1
 hacom,lenovo,lenovo ideapad slim 5 14imh9,intel core ultra 7 155h,n/a,32,ddr5,1024,ssd,no,14.0,1920x1200,n/a,400,n/a,n/a,n/a,windows 11 home,24,25999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,hp,hp probook 450 g10,intel core i5-1335u,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,20999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,hp,hp probook 440 g10,intel core i5-1340p,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,51.0,3,1.38,windows 11 home,12,20999000,n/a,n/a,n/a,0,3,1,0,0
 hacom,apple,apple macbook air,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,32999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,microsoft,micorsoft surface pro 11 snapdragon® x elite/512gb ssd/16gb/ 13 inch,cpu snapdragon x elite,n/a,16,ddr5,512,ssd,no,13.0,2880x1920,n/a,n/a,53.0,n/a,0.895,windows,12,41999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo v15 gen 4,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,n/a,300,36.0,n/a,1.65,n/a,24,10999000,35.92,35.92,35.92,n/a,n/a,n/a,n/a,n/a
+hacom,asus,asus x1504va-nj069w,intel core i3-1315u,n/a,8,ddr4,512,n/a,yes,15.6,1920x1080,n/a,250,42.0,3,1.7,windows 11 home,24,10499000,35.97,23.25,1.79,0,1,1,0,0
+hacom,lenovo,lenovo v15 gen 4,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,n/a,300,36.0,n/a,1.65,n/a,24,10999000,35.92,23.58,1.99,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp probook 440 g10,intel core i7-1355u,n/a,16,ddr4,512,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,24999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,asus,asus x1504va-nj069w,intel core i3-1315u,n/a,8,ddr4,512,n/a,yes,15.6,1920x1080,n/a,250,42.0,3,1.7,windows 11 home,24,10499000,35.97,35.97,3.6,1,0,1,0,0
-hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,n/a,1.43,n/a,24,21799000,31.3,31.3,31.3,2,4,1,1,1
-hacom,hp,hp probook 460 g11,intel core ultra 5 125h,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,21499000,35.94,35.94,2.51,0,0,0,0,0
-hacom,hp,hp probook 460 g11,intel core ultra 5 125u,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,20999000,35.94,35.94,2.51,0,0,0,0,0
+hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,47.0,n/a,1.43,n/a,24,21799000,31.3,21.93,1.8,2,4,1,1,1
+hacom,hp,hp probook 460 g11,intel core ultra 5 125h,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,21499000,35.94,25.11,1.7,0,2,0,0,0
+hacom,hp,hp probook 460 g11,intel core ultra 5 125u,n/a,8,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,20999000,35.94,25.11,1.7,0,2,0,0,0
 hacom,hp,hp probook 460 g11,intel core ultra 5 125h,n/a,16,ddr5,512,ssd,no,n/a,n/a,n/a,n/a,56.0,3,n/a,windows 11 home,12,25999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 460 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,25999000,35.94,35.94,2.51,0,0,0,0,0
-hacom,hp,hp probook 450 g10,intel core i7-1355u,n/a,8,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,22999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,hp,hp probook 460 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,16.0,1920x1200,n/a,300,56.0,3,1.74,windows 11 home,12,25999000,35.94,25.11,1.7,0,2,0,0,0
 hacom,hp,hp 240 g10,intel core i5-1335u,n/a,16,ddr4,512,n/a,no,14.0,1920x1080,n/a,250,n/a,n/a,n/a,windows 11 home,12,16799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,hp,hp probook 450 g10,intel core i7-1355u,n/a,8,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,22999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo thinkpad l14 gen 5,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,no,14.0,n/a,n/a,400,n/a,n/a,n/a,n/a,24,26799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 450 g10,intel core i7-1355u,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,24999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp elitebook 630 g10,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,13.3,1920x1080,n/a,250,42.75,3,1.28,windows 11 home,12,21499000,30.69,30.69,3.07,0,2,1,0,1
+hacom,asus,asus vivobook tp3402va-lz118w,intel core i9-13900h,n/a,8,ddr4,512,ssd,yes,14.0,1920x1200,n/a,300,96.0,6,1.5,windows 11 home,24,21999000,35.63,23.53,2.0,0,0,0,0,0
+hacom,hp,hp elitebook 630 g10,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,13.3,1920x1080,n/a,250,42.75,3,1.28,windows 11 home,12,21499000,30.69,20.84,1.59,0,2,1,0,1
 hacom,hp,hp envy x360 14-fa0045au,amd ryzen 7 8840hs,n/a,32,n/a,1024,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,31499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,asus,asus zenbook ux3405ma-pp475w,intel core ultra 9 185h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,4,1.2,windows 11 home,24,33499000,31.24,31.24,3.12,0,1,1,0,1
-hacom,asus,asus vivobook a1505va-l1201w,intel core i9-13900h,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,600,50.0,3,1.7,windows 11 home,24,20999000,35.68,35.68,3.57,1,0,1,0,1
-hacom,hp,hp pavilion 15-eg3112tu,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,22799000,36.02,36.02,3.6,2,0,1,0,1
-hacom,hp,hp pavilion 15-eg3035tx,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.74,windows 11 home,12,23999000,36.02,36.02,3.6,2,0,1,0,1
-hacom,hp,hp pavilion 15-eg3091tu,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,22799000,36.02,36.02,3.6,2,0,1,0,1
-hacom,hp,hp pavilion x360 14-ek1048tu,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,43.3,3,1.53,windows 11 home,12,20599000,32.2,32.2,3.22,1,0,1,0,1
-hacom,hp,hp pavilion x360 14-ek1047tu,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,43.3,3,1.53,windows 11 home,12,24999000,32.2,32.2,3.22,1,0,1,0,1
+hacom,hp,hp probook 450 g10,intel core i7-1355u,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows,12,24999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,asus,asus zenbook ux3405ma-pp475w,intel core ultra 9 185h,n/a,32,ddr5,1024,ssd,yes,14.0,2880x1800,n/a,n/a,75.0,4,1.2,windows 11 home,24,33499000,31.24,22.01,1.23,0,1,1,0,1
 hacom,hp,hp 15-fq5228tu,intel core i3-1215u,n/a,8,ddr4,512,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows 11 home,12,10799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp 14-dq5122tu,intel core i3-1215u,n/a,4,ddr4,256,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,10299000,32.37,32.37,3.24,2,0,1,0,1
-hacom,acer,acer aspire 3 a315-44p-r5qg,amd ryzen 7 5700u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,12899000,36.29,36.29,36.29,0,0,1,1,1
-hacom,acer,acer swift x ai sfx14-72g-708x,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,76.0,4,1.5,windows 11 home,12,46699000,32.28,32.28,32.28,0,0,1,0,1
+hacom,hp,hp 14-dq5122tu,intel core i3-1215u,n/a,4,ddr4,256,ssd,yes,14.0,1920x1080,60,250,41.04,3,1.4,windows 11 home,12,10299000,32.37,21.5,1.79,0,2,1,0,1
+hacom,hp,hp pavilion 15-eg3112tu,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,22799000,36.02,23.4,1.8,0,2,1,0,1
+hacom,hp,hp pavilion 15-eg3035tx,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.74,windows 11 home,12,23999000,36.02,23.4,1.8,0,2,1,0,1
+hacom,hp,hp pavilion 15-eg3091tu,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,22799000,36.02,23.4,1.8,0,2,1,0,1
+hacom,hp,hp pavilion x360 14-ek1048tu,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,43.3,3,1.53,windows 11 home,12,20599000,32.2,21.0,1.99,0,1,1,0,1
+hacom,hp,hp pavilion x360 14-ek1047tu,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,250,43.3,3,1.53,windows 11 home,12,24999000,32.2,21.0,1.99,0,1,1,0,1
+hacom,acer,acer aspire 3 a315-44p-r5qg,amd ryzen 7 5700u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,12899000,36.29,24.13,1.99,2,2,1,1,1
+hacom,acer,acer swift x ai sfx14-72g-708x,intel core ultra 7 155h,geforce rtx 4060,32,ddr5,1024,ssd,yes,14.5,2880x1800,120,400,76.0,4,1.5,windows 11 home,12,46699000,32.28,22.81,1.79,0,0,1,0,1
+hacom,microsoft,microsoft surface pro 11 snapdragon x plus/512gb ssd/16gb/13 inch,cpu snapdragon x plus,n/a,16,ddr5,512,ssd,no,13.0,2880x1920,n/a,n/a,48.0,n/a,0.895,windows,12,31999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,microsoft,microsoft surface pro 11 snapdragon x plus/512gb ssd/16gb/13 inch,cpu snapdragon x plus,n/a,16,ddr5,512,ssd,no,13.0,2880x1920,n/a,n/a,48.0,n/a,0.895,windows,12,31999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,microsoft,microsoft surface pro 11 snapdragon x plus/512gb ssd/16gb/13 inch,cpu snapdragon x plus,n/a,16,ddr5,512,ssd,no,13.0,2880x1920,n/a,n/a,48.0,n/a,0.895,windows,12,31999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,microsoft,microsoft surface pro 11 snapdragon x plus/512gb ssd/16gb/13 inch,cpu snapdragon x plus,n/a,16,ddr5,512,ssd,no,13.0,2880x1920,n/a,n/a,48.0,n/a,0.895,windows,12,31999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,microsoft,mircosoft surface 7 snapdragon® x elite,cpu snapdragon x elite,n/a,16,ddr5,512,ssd,no,13.8,2304x1536,n/a,n/a,54.0,n/a,1.34,windows,24,51999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,microsoft,microsoft surface pro 11 snapdragon x plus/512gb ssd/16gb/13 inch,cpu snapdragon x plus,n/a,16,ddr5,512,ssd,no,13.0,2880x1920,n/a,n/a,48.0,n/a,0.895,windows,12,31999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,microsoft,microsoft surface pro 11 snapdragon x plus/512gb ssd/16gb/13 inch,cpu snapdragon x plus,n/a,16,ddr5,512,ssd,no,13.0,2880x1920,n/a,n/a,48.0,n/a,0.895,windows,12,31999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire 3 a315-44p-r9w8,amd ryzen 7 5700u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,11899000,36.29,36.29,36.29,0,0,0,1,1
+hacom,acer,acer aspire 3 a315-44p-r9w8,amd ryzen 7 5700u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,11899000,36.29,24.13,1.99,2,2,0,1,1
 hacom,lenovo,lenovo thinkpad e14 gen 5,intel core i7-1355u,n/a,16,ddr4,512,ssd,no,14.0,1920x1080,n/a,300,n/a,n/a,n/a,windows 11 home,24,22999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp pavilion 15-eg3099tu,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,12999000,36.02,36.02,3.6,2,0,1,0,1
-hacom,hp,hp pavilion 15-eg3098tu,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,12999000,36.02,36.02,3.6,2,0,1,0,1
+hacom,hp,hp pavilion 15-eg3099tu,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,12999000,36.02,23.4,1.8,0,2,1,0,1
+hacom,hp,hp pavilion 15-eg3098tu,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,12999000,36.02,23.4,1.8,0,2,1,0,1
 hacom,microsoft,micorsoft surface pro 11 snapdragon® x elite/1tb ssd/32gb/ 13 inch,cpu snapdragon x elite,n/a,16,ddr5,512,ssd,no,13.0,2880x1920,n/a,n/a,53.0,n/a,0.895,windows,12,54999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp envy x360 14-fc0089tu,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,no,14.0,2880x1800,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,30999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp probook 460 g11,intel core ultra 7 155h,n/a,16,ddr5,512,ssd,no,n/a,n/a,n/a,n/a,56.0,3,n/a,windows 11 pro,12,29999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell inspiron 3530,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,16299000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 3530,intel core i5-1335u,n/a,16,ddr4,512,ssd,no,15.6,1920x1080,120,250,n/a,n/a,n/a,windows 11 home,12,17399000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air 13,apple m1 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,n/a,n/a,49.9,n/a,1.29,macos,12,18699000,n/a,n/a,n/a,0,0,0,0,0
 hacom,apple,apple macbook air 13,apple m1 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,n/a,n/a,49.9,n/a,1.29,macos,12,18699000,n/a,n/a,n/a,0,0,0,0,0
-hacom,dell,dell inspiron 3530,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,16299000,n/a,n/a,n/a,0,0,1,0,1
-hacom,hp,hp elitebook 630 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 pro,12,29999000,30.31,30.31,2.15,0,0,0,0,0
-hacom,hp,hp elitebook 630 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 pro,12,27999000,30.31,30.31,2.15,0,0,0,0,0
-hacom,hp,hp elitebook 630 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 pro,12,26999000,30.31,30.31,2.15,0,0,0,0,0
-hacom,hp,hp elitebook 630 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 pro,12,30999000,30.31,30.31,2.15,0,0,0,0,0
+hacom,hp,hp elitebook 630 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 pro,12,29999000,30.31,21.51,1.7,0,0,0,0,0
+hacom,hp,hp elitebook 630 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 pro,12,27999000,30.31,21.51,1.7,0,0,0,0,0
+hacom,hp,hp elitebook 630 g11,intel core ultra 5 125u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 pro,12,26999000,30.31,21.51,1.7,0,0,0,0,0
+hacom,hp,hp elitebook 630 g11,intel core ultra 7 155u,n/a,16,ddr5,512,ssd,yes,13.3,1920x1200,n/a,300,56.0,3,1.31,windows 11 pro,12,30999000,30.31,21.51,1.7,0,0,0,0,0
 hacom,microsoft,mircosoft surface 7 snapdragon® x plus,cpu snapdragon x plus,n/a,16,ddr5,256,ssd,no,13.8,2304x1536,n/a,n/a,54.0,n/a,n/a,windows,24,28999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,msi,msi modern 14,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows 11 home,24,13990000,31.99,31.99,31.99,2,2,1,0,0
-hacom,msi,msi prestige 16 studio,intel core i7-13700h,geforce rtx 4050,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,82.0,4,n/a,windows 11 home,24,39990000,35.8,35.8,35.8,0,1,1,0,0
+hacom,msi,msi modern 14,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows 11 home,24,13990000,31.99,22.3,1.94,6,2,1,0,0
+hacom,msi,msi prestige 16 studio,intel core i7-13700h,geforce rtx 4050,16,ddr5,1024,ssd,yes,16.0,2560x1600,165,n/a,82.0,4,n/a,windows 11 home,24,39990000,35.8,25.86,1.69,0,1,1,0,0
+hacom,apple,apple macbook air,apple m3 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,32999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m3 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,32999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,32999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m3 8-core,n/a,16,n/a,512,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,36999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
@@ -355,7 +360,6 @@ hacom,apple,apple macbook air,apple m3 8-core,n/a,16,n/a,256,ssd,no,13.6,2560x16
 hacom,apple,apple macbook air,apple m3 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,27999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,26999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m3 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,26999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,apple,apple macbook air,apple m3 8-core,n/a,8,n/a,512,ssd,yes,13.6,2560x1664,n/a,500,52.6,n/a,1.24,macos,12,32999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air 15,apple m2,n/a,8,n/a,512,ssd,no,15.3,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,35699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air 15,apple m2,n/a,8,n/a,512,ssd,no,15.3,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,35699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook pro 13,apple m2 8-core,n/a,16,n/a,512,ssd,yes,13.3,2560x1600,n/a,500,58.2,n/a,1.4,macos,12,41499000,n/a,n/a,n/a,0,0,0,0,0
@@ -367,99 +371,99 @@ hacom,apple,apple macbook air 15,apple m2,n/a,8,n/a,256,ssd,no,15.3,n/a,n/a,n/a,
 hacom,apple,apple macbook pro 14,n/a,n/a,16,n/a,1024,ssd,yes,14.2,3024x1964,n/a,n/a,70.0,n/a,1.55,macos,12,50499000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook air 15,apple m2,n/a,8,n/a,256,ssd,no,15.3,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,30799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air 15,apple m2,n/a,8,n/a,256,ssd,no,15.3,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,30799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo thinkpad t14 gen 4,intel core i5-1335u,n/a,16,ddr5,512,ssd,no,14.0,1920x1200,n/a,n/a,n/a,n/a,n/a,n/a,36,26999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo thinkbook 16 gen 6,intel core i7-13700h,n/a,32,ddr5,1024,ssd,no,16.0,1920x1200,n/a,300,n/a,n/a,n/a,windows 11 home,24,26999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo ideapad slim 5 14q8x9,cpu qualcomm snapdragon x plus ix1p-42-100,n/a,316,ddr5,512,ssd,no,14.0,1920x1200,60,400,n/a,n/a,n/a,windows 11 home,24,22999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo thinkpad t14 gen 4,intel core i5-1335u,n/a,16,ddr5,512,ssd,no,14.0,1920x1200,n/a,n/a,n/a,n/a,n/a,n/a,36,26999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,n/a,24,18499000,35.61,35.61,35.61,2,4,1,1,1
-hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,n/a,24,18999000,35.61,35.61,35.61,2,4,1,1,1
-hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,n/a,24,20499000,35.61,35.61,35.61,2,4,1,1,1
-hacom,lenovo,lenovo ideapad slim 3 15irh8,intel core i7-13620h,n/a,8,ddr5,1024,ssd,yes,15.6,1920x1080,n/a,300,47.0,n/a,1.37,windows 11 home,24,17999000,35.93,35.93,35.93,0,2,1,0,1
-hacom,lenovo,lenovo thinkpad t14 gen 4,intel core i5-1335u,n/a,16,ddr5,512,ssd,no,14.0,1920x1200,n/a,300,39.3,3,1.36,n/a,36,25999000,31.77,31.77,31.77,0,2,1,1,1
+hacom,lenovo,lenovo ideapad slim 3 15irh8,intel core i7-13620h,n/a,8,ddr5,1024,ssd,yes,15.6,1920x1080,n/a,300,47.0,n/a,1.37,windows 11 home,24,17999000,35.93,23.5,1.79,0,2,1,0,1
+hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,n/a,24,18499000,35.61,24.77,1.99,2,4,1,1,1
+hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,n/a,24,18999000,35.61,24.77,1.99,2,4,1,1,1
+hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i5-13500h,n/a,16,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,n/a,24,20499000,35.61,24.77,1.99,2,4,1,1,1
+hacom,lenovo,lenovo thinkpad t14 gen 4,intel core i5-1335u,n/a,16,ddr5,512,ssd,no,14.0,1920x1200,n/a,300,39.3,3,1.36,n/a,36,25999000,31.77,22.69,1.79,0,2,1,1,1
 hacom,lenovo,lenovo thinkpad t16 gen 2,intel core i5-1335u,n/a,16,ddr5,512,ssd,no,16.0,1920x1200,n/a,300,n/a,n/a,n/a,windows 11 home,36,29999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,asus,asus zenbook duo ux8406ma-pz307w,intel core ultra 7 155h,n/a,16,ddr5,512,n/a,yes,14.0,2880x1800,120,400,75.0,4,1.39,windows 11 home,24,44999000,31.35,31.35,3.14,0,1,1,0,1
-hacom,asus,asus zenbook duo ux8406ma-pz142w,intel core ultra 9 185h,n/a,32,ddr5,1024,n/a,yes,14.0,2880x1800,120,400,75.0,4,1.65,windows 11 home,24,57999000,31.35,31.35,3.14,0,1,1,0,1
-hacom,asus,asus vivobook 15 oled a1505va - l1114w,intel core i5-13500h,n/a,16,ddr4,512,n/a,yes,15.6,1920x1080,n/a,600,50.0,3,1.7,windows 11 home,24,16999000,35.68,35.68,3.57,1,0,1,0,1
+hacom,asus,asus zenbook duo ux8406ma-pz307w,intel core ultra 7 155h,n/a,16,ddr5,512,n/a,yes,14.0,2880x1800,120,400,75.0,4,1.39,windows 11 home,24,44999000,31.35,21.79,1.23,0,1,1,0,1
+hacom,asus,asus zenbook duo ux8406ma-pz142w,intel core ultra 9 185h,n/a,32,ddr5,1024,n/a,yes,14.0,2880x1800,120,400,75.0,4,1.65,windows 11 home,24,57999000,31.35,21.79,1.23,0,1,1,0,1
+hacom,hp,hp 15-fd1037tu,cpu intel core 7-150u,n/a,16,ddr4,1024,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows 11 home,12,22399000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+hacom,asus,asus vivobook 15 oled a1505va - l1114w,intel core i5-13500h,n/a,16,ddr4,512,n/a,yes,15.6,1920x1080,n/a,600,50.0,3,1.7,windows 11 home,24,16999000,35.68,22.76,1.99,0,1,1,0,1
 hacom,hp,hp spectre x360 14-eu0051tu,intel core ultra 7 155u,n/a,16,ddr5,1024,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,52499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp 15-fd1060tu,intel core ultra 7 155h,n/a,16,ddr5,512,n/a,no,15.6,1920x1080,n/a,300,n/a,n/a,n/a,windows,12,22499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp 15-fd1037tu,cpu intel core 7-150u,n/a,16,ddr4,1024,ssd,no,15.6,1920x1080,n/a,250,n/a,n/a,n/a,windows 11 home,12,22399000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp envy x360 14-fc0093tu,intel core ultra 5 125,n/a,16,n/a,512,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,28499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp envy x360 14-es0013dx,intel core i5-1335u,n/a,8,ddr4,512,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,windows 11 home,12,16999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp pavilion 15-eg3092tu,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,21999000,36.02,36.02,3.6,2,0,1,0,1
-hacom,dell,dell latitude 3540,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.86,n/a,12,25199000,35.9,35.9,35.9,n/a,n/a,n/a,n/a,n/a
+hacom,hp,hp pavilion 15-eg3092tu,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,250,41.04,3,1.68,windows 11 home,12,21999000,36.02,23.4,1.8,0,2,1,0,1
+hacom,dell,dell latitude 3540,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.86,n/a,12,25199000,35.9,23.97,2.14,n/a,n/a,n/a,n/a,n/a
 hacom,microsoft,microsoft surface surface pro 9,n/a,n/a,8,ddr5,256,ssd,no,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,27499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,microsoft,microsoft surface surface pro 9,intel core i5-1235u,n/a,8,ddr5,256,ssd,no,13.0,2880x1920,n/a,n/a,n/a,n/a,0.879,windows 11 home,12,27499000,28.7,28.7,28.7,0,2,0,0,0
-hacom,microsoft,microsoft surface surface pro 9,intel core i5-1235u,n/a,8,ddr5,256,ssd,no,13.0,2880x1920,n/a,n/a,n/a,n/a,0.879,windows 11 home,12,27499000,28.7,28.7,28.7,0,2,0,0,0
-hacom,dell,dell workstation mobile precision 3581 vpro enterprise,intel core i7-13800h,geforce rtx a500,32,ddr5,1024,ssd,yes,15.6,1920x1080,60,250,64.0,4,1.795,windows 11 pro,36,52199000,35.78,35.78,35.78,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell workstation mobile precision 3581 vpro enterprise,intel core i7-13800h,geforce rtx a1000,32,ddr5,1024,ssd,yes,15.6,1920x1080,60,250,64.0,4,1.795,windows 11 pro,36,54699000,35.78,35.78,35.78,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell workstation mobile precision 3480 vpro,intel core i7-12800h,geforce rtx a500,32,ddr5,1024,ssd,yes,14.0,1920x1080,n/a,250,54.0,3,1.39,windows 11 pro,36,47699000,32.14,32.14,32.14,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell workstation mobile precision 5680 vpro enterprise,intel core i7-13800h,rtx 2000 ada,16,ddr5,1024,ssd,yes,16.0,1920x1200,60,500,100.0,6,1.905,linux,36,81699000,35.37,35.37,35.37,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell workstation mobile precision 5680 vpro enterprise,intel core i7-13800h,geforce rtx a1000,16,ddr5,512,ssd,yes,16.0,1920x1200,60,500,100.0,6,1.905,linux,36,73699000,35.37,35.37,35.37,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell mobile precision workstation 5680 vpro enterprise,intel core i9-13900h,rtx 2000 ada,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,500,100.0,6,1.905,linux,36,95699000,35.37,35.37,35.37,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell mobile precision workstation 7680 vpro,intel core i7-13850hx,rtx 2000 ada,32,ddr5,512,ssd,yes,16.0,1920x1200,60,250,83.0,6,2.6,windows 11 pro,36,73699000,35.6,35.6,35.6,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell mobile precision workstation 7680 vpro,intel core i7-13850hx,rtx 2000 ada,16,ddr5,512,ssd,yes,16.0,1920x1200,60,250,83.0,6,2.6,linux,36,72399000,35.6,35.6,35.6,n/a,n/a,n/a,n/a,n/a
-hacom,lg,lg gram 14zd90r-g.ax52a5,intel core i5-1340p,n/a,8,ddr5,256,ssd,yes,14.0,1920x1200,n/a,350,n/a,n/a,0.999,windows 11 home,12,20499000,31.2,31.2,2.14,0,0,1,0,0
+hacom,microsoft,microsoft surface surface pro 9,intel core i5-1235u,n/a,8,ddr5,256,ssd,no,13.0,2880x1920,n/a,n/a,n/a,n/a,0.879,windows 11 home,12,27499000,28.7,20.9,0.93,0,2,0,0,0
+hacom,microsoft,microsoft surface surface pro 9,intel core i5-1235u,n/a,8,ddr5,256,ssd,no,13.0,2880x1920,n/a,n/a,n/a,n/a,0.879,windows 11 home,12,27499000,28.7,20.9,0.93,0,2,0,0,0
+hacom,dell,dell workstation mobile precision 3581 vpro enterprise,intel core i7-13800h,geforce rtx a500,32,ddr5,1024,ssd,yes,15.6,1920x1080,60,250,64.0,4,1.795,windows 11 pro,36,52199000,35.78,23.33,2.27,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell workstation mobile precision 3581 vpro enterprise,intel core i7-13800h,geforce rtx a1000,32,ddr5,1024,ssd,yes,15.6,1920x1080,60,250,64.0,4,1.795,windows 11 pro,36,54699000,35.78,23.33,2.27,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell workstation mobile precision 3480 vpro,intel core i7-12800h,geforce rtx a500,32,ddr5,1024,ssd,yes,14.0,1920x1080,n/a,250,54.0,3,1.39,windows 11 pro,36,47699000,32.14,21.2,1.91,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell workstation mobile precision 5680 vpro enterprise,intel core i7-13800h,rtx 2000 ada,16,ddr5,1024,ssd,yes,16.0,1920x1200,60,500,100.0,6,1.905,linux,36,81699000,35.37,24.03,2.62,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell workstation mobile precision 5680 vpro enterprise,intel core i7-13800h,geforce rtx a1000,16,ddr5,512,ssd,yes,16.0,1920x1200,60,500,100.0,6,1.905,linux,36,73699000,35.37,24.03,2.62,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell mobile precision workstation 5680 vpro enterprise,intel core i9-13900h,rtx 2000 ada,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,500,100.0,6,1.905,linux,36,95699000,35.37,24.03,2.62,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell mobile precision workstation 7680 vpro,intel core i7-13850hx,rtx 2000 ada,32,ddr5,512,ssd,yes,16.0,1920x1200,60,250,83.0,6,2.6,windows 11 pro,36,73699000,35.6,25.83,2.23,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell mobile precision workstation 7680 vpro,intel core i7-13850hx,rtx 2000 ada,16,ddr5,512,ssd,yes,16.0,1920x1200,60,250,83.0,6,2.6,linux,36,72399000,35.6,25.83,2.23,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell inspiron 3530,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,54.0,4,1.65,windows 11 home,12,20199000,n/a,n/a,n/a,0,0,1,0,1
+hacom,lg,lg gram 14zd90r-g.ax52a5,intel core i5-1340p,n/a,8,ddr5,256,ssd,yes,14.0,1920x1200,n/a,350,n/a,n/a,0.999,windows 11 home,12,20499000,31.2,21.39,1.68,0,0,1,0,0
 hacom,apple,apple macbook air,apple m2,n/a,8,n/a,512,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,28999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2,n/a,8,n/a,512,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,28999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,msi,msi modern 15,intel core i5-1155g,n/a,8,ddr4,512,n/a,yes,15.6,1920x1080,n/a,n/a,39.0,n/a,1.6,windows11 home,12,23990000,35.68,35.68,35.68,6,2,1,0,0
+hacom,msi,msi modern 15,intel core i5-1155g,n/a,8,ddr4,512,n/a,yes,15.6,1920x1080,n/a,n/a,39.0,n/a,1.6,windows11 home,12,23990000,35.68,23.38,1.69,6,2,1,0,0
 hacom,dell,dell latitude 7440,intel core i5-1335u,n/a,8,ddr5,256,ssd,no,14.0,1920x1080,n/a,250,n/a,n/a,n/a,linux,n/a,28799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,dell,dell inspiron 3530,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,16299000,n/a,n/a,n/a,0,0,1,0,1
+hacom,dell,dell workstation mobile precision 3581 vpro enterprise,intel core i7-13800h,geforce rtx a500,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,64.0,4,1.795,linux,36,42699000,35.78,23.33,2.27,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell inspiron 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.65,windows 11 home,12,14899000,n/a,n/a,n/a,0,0,1,0,1
+hacom,dell,dell vostro 3430,intel core i3-1305u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,3,1.44,windows 11 home,12,12199000,n/a,n/a,n/a,2,4,1,1,0
 hacom,dell,dell inspiron 3530,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,19799000,n/a,n/a,n/a,0,0,1,0,1
 hacom,dell,dell inspiron 3530,intel core i5-1335u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,250,41.0,3,1.65,windows 11 home,12,17699000,n/a,n/a,n/a,0,0,1,0,1
-hacom,dell,dell inspiron 3520,intel core i5-1235u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,120,n/a,41.0,3,1.65,windows 11 home,12,14899000,n/a,n/a,n/a,0,0,1,0,1
-hacom,dell,dell workstation mobile precision 3581 vpro enterprise,intel core i7-13800h,geforce rtx a500,16,ddr5,512,ssd,yes,15.6,1920x1080,60,250,64.0,4,1.795,linux,36,42699000,35.78,35.78,35.78,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell vostro 3430,intel core i3-1305u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,41.0,3,1.44,windows 11 home,12,12199000,n/a,n/a,n/a,6,0,1,1,0
 hacom,acer,acer travelmate p2,intel core i5-1335u,n/a,8,n/a,512,ssd,no,14.0,1920x1080,60,n/a,n/a,n/a,n/a,windows 11 home,12,18499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire lite al15-51m-55nb,intel core i5-1155g,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,36.0,n/a,1.7,windows,12,11399000,36.04,36.04,36.04,0,0,1,1,0
-hacom,acer,acer aspire 3 a315-59-381e,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,40.0,3,1.7,windows 11 home,12,9799000,36.29,36.29,36.29,4,0,1,1,1
-hacom,acer,acer aspire 3 a315-59-314f,intel core i3-1215u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,n/a,40.0,3,1.7,windows 11 home,12,8799000,36.29,36.29,36.29,4,0,1,1,1
+hacom,acer,acer aspire lite al15-51m-55nb,intel core i5-1155g,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,36.0,n/a,1.7,windows,12,11399000,36.04,23.93,1.97,0,2,1,1,0
+hacom,acer,acer aspire 3 a315-59-381e,intel core i3-1215u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,40.0,3,1.7,windows 11 home,12,9799000,36.29,24.13,1.99,4,0,1,1,1
+hacom,acer,acer aspire 3 a315-59-314f,intel core i3-1215u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,n/a,40.0,3,1.7,windows 11 home,12,8799000,36.29,24.13,1.99,4,0,1,1,1
 hacom,acer,laptop acer aspire a514-54-5127,intel core i5-1135g,n/a,8,n/a,512,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,11899000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lg,lg gram 16z90r-g.ah76a5,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,n/a,350,n/a,n/a,1.199,windows 11 home,12,35999000,35.51,35.51,2.42,0,0,1,0,0
-hacom,asus,asus expertbook b1402cba-ek0648w,intel core i5-1235u,n/a,8,ddr4,256,n/a,yes,14.0,1920x1080,60,n/a,42.0,3,1.45,windows 11 home,24,14499000,32.34,32.34,3.23,0,1,1,1,1
-hacom,lenovo,lenovo thinkbook 15 g5,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,300,45.0,n/a,1.7,n/a,24,16999000,35.7,35.7,35.7,0,2,1,1,1
-hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,windows 11 home,24,24999000,35.61,35.61,35.61,2,4,1,1,1
+hacom,lg,lg gram 16z90r-g.ah76a5,intel core i7-1360p,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,n/a,350,n/a,n/a,1.199,windows 11 home,12,35999000,35.51,24.23,1.68,0,0,1,0,0
+hacom,asus,asus expertbook b1402cba-ek0648w,intel core i5-1235u,n/a,8,ddr4,256,n/a,yes,14.0,1920x1080,60,n/a,42.0,3,1.45,windows 11 home,24,14499000,32.34,21.56,1.92,0,1,1,1,1
+hacom,lenovo,lenovo thinkbook 15 g5,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,300,45.0,n/a,1.7,n/a,24,16999000,35.7,23.5,1.89,0,2,1,1,1
+hacom,lenovo,lenovo thinkpad e16 gen 1,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,16.0,1920x1200,n/a,300,47.0,n/a,1.81,windows 11 home,24,24999000,35.61,24.77,1.99,2,4,1,1,1
 hacom,apple,apple macbook pro 14,n/a,n/a,18,n/a,1024,ssd,yes,14.2,3024x1964,n/a,n/a,72.4,n/a,1.61,macos,12,79999000,n/a,n/a,n/a,0,0,1,0,1
-hacom,msi,msi thin gf63,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,52.0,n/a,1.85,windows,24,17490000,35.9,35.9,25.4,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire 5 a515-58p-71ej,intel core i7-1355u,n/a,16,ddr5,1024,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,18899000,36.29,36.29,36.29,0,0,0,0,0
-hacom,asus,asus vivobook s3504va-l1227ws,intel core i7-1360p,n/a,16,ddr4,512,ssd,yes,15.6,n/a,60,400,50.0,3,1.7,windows 11 home,24,21999000,35.97,35.97,3.6,1,0,1,0,1
+hacom,msi,msi thin gf63,intel core i5-12450h,geforce rtx 3050,8,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,52.0,n/a,1.85,windows,24,17490000,35.9,25.4,2.15,n/a,n/a,n/a,n/a,n/a
+hacom,acer,acer aspire 5 a515-58p-71ej,intel core i7-1355u,n/a,16,ddr5,1024,ssd,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,18899000,36.29,23.75,1.8,2,0,0,0,0
+hacom,asus,asus vivobook s3504va-l1227ws,intel core i7-1360p,n/a,16,ddr4,512,ssd,yes,15.6,n/a,60,400,50.0,3,1.7,windows 11 home,24,21999000,35.97,23.25,1.79,0,1,1,0,1
 hacom,apple,apple macbook air,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.6,2560x1664,n/a,n/a,56.6,n/a,1.24,macos,12,24199000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,msi,msi thin gf63,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,52.0,n/a,1.85,windows,12,17489000,35.9,35.9,25.4,n/a,n/a,n/a,n/a,n/a
+hacom,msi,msi thin gf63,intel core i5-12450h,geforce rtx 3050,16,ddr4,512,ssd,no,15.6,1920x1080,144,n/a,52.0,n/a,1.85,windows,12,17489000,35.9,25.4,2.15,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2,n/a,16,n/a,256,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,31299000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo v15 g3,intel core i5-1235u,n/a,8,ddr4,256,ssd,no,15.6,1920x1080,n/a,300,n/a,n/a,n/a,n/a,12,11999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,asus,asus vivobook 15x oled s3504va-l1226w,intel core i5-1340p,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,400,50.0,3,1.6,windows 11 home,24,17999000,35.97,35.97,3.6,1,0,0,0,0
-hacom,msi,msi modern 15,intel core i7-1255u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,n/a,1.7,windows 11 home,24,15990000,35.9,35.9,35.9,0,1,1,0,0
-hacom,msi,msi modern 14,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,17990000,31.99,31.99,31.99,0,1,1,0,0
-hacom,msi,msi modern 14,amd ryzen 7 7730u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows 11 home,24,11990000,35.9,35.9,24.1,0,1,1,0,0
-hacom,msi,msi modern 15,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,1.7,windows 11 home,24,18490000,35.9,35.9,35.9,2,2,1,0,0
-hacom,msi,msi prestige 13evo,intel core i7-1360p,n/a,16,ddr5,1024,ssd,yes,13.3,1920x1200,n/a,n/a,75.0,4,n/a,windows 11 home,24,29990000,29.9,29.9,29.9,0,2,1,0,0
-hacom,msi,msi modern 14,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13990000,31.99,31.99,31.99,0,1,1,0,0
-hacom,msi,msi modern 14,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13990000,31.99,31.99,31.99,0,1,1,0,0
-hacom,acer,acer aspire 5 a514-56p-562p,intel core i5-1335u,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,3,1.5,windows 11 home,12,14899000,31.88,31.88,31.88,0,0,0,0,1
-hacom,asus,asus vivobook k6502vu-ma090w,intel core i9-13900h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,2880x1620,120,400,70.0,3,1.8,windows 11 home,24,38999000,35.63,35.63,3.56,0,0,0,0,0
+hacom,asus,asus vivobook 15x oled s3504va-l1226w,intel core i5-1340p,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,60,400,50.0,3,1.6,windows 11 home,24,17999000,35.97,23.25,1.79,0,1,0,0,0
+hacom,msi,msi prestige 13evo,intel core i7-1360p,n/a,16,ddr5,1024,ssd,yes,13.3,1920x1200,n/a,n/a,75.0,4,n/a,windows 11 home,24,29990000,29.9,21.0,1.69,0,2,1,0,0
+hacom,msi,msi modern 14,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13990000,31.99,22.3,1.94,0,1,1,0,0
+hacom,msi,msi modern 14,intel core i5-1335u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,13990000,31.99,22.3,1.94,0,1,1,0,0
+hacom,msi,msi modern 15,intel core i7-1255u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,n/a,1.7,windows 11 home,24,15990000,35.9,24.1,1.99,0,1,1,0,0
+hacom,msi,msi modern 14,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,n/a,1.4,windows 11 home,24,17990000,31.99,22.3,1.94,0,1,1,0,0
+hacom,msi,msi modern 14,amd ryzen 7 7730u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows 11 home,24,11990000,35.9,24.1,1.99,0,1,1,0,0
+hacom,msi,msi modern 15,intel core i7-1355u,n/a,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,1.7,windows 11 home,24,18490000,35.9,24.1,1.99,6,2,1,0,0
+hacom,acer,acer aspire 5 a514-56p-562p,intel core i5-1335u,n/a,8,ddr5,512,ssd,yes,14.0,1920x1200,60,n/a,50.0,3,1.5,windows 11 home,12,14899000,31.88,22.55,1.8,2,0,0,0,1
+hacom,asus,asus vivobook k6502vu-ma090w,intel core i9-13900h,geforce rtx 4050,8,ddr5,512,ssd,yes,15.6,2880x1620,120,400,70.0,3,1.8,windows 11 home,24,38999000,35.63,23.53,2.0,0,0,0,0,0
 hacom,asus,asus zenbook um3402ya-km405w,amd ryzen 5 7530u,n/a,16,ddr4,512,ssd,no,14.0,2880x1800,90,600,n/a,n/a,n/a,windows 11 home,24,20999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2,n/a,16,n/a,256,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,30099000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2,n/a,16,n/a,256,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,30099000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2,n/a,16,n/a,256,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,30099000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo thinkpad e15 g4,amd ryzen 5 5625u,n/a,8,ddr4,512,ssd,no,15.6,1920x1080,n/a,300,n/a,n/a,n/a,n/a,24,15499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook pro 13,apple m2 8-core,n/a,16,n/a,256,ssd,yes,13.3,2560x1600,n/a,500,58.2,n/a,1.4,macos,12,37599000,n/a,n/a,n/a,0,0,0,0,0
-hacom,lg,lg gram 16zd90r-g.ax55a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,n/a,350,n/a,n/a,1.199,n/a,12,30999000,35.51,35.51,2.42,0,0,1,0,0
+hacom,lg,lg gram 16zd90r-g.ax55a5,intel core i5-1340p,n/a,16,ddr5,512,ssd,yes,16.0,2560x1600,n/a,350,n/a,n/a,1.199,n/a,12,30999000,35.51,24.23,1.68,0,0,1,0,0
 hacom,lg,lg gram 17z90r-g.ah78a5,intel core i7-1360p,n/a,16,ddr5,1024,ssd,no,17.0,2560x1600,60,n/a,n/a,n/a,n/a,windows 11 home,12,36999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,msi,msi modern 15,amd ryzen 7 7730u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,n/a,windows 11 home,24,14990000,35.9,35.9,24.1,0,1,1,0,0
-hacom,msi,msi modern 14,amd ryzen 5 7530u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows 11 home,24,11990000,31.99,31.99,22.3,0,1,1,0,0
-hacom,msi,msi modern 14,intel core i3-1115g,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,39.0,3,n/a,n/a,24,9590000,31.99,31.99,22.3,4,2,1,0,0
-hacom,msi,msi modern 15,amd ryzen 5 7530u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,n/a,windows 11 home,24,12990000,35.9,35.9,24.1,0,1,1,0,0
+hacom,msi,msi modern 15,amd ryzen 5 7530u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,n/a,windows 11 home,24,12990000,35.9,24.1,1.99,0,1,1,0,0
+hacom,msi,msi modern 15,amd ryzen 7 7730u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,39.0,3,n/a,windows 11 home,24,14990000,35.9,24.1,1.99,0,1,1,0,0
+hacom,msi,msi modern 14,amd ryzen 5 7530u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,39.0,3,1.4,windows 11 home,24,11990000,31.99,22.3,1.94,0,1,1,0,0
+hacom,msi,msi modern 14,intel core i3-1115g,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,60,n/a,39.0,3,n/a,n/a,24,9590000,31.99,22.3,1.94,4,2,1,0,0
 hacom,apple,apple macbook pro 16,n/a,n/a,18,n/a,512,ssd,yes,16.2,3456x2234,120,n/a,100.0,n/a,2.14,macos,12,64999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook pro 13,apple m2 8-core,n/a,16,n/a,256,ssd,yes,13.3,2560x1600,n/a,500,58.2,n/a,1.4,macos,12,37299000,n/a,n/a,n/a,0,0,0,0,0
 hacom,microsoft,surface 5,intel core i7-1255u,n/a,16,ddr5,512,ssd,no,13.5,2256x1504,n/a,n/a,n/a,n/a,n/a,windows,12,46999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lg,lg gram 16z90r-e.ah75a5,intel core i7-1360p,geforce,16,ddr5,512,ssd,yes,16.0,2560x1600,n/a,350,n/a,n/a,1.299,windows 11 home,12,36999000,35.51,35.51,2.42,0,0,1,0,0
-hacom,hp,hp pavilion x360 14-ek0134tu,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.3,3,1.53,windows 11 home,12,18699000,32.2,32.2,2.1,1,0,1,0,1
+hacom,lg,lg gram 16z90r-e.ah75a5,intel core i7-1360p,geforce,16,ddr5,512,ssd,yes,16.0,2560x1600,n/a,350,n/a,n/a,1.299,windows 11 home,12,36999000,35.51,24.23,1.68,0,0,1,0,0
+hacom,hp,hp pavilion x360 14-ek0134tu,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.3,3,1.53,windows 11 home,12,18699000,32.2,21.0,1.99,0,1,1,0,1
 hacom,hp,hp spectre x360 convertible 14-ef3030tu,intel core i7-1255u,n/a,16,ddr4,1024,ssd,no,13.5,3000x2000,n/a,400,n/a,n/a,n/a,windows 11 home,12,36999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,4,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.263,windows 10 home,12,17999000,n/a,n/a,n/a,0,0,1,0,1
+hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,4,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.263,windows 10 home,12,17999000,n/a,n/a,n/a,0,1,1,0,1
 hacom,apple,apple macbook pro 14,n/a,n/a,18,n/a,1024,ssd,yes,14.2,3024x1964,120,n/a,72.4,n/a,1.61,macos,12,59099000,n/a,n/a,n/a,0,0,1,0,1
 hacom,hp,hp 340s g7,intel core i5-1035g,n/a,8,n/a,512,ssd,no,14.0,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,18999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook pro 14,n/a,n/a,8,n/a,512,ssd,yes,14.2,3024x1964,120,n/a,70.0,n/a,1.55,macos,12,38999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,lg,lg gram ultra slim 15z90rt-g.ah55a5,intel core i5-1340p,n/a,16,n/a,512,ssd,no,15.6,1920x1080,60,n/a,n/a,n/a,n/a,windows 11 home,12,34699000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,lg,lg gram 17zd90r-g.ax73a5,intel core i7-1360p,n/a,16,ddr5,256,ssd,yes,17.0,2560x1600,60,n/a,n/a,n/a,1.35,windows 11 home,12,36999000,37.88,37.88,2.59,0,0,1,0,0
+hacom,lg,lg gram 17zd90r-g.ax73a5,intel core i7-1360p,n/a,16,ddr5,256,ssd,yes,17.0,2560x1600,60,n/a,n/a,n/a,1.35,windows 11 home,12,36999000,37.88,25.88,1.78,0,0,1,0,0
 hacom,microsoft,microsoft surface surface pro 9,intel core i7-1255u,n/a,16,n/a,256,ssd,no,13.0,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,40999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook pro 16,n/a,n/a,36,n/a,1024,ssd,yes,16.2,3456x2234,120,n/a,100.0,n/a,2.16,macos,12,89999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook pro 16,n/a,n/a,36,n/a,512,ssd,yes,16.2,3456x2234,120,n/a,100.0,n/a,2.14,macos,12,74999000,n/a,n/a,n/a,0,0,1,0,1
@@ -471,38 +475,38 @@ hacom,apple,apple macbook pro 14,n/a,n/a,8,n/a,1024,ssd,yes,14.2,3024x1964,120,n
 hacom,apple,apple macbook pro 14,n/a,n/a,18,n/a,1024,ssd,yes,14.2,3024x1964,120,n/a,72.4,n/a,1.61,macos,12,59999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,apple,apple macbook pro 14,n/a,n/a,18,n/a,1024,ssd,yes,14.2,3024x1964,120,n/a,72.4,n/a,1.62,macos,12,79999000,n/a,n/a,n/a,0,0,1,0,1
 hacom,lg,lg gram 360 14t90r-g.ah55a5,intel core i5-1340p,n/a,16,n/a,512,ssd,no,14.0,1920x1200,60,n/a,n/a,n/a,n/a,windows 11 home,12,31199000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell latitude 5440,intel core i7-1355u,n/a,16,ddr4,512,n/a,yes,14.0,1920x1080,n/a,250,42.0,3,1.39,n/a,12,29799000,32.14,32.14,32.14,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell latitude 5440,intel core i5-1335u,n/a,8,ddr4,256,n/a,yes,14.0,1920x1080,n/a,250,42.0,3,1.39,n/a,12,22599000,32.14,32.14,32.14,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell latitude 9440 2-in-1,intel core i7-1365u,n/a,16,ddr5,512,ssd,yes,14.0,2560x1600,n/a,n/a,60.0,3,1.53,windows 11 pro,12,69699000,31.05,31.05,31.05,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell latitude 3540,intel core i7-1355u,n/a,16,ddr4,256,ssd,yes,15.6,1366x768,60,n/a,42.0,3,1.86,n/a,12,24499000,35.9,35.9,35.9,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell latitude 3540,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,15.6,1366x768,60,n/a,42.0,3,1.86,n/a,12,22499000,35.9,35.9,35.9,n/a,n/a,n/a,n/a,n/a
-hacom,dell,dell latitude 3540,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.86,n/a,12,15899000,35.9,35.9,35.9,n/a,n/a,n/a,n/a,n/a
-hacom,asus,asus vivobook a415ea-eb1750w,intel core i3-1125g,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,n/a,250,42.0,3,1.35,windows,24,12199000,32.4,32.4,3.24,0,0,1,0,1
-hacom,asus,asus vivobook a415ea-eb1474w,intel core i5-1135g,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,42.0,3,1.4,windows 11 home,24,15999000,32.4,32.4,3.24,1,0,1,0,1
-hacom,dell,dell mobile precision workstation 7680 vpro,intel core i9-13950hx,rtx 2000 ada,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,250,83.0,6,2.6,windows 11 pro,36,85699000,35.6,35.6,35.6,n/a,n/a,n/a,n/a,n/a
-hacom,lenovo,lenovo thinkpad x1 fold gen 1,n/a,n/a,8,ddr4,512,ssd,yes,n/a,2048x1536,n/a,300,n/a,n/a,0.999,windows 10 pro,36,60599000,29.9,29.9,29.9,0,3,0,0,0
+hacom,dell,dell latitude 5440,intel core i7-1355u,n/a,16,ddr4,512,n/a,yes,14.0,1920x1080,n/a,250,42.0,3,1.39,n/a,12,29799000,32.14,21.2,2.1,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell latitude 5440,intel core i5-1335u,n/a,8,ddr4,256,n/a,yes,14.0,1920x1080,n/a,250,42.0,3,1.39,n/a,12,22599000,32.14,21.2,2.1,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell latitude 9440 2-in-1,intel core i7-1365u,n/a,16,ddr5,512,ssd,yes,14.0,2560x1600,n/a,n/a,60.0,3,1.53,windows 11 pro,12,69699000,31.05,21.5,1.63,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell latitude 3540,intel core i7-1355u,n/a,16,ddr4,256,ssd,yes,15.6,1366x768,60,n/a,42.0,3,1.86,n/a,12,24499000,35.9,23.97,2.14,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell latitude 3540,intel core i7-1355u,n/a,8,ddr4,512,ssd,yes,15.6,1366x768,60,n/a,42.0,3,1.86,n/a,12,22499000,35.9,23.97,2.14,n/a,n/a,n/a,n/a,n/a
+hacom,dell,dell latitude 3540,intel core i3-1315u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,n/a,42.0,3,1.86,n/a,12,15899000,35.9,23.97,2.14,n/a,n/a,n/a,n/a,n/a
+hacom,asus,asus vivobook a415ea-eb1474w,intel core i5-1135g,n/a,8,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,42.0,3,1.4,windows 11 home,24,15999000,32.4,21.5,1.79,0,1,1,0,1
+hacom,asus,asus vivobook a415ea-eb1750w,intel core i3-1125g,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,n/a,250,42.0,3,1.35,windows,24,12199000,32.4,21.5,1.79,0,0,1,0,1
+hacom,dell,dell mobile precision workstation 7680 vpro,intel core i9-13950hx,rtx 2000 ada,32,ddr5,1024,ssd,yes,16.0,1920x1200,60,250,83.0,6,2.6,windows 11 pro,36,85699000,35.6,25.83,2.23,n/a,n/a,n/a,n/a,n/a
+hacom,lenovo,lenovo thinkpad x1 fold gen 1,n/a,n/a,8,ddr4,512,ssd,yes,n/a,2048x1536,n/a,300,n/a,n/a,0.999,windows 10 pro,36,60599000,29.9,23.56,15.8,0,3,0,0,0
 hacom,asus,asus vivobook s s533ea-bn293t,intel core i5-1135g,n/a,8,n/a,512,ssd,no,15.6,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,24,20499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp 240 g8,intel core i5-1135g,n/a,8,n/a,256,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,17069000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,lenovo,lenovo thinkpad t14 gen 4,intel core i5-1335u,n/a,16,ddr5,512,ssd,no,14.0,2240x1400,n/a,300,n/a,n/a,n/a,windows 11 home,36,29999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,acer,acer aspire 5 a515-58p-34rj,intel core i3-1315u,n/a,8,ddr5,512,n/a,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,12799000,36.29,36.29,36.29,0,0,0,0,0
+hacom,acer,acer aspire 5 a515-58p-34rj,intel core i3-1315u,n/a,8,ddr5,512,n/a,yes,15.6,1920x1080,60,n/a,50.0,3,1.7,windows 11 home,12,12799000,36.29,23.75,1.8,2,0,0,0,0
 hacom,apple,apple macbook air,apple m2,n/a,16,n/a,512,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,36899000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2,n/a,16,n/a,512,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,36899000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2,n/a,16,n/a,512,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,36899000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,vaio,vaio fe 14,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.1,1920x1080,n/a,n/a,n/a,n/a,1.6,windows 11 home,12,15699000,32.5,32.5,3.25,0,0,1,0,1
-hacom,vaio,vaio fe 15,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,n/a,n/a,1.8,windows 11 home,12,17599000,35.8,35.8,3.58,0,0,1,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,32,n/a,1024,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,59999000,28.7,28.7,28.7,0,2,0,0,1
-hacom,vaio,vaio fe 15,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,n/a,n/a,1.8,windows 11 home,12,17999000,35.8,35.8,3.58,0,0,1,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,1024,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,49999000,28.7,28.7,28.7,0,2,0,0,1
-hacom,vaio,vaio fe 14,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.1,1920x1080,n/a,n/a,n/a,n/a,1.6,windows 11 home,12,15999000,32.5,32.5,3.25,0,0,1,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,38999000,28.7,28.7,28.7,0,2,0,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,38999000,28.7,28.7,28.7,0,2,0,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,512,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,47999000,28.7,28.7,28.7,0,2,0,0,1
+hacom,vaio,vaio fe 15,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,n/a,n/a,1.8,windows 11 home,12,17599000,35.8,23.9,1.98,0,2,1,0,1
+hacom,vaio,vaio fe 14,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.1,1920x1080,n/a,n/a,n/a,n/a,1.6,windows 11 home,12,15699000,32.5,22.1,1.98,0,2,1,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,32,n/a,1024,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,59999000,28.7,20.8,0.93,0,2,0,0,1
+hacom,vaio,vaio fe 15,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,15.6,1920x1080,n/a,n/a,n/a,n/a,1.8,windows 11 home,12,17999000,35.8,23.9,1.98,0,2,1,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,1024,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,49999000,28.7,20.8,0.93,0,2,0,0,1
+hacom,vaio,vaio fe 14,intel core i5-1235u,n/a,8,ddr4,512,ssd,yes,14.1,1920x1080,n/a,n/a,n/a,n/a,1.6,windows 11 home,12,15999000,32.5,22.1,1.98,0,2,1,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,512,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,47999000,28.7,20.8,0.93,0,2,0,0,1
 hacom,microsoft,microsoft surface surface pro 9,intel core i5-1235u,n/a,16,ddr5,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,n/a,windows,12,38499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,512,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,39999000,28.7,28.7,28.7,0,2,0,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,8,n/a,512,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,29999000,28.7,28.7,28.7,0,2,0,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,8,n/a,512,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,29999000,28.7,28.7,28.7,0,2,0,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,8,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,24499000,28.7,28.7,28.7,0,2,0,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,8,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,24499000,28.7,28.7,28.7,0,2,0,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,512,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,39999000,28.7,20.8,0.93,0,2,0,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,38999000,28.7,20.8,0.93,0,2,0,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i7-1185g,n/a,16,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,38999000,28.7,20.8,0.93,0,2,0,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,8,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,24499000,28.7,20.8,0.93,0,2,0,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,8,n/a,512,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,29999000,28.7,20.8,0.93,0,2,0,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,8,n/a,512,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,29999000,28.7,20.8,0.93,0,2,0,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,8,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,24499000,28.7,20.8,0.93,0,2,0,0,1
 hacom,apple,apple macbook pro 13,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,n/a,500,58.2,n/a,1.4,macos,12,34999000,n/a,n/a,n/a,0,0,0,0,0
 hacom,apple,apple macbook pro 13,apple m2 8-core,n/a,8,n/a,512,ssd,yes,13.3,2560x1600,n/a,500,58.2,n/a,1.4,macos,12,34999000,n/a,n/a,n/a,0,0,0,0,0
 hacom,apple,apple macbook pro 13,apple m2 8-core,n/a,8,n/a,256,ssd,yes,13.3,2560x1600,n/a,500,58.2,n/a,1.4,macos,12,29499000,n/a,n/a,n/a,0,0,0,0,0
@@ -512,36 +516,36 @@ hacom,apple,apple macbook pro 13,apple m2 8-core,n/a,16,n/a,512,ssd,yes,13.3,256
 hacom,apple,apple macbook air,apple m2,n/a,8,n/a,512,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,35499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,apple,apple macbook air,apple m2,n/a,8,n/a,512,ssd,no,13.6,n/a,n/a,n/a,n/a,n/a,n/a,macos,12,35499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,chuwi,chuwi gemibook,cpu intel celeron j4125,n/a,8,ddr4,256,ssd,yes,13.3,2160x1440,n/a,n/a,38.0,n/a,1.34,windows 10 home,3,5499000,n/a,n/a,n/a,0,0,0,0,0
-hacom,asus,asus vivobook m3500qc-l1388w,amd ryzen 5 5600h,geforce rtx 3050 vram,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,400,63.0,3,1.6,windows,24,23999000,35.98,35.98,3.6,0,0,1,0,1
-hacom,asus,asus vivobook m3500qc-l1327w,amd ryzen 7 5800h,geforce rtx 3050 vram,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,400,63.0,3,1.6,windows,24,24999000,35.98,35.98,3.6,0,0,1,0,1
-hacom,lenovo,lenovo ideapad slim 5 pro 14acn6,amd ryzen 5 5600u,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,400,56.5,n/a,1.38,windows 11 home,36,19999000,31.22,31.22,3.12,4,4,1,0,0
-hacom,lenovo,lenovo ideapad slim 5 pro 14acn6,amd ryzen 7 5800u,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,400,56.5,n/a,1.38,windows 11 home,36,20999000,31.22,31.22,3.12,4,4,1,0,0
-hacom,lenovo,lenovo yoga slim 7 carbon 14acn6,amd ryzen 7 5800u,geforce mx450,16,ddr4,1024,ssd,yes,14.0,2880x1800,90,400,61.0,n/a,1.1,windows 11 home,36,31999000,31.3,31.3,3.13,0,1,0,0,0
-hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,16,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,35999000,28.7,28.7,28.7,0,2,0,0,1
-hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,16,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,35999000,28.7,28.7,28.7,0,2,0,0,1
+hacom,asus,asus vivobook m3500qc-l1388w,amd ryzen 5 5600h,geforce rtx 3050 vram,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,400,63.0,3,1.6,windows,24,23999000,35.98,23.53,1.99,0,0,1,0,1
+hacom,asus,asus vivobook m3500qc-l1327w,amd ryzen 7 5800h,geforce rtx 3050 vram,16,ddr4,512,ssd,yes,15.6,1920x1080,n/a,400,63.0,3,1.6,windows,24,24999000,35.98,23.53,1.99,0,0,1,0,1
+hacom,lenovo,lenovo ideapad slim 5 pro 14acn6,amd ryzen 5 5600u,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,400,56.5,n/a,1.38,windows 11 home,36,19999000,31.22,22.1,1.8,4,4,1,0,0
+hacom,lenovo,lenovo ideapad slim 5 pro 14acn6,amd ryzen 7 5800u,n/a,16,ddr4,512,ssd,yes,14.0,2880x1800,90,400,56.5,n/a,1.38,windows 11 home,36,20999000,31.22,22.1,1.8,4,4,1,0,0
+hacom,lenovo,lenovo yoga slim 7 carbon 14acn6,amd ryzen 7 5800u,geforce mx450,16,ddr4,1024,ssd,yes,14.0,2880x1800,90,400,61.0,n/a,1.1,windows 11 home,36,31999000,31.3,21.45,1.49,0,1,0,0,0
+hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,16,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,35999000,28.7,20.8,0.93,0,2,0,0,1
+hacom,microsoft,microsoft surface pro 8,intel core i5-1135g,n/a,16,n/a,256,ssd,no,13.0,2880x1920,120,n/a,n/a,n/a,0.891,windows 11 home,12,35999000,28.7,20.8,0.93,0,2,0,0,1
 hacom,hp,hp pavilion 15-eg0539tu,intel core i5-1135g,n/a,8,n/a,512,ssd,no,15.6,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,16999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp 240 g8,intel core i3-1005g,n/a,4,n/a,512,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,13999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp 240 g8,intel core i5-1135g,n/a,8,n/a,512,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,19499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,asus,asus expertbook b5302cea-kg0493w,intel core i5-1135g,n/a,8,ddr4,512,ssd,yes,13.3,1920x1080,n/a,400,66.0,4,1.2,windows 11 home,24,20999000,30.9,30.9,3.09,0,1,1,0,1
+hacom,asus,asus expertbook b5302cea-kg0493w,intel core i5-1135g,n/a,8,ddr4,512,ssd,yes,13.3,1920x1080,n/a,400,66.0,4,1.2,windows 11 home,24,20999000,30.9,21.06,1.69,0,1,1,0,1
 hacom,hp,hp 245 g8,amd ryzen 5 5500u,n/a,4,ddr4,256,ssd,yes,14.0,n/a,n/a,n/a,41.0,3,n/a,windows 10 home,12,14999000,32.4,22.59,1.4,0,0,0,0,0
 hacom,hp,hp pavilion 15-eg0506tx,intel core i5-1135g,mx450,8,n/a,512,ssd,no,15.6,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,19999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp pavilion 15-eg0541tu,intel core i3-1125g,n/a,4,n/a,512,ssd,no,15.6,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,15599000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp pavilion 15-eg0073tu,intel core i3-1115g,n/a,4,n/a,512,ssd,no,15.6,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,15799000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 445 g6 6xp98pa,amd ryzen 5 2500u,n/a,4,ddr4,1024,n/a,yes,14.0,1920x1080,n/a,n/a,45.0,3,1.6,n/a,12,14139000,32.4,32.4,3.24,0,0,1,0,1
+hacom,hp,hp probook 445 g6 6xp98pa,amd ryzen 5 2500u,n/a,4,ddr4,1024,n/a,yes,14.0,1920x1080,n/a,n/a,45.0,3,1.6,n/a,12,14139000,32.4,23.8,1.8,0,0,1,0,1
 hacom,hp,hp 15s-fq2602tu,intel core i5-1135g,n/a,8,n/a,256,ssd,no,15.6,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,17499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp 250 g8,intel core i3-1005g,n/a,4,n/a,256,ssd,no,15.6,n/a,n/a,n/a,n/a,n/a,n/a,n/a,12,13999000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
 hacom,hp,hp pavilion 14-dv0520tu,intel core i3-1125g,n/a,4,n/a,256,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,windows,12,15499000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,8,ddr4,512,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.255,linux,12,20199000,30.69,30.69,3.07,0,0,1,0,1
-hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,8,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.255,linux,12,19399000,30.69,30.69,3.07,0,0,1,0,1
-hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,4,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.255,windows 10 home,12,18989000,30.69,30.69,3.07,0,0,1,0,1
-hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,4,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.255,n/a,12,18689000,30.69,30.69,3.07,0,0,1,0,1
-hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,8,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.263,windows 10 home,12,20199000,30.69,30.69,3.07,0,0,1,0,1
-hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,4,ddr4,512,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.264,windows 10 home,12,19899000,30.69,30.69,3.07,0,0,1,0,1
+hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,8,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.255,linux,12,19399000,30.69,20.84,1.59,0,1,1,0,1
+hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,4,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.255,windows 10 home,12,18989000,30.69,20.84,1.59,0,1,1,0,1
+hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,4,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.255,n/a,12,18689000,30.69,20.84,1.59,0,1,1,0,1
+hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,8,ddr4,256,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.263,windows 10 home,12,20199000,30.69,20.84,1.59,0,1,1,0,1
+hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,4,ddr4,512,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.264,windows 10 home,12,19899000,30.69,20.84,1.59,0,1,1,0,1
 hacom,hp,hp probook 440 g8,intel core i5-1135g,n/a,8,n/a,256,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,19399000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
-hacom,hp,hp probook 450 g6 8az17pa,intel core i5-8265u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,n/a,n/a,45.0,3,1.85,n/a,12,18079000,32.4,32.4,3.24,0,0,1,0,1
-hacom,hp,hp probook 450 g6,intel core i7-8565u,n/a,8,ddr4,1024,n/a,yes,15.6,1920x1080,n/a,n/a,45.0,3,2.0,linux,12,23739000,36.49,36.49,3.65,0,0,1,1,0
-hacom,hp,hp probook 440 g6,intel core i7-8565u,n/a,8,ddr4,1024,hdd,yes,14.0,1920x1080,n/a,n/a,45.0,3,1.6,linux,12,19189000,32.42,32.42,3.24,0,0,1,1,0
-hacom,hp,hp probook 450 g8,intel core i5-1135g,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,n/a,45.0,3,1.683,windows 10 home,12,21999000,35.94,35.94,3.59,0,0,1,0,1
-hacom,hp,hp pavilion x360 14-dw1019tu,intel core i7-1165g,n/a,4,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.3,3,1.65,windows 10 home,12,23229000,32.4,32.4,3.24,0,0,1,0,1
-hacom,hp,hp probook 440 g6 8az16pa,intel core i5-8265u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,n/a,n/a,45.0,3,1.6,n/a,12,18079000,32.4,32.4,3.24,0,0,1,0,1
+hacom,hp,hp probook 450 g6 8az17pa,intel core i5-8265u,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,n/a,n/a,45.0,3,1.85,n/a,12,18079000,32.4,23.8,1.8,0,0,1,0,1
+hacom,hp,hp probook 450 g6,intel core i7-8565u,n/a,8,ddr4,1024,n/a,yes,15.6,1920x1080,n/a,n/a,45.0,3,2.0,linux,12,23739000,36.49,25.69,1.9,0,0,1,1,0
+hacom,hp,hp probook 440 g6,intel core i7-8565u,n/a,8,ddr4,1024,hdd,yes,14.0,1920x1080,n/a,n/a,45.0,3,1.6,linux,12,19189000,32.42,23.77,1.8,0,0,1,1,0
+hacom,hp,hp probook 450 g8,intel core i5-1135g,n/a,8,ddr4,256,ssd,yes,15.6,1920x1080,60,n/a,45.0,3,1.683,windows 10 home,12,21999000,35.94,23.39,1.99,0,1,1,0,1
+hacom,hp,hp pavilion x360 14-dw1019tu,intel core i7-1165g,n/a,4,ddr4,512,ssd,yes,14.0,1920x1080,n/a,n/a,43.3,3,1.65,windows 10 home,12,23229000,32.4,22.1,1.9,0,2,1,0,1
+hacom,hp,hp probook 430 g8,intel core i5-1135g,n/a,8,ddr4,512,ssd,yes,13.3,1920x1080,60,n/a,45.0,3,1.255,linux,12,20199000,30.69,20.84,1.59,0,1,1,0,1
+hacom,hp,hp probook 440 g6 8az16pa,intel core i5-8265u,n/a,8,ddr4,256,ssd,yes,14.0,1920x1080,n/a,n/a,45.0,3,1.6,n/a,12,18079000,32.4,23.8,1.8,0,0,1,0,1
 hacom,hp,hp 240 g8,intel core i5-1135g,n/a,4,n/a,256,ssd,no,14.0,1920x1080,n/a,n/a,n/a,n/a,n/a,n/a,12,15959000,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
