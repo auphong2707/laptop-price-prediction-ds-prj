@@ -1,0 +1,1399 @@
+[2024-11-20T04:02:00.049+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-20T04:02:00.184+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.laptop_scraping_tasks.scrape_phongvu manual__2024-11-20T02:00:30.526702+00:00 [queued]>
+[2024-11-20T04:02:00.194+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.laptop_scraping_tasks.scrape_phongvu manual__2024-11-20T02:00:30.526702+00:00 [queued]>
+[2024-11-20T04:02:00.194+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-20T04:02:00.213+0000] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): laptop_scraping_tasks.scrape_phongvu> on 2024-11-20 02:00:30.526702+00:00
+[2024-11-20T04:02:00.218+0000] {standard_task_runner.py:72} INFO - Started process 99084 to run task
+[2024-11-20T04:02:00.221+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'laptop_scraping_tasks.scrape_phongvu', 'manual__2024-11-20T02:00:30.526702+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp2a93mkmd']
+[2024-11-20T04:02:00.222+0000] {standard_task_runner.py:105} INFO - Job 13: Subtask laptop_scraping_tasks.scrape_phongvu
+[2024-11-20T04:02:00.298+0000] {task_command.py:467} INFO - Running <TaskInstance: main_dag.laptop_scraping_tasks.scrape_phongvu manual__2024-11-20T02:00:30.526702+00:00 [running]> on host 7331716c13db
+[2024-11-20T04:02:00.392+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='veil' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='laptop_scraping_tasks.scrape_phongvu' AIRFLOW_CTX_EXECUTION_DATE='2024-11-20T02:00:30.526702+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-20T02:00:30.526702+00:00'
+[2024-11-20T04:02:00.393+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-20T04:02:00.403+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-11-20T04:02:00.404+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /app/scraper && scrapy crawl phongvu_spider -O ../temp/phongvu_data.json']
+[2024-11-20T04:02:00.412+0000] {subprocess.py:86} INFO - Output:
+[2024-11-20T04:30:18.298+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.307+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.307+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.308+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.308+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.308+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.308+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.308+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.308+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.309+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.309+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.309+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.309+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.309+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.309+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.309+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.310+0000] {subprocess.py:93} INFO - 'Load More' button clicked sucessfully.
+[2024-11-20T04:30:18.310+0000] {subprocess.py:93} INFO - No more 'Load More' button
+[2024-11-20T04:30:18.310+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.310+0000] {subprocess.py:93} INFO - Found item: 1
+[2024-11-20T04:30:18.310+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.310+0000] {subprocess.py:93} INFO - Found item: 2
+[2024-11-20T04:30:18.310+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.311+0000] {subprocess.py:93} INFO - Found item: 3
+[2024-11-20T04:30:18.311+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.311+0000] {subprocess.py:93} INFO - Found item: 4
+[2024-11-20T04:30:18.311+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.311+0000] {subprocess.py:93} INFO - Found item: 5
+[2024-11-20T04:30:18.312+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.312+0000] {subprocess.py:93} INFO - Found item: 6
+[2024-11-20T04:30:18.312+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.312+0000] {subprocess.py:93} INFO - Found item: 7
+[2024-11-20T04:30:18.312+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.312+0000] {subprocess.py:93} INFO - Found item: 8
+[2024-11-20T04:30:18.312+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.312+0000] {subprocess.py:93} INFO - Found item: 9
+[2024-11-20T04:30:18.313+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.313+0000] {subprocess.py:93} INFO - Found item: 10
+[2024-11-20T04:30:18.313+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.313+0000] {subprocess.py:93} INFO - Found item: 11
+[2024-11-20T04:30:18.313+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.313+0000] {subprocess.py:93} INFO - Found item: 12
+[2024-11-20T04:30:18.313+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.314+0000] {subprocess.py:93} INFO - Found item: 13
+[2024-11-20T04:30:18.314+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.314+0000] {subprocess.py:93} INFO - Found item: 14
+[2024-11-20T04:30:18.314+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.314+0000] {subprocess.py:93} INFO - Found item: 15
+[2024-11-20T04:30:18.314+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.315+0000] {subprocess.py:93} INFO - Found item: 16
+[2024-11-20T04:30:18.315+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.315+0000] {subprocess.py:93} INFO - Found item: 17
+[2024-11-20T04:30:18.315+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.315+0000] {subprocess.py:93} INFO - Found item: 18
+[2024-11-20T04:30:18.315+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.315+0000] {subprocess.py:93} INFO - Found item: 19
+[2024-11-20T04:30:18.315+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.315+0000] {subprocess.py:93} INFO - Found item: 20
+[2024-11-20T04:30:18.316+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.316+0000] {subprocess.py:93} INFO - Found item: 21
+[2024-11-20T04:30:18.316+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.316+0000] {subprocess.py:93} INFO - Found item: 22
+[2024-11-20T04:30:18.316+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.316+0000] {subprocess.py:93} INFO - Found item: 23
+[2024-11-20T04:30:18.316+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.316+0000] {subprocess.py:93} INFO - Found item: 24
+[2024-11-20T04:30:18.316+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.317+0000] {subprocess.py:93} INFO - Found item: 25
+[2024-11-20T04:30:18.317+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.317+0000] {subprocess.py:93} INFO - Found item: 26
+[2024-11-20T04:30:18.317+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.317+0000] {subprocess.py:93} INFO - Found item: 27
+[2024-11-20T04:30:18.317+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.318+0000] {subprocess.py:93} INFO - Found item: 28
+[2024-11-20T04:30:18.318+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.318+0000] {subprocess.py:93} INFO - Found item: 29
+[2024-11-20T04:30:18.318+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.318+0000] {subprocess.py:93} INFO - Found item: 30
+[2024-11-20T04:30:18.319+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.319+0000] {subprocess.py:93} INFO - Found item: 31
+[2024-11-20T04:30:18.319+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.319+0000] {subprocess.py:93} INFO - Found item: 32
+[2024-11-20T04:30:18.320+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.320+0000] {subprocess.py:93} INFO - Found item: 33
+[2024-11-20T04:30:18.320+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.321+0000] {subprocess.py:93} INFO - Found item: 34
+[2024-11-20T04:30:18.321+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.321+0000] {subprocess.py:93} INFO - Found item: 35
+[2024-11-20T04:30:18.321+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.322+0000] {subprocess.py:93} INFO - Found item: 36
+[2024-11-20T04:30:18.322+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.323+0000] {subprocess.py:93} INFO - Found item: 37
+[2024-11-20T04:30:18.326+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.327+0000] {subprocess.py:93} INFO - Found item: 38
+[2024-11-20T04:30:18.327+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.327+0000] {subprocess.py:93} INFO - Found item: 39
+[2024-11-20T04:30:18.327+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.327+0000] {subprocess.py:93} INFO - Found item: 40
+[2024-11-20T04:30:18.328+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.328+0000] {subprocess.py:93} INFO - Found item: 41
+[2024-11-20T04:30:18.328+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.328+0000] {subprocess.py:93} INFO - Found item: 42
+[2024-11-20T04:30:18.328+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.329+0000] {subprocess.py:93} INFO - Found item: 43
+[2024-11-20T04:30:18.329+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.329+0000] {subprocess.py:93} INFO - Found item: 44
+[2024-11-20T04:30:18.329+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.329+0000] {subprocess.py:93} INFO - Found item: 45
+[2024-11-20T04:30:18.329+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.330+0000] {subprocess.py:93} INFO - Found item: 46
+[2024-11-20T04:30:18.330+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.330+0000] {subprocess.py:93} INFO - Found item: 47
+[2024-11-20T04:30:18.330+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.330+0000] {subprocess.py:93} INFO - Found item: 48
+[2024-11-20T04:30:18.330+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.331+0000] {subprocess.py:93} INFO - Found item: 49
+[2024-11-20T04:30:18.331+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.331+0000] {subprocess.py:93} INFO - Found item: 50
+[2024-11-20T04:30:18.331+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.331+0000] {subprocess.py:93} INFO - Found item: 51
+[2024-11-20T04:30:18.331+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.332+0000] {subprocess.py:93} INFO - Found item: 52
+[2024-11-20T04:30:18.332+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.332+0000] {subprocess.py:93} INFO - Found item: 53
+[2024-11-20T04:30:18.332+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.332+0000] {subprocess.py:93} INFO - Found item: 54
+[2024-11-20T04:30:18.332+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.332+0000] {subprocess.py:93} INFO - Found item: 55
+[2024-11-20T04:30:18.333+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.333+0000] {subprocess.py:93} INFO - Found item: 56
+[2024-11-20T04:30:18.333+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.333+0000] {subprocess.py:93} INFO - Found item: 57
+[2024-11-20T04:30:18.333+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.333+0000] {subprocess.py:93} INFO - Found item: 58
+[2024-11-20T04:30:18.333+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.334+0000] {subprocess.py:93} INFO - Found item: 59
+[2024-11-20T04:30:18.334+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.334+0000] {subprocess.py:93} INFO - Found item: 60
+[2024-11-20T04:30:18.334+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.334+0000] {subprocess.py:93} INFO - Found item: 61
+[2024-11-20T04:30:18.334+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.334+0000] {subprocess.py:93} INFO - Found item: 62
+[2024-11-20T04:30:18.335+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.335+0000] {subprocess.py:93} INFO - Found item: 63
+[2024-11-20T04:30:18.335+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.335+0000] {subprocess.py:93} INFO - Found item: 64
+[2024-11-20T04:30:18.335+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.335+0000] {subprocess.py:93} INFO - Found item: 65
+[2024-11-20T04:30:18.335+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.335+0000] {subprocess.py:93} INFO - Found item: 66
+[2024-11-20T04:30:18.335+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.336+0000] {subprocess.py:93} INFO - Found item: 67
+[2024-11-20T04:30:18.336+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.336+0000] {subprocess.py:93} INFO - Found item: 68
+[2024-11-20T04:30:18.336+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.336+0000] {subprocess.py:93} INFO - Found item: 69
+[2024-11-20T04:30:18.336+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.336+0000] {subprocess.py:93} INFO - Found item: 70
+[2024-11-20T04:30:18.337+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.337+0000] {subprocess.py:93} INFO - Found item: 71
+[2024-11-20T04:30:18.337+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.337+0000] {subprocess.py:93} INFO - Found item: 72
+[2024-11-20T04:30:18.337+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.338+0000] {subprocess.py:93} INFO - Found item: 73
+[2024-11-20T04:30:18.338+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.338+0000] {subprocess.py:93} INFO - Found item: 74
+[2024-11-20T04:30:18.338+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.338+0000] {subprocess.py:93} INFO - Found item: 75
+[2024-11-20T04:30:18.339+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.339+0000] {subprocess.py:93} INFO - Found item: 76
+[2024-11-20T04:30:18.339+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.339+0000] {subprocess.py:93} INFO - Found item: 77
+[2024-11-20T04:30:18.340+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.340+0000] {subprocess.py:93} INFO - Found item: 78
+[2024-11-20T04:30:18.340+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.340+0000] {subprocess.py:93} INFO - Found item: 79
+[2024-11-20T04:30:18.340+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.341+0000] {subprocess.py:93} INFO - Found item: 80
+[2024-11-20T04:30:18.341+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.341+0000] {subprocess.py:93} INFO - Found item: 81
+[2024-11-20T04:30:18.341+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.342+0000] {subprocess.py:93} INFO - Found item: 82
+[2024-11-20T04:30:18.342+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.342+0000] {subprocess.py:93} INFO - Found item: 83
+[2024-11-20T04:30:18.342+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.343+0000] {subprocess.py:93} INFO - Found item: 84
+[2024-11-20T04:30:18.343+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.343+0000] {subprocess.py:93} INFO - Found item: 85
+[2024-11-20T04:30:18.343+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.343+0000] {subprocess.py:93} INFO - Found item: 86
+[2024-11-20T04:30:18.344+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.344+0000] {subprocess.py:93} INFO - Found item: 87
+[2024-11-20T04:30:18.344+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.344+0000] {subprocess.py:93} INFO - Found item: 88
+[2024-11-20T04:30:18.345+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.345+0000] {subprocess.py:93} INFO - Found item: 89
+[2024-11-20T04:30:18.345+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.345+0000] {subprocess.py:93} INFO - Found item: 90
+[2024-11-20T04:30:18.345+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.345+0000] {subprocess.py:93} INFO - Found item: 91
+[2024-11-20T04:30:18.345+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.346+0000] {subprocess.py:93} INFO - Found item: 92
+[2024-11-20T04:30:18.346+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.346+0000] {subprocess.py:93} INFO - Found item: 93
+[2024-11-20T04:30:18.347+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.347+0000] {subprocess.py:93} INFO - Found item: 94
+[2024-11-20T04:30:18.347+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.347+0000] {subprocess.py:93} INFO - Found item: 95
+[2024-11-20T04:30:18.347+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.347+0000] {subprocess.py:93} INFO - Found item: 96
+[2024-11-20T04:30:18.348+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.348+0000] {subprocess.py:93} INFO - Found item: 97
+[2024-11-20T04:30:18.348+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.348+0000] {subprocess.py:93} INFO - Found item: 98
+[2024-11-20T04:30:18.348+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.349+0000] {subprocess.py:93} INFO - Found item: 99
+[2024-11-20T04:30:18.349+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.349+0000] {subprocess.py:93} INFO - Found item: 100
+[2024-11-20T04:30:18.349+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.349+0000] {subprocess.py:93} INFO - Found item: 101
+[2024-11-20T04:30:18.349+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.350+0000] {subprocess.py:93} INFO - Found item: 102
+[2024-11-20T04:30:18.350+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.350+0000] {subprocess.py:93} INFO - Found item: 103
+[2024-11-20T04:30:18.350+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.350+0000] {subprocess.py:93} INFO - Found item: 104
+[2024-11-20T04:30:18.351+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.351+0000] {subprocess.py:93} INFO - Found item: 105
+[2024-11-20T04:30:18.351+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.351+0000] {subprocess.py:93} INFO - Found item: 106
+[2024-11-20T04:30:18.351+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.351+0000] {subprocess.py:93} INFO - Found item: 107
+[2024-11-20T04:30:18.351+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.352+0000] {subprocess.py:93} INFO - Found item: 108
+[2024-11-20T04:30:18.352+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.352+0000] {subprocess.py:93} INFO - Found item: 109
+[2024-11-20T04:30:18.352+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.352+0000] {subprocess.py:93} INFO - Found item: 110
+[2024-11-20T04:30:18.352+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.352+0000] {subprocess.py:93} INFO - Found item: 111
+[2024-11-20T04:30:18.353+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.353+0000] {subprocess.py:93} INFO - Found item: 112
+[2024-11-20T04:30:18.353+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.353+0000] {subprocess.py:93} INFO - Found item: 113
+[2024-11-20T04:30:18.353+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.354+0000] {subprocess.py:93} INFO - Found item: 114
+[2024-11-20T04:30:18.354+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.355+0000] {subprocess.py:93} INFO - Found item: 115
+[2024-11-20T04:30:18.355+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.356+0000] {subprocess.py:93} INFO - Found item: 116
+[2024-11-20T04:30:18.356+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.356+0000] {subprocess.py:93} INFO - Found item: 117
+[2024-11-20T04:30:18.357+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.357+0000] {subprocess.py:93} INFO - Found item: 118
+[2024-11-20T04:30:18.358+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.358+0000] {subprocess.py:93} INFO - Found item: 119
+[2024-11-20T04:30:18.358+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.358+0000] {subprocess.py:93} INFO - Found item: 120
+[2024-11-20T04:30:18.359+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.359+0000] {subprocess.py:93} INFO - Found item: 121
+[2024-11-20T04:30:18.359+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.359+0000] {subprocess.py:93} INFO - Found item: 122
+[2024-11-20T04:30:18.359+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.360+0000] {subprocess.py:93} INFO - Found item: 123
+[2024-11-20T04:30:18.360+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.360+0000] {subprocess.py:93} INFO - Found item: 124
+[2024-11-20T04:30:18.360+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.361+0000] {subprocess.py:93} INFO - Found item: 125
+[2024-11-20T04:30:18.361+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.361+0000] {subprocess.py:93} INFO - Found item: 126
+[2024-11-20T04:30:18.361+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.361+0000] {subprocess.py:93} INFO - Found item: 127
+[2024-11-20T04:30:18.362+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.362+0000] {subprocess.py:93} INFO - Found item: 128
+[2024-11-20T04:30:18.362+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.362+0000] {subprocess.py:93} INFO - Found item: 129
+[2024-11-20T04:30:18.362+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.363+0000] {subprocess.py:93} INFO - Found item: 130
+[2024-11-20T04:30:18.363+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.364+0000] {subprocess.py:93} INFO - Found item: 131
+[2024-11-20T04:30:18.364+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.365+0000] {subprocess.py:93} INFO - Found item: 132
+[2024-11-20T04:30:18.366+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.366+0000] {subprocess.py:93} INFO - Found item: 133
+[2024-11-20T04:30:18.366+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.367+0000] {subprocess.py:93} INFO - Found item: 134
+[2024-11-20T04:30:18.367+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.368+0000] {subprocess.py:93} INFO - Found item: 135
+[2024-11-20T04:30:18.368+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.368+0000] {subprocess.py:93} INFO - Found item: 136
+[2024-11-20T04:30:18.369+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.369+0000] {subprocess.py:93} INFO - Found item: 137
+[2024-11-20T04:30:18.369+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.371+0000] {subprocess.py:93} INFO - Found item: 138
+[2024-11-20T04:30:18.371+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.372+0000] {subprocess.py:93} INFO - Found item: 139
+[2024-11-20T04:30:18.372+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.372+0000] {subprocess.py:93} INFO - Found item: 140
+[2024-11-20T04:30:18.373+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.373+0000] {subprocess.py:93} INFO - Found item: 141
+[2024-11-20T04:30:18.373+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.373+0000] {subprocess.py:93} INFO - Found item: 142
+[2024-11-20T04:30:18.373+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.374+0000] {subprocess.py:93} INFO - Found item: 143
+[2024-11-20T04:30:18.374+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.374+0000] {subprocess.py:93} INFO - Found item: 144
+[2024-11-20T04:30:18.374+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.375+0000] {subprocess.py:93} INFO - Found item: 145
+[2024-11-20T04:30:18.375+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.375+0000] {subprocess.py:93} INFO - Found item: 146
+[2024-11-20T04:30:18.375+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.375+0000] {subprocess.py:93} INFO - Found item: 147
+[2024-11-20T04:30:18.375+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.376+0000] {subprocess.py:93} INFO - Found item: 148
+[2024-11-20T04:30:18.376+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.376+0000] {subprocess.py:93} INFO - Found item: 149
+[2024-11-20T04:30:18.376+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.377+0000] {subprocess.py:93} INFO - Found item: 150
+[2024-11-20T04:30:18.377+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.377+0000] {subprocess.py:93} INFO - Found item: 151
+[2024-11-20T04:30:18.377+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.377+0000] {subprocess.py:93} INFO - Found item: 152
+[2024-11-20T04:30:18.378+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.378+0000] {subprocess.py:93} INFO - Found item: 153
+[2024-11-20T04:30:18.378+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.378+0000] {subprocess.py:93} INFO - Found item: 154
+[2024-11-20T04:30:18.378+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.379+0000] {subprocess.py:93} INFO - Found item: 155
+[2024-11-20T04:30:18.379+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.379+0000] {subprocess.py:93} INFO - Found item: 156
+[2024-11-20T04:30:18.379+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.379+0000] {subprocess.py:93} INFO - Found item: 157
+[2024-11-20T04:30:18.380+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.380+0000] {subprocess.py:93} INFO - Found item: 158
+[2024-11-20T04:30:18.380+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.381+0000] {subprocess.py:93} INFO - Found item: 159
+[2024-11-20T04:30:18.381+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.381+0000] {subprocess.py:93} INFO - Found item: 160
+[2024-11-20T04:30:18.381+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:30:18.381+0000] {subprocess.py:93} INFO - Found item: 161
+[2024-11-20T04:57:50.982+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.982+0000] {subprocess.py:93} INFO - Found item: 162
+[2024-11-20T04:57:50.983+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.983+0000] {subprocess.py:93} INFO - Found item: 163
+[2024-11-20T04:57:50.983+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.984+0000] {subprocess.py:93} INFO - Found item: 164
+[2024-11-20T04:57:50.984+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.984+0000] {subprocess.py:93} INFO - Found item: 165
+[2024-11-20T04:57:50.985+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.985+0000] {subprocess.py:93} INFO - Found item: 166
+[2024-11-20T04:57:50.985+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.985+0000] {subprocess.py:93} INFO - Found item: 167
+[2024-11-20T04:57:50.985+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.986+0000] {subprocess.py:93} INFO - Found item: 168
+[2024-11-20T04:57:50.986+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.987+0000] {subprocess.py:93} INFO - Found item: 169
+[2024-11-20T04:57:50.987+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.987+0000] {subprocess.py:93} INFO - Found item: 170
+[2024-11-20T04:57:50.987+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.987+0000] {subprocess.py:93} INFO - Found item: 171
+[2024-11-20T04:57:50.988+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.988+0000] {subprocess.py:93} INFO - Found item: 172
+[2024-11-20T04:57:50.988+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.988+0000] {subprocess.py:93} INFO - Found item: 173
+[2024-11-20T04:57:50.988+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.989+0000] {subprocess.py:93} INFO - Found item: 174
+[2024-11-20T04:57:50.989+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.989+0000] {subprocess.py:93} INFO - Found item: 175
+[2024-11-20T04:57:50.989+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.989+0000] {subprocess.py:93} INFO - Found item: 176
+[2024-11-20T04:57:50.990+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.990+0000] {subprocess.py:93} INFO - Found item: 177
+[2024-11-20T04:57:50.990+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.990+0000] {subprocess.py:93} INFO - Found item: 178
+[2024-11-20T04:57:50.990+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.991+0000] {subprocess.py:93} INFO - Found item: 179
+[2024-11-20T04:57:50.991+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.992+0000] {subprocess.py:93} INFO - Found item: 180
+[2024-11-20T04:57:50.992+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.996+0000] {subprocess.py:93} INFO - Found item: 181
+[2024-11-20T04:57:50.997+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.997+0000] {subprocess.py:93} INFO - Found item: 182
+[2024-11-20T04:57:50.998+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.998+0000] {subprocess.py:93} INFO - Found item: 183
+[2024-11-20T04:57:50.999+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:50.999+0000] {subprocess.py:93} INFO - Found item: 184
+[2024-11-20T04:57:50.999+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.000+0000] {subprocess.py:93} INFO - Found item: 185
+[2024-11-20T04:57:51.000+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.001+0000] {subprocess.py:93} INFO - Found item: 186
+[2024-11-20T04:57:51.001+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.001+0000] {subprocess.py:93} INFO - Found item: 187
+[2024-11-20T04:57:51.002+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.002+0000] {subprocess.py:93} INFO - Found item: 188
+[2024-11-20T04:57:51.002+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.003+0000] {subprocess.py:93} INFO - Found item: 189
+[2024-11-20T04:57:51.004+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.004+0000] {subprocess.py:93} INFO - Found item: 190
+[2024-11-20T04:57:51.005+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.005+0000] {subprocess.py:93} INFO - Found item: 191
+[2024-11-20T04:57:51.006+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.007+0000] {subprocess.py:93} INFO - Found item: 192
+[2024-11-20T04:57:51.008+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.008+0000] {subprocess.py:93} INFO - Found item: 193
+[2024-11-20T04:57:51.009+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.010+0000] {subprocess.py:93} INFO - Found item: 194
+[2024-11-20T04:57:51.011+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.012+0000] {subprocess.py:93} INFO - Found item: 195
+[2024-11-20T04:57:51.012+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.013+0000] {subprocess.py:93} INFO - Found item: 196
+[2024-11-20T04:57:51.014+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.014+0000] {subprocess.py:93} INFO - Found item: 197
+[2024-11-20T04:57:51.014+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.015+0000] {subprocess.py:93} INFO - Found item: 198
+[2024-11-20T04:57:51.015+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.015+0000] {subprocess.py:93} INFO - Found item: 199
+[2024-11-20T04:57:51.016+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.016+0000] {subprocess.py:93} INFO - Found item: 200
+[2024-11-20T04:57:51.016+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.017+0000] {subprocess.py:93} INFO - Found item: 201
+[2024-11-20T04:57:51.017+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.018+0000] {subprocess.py:93} INFO - Found item: 202
+[2024-11-20T04:57:51.018+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.018+0000] {subprocess.py:93} INFO - Found item: 203
+[2024-11-20T04:57:51.019+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.019+0000] {subprocess.py:93} INFO - Found item: 204
+[2024-11-20T04:57:51.020+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.020+0000] {subprocess.py:93} INFO - Found item: 205
+[2024-11-20T04:57:51.021+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.021+0000] {subprocess.py:93} INFO - Found item: 206
+[2024-11-20T04:57:51.022+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.022+0000] {subprocess.py:93} INFO - Found item: 207
+[2024-11-20T04:57:51.022+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.023+0000] {subprocess.py:93} INFO - Found item: 208
+[2024-11-20T04:57:51.023+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.024+0000] {subprocess.py:93} INFO - Found item: 209
+[2024-11-20T04:57:51.024+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.024+0000] {subprocess.py:93} INFO - Found item: 210
+[2024-11-20T04:57:51.024+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.025+0000] {subprocess.py:93} INFO - Found item: 211
+[2024-11-20T04:57:51.025+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.026+0000] {subprocess.py:93} INFO - Found item: 212
+[2024-11-20T04:57:51.026+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.026+0000] {subprocess.py:93} INFO - Found item: 213
+[2024-11-20T04:57:51.027+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.027+0000] {subprocess.py:93} INFO - Found item: 214
+[2024-11-20T04:57:51.027+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.028+0000] {subprocess.py:93} INFO - Found item: 215
+[2024-11-20T04:57:51.030+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.031+0000] {subprocess.py:93} INFO - Found item: 216
+[2024-11-20T04:57:51.031+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.031+0000] {subprocess.py:93} INFO - Found item: 217
+[2024-11-20T04:57:51.032+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.032+0000] {subprocess.py:93} INFO - Found item: 218
+[2024-11-20T04:57:51.033+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.033+0000] {subprocess.py:93} INFO - Found item: 219
+[2024-11-20T04:57:51.034+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.035+0000] {subprocess.py:93} INFO - Found item: 220
+[2024-11-20T04:57:51.035+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.035+0000] {subprocess.py:93} INFO - Found item: 221
+[2024-11-20T04:57:51.036+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.036+0000] {subprocess.py:93} INFO - Found item: 222
+[2024-11-20T04:57:51.036+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.036+0000] {subprocess.py:93} INFO - Found item: 223
+[2024-11-20T04:57:51.037+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.037+0000] {subprocess.py:93} INFO - Found item: 224
+[2024-11-20T04:57:51.037+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.038+0000] {subprocess.py:93} INFO - Found item: 225
+[2024-11-20T04:57:51.038+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.038+0000] {subprocess.py:93} INFO - Found item: 226
+[2024-11-20T04:57:51.038+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.039+0000] {subprocess.py:93} INFO - Found item: 227
+[2024-11-20T04:57:51.039+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.039+0000] {subprocess.py:93} INFO - Found item: 228
+[2024-11-20T04:57:51.040+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.040+0000] {subprocess.py:93} INFO - Found item: 229
+[2024-11-20T04:57:51.040+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.040+0000] {subprocess.py:93} INFO - Found item: 230
+[2024-11-20T04:57:51.041+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.041+0000] {subprocess.py:93} INFO - Found item: 231
+[2024-11-20T04:57:51.042+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.043+0000] {subprocess.py:93} INFO - Found item: 232
+[2024-11-20T04:57:51.043+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.044+0000] {subprocess.py:93} INFO - Found item: 233
+[2024-11-20T04:57:51.044+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.044+0000] {subprocess.py:93} INFO - Found item: 234
+[2024-11-20T04:57:51.045+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.045+0000] {subprocess.py:93} INFO - Found item: 235
+[2024-11-20T04:57:51.045+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.045+0000] {subprocess.py:93} INFO - Found item: 236
+[2024-11-20T04:57:51.045+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.046+0000] {subprocess.py:93} INFO - Found item: 237
+[2024-11-20T04:57:51.046+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.046+0000] {subprocess.py:93} INFO - Found item: 238
+[2024-11-20T04:57:51.047+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.047+0000] {subprocess.py:93} INFO - Found item: 239
+[2024-11-20T04:57:51.047+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.048+0000] {subprocess.py:93} INFO - Found item: 240
+[2024-11-20T04:57:51.048+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.048+0000] {subprocess.py:93} INFO - Found item: 241
+[2024-11-20T04:57:51.049+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.049+0000] {subprocess.py:93} INFO - Found item: 242
+[2024-11-20T04:57:51.049+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.050+0000] {subprocess.py:93} INFO - Found item: 243
+[2024-11-20T04:57:51.050+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.051+0000] {subprocess.py:93} INFO - Found item: 244
+[2024-11-20T04:57:51.051+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.051+0000] {subprocess.py:93} INFO - Found item: 245
+[2024-11-20T04:57:51.051+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.052+0000] {subprocess.py:93} INFO - Found item: 246
+[2024-11-20T04:57:51.052+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.053+0000] {subprocess.py:93} INFO - Found item: 247
+[2024-11-20T04:57:51.053+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.053+0000] {subprocess.py:93} INFO - Found item: 248
+[2024-11-20T04:57:51.053+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.054+0000] {subprocess.py:93} INFO - Found item: 249
+[2024-11-20T04:57:51.054+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.054+0000] {subprocess.py:93} INFO - Found item: 250
+[2024-11-20T04:57:51.055+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.055+0000] {subprocess.py:93} INFO - Found item: 251
+[2024-11-20T04:57:51.055+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.056+0000] {subprocess.py:93} INFO - Found item: 252
+[2024-11-20T04:57:51.056+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.056+0000] {subprocess.py:93} INFO - Found item: 253
+[2024-11-20T04:57:51.057+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.057+0000] {subprocess.py:93} INFO - Found item: 254
+[2024-11-20T04:57:51.057+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.057+0000] {subprocess.py:93} INFO - Found item: 255
+[2024-11-20T04:57:51.057+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.058+0000] {subprocess.py:93} INFO - Found item: 256
+[2024-11-20T04:57:51.058+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.059+0000] {subprocess.py:93} INFO - Found item: 257
+[2024-11-20T04:57:51.059+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.060+0000] {subprocess.py:93} INFO - Found item: 258
+[2024-11-20T04:57:51.060+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.060+0000] {subprocess.py:93} INFO - Found item: 259
+[2024-11-20T04:57:51.061+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.061+0000] {subprocess.py:93} INFO - Found item: 260
+[2024-11-20T04:57:51.062+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.062+0000] {subprocess.py:93} INFO - Found item: 261
+[2024-11-20T04:57:51.063+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.063+0000] {subprocess.py:93} INFO - Found item: 262
+[2024-11-20T04:57:51.063+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.064+0000] {subprocess.py:93} INFO - Found item: 263
+[2024-11-20T04:57:51.064+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.064+0000] {subprocess.py:93} INFO - Found item: 264
+[2024-11-20T04:57:51.064+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.065+0000] {subprocess.py:93} INFO - Found item: 265
+[2024-11-20T04:57:51.065+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.066+0000] {subprocess.py:93} INFO - Found item: 266
+[2024-11-20T04:57:51.067+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.067+0000] {subprocess.py:93} INFO - Found item: 267
+[2024-11-20T04:57:51.068+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.068+0000] {subprocess.py:93} INFO - Found item: 268
+[2024-11-20T04:57:51.068+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.069+0000] {subprocess.py:93} INFO - Found item: 269
+[2024-11-20T04:57:51.070+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.071+0000] {subprocess.py:93} INFO - Found item: 270
+[2024-11-20T04:57:51.071+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.072+0000] {subprocess.py:93} INFO - Found item: 271
+[2024-11-20T04:57:51.072+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.072+0000] {subprocess.py:93} INFO - Found item: 272
+[2024-11-20T04:57:51.073+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.074+0000] {subprocess.py:93} INFO - Found item: 273
+[2024-11-20T04:57:51.074+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.075+0000] {subprocess.py:93} INFO - Found item: 274
+[2024-11-20T04:57:51.075+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.076+0000] {subprocess.py:93} INFO - Found item: 275
+[2024-11-20T04:57:51.076+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.077+0000] {subprocess.py:93} INFO - Found item: 276
+[2024-11-20T04:57:51.077+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.078+0000] {subprocess.py:93} INFO - Found item: 277
+[2024-11-20T04:57:51.078+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.079+0000] {subprocess.py:93} INFO - Found item: 278
+[2024-11-20T04:57:51.079+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.079+0000] {subprocess.py:93} INFO - Found item: 279
+[2024-11-20T04:57:51.079+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.079+0000] {subprocess.py:93} INFO - Found item: 280
+[2024-11-20T04:57:51.080+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.080+0000] {subprocess.py:93} INFO - Found item: 281
+[2024-11-20T04:57:51.081+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.081+0000] {subprocess.py:93} INFO - Found item: 282
+[2024-11-20T04:57:51.082+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.082+0000] {subprocess.py:93} INFO - Found item: 283
+[2024-11-20T04:57:51.082+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.083+0000] {subprocess.py:93} INFO - Found item: 284
+[2024-11-20T04:57:51.083+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.083+0000] {subprocess.py:93} INFO - Found item: 285
+[2024-11-20T04:57:51.083+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.083+0000] {subprocess.py:93} INFO - Found item: 286
+[2024-11-20T04:57:51.083+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.084+0000] {subprocess.py:93} INFO - Found item: 287
+[2024-11-20T04:57:51.084+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.084+0000] {subprocess.py:93} INFO - Found item: 288
+[2024-11-20T04:57:51.084+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.084+0000] {subprocess.py:93} INFO - Found item: 289
+[2024-11-20T04:57:51.085+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.085+0000] {subprocess.py:93} INFO - Found item: 290
+[2024-11-20T04:57:51.085+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.085+0000] {subprocess.py:93} INFO - Found item: 291
+[2024-11-20T04:57:51.085+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.085+0000] {subprocess.py:93} INFO - Found item: 292
+[2024-11-20T04:57:51.086+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.086+0000] {subprocess.py:93} INFO - Found item: 293
+[2024-11-20T04:57:51.086+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.086+0000] {subprocess.py:93} INFO - Found item: 294
+[2024-11-20T04:57:51.087+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.087+0000] {subprocess.py:93} INFO - Found item: 295
+[2024-11-20T04:57:51.088+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.088+0000] {subprocess.py:93} INFO - Found item: 296
+[2024-11-20T04:57:51.088+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.088+0000] {subprocess.py:93} INFO - Found item: 297
+[2024-11-20T04:57:51.089+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.089+0000] {subprocess.py:93} INFO - Found item: 298
+[2024-11-20T04:57:51.089+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.089+0000] {subprocess.py:93} INFO - Found item: 299
+[2024-11-20T04:57:51.090+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.090+0000] {subprocess.py:93} INFO - Found item: 300
+[2024-11-20T04:57:51.090+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.090+0000] {subprocess.py:93} INFO - Found item: 301
+[2024-11-20T04:57:51.091+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.091+0000] {subprocess.py:93} INFO - Found item: 302
+[2024-11-20T04:57:51.091+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.091+0000] {subprocess.py:93} INFO - Found item: 303
+[2024-11-20T04:57:51.091+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.091+0000] {subprocess.py:93} INFO - Found item: 304
+[2024-11-20T04:57:51.092+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.092+0000] {subprocess.py:93} INFO - Found item: 305
+[2024-11-20T04:57:51.092+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.092+0000] {subprocess.py:93} INFO - Found item: 306
+[2024-11-20T04:57:51.092+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.093+0000] {subprocess.py:93} INFO - Found item: 307
+[2024-11-20T04:57:51.093+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.093+0000] {subprocess.py:93} INFO - Found item: 308
+[2024-11-20T04:57:51.093+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.094+0000] {subprocess.py:93} INFO - Found item: 309
+[2024-11-20T04:57:51.094+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.095+0000] {subprocess.py:93} INFO - Found item: 310
+[2024-11-20T04:57:51.095+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.096+0000] {subprocess.py:93} INFO - Found item: 311
+[2024-11-20T04:57:51.096+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.096+0000] {subprocess.py:93} INFO - Found item: 312
+[2024-11-20T04:57:51.096+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.097+0000] {subprocess.py:93} INFO - Found item: 313
+[2024-11-20T04:57:51.097+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.097+0000] {subprocess.py:93} INFO - Found item: 314
+[2024-11-20T04:57:51.097+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.097+0000] {subprocess.py:93} INFO - Found item: 315
+[2024-11-20T04:57:51.098+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.098+0000] {subprocess.py:93} INFO - Found item: 316
+[2024-11-20T04:57:51.098+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.098+0000] {subprocess.py:93} INFO - Found item: 317
+[2024-11-20T04:57:51.098+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.098+0000] {subprocess.py:93} INFO - Found item: 318
+[2024-11-20T04:57:51.099+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.099+0000] {subprocess.py:93} INFO - Found item: 319
+[2024-11-20T04:57:51.099+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.099+0000] {subprocess.py:93} INFO - Found item: 320
+[2024-11-20T04:57:51.099+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.100+0000] {subprocess.py:93} INFO - Found item: 321
+[2024-11-20T04:57:51.100+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.100+0000] {subprocess.py:93} INFO - Found item: 322
+[2024-11-20T04:57:51.100+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.100+0000] {subprocess.py:93} INFO - Found item: 323
+[2024-11-20T04:57:51.101+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.101+0000] {subprocess.py:93} INFO - Found item: 324
+[2024-11-20T04:57:51.101+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.101+0000] {subprocess.py:93} INFO - Found item: 325
+[2024-11-20T04:57:51.101+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.102+0000] {subprocess.py:93} INFO - Found item: 326
+[2024-11-20T04:57:51.102+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.102+0000] {subprocess.py:93} INFO - Found item: 327
+[2024-11-20T04:57:51.102+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.103+0000] {subprocess.py:93} INFO - Found item: 328
+[2024-11-20T04:57:51.103+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.103+0000] {subprocess.py:93} INFO - Found item: 329
+[2024-11-20T04:57:51.103+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.103+0000] {subprocess.py:93} INFO - Found item: 330
+[2024-11-20T04:57:51.104+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.104+0000] {subprocess.py:93} INFO - Found item: 331
+[2024-11-20T04:57:51.104+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.104+0000] {subprocess.py:93} INFO - Found item: 332
+[2024-11-20T04:57:51.104+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.105+0000] {subprocess.py:93} INFO - Found item: 333
+[2024-11-20T04:57:51.105+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.105+0000] {subprocess.py:93} INFO - Found item: 334
+[2024-11-20T04:57:51.105+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T04:57:51.105+0000] {subprocess.py:93} INFO - Found item: 335
+[2024-11-20T05:25:53.819+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.820+0000] {subprocess.py:93} INFO - Found item: 336
+[2024-11-20T05:25:53.820+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.821+0000] {subprocess.py:93} INFO - Found item: 337
+[2024-11-20T05:25:53.821+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.822+0000] {subprocess.py:93} INFO - Found item: 338
+[2024-11-20T05:25:53.822+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.823+0000] {subprocess.py:93} INFO - Found item: 339
+[2024-11-20T05:25:53.823+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.824+0000] {subprocess.py:93} INFO - Found item: 340
+[2024-11-20T05:25:53.825+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.825+0000] {subprocess.py:93} INFO - Found item: 341
+[2024-11-20T05:25:53.825+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.826+0000] {subprocess.py:93} INFO - Found item: 342
+[2024-11-20T05:25:53.826+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.826+0000] {subprocess.py:93} INFO - Found item: 343
+[2024-11-20T05:25:53.826+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.826+0000] {subprocess.py:93} INFO - Found item: 344
+[2024-11-20T05:25:53.826+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.827+0000] {subprocess.py:93} INFO - Found item: 345
+[2024-11-20T05:25:53.827+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.827+0000] {subprocess.py:93} INFO - Found item: 346
+[2024-11-20T05:25:53.827+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.828+0000] {subprocess.py:93} INFO - Found item: 347
+[2024-11-20T05:25:53.828+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.828+0000] {subprocess.py:93} INFO - Found item: 348
+[2024-11-20T05:25:53.828+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.829+0000] {subprocess.py:93} INFO - Found item: 349
+[2024-11-20T05:25:53.829+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.829+0000] {subprocess.py:93} INFO - Found item: 350
+[2024-11-20T05:25:53.830+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.830+0000] {subprocess.py:93} INFO - Found item: 351
+[2024-11-20T05:25:53.830+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.830+0000] {subprocess.py:93} INFO - Found item: 352
+[2024-11-20T05:25:53.831+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.831+0000] {subprocess.py:93} INFO - Found item: 353
+[2024-11-20T05:25:53.831+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.832+0000] {subprocess.py:93} INFO - Found item: 354
+[2024-11-20T05:25:53.832+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.832+0000] {subprocess.py:93} INFO - Found item: 355
+[2024-11-20T05:25:53.832+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.833+0000] {subprocess.py:93} INFO - Found item: 356
+[2024-11-20T05:25:53.836+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.837+0000] {subprocess.py:93} INFO - Found item: 357
+[2024-11-20T05:25:53.838+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.839+0000] {subprocess.py:93} INFO - Found item: 358
+[2024-11-20T05:25:53.840+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.841+0000] {subprocess.py:93} INFO - Found item: 359
+[2024-11-20T05:25:53.841+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.842+0000] {subprocess.py:93} INFO - Found item: 360
+[2024-11-20T05:25:53.843+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.843+0000] {subprocess.py:93} INFO - Found item: 361
+[2024-11-20T05:25:53.843+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.844+0000] {subprocess.py:93} INFO - Found item: 362
+[2024-11-20T05:25:53.844+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.844+0000] {subprocess.py:93} INFO - Found item: 363
+[2024-11-20T05:25:53.845+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.846+0000] {subprocess.py:93} INFO - Found item: 364
+[2024-11-20T05:25:53.847+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.848+0000] {subprocess.py:93} INFO - Found item: 365
+[2024-11-20T05:25:53.848+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.849+0000] {subprocess.py:93} INFO - Found item: 366
+[2024-11-20T05:25:53.849+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.850+0000] {subprocess.py:93} INFO - Found item: 367
+[2024-11-20T05:25:53.850+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.850+0000] {subprocess.py:93} INFO - Found item: 368
+[2024-11-20T05:25:53.851+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.851+0000] {subprocess.py:93} INFO - Found item: 369
+[2024-11-20T05:25:53.852+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.856+0000] {subprocess.py:93} INFO - Found item: 370
+[2024-11-20T05:25:53.857+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.857+0000] {subprocess.py:93} INFO - Found item: 371
+[2024-11-20T05:25:53.858+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.859+0000] {subprocess.py:93} INFO - Found item: 372
+[2024-11-20T05:25:53.860+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.861+0000] {subprocess.py:93} INFO - Found item: 373
+[2024-11-20T05:25:53.861+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.862+0000] {subprocess.py:93} INFO - Found item: 374
+[2024-11-20T05:25:53.862+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.862+0000] {subprocess.py:93} INFO - Found item: 375
+[2024-11-20T05:25:53.862+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.862+0000] {subprocess.py:93} INFO - Found item: 376
+[2024-11-20T05:25:53.863+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.863+0000] {subprocess.py:93} INFO - Found item: 377
+[2024-11-20T05:25:53.863+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.864+0000] {subprocess.py:93} INFO - Found item: 378
+[2024-11-20T05:25:53.864+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.864+0000] {subprocess.py:93} INFO - Found item: 379
+[2024-11-20T05:25:53.865+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.865+0000] {subprocess.py:93} INFO - Found item: 380
+[2024-11-20T05:25:53.865+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.865+0000] {subprocess.py:93} INFO - Found item: 381
+[2024-11-20T05:25:53.865+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.866+0000] {subprocess.py:93} INFO - Found item: 382
+[2024-11-20T05:25:53.866+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.866+0000] {subprocess.py:93} INFO - Found item: 383
+[2024-11-20T05:25:53.867+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.867+0000] {subprocess.py:93} INFO - Found item: 384
+[2024-11-20T05:25:53.867+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.868+0000] {subprocess.py:93} INFO - Found item: 385
+[2024-11-20T05:25:53.868+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.868+0000] {subprocess.py:93} INFO - Found item: 386
+[2024-11-20T05:25:53.868+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.869+0000] {subprocess.py:93} INFO - Found item: 387
+[2024-11-20T05:25:53.869+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.869+0000] {subprocess.py:93} INFO - Found item: 388
+[2024-11-20T05:25:53.870+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.871+0000] {subprocess.py:93} INFO - Found item: 389
+[2024-11-20T05:25:53.872+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.873+0000] {subprocess.py:93} INFO - Found item: 390
+[2024-11-20T05:25:53.873+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.874+0000] {subprocess.py:93} INFO - Found item: 391
+[2024-11-20T05:25:53.874+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.874+0000] {subprocess.py:93} INFO - Found item: 392
+[2024-11-20T05:25:53.874+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.875+0000] {subprocess.py:93} INFO - Found item: 393
+[2024-11-20T05:25:53.875+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.876+0000] {subprocess.py:93} INFO - Found item: 394
+[2024-11-20T05:25:53.876+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.877+0000] {subprocess.py:93} INFO - Found item: 395
+[2024-11-20T05:25:53.877+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.878+0000] {subprocess.py:93} INFO - Found item: 396
+[2024-11-20T05:25:53.878+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.878+0000] {subprocess.py:93} INFO - Found item: 397
+[2024-11-20T05:25:53.879+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.880+0000] {subprocess.py:93} INFO - Found item: 398
+[2024-11-20T05:25:53.880+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.881+0000] {subprocess.py:93} INFO - Found item: 399
+[2024-11-20T05:25:53.881+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.882+0000] {subprocess.py:93} INFO - Found item: 400
+[2024-11-20T05:25:53.883+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.884+0000] {subprocess.py:93} INFO - Found item: 401
+[2024-11-20T05:25:53.884+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.885+0000] {subprocess.py:93} INFO - Found item: 402
+[2024-11-20T05:25:53.885+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.886+0000] {subprocess.py:93} INFO - Found item: 403
+[2024-11-20T05:25:53.887+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.888+0000] {subprocess.py:93} INFO - Found item: 404
+[2024-11-20T05:25:53.888+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.892+0000] {subprocess.py:93} INFO - Found item: 405
+[2024-11-20T05:25:53.893+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.893+0000] {subprocess.py:93} INFO - Found item: 406
+[2024-11-20T05:25:53.893+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.894+0000] {subprocess.py:93} INFO - Found item: 407
+[2024-11-20T05:25:53.894+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.894+0000] {subprocess.py:93} INFO - Found item: 408
+[2024-11-20T05:25:53.895+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.895+0000] {subprocess.py:93} INFO - Found item: 409
+[2024-11-20T05:25:53.895+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.895+0000] {subprocess.py:93} INFO - Found item: 410
+[2024-11-20T05:25:53.896+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.896+0000] {subprocess.py:93} INFO - Found item: 411
+[2024-11-20T05:25:53.896+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.896+0000] {subprocess.py:93} INFO - Found item: 412
+[2024-11-20T05:25:53.896+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.897+0000] {subprocess.py:93} INFO - Found item: 413
+[2024-11-20T05:25:53.897+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.897+0000] {subprocess.py:93} INFO - Found item: 414
+[2024-11-20T05:25:53.897+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.897+0000] {subprocess.py:93} INFO - Found item: 415
+[2024-11-20T05:25:53.897+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.898+0000] {subprocess.py:93} INFO - Found item: 416
+[2024-11-20T05:25:53.898+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.898+0000] {subprocess.py:93} INFO - Found item: 417
+[2024-11-20T05:25:53.898+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.899+0000] {subprocess.py:93} INFO - Found item: 418
+[2024-11-20T05:25:53.899+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.899+0000] {subprocess.py:93} INFO - Found item: 419
+[2024-11-20T05:25:53.899+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.899+0000] {subprocess.py:93} INFO - Found item: 420
+[2024-11-20T05:25:53.900+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.900+0000] {subprocess.py:93} INFO - Found item: 421
+[2024-11-20T05:25:53.900+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.900+0000] {subprocess.py:93} INFO - Found item: 422
+[2024-11-20T05:25:53.901+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.902+0000] {subprocess.py:93} INFO - Found item: 423
+[2024-11-20T05:25:53.903+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.904+0000] {subprocess.py:93} INFO - Found item: 424
+[2024-11-20T05:25:53.905+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.905+0000] {subprocess.py:93} INFO - Found item: 425
+[2024-11-20T05:25:53.905+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.906+0000] {subprocess.py:93} INFO - Found item: 426
+[2024-11-20T05:25:53.906+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.906+0000] {subprocess.py:93} INFO - Found item: 427
+[2024-11-20T05:25:53.907+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.907+0000] {subprocess.py:93} INFO - Found item: 428
+[2024-11-20T05:25:53.907+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.907+0000] {subprocess.py:93} INFO - Found item: 429
+[2024-11-20T05:25:53.908+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.908+0000] {subprocess.py:93} INFO - Found item: 430
+[2024-11-20T05:25:53.909+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.909+0000] {subprocess.py:93} INFO - Found item: 431
+[2024-11-20T05:25:53.909+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.910+0000] {subprocess.py:93} INFO - Found item: 432
+[2024-11-20T05:25:53.910+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.911+0000] {subprocess.py:93} INFO - Found item: 433
+[2024-11-20T05:25:53.911+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.911+0000] {subprocess.py:93} INFO - Found item: 434
+[2024-11-20T05:25:53.912+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.912+0000] {subprocess.py:93} INFO - Found item: 435
+[2024-11-20T05:25:53.912+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.913+0000] {subprocess.py:93} INFO - Found item: 436
+[2024-11-20T05:25:53.913+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.914+0000] {subprocess.py:93} INFO - Found item: 437
+[2024-11-20T05:25:53.914+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.914+0000] {subprocess.py:93} INFO - Found item: 438
+[2024-11-20T05:25:53.914+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.915+0000] {subprocess.py:93} INFO - Found item: 439
+[2024-11-20T05:25:53.915+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.916+0000] {subprocess.py:93} INFO - Found item: 440
+[2024-11-20T05:25:53.916+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.917+0000] {subprocess.py:93} INFO - Found item: 441
+[2024-11-20T05:25:53.917+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.917+0000] {subprocess.py:93} INFO - Found item: 442
+[2024-11-20T05:25:53.918+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.918+0000] {subprocess.py:93} INFO - Found item: 443
+[2024-11-20T05:25:53.918+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.918+0000] {subprocess.py:93} INFO - Found item: 444
+[2024-11-20T05:25:53.919+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.919+0000] {subprocess.py:93} INFO - Found item: 445
+[2024-11-20T05:25:53.920+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.920+0000] {subprocess.py:93} INFO - Found item: 446
+[2024-11-20T05:25:53.921+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.921+0000] {subprocess.py:93} INFO - Found item: 447
+[2024-11-20T05:25:53.922+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.922+0000] {subprocess.py:93} INFO - Found item: 448
+[2024-11-20T05:25:53.923+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.923+0000] {subprocess.py:93} INFO - Found item: 449
+[2024-11-20T05:25:53.923+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.924+0000] {subprocess.py:93} INFO - Found item: 450
+[2024-11-20T05:25:53.924+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.924+0000] {subprocess.py:93} INFO - Found item: 451
+[2024-11-20T05:25:53.925+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.925+0000] {subprocess.py:93} INFO - Found item: 452
+[2024-11-20T05:25:53.925+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.925+0000] {subprocess.py:93} INFO - Found item: 453
+[2024-11-20T05:25:53.926+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.926+0000] {subprocess.py:93} INFO - Found item: 454
+[2024-11-20T05:25:53.926+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.926+0000] {subprocess.py:93} INFO - Found item: 455
+[2024-11-20T05:25:53.927+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.927+0000] {subprocess.py:93} INFO - Found item: 456
+[2024-11-20T05:25:53.927+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.927+0000] {subprocess.py:93} INFO - Found item: 457
+[2024-11-20T05:25:53.928+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.928+0000] {subprocess.py:93} INFO - Found item: 458
+[2024-11-20T05:25:53.928+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.929+0000] {subprocess.py:93} INFO - Found item: 459
+[2024-11-20T05:25:53.929+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.929+0000] {subprocess.py:93} INFO - Found item: 460
+[2024-11-20T05:25:53.930+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.930+0000] {subprocess.py:93} INFO - Found item: 461
+[2024-11-20T05:25:53.930+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.930+0000] {subprocess.py:93} INFO - Found item: 462
+[2024-11-20T05:25:53.931+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.931+0000] {subprocess.py:93} INFO - Found item: 463
+[2024-11-20T05:25:53.931+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.931+0000] {subprocess.py:93} INFO - Found item: 464
+[2024-11-20T05:25:53.932+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.932+0000] {subprocess.py:93} INFO - Found item: 465
+[2024-11-20T05:25:53.932+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.932+0000] {subprocess.py:93} INFO - Found item: 466
+[2024-11-20T05:25:53.932+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.932+0000] {subprocess.py:93} INFO - Found item: 467
+[2024-11-20T05:25:53.932+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.933+0000] {subprocess.py:93} INFO - Found item: 468
+[2024-11-20T05:25:53.933+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.933+0000] {subprocess.py:93} INFO - Found item: 469
+[2024-11-20T05:25:53.933+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.933+0000] {subprocess.py:93} INFO - Found item: 470
+[2024-11-20T05:25:53.933+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.933+0000] {subprocess.py:93} INFO - Found item: 471
+[2024-11-20T05:25:53.934+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.934+0000] {subprocess.py:93} INFO - Found item: 472
+[2024-11-20T05:25:53.934+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.934+0000] {subprocess.py:93} INFO - Found item: 473
+[2024-11-20T05:25:53.934+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.934+0000] {subprocess.py:93} INFO - Found item: 474
+[2024-11-20T05:25:53.934+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.935+0000] {subprocess.py:93} INFO - Found item: 475
+[2024-11-20T05:25:53.936+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.936+0000] {subprocess.py:93} INFO - Found item: 476
+[2024-11-20T05:25:53.937+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.937+0000] {subprocess.py:93} INFO - Found item: 477
+[2024-11-20T05:25:53.937+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.937+0000] {subprocess.py:93} INFO - Found item: 478
+[2024-11-20T05:25:53.938+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.938+0000] {subprocess.py:93} INFO - Found item: 479
+[2024-11-20T05:25:53.938+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.938+0000] {subprocess.py:93} INFO - Found item: 480
+[2024-11-20T05:25:53.939+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.939+0000] {subprocess.py:93} INFO - Found item: 481
+[2024-11-20T05:25:53.939+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.939+0000] {subprocess.py:93} INFO - Found item: 482
+[2024-11-20T05:25:53.939+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.940+0000] {subprocess.py:93} INFO - Found item: 483
+[2024-11-20T05:25:53.940+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.940+0000] {subprocess.py:93} INFO - Found item: 484
+[2024-11-20T05:25:53.940+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.940+0000] {subprocess.py:93} INFO - Found item: 485
+[2024-11-20T05:25:53.940+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.941+0000] {subprocess.py:93} INFO - Found item: 486
+[2024-11-20T05:25:53.941+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.941+0000] {subprocess.py:93} INFO - Found item: 487
+[2024-11-20T05:25:53.941+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.941+0000] {subprocess.py:93} INFO - Found item: 488
+[2024-11-20T05:25:53.941+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.941+0000] {subprocess.py:93} INFO - Found item: 489
+[2024-11-20T05:25:53.942+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.942+0000] {subprocess.py:93} INFO - Found item: 490
+[2024-11-20T05:25:53.942+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.942+0000] {subprocess.py:93} INFO - Found item: 491
+[2024-11-20T05:25:53.942+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.942+0000] {subprocess.py:93} INFO - Found item: 492
+[2024-11-20T05:25:53.943+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.943+0000] {subprocess.py:93} INFO - Found item: 493
+[2024-11-20T05:25:53.943+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.943+0000] {subprocess.py:93} INFO - Found item: 494
+[2024-11-20T05:25:53.943+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.943+0000] {subprocess.py:93} INFO - Found item: 495
+[2024-11-20T05:25:53.944+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.944+0000] {subprocess.py:93} INFO - Found item: 496
+[2024-11-20T05:25:53.944+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.944+0000] {subprocess.py:93} INFO - Found item: 497
+[2024-11-20T05:25:53.944+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.944+0000] {subprocess.py:93} INFO - Found item: 498
+[2024-11-20T05:25:53.944+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.945+0000] {subprocess.py:93} INFO - Found item: 499
+[2024-11-20T05:25:53.945+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.945+0000] {subprocess.py:93} INFO - Found item: 500
+[2024-11-20T05:25:53.945+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.945+0000] {subprocess.py:93} INFO - Found item: 501
+[2024-11-20T05:25:53.945+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.946+0000] {subprocess.py:93} INFO - Found item: 502
+[2024-11-20T05:25:53.946+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.946+0000] {subprocess.py:93} INFO - Found item: 503
+[2024-11-20T05:25:53.946+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.947+0000] {subprocess.py:93} INFO - Found item: 504
+[2024-11-20T05:25:53.947+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.948+0000] {subprocess.py:93} INFO - Found item: 505
+[2024-11-20T05:25:53.948+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.949+0000] {subprocess.py:93} INFO - Found item: 506
+[2024-11-20T05:25:53.949+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.949+0000] {subprocess.py:93} INFO - Found item: 507
+[2024-11-20T05:25:53.950+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.950+0000] {subprocess.py:93} INFO - Found item: 508
+[2024-11-20T05:25:53.951+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:25:53.951+0000] {subprocess.py:93} INFO - Found item: 509
+[2024-11-20T05:53:09.095+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.096+0000] {subprocess.py:93} INFO - Found item: 510
+[2024-11-20T05:53:09.096+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.097+0000] {subprocess.py:93} INFO - Found item: 511
+[2024-11-20T05:53:09.097+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.097+0000] {subprocess.py:93} INFO - Found item: 512
+[2024-11-20T05:53:09.098+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.098+0000] {subprocess.py:93} INFO - Found item: 513
+[2024-11-20T05:53:09.098+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.099+0000] {subprocess.py:93} INFO - Found item: 514
+[2024-11-20T05:53:09.099+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.099+0000] {subprocess.py:93} INFO - Found item: 515
+[2024-11-20T05:53:09.100+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.100+0000] {subprocess.py:93} INFO - Found item: 516
+[2024-11-20T05:53:09.100+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.100+0000] {subprocess.py:93} INFO - Found item: 517
+[2024-11-20T05:53:09.101+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.101+0000] {subprocess.py:93} INFO - Found item: 518
+[2024-11-20T05:53:09.101+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.101+0000] {subprocess.py:93} INFO - Found item: 519
+[2024-11-20T05:53:09.102+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.102+0000] {subprocess.py:93} INFO - Found item: 520
+[2024-11-20T05:53:09.102+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.103+0000] {subprocess.py:93} INFO - Found item: 521
+[2024-11-20T05:53:09.103+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.103+0000] {subprocess.py:93} INFO - Found item: 522
+[2024-11-20T05:53:09.103+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.104+0000] {subprocess.py:93} INFO - Found item: 523
+[2024-11-20T05:53:09.104+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.104+0000] {subprocess.py:93} INFO - Found item: 524
+[2024-11-20T05:53:09.104+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.105+0000] {subprocess.py:93} INFO - Found item: 525
+[2024-11-20T05:53:09.105+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.105+0000] {subprocess.py:93} INFO - Found item: 526
+[2024-11-20T05:53:09.106+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.106+0000] {subprocess.py:93} INFO - Found item: 527
+[2024-11-20T05:53:09.106+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.106+0000] {subprocess.py:93} INFO - Found item: 528
+[2024-11-20T05:53:09.107+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.107+0000] {subprocess.py:93} INFO - Found item: 529
+[2024-11-20T05:53:09.107+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.107+0000] {subprocess.py:93} INFO - Found item: 530
+[2024-11-20T05:53:09.108+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.108+0000] {subprocess.py:93} INFO - Found item: 531
+[2024-11-20T05:53:09.108+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.108+0000] {subprocess.py:93} INFO - Found item: 532
+[2024-11-20T05:53:09.109+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.109+0000] {subprocess.py:93} INFO - Found item: 533
+[2024-11-20T05:53:09.109+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.109+0000] {subprocess.py:93} INFO - Found item: 534
+[2024-11-20T05:53:09.110+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.110+0000] {subprocess.py:93} INFO - Found item: 535
+[2024-11-20T05:53:09.110+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.110+0000] {subprocess.py:93} INFO - Found item: 536
+[2024-11-20T05:53:09.111+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.111+0000] {subprocess.py:93} INFO - Found item: 537
+[2024-11-20T05:53:09.111+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.111+0000] {subprocess.py:93} INFO - Found item: 538
+[2024-11-20T05:53:09.112+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.112+0000] {subprocess.py:93} INFO - Found item: 539
+[2024-11-20T05:53:09.112+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.113+0000] {subprocess.py:93} INFO - Found item: 540
+[2024-11-20T05:53:09.113+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.113+0000] {subprocess.py:93} INFO - Found item: 541
+[2024-11-20T05:53:09.113+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.113+0000] {subprocess.py:93} INFO - Found item: 542
+[2024-11-20T05:53:09.113+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.114+0000] {subprocess.py:93} INFO - Found item: 543
+[2024-11-20T05:53:09.114+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.114+0000] {subprocess.py:93} INFO - Found item: 544
+[2024-11-20T05:53:09.114+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.114+0000] {subprocess.py:93} INFO - Found item: 545
+[2024-11-20T05:53:09.114+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.114+0000] {subprocess.py:93} INFO - Found item: 546
+[2024-11-20T05:53:09.115+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.115+0000] {subprocess.py:93} INFO - Found item: 547
+[2024-11-20T05:53:09.115+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.115+0000] {subprocess.py:93} INFO - Found item: 548
+[2024-11-20T05:53:09.115+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.115+0000] {subprocess.py:93} INFO - Found item: 549
+[2024-11-20T05:53:09.116+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.116+0000] {subprocess.py:93} INFO - Found item: 550
+[2024-11-20T05:53:09.116+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.116+0000] {subprocess.py:93} INFO - Found item: 551
+[2024-11-20T05:53:09.116+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.116+0000] {subprocess.py:93} INFO - Found item: 552
+[2024-11-20T05:53:09.116+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.117+0000] {subprocess.py:93} INFO - Found item: 553
+[2024-11-20T05:53:09.117+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.117+0000] {subprocess.py:93} INFO - Found item: 554
+[2024-11-20T05:53:09.117+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.117+0000] {subprocess.py:93} INFO - Found item: 555
+[2024-11-20T05:53:09.118+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.118+0000] {subprocess.py:93} INFO - Found item: 556
+[2024-11-20T05:53:09.118+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.118+0000] {subprocess.py:93} INFO - Found item: 557
+[2024-11-20T05:53:09.118+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.119+0000] {subprocess.py:93} INFO - Found item: 558
+[2024-11-20T05:53:09.119+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.119+0000] {subprocess.py:93} INFO - Found item: 559
+[2024-11-20T05:53:09.119+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.119+0000] {subprocess.py:93} INFO - Found item: 560
+[2024-11-20T05:53:09.119+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.120+0000] {subprocess.py:93} INFO - Found item: 561
+[2024-11-20T05:53:09.120+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.121+0000] {subprocess.py:93} INFO - Found item: 562
+[2024-11-20T05:53:09.121+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.121+0000] {subprocess.py:93} INFO - Found item: 563
+[2024-11-20T05:53:09.122+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.122+0000] {subprocess.py:93} INFO - Found item: 564
+[2024-11-20T05:53:09.122+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.122+0000] {subprocess.py:93} INFO - Found item: 565
+[2024-11-20T05:53:09.123+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.123+0000] {subprocess.py:93} INFO - Found item: 566
+[2024-11-20T05:53:09.123+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.124+0000] {subprocess.py:93} INFO - Found item: 567
+[2024-11-20T05:53:09.124+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.125+0000] {subprocess.py:93} INFO - Found item: 568
+[2024-11-20T05:53:09.126+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.126+0000] {subprocess.py:93} INFO - Found item: 569
+[2024-11-20T05:53:09.126+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.126+0000] {subprocess.py:93} INFO - Found item: 570
+[2024-11-20T05:53:09.127+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.127+0000] {subprocess.py:93} INFO - Found item: 571
+[2024-11-20T05:53:09.127+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.128+0000] {subprocess.py:93} INFO - Found item: 572
+[2024-11-20T05:53:09.128+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.128+0000] {subprocess.py:93} INFO - Found item: 573
+[2024-11-20T05:53:09.129+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.129+0000] {subprocess.py:93} INFO - Found item: 574
+[2024-11-20T05:53:09.129+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.131+0000] {subprocess.py:93} INFO - Found item: 575
+[2024-11-20T05:53:09.132+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.134+0000] {subprocess.py:93} INFO - Found item: 576
+[2024-11-20T05:53:09.135+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.135+0000] {subprocess.py:93} INFO - Found item: 577
+[2024-11-20T05:53:09.136+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.136+0000] {subprocess.py:93} INFO - Found item: 578
+[2024-11-20T05:53:09.137+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.137+0000] {subprocess.py:93} INFO - Found item: 579
+[2024-11-20T05:53:09.137+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.138+0000] {subprocess.py:93} INFO - Found item: 580
+[2024-11-20T05:53:09.139+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.140+0000] {subprocess.py:93} INFO - Found item: 581
+[2024-11-20T05:53:09.141+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.142+0000] {subprocess.py:93} INFO - Found item: 582
+[2024-11-20T05:53:09.142+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.143+0000] {subprocess.py:93} INFO - Found item: 583
+[2024-11-20T05:53:09.144+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.145+0000] {subprocess.py:93} INFO - Found item: 584
+[2024-11-20T05:53:09.146+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.147+0000] {subprocess.py:93} INFO - Found item: 585
+[2024-11-20T05:53:09.148+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.149+0000] {subprocess.py:93} INFO - Found item: 586
+[2024-11-20T05:53:09.149+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.150+0000] {subprocess.py:93} INFO - Found item: 587
+[2024-11-20T05:53:09.151+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.151+0000] {subprocess.py:93} INFO - Found item: 588
+[2024-11-20T05:53:09.152+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.152+0000] {subprocess.py:93} INFO - Found item: 589
+[2024-11-20T05:53:09.152+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.153+0000] {subprocess.py:93} INFO - Found item: 590
+[2024-11-20T05:53:09.153+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.154+0000] {subprocess.py:93} INFO - Found item: 591
+[2024-11-20T05:53:09.154+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.154+0000] {subprocess.py:93} INFO - Found item: 592
+[2024-11-20T05:53:09.154+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.155+0000] {subprocess.py:93} INFO - Found item: 593
+[2024-11-20T05:53:09.155+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.155+0000] {subprocess.py:93} INFO - Found item: 594
+[2024-11-20T05:53:09.155+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.156+0000] {subprocess.py:93} INFO - Found item: 595
+[2024-11-20T05:53:09.156+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.156+0000] {subprocess.py:93} INFO - Found item: 596
+[2024-11-20T05:53:09.156+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.156+0000] {subprocess.py:93} INFO - Found item: 597
+[2024-11-20T05:53:09.157+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.157+0000] {subprocess.py:93} INFO - Found item: 598
+[2024-11-20T05:53:09.157+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.157+0000] {subprocess.py:93} INFO - Found item: 599
+[2024-11-20T05:53:09.158+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.158+0000] {subprocess.py:93} INFO - Found item: 600
+[2024-11-20T05:53:09.158+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.158+0000] {subprocess.py:93} INFO - Found item: 601
+[2024-11-20T05:53:09.158+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.158+0000] {subprocess.py:93} INFO - Found item: 602
+[2024-11-20T05:53:09.159+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.159+0000] {subprocess.py:93} INFO - Found item: 603
+[2024-11-20T05:53:09.159+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.159+0000] {subprocess.py:93} INFO - Found item: 604
+[2024-11-20T05:53:09.160+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.160+0000] {subprocess.py:93} INFO - Found item: 605
+[2024-11-20T05:53:09.161+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.161+0000] {subprocess.py:93} INFO - Found item: 606
+[2024-11-20T05:53:09.162+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.162+0000] {subprocess.py:93} INFO - Found item: 607
+[2024-11-20T05:53:09.162+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.163+0000] {subprocess.py:93} INFO - Found item: 608
+[2024-11-20T05:53:09.163+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.163+0000] {subprocess.py:93} INFO - Found item: 609
+[2024-11-20T05:53:09.163+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.163+0000] {subprocess.py:93} INFO - Found item: 610
+[2024-11-20T05:53:09.164+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.164+0000] {subprocess.py:93} INFO - Found item: 611
+[2024-11-20T05:53:09.164+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.164+0000] {subprocess.py:93} INFO - Found item: 612
+[2024-11-20T05:53:09.165+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.165+0000] {subprocess.py:93} INFO - Found item: 613
+[2024-11-20T05:53:09.166+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.166+0000] {subprocess.py:93} INFO - Found item: 614
+[2024-11-20T05:53:09.167+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.168+0000] {subprocess.py:93} INFO - Found item: 615
+[2024-11-20T05:53:09.169+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.169+0000] {subprocess.py:93} INFO - Found item: 616
+[2024-11-20T05:53:09.170+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.170+0000] {subprocess.py:93} INFO - Found item: 617
+[2024-11-20T05:53:09.171+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.171+0000] {subprocess.py:93} INFO - Found item: 618
+[2024-11-20T05:53:09.171+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.172+0000] {subprocess.py:93} INFO - Found item: 619
+[2024-11-20T05:53:09.172+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.172+0000] {subprocess.py:93} INFO - Found item: 620
+[2024-11-20T05:53:09.173+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.174+0000] {subprocess.py:93} INFO - Found item: 621
+[2024-11-20T05:53:09.174+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.175+0000] {subprocess.py:93} INFO - Found item: 622
+[2024-11-20T05:53:09.175+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.176+0000] {subprocess.py:93} INFO - Found item: 623
+[2024-11-20T05:53:09.176+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.177+0000] {subprocess.py:93} INFO - Found item: 624
+[2024-11-20T05:53:09.178+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.178+0000] {subprocess.py:93} INFO - Found item: 625
+[2024-11-20T05:53:09.179+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.179+0000] {subprocess.py:93} INFO - Found item: 626
+[2024-11-20T05:53:09.180+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.181+0000] {subprocess.py:93} INFO - Found item: 627
+[2024-11-20T05:53:09.184+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.185+0000] {subprocess.py:93} INFO - Found item: 628
+[2024-11-20T05:53:09.186+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.186+0000] {subprocess.py:93} INFO - Found item: 629
+[2024-11-20T05:53:09.187+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.187+0000] {subprocess.py:93} INFO - Found item: 630
+[2024-11-20T05:53:09.188+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.189+0000] {subprocess.py:93} INFO - Found item: 631
+[2024-11-20T05:53:09.191+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.193+0000] {subprocess.py:93} INFO - Found item: 632
+[2024-11-20T05:53:09.193+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.194+0000] {subprocess.py:93} INFO - Found item: 633
+[2024-11-20T05:53:09.195+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.195+0000] {subprocess.py:93} INFO - Found item: 634
+[2024-11-20T05:53:09.196+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.198+0000] {subprocess.py:93} INFO - Found item: 635
+[2024-11-20T05:53:09.202+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.203+0000] {subprocess.py:93} INFO - Found item: 636
+[2024-11-20T05:53:09.205+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.207+0000] {subprocess.py:93} INFO - Found item: 637
+[2024-11-20T05:53:09.207+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.208+0000] {subprocess.py:93} INFO - Found item: 638
+[2024-11-20T05:53:09.208+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.209+0000] {subprocess.py:93} INFO - Found item: 639
+[2024-11-20T05:53:09.210+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.211+0000] {subprocess.py:93} INFO - Found item: 640
+[2024-11-20T05:53:09.211+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.212+0000] {subprocess.py:93} INFO - Found item: 641
+[2024-11-20T05:53:09.213+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.214+0000] {subprocess.py:93} INFO - Found item: 642
+[2024-11-20T05:53:09.216+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.217+0000] {subprocess.py:93} INFO - Found item: 643
+[2024-11-20T05:53:09.219+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.219+0000] {subprocess.py:93} INFO - Found item: 644
+[2024-11-20T05:53:09.220+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.222+0000] {subprocess.py:93} INFO - Found item: 645
+[2024-11-20T05:53:09.223+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.224+0000] {subprocess.py:93} INFO - Found item: 646
+[2024-11-20T05:53:09.224+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.225+0000] {subprocess.py:93} INFO - Found item: 647
+[2024-11-20T05:53:09.225+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.226+0000] {subprocess.py:93} INFO - Found item: 648
+[2024-11-20T05:53:09.227+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.228+0000] {subprocess.py:93} INFO - Found item: 649
+[2024-11-20T05:53:09.228+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.229+0000] {subprocess.py:93} INFO - Found item: 650
+[2024-11-20T05:53:09.230+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.231+0000] {subprocess.py:93} INFO - Found item: 651
+[2024-11-20T05:53:09.232+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.233+0000] {subprocess.py:93} INFO - Found item: 652
+[2024-11-20T05:53:09.234+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.235+0000] {subprocess.py:93} INFO - Found item: 653
+[2024-11-20T05:53:09.236+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.238+0000] {subprocess.py:93} INFO - Found item: 654
+[2024-11-20T05:53:09.239+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.240+0000] {subprocess.py:93} INFO - Found item: 655
+[2024-11-20T05:53:09.240+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.241+0000] {subprocess.py:93} INFO - Found item: 656
+[2024-11-20T05:53:09.242+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.242+0000] {subprocess.py:93} INFO - Found item: 657
+[2024-11-20T05:53:09.243+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.243+0000] {subprocess.py:93} INFO - Found item: 658
+[2024-11-20T05:53:09.244+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.244+0000] {subprocess.py:93} INFO - Found item: 659
+[2024-11-20T05:53:09.244+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.244+0000] {subprocess.py:93} INFO - Found item: 660
+[2024-11-20T05:53:09.245+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.246+0000] {subprocess.py:93} INFO - Found item: 661
+[2024-11-20T05:53:09.247+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.249+0000] {subprocess.py:93} INFO - Found item: 662
+[2024-11-20T05:53:09.249+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.250+0000] {subprocess.py:93} INFO - Found item: 663
+[2024-11-20T05:53:09.251+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.251+0000] {subprocess.py:93} INFO - Found item: 664
+[2024-11-20T05:53:09.252+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.253+0000] {subprocess.py:93} INFO - Found item: 665
+[2024-11-20T05:53:09.253+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.254+0000] {subprocess.py:93} INFO - Found item: 666
+[2024-11-20T05:53:09.254+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.254+0000] {subprocess.py:93} INFO - Found item: 667
+[2024-11-20T05:53:09.255+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.255+0000] {subprocess.py:93} INFO - Found item: 668
+[2024-11-20T05:53:09.257+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.257+0000] {subprocess.py:93} INFO - Found item: 669
+[2024-11-20T05:53:09.258+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.259+0000] {subprocess.py:93} INFO - Found item: 670
+[2024-11-20T05:53:09.259+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.260+0000] {subprocess.py:93} INFO - Found item: 671
+[2024-11-20T05:53:09.261+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.262+0000] {subprocess.py:93} INFO - Found item: 672
+[2024-11-20T05:53:09.262+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.263+0000] {subprocess.py:93} INFO - Found item: 673
+[2024-11-20T05:53:09.264+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.264+0000] {subprocess.py:93} INFO - Found item: 674
+[2024-11-20T05:53:09.265+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.266+0000] {subprocess.py:93} INFO - Found item: 675
+[2024-11-20T05:53:09.267+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.267+0000] {subprocess.py:93} INFO - Found item: 676
+[2024-11-20T05:53:09.268+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.268+0000] {subprocess.py:93} INFO - Found item: 677
+[2024-11-20T05:53:09.269+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.270+0000] {subprocess.py:93} INFO - Found item: 678
+[2024-11-20T05:53:09.271+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.271+0000] {subprocess.py:93} INFO - Found item: 679
+[2024-11-20T05:53:09.272+0000] {subprocess.py:93} INFO - Opened the modal successfully.
+[2024-11-20T05:53:09.272+0000] {subprocess.py:93} INFO - Found item: 680
+[2024-11-20T05:53:09.729+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-11-20T05:53:09.753+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-20T05:53:09.754+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=laptop_scraping_tasks.scrape_phongvu, run_id=manual__2024-11-20T02:00:30.526702+00:00, execution_date=20241120T020030, start_date=20241120T040200, end_date=20241120T055309
+[2024-11-20T05:53:09.789+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-20T05:53:09.802+0000] {logging_mixin.py:190} WARNING - /usr/local/lib/python3.11/site-packages/***/models/baseoperator.py:1378 AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+[2024-11-20T05:53:09.816+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-20T05:53:09.818+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

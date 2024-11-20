@@ -84,6 +84,11 @@ def get_insert_into_laptop_specs_table_sql(json_file_directories: List[str], mon
             # Filter out records that don't have a price
             if row.get('price') is None:
                 continue  # Skip this record if price is not present
+            
+            # Strip quotes from all string values
+            for key, value in row.items():
+                if isinstance(value, str):
+                    row[key] = value.strip("'\"")
 
             # Prepare values, substituting None for SQL NULL
             values = [
@@ -134,7 +139,7 @@ def get_insert_into_laptop_specs_table_sql(json_file_directories: List[str], mon
             SELECT {values_str} 
             WHERE EXISTS (SELECT 1 FROM {cpu_table_name} WHERE name = {values[3]})
             {("AND EXISTS (SELECT 1 FROM {} WHERE name = " + str(values[4]) + ")").format(gpu_table_name) if values[4] != "NULL" else ""}
-            ;
+            ON CONFLICT (source, name) DO NOTHING;
             """
             insert_commands.append(insert_command.strip())
 

@@ -1,0 +1,34 @@
+[2024-11-19T17:07:29.056+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-19T17:07:29.073+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.database_tasks.create_gpu_specs_table_sql manual__2024-11-19T15:44:00.418133+00:00 [queued]>
+[2024-11-19T17:07:29.083+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.database_tasks.create_gpu_specs_table_sql manual__2024-11-19T15:44:00.418133+00:00 [queued]>
+[2024-11-19T17:07:29.084+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-19T17:07:29.095+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): database_tasks.create_gpu_specs_table_sql> on 2024-11-19 15:44:00.418133+00:00
+[2024-11-19T17:07:29.099+0000] {standard_task_runner.py:72} INFO - Started process 76191 to run task
+[2024-11-19T17:07:29.102+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'database_tasks.create_gpu_specs_table_sql', 'manual__2024-11-19T15:44:00.418133+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpsbie6t9q']
+[2024-11-19T17:07:29.103+0000] {standard_task_runner.py:105} INFO - Job 65: Subtask database_tasks.create_gpu_specs_table_sql
+[2024-11-19T17:07:29.162+0000] {task_command.py:467} INFO - Running <TaskInstance: main_dag.database_tasks.create_gpu_specs_table_sql manual__2024-11-19T15:44:00.418133+00:00 [running]> on host 9694314923d2
+[2024-11-19T17:07:29.275+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='veil' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='database_tasks.create_gpu_specs_table_sql' AIRFLOW_CTX_EXECUTION_DATE='2024-11-19T15:44:00.418133+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-19T15:44:00.418133+00:00'
+[2024-11-19T17:07:29.276+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-19T17:07:29.293+0000] {python.py:240} INFO - Done. Returned value was: 
+        CREATE TABLE gpu_specs_11_2024 (
+            name VARCHAR(255) PRIMARY KEY NOT NULL,
+            avg_g3d_mark INT,
+            bus_interface VARCHAR(50),
+            max_memory_size INT,
+            core_clock INT,
+            max_direct VARCHAR(10),
+            open_gl DECIMAL(3, 1),
+            max_tdp INT,
+            test_directx_9 INT,
+            test_directx_10 INT,
+            test_directx_11 INT,
+            test_directx_12 INT,
+            test_gpu_compute INT
+        );
+        
+[2024-11-19T17:07:29.327+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-19T17:07:29.328+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=main_dag, task_id=database_tasks.create_gpu_specs_table_sql, run_id=manual__2024-11-19T15:44:00.418133+00:00, execution_date=20241119T154400, start_date=20241119T170729, end_date=20241119T170729
+[2024-11-19T17:07:29.362+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-19T17:07:29.379+0000] {logging_mixin.py:190} WARNING - /usr/local/lib/python3.11/site-packages/***/models/baseoperator.py:1378 AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+[2024-11-19T17:07:29.394+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-19T17:07:29.396+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

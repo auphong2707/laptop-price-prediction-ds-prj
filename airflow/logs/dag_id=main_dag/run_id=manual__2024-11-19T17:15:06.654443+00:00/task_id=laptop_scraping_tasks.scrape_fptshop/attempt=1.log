@@ -1,0 +1,61 @@
+[2024-11-19T17:15:07.410+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-19T17:15:07.568+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: main_dag.laptop_scraping_tasks.scrape_fptshop manual__2024-11-19T17:15:06.654443+00:00 [queued]>
+[2024-11-19T17:15:07.577+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: main_dag.laptop_scraping_tasks.scrape_fptshop manual__2024-11-19T17:15:06.654443+00:00 [queued]>
+[2024-11-19T17:15:07.577+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-11-19T17:15:07.590+0000] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): laptop_scraping_tasks.scrape_fptshop> on 2024-11-19 17:15:06.654443+00:00
+[2024-11-19T17:15:07.593+0000] {standard_task_runner.py:72} INFO - Started process 3136 to run task
+[2024-11-19T17:15:07.597+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'main_dag', 'laptop_scraping_tasks.scrape_fptshop', 'manual__2024-11-19T17:15:06.654443+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpvl8asf5g']
+[2024-11-19T17:15:07.598+0000] {standard_task_runner.py:105} INFO - Job 3: Subtask laptop_scraping_tasks.scrape_fptshop
+[2024-11-19T17:15:07.665+0000] {task_command.py:467} INFO - Running <TaskInstance: main_dag.laptop_scraping_tasks.scrape_fptshop manual__2024-11-19T17:15:06.654443+00:00 [running]> on host 12fcc3f4650c
+[2024-11-19T17:15:07.784+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='veil' AIRFLOW_CTX_DAG_ID='main_dag' AIRFLOW_CTX_TASK_ID='laptop_scraping_tasks.scrape_fptshop' AIRFLOW_CTX_EXECUTION_DATE='2024-11-19T17:15:06.654443+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-19T17:15:06.654443+00:00'
+[2024-11-19T17:15:07.785+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-19T17:15:07.798+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-11-19T17:15:07.799+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /app/scraper && scrapy crawl fptshop_spider -O ../temp/fptshop_data.json']
+[2024-11-19T17:15:07.806+0000] {subprocess.py:86} INFO - Output:
+[2024-11-19T17:15:32.911+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2024-11-19T17:15:32.912+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-11-19T17:15:32.915+0000] {process_utils.py:132} INFO - Sending 15 to group 3136. PIDs of all processes in the group: [3221, 3226, 3236, 3309, 3427, 3460, 3521, 3565, 3586, 3590, 3675, 3791, 3948, 3982, 3985, 3989, 3136]
+[2024-11-19T17:15:32.916+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 3136
+[2024-11-19T17:15:32.918+0000] {taskinstance.py:3092} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-11-19T17:15:32.919+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2024-11-19T17:15:32.944+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/airflow/operators/bash.py", line 240, in execute
+    result = self.subprocess_hook.run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3094, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2024-11-19T17:15:32.952+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=main_dag, task_id=laptop_scraping_tasks.scrape_fptshop, run_id=manual__2024-11-19T17:15:06.654443+00:00, execution_date=20241119T171506, start_date=20241119T171507, end_date=20241119T171532
+[2024-11-19T17:15:32.968+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-19T17:15:32.977+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3586, status='terminated', started='17:15:09') (3586) terminated with exit code None
+[2024-11-19T17:15:32.978+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3791, status='terminated', started='17:15:12') (3791) terminated with exit code None
+[2024-11-19T17:15:32.978+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3590, status='terminated', started='17:15:09') (3590) terminated with exit code None
+[2024-11-19T17:15:32.978+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3565, status='terminated', started='17:15:09') (3565) terminated with exit code None
+[2024-11-19T17:15:32.979+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3427, status='terminated', started='17:15:08') (3427) terminated with exit code None
+[2024-11-19T17:15:32.979+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3460, status='terminated', started='17:15:08') (3460) terminated with exit code None
+[2024-11-19T17:15:32.979+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3675, status='terminated', started='17:15:11') (3675) terminated with exit code None
+[2024-11-19T17:15:32.979+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3989, status='terminated', started='17:15:14') (3989) terminated with exit code None
+[2024-11-19T17:15:32.980+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3236, status='terminated', started='17:15:08') (3236) terminated with exit code None
+[2024-11-19T17:15:32.980+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3309, status='terminated', started='17:15:08') (3309) terminated with exit code None
+[2024-11-19T17:15:32.980+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3982, status='terminated', started='17:15:14') (3982) terminated with exit code None
+[2024-11-19T17:15:32.980+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3136, status='terminated', exitcode=2, started='17:15:07') (3136) terminated with exit code 2
+[2024-11-19T17:15:32.981+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3948, status='terminated', started='17:15:13') (3948) terminated with exit code None
+[2024-11-19T17:15:32.981+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3521, status='terminated', started='17:15:09') (3521) terminated with exit code None
+[2024-11-19T17:15:32.982+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3985, status='terminated', started='17:15:14') (3985) terminated with exit code None
+[2024-11-19T17:15:35.670+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3226, status='terminated', started='17:15:07') (3226) terminated with exit code None
+[2024-11-19T17:15:35.768+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3221, status='terminated', started='17:15:07') (3221) terminated with exit code None

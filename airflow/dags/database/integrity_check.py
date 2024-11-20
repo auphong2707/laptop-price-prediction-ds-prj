@@ -142,6 +142,14 @@ def check_integrity_all():
     laptop_shops = [
         'gearvn',
         'cellphones',
+        'fptshop',
+        'hacom',
+        'laptopaz',
+        'laptopworld',
+        'nguyenkim',
+        'phongvu',
+        'phucanh',
+        'tgdd'
     ]
     _combine_json_files(['./temp/' + laptop_shop + '_data.json' for laptop_shop in laptop_shops], 
                         './temp/laptop_data.json')

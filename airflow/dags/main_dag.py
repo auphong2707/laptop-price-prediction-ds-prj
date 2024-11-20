@@ -24,11 +24,12 @@ main_dag = DAG(
     description='The DAG control all the tasks for the project',
     schedule_interval='@monthly',
     start_date=days_ago(1),
-    max_active_tasks=2,
+    max_active_tasks=3,
 )
 
 # [SCRAPING TASK]
-laptopshop_names = ['gearvn', 'cellphones']
+laptopshop_names = ['gearvn', 'cellphones', 'fptshop', 'hacom', 'laptopaz', 
+                    'laptopworld', 'nguyenkim', 'phongvu', 'phucanh', 'tgdd']
 with TaskGroup('laptop_scraping_tasks', dag=main_dag) as laptop_scraping_tasks:
     for name in laptopshop_names:
         task = BashOperator(

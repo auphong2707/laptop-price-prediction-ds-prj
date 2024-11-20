@@ -17,6 +17,5 @@ airflow connections add 'postgres_default' \
     --conn-schema 'airflow' \
     --conn-port '5432'
 
-# Start the Airflow web server and scheduler
-airflow webserver --port 8080 &
-airflow scheduler
+# Change ownership of the start.sh file
+chmod +x start.sh
