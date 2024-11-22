@@ -1,5 +1,4 @@
 import json
-import os
 from typing import List
 
 # [LAPTOPS]
@@ -14,8 +13,8 @@ def get_create_laptop_specs_table_sql(month: int, year: int) -> str:
     Returns:
     - str: The SQL command.
     """
-    return """
-        CREATE TABLE laptop_specs_{}_{} (
+    return f"""
+        CREATE TABLE laptop_specs_{month}_{year} (
             source VARCHAR(255) NOT NULL,
             brand VARCHAR(255),
             name VARCHAR(255) NOT NULL,
@@ -44,12 +43,11 @@ def get_create_laptop_specs_table_sql(month: int, year: int) -> str:
             number_hdmi_ports INTEGER,
             number_ethernet_ports INTEGER,
             number_audio_jacks INTEGER,
-            PRIMARY KEY (source, name)
+            PRIMARY KEY (source, name),
+            FOREIGN KEY (cpu) REFERENCES cpu_specs_{month}_{year}(name),
+            FOREIGN KEY (vga) REFERENCES gpu_specs_{month}_{year}(name)
         );
-        """.format(month, year)
-
-import json
-from typing import List
+        """
 
 def get_insert_into_laptop_specs_table_sql(json_file_directories: List[str], month: int, year: int) -> str:
     """
