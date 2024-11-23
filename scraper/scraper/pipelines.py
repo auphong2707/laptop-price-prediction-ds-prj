@@ -77,9 +77,14 @@ class TransformPipeline:
                         num_cores = pattern.search(value)
                         if num_cores:
                             num_cores = num_cores.group(1)  # The number of cores will be in the first group
-                            value = f"apple {cpu_name.group(0)} {num_cores}-core"
+                            value = f"apple {cpu_name.group(0)} {num_cores} core"
                         else:
                             value = f"apple {cpu_name.group(0)}"
+                        
+                        if 'm1' in value:
+                            value += " 3200 mhz"
+                        elif 'm2' in value:
+                            value += " 3500 mhz"
                     else:
                         value = "n/a"
                 else:
@@ -94,6 +99,8 @@ class TransformPipeline:
                         if match:
                             # Format the matched processor name as "iX-XXXXXH"
                             value = 'intel core ' + f"{match.group(1)}-{match.group(2)}{match.group(3)}"
+                            if value.endswith('g'):
+                                value = value + '7'
                         else:
                             value = "n/a"
                     elif "ultra" in value:
@@ -139,6 +146,7 @@ class TransformPipeline:
                         
                         # Substitute the pattern in the input string using re.sub
                         value = re.sub(pattern, replace_with_hyphens, value)
+                        value = value.replace("elite", "elite -")
                         
                     
                         
@@ -186,7 +194,8 @@ class TransformPipeline:
                         
                         if 'geforce' in value:
                             value = value[value.index('geforce'):]
-                        elif 'generation' in value:
+                        elif any(_ in value for _ in ['generation', '3050', '3060', '4050', '4060', '4070', 
+                                                      '4080', '4090']):
                             value = value + ' laptop gpu'
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
@@ -205,7 +214,7 @@ class TransformPipeline:
                     else:
                         value = "n/a"
                         
-                value = value.split("ti")[0]
+                value = value.split("ti")[0] + "ti" if "ti" in value else value
                 value = value.strip()
                 
                 self.adapter['vga'] = value
