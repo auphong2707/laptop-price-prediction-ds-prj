@@ -73,11 +73,11 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
             for removal in ['laptop gaming ', 'laptop ', '- chỉ có tại cellphones', 'i chính hãng apple việt nam', ' - nhập khẩu chính hãng']:
                 res = res.replace(removal, '')
 
-            res = re.sub(r'\([^()]*\)', '', res)
-            res = res.split("core")[0]
-            search_value = re.search('(?<!\w)(\d+)gb(?!\w)', res)
-            if search_value:
-                res = res.split(search_value.group())[0]
+            # res = re.sub(r'\([^()]*\)', '', res)
+            # res = res.split("core")[0]
+            # search_value = re.search('(?<!\w)(\d+)gb(?!\w)', res)
+            # if search_value:
+            #     res = res.split(search_value.group())[0]
             
             return res.strip()
         except:
