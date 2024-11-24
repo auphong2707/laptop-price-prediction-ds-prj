@@ -198,9 +198,9 @@ class TransformPipeline:
                             
                         value = value.split("ti")[0] + "ti" if "ti" in value else value
                         
-                        if any(_ in value for _ in ['generation', '3050', '3060', '4050', '4060', '4070', 
-                                                      '4080', '4090']):
-                            value = value + ' laptop gpu'
+                        # if any(_ in value for _ in ['generation', '3050', '3060', '3070', '4050', '4060', '4070', 
+                        #                               '4080', '4090']):
+                        #     value = value + ' laptop gpu'
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
                                                                'intel arc', 'adreno', 'onboard', 'on board', 'uma', ' intel iris',]]):

@@ -10,7 +10,8 @@ class GPUSpider(scrapy.Spider):
 
     def parse_gpu_name(self, response):
         """Extract the GPU name using the CSS selector"""
-        return response.css('span.cpuname::text').get().strip().lower()
+        name = response.css('span.cpuname::text').get().strip().lower()
+        return name.replace("laptop gpu", "").strip()
     
     def parse_avg_g3d_mark(self, response):
         """Extract the GPU average G3D mark using the CSS selector"""
@@ -102,8 +103,8 @@ class GPUSpider(scrapy.Spider):
             yield gpu_request
 
     def parse_gpu(self, response):
-        if response.css('p:contains("Videocard Category:")::text').get() is not None\
-           and response.css('p:contains("Videocard Category:")::text').get().strip() == 'Mobile':
+        if response.css('p:contains("Videocard Category:")::text').get() is None\
+           or response.css('p:contains("Videocard Category:")::text').get().strip() == 'Mobile':
             yield {
                 'name': self.parse_gpu_name(response),
                 'avg_g3d_mark': self.parse_avg_g3d_mark(response),
