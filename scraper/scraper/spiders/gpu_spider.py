@@ -11,7 +11,9 @@ class GPUSpider(scrapy.Spider):
     def parse_gpu_name(self, response):
         """Extract the GPU name using the CSS selector"""
         name = response.css('span.cpuname::text').get().strip().lower()
-        return name.replace("laptop gpu", "").strip()
+        for removal in ["laptop gpu", "(mobile)"]:
+            name = name.replace(removal, "")
+        return name.strip()
     
     def parse_avg_g3d_mark(self, response):
         """Extract the GPU average G3D mark using the CSS selector"""
