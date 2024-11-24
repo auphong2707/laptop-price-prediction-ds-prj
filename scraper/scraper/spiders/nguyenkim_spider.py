@@ -50,16 +50,8 @@ class NguyenkimScraper(BaseLaptopshopPageSpider):
             return "n/a"
         
     def parse_name(self, response: Response):
-        try:
-            # Adjusting the selector to match the product title inside <h2> tag
-            res = response.css('h1.product_info_name::text').get()
-            
-            # Remove unnecessary terms
-            for removal in ['Laptop gaming ', 'Laptop Gaming ', 'Laptop ']:
-                res = res.replace(removal, '')
-            return res if res else "n/a"
-        except:
-            return "n/a"
+        res = response.css('h1.product_info_name::text').get()
+        return res if res else "n/a"
         
     def parse_price(self, response: Response):
         res = response.css('span.nk-price-final::text').get()

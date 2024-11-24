@@ -37,11 +37,8 @@ class PhongvuSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the name of the laptop from the response.
         """
-        try:
-            full_text = response.css('h1.css-nlaxuc::text').get()
-            return re.sub(r'\s*\(.*?\)', '', full_text).strip()
-        except Exception:
-            return "N/A"
+        res = response.css('h1.css-nlaxuc::text').get()
+        return res if res else 'n/a'
     
     # Brand
     def parse_brand(self, response: Response): 
@@ -52,7 +49,7 @@ class PhongvuSpider(BaseLaptopshopLoadmoreButtonSpider):
         try:
             return response.xpath("//div[text()='Thương hiệu']/following-sibling::div/text()").get()
         except Exception:
-            return "N/A"
+            return "n/a"
 
     # CPU
     def parse_cpu(self, response: Response):

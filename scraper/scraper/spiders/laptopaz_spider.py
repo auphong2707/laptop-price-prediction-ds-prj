@@ -59,13 +59,7 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
     
     def parse_name(self, response: Response):
         res = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get()
-        if res:
-            res = ' '.join(res.split(']')[-1].split()).lower().split('(')[0].strip()
-            if 'Gaming' in res:
-                return res.split('Gaming ')[1]
-            else:
-                return res
-        return 'n/a'
+        return res if res else 'n/a'
     
     def parse_cpu(self, response: Response):
         """

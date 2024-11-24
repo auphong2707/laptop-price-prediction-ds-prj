@@ -66,12 +66,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             return "n/a"
     
     def parse_name(self, response: Response):
-        try:
-            name = response.css('div.pd-info-right h1.sptitle2024::text').get()
-            name = name.replace('Laptop ', '')
-            return name
-        except:
-            return "n/a"
+        name = response.css('div.pd-info-right h1.sptitle2024::text').get()
+        return name if name else 'n/a'
     
     def parse_cpu(self, response: Response):
         """

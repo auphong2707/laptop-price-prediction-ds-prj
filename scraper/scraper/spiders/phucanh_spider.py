@@ -38,22 +38,14 @@ class PhucanhShopSpider(BaseLaptopshopPageSpider):
         if product_title:
             brand = product_title.split()[1]  # Assuming the brand is always the second word after "Laptop"
         else:
-            brand = 'N/A'
+            brand = 'n/a'
 
         return brand
     
     def parse_name(self, response:Response):
         # Extract the full product title
-        product_title = response.css('h1::text').get()
-        
-        # Split the product title by the first occurrence of '(' and get the first part
-        if product_title:
-            product_name = product_title.split('(')[0].strip()  # Strip removes any leading/trailing spaces
-            product_name = product_name.replace('Laptop ', '').replace('gaming ', '').replace('Gaming', '')
-        else:
-            product_name = 'N/A'
-
-        return product_name
+        product_name = response.css('h1::text').get()
+        return product_name if product_name else 'n/a'
 
     def parse_price(self, response:Response):
         # Extract the price with the currency symbol

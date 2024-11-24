@@ -68,11 +68,8 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
         """
         Extracts the name of the laptop from the response.
         """
-        try:
-            res = response.xpath('//h1/text()').get()
-            return re.sub(r'\s*\(.*?\)|\s*/.*', '', res).strip()
-        except:
-            return "n/a"
+        res = response.xpath('//h1/text()').get()
+        return res if res else 'n/a'
     
     # CPU
     def parse_cpu(self, response: Response):
