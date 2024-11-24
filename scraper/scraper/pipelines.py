@@ -194,7 +194,10 @@ class TransformPipeline:
                         
                         if 'geforce' in value:
                             value = value[value.index('geforce'):]
-                        elif any(_ in value for _ in ['generation', '3050', '3060', '4050', '4060', '4070', 
+                            
+                        value = value.split("ti")[0] + "ti" if "ti" in value else value
+                        
+                        if any(_ in value for _ in ['generation', '3050', '3060', '4050', '4060', '4070', 
                                                       '4080', '4090']):
                             value = value + ' laptop gpu'
                         
@@ -213,8 +216,7 @@ class TransformPipeline:
                             value = "n/a"
                     else:
                         value = "n/a"
-                        
-                value = value.split("ti")[0] + "ti" if "ti" in value else value
+
                 value = value.strip()
                 
                 self.adapter['vga'] = value
