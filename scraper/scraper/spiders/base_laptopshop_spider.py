@@ -34,7 +34,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
     def _get_driver_options(self):
         options = webdriver.FirefoxOptions()
         options.page_load_strategy = 'none'
-        options.add_argument('--headless')
+        # options.add_argument('--headless')
         
         options.set_preference('dom.webnotifications.enabled', False)  # Disable notifications
         options.set_preference('security.cert_pinning.enforcement_level', 0)  # Ignore certificate errors
