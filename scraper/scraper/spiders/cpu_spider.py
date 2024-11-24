@@ -1,4 +1,5 @@
 import scrapy
+import re
 
 class CpuSpider(scrapy.Spider):
     name = 'cpu_spider'
@@ -9,7 +10,9 @@ class CpuSpider(scrapy.Spider):
     
     def parse_cpu_name(self, response):
         """Extract the CPU name using the CSS selector"""
-        return response.css('span.cpuname::text').get().split(' @')[0].lower()
+        value = response.css('span.cpuname::text').get().split(' @')[0].lower()
+        value = re.sub(r'\b\d{4}\s*mhz\b', '', value, flags=re.IGNORECASE)
+        return value
     
     def parse_performance_cores(self, response):
         """Extracts and returns the number of cores of the CPU."""
