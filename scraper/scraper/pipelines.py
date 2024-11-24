@@ -56,7 +56,7 @@ class TransformPipeline:
                 for removal in ['®', '™', ' processors', ' processor', 'mobile',
                                 'with intel ai boost', '', '(tm)', '(r)', ':',
                                 'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 
-                                'comet lake', 'kabylake refresh', 'kabylake', 'cpu:']:
+                                'comet lake', 'kabylake refresh', 'kabylake', 'cpu:', 'cpu']:
                     value = value.replace(removal, '')
                     
                 special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+(\.\d+)?\s*ghz|\d+\s?gb|dgb)\b', value)
