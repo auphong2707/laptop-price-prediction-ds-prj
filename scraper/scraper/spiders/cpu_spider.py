@@ -246,7 +246,8 @@ class CpuSpider(scrapy.Spider):
             yield cpu_request
             
     def parse_cpu(self, response):
-        if "laptop" in response.css('div.left-desc-cpu p::text').get().strip().lower():
+        if "laptop" in response.css('div.left-desc-cpu p::text').get().strip().lower()\
+            or "mobile" in response.css('div.left-desc-cpu p::text').get().strip().lower():
             yield {
                 'name': self.parse_cpu_name(response),
                 'performance_clockspeed': self.parse_performance_clockspeed(response),
