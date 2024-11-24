@@ -67,11 +67,7 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
     
     def parse_name(self, response: Response):
         try:
-            name = response.css('div.pd-info-right h1.sptitle2024::text').get().split('(')[0]
-            # if 'Laptop' in name:
-            #     return name.split('Laptop ')[1]
-            # else:
-            #     return name.split('Laptop ')[0]
+            name = response.css('div.pd-info-right h1.sptitle2024::text').get()
             name = name.replace('Laptop ', '')
             return name
         except:
