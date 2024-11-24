@@ -2,8 +2,8 @@ CHECKING RESULT OF CPU:
 
 --------------------------------------------------
 Checking number of records in JSON file and database
-Number of records in JSON file: 1434
-Number of records in database: 1430
+Number of records in JSON file: 1435
+Number of records in database: 1431
 
 Number of records in JSON file and database do not match
 --------------------------------------------------
@@ -291,7 +291,7 @@ Checking record 278: Matched
 Checking record 279: Matched
 Checking record 280: Matched
 Checking record 281: Matched
-Checking record 282: Matched
+Checking record 282: Unmatched
 Checking record 283: Matched
 Checking record 284: Matched
 Checking record 285: Matched
@@ -454,7 +454,7 @@ Checking record 441: Matched
 Checking record 442: Matched
 Checking record 443: Matched
 Checking record 444: Matched
-Checking record 445: Matched
+Checking record 445: Unmatched
 Checking record 446: Matched
 Checking record 447: Matched
 Checking record 448: Matched
@@ -864,11 +864,11 @@ Checking record 851: Matched
 Checking record 852: Matched
 Checking record 853: Matched
 Checking record 854: Matched
-Checking record 855: Unmatched
+Checking record 855: Matched
 Checking record 856: Matched
 Checking record 857: Matched
 Checking record 858: Matched
-Checking record 859: Unmatched
+Checking record 859: Matched
 Checking record 860: Matched
 Checking record 861: Matched
 Checking record 862: Matched
@@ -891,7 +891,7 @@ Checking record 878: Matched
 Checking record 879: Matched
 Checking record 880: Matched
 Checking record 881: Matched
-Checking record 882: Unmatched
+Checking record 882: Matched
 Checking record 883: Matched
 Checking record 884: Matched
 Checking record 885: Matched
@@ -902,7 +902,7 @@ Checking record 889: Matched
 Checking record 890: Matched
 Checking record 891: Matched
 Checking record 892: Matched
-Checking record 893: Unmatched
+Checking record 893: Matched
 Checking record 894: Matched
 Checking record 895: Matched
 Checking record 896: Matched
@@ -954,11 +954,11 @@ Checking record 941: Matched
 Checking record 942: Matched
 Checking record 943: Matched
 Checking record 944: Matched
-Checking record 945: Matched
+Checking record 945: Unmatched
 Checking record 946: Matched
 Checking record 947: Matched
 Checking record 948: Matched
-Checking record 949: Matched
+Checking record 949: Unmatched
 Checking record 950: Matched
 Checking record 951: Matched
 Checking record 952: Matched
@@ -981,7 +981,7 @@ Checking record 968: Matched
 Checking record 969: Matched
 Checking record 970: Matched
 Checking record 971: Matched
-Checking record 972: Matched
+Checking record 972: Unmatched
 Checking record 973: Matched
 Checking record 974: Matched
 Checking record 975: Matched
@@ -992,7 +992,7 @@ Checking record 979: Matched
 Checking record 980: Matched
 Checking record 981: Matched
 Checking record 982: Matched
-Checking record 983: Matched
+Checking record 983: Unmatched
 Checking record 984: Matched
 Checking record 985: Matched
 Checking record 986: Matched
@@ -1090,9 +1090,9 @@ Checking record 1077: Matched
 Checking record 1078: Matched
 Checking record 1079: Matched
 Checking record 1080: Matched
-Checking record 1081: Matched
+Checking record 1081: Unmatched
 Checking record 1082: Matched
-Checking record 1083: Matched
+Checking record 1083: Unmatched
 Checking record 1084: Matched
 Checking record 1085: Matched
 Checking record 1086: Matched
@@ -1210,7 +1210,7 @@ Checking record 1197: Matched
 Checking record 1198: Matched
 Checking record 1199: Matched
 Checking record 1200: Matched
-Checking record 1201: Unmatched
+Checking record 1201: Matched
 Checking record 1202: Matched
 Checking record 1203: Matched
 Checking record 1204: Matched
@@ -1230,7 +1230,7 @@ Checking record 1217: Matched
 Checking record 1218: Matched
 Checking record 1219: Matched
 Checking record 1220: Matched
-Checking record 1221: Unmatched
+Checking record 1221: Matched
 Checking record 1222: Matched
 Checking record 1223: Matched
 Checking record 1224: Matched
@@ -1363,9 +1363,9 @@ Checking record 1350: Matched
 Checking record 1351: Matched
 Checking record 1352: Matched
 Checking record 1353: Matched
-Checking record 1354: Unmatched
+Checking record 1354: Matched
 Checking record 1355: Matched
-Checking record 1356: Unmatched
+Checking record 1356: Matched
 Checking record 1357: Matched
 Checking record 1358: Matched
 Checking record 1359: Matched
@@ -1444,14 +1444,15 @@ Checking record 1431: Matched
 Checking record 1432: Matched
 Checking record 1433: Matched
 Checking record 1434: Matched
+Checking record 1435: Matched
 
 Unmatched records:
+{'name': 'snapdragon 7c', 'performance_clockspeed': 2.4, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 1.8, 'efficient_turbospeed': 'n/a', 'efficient_cores': 6, 'efficient_threads': 6, 'tdp': 9.0, 'multithread_rating': 3395, 'single_thread_rating': 1225, 'l1_instruction_cache': 'n/a', 'l1_data_cache': 'n/a', 'l2_cache': 'n/a', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 19341, 'floating_point_math': 6687, 'find_prime_numbers': 9, 'random_string_sorting': 9214, 'data_encryption': 3172, 'data_compression': 55217, 'physics': 167, 'extended_instructions': 1101, 'single_thread': 1225}
+{'name': 'snapdragon 7c', 'performance_clockspeed': 2.0, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 1.8, 'efficient_turbospeed': 'n/a', 'efficient_cores': 6, 'efficient_threads': 6, 'tdp': 'n/a', 'multithread_rating': 3712, 'single_thread_rating': 1519, 'l1_instruction_cache': 'n/a', 'l1_data_cache': 'n/a', 'l2_cache': 'n/a', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 18276, 'floating_point_math': 7706, 'find_prime_numbers': 9, 'random_string_sorting': 8991, 'data_encryption': 3804, 'data_compression': 56358, 'physics': 175, 'extended_instructions': 1097, 'single_thread': 1519}
 {'name': 'intel core2 duo e8335', 'performance_clockspeed': 2.9, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 'n/a', 'efficient_turbospeed': 'n/a', 'efficient_cores': 'n/a', 'efficient_threads': 'n/a', 'tdp': -1.0, 'multithread_rating': 1032, 'single_thread_rating': 1142, 'l1_instruction_cache': '2 x 32 kb', 'l1_data_cache': '2 x 32 kb', 'l2_cache': '1 x 6144 kb', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 4766, 'floating_point_math': 2458, 'find_prime_numbers': 8, 'random_string_sorting': 2753, 'data_encryption': 'n/a', 'data_compression': 20527, 'physics': 145, 'extended_instructions': 422, 'single_thread': 1142}
 {'name': 'intel core2 duo p9600', 'performance_clockspeed': 2.5, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 'n/a', 'efficient_turbospeed': 'n/a', 'efficient_cores': 'n/a', 'efficient_threads': 'n/a', 'tdp': 25.0, 'multithread_rating': 1040, 'single_thread_rating': 1082, 'l1_instruction_cache': '2 x 32 kb', 'l1_data_cache': '2 x 32 kb', 'l2_cache': '1 x 6144 kb', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 4762, 'floating_point_math': 2403, 'find_prime_numbers': 10, 'random_string_sorting': 3066, 'data_encryption': 'n/a', 'data_compression': 20634, 'physics': 135, 'extended_instructions': 382, 'single_thread': 1082}
 {'name': 'intel core2 duo p9600', 'performance_clockspeed': 2.7, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 'n/a', 'efficient_turbospeed': 'n/a', 'efficient_cores': 'n/a', 'efficient_threads': 'n/a', 'tdp': 25.0, 'multithread_rating': 1093, 'single_thread_rating': 1120, 'l1_instruction_cache': '2 x 32 kb', 'l1_data_cache': '2 x 32 kb', 'l2_cache': '1 x 6144 kb', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 4679, 'floating_point_math': 2546, 'find_prime_numbers': 9, 'random_string_sorting': 3133, 'data_encryption': 'n/a', 'data_compression': 23353, 'physics': 140, 'extended_instructions': 397, 'single_thread': 1120}
 {'name': 'intel core2 duo e8335', 'performance_clockspeed': 2.7, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 'n/a', 'efficient_turbospeed': 'n/a', 'efficient_cores': 'n/a', 'efficient_threads': 'n/a', 'tdp': -1.0, 'multithread_rating': 1121, 'single_thread_rating': 1137, 'l1_instruction_cache': '2 x 32 kb', 'l1_data_cache': '2 x 32 kb', 'l2_cache': '1 x 6144 kb', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 4741, 'floating_point_math': 2281, 'find_prime_numbers': 9, 'random_string_sorting': 2818, 'data_encryption': 'n/a', 'data_compression': 24340, 'physics': 153, 'extended_instructions': 461, 'single_thread': 1137}
-{'name': 'snapdragon 7c', 'performance_clockspeed': 2.4, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 1.8, 'efficient_turbospeed': 'n/a', 'efficient_cores': 6, 'efficient_threads': 6, 'tdp': 9.0, 'multithread_rating': 3395, 'single_thread_rating': 1225, 'l1_instruction_cache': 'n/a', 'l1_data_cache': 'n/a', 'l2_cache': 'n/a', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 19341, 'floating_point_math': 6687, 'find_prime_numbers': 9, 'random_string_sorting': 9214, 'data_encryption': 3172, 'data_compression': 55217, 'physics': 167, 'extended_instructions': 1101, 'single_thread': 1225}
-{'name': 'snapdragon 7c', 'performance_clockspeed': 2.0, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 1.8, 'efficient_turbospeed': 'n/a', 'efficient_cores': 6, 'efficient_threads': 6, 'tdp': 'n/a', 'multithread_rating': 3712, 'single_thread_rating': 1519, 'l1_instruction_cache': 'n/a', 'l1_data_cache': 'n/a', 'l2_cache': 'n/a', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 18276, 'floating_point_math': 7706, 'find_prime_numbers': 9, 'random_string_sorting': 8991, 'data_encryption': 3804, 'data_compression': 56358, 'physics': 175, 'extended_instructions': 1097, 'single_thread': 1519}
 {'name': 'snapdragon 8cx gen 2', 'performance_clockspeed': 3.2, 'performance_turbospeed': 'n/a', 'performance_cores': 4, 'performance_threads': 4, 'efficient_clockspeed': 1.8, 'efficient_turbospeed': 'n/a', 'efficient_cores': 4, 'efficient_threads': 4, 'tdp': 7.0, 'multithread_rating': 6691, 'single_thread_rating': 1955, 'l1_instruction_cache': 'n/a', 'l1_data_cache': 'n/a', 'l2_cache': 'n/a', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 25731, 'floating_point_math': 13317, 'find_prime_numbers': 26, 'random_string_sorting': 13801, 'data_encryption': 5438, 'data_compression': 98269, 'physics': 408, 'extended_instructions': 2318, 'single_thread': 1955}
 {'name': 'snapdragon 8cx gen 2', 'performance_clockspeed': 3.0, 'performance_turbospeed': 'n/a', 'performance_cores': 4, 'performance_threads': 4, 'efficient_clockspeed': 1.8, 'efficient_turbospeed': 'n/a', 'efficient_cores': 4, 'efficient_threads': 4, 'tdp': 'n/a', 'multithread_rating': 6728, 'single_thread_rating': 1737, 'l1_instruction_cache': 'n/a', 'l1_data_cache': 'n/a', 'l2_cache': 'n/a', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 24938, 'floating_point_math': 12536, 'find_prime_numbers': 26, 'random_string_sorting': 13472, 'data_encryption': 5463, 'data_compression': 93086, 'physics': 388, 'extended_instructions': 2511, 'single_thread': 1737}
 --------------------------------------------------
@@ -1901,7 +1902,7 @@ Checking record 440: Matched
 Checking record 441: Matched
 Checking record 442: Matched
 Checking record 443: Matched
-Checking record 444: Matched
+Checking record 444: Unmatched
 Checking record 445: Matched
 Checking record 446: Matched
 Checking record 447: Matched
@@ -2338,7 +2339,7 @@ Checking record 877: Matched
 Checking record 878: Matched
 Checking record 879: Matched
 Checking record 880: Matched
-Checking record 881: Unmatched
+Checking record 881: Matched
 Checking record 882: Matched
 Checking record 883: Matched
 Checking record 884: Matched
@@ -2349,7 +2350,7 @@ Checking record 888: Matched
 Checking record 889: Matched
 Checking record 890: Matched
 Checking record 891: Matched
-Checking record 892: Unmatched
+Checking record 892: Matched
 Checking record 893: Matched
 Checking record 894: Matched
 Checking record 895: Matched
@@ -2428,7 +2429,7 @@ Checking record 967: Matched
 Checking record 968: Matched
 Checking record 969: Matched
 Checking record 970: Matched
-Checking record 971: Matched
+Checking record 971: Unmatched
 Checking record 972: Matched
 Checking record 973: Matched
 Checking record 974: Matched
@@ -2439,7 +2440,7 @@ Checking record 978: Matched
 Checking record 979: Matched
 Checking record 980: Matched
 Checking record 981: Matched
-Checking record 982: Matched
+Checking record 982: Unmatched
 Checking record 983: Matched
 Checking record 984: Matched
 Checking record 985: Matched
@@ -2538,7 +2539,7 @@ Checking record 1077: Matched
 Checking record 1078: Matched
 Checking record 1079: Matched
 Checking record 1080: Matched
-Checking record 1081: Matched
+Checking record 1081: Unmatched
 Checking record 1082: Matched
 Checking record 1083: Matched
 Checking record 1084: Matched
@@ -2675,7 +2676,7 @@ Checking record 1214: Matched
 Checking record 1215: Matched
 Checking record 1216: Matched
 Checking record 1217: Matched
-Checking record 1218: Unmatched
+Checking record 1218: Matched
 Checking record 1219: Matched
 Checking record 1220: Matched
 Checking record 1221: Matched
@@ -2809,7 +2810,7 @@ Checking record 1348: Matched
 Checking record 1349: Matched
 Checking record 1350: Matched
 Checking record 1351: Matched
-Checking record 1352: Unmatched
+Checking record 1352: Matched
 Checking record 1353: Matched
 Checking record 1354: Matched
 Checking record 1355: Matched
@@ -2888,10 +2889,11 @@ Checking record 1427: Matched
 Checking record 1428: Matched
 Checking record 1429: Matched
 Checking record 1430: Matched
+Checking record 1431: Matched
 
 Unmatched records:
+{'name': 'snapdragon 7c (duplicate 1)', 'performance_clockspeed': 2.0, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 1.8, 'efficient_turbospeed': 'n/a', 'efficient_cores': 6, 'efficient_threads': 6, 'tdp': 'n/a', 'multithread_rating': 3712, 'single_thread_rating': 1519, 'l1_instruction_cache': 'n/a', 'l1_data_cache': 'n/a', 'l2_cache': 'n/a', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 18276, 'floating_point_math': 7706, 'find_prime_numbers': 9, 'random_string_sorting': 8991, 'data_encryption': 3804, 'data_compression': 56358, 'physics': 175, 'extended_instructions': 1097, 'single_thread': 1519}
 {'name': 'intel core2 duo p9600 (duplicate 1)', 'performance_clockspeed': 2.7, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 'n/a', 'efficient_turbospeed': 'n/a', 'efficient_cores': 'n/a', 'efficient_threads': 'n/a', 'tdp': 25.0, 'multithread_rating': 1093, 'single_thread_rating': 1120, 'l1_instruction_cache': '2 x 32 kb', 'l1_data_cache': '2 x 32 kb', 'l2_cache': '1 x 6144 kb', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 4679, 'floating_point_math': 2546, 'find_prime_numbers': 9, 'random_string_sorting': 3133, 'data_encryption': 'n/a', 'data_compression': 23353, 'physics': 140, 'extended_instructions': 397, 'single_thread': 1120}
 {'name': 'intel core2 duo e8335 (duplicate 1)', 'performance_clockspeed': 2.7, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 'n/a', 'efficient_turbospeed': 'n/a', 'efficient_cores': 'n/a', 'efficient_threads': 'n/a', 'tdp': -1.0, 'multithread_rating': 1121, 'single_thread_rating': 1137, 'l1_instruction_cache': '2 x 32 kb', 'l1_data_cache': '2 x 32 kb', 'l2_cache': '1 x 6144 kb', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 4741, 'floating_point_math': 2281, 'find_prime_numbers': 9, 'random_string_sorting': 2818, 'data_encryption': 'n/a', 'data_compression': 24340, 'physics': 153, 'extended_instructions': 461, 'single_thread': 1137}
-{'name': 'snapdragon 7c (duplicate 1)', 'performance_clockspeed': 2.0, 'performance_turbospeed': 'n/a', 'performance_cores': 2, 'performance_threads': 2, 'efficient_clockspeed': 1.8, 'efficient_turbospeed': 'n/a', 'efficient_cores': 6, 'efficient_threads': 6, 'tdp': 'n/a', 'multithread_rating': 3712, 'single_thread_rating': 1519, 'l1_instruction_cache': 'n/a', 'l1_data_cache': 'n/a', 'l2_cache': 'n/a', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 18276, 'floating_point_math': 7706, 'find_prime_numbers': 9, 'random_string_sorting': 8991, 'data_encryption': 3804, 'data_compression': 56358, 'physics': 175, 'extended_instructions': 1097, 'single_thread': 1519}
 {'name': 'snapdragon 8cx gen 2 (duplicate 1)', 'performance_clockspeed': 3.0, 'performance_turbospeed': 'n/a', 'performance_cores': 4, 'performance_threads': 4, 'efficient_clockspeed': 1.8, 'efficient_turbospeed': 'n/a', 'efficient_cores': 4, 'efficient_threads': 4, 'tdp': 'n/a', 'multithread_rating': 6728, 'single_thread_rating': 1737, 'l1_instruction_cache': 'n/a', 'l1_data_cache': 'n/a', 'l2_cache': 'n/a', 'l3_cache': 'n/a', 'eff_l1_instruction_cache': 'n/a', 'eff_l1_data_cache': 'n/a', 'eff_l2_cache': 'n/a', 'integer_math': 24938, 'floating_point_math': 12536, 'find_prime_numbers': 26, 'random_string_sorting': 13472, 'data_encryption': 5463, 'data_compression': 93086, 'physics': 388, 'extended_instructions': 2511, 'single_thread': 1737}
 --------------------------------------------------

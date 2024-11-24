@@ -2,8 +2,8 @@ CHECKING RESULT OF GPU:
 
 --------------------------------------------------
 Checking number of records in JSON file and database
-Number of records in JSON file: 589
-Number of records in database: 589
+Number of records in JSON file: 590
+Number of records in database: 590
 
 Number of records in JSON file and database match
 --------------------------------------------------
@@ -599,6 +599,7 @@ Checking record 586: Matched
 Checking record 587: Matched
 Checking record 588: Matched
 Checking record 589: Matched
+Checking record 590: Matched
 All records in JSON file are in database
 --------------------------------------------------
 
@@ -1193,5 +1194,6 @@ Checking record 586: Matched
 Checking record 587: Matched
 Checking record 588: Matched
 Checking record 589: Matched
+Checking record 590: Matched
 All records in database are in JSON file
 --------------------------------------------------

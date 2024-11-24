@@ -28,8 +28,8 @@ main_dag = DAG(
 )
 
 # [SCRAPING TASK]
-laptopshop_names = ['gearvn', 'cellphones', 'fptshop', 'hacom', 'laptopaz', 
-                    'laptopworld', 'nguyenkim', 'phongvu', 'phucanh', 'tgdd']
+laptopshop_names = ['phongvu', 'gearvn', 'cellphones', 'fptshop', 'hacom',  
+                    'laptopworld', 'nguyenkim', 'phucanh', 'tgdd', 'laptopaz']
 with TaskGroup('laptop_scraping_tasks', dag=main_dag) as laptop_scraping_tasks:
     for name in laptopshop_names:
         task = BashOperator(
