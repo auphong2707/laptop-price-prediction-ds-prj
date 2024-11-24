@@ -81,10 +81,9 @@ class TransformPipeline:
                         else:
                             value = f"apple {cpu_name.group(0)}"
                         
-                        if 'm1' in value:
-                            value += " 3200 mhz"
-                        elif 'm2' in value:
-                            value += " 3500 mhz"
+                        # Remove 4-digit number followed by 'mhz'
+                        value = re.sub(r'\b\d{4}\s*mhz\b', '', value, flags=re.IGNORECASE)
+                    
                     else:
                         value = "n/a"
                 else:
