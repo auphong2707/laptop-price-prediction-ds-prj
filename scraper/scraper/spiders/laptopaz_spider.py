@@ -8,7 +8,7 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
     start_urls = ['https://laptopaz.vn/laptop-moi.html']
 
     product_site_css = ".p-img a::attr(href)"
-    page_css = ".page-item:not(.disabled) .page-link::attr(href)"
+    page_css = ".page-link::attr(href)"
     #page_css = None
     source = "laptopaz"
 
@@ -76,8 +76,6 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
         """
         res = self.get_scoped_value(response, ['VGA', 'Card đồ họa', 'Bộ xử lý', 'Card VGA'],
                                         [("Đồ Họa (VGA)", "Bộ xử lý")])
-        if "td scope" in res.lower():
-            res = res.split('>')[1]
         return res if res else 'n/a'
     
     # RAM

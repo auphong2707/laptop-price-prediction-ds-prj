@@ -13,7 +13,7 @@ from fake_useragent import UserAgent
 from selenium.webdriver.firefox.service import Service
 
 
-logging.disable()
+# logging.disable()
 
 class BaseLaptopshopSpider(scrapy.Spider):
 

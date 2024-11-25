@@ -51,7 +51,7 @@ def _check_integrity(conn: psycopg2.extensions.connection,
     for row in tmp_data:
         for key, value in row.items():
             if isinstance(value, str):
-                row[key] = value.strip("'\"")
+                row[key] = value.replace("'", "").replace('"', "")
     
     # CHEKCING INTEGRITY
     checking_results = "CHECKING RESULT OF {}:\n".format(checking_type)

@@ -86,7 +86,7 @@ def get_insert_into_laptop_specs_table_sql(json_file_directories: List[str], mon
             # Strip quotes from all string values
             for key, value in row.items():
                 if isinstance(value, str):
-                    row[key] = value.strip("'\"")
+                    row[key] = value.replace("'", "").replace('"', "")
 
             # Prepare values, substituting None for SQL NULL
             values = [
