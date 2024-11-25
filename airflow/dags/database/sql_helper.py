@@ -15,6 +15,7 @@ def get_create_laptop_specs_table_sql(month: int, year: int) -> str:
     """
     return f"""
         CREATE TABLE laptop_specs_{month}_{year} (
+            id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             source VARCHAR(255) NOT NULL,
             brand VARCHAR(255),
             name VARCHAR(255) NOT NULL,
@@ -43,7 +44,6 @@ def get_create_laptop_specs_table_sql(month: int, year: int) -> str:
             number_hdmi_ports INTEGER,
             number_ethernet_ports INTEGER,
             number_audio_jacks INTEGER,
-            PRIMARY KEY (source, name),
             FOREIGN KEY (cpu) REFERENCES cpu_specs_{month}_{year}(name),
             FOREIGN KEY (vga) REFERENCES gpu_specs_{month}_{year}(name)
         );
