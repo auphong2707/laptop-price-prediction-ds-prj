@@ -36,14 +36,20 @@ def _check_integrity(conn: psycopg2.extensions.connection,
     for record in records:
         formatted_record = {}
         for col_name, value in zip(column_names, record):
+            # Skip 'id' column
+            if col_name == 'id':
+                continue
+
             # Replace None (NULL in SQL) with 'n/a'
             if value is None:
                 formatted_record[col_name] = 'n/a'
+
             # Convert Decimal to float
             elif isinstance(value, Decimal):
                 formatted_record[col_name] = float(value)
             else:
                 formatted_record[col_name] = value
+        
         formatted_records.append(formatted_record)
     records = formatted_records
     

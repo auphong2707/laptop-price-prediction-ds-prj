@@ -168,16 +168,18 @@ with TaskGroup('database_tasks', dag=main_dag) as database_tasks:
     )
 
 # [DEFINE DIRECTED ACYCLIC GRAPH]
-laptop_scraping_tasks >> [create_laptop_specs_table_sql, insert_into_laptop_specs_table_sql]
+laptop_scraping_tasks >> insert_into_laptop_specs_table_sql
 
-cpu_scrape_task >> [create_cpu_specs_table_sql, insert_into_cpu_specs_table_sql]
-gpu_scrape_task >> [create_gpu_specs_table_sql, insert_into_gpu_specs_table_sql]
+cpu_scrape_task >> insert_into_cpu_specs_table_sql
+gpu_scrape_task >> insert_into_gpu_specs_table_sql
 
 [create_cpu_specs_table_task, create_gpu_specs_table_task] >> create_laptop_specs_table_task
 [insert_into_cpu_specs_table_task, insert_into_gpu_specs_table_task] >> insert_into_laptop_specs_table_task
 
-[create_cpu_specs_table_sql, insert_into_cpu_specs_table_sql] >> create_cpu_specs_table_task >> insert_into_cpu_specs_table_task
-[create_gpu_specs_table_sql, insert_into_gpu_specs_table_sql] >> create_gpu_specs_table_task >> insert_into_gpu_specs_table_task
+create_cpu_specs_table_sql >> create_cpu_specs_table_task >> insert_into_cpu_specs_table_task
+insert_into_cpu_specs_table_sql >> insert_into_cpu_specs_table_task
+create_gpu_specs_table_sql >> create_gpu_specs_table_task >> insert_into_gpu_specs_table_task
+insert_into_gpu_specs_table_sql >> insert_into_gpu_specs_table_task
 
 create_laptop_specs_table_sql >> create_laptop_specs_table_task
 insert_into_laptop_specs_table_sql >> insert_into_laptop_specs_table_task

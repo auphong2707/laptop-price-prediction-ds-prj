@@ -136,8 +136,7 @@ def get_insert_into_laptop_specs_table_sql(json_file_directories: List[str], mon
             ) 
             SELECT {values_str} 
             WHERE EXISTS (SELECT 1 FROM {cpu_table_name} WHERE name = {values[3]})
-            {("AND EXISTS (SELECT 1 FROM {} WHERE name = " + str(values[4]) + ")").format(gpu_table_name) if values[4] != "NULL" else ""}
-            ON CONFLICT (source, name) DO NOTHING;
+            {("AND EXISTS (SELECT 1 FROM {} WHERE name = " + str(values[4]) + ")").format(gpu_table_name) if values[4] != "NULL" else ""};
             """
             insert_commands.append(insert_command.strip())
 
