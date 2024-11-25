@@ -12,6 +12,8 @@ class CpuSpider(scrapy.Spider):
         """Extract the CPU name using the CSS selector"""
         value = response.css('span.cpuname::text').get().split(' @')[0].lower()
         value = re.sub(r'\b\d{4}\s*mhz\b', '', value, flags=re.IGNORECASE)
+        if "intel" in value:
+            value.replace("-", " ")
         value = value.strip()
         return value
     

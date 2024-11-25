@@ -97,7 +97,7 @@ class TransformPipeline:
                     
                         if match:
                             # Format the matched processor name as "iX-XXXXXH"
-                            value = 'intel core ' + f"{match.group(1)}-{match.group(2)}{match.group(3)}"
+                            value = 'intel core ' + f"{match.group(1)} {match.group(2)}{match.group(3)}"
                             if value.endswith('g'):
                                 value = value + '7'
                         else:
