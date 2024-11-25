@@ -83,7 +83,10 @@ class TransformPipeline:
                         
                         # Remove 4-digit number followed by 'mhz'
                         value = re.sub(r'\b\d{4}\s*mhz\b', '', value, flags=re.IGNORECASE)
-                    
+                        
+                        if value.endswith(('m3', 'm2', 'm1')):
+                            value += " 8 core"
+                        
                     else:
                         value = "n/a"
                 else:
@@ -111,6 +114,15 @@ class TransformPipeline:
                             value = 'intel core ' + f"ultra {model_number} {match.group(2)}{match.group(3)}"
                         else:
                             value = "n/a"
+                            
+                    elif "celeron" in value and "intel" not in value:
+                        value = "intel " + value
+                        value = value.replace('-', ' ')
+                        value = " ".join(value.split())
+                        
+                    elif "intel" in value:
+                        value = value.replace('-', ' ')
+                        value = " ".join(value.split())
                     
                     # AMD solving
                     elif "ryzen" in value:
@@ -196,11 +208,7 @@ class TransformPipeline:
                         if 'geforce' in value:
                             value = value[value.index('geforce'):]
                             
-                        value = value.split("ti")[0] + "ti" if "ti" in value else value
-                        
-                        # if any(_ in value for _ in ['generation', '3050', '3060', '3070', '4050', '4060', '4070', 
-                        #                               '4080', '4090']):
-                        #     value = value + ' laptop gpu'
+                        value = value.split("ti")[0] + "ti" if ("ti" in value and "generation" not in value) else value
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
                                                                'intel arc', 'adreno', 'onboard', 'on board', 'uma', ' intel iris',]]):
