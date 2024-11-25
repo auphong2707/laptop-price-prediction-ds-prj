@@ -146,7 +146,8 @@ class TransformPipeline:
                         # Substitute the pattern in the input string using re.sub
                         value = re.sub(pattern, replace_with_hyphens, value)
                         value = value.replace("elite", "elite -")
-                        value = "qualcomm " + value
+                        if not value.startswith('qualcomm'):
+                            value = "qualcomm " + value
                         
                     
                         
