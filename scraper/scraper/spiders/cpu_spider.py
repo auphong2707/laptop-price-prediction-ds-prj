@@ -12,6 +12,7 @@ class CpuSpider(scrapy.Spider):
         """Extract the CPU name using the CSS selector"""
         value = response.css('span.cpuname::text').get().split(' @')[0].lower()
         value = re.sub(r'\b\d{4}\s*mhz\b', '', value, flags=re.IGNORECASE)
+        value = value.strip()
         return value
     
     def parse_performance_cores(self, response):
