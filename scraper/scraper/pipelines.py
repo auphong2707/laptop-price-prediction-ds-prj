@@ -210,6 +210,9 @@ class TransformPipeline:
                             
                         value = value.split("ti")[0] + "ti" if ("ti" in value and "generation" not in value) else value
                         
+                        if "a500" in value:
+                            value = value.replace("geforce", "")
+                        
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
                                                                'intel arc', 'adreno', 'onboard', 'on board', 'uma', ' intel iris',]]):
                         value = "n/a"
