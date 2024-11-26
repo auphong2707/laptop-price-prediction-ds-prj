@@ -157,11 +157,13 @@ class TransformPipeline:
                         
                         # Substitute the pattern in the input string using re.sub
                         value = re.sub(pattern, replace_with_hyphens, value)
-                        value = value.replace("elite", "elite -")
+                        if "elite -" not in value:
+                            value = value.replace("elite", "elite -")
                         if not value.startswith('qualcomm'):
                             value = "qualcomm " + value
-                        
-                    
+                            
+                    else:
+                        value = "n/a"
                         
                 value = value.split('(')[0].split('(')[0].strip()
                     
@@ -194,7 +196,7 @@ class TransformPipeline:
                 else:
                     if any([keyword in value for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
                         for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia',
-                                        'intel iris xe', 'graphics', 'vga:', 'vga -', ':']:
+                                        'intel iris xe', 'graphics', 'vga:', 'vga -', ':', 'vram']:
                             value = value.replace(removal, '')
                             value = ' '.join(value.split())
                         
@@ -210,8 +212,11 @@ class TransformPipeline:
                             
                         value = value.split("ti")[0] + "ti" if ("ti" in value and "generation" not in value) else value
                         
-                        if "a500" in value:
+                        if any([keyword in value for keyword in ['a500', 'a1000']]):
                             value = value.replace("geforce", "")
+                        
+                        if "rtx 2000" in value:
+                            value = "rtx 2000 ada generation"
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
                                                                'intel arc', 'adreno', 'onboard', 'on board', 'uma', ' intel iris',]]):
