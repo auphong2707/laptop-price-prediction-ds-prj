@@ -24,7 +24,7 @@ main_dag = DAG(
     description='The DAG control all the tasks for the project',
     schedule_interval='@monthly',
     start_date=days_ago(1),
-    max_active_tasks=3,
+    max_active_tasks=2,
 )
 
 # [SCRAPING TASK]
