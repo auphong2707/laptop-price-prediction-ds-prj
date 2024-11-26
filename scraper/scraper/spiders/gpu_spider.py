@@ -107,19 +107,20 @@ class GPUSpider(scrapy.Spider):
     def parse_gpu(self, response):
         if "laptop gpu" in response.css('span.cpuname::text').get().strip().lower() \
             or (response.css('p:contains("Videocard Category:")::text').get() is not None \
-                and response.css('p:contains("Videocard Category:")::text').get().strip() == 'Mobile'):
-            yield {
-                'name': self.parse_gpu_name(response),
-                'avg_g3d_mark': self.parse_avg_g3d_mark(response),
-                'bus_interface': self.parse_gpu_bus_interface(response),
-                'max_memory_size': self.parse_gpu_max_memory_size(response),
-                'core_clock': self.parse_gpu_core_clock(response),
-                'max_direct': self.parse_gpu_max_directx(response),
-                'open_gl': self.parse_gpu_open_gl(response),
-                'max_tdp': self.parse_gpu_max_tdp(response),
-                'test_directx_9': self.parse_test_directx_9(response),
-                'test_directx_10': self.parse_test_directx_10(response),
-                'test_directx_11': self.parse_test_directx_11(response),
-                'test_directx_12': self.parse_test_directx_12(response),
-                'test_gpu_compute': self.parse_test_gpu_compute(response)
-            }
+                and response.css('p:contains("Videocard Category:")::text').get().strip() == 'Mobile') \
+            or "geforce mx" in self.parse_gpu_name(response):
+                yield {
+                    'name': self.parse_gpu_name(response),
+                    'avg_g3d_mark': self.parse_avg_g3d_mark(response),
+                    'bus_interface': self.parse_gpu_bus_interface(response),
+                    'max_memory_size': self.parse_gpu_max_memory_size(response),
+                    'core_clock': self.parse_gpu_core_clock(response),
+                    'max_direct': self.parse_gpu_max_directx(response),
+                    'open_gl': self.parse_gpu_open_gl(response),
+                    'max_tdp': self.parse_gpu_max_tdp(response),
+                    'test_directx_9': self.parse_test_directx_9(response),
+                    'test_directx_10': self.parse_test_directx_10(response),
+                    'test_directx_11': self.parse_test_directx_11(response),
+                    'test_directx_12': self.parse_test_directx_12(response),
+                    'test_gpu_compute': self.parse_test_gpu_compute(response)
+                }
