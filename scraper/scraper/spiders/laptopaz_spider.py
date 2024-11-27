@@ -8,7 +8,7 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
     start_urls = ['https://laptopaz.vn/laptop-moi.html']
 
     product_site_css = ".p-img a::attr(href)"
-    page_css = ".page-item:not(.disabled) .page-link::attr(href)"
+    page_css = ".page-link::attr(href)"
     #page_css = None
     source = "laptopaz"
 
@@ -32,7 +32,7 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
                 "//td[span/strong[text() = '{}']]/following-sibling::td//span/text()".format(name)
                 for name in names
             ] + [
-                "//table//tr[td/strong[contains(text(), '{}')]]/td[2]".format(name)
+                "//table//tr[td/strong[contains(text(), '{}')]]/td[2]//text()".format(name)
                 for name in names
             ] 
         for value in possible_values:
@@ -59,13 +59,7 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
     
     def parse_name(self, response: Response):
         res = response.xpath("//h1[contains(@class, 'bk-product-name')]/text()").get()
-        if res:
-            res = ' '.join(res.split(']')[-1].split()).lower().split('(')[0].strip()
-            if 'Gaming' in res:
-                return res.split('Gaming ')[1]
-            else:
-                return res
-        return 'n/a'
+        return res if res else 'n/a'
     
     def parse_cpu(self, response: Response):
         """
@@ -82,8 +76,6 @@ class LaptopazSpider(BaseLaptopshopPageSpider):
         """
         res = self.get_scoped_value(response, ['VGA', 'Card đồ họa', 'Bộ xử lý', 'Card VGA'],
                                         [("Đồ Họa (VGA)", "Bộ xử lý")])
-        if "td scope" in res.lower():
-            res = res.split('>')[1]
         return res if res else 'n/a'
     
     # RAM

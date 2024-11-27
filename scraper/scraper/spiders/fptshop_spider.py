@@ -141,26 +141,9 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the name of the laptop from the response.
         """
-        try:
-            # Get the initial part of the name
-            title = response.css('h1.text-textOnWhitePrimary::text').get()
-            if not title:
-                return 'n/a'
-
-            # Extract the model number from the span element
-            model_number = response.css('h1.text-textOnWhitePrimary > span::text').get()
-
-            # Combine the parts to get the full name
-            if model_number:
-                full_name = f"{title.replace('Laptop ', '').strip()} {model_number.strip()}"
-            else:
-                full_name = title.replace('Laptop ', '').strip()
-
-            return full_name
-
-        except Exception as e:
-            print("Error:", e)  # Print the actual error for debugging
-            return 'N/A'
+        # Get the initial part of the name
+        title = response.css('h1.text-textOnWhitePrimary::text').get()
+        return title if title else 'n/a'
     
     def parse_cpu(self, response: Response):
         """

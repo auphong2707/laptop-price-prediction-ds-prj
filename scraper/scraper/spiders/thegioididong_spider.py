@@ -80,28 +80,9 @@ class ThegioididongSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the name of the laptop from the response.
         """
-        try:
-            fullname = response.xpath('//div[@class="product-name"]/h1/text()').get()
-            
-            id = re.search(r'\(([^)]+)\)', fullname)
-            if id:
-                id = id.group(1)
-            else:
-                id = ""
-            
-            for _ in ["i3", "i5", "i7", "i9", "R3", "R5", "R7", "R9", "Ultra", "Core"]:
-                if _ in fullname:
-                    fullname = fullname.split(_)[0].strip()
-                    break
-            name = fullname.replace("Laptop", "").strip()
-            name = re.sub(r'\d+(\.\d+)? inch.*', '', name).strip()
-            name = re.sub(r'\S*\/\S*', '', name).strip()
-            
-            
-            return name + " " + id
-        except:
-            return "N/A"
-    
+        name = response.xpath('//div[@class="product-name"]/h1/text()').get()
+        return name if name else "n/a"
+
     # CPU
     def parse_cpu(self, response: Response):
         """

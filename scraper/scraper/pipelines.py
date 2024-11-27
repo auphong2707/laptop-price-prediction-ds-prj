@@ -44,7 +44,7 @@ class TransformPipeline:
     class GeneralTransformer:
         def __init__(self, adapter: ItemAdapter):
             self.adapter = adapter
-            self.debug_mode = False
+            self.debug_mode = True
 
         def transform_cpu(self):
             """Transforms the CPU field to a standardized format."""
@@ -56,7 +56,7 @@ class TransformPipeline:
                 for removal in ['®', '™', ' processors', ' processor', 'mobile',
                                 'with intel ai boost', '', '(tm)', '(r)', ':',
                                 'tiger lake', 'ice lake', 'raptor lake', 'alder lake', 
-                                'comet lake', 'kabylake refresh', 'kabylake', 'cpu:']:
+                                'comet lake', 'kabylake refresh', 'kabylake', 'cpu:', 'cpu']:
                     value = value.replace(removal, '')
                     
                 special_sep = re.search(r'\b(\d+\.\d+\s?upto\s?\d+\.\d+ghz|\d+(\.\d+)?\s*ghz|\d+\s?gb|dgb)\b', value)
@@ -77,9 +77,16 @@ class TransformPipeline:
                         num_cores = pattern.search(value)
                         if num_cores:
                             num_cores = num_cores.group(1)  # The number of cores will be in the first group
-                            value = f"apple {cpu_name.group(0)} {num_cores}-core"
+                            value = f"apple {cpu_name.group(0)} {num_cores} core"
                         else:
                             value = f"apple {cpu_name.group(0)}"
+                        
+                        # Remove 4-digit number followed by 'mhz'
+                        value = re.sub(r'\b\d{4}\s*mhz\b', '', value, flags=re.IGNORECASE)
+                        
+                        if value.endswith(('m3', 'm2', 'm1')):
+                            value += " 8 core"
+                        
                     else:
                         value = "n/a"
                 else:
@@ -93,7 +100,9 @@ class TransformPipeline:
                     
                         if match:
                             # Format the matched processor name as "iX-XXXXXH"
-                            value = 'intel core ' + f"{match.group(1)}-{match.group(2)}{match.group(3)}"
+                            value = 'intel core ' + f"{match.group(1)} {match.group(2)}{match.group(3)}"
+                            if value.endswith('g'):
+                                value = value + '7'
                         else:
                             value = "n/a"
                     elif "ultra" in value:
@@ -105,6 +114,15 @@ class TransformPipeline:
                             value = 'intel core ' + f"ultra {model_number} {match.group(2)}{match.group(3)}"
                         else:
                             value = "n/a"
+                            
+                    elif "celeron" in value and "intel" not in value:
+                        value = "intel " + value
+                        value = value.replace('-', ' ')
+                        value = " ".join(value.split())
+                        
+                    elif "intel" in value:
+                        value = value.replace('-', ' ')
+                        value = " ".join(value.split())
                     
                     # AMD solving
                     elif "ryzen" in value:
@@ -139,8 +157,13 @@ class TransformPipeline:
                         
                         # Substitute the pattern in the input string using re.sub
                         value = re.sub(pattern, replace_with_hyphens, value)
-                        
-                    
+                        if "elite -" not in value:
+                            value = value.replace("elite", "elite -")
+                        if not value.startswith('qualcomm'):
+                            value = "qualcomm " + value
+                            
+                    else:
+                        value = "n/a"
                         
                 value = value.split('(')[0].split('(')[0].strip()
                     
@@ -162,7 +185,7 @@ class TransformPipeline:
                 if special_sep:
                     value = value.split(special_sep.group())[0]
                 
-                for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog']:
+                for spliter in [' with ', ' laptop ', '+', ',',  'up', 'upto', 'up to', 'rog', ';']:
                     value = value.split(spliter)[0]
                 
                 value = ' '.join(value.split())
@@ -173,7 +196,7 @@ class TransformPipeline:
                 else:
                     if any([keyword in value for keyword in ['nvidia', 'geforce', 'rtx', 'gtx']]):
                         for removal in ['amd radeon graphics', 'intel uhd graphics', 'laptop', 'nvidia',
-                                        'intel iris xe', 'graphics', 'vga:', 'vga -', ':']:
+                                        'intel iris xe', 'graphics', 'vga:', 'vga -', ':', 'vram']:
                             value = value.replace(removal, '')
                             value = ' '.join(value.split())
                         
@@ -186,8 +209,14 @@ class TransformPipeline:
                         
                         if 'geforce' in value:
                             value = value[value.index('geforce'):]
-                        elif 'generation' in value:
-                            value = value + ' laptop gpu'
+                            
+                        value = value.split("ti")[0] + "ti" if ("ti" in value and "generation" not in value) else value
+                        
+                        if any([keyword in value for keyword in ['a500', 'a1000']]):
+                            value = value.replace("geforce", "")
+                        
+                        if "rtx 2000" in value:
+                            value = "rtx 2000 ada generation"
                         
                     elif any([keyword in value for keyword in ['iris xe', 'intel uhd', 'intel hd', 'intel graphics', 
                                                                'intel arc', 'adreno', 'onboard', 'on board', 'uma', ' intel iris',]]):
@@ -204,8 +233,7 @@ class TransformPipeline:
                             value = "n/a"
                     else:
                         value = "n/a"
-                        
-                value = value.split("ti")[0]
+
                 value = value.strip()
                 
                 self.adapter['vga'] = value
@@ -695,7 +723,7 @@ class TransformPipeline:
                 value = value.replace('*', '')
                 value = re.sub(r'[đ₫]', '', value).strip()
                 
-                self.adapter['price'] = value
+                self.adapter['price'] = int(value)
             except Exception as e:
                 print("Error in price transformation:", e)
                 print("Error at:", self.adapter.get('name'))

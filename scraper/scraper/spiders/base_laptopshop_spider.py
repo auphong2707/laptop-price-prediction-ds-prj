@@ -5,13 +5,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
+from selenium.webdriver.firefox.service import Service as FirefoxService
 from scrapy.selector import Selector
 import time
 import logging
 from fake_useragent import UserAgent
 from selenium.webdriver.firefox.service import Service
 
-logging.disable()
+
+# logging.disable()
 
 class BaseLaptopshopSpider(scrapy.Spider):
 
@@ -52,7 +54,7 @@ class BaseLaptopshopSpider(scrapy.Spider):
     def __init__(self, name = None, **kwargs):
         super().__init__(name, **kwargs)
         self.ua = UserAgent()
-        self.driver = webdriver.Firefox(options=self._get_driver_options())
+        self.driver = webdriver.Firefox(options=self._get_driver_options(), service=FirefoxService(executable_path='/usr/local/bin/geckodriver'))
         
     def __del__(self):
         self.driver.quit()
