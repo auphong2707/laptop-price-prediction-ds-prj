@@ -2,8 +2,8 @@ CHECKING RESULT OF GPU:
 
 --------------------------------------------------
 Checking number of records in JSON file and database
-Number of records in JSON file: 608
-Number of records in database: 608
+Number of records in JSON file: 618
+Number of records in database: 618
 
 Number of records in JSON file and database match
 --------------------------------------------------
@@ -618,6 +618,16 @@ Checking record 605: Matched
 Checking record 606: Matched
 Checking record 607: Matched
 Checking record 608: Matched
+Checking record 609: Matched
+Checking record 610: Matched
+Checking record 611: Matched
+Checking record 612: Matched
+Checking record 613: Matched
+Checking record 614: Matched
+Checking record 615: Matched
+Checking record 616: Matched
+Checking record 617: Matched
+Checking record 618: Matched
 All records in JSON file are in database
 --------------------------------------------------
 
@@ -1231,5 +1241,15 @@ Checking record 605: Matched
 Checking record 606: Matched
 Checking record 607: Matched
 Checking record 608: Matched
+Checking record 609: Matched
+Checking record 610: Matched
+Checking record 611: Matched
+Checking record 612: Matched
+Checking record 613: Matched
+Checking record 614: Matched
+Checking record 615: Matched
+Checking record 616: Matched
+Checking record 617: Matched
+Checking record 618: Matched
 All records in database are in JSON file
 --------------------------------------------------

@@ -36,7 +36,7 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
         name = response.xpath('//h1/text()').get().lower()
         price = response.xpath('//b[@class="js-this-product"]/text()').get().lower()
         if any(_ in name for _ in ['balo', 'tai nghe', 'dock', 'máy chơi game']) \
-            or (price is not None and 'liên hệ' in price):
+            or price == 'liên hệ':
             print(f"Skipped: {name}")
             return False
         return True
