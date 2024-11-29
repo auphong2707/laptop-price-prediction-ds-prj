@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content">
+    <h1 style="text-align: center; color: #00b4d8;">Laptop price Predictor</h1>
+    <form method="POST">
+        <h3>General Information</h3>
+        <label for="brand">Brand:</label>
+        <select id="brand" name="brand" required>
+            <option value="Brand A">Brand A</option>
+            <option value="Brand B">Brand B</option>
+            <option value="Brand C">Brand C</option>
+        </select>
+
+        <label for="cpu">CPU:</label>
+        <select id="cpu" name="cpu" required>
+            <option value="CPU A">CPU A</option>
+            <option value="CPU B">CPU B</option>
+            <option value="CPU C">CPU C</option>
+        </select>
+
+        <label for="vga">VGA:</label>
+        <select id="vga" name="vga" required>
+            <option value="VGA A">VGA A</option>
+            <option value="VGA B">VGA B</option>
+            <option value="VGA C">VGA C</option>
+        </select>
+
+        <h3>Memory</h3>
+        <label for="ram_amount">RAM Amount (GB):</label>
+        <input type="number" id="ram_amount" name="ram_amount" min="1" required>
+
+        <label for="ram_type">RAM Type:</label>
+        <select id="ram_type" name="ram_type" required>
+            <option value="DDR4">DDR4</option>
+            <option value="DDR5">DDR5</option>
+        </select>
+
+        <h3>Storage</h3>
+        <label for="storage_amount">Storage Amount (GB):</label>
+        <input type="number" id="storage_amount" name="storage_amount" min="1" required><br>
+
+        <label for="storage_type">Storage Type:</label>
+        <select id="storage_type" name="storage_type" required>
+            <option value="SSD">SSD</option>
+        </select><br>
+
+        <h3>Display</h3>
+        <label for="screen_size">Screen Size (inches):</label>
+        <input type="number" id="screen_size" name="screen_size" step="0.1" required><br>
+
+        <label for="screen_resolution">Screen Resolution:</label>
+        <select id="screen_resolution" name="screen_resolution" required>
+            <option value="1920x1080">1920x1080</option>
+            <option value="2560x1440">2560x1440</option>
+            <option value="3840x2160">3840x2160</option>
+        </select><br>
+
+        <label for="screen_refresh_rate">Screen Refresh Rate (Hz):</label>
+        <input type="number" id="screen_refresh_rate" name="screen_refresh_rate" min="1" required><br>
+
+        <label for="screen_brightness">Screen Brightness (nits):</label>
+        <input type="number" id="screen_brightness" name="screen_brightness" min="1" required><br>
+
+        <h3>Battery</h3>
+        <label for="battery_capacity">Battery Capacity (Wh):</label>
+        <input type="number" id="battery_capacity" name="battery_capacity" step="0.1" required><br>
+
+        <label for="battery_cells">Battery Cells:</label>
+        <input type="number" id="battery_cells" name="battery_cells" min="1" required><br>
+
+        <h3>Build</h3>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" step="0.01" required><br>
+
+        <label for="width">Width (cm):</label>
+        <input type="number" id="width" name="width" step="0.1" required><br>
+
+        <label for="depth">Depth (cm):</label>
+        <input type="number" id="depth" name="depth" step="0.1" required><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height" step="0.1" required><br>
+
+        <h3>Ports</h3>
+        <label for="number_usb_a_ports">Number of USB-A Ports:</label>
+        <input type="number" id="number_usb_a_ports" name="number_usb_a_ports" min="0" required><br>
+
+        <label for="number_usb_c_ports">Number of USB-C Ports:</label>
+        <input type="number" id="number_usb_c_ports" name="number_usb_c_ports" min="0" required><br>
+
+        <label for="number_hdmi_ports">HDMI Port:</label>
+        <select id="number_hdmi_ports" name="number_hdmi_ports" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="number_ethernet_ports">Ethernet Port:</label>
+        <select id="number_ethernet_ports" name="number_ethernet_ports" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="number_audio_jacks">Audio Jack:</label>
+        <select id="number_audio_jacks" name="number_audio_jacks" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <h3>Other Features</h3>
+        <label for="default_os">Default OS:</label>
+        <select id="default_os" name="default_os" required>
+            <option value="Windows">Windows</option>
+            <option value="Linux">Linux</option>
+            <option value="MacOS">MacOS</option>
+        </select><br>
+
+        <label for="warranty">Warranty (months):</label>
+        <input type="number" id="warranty" name="warranty" min="0" required><br>
+
+        <label for="webcam">Webcam:</label>
+        <select id="webcam" name="webcam" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+    <div style="margin-top: 20px; padding: 10px; background-color: #f1f8ff; border: 1px solid #cce7ff; border-radius: 5px;">
+        <strong>Prediction Result:</strong>
+        <p>{{ prediction }}</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

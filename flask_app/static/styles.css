@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #0077a1, #00b4d8);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+header::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+/* Navbar Adjustments */
+nav {
+    background: white;
+    color: #333;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #0077a1;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00b4d8;
+}
+
+/* Content Container */
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+form h3 {
+    margin: 20px 0 10px;
+    color: #555;
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="number"], input[type="float"], select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #00b4d8;
+    box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
+}
+
+button {
+    background-color: #00b4d8;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0077a1;
+}
+
+/* Table Styles (if needed) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #00b4d8;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input[type="text"], 
+    input[type="number"], 
+    select, 
+    button {
+        font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
+    }
+}
