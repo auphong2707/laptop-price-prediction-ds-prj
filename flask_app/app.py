@@ -39,7 +39,9 @@ def database(table_name):
     return render_template('database.html', 
                            table_name=table_name, 
                            table_list=TABLE_LIST, 
-                           table_html=table_html)
+                           table_html=table_html,
+                           active_table=table_name
+                          )
     
 @app.route('/download_csv/<table_name>')
 def download_csv(table_name):

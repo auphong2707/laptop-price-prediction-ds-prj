@@ -3,11 +3,12 @@
 <div class="database-container">
     <!-- Sidebar -->
     <aside class="sidebar">
-        <h3>Tables</h3>
+        <h3>Tables List</h3>
         <ul>
             {% for table in table_list %}
             <li>
-                <a href="{{ url_for('database', table_name=table) }}">
+                <a href="{{ url_for('database', table_name=table) }}"
+                   class="{% if table == active_table %}active{% endif %}">
                     {{ table }}
                 </a>
             </li>
