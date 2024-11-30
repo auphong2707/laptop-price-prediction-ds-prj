@@ -1,22 +1,40 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Database</h1>
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for item in data %}
-        <tr>
-            <td>{{ item.id }}</td>
-            <td>{{ item.name }}</td>
-            <td>{{ item.value }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<div class="database-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3>Tables</h3>
+        <ul>
+            {% for table in table_list %}
+            <li>
+                <a href="{{ url_for('database', table_name=table) }}">
+                    {{ table }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="database-main-content">
+        <div class="database-main-content-header"> 
+            
+
+            <!-- Download Button -->
+            <a href="{{ url_for('download_csv', table_name=table_name) }}" class="btn-download">
+                <i class="fas fa-download"></i>  <!-- Font Awesome download icon -->
+            </a>
+
+            <h1>{{ table_name }}</h1>
+        </div>
+
+        {% if table_html %}
+        <div class="table-container">
+            {{ table_html|safe }}
+        </div>
+        {% else %}
+        <p>No data available for this table.</p>
+        {% endif %}
+    </section>
+</div>
 {% endblock %}
