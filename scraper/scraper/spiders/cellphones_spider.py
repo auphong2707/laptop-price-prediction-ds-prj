@@ -68,19 +68,8 @@ class CellphoneSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the name of the laptop from the response.
         """
-        try:
-            res = response.css('.box-product-name h1::text').get().lower()
-            for removal in ['laptop gaming ', 'laptop ', '- chỉ có tại cellphones', 'i chính hãng apple việt nam', ' - nhập khẩu chính hãng']:
-                res = res.replace(removal, '')
-
-            res = re.sub(r'\([^()]*\)', '', res)
-            search_value = re.search('(?<!\w)(\d+)gb(?!\w)', res)
-            if search_value:
-                res = res.split(search_value.group())[0]
-            
-            return res.strip()
-        except:
-            return "n/a"
+        res = response.css('.box-product-name h1::text').get().lower()
+        return res if res else "n/a"
     
     # CPU
     def parse_cpu(self, response: Response):

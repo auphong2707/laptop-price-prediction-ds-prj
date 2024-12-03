@@ -64,22 +64,8 @@ class GearvnSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         Extracts the name of the laptop from the response.
         """
-        try:
-            res = response.css('.product-name h1::text').get().lower()
-            for removal in ['laptop gaming ', 'laptop ', 'gray', 'black', 'silver', 'iceblue']:
-                res = res.replace(removal, '')
-
-            res = re.sub(r'\([^()]*\)', '', res)
-            
-            if "macbook" in res:
-                res = "apple " + ' '.join(res.split()[:2] + res.split()[-1:])
-            
-            if not res[-1].isalnum():
-                res = res[:-1]
-            
-            return res.strip()
-        except:
-            return "n/a"
+        res = response.css('.product-name h1::text').get().lower()
+        return res if res else "n/a"
     
     # CPU
     def parse_cpu(self, response: Response):

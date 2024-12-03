@@ -66,16 +66,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
             return "n/a"
     
     def parse_name(self, response: Response):
-        try:
-            name = response.css('div.pd-info-right h1.sptitle2024::text').get().split('(')[0]
-            # if 'Laptop' in name:
-            #     return name.split('Laptop ')[1]
-            # else:
-            #     return name.split('Laptop ')[0]
-            name = name.replace('Laptop ', '')
-            return name
-        except:
-            return "n/a"
+        name = response.css('div.pd-info-right h1.sptitle2024::text').get()
+        return name if name else 'n/a'
     
     def parse_cpu(self, response: Response):
         """
@@ -111,6 +103,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         """
         res = self.get_scoped_value(response, ['VGA', 'Card đồ họa', 'Bộ xử lý'],
                                         [("Đồ Họa (VGA)", "Bộ xử lý")])
+        if "<" in res or ">" in res:
+            res.split(">")[1]
         return res if res else 'n/a'
         try:
             res = self.get_scoped_value(response, ['VGA', 'Card đồ họa', 'Bộ xử lý'],
@@ -537,6 +531,8 @@ class HacomSpider(BaseLaptopshopLoadmoreButtonSpider):
         paths = ["//p[@class='pd-price']/@data-price", '//span[@class="pro-price a"]/text()']
 
         for path in paths:
-            res = response.xpath(path).get()
+            res = response.xpath(path).get().lower()
+            if "deal:" in res:
+                res = res.split('deal:')[1] 
             return res if res else 'n/a'
         

@@ -31,6 +31,15 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
                 return '\n'.join(scope)
             
         return None
+    
+    def yield_condition(self, response):
+        name = response.xpath('//h1/text()').get().lower()
+        price = response.xpath('//b[@class="js-this-product"]/text()').get().lower()
+        if any(_ in name for _ in ['balo', 'tai nghe', 'dock', 'máy chơi game']) \
+            or price == 'liên hệ':
+            print(f"Skipped: {name}")
+            return False
+        return True
 
     # [PARSE FEATURES SECTION: START]
     # Brand
@@ -59,11 +68,8 @@ class LaptopworldSpider(BaseLaptopshopPageSpider):
         """
         Extracts the name of the laptop from the response.
         """
-        try:
-            res = response.xpath('//h1/text()').get()
-            return re.sub(r'\s*\(.*?\)|\s*/.*', '', res).strip()
-        except:
-            return "n/a"
+        res = response.xpath('//h1/text()').get()
+        return res if res else 'n/a'
     
     # CPU
     def parse_cpu(self, response: Response):
