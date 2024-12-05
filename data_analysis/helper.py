@@ -69,20 +69,43 @@ def get_full_relation(month: int, year: int) -> pd.DataFrame:
     
     # Fetch the result
     df = pd.DataFrame(result.fetchall(), columns=[desc[0] for desc in result.description])
-    
-    # Add prefix the laptop_specs columns
-    for i in range(len(df.columns)):
-        if i <= len(LAPTOP_SPECS_COLUMNS):
-            df.rename(columns={df.columns[i]: f'laptop_specs_{df.columns[i]}'}, inplace=True)
-        elif i <= len(LAPTOP_SPECS_COLUMNS) + len(CPU_SPECS_COLUMNS):
-            df.rename(columns={df.columns[i]: f'cpu_specs_{df.columns[i]}'}, inplace=True)
+        
+    # Initialize a set to track renamed columns
+    renamed_columns = set()
+
+    def make_unique(column_name, counter=1):
+        """Ensure column names are unique by appending a counter if needed."""
+        unique_name = column_name
+        while unique_name in renamed_columns:
+            unique_name = f"{column_name}_{counter}"
+            counter += 1
+        renamed_columns.add(unique_name)
+        return unique_name
+
+    # Prepare a list to store the new column names
+    new_column_names = []
+
+    # Iterate through the columns and generate new column names
+    for i, col in enumerate(df.columns):
+        if i < len(LAPTOP_SPECS_COLUMNS):
+            new_name = f'laptop_specs_{col}'
+        elif i < len(LAPTOP_SPECS_COLUMNS) + len(CPU_SPECS_COLUMNS):
+            new_name = f'cpu_specs_{col}'
         else:
-            df.rename(columns={df.columns[i]: f'gpu_specs_{df.columns[i]}'}, inplace=True)
+            new_name = f'gpu_specs_{col}'
+
+        # Make the column name unique
+        unique_name = make_unique(new_name)
+        new_column_names.append(unique_name)
+
+    # Assign the new column names to the DataFrame at once
+    df.columns = new_column_names
 
     # Close the connection
     connection.close()
-    
+
     return df
+
 
 def get_cpu_table(month: int, year: int) -> pd.DataFrame:
     # Connect to the database
