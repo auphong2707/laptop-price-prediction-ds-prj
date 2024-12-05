@@ -4,12 +4,10 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.neural_network import MLPRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import Ridge
-from sklearn.preprocessing import MinMaxScaler
 
 import pandas as pd
 
 import argparse
-
 
 # Export the model
 import joblib
@@ -65,11 +63,13 @@ def main():
             estimator=model,
             param_grid=param_grid,
             cv=5,
-            n_jobs=-1
+            n_jobs=-1,
+            scoring='neg_mean_squared_error'
         )
 
         cv.fit(X, y)
-
+        
+        best_score = cv.best_score_
         best_model = cv.best_estimator_
         results = cv.cv_results_
     
@@ -81,7 +81,8 @@ def main():
                 estimator=model,
                 param_grid=param_grid,
                 cv=5,
-                n_jobs=-1
+                n_jobs=-1,
+                scoring='neg_mean_squared_error'
             )
 
             cv.fit(X, y)

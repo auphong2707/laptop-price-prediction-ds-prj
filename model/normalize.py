@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 def normalize(data: pd.DataFrame) -> pd.DataFrame: 
-    data = data.drop(['screen_area', 'screen_ratio', 'gpu_specs_test_directx_9', 'gpu_specs_test_directx_11', 'gpu_specs_test_directx_12'], axis=1)
     def encode_with_nearest(value):
         if value in categories:
             return categories[value]
@@ -70,8 +69,12 @@ def normalize(data: pd.DataFrame) -> pd.DataFrame:
     data['cpu_specs_single_thread'] = scaler.fit_transform(data['cpu_specs_single_thread'].to_frame()) + 0.1
     data['cpu_specs_extended_instructions'] = scaler.fit_transform(data['cpu_specs_extended_instructions'].to_frame()) + 0.1
     data['gpu_specs_avg_g3d_mark'] = scaler.fit_transform(data['gpu_specs_avg_g3d_mark'].to_frame())
+    data['gpu_specs_test_directx_9'] = scaler.fit_transform(data['gpu_specs_test_directx_9'].to_frame())
     data['gpu_specs_test_directx_10'] = scaler.fit_transform(data['gpu_specs_test_directx_10'].to_frame())
+    data['gpu_specs_test_directx_11'] = scaler.fit_transform(data['gpu_specs_test_directx_11'].to_frame())
+    data['gpu_specs_test_directx_12'] = scaler.fit_transform(data['gpu_specs_test_directx_12'].to_frame())
     data['gpu_specs_test_gpu_compute'] = scaler.fit_transform(data['gpu_specs_test_gpu_compute'].to_frame())
+    data['screen_area'] = scaler.fit_transform((data['screen_area'].to_frame())) + 0.5
 
     return data
 
