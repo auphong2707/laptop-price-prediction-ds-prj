@@ -15,7 +15,7 @@
     </header>
     <nav>
         <a href="{{ url_for('predictor') }}">Predictor</a>
-        <a href="{{ url_for('data_analysis') }}">Data Analysis</a>
+        <a href="{{ url_for('data_analysis', eda_name='default_eda') }}">Data Analysis</a>
         <a href="{{ url_for('database', table_name='default_table') }}">Database</a>
     </nav>
     <div class="content">
