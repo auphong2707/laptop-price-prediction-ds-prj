@@ -4,7 +4,7 @@ from preprocess import preprocess
 import argparse
 import json
 
-def predict(record: json, cpu_specs, vga_specs) -> int:
+def predict(record: json, cpu_specs, vga_specs) -> float:
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--model_path', type=str, help='The path to the model')
@@ -14,7 +14,7 @@ def predict(record: json, cpu_specs, vga_specs) -> int:
 
     record = pd.read_json(record)
     data = preprocess(record, cpu_specs, vga_specs)
-    return model.predict(data)
+    return float(model.predict(data))
 
 if __name__ == '__main__':
     # parser = argparse.ArgumentParser()
