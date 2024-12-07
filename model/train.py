@@ -1,4 +1,5 @@
 from normalize import normalize
+from preprocess import preprocess
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.neural_network import MLPRegressor
@@ -20,6 +21,8 @@ def main():
 
     # Add data path
     parser.add_argument('--data', type=str, help='The path to the data')
+    parser.add_argument('--cpu_specs', type=str, help='The path to the CPU specs')
+    parser.add_argument('--vga_specs', type=str, help='The path to the VGA specs')
     parser.add_argument('--model', type=str, help='The model to train')
 
     args = parser.parse_args()
@@ -28,10 +31,13 @@ def main():
     data = pd.read_csv(args.data)
     data.drop_duplicates(inplace=True)
 
-    X = data.drop('laptop_specs_price', axis=1)
-    y = data['laptop_specs_price']
+    cpu_specs = pd.read_csv(args.cpu_specs)
+    vga_specs = pd.read_csv(args.vga_specs)
 
-    X = normalize(X)
+    X = data.drop('price', axis=1)
+    y = data['price']
+
+    X = preprocess(X, cpu_specs, vga_specs)
 
     models = {
         'mlp': MLPRegressor(),
@@ -41,16 +47,16 @@ def main():
 
     param_grids = {
         'mlp': {
-            'hidden_layer_sizes': [(100, 100)],
+            'hidden_layer_sizes': [(370, 370)],
             'activation': ['identity', 'logistic', 'tanh', 'relu'],
-            'max_iter': [100, 200, 300, 400, 500],
+            'max_iter': [600],
             'beta_1': [0.9, 0.95, 0.99],
             'beta_2': [0.999, 0.9999, 0.99999],
             'epsilon': [1e-08, 1e-09, 1e-10],
         },
         'rf': {
             'criterion': ['squared_error', 'absolute_error'],
-            'n_estimators': [10, 50, 100, 200, 300],
+            'n_estimators': [10, 50, 100, 200, 300, 400, 500],
             'max_depth': [10, 20, 30, 40, 50],
         },
         'ridge': {},
@@ -72,7 +78,10 @@ def main():
         best_score = cv.best_score_
         best_model = cv.best_estimator_
         results = cv.cv_results_
-    
+        current_month = datetime.datetime.now().strftime("%B")
+        current_year = datetime.datetime.now().year
+        joblib.dump(best_model, f'model_{current_month}_{current_year}.joblib')
+        
     elif args.model == 'all':
         best_score = float('-inf')
         for model_name, model in models.items():
@@ -91,6 +100,10 @@ def main():
                 best_score = cv.best_score_
                 best_model = cv.best_estimator_    
                 results = cv.cv_results_    
+            
+                current_month = datetime.datetime.now().strftime("%B")
+                current_year = datetime.datetime.now().year
+                joblib.dump(best_model, f'model_{current_month}_{current_year}.joblib')
     else:
         print("Invalid model name")
         return
@@ -98,11 +111,6 @@ def main():
     # Save cross-validation results to JSON
     with open('cv_results.json', 'w') as f:
         json.dump(results, f, indent=4, default=str)
-
-    current_month = datetime.datetime.now().strftime("%B")
-    current_year = datetime.datetime.now().year
-    joblib.dump(best_model, f'model_{current_month}_{current_year}.joblib')
-
     print(best_score)
 
 
