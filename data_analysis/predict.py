@@ -1,15 +1,15 @@
 import joblib 
 import pandas as pd
-from preprocess import preprocess
 import json
 import os
 
 import sys
 sys.path.append('.')
 from helper import get_latest_table
+from data_analysis.preprocess import preprocess
 
 def predict(record: json) -> float:
-    model_folder = '/home/quangminh/Documents/code/Python/ProjectDS/laptop-price-prediction-ds-prj/data_analysis/stored_model'
+    model_folder = './data_analysis/results/stored_model'
     
     model_files = [f for f in os.listdir(model_folder) if f.endswith('.joblib')]
     model_files.sort(key=lambda x: os.path.getmtime(os.path.join(model_folder, x)), reverse=True)
