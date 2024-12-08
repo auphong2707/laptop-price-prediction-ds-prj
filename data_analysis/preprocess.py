@@ -20,6 +20,11 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
         suffixes=('', '_gpu')  # Avoid column name conflicts
     ).drop(columns=['name'])  # Optionally drop redundant key column
 
+    # Drop wrong rows 
+    data.drop(data[data['brand'] == 'tính'].index, inplace = True)
+    data.drop(data[data['brand'] == 'laptop'].index, inplace = True)
+    data.dropna(subset=['brand'], inplace=True)
+
     # Drop uneccessary columns
     data.drop(columns=['cpu', 
                    'vga', 
@@ -62,12 +67,16 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
                     'test_directx_12',
                     'test_gpu_compute',
                    ], axis = 1, inplace=True)
-    
-    encoded_brand = pd.get_dummies(data['brand'], prefix='brand', dtype=int)
+
+    expected_brand_categories = ['acer', 'asus', 'hp', 'msi', 'lenovo', 'dell', 'lg', 'gigabyte',
+       'apple', 'huawei', 'masstel', 'vaio', 'slim', 'microsoft',
+       'samsung']
+    encoded_brand = pd.get_dummies(data['brand'], prefix='brand', dtype=int).reindex(columns=[f'brand_{cat}' for cat in expected_brand_categories], fill_value=0)
     data = pd.concat([encoded_brand, data], axis=1)
     data.drop(columns=['brand'], axis = 1, inplace=True)
 
-    encoded_ram_type = pd.get_dummies(data['ram_type'], prefix='ram_type', dtype=int)
+    expected_ram_categories = ['ddr4', 'ddr5']
+    encoded_ram_type = pd.get_dummies(data['ram_type'], prefix='ram_type', dtype=int).reindex(columns=[f'ram_type_{cat}' for cat in expected_ram_categories], fill_value=0)
     data = pd.concat([encoded_ram_type, data], axis=1)
     data.drop(columns=['ram_type'], axis = 1, inplace=True)
 
@@ -80,5 +89,32 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
         
         else: 
             data[x] = data[x].fillna(data[x].mean())
+
+    if 'price' in data.columns:
+        
+        desired_order = ['ram_type_ddr4', 'ram_type_ddr5', 'brand_acer', 'brand_asus',
+        'brand_hp', 'brand_msi', 'brand_lenovo', 'brand_dell', 'brand_lg',
+        'brand_gigabyte', 'brand_apple', 'brand_huawei', 'brand_masstel',
+        'brand_vaio', 'brand_slim', 'brand_microsoft', 'brand_samsung',
+        'ram_amount', 'storage_amount', 'screen_size', 'screen_refresh_rate',
+        'screen_brightness', 'battery_capacity', 'battery_cells', 'weight',
+        'width', 'depth', 'height', 'warranty', 'performance_clockspeed',
+        'performance_cores', 'performance_threads', 'tdp', 'multithread_rating',
+        'single_thread_rating', 'single_thread', 'avg_g3d_mark', 'max_tdp',
+        'screen_area', 'price']
+    
+    else: 
+        desired_order = ['ram_type_ddr4', 'ram_type_ddr5', 'brand_acer', 'brand_asus',
+        'brand_hp', 'brand_msi', 'brand_lenovo', 'brand_dell', 'brand_lg',
+        'brand_gigabyte', 'brand_apple', 'brand_huawei', 'brand_masstel',
+        'brand_vaio', 'brand_slim', 'brand_microsoft', 'brand_samsung',
+        'ram_amount', 'storage_amount', 'screen_size', 'screen_refresh_rate',
+        'screen_brightness', 'battery_capacity', 'battery_cells', 'weight',
+        'width', 'depth', 'height', 'warranty', 'performance_clockspeed',
+        'performance_cores', 'performance_threads', 'tdp', 'multithread_rating',
+        'single_thread_rating', 'single_thread', 'avg_g3d_mark', 'max_tdp',
+        'screen_area']
+        
+    data = data[desired_order]
     
     return data

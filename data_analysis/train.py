@@ -34,10 +34,11 @@ def main():
     cpu_specs = pd.read_csv(args.cpu_specs)
     vga_specs = pd.read_csv(args.vga_specs)
 
+    data = preprocess(data, cpu_specs, vga_specs)
     X = data.drop('price', axis=1)
     y = data['price']
 
-    X = preprocess(X, cpu_specs, vga_specs)
+    print(X.columns)
 
     models = {
         'mlp': MLPRegressor(),
@@ -55,7 +56,7 @@ def main():
             'epsilon': [1e-08, 1e-09, 1e-10],
         },
         'rf': {
-            'criterion': ['squared_error', 'absolute_error'],
+            'criterion': ['squared_error'],
             'n_estimators': [100, 200, 300, 400, 500],
             'max_depth': [10, 20, 30, 40, 50],
         },
