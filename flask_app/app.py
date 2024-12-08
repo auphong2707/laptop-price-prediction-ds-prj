@@ -2,6 +2,9 @@ import io
 import os
 from flask import Flask, render_template, request, redirect, send_file, send_from_directory, url_for
 import pdfkit
+
+import sys
+sys.path.append('.')
 from helper import *
 
 app = Flask(__name__)
@@ -22,7 +25,18 @@ DEFAULT_OS_LIST = sorted(get_latest_table('laptop_specs')['default_os'].dropna()
 def predictor():
     if request.method == 'POST':
         # Collect all form data
-        form_data = request.form
+        form_data = dict(request.form)
+        
+        form_data['storage_type'] = form_data['storage_type'].lower()
+        form_data['ram_type'] = form_data['ram_type'].lower()
+        for key in ['ram_amount', 'storage_amount', 'screen_refresh_rate', 'screen_brightness', 'battery_cells',
+                    'number_usb_a_ports', 'number_usb_c_ports', 'number_hdmi_ports', 'number_ethernet_ports', 'number_audio_jacks',
+                    'warranty']:
+            form_data[key] = int(form_data[key])
+        
+        for key in ['screen_size', 'battery_capacity', 'weight', 'width', 'depth', 'height']:
+            form_data[key] = float(form_data[key])
+        
         # For demonstration, just echo the input
         prediction = f"Received input: {form_data}"
         return render_template('predictor.html', 
