@@ -20,11 +20,6 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
         suffixes=('', '_gpu')  # Avoid column name conflicts
     ).drop(columns=['name'])  # Optionally drop redundant key column
 
-    # Drop wrong rows 
-    data.drop(data[data['brand'] == 'tính'].index, inplace = True)
-    data.drop(data[data['brand'] == 'laptop'].index, inplace = True)
-    data.dropna(subset=['brand'], inplace=True)
-
     # Drop uneccessary columns
     data.drop(columns=['cpu', 
                    'vga', 
@@ -68,9 +63,10 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
                     'test_gpu_compute',
                    ], axis = 1, inplace=True)
 
-    expected_brand_categories = ['acer', 'asus', 'hp', 'msi', 'lenovo', 'dell', 'lg', 'gigabyte',
-       'apple', 'huawei', 'masstel', 'vaio', 'slim', 'microsoft',
-       'samsung']
+    expected_brand_categories = ['lenovo', 'hp', 'asus', 'acer', 'dell', 'apple', 'msi', 'lg', 'gigabyte', 'microsoft']
+    # Drop wrong rows 
+    data.drop(data[~data['brand'].isin(expected_brand_categories)].index, inplace=True)
+    data.dropna(subset=['brand'], inplace=True)
     encoded_brand = pd.get_dummies(data['brand'], prefix='brand', dtype=int).reindex(columns=[f'brand_{cat}' for cat in expected_brand_categories], fill_value=0)
     data = pd.concat([encoded_brand, data], axis=1)
     data.drop(columns=['brand'], axis = 1, inplace=True)
@@ -94,8 +90,7 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
         
         desired_order = ['ram_type_ddr4', 'ram_type_ddr5', 'brand_acer', 'brand_asus',
         'brand_hp', 'brand_msi', 'brand_lenovo', 'brand_dell', 'brand_lg',
-        'brand_gigabyte', 'brand_apple', 'brand_huawei', 'brand_masstel',
-        'brand_vaio', 'brand_slim', 'brand_microsoft', 'brand_samsung',
+        'brand_gigabyte', 'brand_apple', 'brand_microsoft',
         'ram_amount', 'storage_amount', 'screen_size', 'screen_refresh_rate',
         'screen_brightness', 'battery_capacity', 'battery_cells', 'weight',
         'width', 'depth', 'height', 'warranty', 'performance_clockspeed',
@@ -106,8 +101,7 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
     else: 
         desired_order = ['ram_type_ddr4', 'ram_type_ddr5', 'brand_acer', 'brand_asus',
         'brand_hp', 'brand_msi', 'brand_lenovo', 'brand_dell', 'brand_lg',
-        'brand_gigabyte', 'brand_apple', 'brand_huawei', 'brand_masstel',
-        'brand_vaio', 'brand_slim', 'brand_microsoft', 'brand_samsung',
+        'brand_gigabyte', 'brand_apple', 'brand_microsoft', 
         'ram_amount', 'storage_amount', 'screen_size', 'screen_refresh_rate',
         'screen_brightness', 'battery_capacity', 'battery_cells', 'weight',
         'width', 'depth', 'height', 'warranty', 'performance_clockspeed',
