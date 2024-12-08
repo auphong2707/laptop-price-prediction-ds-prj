@@ -5,24 +5,24 @@
     <form method="POST">
         <h3>General Information</h3>
         <label for="brand">Brand:</label>
-        <select id="brand" name="brand" required>
-            <option value="Brand A">Brand A</option>
-            <option value="Brand B">Brand B</option>
-            <option value="Brand C">Brand C</option>
+        <select id="brand" name="brand" class="select2" required>
+            {% for brand in brands %}
+            <option value="{{ brand }}">{{ brand.capitalize() }}</option>
+            {% endfor %}
         </select>
 
         <label for="cpu">CPU:</label>
-        <select id="cpu" name="cpu" required>
-            <option value="CPU A">CPU A</option>
-            <option value="CPU B">CPU B</option>
-            <option value="CPU C">CPU C</option>
+        <select id="cpu" name="cpu" class="select2" required>
+            {% for cpu in cpus %}
+            <option value="{{ cpu }}">{{ cpu.upper() }}</option>
+            {% endfor %}
         </select>
 
-        <label for="vga">VGA:</label>
+        <label for="vga">GPU:</label>
         <select id="vga" name="vga" required>
-            <option value="VGA A">VGA A</option>
-            <option value="VGA B">VGA B</option>
-            <option value="VGA C">VGA C</option>
+            {% for gpu in gpus %}
+            <option value="{{ gpu }}">{{ gpu.upper() }}</option>
+            {% endfor %}
         </select>
 
         <h3>Memory</h3>
@@ -50,9 +50,9 @@
 
         <label for="screen_resolution">Screen Resolution:</label>
         <select id="screen_resolution" name="screen_resolution" required>
-            <option value="1920x1080">1920x1080</option>
-            <option value="2560x1440">2560x1440</option>
-            <option value="3840x2160">3840x2160</option>
+            {% for screen_resolution in screen_resolutions %}
+            <option value="{{ screen_resolution }}">{{ screen_resolution }}</option>
+            {% endfor %}
         </select><br>
 
         <label for="screen_refresh_rate">Screen Refresh Rate (Hz):</label>
@@ -133,4 +133,14 @@
     </div>
     {% endif %}
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        $('.select2').select2({
+            placeholder: "Select an option",
+            allowClear: true
+        });
+    });
+</script>
+
 {% endblock %}

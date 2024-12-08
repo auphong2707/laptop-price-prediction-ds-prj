@@ -75,7 +75,7 @@ nav a:hover {
 }
 
 .content-predictor {
-    min-width: 900px;
+    width: 900px;
     margin: 20px;
     padding: 30px 100px 50px 100px;
     background: white;

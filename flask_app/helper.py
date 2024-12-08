@@ -55,3 +55,11 @@ def get_table(table_name) -> pd.DataFrame:
     conn.close()
     
     return table
+
+def get_latest_table(table_name) -> pd.DataFrame:
+    table_names = get_table_list()
+    
+    filtered_table_names = [name for name in table_names if table_name in name]
+    lastest_table_name = sorted(filtered_table_names)[-1]
+    
+    return get_table(lastest_table_name)

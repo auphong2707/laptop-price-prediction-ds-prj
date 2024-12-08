@@ -4,15 +4,19 @@ from flask import Flask, render_template, request, redirect, send_file, send_fro
 import pdfkit
 from helper import *
 
-TABLE_LIST = get_table_list()
-EDA_PATH = '/app/data_analysis/results/eda/'
-EDA_LIST = [f for f in os.listdir(EDA_PATH) if os.path.isfile(os.path.join(EDA_PATH, f))]
-
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return redirect(url_for('predictor'))
+
+# [PREDICTOR]
+# ---------------------------------------------------------------------------------------------
+BRAND_LIST = ['lenovo', 'hp', 'asus', 'acer', 'dell', 'apple', 'msi', 'lg', 'gigabyte', 'microsoft']
+CPU_LIST = sorted(get_latest_table('cpu_specs')['name'].tolist())
+GPU_LIST = sorted(get_latest_table('gpu_specs')['name'].tolist())
+SCREEN_RESOLUTION_LIST = sorted(get_latest_table('laptop_specs')['screen_resolution'].dropna().unique().tolist())
+DEFAULT_OS_LIST = sorted(get_latest_table('laptop_specs')['default_os'].dropna().unique().tolist())
 
 @app.route('/predictor', methods=['GET', 'POST'])
 def predictor():
@@ -21,8 +25,28 @@ def predictor():
         form_data = request.form
         # For demonstration, just echo the input
         prediction = f"Received input: {form_data}"
-        return render_template('predictor.html', prediction=prediction)
-    return render_template('predictor.html')
+        return render_template('predictor.html', 
+                               brands=BRAND_LIST, 
+                               cpus=CPU_LIST, 
+                               gpus=GPU_LIST,
+                               screen_resolutions=SCREEN_RESOLUTION_LIST,
+                               prediction=prediction)
+
+    return render_template('predictor.html', 
+                           brands=BRAND_LIST, 
+                           cpus=CPU_LIST, 
+                           gpus=GPU_LIST,
+                           screen_resolutions=SCREEN_RESOLUTION_LIST)
+
+# ---------------------------------------------------------------------------------------------
+
+
+
+
+# [DATA_ANALYSIS]
+# ---------------------------------------------------------------------------------------------
+EDA_PATH = '/app/data_analysis/results/eda/'
+EDA_LIST = [f for f in os.listdir(EDA_PATH) if os.path.isfile(os.path.join(EDA_PATH, f))]
 
 @app.route('/data_analysis/<eda_name>')
 def data_analysis(eda_name):
@@ -73,6 +97,14 @@ def serve_eda(eda_name):
         return send_from_directory(EDA_PATH, eda_name)
     else:    
         return f"File {eda_name} not found", 404
+# ---------------------------------------------------------------------------------------------
+
+
+
+
+# [DATABASE]
+# ---------------------------------------------------------------------------------------------
+TABLE_LIST = get_table_list()
 
 @app.route('/database/<table_name>')
 def database(table_name):
@@ -105,6 +137,7 @@ def download_csv(table_name):
     
     # Send the file to the user
     return send_file(response, mimetype='text/csv', as_attachment=True, download_name=f'{table_name}.csv')
+# ---------------------------------------------------------------------------------------------
 
 
 if __name__ == '__main__':
