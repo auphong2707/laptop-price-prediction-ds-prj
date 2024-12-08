@@ -22,6 +22,7 @@ def predict(record: json) -> float:
 
     record = pd.DataFrame([record])
     data = preprocess(record, cpu_specs, vga_specs)
+    print(data.columns)
     return float(model.predict(data))
 
 if __name__ == '__main__':
