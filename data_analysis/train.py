@@ -56,7 +56,7 @@ def main():
         },
         'rf': {
             'criterion': ['squared_error', 'absolute_error'],
-            'n_estimators': [10, 50, 100, 200, 300, 400, 500],
+            'n_estimators': [100, 200, 300, 400, 500],
             'max_depth': [10, 20, 30, 40, 50],
         },
         'ridge': {},
