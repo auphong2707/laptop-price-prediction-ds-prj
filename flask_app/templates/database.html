@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="sidebar-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3>Tables List</h3>
+        <ul>
+            {% for table in table_list %}
+            <li>
+                <a href="{{ url_for('database', table_name=table) }}"
+                   class="{% if table == active_table %}active{% endif %}">
+                    {{ table }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="sidebar-container-main-content">
+        <div class="sidebar-container-main-content-header"> 
+            
+
+            <!-- Download Button -->
+            <a href="{{ url_for('download_csv', table_name=table_name) }}" class="btn-download">
+                <i class="fas fa-download"></i>  <!-- Font Awesome download icon -->
+            </a>
+
+            <h1>{{ table_name }}</h1>
+        </div>
+
+        {% if table_html %}
+        <div class="table-container">
+            {{ table_html|safe }}
+        </div>
+        {% else %}
+        <p>No data available for this table.</p>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

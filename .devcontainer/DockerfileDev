@@ -26,6 +26,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     firefox-esr \
     postgresql \
     postgresql-contrib \
+    wkhtmltopdf \
     sudo \
     && rm -rf /var/lib/apt/lists/*
 

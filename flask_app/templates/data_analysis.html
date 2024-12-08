@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="sidebar-container">
+    <aside class="sidebar">
+        <h3>Tables List</h3>
+        <ul>
+            {% for eda in eda_list %}
+            <li>
+                <a href="{{ url_for('data_analysis', eda_name=eda) }}"
+                   class="{% if eda == active_eda %}active{% endif %}"
+                >
+                {{ eda|replace('.html', '') }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </aside>
+    
+    <!-- Main Content -->
+    <section class="sidebar-container-main-content">
+        <div class="sidebar-container-main-content-header"> 
+            <!-- Download Button -->
+            <a href="{{ url_for('download_pdf', eda_name=active_eda) }}" class="btn-download">
+                <i class="fas fa-download"></i>  <!-- Font Awesome download icon -->
+            </a>
+
+            <h1> {{ active_eda|replace('.html', '') }}</h1>
+        </div>
+
+        <iframe 
+            src="{{ url_for('serve_eda', eda_name=active_eda) }}" 
+            style="width: 100%; height: 80vh; border: none;">
+        </iframe>
+    </section>
+</div>
+{% endblock %}
