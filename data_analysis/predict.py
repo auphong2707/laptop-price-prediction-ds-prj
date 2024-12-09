@@ -1,12 +1,12 @@
 import joblib 
 import pandas as pd
-from preprocess import preprocess
 import json
 import os
 
 import sys
 sys.path.append('.')
 from helper import get_latest_table
+from data_analysis.preprocess import preprocess
 
 def predict(record: json) -> float:
     record = pd.DataFrame([record])

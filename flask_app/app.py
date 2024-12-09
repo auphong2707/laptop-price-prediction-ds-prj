@@ -6,6 +6,7 @@ import pdfkit
 import sys
 sys.path.append('.')
 from helper import *
+from data_analysis.predict import predict
 
 app = Flask(__name__)
 
@@ -38,7 +39,8 @@ def predictor():
             form_data[key] = float(form_data[key])
         
         # For demonstration, just echo the input
-        prediction = f"Received input: {form_data}"
+        prediction = f"Our price prediction for your laptop specification is: {int(round(predict(form_data), -3)):,} VNĐ".replace(",", ".")
+        
         return render_template('predictor.html', 
                                brands=BRAND_LIST, 
                                cpus=CPU_LIST, 
