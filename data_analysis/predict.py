@@ -9,26 +9,27 @@ sys.path.append('.')
 from helper import get_latest_table
 
 def predict(record: json) -> float:
-    model_folder = '/home/quangminh/Documents/code/Python/ProjectDS/laptop-price-prediction-ds-prj/data_analysis/stored_model'
-    
-    model_files = [f for f in os.listdir(model_folder) if f.endswith('.joblib')]
-    model_files.sort(key=lambda x: os.path.getmtime(os.path.join(model_folder, x)), reverse=True)
-    last_model = os.path.join(model_folder, model_files[0])
-    
-    model = joblib.load(last_model)
-    
+    record = pd.DataFrame([record])
+    # print(record)
     cpu_specs = get_latest_table('cpu_specs')
     vga_specs = get_latest_table('gpu_specs')
 
     # cpu_specs = pd.read_csv('/home/quangminh/Documents/code/Python/ProjectDS/laptop-price-prediction-ds-prj/data_analysis/data/cpu_specs_11_2024.csv')
     # vga_specs = pd.read_csv('/home/quangminh/Documents/code/Python/ProjectDS/laptop-price-prediction-ds-prj/data_analysis/data/gpu_specs_11_2024.csv')
-
-    record = pd.DataFrame([record])
-    # print(record)
     data = preprocess(record, cpu_specs, vga_specs)
-    print(data)
-    # print(data.columns)
-    # print(data.shape)
+    model_folder = '/home/quangminh/Documents/code/Python/ProjectDS/laptop-price-prediction-ds-prj/data_analysis/results/stored_model'
+
+    model_possible_name = os.listdir(model_folder)
+    if data['no_gpu'][0] == 1:
+        model_possible_name = [f for f in model_possible_name if 'non_gaming' in f]
+    else:   
+        model_possible_name = [f for f in model_possible_name if 'gaming' in f]
+    model_files = [f for f in model_possible_name if f.endswith('.joblib')]
+    model_files.sort(key=lambda x: os.path.getmtime(os.path.join(model_folder, x)), reverse=True)
+    last_model = os.path.join(model_folder, model_files[0])
+    
+    model = joblib.load(last_model)
+
     return float(model.predict(data))
 
 if __name__ == '__main__':

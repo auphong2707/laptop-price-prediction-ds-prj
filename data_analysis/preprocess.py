@@ -1,4 +1,5 @@
 import pandas as pd 
+import numpy as np
 def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFrame) -> pd.DataFrame:
     # Merge cpu information
     columns_to_drop = ['id', 'source', 'name']
@@ -61,6 +62,13 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
                     'test_directx_11',  
                     'test_directx_12',
                     'test_gpu_compute',
+                    'performance_clockspeed',
+                    'performance_cores', 
+                    'performance_threads', 
+                    'tdp',
+                    'max_tdp',
+                    'single_thread',
+                    'single_thread_rating',
                    ], axis = 1, inplace=True)
 
     expected_brand_categories = ['lenovo', 'hp', 'asus', 'acer', 'dell', 'apple', 'msi', 'lg', 'gigabyte', 'microsoft']
@@ -79,23 +87,24 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
     data['screen_area'] = data['screen_resolution'].apply(lambda x: int(x.split('x')[0])*int(x.split('x')[1]) if isinstance(x, str) else 0)
     data.drop(columns=['screen_resolution'], axis = 1, inplace=True)
 
+    # Add attribute no_gpu 
+    data['no_gpu'] = data['avg_g3d_mark'].isna().astype(int)
+    # Fill missing values
     for x in data: 
-        if x == 'avg_g3d_mark' or x == 'max_tdp':
-            data[x] = data[x].fillna(0)
+        if x == 'avg_g3d_mark':
+            data[x] = data[x].fillna(2684)
         
         else: 
             data[x] = data[x].fillna(data[x].mean())
 
     if 'price' in data.columns:
-        
         desired_order = ['ram_type_ddr4', 'ram_type_ddr5', 'brand_acer', 'brand_asus',
         'brand_hp', 'brand_msi', 'brand_lenovo', 'brand_dell', 'brand_lg',
         'brand_gigabyte', 'brand_apple', 'brand_microsoft',
         'ram_amount', 'storage_amount', 'screen_size', 'screen_refresh_rate',
         'screen_brightness', 'battery_capacity', 'battery_cells', 'weight',
-        'width', 'depth', 'height', 'warranty', 'performance_clockspeed',
-        'performance_cores', 'performance_threads', 'tdp', 'multithread_rating',
-        'single_thread_rating', 'single_thread', 'avg_g3d_mark', 'max_tdp',
+        'width', 'depth', 'height', 'warranty', 'multithread_rating',
+        'no_gpu', 'avg_g3d_mark',
         'screen_area', 'price']
     
     else: 
@@ -104,9 +113,8 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
         'brand_gigabyte', 'brand_apple', 'brand_microsoft', 
         'ram_amount', 'storage_amount', 'screen_size', 'screen_refresh_rate',
         'screen_brightness', 'battery_capacity', 'battery_cells', 'weight',
-        'width', 'depth', 'height', 'warranty', 'performance_clockspeed',
-        'performance_cores', 'performance_threads', 'tdp', 'multithread_rating',
-        'single_thread_rating', 'single_thread', 'avg_g3d_mark', 'max_tdp',
+        'width', 'depth', 'height', 'warranty', 'multithread_rating',
+        'no_gpu', 'avg_g3d_mark',
         'screen_area']
         
     data = data[desired_order]
