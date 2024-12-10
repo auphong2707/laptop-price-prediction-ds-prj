@@ -7,6 +7,7 @@ import sys
 sys.path.append('.')
 from helper import get_latest_table
 from data_analysis.preprocess import preprocess
+from sklearn.preprocessing import MinMaxScaler
 
 def predict(record: json) -> float:
     record = pd.DataFrame([record])
@@ -17,6 +18,8 @@ def predict(record: json) -> float:
     # cpu_specs = pd.read_csv('/home/quangminh/Documents/code/Python/ProjectDS/laptop-price-prediction-ds-prj/data_analysis/data/cpu_specs_11_2024.csv')
     # vga_specs = pd.read_csv('/home/quangminh/Documents/code/Python/ProjectDS/laptop-price-prediction-ds-prj/data_analysis/data/gpu_specs_11_2024.csv')
     data = preprocess(record, cpu_specs, vga_specs)
+    scaler = MinMaxScaler()
+    data = scaler.fit_transform(data)
     model_folder = '/home/quangminh/Documents/code/Python/ProjectDS/laptop-price-prediction-ds-prj/data_analysis/results/stored_model'
 
     model_possible_name = os.listdir(model_folder)

@@ -3,6 +3,9 @@ from preprocess import preprocess
 from sklearn.model_selection import GridSearchCV
 from sklearn.neural_network import MLPRegressor
 from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor, BaggingRegressor
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
 from xgboost import XGBRFRegressor
 
 import pandas as pd
@@ -38,11 +41,13 @@ def main():
 
     param_grids = {
         'mlp': {
-            'activation': ['relu'],
-            'max_iter': [600],
-            'beta_1': [0.9, 0.95, 0.99],
-            'beta_2': [0.999, 0.9999, 0.99999],
-            'epsilon': [1e-08, 1e-09, 1e-10],
+            'hidden_layer_sizes': [(100,), (50, 50), (100, 50, 25)],  # Varying layer sizes and depths
+            'activation': ['relu'],                         # Common activation functions
+            'alpha': [1e-5, 1e-4, 1e-3, 1e-2],                      # Regularization parameter
+            'learning_rate': ['constant', 'adaptive'],              # Learning rate schedule
+            'max_iter': [200, 500, 1000],                           # Max iterations for convergence
+            'early_stopping': [True],                               # Enable early stopping
+            'learning_rate_init': [0.001, 0.01, 0.1],               # Initial learning rate
         },
         'rf': {
             'n_estimators': [10, 20, 50, 100],
@@ -94,7 +99,14 @@ def main():
     X_gaming = data_gaming.drop('price', axis=1)
     y_gaming = data_gaming['price']
 
-    print(X_gaming.columns)
+    X_gaming_train, X_gaming_test, y_gaming_train, y_gaming_test = train_test_split(X_gaming, y_gaming, test_size=0.2, random_state=42)
+
+    # Scale data to prevent overflow
+    scaler = MinMaxScaler()
+    X_gaming_train = scaler.fit_transform(X_gaming_train)
+    X_gaming_test = scaler.transform(X_gaming_test)
+
+    # print(X_gaming.columns)
 
     if any(args.model == model for model in models.keys()):
         model = models[args.model]
@@ -107,7 +119,7 @@ def main():
             scoring='neg_mean_squared_error'
         )
 
-        cv.fit(X_gaming, y_gaming)
+        cv.fit(X_gaming_train, y_gaming_train)
         
         best_score_gaming = cv.best_score_
         best_model_gaming = cv.best_estimator_
@@ -115,7 +127,7 @@ def main():
         current_month = datetime.datetime.now().strftime("%B")
         current_year = datetime.datetime.now().year
         joblib.dump(best_model_gaming, f'model_gaming_{current_month}_{current_year}.joblib')
-        print('Score gaming: ', np.sqrt(-best_score_gaming))
+        # print('Score gaming: ', np.sqrt(-best_score_gaming))
         
     elif args.model == 'all':
         best_score_gaming = float('-inf')
@@ -129,10 +141,10 @@ def main():
                 scoring='neg_mean_squared_error'
             )
 
-            cv.fit(X_gaming, y_gaming)
+            cv.fit(X_gaming_train, y_gaming_train)
             
-            if cv.best_score_ > best_score:
-                best_score = cv.best_score_
+            if cv.best_score_ > best_score_gaming:
+                best_score_gaming = cv.best_score_
                 best_model = cv.best_estimator_    
                 results_gaming = cv.cv_results_    
             
@@ -140,12 +152,24 @@ def main():
                 current_year = datetime.datetime.now().year
                 joblib.dump(best_model, f'model_gaming_{current_month}_{current_year}.joblib')
             
-            print('Score gaming: ', np.sqrt(-best_score_gaming))
+            # print('Score gaming: ', np.sqrt(-best_score_gaming))
+    else: 
+        print('Invalid model name')
+        return
+    
+    y_pred_gaming = cv.best_estimator_.predict(X_gaming_test)
+    print('Error ratio of gaming :', np.sqrt(mean_squared_error(y_gaming_test, y_pred_gaming))/y_gaming_test.mean())
+    print('Error of gaming: ', np.sqrt(mean_squared_error(y_gaming_test, y_pred_gaming)))
         
     # For non-gaming laptops
     data_non_gaming = data[data['no_gpu'] == 1]
     X_non_gaming = data_non_gaming.drop('price', axis=1)
     y_non_gaming = data_non_gaming['price']
+
+    X_non_gaming_train, X_non_gaming_test, y_non_gaming_train,  y_non_gaming_test = train_test_split(X_non_gaming, y_non_gaming, test_size=0.2, random_state=42)
+
+    X_non_gaming_train = scaler.fit_transform(X_non_gaming_train)
+    X_non_gaming_test = scaler.transform(X_non_gaming_test)
     if any(args.model == model for model in models.keys()):
         model = models[args.model]
         param_grid = param_grids[args.model]
@@ -157,7 +181,7 @@ def main():
             scoring='neg_mean_squared_error'
         )
 
-        cv.fit(X_non_gaming, y_non_gaming)
+        cv.fit(X_non_gaming_train, y_non_gaming_train)
         
         best_score_non_gaming = cv.best_score_
         best_model_non_gaming = cv.best_estimator_
@@ -165,7 +189,7 @@ def main():
         current_month = datetime.datetime.now().strftime("%B")
         current_year = datetime.datetime.now().year
         joblib.dump(best_model_non_gaming, f'model_non_gaming_{current_month}_{current_year}.joblib')
-        print('Score non_gaming: ', np.sqrt(-best_score_non_gaming))
+        # print('Score non_gaming: ', np.sqrt(-best_score_non_gaming))
         
     elif args.model == 'all':
         best_score_non_gaming = float('-inf')
@@ -179,10 +203,10 @@ def main():
                 scoring='neg_mean_squared_error'
             )
 
-            cv.fit(X_non_gaming, y_non_gaming)
+            cv.fit(X_non_gaming_train, y_non_gaming_train)
             
-            if cv.best_score_ > best_score:
-                best_score = cv.best_score_
+            if cv.best_score_ > best_score_non_gaming:
+                best_score_non_gaming = cv.best_score_
                 best_model = cv.best_estimator_    
                 results_non_gaming = cv.cv_results_    
             
@@ -190,11 +214,11 @@ def main():
                 current_year = datetime.datetime.now().year
                 joblib.dump(best_model, f'model_non_gaming_{current_month}_{current_year}.joblib')
             
-            print('Score non_gaming: ', np.sqrt(-best_score_non_gaming))
-
-    else:
-        print("Invalid model name")
-        return
+            # print('Score non_gaming: ', np.sqrt(-best_score_non_gaming))
+    
+    y_pred_non_gaming = cv.best_estimator_.predict(X_non_gaming_test)
+    print('Error ratio of non_gaming :', np.sqrt(mean_squared_error(y_non_gaming_test, y_pred_non_gaming))/y_non_gaming_test.mean())
+    print('Error of non_gaming: ', np.sqrt(mean_squared_error(y_non_gaming_test, y_pred_non_gaming)))
 
     # Save cross-validation results to JSON
     with open('cv_results_gaming.json', 'w') as f:
