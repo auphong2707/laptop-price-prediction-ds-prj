@@ -53,8 +53,8 @@ USER root
 # Expose ports for PostgreSQL, Airflow and Flask
 EXPOSE 5432 8080 5000
 
-# Entrypoint script to start PostgreSQL and Airflow webserver & scheduler
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+# Make sure the scripts are executable
+RUN chmod +x /app/entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+# Run /entrypoint.sh first, then run the two scripts in parallel
+CMD ["sh", "-c", "/app/entrypoint.sh"]

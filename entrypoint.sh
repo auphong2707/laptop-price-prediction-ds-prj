@@ -17,5 +17,12 @@ airflow connections add 'postgres_default' \
     --conn-schema 'airflow' \
     --conn-port '5432'
 
-# Change ownership of the start.sh file
-chmod +x start.sh
+# Start PostgreSQL service
+service postgresql start
+airflow webserver --port 8080 & airflow scheduler & python flask_app/app.py
+
+# Wait for any process to exit
+wait -n
+
+# Exit with status of process that exited first
+exit $?
