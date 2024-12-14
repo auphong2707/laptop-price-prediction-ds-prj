@@ -28,15 +28,25 @@ def predictor():
         # Collect all form data
         form_data = dict(request.form)
         
-        form_data['storage_type'] = form_data['storage_type'].lower()
-        form_data['ram_type'] = form_data['ram_type'].lower()
+        for key, value in form_data.items():
+            if form_data[key] == 'NONE':
+                form_data[key] = None
+        
+        for key in ['storage_type', 'ram_type']:
+            if form_data[key] is not None:
+                form_data[key] = form_data[key].lower()
+        
         for key in ['ram_amount', 'storage_amount', 'screen_refresh_rate', 'screen_brightness', 'battery_cells',
                     'number_usb_a_ports', 'number_usb_c_ports', 'number_hdmi_ports', 'number_ethernet_ports', 'number_audio_jacks',
                     'warranty']:
-            form_data[key] = int(form_data[key])
+            if form_data[key] is not None:
+                form_data[key] = int(form_data[key])
         
         for key in ['screen_size', 'battery_capacity', 'weight', 'width', 'depth', 'height']:
-            form_data[key] = float(form_data[key])
+            if form_data[key] is not None:
+                form_data[key] = float(form_data[key])
+        
+        
         
         # For demonstration, just echo the input
         prediction = f"Our price prediction for your laptop specification is: {int(round(predict(form_data), -3)):,} VNĐ".replace(",", ".")

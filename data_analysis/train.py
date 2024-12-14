@@ -1,31 +1,27 @@
-from preprocess import preprocess
+import os
+import argparse
+import joblib
+import json
+import datetime
+import numpy as np
 
+from preprocess import preprocess
 from sklearn.model_selection import GridSearchCV
 from sklearn.neural_network import MLPRegressor
 from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor, BaggingRegressor
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from xgboost import XGBRFRegressor
 
-import pandas as pd
-import numpy as np
-
-import argparse
-
-# Export the model
-import joblib
-import json
-import datetime
+import sys
+sys.path.append('.')
+from helper import get_latest_table
 
 
 def main():
     parser = argparse.ArgumentParser()
 
     # Add data path
-    parser.add_argument('--data', type=str, help='The path to the data')
-    parser.add_argument('--cpu_specs', type=str, help='The path to the CPU specs')
-    parser.add_argument('--vga_specs', type=str, help='The path to the VGA specs')
     parser.add_argument('--model', type=str, help='The model to train')
 
     args = parser.parse_args()
@@ -87,26 +83,26 @@ def main():
     }
 
     # Load the data
-    data = pd.read_csv(args.data)
+    data = get_latest_table('laptop_specs')
     data.drop_duplicates(inplace=True)
 
-    cpu_specs = pd.read_csv(args.cpu_specs)
-    vga_specs = pd.read_csv(args.vga_specs)
+    cpu_specs = get_latest_table('cpu_specs')
+    vga_specs = get_latest_table('gpu_specs')
 
+    # Preprocess the data
     data = preprocess(data, cpu_specs, vga_specs)
+    data_has_gpu = data[data['no_gpu'] == 0]
+    X_has_gpu = data_has_gpu.drop('price', axis=1)
+    y_has_gpu = data_has_gpu['price']
 
-    data_gaming = data[data['no_gpu'] == 0]
-    X_gaming = data_gaming.drop('price', axis=1)
-    y_gaming = data_gaming['price']
+    # Split the data
+    X_has_gpu_train, X_has_gpu_test, y_has_gpu_train, y_has_gpu_test = train_test_split(X_has_gpu, y_has_gpu, test_size=0.2, random_state=42)
 
-    X_gaming_train, X_gaming_test, y_gaming_train, y_gaming_test = train_test_split(X_gaming, y_gaming, test_size=0.2, random_state=42)
-
-    # Scale data to prevent overflow
-    scaler = MinMaxScaler()
-    X_gaming_train = scaler.fit_transform(X_gaming_train)
-    X_gaming_test = scaler.transform(X_gaming_test)
-
-    # print(X_gaming.columns)
+    # Train the model
+    current_month = datetime.datetime.now().month
+    current_year = datetime.datetime.now().year
+    save_path = f'data_analysis/results/trained_models/{current_month}_{current_year}'
+    os.makedirs(save_path, exist_ok=True)
 
     if any(args.model == model for model in models.keys()):
         model = models[args.model]
@@ -118,19 +114,17 @@ def main():
             n_jobs=-1,
             scoring='neg_mean_squared_error'
         )
-
-        cv.fit(X_gaming_train, y_gaming_train)
+    
+        cv.fit(X_has_gpu_train, y_has_gpu_train)
         
-        best_score_gaming = cv.best_score_
-        best_model_gaming = cv.best_estimator_
-        results_gaming = cv.cv_results_
-        current_month = datetime.datetime.now().strftime("%B")
-        current_year = datetime.datetime.now().year
-        joblib.dump(best_model_gaming, f'model_gaming_{current_month}_{current_year}.joblib')
-        # print('Score gaming: ', np.sqrt(-best_score_gaming))
+        best_score_has_gpu = cv.best_score_
+        best_model_has_gpu = cv.best_estimator_
+        results_has_gpu = cv.cv_results_
+        joblib.dump(best_model_has_gpu, f'{save_path}/model_has_gpu.joblib')
+        # print('Score gaming: ', np.sqrt(-best_score_has_gpu))
         
     elif args.model == 'all':
-        best_score_gaming = float('-inf')
+        best_score_has_gpu = float('-inf')
         for model_name, model in models.items():
             param_grid = param_grids[model_name]
             cv = GridSearchCV(
@@ -141,35 +135,31 @@ def main():
                 scoring='neg_mean_squared_error'
             )
 
-            cv.fit(X_gaming_train, y_gaming_train)
+            cv.fit(X_has_gpu_train, y_has_gpu_train)
             
-            if cv.best_score_ > best_score_gaming:
-                best_score_gaming = cv.best_score_
+            if cv.best_score_ > best_score_has_gpu:
+                best_score_has_gpu = cv.best_score_
                 best_model = cv.best_estimator_    
-                results_gaming = cv.cv_results_    
+                results_has_gpu = cv.cv_results_    
             
-                current_month = datetime.datetime.now().strftime("%B")
-                current_year = datetime.datetime.now().year
-                joblib.dump(best_model, f'model_gaming_{current_month}_{current_year}.joblib')
+                joblib.dump(best_model, f'{save_path}/model_has_gpu.joblib')
             
-            # print('Score gaming: ', np.sqrt(-best_score_gaming))
+            # print('Score gaming: ', np.sqrt(-best_score_has_gpu))
     else: 
         print('Invalid model name')
         return
     
-    y_pred_gaming = cv.best_estimator_.predict(X_gaming_test)
-    print('Error ratio of gaming :', np.sqrt(mean_squared_error(y_gaming_test, y_pred_gaming))/y_gaming_test.mean())
-    print('Error of gaming: ', np.sqrt(mean_squared_error(y_gaming_test, y_pred_gaming)))
+    y_pred_has_gpu = cv.best_estimator_.predict(X_has_gpu_test)
+    print('Error ratio of gaming :', np.sqrt(mean_squared_error(y_has_gpu_test, y_pred_has_gpu))/y_has_gpu_test.mean())
+    print('Error of gaming: ', np.sqrt(mean_squared_error(y_has_gpu_test, y_pred_has_gpu)))
         
     # For non-gaming laptops
-    data_non_gaming = data[data['no_gpu'] == 1]
-    X_non_gaming = data_non_gaming.drop('price', axis=1)
-    y_non_gaming = data_non_gaming['price']
+    data_no_gpu = data[data['no_gpu'] == 1]
+    X_no_gpu = data_no_gpu.drop('price', axis=1)
+    y_no_gpu = data_no_gpu['price']
 
-    X_non_gaming_train, X_non_gaming_test, y_non_gaming_train,  y_non_gaming_test = train_test_split(X_non_gaming, y_non_gaming, test_size=0.2, random_state=42)
+    X_no_gpu_train, X_no_gpu_test, y_no_gpu_train,  y_no_gpu_test = train_test_split(X_no_gpu, y_no_gpu, test_size=0.2, random_state=42)
 
-    X_non_gaming_train = scaler.fit_transform(X_non_gaming_train)
-    X_non_gaming_test = scaler.transform(X_non_gaming_test)
     if any(args.model == model for model in models.keys()):
         model = models[args.model]
         param_grid = param_grids[args.model]
@@ -181,18 +171,17 @@ def main():
             scoring='neg_mean_squared_error'
         )
 
-        cv.fit(X_non_gaming_train, y_non_gaming_train)
+        cv.fit(X_no_gpu_train, y_no_gpu_train)
         
-        best_score_non_gaming = cv.best_score_
-        best_model_non_gaming = cv.best_estimator_
-        results_non_gaming = cv.cv_results_
-        current_month = datetime.datetime.now().strftime("%B")
-        current_year = datetime.datetime.now().year
-        joblib.dump(best_model_non_gaming, f'model_non_gaming_{current_month}_{current_year}.joblib')
-        # print('Score non_gaming: ', np.sqrt(-best_score_non_gaming))
+        best_score_no_gpu = cv.best_score_
+        best_model_no_gpu = cv.best_estimator_
+        results_no_gpu = cv.cv_results_
+        
+        joblib.dump(best_model_no_gpu, f'{save_path}/model_no_gpu.joblib')
+        # print('Score no_gpu: ', np.sqrt(-best_score_no_gpu))
         
     elif args.model == 'all':
-        best_score_non_gaming = float('-inf')
+        best_score_no_gpu = float('-inf')
         for model_name, model in models.items():
             param_grid = param_grids[model_name]
             cv = GridSearchCV(
@@ -203,29 +192,27 @@ def main():
                 scoring='neg_mean_squared_error'
             )
 
-            cv.fit(X_non_gaming_train, y_non_gaming_train)
+            cv.fit(X_no_gpu_train, y_no_gpu_train)
             
-            if cv.best_score_ > best_score_non_gaming:
-                best_score_non_gaming = cv.best_score_
+            if cv.best_score_ > best_score_no_gpu:
+                best_score_no_gpu = cv.best_score_
                 best_model = cv.best_estimator_    
-                results_non_gaming = cv.cv_results_    
+                results_no_gpu = cv.cv_results_    
             
-                current_month = datetime.datetime.now().strftime("%B")
-                current_year = datetime.datetime.now().year
-                joblib.dump(best_model, f'model_non_gaming_{current_month}_{current_year}.joblib')
+                joblib.dump(best_model, f'{save_path}/model_no_gpu.joblib')
             
-            # print('Score non_gaming: ', np.sqrt(-best_score_non_gaming))
+            # print('Score no_gpu: ', np.sqrt(-best_score_no_gpu))
     
-    y_pred_non_gaming = cv.best_estimator_.predict(X_non_gaming_test)
-    print('Error ratio of non_gaming :', np.sqrt(mean_squared_error(y_non_gaming_test, y_pred_non_gaming))/y_non_gaming_test.mean())
-    print('Error of non_gaming: ', np.sqrt(mean_squared_error(y_non_gaming_test, y_pred_non_gaming)))
+    y_pred_no_gpu = cv.best_estimator_.predict(X_no_gpu_test)
+    print('Error ratio of no_gpu :', np.sqrt(mean_squared_error(y_no_gpu_test, y_pred_no_gpu))/y_no_gpu_test.mean())
+    print('Error of no_gpu: ', np.sqrt(mean_squared_error(y_no_gpu_test, y_pred_no_gpu)))
 
     # Save cross-validation results to JSON
-    with open('cv_results_gaming.json', 'w') as f:
-        json.dump(results_gaming, f, indent=4, default=str)
+    with open(f'{save_path}/cv_results_has_gpu.json', 'w') as f:
+        json.dump(results_has_gpu, f, indent=4, default=str)
     
-    with open('cv_results_non_gaming.json', 'w') as f:
-        json.dump(results_non_gaming, f, indent=4, default=str)
+    with open(f'{save_path}/cv_results_no_gpu.json', 'w') as f:
+        json.dump(results_no_gpu, f, indent=4, default=str)
 
 if __name__ == "__main__":
     main()

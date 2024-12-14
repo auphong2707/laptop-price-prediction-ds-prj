@@ -89,6 +89,7 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
 
     # Add attribute no_gpu 
     data['no_gpu'] = data['avg_g3d_mark'].isna().astype(int)
+    
     # Fill missing values
     for x in data: 
         if x == 'avg_g3d_mark':
@@ -116,7 +117,7 @@ def preprocess(data: pd.DataFrame, cpu_specs: pd.DataFrame, vga_specs: pd.DataFr
         'width', 'depth', 'height', 'warranty', 'multithread_rating',
         'no_gpu', 'avg_g3d_mark',
         'screen_area']
-        
+
     data = data[desired_order]
     
     return data
