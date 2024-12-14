@@ -8,6 +8,9 @@ from airflow.utils.task_group import TaskGroup
 from database.sql_helper import *
 from database.integrity_check import check_integrity_all
 
+CURRENT_MONTH = timezone.utcnow().month
+CURRENT_YEAR = timezone.utcnow().year
+
 # [DEFINE DAG]
 default_args = {
     'owner': 'veil',
@@ -166,6 +169,40 @@ with TaskGroup('database_tasks', dag=main_dag) as database_tasks:
         dag=main_dag,
         
     )
+    
+# [DATA ANALYSIS TASK]
+with TaskGroup('data_analysis_tasks', dag=main_dag) as data_analysis_tasks:
+    save_data_as_csv = BashOperator(
+        task_id='save_data_as_csv',
+        bash_command='cd /app && python /app/data_analysis/data_save.py',
+        pool='default_pool',
+        do_xcom_push=False,
+        dag=main_dag,
+    )
+
+    train_model = BashOperator(
+        task_id='train_model',
+        bash_command='cd /app && python /app/data_analysis/train.py --model all',
+        pool='default_pool',
+        do_xcom_push=False,
+        dag=main_dag,
+    )
+
+    run_eda = BashOperator(
+        task_id='run_eda',
+        bash_command='jupyter nbconvert --to notebook --execute /app/data_analysis/EDA.ipynb --output /app/data_analysis/EDA.ipynb',
+        pool='default_pool',
+        do_xcom_push=False,
+        dag=main_dag,
+    )
+
+    convert_eda_to_html = BashOperator(
+        task_id='convert_eda_to_html',
+        bash_command=f'jupyter nbconvert --to html /app/data_analysis/EDA.ipynb --output /app/data_analysis/results/eda/EDA_{CURRENT_MONTH}_{CURRENT_YEAR}.html',
+        pool='default_pool',
+        do_xcom_push=False,
+        dag=main_dag,
+    )
 
 # [DEFINE DIRECTED ACYCLIC GRAPH]
 laptop_scraping_tasks >> insert_into_laptop_specs_table_sql
@@ -187,3 +224,6 @@ create_laptop_specs_table_task >> insert_into_laptop_specs_table_task
 
 insert_into_laptop_specs_table_task >> check_integrity_task
 
+check_integrity_task >> save_data_as_csv
+check_integrity_task >> train_model
+check_integrity_task >> run_eda >> convert_eda_to_html
