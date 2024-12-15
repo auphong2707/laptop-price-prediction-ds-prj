@@ -27,7 +27,7 @@ main_dag = DAG(
     description='The DAG control all the tasks for the project',
     schedule_interval='@monthly',
     start_date=days_ago(1),
-    max_active_tasks=2,
+    max_active_tasks=3,
 )
 
 # [SCRAPING TASK]
@@ -198,7 +198,7 @@ with TaskGroup('data_analysis_tasks', dag=main_dag) as data_analysis_tasks:
 
     convert_eda_to_html = BashOperator(
         task_id='convert_eda_to_html',
-        bash_command=f'jupyter nbconvert --to html /app/data_analysis/EDA.ipynb --output /app/data_analysis/results/eda/EDA_{CURRENT_MONTH}_{CURRENT_YEAR}.html',
+        bash_command=f'mkdir -p /app/data_analysis/results/eda && jupyter nbconvert --to html /app/data_analysis/EDA.ipynb --output /app/data_analysis/results/eda/EDA_{CURRENT_MONTH}_{CURRENT_YEAR}.html',
         pool='default_pool',
         do_xcom_push=False,
         dag=main_dag,
