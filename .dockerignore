@@ -1,0 +1,8 @@
+.git
+.gitignore
+.devcontainer
+/data_analysis/results
+/data_analysis/data
+/logs
+/airflow/logs
+/temp

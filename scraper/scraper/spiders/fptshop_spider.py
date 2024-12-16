@@ -69,12 +69,19 @@ class FPTShopScraper(BaseLaptopshopLoadmoreButtonSpider):
                 
                 for button in buttons:
                     self.driver.execute_script("arguments[0].click();", button)
-                    while not self.driver.find_elements(By.CLASS_NAME, 'Swipeable_swipeable__BTB2L'):
+                    num_retries = 500
+                    while not self.driver.find_elements(By.CLASS_NAME, 'Swipeable_swipeable__BTB2L') and num_retries > 0:
                         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                         time.sleep(1)
                         self.driver.execute_script("window.scrollTo(0, 0);")
                         time.sleep(1)
+                        
+                        num_retries -= 1
                     
+                    if num_retries == 0:
+                        print("Failed to open the modal.")
+                        continue
+
                     print("Opened the modal successfully.")
                     opened_modal = True
                     break

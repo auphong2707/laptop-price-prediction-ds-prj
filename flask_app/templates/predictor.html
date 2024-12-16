@@ -20,6 +20,7 @@
 
         <label for="vga">GPU:</label>
         <select id="vga" name="vga" required>
+            <option value='NONE'>NONE</option>
             {% for gpu in gpus %}
             <option value="{{ gpu }}">{{ gpu.upper() }}</option>
             {% endfor %}

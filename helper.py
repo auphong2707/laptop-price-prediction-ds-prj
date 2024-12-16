@@ -82,6 +82,8 @@ def get_table(table_name) -> pd.DataFrame:
 
 def get_latest_table(table_name) -> pd.DataFrame:
     table_names = get_table_list()
+    if len(table_names) == 0:
+        return None
     
     if table_name == 'full_relation':
         laptop_table = [name for name in table_names if 'laptop_specs' in name][-1]
