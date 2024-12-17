@@ -12,7 +12,7 @@ git clone https://github.com/auphong2707/laptop-price-prediction-ds-prj.git
 cd laptop-price-prediction-ds-prj
 ```
 
-2. Ensure that the **Select End of Line Sequence** in the status bar (the blue bar at the bottom of the screen in Visual Studio Code) is set to **LF**.
+2. Ensure that the **End of Line Sequence** of the `entrypoint.sh` file is set to **LF**.
 
 3. Build the Docker image by running the following command:
 ```bash
